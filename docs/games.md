@@ -73,6 +73,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-facebook: ](https://www.facebook.com/people/Barkelona/100092625319820/){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Bearnard -->
+<figure class="game" markdown>
+[![Beaver Clicker](https://steamcdn-a.akamaihd.net/steam/apps/2422210/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2422210/Bearnard/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2422210/Bearnard/){ target="_blank" .md-button .md-button--store }
+</figure>
 
 <!-- Beaver Clicker -->
 <figure class="game" markdown>
@@ -144,6 +150,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/WillDreamsGames){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/willdreamsgames/){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCXeHZLFETcYHjZdJe-b8gUA){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Cat Box Paradox -->
+<figure class="game" markdown>
+[![Cat Cafe Manager](https://steamcdn-a.akamaihd.net/steam/apps/1771200/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1771200/Cat_Box_Paradox/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1771200/Cat_Box_Paradox/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/CatBoxParadox){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.biscuitlocker.com/game_cat_box_paradox/){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Cat Cafe Manager -->
@@ -1155,6 +1170,16 @@ vz
 [![Unforgettable Voyage](https://steamcdn-a.akamaihd.net/steam/apps/2149560/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2149560/Unforgettable_Voyage/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2149560/Unforgettable_Voyage/){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Unloop -->
+<figure class="game" markdown>
+[![Unloop](https://steamcdn-a.akamaihd.net/steam/apps/2328140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2328140/Unloop/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2328140/Unloop/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.threetrees.eu/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/ThreeTreesEU){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/SracgkuFkV){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Unnamed Space Idle -->
