@@ -633,6 +633,13 @@ Functions to create, consume, and interact with the [Steam Workshop](https://pa
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#GetWorkshopEULAStatus){ .md-button .md-button--store target="_blank" }
 
+### getUserContentDescriptorPreferences
+
+!!! function "getUserContentDescriptorPreferences( ```uint32``` max_entries )"
+	Return the user's community content descriptor preferences.
+
+	**Returns:** Array
+
 ### getUserItemVote
 
 !!! function "getUserItemVote( ```uint64_t``` published_file_id )"
@@ -826,7 +833,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://pa
 
 ### setItemTags
 
-!!! function "setItemTags( ```uint64_t``` update_handle, ```array``` tag_array)"
+!!! function "setItemTags( ```uint64_t``` update_handle, ```array``` tag_array, ```bool``` allow_admin_tags)"
 	Sets arbitrary developer specified tags on an item.
 
 	Each tag must be limited to 255 characters. Tag names can only include printable characters, excluding ','. For reference on what characters are allowed, refer to [http://en.cppreference.com/w/c/string/byte/isprint](http://en.cppreference.com/w/c/string/byte/isprint){ target="_blank" }

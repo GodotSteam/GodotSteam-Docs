@@ -56,6 +56,23 @@
     ------
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_Init){ .md-button .md-button--store target="_blank" }
 
+### steamInitEx
+
+!!! function "steamInitEx( ```bool``` retrieve_stats = true )"
+    Initialize the Steamworks SDK. On success **STEAM_API_INIT_RESULT_OK** is returned. Otherwise, if **error_message** is non-NULL, it will receive a non-localized message that explains the reason for the failure.
+
+    **Returns:** dictionary
+
+    * status (int)
+    * verbal (string)
+
+    You will receive one of these integer results:
+
+    * 0 / "Steamworks active"
+    * 1 / "Failed (generic)"
+    * 2 / "Cannot connect to Steam, client probably isn't running"
+    * 3 / "Steam client appears to be out of date"
+
 ---
 
 ## Signals
@@ -416,6 +433,15 @@ RESULT_IP_BANNED | 105
 RESULT_GSLT_EXPIRED | 106
 RESULT_INSUFFICIENT_FUNDS | 107
 RESULT_TOO_MANY_PENDING | 108
+
+### SteamAPIInitResult
+
+Enumerator | Value
+---------- | -----
+STEAM_API_INIT_RESULT_OK | 0
+STEAM_API_INIT_RESULT_FAILED_GENERIC | 1
+STEAM_API_INIT_RESULT_NO_STEAM_CLIENT | 2
+STEAM_API_INIT_RESULT_VERSION_MISMATCH | 3
 
 ### Universe
 

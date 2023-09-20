@@ -86,6 +86,13 @@ See [Steam Remote Play](https://partner.steamgames.com/doc/features/remoteplay)
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemotePlay#BSendRemotePlayTogetherInvite){ .md-button .md-button--store target="_blank" }
 
+### startRemotePlayTogether
+
+!!! function "startRemotePlayTogether( ```bool``` show_overlay )"
+	Start Remote Play Together and optionally show the UI in the overlay. This returns false if Remote Play Together can't be started or your game is not configured for Remote Play Together.
+
+	**Returns:** bool
+
 ---
 
 ## Signals

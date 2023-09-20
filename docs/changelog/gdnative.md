@@ -4,6 +4,16 @@
 
 ------
 
+**Version 3.21 Changes**
+
+- Added: new enums and constant related to new Steam initialization function
+- Added: new enums for NetworkingConfigValue
+- Added: new intialization function `steamInitEx` that is more verbose
+- Added: new UGC function `getUserContentDescriptorPreferences`
+- Added: new Remote Play function `startRemotePlayTogether`
+- Changed: UGC function`setItemTags` to have new argument for admin tags
+- Changed: compatible with Steamworks SDK 1.58
+
 **Version 3.20.1 Changes**
 
 - Fixed: wrong variant type for join_requested

@@ -63,7 +63,7 @@ nav:
     - Rich Presence: 'tutorials/rich_presence.md'
     - Stats and Achievements: 'tutorials/stats_achievements.md'
     - Workshop: 'tutorials/workshop.md'
-  - Games Using GodotSteam: 'games.md'
+  - Games Using GodotSteam: 'games/games.md'
   - To-Do: 'https://github.com/orgs/CoaguCo-Industries/projects/2'
   - Change-Logs:
     - Godot 4.x: 'changelog/godot4.md'
@@ -73,9 +73,9 @@ nav:
     - GDNative: 'changelog/gdnative.md'
     - Server: 'changelog/server.md'
   - Contributors:
-    - Contributor List: 'contributors.md'
-    - Contributing Code: 'contribute_rules.md'
-    - Donating: 'contribute_donations.md'
+    - Contributor List: 'contribute/contributors.md'
+    - Contributing Code: 'contribute/rules.md'
+    - Donating: 'contribute/donations.md'
 theme:
   name: material
   favicon: assets/images/favicon.png
