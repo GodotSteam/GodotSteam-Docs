@@ -84,6 +84,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Ranoller
 	- René Habermann
 	- Ricardo Sernaglia
+	- Ronan Docherty
 	- RosenX
 	- Shine Right Studio
 	- Thorsten Schleinzer
