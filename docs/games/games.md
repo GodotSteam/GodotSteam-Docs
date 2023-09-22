@@ -334,6 +334,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/803930/Galactic_Bulwark_Strike/){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Games For Stream -->
+<figure class="game" markdown>
+[![Games For Stream](https://steamcdn-a.akamaihd.net/steam/apps/2538580/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2538580/Games_for_Stream/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2538580/Games_for_Stream/){ target="_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Gedaria -->
 <figure class="game" markdown>
 [![Gedaria](https://steamcdn-a.akamaihd.net/steam/apps/1679880/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1679880/Gedaria/){ target="_blank" }
@@ -926,6 +933,15 @@ vz
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1677360/satryn_deluxe/){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/hello_maybell){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/3){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Seedlings -->
+<figure class="game" markdown>
+[![Seedlings](https://steamcdn-a.akamaihd.net/steam/apps/1575510/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1575510/Seedlings/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1575510/Seedlings/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://bardsley-creative.itch.io/seedlings){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/Seedlings_Game){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Shadow of Asha -->
