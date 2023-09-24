@@ -5607,7 +5607,7 @@ td) {
 }
 .md-typeset .tabbed-labels {
   -ms-overflow-style:none;
-  box-shadow:0 -.05rem var(--md-default-fg-color--lightest) inset;
+  box-shadow:0 -.05rem #478CBF inset;
   display:flex;
   max-width:100%;
   overflow:auto;
@@ -5957,7 +5957,7 @@ td) {
   .md-typeset .tabbed-set>input:nth-child(7):checked~.tabbed-labels>:nth-child(7),
   .md-typeset .tabbed-set>input:nth-child(8):checked~.tabbed-labels>:nth-child(8),
   .md-typeset .tabbed-set>input:nth-child(9):checked~.tabbed-labels>:nth-child(9) {
-    color:#fff !important;
+    color:var(--md-accent-fg-color)
   }
   .md-typeset .no-js .tabbed-set>input:first-child:checked~.tabbed-labels>:first-child,
   .md-typeset .no-js .tabbed-set>input:nth-child(10):checked~.tabbed-labels>:nth-child(10),

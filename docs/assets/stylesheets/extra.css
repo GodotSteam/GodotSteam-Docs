@@ -906,6 +906,9 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
  white-space:nowrap;
  width:auto
 }
+.md-typeset .tabbed-labels {
+  box-shadow:0 -.05rem #478CBF inset !important;
+}
 div.branch-grid {
   display: flex;
   flex-wrap: wrap;
