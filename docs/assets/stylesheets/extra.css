@@ -929,7 +929,7 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
  width:auto
 }
 .md-typeset .tabbed-labels::before {
-    background: #478CBF;
+    background: #478CBF !important;
 }
 .md-typeset .tabbed-labels>label:hover {
 	color: #478CBF;
