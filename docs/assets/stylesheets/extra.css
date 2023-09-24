@@ -42,6 +42,28 @@ html {
 	--md-shadow-z2:0 0.2rem 0.5rem rgba(0,0,0,.1),0 0 0.05rem rgba(0,0,0,.25);
 	--md-shadow-z3:0 0.2rem 0.5rem rgba(0,0,0,.2),0 0 0.05rem rgba(0,0,0,.35);
 }
+.md-typeset .tabbed-set>input:first-child:checked~.tabbed-labels>:first-child,
+  .md-typeset .tabbed-set>input:nth-child(10):checked~.tabbed-labels>:nth-child(10),
+  .md-typeset .tabbed-set>input:nth-child(11):checked~.tabbed-labels>:nth-child(11),
+  .md-typeset .tabbed-set>input:nth-child(12):checked~.tabbed-labels>:nth-child(12),
+  .md-typeset .tabbed-set>input:nth-child(13):checked~.tabbed-labels>:nth-child(13),
+  .md-typeset .tabbed-set>input:nth-child(14):checked~.tabbed-labels>:nth-child(14),
+  .md-typeset .tabbed-set>input:nth-child(15):checked~.tabbed-labels>:nth-child(15),
+  .md-typeset .tabbed-set>input:nth-child(16):checked~.tabbed-labels>:nth-child(16),
+  .md-typeset .tabbed-set>input:nth-child(17):checked~.tabbed-labels>:nth-child(17),
+  .md-typeset .tabbed-set>input:nth-child(18):checked~.tabbed-labels>:nth-child(18),
+  .md-typeset .tabbed-set>input:nth-child(19):checked~.tabbed-labels>:nth-child(19),
+  .md-typeset .tabbed-set>input:nth-child(2):checked~.tabbed-labels>:nth-child(2),
+  .md-typeset .tabbed-set>input:nth-child(20):checked~.tabbed-labels>:nth-child(20),
+  .md-typeset .tabbed-set>input:nth-child(3):checked~.tabbed-labels>:nth-child(3),
+  .md-typeset .tabbed-set>input:nth-child(4):checked~.tabbed-labels>:nth-child(4),
+  .md-typeset .tabbed-set>input:nth-child(5):checked~.tabbed-labels>:nth-child(5),
+  .md-typeset .tabbed-set>input:nth-child(6):checked~.tabbed-labels>:nth-child(6),
+  .md-typeset .tabbed-set>input:nth-child(7):checked~.tabbed-labels>:nth-child(7),
+  .md-typeset .tabbed-set>input:nth-child(8):checked~.tabbed-labels>:nth-child(8),
+  .md-typeset .tabbed-set>input:nth-child(9):checked~.tabbed-labels>:nth-child(9) {
+    color:#478CBF;
+  }
 thead {
 	border-bottom: 1px solid #eee !important;
 }
@@ -905,6 +927,12 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
  transition:background-color .25s,color .25s;
  white-space:nowrap;
  width:auto
+}
+.md-typeset .tabbed-labels::before {
+    background: #478CBF;
+}
+.md-typeset .tabbed-labels>label:hover {
+	color: #478CBF;
 }
 .md-typeset .tabbed-labels {
   box-shadow:0 -.05rem #478CBF inset !important;
