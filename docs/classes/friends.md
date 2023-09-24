@@ -579,8 +579,6 @@ Access information about individual users and interact with the [Steam Overlay]
 	
 	**Note:** It is possible for the size to be larger than 128x128 if the user uploaded a larger image to their profile.
 
-	Triggers an [avatar_loaded](#avatar_loaded) callback.
-
 	**Returns:** int
 
 	A Steam image handle which is used with [getImageSize](utils.md#getimagesize) and [getImageRGBA](utils.md#getimagergba).
@@ -596,8 +594,6 @@ Access information about individual users and interact with the [Steam Overlay]
 	**Note:** Consider using [getPlayerAvatar](#getplayeravatar) instead because it simplifies the process of getting avatar data.
 
 	Gets a handle to the medium (64x64px) avatar for the specified user. You can pass in [getSteamID](user.md#getsteamid) to get the current user's avatar.
-
-	Triggers an [avatar_loaded](#avatar_loaded) callback.
 
 	**Returns:** int
 
@@ -713,8 +709,6 @@ Access information about individual users and interact with the [Steam Overlay]
 	**Note:** Consider using [getPlayerAvatar](#getplayeravatar) instead because it simplifies the process of getting avatar data.
 	
 	Gets a handle to the small (32x32px) avatar for the specified user. You can pass in [getSteamID](user.md#getsteamid) to get the current user's avatar.
-
-	Triggers an [avatar_loaded](#avatar_loaded) callback.
 
 	**Returns:** int
 

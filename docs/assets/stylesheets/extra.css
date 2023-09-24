@@ -893,9 +893,9 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
  mask-image:var(--md-tasklist-icon--checked)
 }
 .md-typeset .tabbed-labels>label {
- border-bottom:.1rem solid #adadad;
+ border-bottom:.1rem solid #ffffff;
  border-radius:.1rem .1rem 0 0;
- color:#adadad;
+ color:#ffffff;
  cursor:pointer;
  flex-shrink:0;
  font-size:.64rem;
