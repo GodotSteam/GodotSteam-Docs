@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the documentation site for GodotSteam, a Steamworks module for [Godot Engine](https://godotengine.org){ target="_blank" } which includes a fully-functional version for all versions of Godot from 2.x to 4.x as well as a GDNative plug-in. Here you can find tutorials, lists of functions and signals, and even [games currently using GodotSteam](/games/games).
+This is the documentation site for GodotSteam, a Steamworks module for [Godot Engine](https://godotengine.org){ target="_blank" } which includes a fully-functional version for all versions of Godot from 2.x to 4.x as well as a GDNative plug-in. Here you can find tutorials, lists of functions and signals, and even [games currently using GodotSteam](games/games.md).
 
 Support for the project is provided through the [GodotSteam GitHub issues page](https://github.com/CoaguCo-Industries/GodotSteam/issues){ target="_blank" } by e-mail, or discussion in our Discord server.
 
@@ -169,7 +169,7 @@ Have fun!
 
 ## Have A Game Using GodotSteam?
 
-Finally got your Steam store page up? Whether you are about to release your game, already did, or are just tinkering away at it, you can send me the details and I will post it in [the Games Using GodotSteam section](/games/games).
+Finally got your Steam store page up? Whether you are about to release your game, already did, or are just tinkering away at it, you can send me the details and I will post it in [the Games Using GodotSteam section](games/games.md).
 
 You can use the button below to submit your game to the list. Please remember to include your game's Steam store page URL. Additionally you can include up to four additional links like your Mastodon or Twitter account, Discord invite link, development website, devlog, or anything relevant to your game or studio.
 
