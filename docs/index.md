@@ -29,6 +29,10 @@ Make sure you **don't mix and match** the pre-compiled editors with the plug-ins
 
 	[:fontawesome-brands-github: For All Versions](https://github.com/CoaguCo-Industries/GodotSteam/releases){ .md-button .md-button--primary target="_blank" }
 
+	Or build dedicated servers with pre-compiled editors and templates
+
+	[:fontawesome-brands-github: For All Server Versions](https://github.com/CoaguCo-Industries/GodotSteam-Server/releases){ .md-button .md-button--primary target="_blank" }
+
 !!! compile "GDNative Plug-in"
 	Get integrating Steamworks into your game with the GDNative plug-in for Godot Engine 3.x
 
@@ -36,13 +40,24 @@ Make sure you **don't mix and match** the pre-compiled editors with the plug-ins
 	[:fontawesome-solid-file-zipper: GitHub Drop-in TAR](https://github.com/CoaguCo-Industries/GodotSteam/tarball/gdnative-plugin){ .md-button .md-button--primary target="_blank" }
 	[:fontawesome-solid-file-zipper: GitHub Drop-in ZIP](https://github.com/CoaguCo-Industries/GodotSteam/zipball/gdnative-plugin){ .md-button .md-button--primary target="_blank" }
 
-!!! compile "GDExtension Plug-in"
+	Or build dedicated servers with the GDNative Server plug-in for Godot Engine 3.x
+
+	[:simple-godotengine: Godot Asset Library](https://godotengine.org/asset-library/asset/2222){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: GitHub Drop-in TAR](https://github.com/CoaguCo-Industries/GodotSteam-Server/tarball/gdnative-plugin){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: GitHub Drop-in ZIP](https://github.com/CoaguCo-Industries/GodotSteam-Server/zipball/gdnative-plugin){ .md-button .md-button--primary target="_blank" }
+
+!!! compile "GDExtension Plug-ins"
 	Get integrating Steamworks into your game with the GDExtension plug-in via Godot Engine 4.x
 
-	[:simple-godotengine: Godot Asset Library](https://godotengine.org/asset-library/asset/1768){ .md-button .md-button--primary target="_blank" }
+	[:simple-godotengine: Godot Asset Library](https://godotengine.org/asset-library/asset/1972){ .md-button .md-button--primary target="_blank" }
 	[:fontawesome-solid-file-zipper: GitHub Drop-in TAR](https://github.com/CoaguCo-Industries/GodotSteam/tarball/gdextension-plugin){ .md-button .md-button--primary target="_blank" }
 	[:fontawesome-solid-file-zipper: GitHub Drop-in ZIP](https://github.com/CoaguCo-Industries/GodotSteam/zipball/gdextension-plugin){ .md-button .md-button--primary target="_blank" }
 
+	Or build dedicated servers with the GDExtension Server plug-in via Godot Engine 4.x
+
+	[:simple-godotengine: Godot Asset Library](https://godotengine.org/asset-library/asset/2218){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: GitHub Drop-in TAR](https://github.com/CoaguCo-Industries/GodotSteam-Server/tarball/gdextension-plugin){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: GitHub Drop-in ZIP](https://github.com/CoaguCo-Industries/GodotSteam-Server/zipball/gdextension-plugin){ .md-button .md-button--primary target="_blank" }
 
 </div>
 
@@ -91,13 +106,6 @@ Roll up your sleeves and build your own versions of GodotSteam. It does also req
 	[:fontawesome-solid-file-zipper: Get the TAR](https://github.com/CoaguCo-Industries/GodotSteam/tarball/gdnative){ .md-button .md-button--primary target="_blank" }
 	[:fontawesome-solid-file-zipper: Get the ZIP](https://github.com/CoaguCo-Industries/GodotSteam/zipball/gdnative){ .md-button .md-button--primary target="_blank" }
 
-!!! server "Godot Steamworks Server"
-	A Steamworks-enabled dedicated server with any Godot Engine 3.x versions
-
-	[:fontawesome-solid-code-branch: See the Source](https://github.com/CoaguCo-Industries/GodotSteam/tree/server){ .md-button .md-button--primary target="_blank" }
-	[:fontawesome-solid-file-zipper: Get the TAR](https://github.com/CoaguCo-Industries/GodotSteam/tarball/server){ .md-button .md-button--primary target="_blank" }
-	[:fontawesome-solid-file-zipper: Get the ZIP](https://github.com/CoaguCo-Industries/GodotSteam/zipball/server){ .md-button .md-button--primary target="_blank" }
-
 </div>
 
 ### Godot 2.x Branches
@@ -110,6 +118,40 @@ Roll up your sleeves and build your own versions of GodotSteam. It does also req
 	[:fontawesome-solid-code-branch: See the Source](https://github.com/CoaguCo-Industries/GodotSteam/tree/godot2){ .md-button .md-button--primary target="_blank" }
 	[:fontawesome-solid-file-zipper: Get the TAR](https://github.com/CoaguCo-Industries/GodotSteam/tarball/godot2){ .md-button .md-button--primary target="_blank" }
 	[:fontawesome-solid-file-zipper: Get the ZIP](https://github.com/CoaguCo-Industries/GodotSteam/zipball/godot2){ .md-button .md-button--primary target="_blank" }
+
+</div>
+
+### Server Branches
+
+<div class="branch-grid" markdown>
+
+!!! server "Godot 3.x Steamworks Server"
+	A Steamworks-enabled dedicated server with any Godot Engine 3.x versions
+
+	[:fontawesome-solid-code-branch: See the Source](https://github.com/CoaguCo-Industries/GodotSteam-Server/tree/godot3){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: Get the TAR](https://github.com/CoaguCo-Industries/GodotSteam-Server/tarball/godot3){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: Get the ZIP](https://github.com/CoaguCo-Industries/GodotSteam-Server/zipball/godot3){ .md-button .md-button--primary target="_blank" }
+
+!!! server "Godot 4.x Steamworks Server"
+	A Steamworks-enabled dedicated server with any Godot Engine 4.x versions
+
+	[:fontawesome-solid-code-branch: See the Source](https://github.com/CoaguCo-Industries/GodotSteam-Server/tree/godot4){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: Get the TAR](https://github.com/CoaguCo-Industries/GodotSteam-Server/tarball/godot4){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: Get the ZIP](https://github.com/CoaguCo-Industries/GodotSteam-Server/zipball/godot4){ .md-button .md-button--primary target="_blank" }
+
+!!! server "Godot GDExtension Steamworks Server"
+	A Steamworks-enabled dedicated server with any Godot Engine 4.x versions
+
+	[:fontawesome-solid-code-branch: See the Source](https://github.com/CoaguCo-Industries/GodotSteam-Server/tree/gdextension){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: Get the TAR](https://github.com/CoaguCo-Industries/GodotSteam-Server/tarball/gdextension){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: Get the ZIP](https://github.com/CoaguCo-Industries/GodotSteam-Server/zipball/gdextension){ .md-button .md-button--primary target="_blank" }
+
+!!! server "Godot GDNative Steamworks Server"
+	A Steamworks-enabled dedicated server with any Godot Engine 3.x versions
+
+	[:fontawesome-solid-code-branch: See the Source](https://github.com/CoaguCo-Industries/GodotSteam-Server/tree/gdnative){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: Get the TAR](https://github.com/CoaguCo-Industries/GodotSteam-Server/tarball/gdnative){ .md-button .md-button--primary target="_blank" }
+	[:fontawesome-solid-file-zipper: Get the ZIP](https://github.com/CoaguCo-Industries/GodotSteam-Server/zipball/gdnative){ .md-button .md-button--primary target="_blank" }
 
 </div>
 

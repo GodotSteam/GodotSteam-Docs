@@ -71,7 +71,10 @@ nav:
     - Godot 2.x: 'changelog/godot2.md'
     - GDExtension: 'changelog/gdextension.md'
     - GDNative: 'changelog/gdnative.md'
-    - Server: 'changelog/server.md'
+    - Server 3.x: 'changelog/server3.md'
+    - Server 4.x: 'changelog/server4.md'
+    - Server GDExtension: 'changelog/server_gdextension.md'
+    - Server GDNative: 'changelog/server_gdnative.md'
   - Contributors:
     - Contributor List: 'contribute/contributors.md'
     - Contributing Code: 'contribute/rules.md'

@@ -2,6 +2,8 @@
 
 Here we provide a, hopefully, thorough explanation of how to set-up, build, and use GodotSteam Server. You can, of course, skip all this and just download our pre-compiles or plug-in.
 
+In the event you want to build a GDExtension or GDNative plug-in of the servers, please follow the [GDExtension](gdextension.md) or [GDNative](gdnative.md) guides but use the [GodotSteam Server source code](https://github.com/CoaguCo-Industries/GodotSteam-Server) where you would normally use the regular GodotSteam source.
+
 ---
 ## 1a. Downloading
 
@@ -13,7 +15,7 @@ By far the easiest way to use GodotSteam Server is to download our pre-compiled 
 At this point you can skip all the following steps and check our our tutorials to learn more about integrating Steamworks or just explore the SDK!
 
 ---
-#### 1b. Compile Yourself
+## 1b. Compile Yourself
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 

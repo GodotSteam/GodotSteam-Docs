@@ -4,6 +4,11 @@
 
 ---
 
+**Version 4.4.1 Changes**
+
+- Fixed: missing descriptions for some in-editor functions/signals
+- Fixed: `receiveMessagesOnChannel`, `receiveMessagesOnPollGroup`, and `receiveMessagesOnConnection` had overwriting dictionary keys
+
 **Version 4.4 Changes**
 
 - Added: new enums and constant related to new Steam initialization function

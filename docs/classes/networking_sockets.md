@@ -495,12 +495,12 @@
 	* size (int)
 	* connection (int)
 	* identity (string)
-	* user_data (uint64_t)
+	* receiver_user_data (uint64_t)
 	* time_received (uint64_t)
 	* message_number (uint64_t)
 	* channel (int)
 	* flags (int)
-	* user_data (uint64_t)
+	* sender_user_data (uint64_t)
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#ReceiveMessagesOnConnection){ .md-button .md-button--store target="_blank" }
@@ -522,12 +522,12 @@
 	* size (int)
 	* connection (int)
 	* identity (string)
-	* user_data (uint64_t)
+	* receiver_user_data (uint64_t)
 	* time_received (uint64_t)
 	* message_number (uint64_t)
 	* channel (int)
 	* flags (int)
-	* user_data (uint64_t)
+	* sender_user_data (uint64_t)
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#ReceiveMessagesOnPollGroup){ .md-button .md-button--store target="_blank" }
