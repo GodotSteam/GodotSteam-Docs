@@ -14,7 +14,7 @@ And, when you're finally read both of those, we can start.
 
 ## Uploading / Downloading In Workshop / UGC
 
-[KarpPaul of Forgotten Dream Games has given us this pretty great tutorial on uploading and downloading items in Workshop / UGC.](https://www.forgottendreamgames.com/post/godotsteam-how-to-upload-and-download-user-generated-content-ugc) Since he has written everything, with code examples, there isn't any reason to reiterate it here when you can just click the link and read it all yourself.
+[KarpPaul of Forgotten Dream Games has given us this pretty great tutorial on uploading and downloading items in Workshop / UGC.](https://forgottendreamgames.com/blog/godotsteam-how-to-upload-and-download-user-generated-content-ugc-repost.html) Since he has written everything, with code examples, there isn't any reason to reiterate it here when you can just click the link and read it all yourself.
 
 ## Using Items In Workshop / UGC
 
