@@ -6,6 +6,7 @@
 
 **Version 3.0.1 Changes**
 
+- Changed: updated included Steam server script
 - Changed: how initialization functions work, passing empty string now uses default IP (expected behavior)
 - Fixed: incorrect verbal message from `serverInitEx`
 
