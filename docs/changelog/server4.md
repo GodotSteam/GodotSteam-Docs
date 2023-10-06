@@ -4,6 +4,11 @@
 
 ---
 
+**Version 4.0.1 Changes**
+
+- Changed: how initialization functions work, passing empty string now uses default IP (expected behavior)
+- Fixed: incorrect verbal message from `serverInitEx`
+
 **Version 4.0 Changes**
 
 - Added: missing server functions from steam_gameserver.h
