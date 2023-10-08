@@ -6,7 +6,7 @@ In this tutorial, we will cover some common pitfalls people find themselves in. 
 
 ## steam_appid.txt.txt
 
-For Windows users, when creating the `steam_appid.txt` file you need to watch out for the dreaded `.txt.txt` extension. If you have extensions hidden in the file explorer, this is more likely to happen since you can't see that extra `.txt`. If you do have them hidden, make sure to skip adding `.txt` to the end.
+If you aren't using the environment variables to set what game you're running, then you're probably using the older method of seatting your game's app ID in the `steam_appid.txt` file. For Windows users, when creating the `steam_appid.txt` file you need to watch out for the dreaded `.txt.txt` extension. If you have extensions hidden in the file explorer, this is more likely to happen since you can't see that extra `.txt`. If you do have them hidden, make sure to skip adding `.txt` to the end.
 
 ---
 
@@ -29,6 +29,8 @@ Some people get `Parse Error: The identifier Steam isn't declared in the current
 ## Achievements Not Working
 
 Sometimes your brand new achievements don't seem to be triggering. One cause can be that you didn't publish them in the Steamworks back-end. Once they are added into Steam's system, you'll need to publish the changes to be able to work with them.
+
+Some users have also found that getting or setting achievements doesn't work at all until the player's current stats have been retrieved. GodotSteam should do this by default when you initialize Steamworks; unless, that is, you passed `false` to either `steamInit` or `steamInitEx`.  If so, just call `requestCurrentStats` or `requestUserStats`.
 
 ---
 
