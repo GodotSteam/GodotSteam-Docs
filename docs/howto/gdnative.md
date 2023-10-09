@@ -204,17 +204,25 @@ In a text editor, create a file called **godotsteam.gdns** (this may need to be 
   script_class_name = "Steam"
   ````
 
-Create a new scene in your game project and add a Node node with a GDScript as the script. Add the following code:
+Create a new script in your game project and add the following code:
   ````
   extends Node
 
   onready var Steam = preload("res://addons/godotsteam/godotsteam.gdns").new()
 
+  func _init() -> void:
+      # Set your game's Steam app ID here
+      OS.set_environment("SteamAppId", str(480))
+      OS.set_environment("SteamGameId", str(480))
+
   func _ready():
-    Steam.steamInit()
+    Steam.steamInitEx()
 
   ````
-Save the scene as **steam.tscn** and place it where ever you want. Now navigate to **Project > Project Settings** in the editor and click on **Autoload**. Add your **steam.tscn** as a singleton, with the node name of **Steam**.
+
+You will want to set those environment variables with your game's app ID or, if you don't have one yet, as 480 like in the example above.  This tells Steam what game you are running.  Alternatively, you can create a `steam_appid.txt` file with your game's app ID as the only text then place that next to your editor or with the exported game.  However, we recommend you use the environment variables instead.
+
+Save this as **steam.gd** and place it where ever you want. Now navigate to **Project > Project Settings** in the editor and click on **Autoload**. Add your **steam.gd** as a singleton, with the node name of **Steam**.
 
 Done!
 
@@ -230,7 +238,7 @@ Now you should be able to call functions from **Steam** like you would normally 
   func setAchievement(achieve):
     Steam.setAchievement(achieve)
 ````
-These can then be called in any other script (since **steam.tscn** is a singleton) like this:
+These can then be called in any other script (since **steam.gd** is a singleton) like this:
 ````
   print(steam.name)
   print(steam.country)
@@ -240,8 +248,6 @@ These can then be called in any other script (since **steam.tscn** is a singleto
 
   steam.setAchievement(achieve)
 ````
-
-Make sure to create a file called **steam_appid.txt** and place it with your editor or at the root of your game's project folder. You'll need this to run the game from the editor.
 
 The documentation for GodotSteam should apply to GodotSteam GDNative as they are built from the same code and have all the same functions; generally speaking.
 
@@ -256,4 +262,4 @@ That being said, you should be able to export your game with the normal Godot te
 
 When uploading your game to Steam, you _**must**_ upload your game's executable and **Steam API .dll/.so/.dylb** (steam_api.dll, steam_api64.dll, libsteam_api.dylib, and/or libsteam_api.so).
 
-*Do not* include the steam_appid.txt or any .lib files as they are unnecessary; however, they won't hurt anything.
+*Do not* include any .lib files as they are unnecessary; however, they won't hurt anything.

@@ -157,6 +157,12 @@ That's it!  Done!
 
 Now you should be able to call functions from **Steam** like you would normally with the **GodotSteam module**:
 ````
+  func _init() -> void:
+      # Set your game's Steam app ID here
+      OS.set_environment("SteamAppId", str(480))
+      OS.set_environment("SteamGameId", str(480))
+
+
 func _ready():
     Steam.steamInit()
     var isRunning = Steam.isSteamRunning()
@@ -174,7 +180,7 @@ func _ready():
 
 Note that you **do not** have to enable this in the editor for the extension to work; it is just always present.
 
-Make sure to create a file called **steam_appid.txt** and place it with your editor or at the root of your game's project folder. You'll need this to run the game from the editor.
+Make sure add your game's app ID as the environment variables for SteamAppId and SteamGameId. If you do not have a game app ID yet, you can use 480 for testing.  Alternatively, you can create a file called **steam_appid.txt** with your game's app ID as the text, or 480, and place it with your editor or at the root of your game's project folder. You'll need this to run the game from the editor. However, we do recommend the environment variable method.
 
 The documentation for GodotSteam modules should apply to GodotSteam GDExtension as they are built from the same code and have all the same functions; generally speaking.
 
@@ -187,4 +193,4 @@ That being said, you should be able to export your game with the normal Godot te
 
 When uploading your game to Steam, you _**must**_ upload your game's executable and **Steam API .dll/.so/.dylb** (steam_api.dll, steam_api64.dll, libsteam_api.dylib, and/or libsteam_api.so) as well as the **exported GodotSteam file .dll/.so/.dylib** (godotsteam.dll, libgodotsteam.so, and/or libgodotsteam.dylib).
 
-*Do not* include the steam_appid.txt or any .lib files as they are unnecessary; however, they won't hurt anything.
+*Do not* include any .lib files as they are unnecessary; however, they won't hurt anything.
