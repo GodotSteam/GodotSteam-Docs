@@ -4,6 +4,10 @@
 
 ---
 
+**Version 4.4.2 Changes**
+
+- Fixed: `requestEquippedProfileItems` was missing method bind, thanks to _BOTLANNER_
+
 **Version 4.4.1 Changes**
 
 - Fixed: missing descriptions for some in-editor functions/signals

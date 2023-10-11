@@ -1,8 +1,12 @@
-# GDNative Change-Log
+www# GDNative Change-Log
 
 ### A history of all changes to the **gdnative** and **gdnative-plugin** branches.
 
 ------
+
+**Version 3.21.3 Changes**
+
+- Fixed: `requestEquippedProfileItems` was missing method bind, thanks to _BOTLANNER_
 
 **Version 3.21.2 Changes**
 

@@ -4,6 +4,10 @@
 
 ---
 
+**Version 3.21.3 Changes**
+
+- Fixed: `requestEquippedProfileItems` was missing method bind, thanks to _BOTLANNER_
+
 **Version 3.21.2 Changes**
 
 - Fixed: missing descriptions for some in-editor functions/signals
