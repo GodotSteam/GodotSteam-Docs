@@ -93,41 +93,36 @@ When recompiling the engine is finished, do the following before running it the 
 
 - [x] Copy the shared library (steam_api), for your OS, from sdk/redistributable_bin/ folders to the Godot binary location (by default in the godot source /bin/ file but you can move them to a new folder).
     - These files are called **steam_api.dll, steam_api64.dll, libsteam_api.so, or libsteam_api.dylib**; no other files are needed.
-- [x] Create a **steam_appid.txt** file with your game's app ID or 480 in this folder. Necessary if the editor or game is run _outside_ of Steam.
 
 The finished hierarchy should look like this (if you downloaded the pre-compiles, the editor files go in place of these tools files, which are the same thing):
 
 !!! godotsteam "Linux 32/64-bit"
   ```
   libsteam_api.so
-  steam_appid.txt
   ./godot.linux.tools.32 or ./godot.linux.tools.64
   ```
 
 !!! godotsteam "MacOS"
   ```
   libsteam_api.dylib
-  steam_appid.txt
   ./godot.osx.tools.32 or ./godot.osx.tools.64
   ```
 
 !!! godotsteam "Windows 32-bit"
   ```
   steam_api.dll
-  steam_appid.txt
   ./godot.windows.tools.32.exe
   ```
 !!! godotsteam "Windows 64-bit"
   ```
   steam_api64.dll
-  steam_appid.txt
   ./godot.windows.tools.64.exe
   ```
 
-Lack of the **Steam API .dll/.so/.dylib**, for your respective OS, or the **steam_appid.txt** will cause the editor or game fail and crash when testing or running the game _outside_ of the Steam client.
+Lack of the **Steam API .dll/.so/.dylib**, for your respective OS will cause the editor or game fail and crash when testing or running the game _outside_ of the Steam client.
 
 - **NOTE:** Some people report putting the Steam API file inside their project folder fixes some issues.
-- **NOTE:** For MacOS, the libsteam_api.dylib and steam_appid.txt must be in the Content/MacOS/ folder in your application zip or the game will crash.
+- **NOTE:** For MacOS, the libsteam_api.dylib must be in the Content/MacOS/ folder in your application zip or the game will crash.
 - **NOTE:** For Linux, you may have to load the overlay library for Steam overlay to work:
   ```
   export LD_PRELOAD=~/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so;~/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so
@@ -149,4 +144,4 @@ From here you should be able to call various functions of Steamworks. You should
 
 For a full explanation of exporting and shipping your game with GodotSteam, [please refer to our Export and Shipping tutorial.](../tutorials/exporting_shipping.md)
 
-That being said, here is a quick run-down of things to remember. When uploading your game to Steam, you _**must**_ upload your game's executable and **Steam API .dll/.so/.dylb** (steam_api.dll, steam_api64.dll, libsteam_api.dylib, and/or libsteam_api.so). *Do not* include the steam_appid.txt or any .lib files as they are unnecessary; however, they won't hurt anything.
+That being said, when uploading your game to Steam, you _**must**_ upload your game's executable and **Steam API .dll/.so/.dylb** (steam_api.dll, steam_api64.dll, libsteam_api.dylib, and/or libsteam_api.so). *Do not* include any .lib files as they are unnecessary; however, they won't hurt anything.

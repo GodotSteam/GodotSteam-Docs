@@ -2,7 +2,7 @@
 
 Here is a showcase of games using the GodotSteam module. Have a game on Steam using GodotSteam? Let me know by sending the game URL to [games@godotsteam.com](mailto:games@godotsteam.com){ target="_blank" }!  Feel free to include up to four additional links like dev-log, Mastodon, Twitter, website, Itch.io page, etc.
 
-------
+---
 
 <div id="games" markdown>
 
@@ -62,6 +62,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Am Madness](https://steamcdn-a.akamaihd.net/steam/apps/1694380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1694380/Am_Madness/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1694380/Am_Madness/){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Avalog -->
+<figure class="game" markdown>
+[![Avalog](https://steamcdn-a.akamaihd.net/steam/apps/2480820/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2480820/Avalog/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2480820/Avalog/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://avaloggames.itch.io/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-github: ](https://github.com/rmdocherty/Avalog_){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Barkelona -->
@@ -1154,15 +1163,6 @@ vz
 [ :fontawesome-brands-firefox-browser: ](https://trash-of-the-titans.manakeep.com/){ target="_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Trolley Delayma -->
-<figure class="game" markdown>
-[![Trolley Delayma](https://steamcdn-a.akamaihd.net/steam/apps/2372500/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2372500/Trolley_Delayma/){ target="_blank" }
-
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2372500/Trolley_Delayma/){ target="_blank" .md-button .md-button--store }
-[ :fontawesome-brands-itch-io: ](https://albertnez.itch.io/trolley-delayma){ target="_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ]( https://twitter.com/albertnez){ target="_blank" .md-button .md-button--store }
-</figure>
-
 <!-- Turing Complete -->
 <figure class="game" markdown>
 [![Turing Complete](https://steamcdn-a.akamaihd.net/steam/apps/1444480/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1444480/Turing_Complete/){ target="_blank" }
@@ -1179,16 +1179,6 @@ vz
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1797140/UFOTOFU_HEX/){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://inflo.games/projects/ufotofuhex/){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/inflogamescoop){ target="_blank" .md-button .md-button--store }
-</figure>
-
-<!-- Unavailed -->
-<figure class="game" markdown>
-[![Unavailed](https://steamcdn-a.akamaihd.net/steam/apps/2601190/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2601190/Unavailed/){ target="_blank" }
-
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2601190/Unavailed/){ target="_blank" .md-button .md-button--store }
-[ :fontawesome-brands-firefox-browser: ](https://coffeesnail.co.uk/){ target="_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/CoffeeSnail_Ltd){ target="_blank" .md-button .md-button--store }
-[ :fontawesome-brands-youtube: ](https://www.youtube.com/@CoffeeSnail_Ltd){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Undergrown -->
