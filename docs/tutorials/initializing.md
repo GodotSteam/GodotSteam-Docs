@@ -33,7 +33,7 @@ func _init() -> void:
 
 We can also just put our game's app ID in a variable and pass it along there.
 
-```
+````
 var STEAM_APP_ID: int = 480
 
 
