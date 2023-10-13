@@ -235,6 +235,17 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://constelleum.com/){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Corvian Curse -->
+<figure class="game" markdown>
+[![Corvian Curse](https://steamcdn-a.akamaihd.net/steam/apps/2626080/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2626080/Corvian_Curse/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2626080/Corvian_Curse/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://made-by-gare.itch.io/corvian-curse){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/madebygare){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@madebygare){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/xsq2Fy2qRT){ target="_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Dave Dave Dave -->
 <figure class="game" markdown>
 [![Dave Dave Dave](https://steamcdn-a.akamaihd.net/steam/apps/1625760/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1625760/Dave_Dave_Dave/){ target="_blank" }
@@ -1030,6 +1041,15 @@ vz
 [![Square 'n' Balls](https://steamcdn-a.akamaihd.net/steam/apps/1791350/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1791350/Square_n_Balls/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1791350/Square_n_Balls/){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Squeebing Up the Tower of Friendship -->
+<figure class="game" markdown>
+[![Squeebing Up the Tower of Friendship](https://steamcdn-a.akamaihd.net/steam/apps/2501590/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2501590/Squeebing_Up_the_Tower_of_Friendship/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2501590/Squeebing_Up_the_Tower_of_Friendship/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.spacekraken.studio/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/SpaceKrakenStud){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Starveil -->
