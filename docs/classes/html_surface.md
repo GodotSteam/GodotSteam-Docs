@@ -55,9 +55,7 @@ The **this_handle** argument is optional. If you do not pass one, GodotSteam wil
 ### createBrowser
 
 !!! function "createBrowser( ```string``` user_agent, ```string``` user_css )"
-	Create a browser object for displaying of an HTML page.
-
-	If no handle is passed, GodotSteam will use the internal one.
+	Create a browser object for displaying of an HTML page. Both arguments used are optional.
 
 	**Returns:** void
 

@@ -135,6 +135,12 @@ The message is just a basic message to inform you to the status the download; wh
 
 ---
 
+## Possible Oddities
+
+A user in our Discord noted that sometimes `downloadLeaderboardEntriesForUsers` would trigger a callback but have zero entries. Oddly, they reported that creating a second leaderboard then deleting the first one would fix this.  While I don't understand why this would be the case, in the event you come across this, perhaps try this solution!
+
+---
+
 I will add more to this tutorial at a later date with other functions but this should cover all the basics for working with leaderboards.
 
 [To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.
