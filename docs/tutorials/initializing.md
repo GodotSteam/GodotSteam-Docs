@@ -83,7 +83,7 @@ func _initialize_Steam() -> void:
 		get_tree().quit()
 ````
 
-This code will obviously shut down the game if Steam does not initialize and returns a status of anything except 0.  You may just want to capture the failure data nd continue on, though the Steamworks functionality won't quite work.
+This code will obviously shut down the game if Steam does not initialize and returns a status of anything except 0.  You may just want to capture the failure data and continue on, though the Steamworks functionality won't quite work.
 
 Most times, in development, getting a failure will probably be caused by a missing API file (steam_api.dll, libsteam_api.so, libsteam_api.dylib) or not setting the game's app ID as an environment variable.  Also not having the `steam_appid.txt` file with your game's app ID in it; if you aren't using the environment variable.
 
