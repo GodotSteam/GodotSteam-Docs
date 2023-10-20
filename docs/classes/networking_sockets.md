@@ -429,10 +429,10 @@
 
 ### getListenSocketAddress
 
-!!! function "getListenSocketAddress( ```uint32``` socket )"
-	Returns local IP and port that a listen socket created using [CreateListenSocketIP](#createlistensocketip) is bound to.
+!!! function "getListenSocketAddress( ```uint32``` socket, ```bool``` with_port )"
+	Returns local IP and port that a listen socket created using [CreateListenSocketIP](#createlistensocketip) is bound to. The ```with_port``` argument defaults to true.
 
-	**Returns:** bool
+	**Returns:** string
 
 	**Note:** This is not how you find out your public IP that clients can connect to.
 
