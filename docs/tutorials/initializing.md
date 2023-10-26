@@ -12,7 +12,7 @@ Before we go any further, it is recommended that you enable logging in your proj
 
 Of course, if you have a custom logging system, don't worry about this.
 
-To enable logging in the Godot editor, go to: **Projects > Project Settings > Logging > File Logging** and check **Enable File Logging**. This will start placing logs in your project's user data folder. Where are these, you might ask?  [Check out the official Godot Engine documentation to find the locations.](https://docs.godotengine.org/en/stable/tutorials/io/data_paths.html?highlight=user%20data){ target="_blank" }
+To enable logging in the Godot editor, go to: **Projects > Project Settings > Debug > File Logging** and check **Enable File Logging**. This will start placing logs in your project's user data folder. Where are these, you might ask?  [Check out the official Godot Engine documentation to find the locations.](https://docs.godotengine.org/en/stable/tutorials/io/data_paths.html?highlight=user%20data){ target="_blank" }
 
 ![Enable Logging](../assets/images/tutorial-initializing-logging.png){ loading=lazy }
 
