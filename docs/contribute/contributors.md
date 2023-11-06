@@ -20,6 +20,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Frostings
 	- greenfox1505
 	- guimarca
+	- Handagotes
 	- hhyyrylainen
 	- Hung-Fan Liu
 	- IlyaStuurFedorov
