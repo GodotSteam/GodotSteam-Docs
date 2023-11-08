@@ -25,6 +25,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox: ](http://lmnsqz.games/){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- A Frail Qubit -->
+<figure class="game" markdown>
+[![A Frail Qubit](https://steamcdn-a.akamaihd.net/steam/apps/1697070/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1697070/A_Frail_Qubit/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1697070/A_Frail_Qubit/){ target="_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Abstract Hell -->
 <figure class="game" markdown>
 [![Abstract Hell](https://steamcdn-a.akamaihd.net/steam/apps/961190/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/961190/Abstract_Hell/){ target="_blank" }
@@ -659,6 +666,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1706150/Master_Theft_TVs/){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Meowing Point -->
+<figure class="game" markdown>
+[![Meowing Point](https://steamcdn-a.akamaihd.net/steam/apps/2528710/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2528710/Meowing_Point/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2528710/Meowing_Point/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/meowingpoint){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://meowingpoint.com){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://yofrancisco.itch.io/meowingpoint){ target="_blank" .md-button .md-button--store }
+</figure>
+
 <!-- MMA Simulator -->
 <figure class="game" markdown>
 [![MMA Simulator](https://steamcdn-a.akamaihd.net/steam/apps/913820/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/913820/MMA_Simulator/){ target="_blank" }
@@ -1286,6 +1303,13 @@ vz
 [ :fontawesome-brands-twitter: ](https://twitter.com/WatchYourDuck){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCNwjouAYcqohKF0D6b0Fobg){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/rFMvF53Dbk){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Watermelon Challenge -->
+<figure class="game" markdown>
+[![Watermelon Challenge](https://steamcdn-a.akamaihd.net/steam/apps/2683210/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2683210/Watermelon_Challeng){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2683210/Watermelon_Challenge/){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Wizard's Way Out -->
