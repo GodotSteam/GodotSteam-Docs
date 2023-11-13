@@ -590,6 +590,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-discord: ](https://discord.gg/WuWUaTug3H){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Landnama -->
+<figure class="game" markdown>
+[![Landnama](https://steamcdn-a.akamaihd.net/steam/apps/2339040/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2339040/Landnama/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2339040/Landnama/){ target="_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Lila's Sky Ark -->
 <figure class="game" markdown>
 [![Lila's Sky Ark](https://steamcdn-a.akamaihd.net/steam/apps/1573390/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1573390/Lilas_Sky_Ark/){ target="_blank" }
@@ -1141,6 +1148,14 @@ vz
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/824090/TailQuest_Defense/){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://kivnao.games){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Tamagoneko -->
+<figure class="game" markdown>
+[![TD Worlds](https://steamcdn-a.akamaihd.net/steam/apps/2320570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2320570/Tamagoneko/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2320570/Tamagoneko/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/GDFET_official){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- TD Worlds -->
