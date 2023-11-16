@@ -153,6 +153,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/845940/Brickfest/){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Brotato -->
+<figure class="game" markdown>
+[![Brotato](https://steamcdn-a.akamaihd.net/steam/apps/1942280/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1942280/Brotato/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1942280/Brotato/){ target="_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Burrito Bear -->
 <figure class="game" markdown>
 [![Burrito Bear](https://steamcdn-a.akamaihd.net/steam/apps/1941420/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1941420/Burrito_Bear/){ target="_blank" }
@@ -1064,6 +1071,14 @@ vz
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1819290/Spaceship_Hunters){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- The Spectral Web: Hitodama -->
+<figure class="game" markdown>
+[![The Spectral Web: Hitodama](https://steamcdn-a.akamaihd.net/steam/apps/2547400/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2547400/The_Spectral_Web_Hitodama/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2547400/The_Spectral_Web_Hitodama/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/UhjNrJs){ target="_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Spirit of Shotgun -->
 <figure class="game" markdown>
 [![Spirit of Shotgun](https://steamcdn-a.akamaihd.net/steam/apps/1910230/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1910230/Spirit_of_Shotgun/){ target="_blank" }
@@ -1140,6 +1155,17 @@ vz
 [![SkyDribble](https://steamcdn-a.akamaihd.net/steam/apps/2462380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2462380/SkyDribble/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2462380/SkyDribble/){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Storm's Harvest -->
+<figure class="game" markdown>
+[![Storm's Harvest](https://steamcdn-a.akamaihd.net/steam/apps/2593140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2593140/Storms_Harvest/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2593140/Storms_Harvest/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/GoofyGourds){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://goofy-gourd-studios.itch.io/storms-harvest){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/goofygourdstudios/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/A2xuuTEaUA){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- TailQuest: Defense -->
