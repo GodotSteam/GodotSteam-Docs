@@ -386,6 +386,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/803930/Galactic_Bulwark_Strike/){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Galaxy Drift -->
+<figure class="game" markdown>
+[![Galaxy Drift](https://steamcdn-a.akamaihd.net/steam/apps/1563520/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1563520/Galaxy_Drift/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1563520/Galaxy_Drift/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.galaxy-drift.com/){ target="_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Games For Stream -->
 <figure class="game" markdown>
 [![Games For Stream](https://steamcdn-a.akamaihd.net/steam/apps/2538580/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2538580/Games_for_Stream/){ target="_blank" }
@@ -609,6 +617,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Landnama](https://steamcdn-a.akamaihd.net/steam/apps/2339040/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2339040/Landnama/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2339040/Landnama/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://sonderland.games/){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Lila's Sky Ark -->
@@ -1317,6 +1326,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Unnamed Space Idle](https://steamcdn-a.akamaihd.net/steam/apps/2471100/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2471100/Unnamed_Space_Idle/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2471100/Unnamed_Space_Idle/){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Upload Simulator Silicon -->
+<figure class="game" markdown>
+[![Upload Simulator Silicon](https://steamcdn-a.akamaihd.net/steam/apps/2542800/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2542800/Upload_Simulator_Silicon/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2542800/Upload_Simulator_Silicon/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/enigmadev){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-google-play: ](https://play.google.com/store/apps/details?id=com.enigmadev.uploadsimulator2){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Virtual Cottage -->
