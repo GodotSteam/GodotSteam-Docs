@@ -10,6 +10,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Antokolos
 	- Avencherus
 	- blaze-the-star
+	- cbinners
 	- ClockRate
 	- ConnorBP
 	- craftablescience

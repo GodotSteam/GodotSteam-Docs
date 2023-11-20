@@ -330,7 +330,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <!-- Exostation -->
 <figure class="game" markdown>
-[![Ends](https://steamcdn-a.akamaihd.net/steam/apps/1813120/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1813120/Exostation/){ target="_blank" }
+[![Exostation](https://steamcdn-a.akamaihd.net/steam/apps/1813120/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1813120/Exostation/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1813120/Exostation/){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/OpenhoodGames){ target="_blank" .md-button .md-button--store }
@@ -370,6 +370,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1923990/For_Your_Information/){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCREVI9PBbV_1sXuBUTi5sXA){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Fruit Salad -->
+<figure class="game" markdown>
+[![Fruit Salad](https://steamcdn-a.akamaihd.net/steam/apps/1848520/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1848520/Fruit_Salad/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1848520/Fruit_Salad/){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Galactic Bulwark Strike -->
@@ -863,7 +870,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](hhttps://www.youtube.com/channel/UCLuszgb_VKRhLCB_0jk0aoA){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://drug-tycoon.com/){ target="_blank" .md-button .md-button--store }
 </figure>
-vz
+
 <!-- PsychWorld -->
 <figure class="game" markdown>
 [![PsychWorld](https://steamcdn-a.akamaihd.net/steam/apps/2304350/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2304350/PsychWorld/){ target="_blank" }
@@ -1048,20 +1055,20 @@ vz
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2330090/SKIP/){ target="_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Snowyland -->
+<figure class="game" markdown>
+[![Snowyland](https://steamcdn-a.akamaihd.net/steam/apps/1731730/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1731730/Snowyland/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1731730/Snowyland/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/publisher/donniegamestudio){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/donniegamestudio){ target="_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Somnipathy -->
 <figure class="game" markdown>
 [![Somnipathy](https://steamcdn-a.akamaihd.net/steam/apps/2069260/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2069260/Somnipathy/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2069260/Somnipathy/){ target="_blank" .md-button .md-button--store }
-</figure>
-
-<!-- Snowyland -->
-<figure class="game" markdown>
-[![Spaceship Hunters](https://steamcdn-a.akamaihd.net/steam/apps/1731730/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1731730/Snowyland/){ target="_blank" }
-
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1731730/Snowyland/){ target="_blank" .md-button .md-button--store }
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/publisher/donniegamestudio){ target="_blank" .md-button .md-button--store }
-[ :fontawesome-brands-youtube: ](https://www.youtube.com/donniegamestudio){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Spaceship Hunters -->
@@ -1178,7 +1185,7 @@ vz
 
 <!-- Tamagoneko -->
 <figure class="game" markdown>
-[![TD Worlds](https://steamcdn-a.akamaihd.net/steam/apps/2320570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2320570/Tamagoneko/){ target="_blank" }
+[![Tamagoneko](https://steamcdn-a.akamaihd.net/steam/apps/2320570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2320570/Tamagoneko/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2320570/Tamagoneko/){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/GDFET_official){ target="_blank" .md-button .md-button--store }
@@ -1227,7 +1234,7 @@ vz
 
 <!-- Touhou: Gensokyo Survivors -->
 <figure class="game" markdown>
-[![TETRAGUN](https://steamcdn-a.akamaihd.net/steam/apps/2349830/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2349830/Touhou_Gensokyo_Survivors/){ target="_blank" }
+[![Touhou: Gensokyo Survivors](https://steamcdn-a.akamaihd.net/steam/apps/2349830/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2349830/Touhou_Gensokyo_Survivors/){ target="_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2349830/Touhou_Gensokyo_Survivors/){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/Xeloph){ target="_blank" .md-button .md-button--store }
@@ -1250,6 +1257,15 @@ vz
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2450400/Trash_of_the_Titans){ target="_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://trash-of-the-titans.manakeep.com/){ target="_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Trolley Delayma -->
+<figure class="game" markdown>
+[![Trolley Delayma](https://steamcdn-a.akamaihd.net/steam/apps/2372500/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2372500/Trolley_Delayma/){ target="_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2372500/Trolley_Delayma/){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://albertnez.itch.io/trolley-delayma){ target="_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/albertnez){ target="_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Turing Complete -->
