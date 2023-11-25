@@ -8,6 +8,7 @@ Here is a list of all the great contributors, both those who have provided code 
 !!! contributors1 "Code Contributors"
 	- AlexHoratio
 	- Antokolos
+	- ArchiRocksTech
 	- Avencherus
 	- blaze-the-star
 	- cbinners
