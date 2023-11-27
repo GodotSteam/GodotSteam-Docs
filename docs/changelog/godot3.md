@@ -4,6 +4,18 @@
 
 ---
 
+**Version 3.22 Changes**
+
+- Added: two Music class callbacks
+- Changed: `generateItems`, `exchangeItems`, `getItemsByID`, and `startPurchase` all list-based arguments are now PoolIntArrays
+- Changed: `getItemsByID` now takes one argument, counts the elements in the passed array instead
+- Changed: `getItemsWithPrices` no longer requires any arguments passed to it
+- Changed: in-editor docs have been updated
+- Fixed: `getResultItems` now returns all item data
+- Fixed: missing DEFVAL for `steamInitEx`
+- Fixed: Joy Con name in `getInputTypeForHandle`
+- Removed: `getNumItemsWithPrices` as it was unnecessary
+
 **Version 3.21.3 Changes**
 
 - Fixed: `requestEquippedProfileItems` was missing method bind, thanks to _BOTLANNER_

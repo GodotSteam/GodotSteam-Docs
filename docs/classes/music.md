@@ -4,6 +4,10 @@ Functions to control music playback in the Steam client.
 
 This gives games the opportunity to do things like pause the music or lower the volume when an important cut scene is shown, and then start playing again afterwards.
 
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+
+**Note**: These functions only work with soundtracks you purchased or own on Steam.
+
 ---
 
 ## Functions
@@ -100,6 +104,29 @@ This gives games the opportunity to do things like pause the music or lower the 
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#SetVolume){ .md-button .md-button--store target="_blank" }
+
+---
+
+## Signals
+
+These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+
+---
+
+### music_playback_status_has_changed
+
+!!! function "music_playback_status_has_changed"
+	No notes about this in the Steam docs, but we can assume it just updates us about the plaback status.
+
+	**Returns:** nothing
+
+### music_volume_has_changed
+
+!!! function "music_volume_has_changed"
+	No notes about this in the Steam docs, but we can assume it just updates us about the volume changes.
+
+
+	**Returns:** new_volume (float)
 
 ---
 

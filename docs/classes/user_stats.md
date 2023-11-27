@@ -2,6 +2,8 @@
 
 Provides functions for accessing and submitting stats, achievements, and leaderboards.
 
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+
 ---
 
 ## Functions

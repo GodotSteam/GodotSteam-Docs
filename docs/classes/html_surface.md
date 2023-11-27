@@ -4,7 +4,9 @@ Interface for rendering and interacting with HTML pages.
 
 You can use this interface to render and display HTML pages directly inside your game or application. You must call [htmlInit](#htmlinit) prior to using this interface, and [htmlShutdown](#htmlshutdown) when you're done using it.
 
-See [Steam HTML Surface](https://partner.steamgames.com/doc/features/html_surface){ target="_blank" } for more information.
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+
+See [Steam HTML Surface](https://partner.steamgames.com/doc/features/html_surface){ target="\_blank" } for more information.
 
 ---
 
@@ -17,7 +19,7 @@ The **this_handle** argument is optional. If you do not pass one, GodotSteam wil
 ### addHeader
 
 !!! function "addHeader( ```string``` key, ```string``` value, ```uint32``` this_handle )"
-	Add a header to any HTTP requests from this browser. A full list of standard request fields are available here on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields){ target="_blank" }.
+	Add a header to any HTTP requests from this browser. A full list of standard request fields are available here on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields){ target="\_blank" }.
 
 	If no handle is passed, GodotSteam will use the internal one.
 
@@ -275,7 +277,7 @@ The **this_handle** argument is optional. If you do not pass one, GodotSteam wil
 ### setCookie
 
 !!! function "setCookie( ```string``` hostname, ```string``` key, ```string``` value, ```string``` path, ```uint32``` expires, ```bool``` secure, ```bool``` http_only )"
-	Set a webcookie for a specific hostname. You can read more about the specifics of setting cookies here on [Wikipedia](https://en.wikipedia.org/wiki/HTTP_cookie#Implementation){ target="_blank" }.
+	Set a webcookie for a specific hostname. You can read more about the specifics of setting cookies here on [Wikipedia](https://en.wikipedia.org/wiki/HTTP_cookie#Implementation){ target="\_blank" }.
 
 	**Returns:** void
 

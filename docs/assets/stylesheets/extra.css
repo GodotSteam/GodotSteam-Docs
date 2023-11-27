@@ -43,27 +43,10 @@ html {
 	--md-shadow-z3:0 0.2rem 0.5rem rgba(0,0,0,.2),0 0 0.05rem rgba(0,0,0,.35);
 }
 .md-typeset .tabbed-set>input:first-child:checked~.tabbed-labels>:first-child,
-  .md-typeset .tabbed-set>input:nth-child(10):checked~.tabbed-labels>:nth-child(10),
-  .md-typeset .tabbed-set>input:nth-child(11):checked~.tabbed-labels>:nth-child(11),
-  .md-typeset .tabbed-set>input:nth-child(12):checked~.tabbed-labels>:nth-child(12),
-  .md-typeset .tabbed-set>input:nth-child(13):checked~.tabbed-labels>:nth-child(13),
-  .md-typeset .tabbed-set>input:nth-child(14):checked~.tabbed-labels>:nth-child(14),
-  .md-typeset .tabbed-set>input:nth-child(15):checked~.tabbed-labels>:nth-child(15),
-  .md-typeset .tabbed-set>input:nth-child(16):checked~.tabbed-labels>:nth-child(16),
-  .md-typeset .tabbed-set>input:nth-child(17):checked~.tabbed-labels>:nth-child(17),
-  .md-typeset .tabbed-set>input:nth-child(18):checked~.tabbed-labels>:nth-child(18),
-  .md-typeset .tabbed-set>input:nth-child(19):checked~.tabbed-labels>:nth-child(19),
-  .md-typeset .tabbed-set>input:nth-child(2):checked~.tabbed-labels>:nth-child(2),
-  .md-typeset .tabbed-set>input:nth-child(20):checked~.tabbed-labels>:nth-child(20),
-  .md-typeset .tabbed-set>input:nth-child(3):checked~.tabbed-labels>:nth-child(3),
-  .md-typeset .tabbed-set>input:nth-child(4):checked~.tabbed-labels>:nth-child(4),
-  .md-typeset .tabbed-set>input:nth-child(5):checked~.tabbed-labels>:nth-child(5),
-  .md-typeset .tabbed-set>input:nth-child(6):checked~.tabbed-labels>:nth-child(6),
-  .md-typeset .tabbed-set>input:nth-child(7):checked~.tabbed-labels>:nth-child(7),
-  .md-typeset .tabbed-set>input:nth-child(8):checked~.tabbed-labels>:nth-child(8),
-  .md-typeset .tabbed-set>input:nth-child(9):checked~.tabbed-labels>:nth-child(9) {
-    color:#478CBF;
-  }
+.md-typeset .tabbed-set>input:nth-child(2):checked~.tabbed-labels>:nth-child(2) {
+	background-color:#478CBF;
+	color:#ffffff;
+}
 thead {
 	border-bottom: 1px solid #eee !important;
 }
@@ -97,6 +80,7 @@ pre {
 }
 .md-typeset code {
 	background-color: #282828;
+  padding: .295em .295em;
 }
 .md-typeset pre>code {
 	scrollbar-color:var(--md-default-fg-color--lighter) transparent;
@@ -914,28 +898,34 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
  -webkit-mask-image:var(--md-tasklist-icon--checked);
  mask-image:var(--md-tasklist-icon--checked)
 }
-.md-typeset .tabbed-labels>label {
- border-bottom:.1rem solid #ffffff;
- border-radius:.1rem .1rem 0 0;
- color:#ffffff;
- cursor:pointer;
- flex-shrink:0;
- font-size:.64rem;
- font-weight:700;
- padding:.78125em 1.25em .625em;
- scroll-margin-inline-start:1rem;
- transition:background-color .25s,color .25s;
- white-space:nowrap;
- width:auto
+.md-typeset .tabbed-labels > label {
+	background-color: #272727;
+	border-bottom:.1rem solid #478CBF;
+	border-radius: 0;
+	color:#ffffff;
+	cursor:pointer;
+	flex-shrink:0;
+	font-size:.64rem;
+	font-weight:700;
+	margin-right:5px;
+	padding:.78125em 1.25em .625em;
+	text-align:center;
+	transition:background-color .25s,color .25s;
+	white-space:nowrap;
+	min-width:10em;
 }
 .md-typeset .tabbed-labels::before {
     background: #478CBF !important;
 }
-.md-typeset .tabbed-labels>label:hover {
-	color: #478CBF;
+.md-typeset .tabbed-labels > label:focus {
+	background-color:#478CBF;
+}
+.md-typeset .tabbed-labels > label:hover {
+	background-color:#478CBF;
+	color:#ffffff;
 }
 .md-typeset .tabbed-labels {
-  box-shadow:0 -.05rem #478CBF inset !important;
+  box-shadow:0 -.1rem #478CBF inset !important;
 }
 div.branch-grid {
   display: flex;
@@ -1136,4 +1126,14 @@ a span.twemoji {
 }
 figure.game a span.twemoji {
 	margin-right: 0px !important;
+}
+.md-clipboard {
+	color:#ffffff;
+}
+.md-typeset .tabbed-control {
+	display:none;
+}
+.md-typeset table:not([class]) tbody tr:hover {
+  background-color:#478CBF;
+  box-shadow:0 .05rem 0 var(--md-default-bg-color) inset
 }

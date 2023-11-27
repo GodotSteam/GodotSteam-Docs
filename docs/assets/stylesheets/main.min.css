@@ -888,7 +888,7 @@ body {
 }
 .md-clipboard {
   border-radius:.1rem;
-  color:var(--md-default-fg-color--lightest);
+  color:#ffffff;
   cursor:pointer;
   height:1.5em;
   outline-color:var(--md-accent-fg-color);
@@ -5607,7 +5607,7 @@ td) {
 }
 .md-typeset .tabbed-labels {
   -ms-overflow-style:none;
-  box-shadow:0 -.05rem #478CBF inset;
+  box-shadow:0 -.05rem var(--md-default-fg-color--lightest) inset;
   display:flex;
   max-width:100%;
   overflow:auto;

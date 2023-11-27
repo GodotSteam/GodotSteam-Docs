@@ -1,5 +1,7 @@
 # App Lists
 
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+
 **Note:** This is a restricted interface that can only be used by previously approved apps. It is not listed in the official Steamworks SDK documentation, either. Contact your Steam Account Manager if you believe you need access to this API.
 
 ---

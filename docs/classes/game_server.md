@@ -1,5 +1,7 @@
 # Game Server
 
+These are only available in the [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+
 ---
 
 ## Functions
@@ -21,7 +23,7 @@
 ### beginAuthSession
 
 !!! function "beginAuthSession( ```int``` auth_ticket, ```uint64_t``` steam_id )"
-	Authenticate the ticket from the entity Steam ID to be sure it is valid and isn't reused. The ticket is created on the entity with [getAuthSessionTicket](#getauthsessionticket) and then needs to be provided over the network for the other end to validate. This registers for [validate_auth_ticket_response](#validate_auth_ticket_response) callbacks if the entity goes offline or cancels the ticket. [See EAuthSessionResponse for more information](https://partner.steamgames.com/doc/api/steam_api#EAuthSessionResponse){ target="_blank" }. When the multiplayer session terminates you must call [endAuthSession](#endauthsession).
+	Authenticate the ticket from the entity Steam ID to be sure it is valid and isn't reused. The ticket is created on the entity with [getAuthSessionTicket](#getauthsessionticket) and then needs to be provided over the network for the other end to validate. This registers for [validate_auth_ticket_response](#validate_auth_ticket_response) callbacks if the entity goes offline or cancels the ticket. [See EAuthSessionResponse for more information](https://partner.steamgames.com/doc/api/steam_api#EAuthSessionResponse){ target="\_blank" }. When the multiplayer session terminates you must call [endAuthSession](#endauthsession).
 
 	**Returns:** int
  
@@ -30,7 +32,7 @@
 
 ### cancelServerAuthTicket
 
-!!! function "cancelServerAuthTicket( ```uint32``` auth_ticket )"
+!!! function "cancelAuthTicket( ```uint32``` auth_ticket )"
 	Cancel auth ticket from [getAuthSessionTicket](#getauthsessionticket); called when no longer playing game with the entity you gave the ticket to.
 
 	**Returns:** void
@@ -145,24 +147,6 @@
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#HandleIncomingPacket){ .md-button .md-button--store target="_blank" }
-
-### initGameServer
-
-!!! function "initGameServer( ```dictionary``` connect_data, ```uint32_t``` app_id, ```string``` version_string )"
-	This is called by [serverInit](#serverinit) and will usually not need to be called directly.
-
-	The **connect_data** dictionary should contain the following keys:
-
-	* ip (string)
-	* game_port (uint16)
-	* query_port (uint16)
-	
-	**Returns:** bool
-
-	**Note:** The following, if set, must be set before calling [logOn](#logon); they may not be changed after.
-
-    ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#InitGameServer){ .md-button .md-button--store target="_blank" }
 
 ### loggedOn
 
@@ -298,16 +282,6 @@
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetGameTags){ .md-button .md-button--store target="_blank" }
-
-### setHeartbeatInterval
-
-!!! function "setHeartbeatInterval( ```int``` interval )"
-	Changes how often heartbeats are sent to the Steam master servers. You usually don't need to use this.
-
-	**Returns:** void
-
-    ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetHeartbeatInterval){ .md-button .md-button--store target="_blank" }
 
 ### setKeyValue
 

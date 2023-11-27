@@ -1,5 +1,7 @@
 # Game Search
 
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+
 ---
 
 ## Functions

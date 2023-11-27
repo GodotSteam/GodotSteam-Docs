@@ -1,8 +1,10 @@
 # Video
 
 Provides functions to interface with the Steam video and broadcasting platforms.
+
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
   
-See [Steam Video](https://partner.steamgames.com/doc/features/streaming_video){ target="_blank" } for more information.
+See [Steam Video](https://partner.steamgames.com/doc/features/streaming_video){ target="\_blank" } for more information.
 
 ---
 

@@ -2,6 +2,10 @@
 
 Miscellaneous networking utilities for checking the local networking environment and estimating pings.
 
+These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).
+
+These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+
 ---
 
 ## Functions
@@ -87,7 +91,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 !!! function "getConfigValueInfo( ```int``` config_value )"
 	Returns info about a configuration value.
-	For values to pass to config_value, [check the SDK's listing.](https://partner.steamgames.com/doc/api/steamnetworkingtypes#ESteamNetworkingConfigValue){ target="_blank" }
+	For values to pass to config_value, [check the SDK's listing.](https://partner.steamgames.com/doc/api/steamnetworkingtypes#ESteamNetworkingConfigValue){ target="\_blank" }
 	next_value can be used to iterate through all of the known configuration values.
 
 	**Returns:** dictionary

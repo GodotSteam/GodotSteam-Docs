@@ -14,6 +14,7 @@ nav:
     - How-To Server: 'howto/server.md'
   - Classes:
     - Main: 'classes/main.md'
+    - Main Server: 'classes/main_server.md'
     - App Lists: 'classes/app_lists.md'
     - Apps: 'classes/apps.md'
     - Friends: 'classes/friends.md'
@@ -62,6 +63,7 @@ nav:
     - Remove Steam: 'tutorials/remove_steam.md'
     - Rich Presence: 'tutorials/rich_presence.md'
     - Stats and Achievements: 'tutorials/stats_achievements.md'
+    - Voice: 'tutorials/voice.md'
     - Workshop: 'tutorials/workshop.md'
   - Games Using GodotSteam: 'games/games.md'
   - To-Do: 'https://github.com/orgs/CoaguCo-Industries/projects/2'

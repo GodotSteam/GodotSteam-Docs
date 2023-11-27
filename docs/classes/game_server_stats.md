@@ -2,6 +2,8 @@
 
 Functions to allow game servers to set stats and achievements on players.
 
+These are only available in the [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+
 ---
 
 ## Functions

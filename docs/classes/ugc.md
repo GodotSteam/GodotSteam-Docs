@@ -1,5 +1,8 @@
 # UGC
-Functions to create, consume, and interact with the [Steam Workshop](https://partner.steamgames.com/doc/features/workshop){ target="_blank" }.
+
+Functions to create, consume, and interact with the [Steam Workshop](https://partner.steamgames.com/doc/features/workshop){ target="\_blank" }.
+
+These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
 
 ---
 

@@ -1,8 +1,10 @@
 # Matchmaking Servers
 
 Functions which provide access to the game server browser.
-  
-See [Game Servers](https://partner.steamgames.com/doc/features/multiplayer/game_servers){ target="_blank" } for more information.
+
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+
+See [Game Servers](https://partner.steamgames.com/doc/features/multiplayer/game_servers){ target="\_blank" } for more information.
 
 ---
 
@@ -234,7 +236,7 @@ See [Game Servers](https://partner.steamgames.com/doc/features/multiplayer/game
 ### serverRules
 
 !!! function "serverRules( ```string``` ip, ```uint16``` port )"
-	Queries an individual game server directly via IP/Port to request the list of rules that the server is running. [(See setKeyValue to set the rules on the server side.)](https://partner.steamgames.com/doc/api/ISteamGameServer#SetKeyValue){ target="_blank" }
+	Queries an individual game server directly via IP/Port to request the list of rules that the server is running. [(See setKeyValue to set the rules on the server side.)](https://partner.steamgames.com/doc/api/ISteamGameServer#SetKeyValue){ target="\_blank" }
 	
 	You must inherit from the ISteamMatchmakingRulesResponse object to receive this callback.
 	

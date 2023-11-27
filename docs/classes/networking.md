@@ -1,8 +1,10 @@
 # Networking
 
 Networking functions for making connections and sending data between clients, traversing NATs when possible.
+
+These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
   
-**NOTE**: This API is deprecated and may be removed in a future Steamworks SDK release. Valve suggest using [Networking Sockets](networking_sockets.md) or [Networking Messages](networking_messages.md) instead. See the [Steam Networking](https://partner.steamgames.com/doc/features/multiplayer/networking){ target="_blank" } overview for more information.
+**NOTE**: This API is deprecated and may be removed in a future Steamworks SDK release. Valve suggest using [Networking Sockets](networking_sockets.md) or [Networking Messages](networking_messages.md) instead. See the [Steam Networking](https://partner.steamgames.com/doc/features/multiplayer/networking){ target="\_blank" } overview for more information.
 
 ---
 

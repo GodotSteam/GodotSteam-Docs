@@ -1,8 +1,10 @@
 # Inventory
 
 Steam Inventory query and manipulation API.
-  
-See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inventory){ target="_blank" } for more information.
+
+These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+
+See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inventory){ target="\_blank" } for more information.
 
 ---
 
@@ -101,7 +103,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 
 ### exchangeItems
 
-!!! function "exchangeItems( ```PoolIntArray``` output_items, ```uint32``` output_quantity, ```uint64_t``` input_items, ```uint32``` input_quantity )"
+!!! function "exchangeItems( ```PoolIntArray``` output_items, ```PoolIntArray``` output_quantity, ```PoolIntArray``` input_items, ```PoolIntArray``` input_quantity )"
 	Grant one item in exchange for a set of other items.
 
 	This can be used to implement crafting recipes or transmutations, or items which unpack themselves into other items (e.g., a chest).
@@ -123,7 +125,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 
 ### generateItems
 
-!!! function "generateItems( ```PoolIntArray``` items, ```uint32``` quantity )"
+!!! function "generateItems( ```PoolIntArray``` items, ```PoolIntArray``` quantity )"
 	Grants specific items to the current user, for developers only.
 
 	This API is only intended for prototyping - it is only usable by Steam accounts that belong to the publisher group for your game.
@@ -175,7 +177,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 
 ### getItemsByID
 
-!!! function "getItemsByID( ```uint64_t``` id_array, ```uint32``` count )"
+!!! function "getItemsByID( ```PoolIntArray``` id_array )"
 	Gets the state of a subset of the current user's inventory.
 
 	The subset is specified by an array of item instance IDs.
@@ -203,8 +205,8 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 
 ### getItemsWithPrices
 
-!!! function "getItemsWithPrices( ```uint32``` length )"
-	After a successful call to [requestPrices](#requestprices), you can call this method to get all the pricing for applicable item definitions. Use the result of [getNumItemsWithPrices](#getitemswithprices) as the the size of the arrays that you pass in.
+!!! function "getItemsWithPrices()"
+	After a successful call to [requestPrices](#requestprices), you can call this method to get all the pricing for applicable item definitions.
 
 	**Returns:** array
 
@@ -220,16 +222,6 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemsWithPrices){ .md-button .md-button--store target="_blank" }
-
-### getNumItemsWithPrices
-
-!!! function "getNumItemsWithPrices()"
-	After a successful call to [requestPrices](#requestprices), this will return the number of item definitions with valid pricing.
-
-	**Returns:** uint32
-
-    ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetNumItemsWithPrices){ .md-button .md-button--store target="_blank" }
 
 ### getResultItemProperty
 
@@ -255,8 +247,15 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 	**Returns:** array
 
 	Containing a list of:
+	
+	* item_info (dictionary)
 
-	* item_id (uint64_t)
+	Contains the following keys:
+
+	* item_id (int)
+	* item_definition (int)
+	* flags (int)
+	* quantity (int)
 
 	**Note:** If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally stored ID.
 
@@ -340,7 +339,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 ### requestPrices
 
 !!! function "requestPrices()"
-	Request prices for all item definitions that can be purchased in the user's local currency. A [inventory_request_prices_result](#inventory_request_prices_result) call result will be returned with the user's local currency code. After that, you can call [getNumItemsWithPrices](#getnumitemswithprices) and [getItemsWithPrices](#getitemswithprices) to get prices for all the known item definitions, or [getItemPrice](#getitemprice) for a specific item definition.
+	Request prices for all item definitions that can be purchased in the user's local currency. A [inventory_request_prices_result](#inventory_request_prices_result) call result will be returned with the user's local currency code. After that, you can call [getItemsWithPrices](#getitemswithprices) to get prices for all the known item definitions, or [getItemPrice](#getitemprice) for a specific item definition.
 
 	Triggers a [inventory_request_prices_result](#inventory_request_prices_result) callback.
 
@@ -367,7 +366,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 
 ### startPurchase
 
-!!! function "startPurchase( ```PoolIntArray``` items, ```uint32``` quantity )"
+!!! function "startPurchase( ```PoolIntArray``` items, ```PoolIntArray``` quantity )"
 	Starts the purchase process for the user, given a "shopping cart" of item definitions that the user would like to buy. The user will be prompted in the Steam Overlay to complete the purchase in their local currency, funding their Steam Wallet if necessary, etc.
 
 	If the purchase process was started successfully, then **order_id** and **transaction_id** will be valid in the [inventory_start_purchase_result](#inventory_start_purchase_result) call result.
@@ -446,7 +445,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 ### removeProperty
 
 !!! function "removeProperty( ```uint64_t``` item_id, ```string``` name, ```int32``` this_inventory_update_handle )"
-	Removes a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="_blank" } for the given item.
+	Removes a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item.
 
 	**Returns:** bool
 
@@ -458,7 +457,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 ### setPropertyString
 
 !!! function "setPropertyString( ```uint64_t``` item_id, ```string``` name, ```string``` value, ```int32``` this_inventory_update_handle )"
-	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="_blank" } for the given item. Supported value types are strings.
+	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item. Supported value types are strings.
 
 	**Returns:** bool
 
@@ -470,7 +469,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 ### setPropertyBool
 
 !!! function "setPropertyBool( ```uint64_t``` item_id, ```string``` name, ```bool``` value, ```int32``` this_inventory_update_handle )"
-	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="_blank" } for the given item. Supported value types are boolean.
+	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item. Supported value types are boolean.
 
 	**Returns:** bool
 
@@ -482,7 +481,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 ### setPropertyInt
 
 !!! function "setPropertyInt( ```uint64_t``` item_id, ```string``` name, ```uint64_t``` value, ```int32``` this_inventory_update_handle )"
-	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="_blank" } for the given item. Supported value types are 64 bit integers.
+	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item. Supported value types are 64 bit integers.
 
 	**Returns:** bool
 
@@ -494,7 +493,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
 ### setPropertyFloat
 
 !!! function "setPropertyFloat( ```uint64_t``` item_id, ```string``` name, ```float``` value, ```int32``` this_inventory_update_handle )"
-	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="_blank" } for the given item. Supported value types are 32 bit floats.
+	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item. Supported value types are 32 bit floats.
 
 	**Returns:** bool
 

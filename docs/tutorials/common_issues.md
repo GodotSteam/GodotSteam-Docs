@@ -12,7 +12,7 @@ If you aren't using the environment variables to set what game you're running, t
 
 ## Error 79 When Initializing
 
-This can have quite a few causes but a common one is not having your depots or packages set up correctly. Check out [the packages page in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/store/application/packages){ target="_blank" } for more on how to do it.
+This can have quite a few causes but a common one is not having your depots or packages set up correctly. Check out [the packages page in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/store/application/packages){ target="\_blank" } for more on how to do it.
 
 ---
 
@@ -30,13 +30,13 @@ Some people get `Parse Error: The identifier Steam isn't declared in the current
 
 Sometimes your brand new achievements don't seem to be triggering. One cause can be that you didn't publish them in the Steamworks back-end. Once they are added into Steam's system, you'll need to publish the changes to be able to work with them.
 
-Some users have also found that getting or setting achievements doesn't work at all until the player's current stats have been retrieved. GodotSteam should do this by default when you initialize Steamworks; unless, that is, you passed `false` to either `steamInit` or `steamInitEx`.  If so, just call `requestCurrentStats` or `requestUserStats`.
+Some users have also found that getting or setting achievements doesn't work at all until the player's current stats have been retrieved. GodotSteam should do this by default when you initialize Steamworks; unless, that is, you passed `false` to either `steamInit()` or `steamInitEx()`.  If so, just call `requestCurrentStats()` or `requestUserStats()`.
 
 ---
 
 ## Leaderboard Names
 
-I haven't actually confirmed this yet, but it seems that a dash in the leaderboard name will cause it to fail. For example, **this-leaderboard** will probably not work but **this_leaderboard** will.
+I haven't actually confirmed this yet, but it seems that a dash in the leaderboard name will cause it to fail. For example, ***this-leaderboard*** will probably not work but ***this_leaderboard*** will.
 
 Also remember that leaderboards need to be published to be functional.
 

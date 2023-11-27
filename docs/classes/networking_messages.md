@@ -1,6 +1,10 @@
 # Networking Messages
 
-Networking API intended to make it easy to port non-connection-oriented code to take advantage of P2P connectivity and [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay){ target="_blank" }.
+Networking API intended to make it easy to port non-connection-oriented code to take advantage of P2P connectivity and [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay){ target="\_blank" }.
+
+These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).
+
+These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
 
 ---
 

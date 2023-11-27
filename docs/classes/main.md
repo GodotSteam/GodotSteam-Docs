@@ -1,5 +1,7 @@
 # Main
 
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+
 ---
 
 ## Functions
@@ -72,6 +74,13 @@
     * 1 / "Failed (generic)"
     * 2 / "Cannot connect to Steam, client probably isn't running"
     * 3 / "Steam client appears to be out of date"
+
+### steamShutdown
+
+!!! function "steamShutdown"
+    Shuts down the Steamworks API, releases pointers and frees memory.
+
+    **Returns:** nothing
 
 ---
 

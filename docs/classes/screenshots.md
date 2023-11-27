@@ -1,8 +1,10 @@
 # Screenshots
 
 Functions for adding screenshots to the user's screenshot library.
+
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
   
-See [Steam Screenshots](https://partner.steamgames.com/doc/features/screenshots){ target="_blank" } for more information.
+See [Steam Screenshots](https://partner.steamgames.com/doc/features/screenshots){ target="\_blank" } for more information.
 
 ---
 

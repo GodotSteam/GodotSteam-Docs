@@ -2,14 +2,16 @@
 
 This quick tutorial will cover to how get achievement icons from Steam's servers. It was made because there are some extra steps folks need to use to render the images and it may not be very clear otherwise.
 
-The relevant GodotSteam classes and functions for this tutorial are:
+<div class="start-grid" markdown>
 
-  * [User Stats class](../classes/user_stats.md)
-    * [getAchievementIcon()](../classes/user_stats.md#getachievementicon)
-    * [requestCurrentStats()](../classes/user_stats.md#requestcurrentstats)
-  * [Utils class](../classes/utils.md)
-    * [getImageRGBA()](../classes/utils.md#getimagergba)
-    * [getImageSize()](../classes/utils.md#getimagesize)
+!!! guide "Relevant GodotSteam classes and functions"
+	* [User Stats class](../classes/user_stats.md)
+		* [getAchievementIcon()](../classes/user_stats.md#getachievementicon)
+		* [requestCurrentStats()](../classes/user_stats.md#requestcurrentstats)
+	* [Utils class](../classes/utils.md)
+		* [getImageRGBA()](../classes/utils.md#getimagergba)
+		* [getImageSize()](../classes/utils.md#getimagesize)
+</div>
 
 ---
 
@@ -22,14 +24,14 @@ Before you can get achievement icons you first need to have retrieved the user's
 First you will need to request the icon handle by using the achievement's API name you set in the Steamworks back-end:
 
 ````
-var HANDLE: int = Steam.getAchievementIcon("ACHIEVEMENT_NAME")
+var icon_handle: int = Steam.getAchievementIcon("ACHIEVEMENT_NAME")
 ````
 
 This handle is an ID used to get information about the image's size and a byte array (buffer) of the pixel data:
 
 ````
-var SIZE: Dictionary = Steam.getImageSize(HANDLE)
-var BUFFER: Dictionary = Steam.getImageRGBA(HANDLE)
+var icon_size: Dictionary = Steam.getImageSize(icon_handle)
+var icon_buffer: Dictionary = Steam.getImageRGBA(icon_handle)
 ````
 
 Note that the `getImageRGBA()` function can be somewhat expensive so it is recommended to only call this once per image handle and cache the result if you will need to access the image data multiple times.
@@ -42,36 +44,36 @@ This buffer contains the actual image data for our icon. However, as it is simpl
 
 === "Godot 2.x, 3.x"
 	````
-	var ICON: Image = Image.new()
-	ICON.create_from_data(SIZE.width, SIZE.height, false, Image.FORMAT_RGBA8, BUFFER)
+	var icon_image: Image = Image.new()
+	icon_image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer)
 	````
 === "Godot 4.x"
 	````
-	var ICON: Image = Image.create_from_data(SIZE.width, SIZE.height, false, Image.FORMAT_RGBA8, BUFFER)
+	var icon_image: Image = Image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer)
 	````
 
 The size of the image is determined by the images you uploaded when configuring achievements on the Steamworks back-end. Valve recommends larger (256x256) images. If you want to display the image at a different size, say 64x64, you can optionally resize it now. Check the [Godot documentation](https://docs.godotengine.org/en/stable/classes/class_image.html#class-image-method-resize) on `Image.resize()` for which interpolation mode best suits your needs.
 
 ````
-ICON.resize(64, 64, Image.INTERPOLATE_LANCZOS)
+icon_image.resize(64, 64, Image.INTERPOLATE_LANCZOS)
 ````
 
 Now that all the pixels are set in the right places, we can create the actual texture which will be displayed:
 
 === "Godot 2.x, 3.x"
 	````
-	var ICON_TEXTURE: ImageTexture = ImageTexture.new()
-	ICON_TEXTURE.create_from_image(ICON)
+	var icon_texture: ImageTexture = ImageTexture.new()
+	icon_texture.create_from_image(icon_image)
 	````
 === "Godot 4.x"
 	````
-	var ICON_TEXTURE: ImageTexture = ImageTexture.create_from_image(ICON)
+	var icon_texture: ImageTexture = ImageTexture.create_from_image(icon_image)
 	````
 
-Finally we can display the icon. Using the previous `ICON_TEXTURE`, we can place this icon on our waiting Sprite or TextureRect, etc.
+Finally we can display the icon. Using the previous `icon_texture`, we can place this icon on our waiting Sprite or TextureRect, etc.
 
 ````
-$Sprite.texture = ICON_TEXTURE
+$Sprite.texture = icon_texture
 ````
 
 ---
@@ -83,44 +85,44 @@ Our complete example should look something like this:
 === "Godot 2.x, 3.x"
 	````
 	# Get the image's handle
-	var HANDLE: int = Steam.getAchievementIcon("ACH_WIN_ONE_GAME")
+	var icon_handle: int = Steam.getAchievementIcon("ACH_WIN_ONE_GAME")
 
 	# Get the image data
-	var SIZE: Dictionary = Steam.getImageSize(HANDLE)
-	var BUFFER: Dictionary = Steam.getImageRGBA(HANDLE)
+	var icon_size: Dictionary = Steam.getImageSize(icon_handle)
+	var icon_buffer: Dictionary = Steam.getImageRGBA(icon_handle)
 
 	# Create the image for loading
-	var ICON: Image = Image.new()
-	ICON.create_from_data(SIZE.width, SIZE.height, false, Image.FORMAT_RGBA8, BUFFER)
+	var icon_image: Image = Image.new()
+	icon_image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer)
 
 	# Create a texture from the image
-	var ICON_TEXTURE: ImageTexture = ImageTexture.new()
-	ICON_TEXTURE.create_from_image(ICON)
+	var icon_texture: ImageTexture = ImageTexture.new()
+	icon_texture.create_from_image(icon_image)
 
 	# Display the texture on a sprite node
-	$Sprite.texture = ICON_TEXTURE
+	$Sprite.texture = icon_texture
 	````
 === "Godot 4.x"
 	````
 	# Get the image's handle
-	var HANDLE: int = Steam.getAchievementIcon("ACH_WIN_ONE_GAME")
+	var icon_handle: int = Steam.getAchievementIcon("ACH_WIN_ONE_GAME")
 
 	# Get the image data
-	var SIZE: Dictionary = Steam.getImageSize(HANDLE)
-	var BUFFER: Dictionary = Steam.getImageRGBA(HANDLE)
+	var icon_size: Dictionary = Steam.getImageSize(icon_handle)
+	var icon_buffer: Dictionary = Steam.getImageRGBA(icon_handle)
 
 	# Create the image for loading
-	var ICON: Image = Image.create_from_data(SIZE.width, SIZE.height, false, Image.FORMAT_RGBA8, BUFFER)
+	var icon_image: Image = Image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer)
 
 	# Create a texture from the image
-	var ICON_TEXTURE: ImageTexture = ImageTexture.create_from_image(ICON)
+	var icon_texture: ImageTexture = ImageTexture.create_from_image(icon_image)
 	
 	# Display the texture on a sprite node
-	$Sprite.texture = ICON_TEXTURE
+	$Sprite.texture = icon_texture
 	````
 
 ---
 
 And that's how you display an achievement icon.
 
-To see this tutorial in action, [check out our GodotSteam Example Project on GitHub](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="_blank" }. There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+To see this tutorial in action, [check out our GodotSteam Example Project on GitHub](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="\_blank" }. There you can get a full view of the code used which can serve as a starting point for you to branch out from.

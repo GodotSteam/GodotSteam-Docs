@@ -1,8 +1,10 @@
 # Remote Storage
 
 Provides functions for reading, writing, and accessing files which can be stored remotely in the Steam Cloud.
+
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
   
-See [Steam Cloud](https://partner.steamgames.com/doc/features/cloud){ target="_blank" } for more information.
+See [Steam Cloud](https://partner.steamgames.com/doc/features/cloud){ target="\_blank" } for more information.
 
 ---
 

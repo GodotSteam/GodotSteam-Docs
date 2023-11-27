@@ -1,6 +1,8 @@
 # Apps
 
-Exposes a wide range of information and actions for applications and [Downloadable Content (DLC)](https://partner.steamgames.com/doc/store/application/dlc){ target="_blank" }.
+Exposes a wide range of information and actions for applications and [Downloadable Content (DLC)](https://partner.steamgames.com/doc/store/application/dlc){ target="\_blank" }.
+
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
 
 ---
 
@@ -195,7 +197,7 @@ Exposes a wide range of information and actions for applications and [Downloada
 ### isAppInstalled
 
 !!! function "isAppInstalled( ```uint32_t``` app_id )"
-    Checks if a specific app is installed. The app may not actually be owned by the current user, they may have it left over from a free weekend, etc. This only works for base applications, not downloadable content (DLC). Use [isDLCInstalled](https://partner.steamgames.com/doc/api/ISteamApps#BIsAppInstalled){ target="_blank" } for DLC instead. 
+    Checks if a specific app is installed. The app may not actually be owned by the current user, they may have it left over from a free weekend, etc. This only works for base applications, not downloadable content (DLC). Use [isDLCInstalled](https://partner.steamgames.com/doc/api/ISteamApps#BIsAppInstalled){ target="\_blank" } for DLC instead. 
 
     **Return**: bool
 

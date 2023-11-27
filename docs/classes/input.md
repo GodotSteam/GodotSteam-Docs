@@ -1,8 +1,10 @@
 # Input
 
 Steam Input API is a flexible action-based API that supports all major controller types - Xbox, PlayStation, Nintendo Switch Pro, and Steam Controllers.
-  
-See the [Steam Input](https://partner.steamgames.com/doc/features/steam_controller){ target="_blank" } documentation for more information.
+ 
+These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+
+See the [Steam Input](https://partner.steamgames.com/doc/features/steam_controller){ target="\_blank" } documentation for more information.
 
 ---
 
@@ -240,6 +242,8 @@ See the [Steam Input](https://partner.steamgames.com/doc/features/steam_control
 	Returns the input type (device model) for the specified controller. This tells you if a given controller is a Steam controller, Xbox 360 controller, PS4 controller, etc.
 
 	**Returns:** string.
+
+	**Note:** XBox Series controllers are called XBox One.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetInputTypeForHandle){ .md-button .md-button--store target="_blank" }

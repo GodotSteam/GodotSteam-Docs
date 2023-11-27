@@ -2,6 +2,8 @@
 
 A small and easy to use HTTP client to send and receive data from the web.
 
+These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+
 ---
 
 ## Functions

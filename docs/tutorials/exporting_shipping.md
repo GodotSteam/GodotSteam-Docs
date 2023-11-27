@@ -12,7 +12,7 @@ To being our export process, first click on the "Project" button in the top menu
 
 ![Export Start](../assets/images/export-ship2-1.png){ loading=lazy }
 
-Since the pre-compiles are **never** debug-release versions, you must make sure that _only_ the **release field contains a template** and that the **debug field is empty**. this next step is important and also where people often get stuck:
+Since the pre-compiles are ***never*** debug-release versions, you must make sure that ***only*** the **release field contains a template** and that the **debug field is empty**. This next step is important and also where people often get stuck:
 
 ![Release Only](../assets/images/export-ship2-2.png){ loading=lazy }
 
@@ -47,9 +47,9 @@ Also take note of any additional files Godot exports for you like the godotsteam
 For Windows and Linux, shipping is relatively simple. You just need your game's executable, any accompanying .pck file, and the Steamworks API file.
 
 === "Windows"
-	Use the **steam_api.dll** for 32-bit or **steam_api64.dll** for 64-bit.
+	Use the `steam_api.dll` for 32-bit or `steam_api64.dll` for 64-bit.
 === "Linux"
-	Make sure you use the **libsteam_api.so** file from the _correct_ folder. I am not sure why Valve did not differentiate, in naming, between 32 and 64-bit files for Linux, but they do not.
+	Make sure you use the `libsteam_api.so` file from the _correct_ folder. I am not sure why Valve did not differentiate, in naming, between 32 and 64-bit files for Linux, but they do not.
 === "macOS"
 	The Steamworks redistributables are already included in your app directory so there's not thing else to add.
 
@@ -57,13 +57,13 @@ Your exported game's directory should look something like this:
 
 ![Export Folder](../assets/images/export-ship3-1.png){ loading=lazy }
 
-At this point, you are ready to upload your game to Steam!  [You can read more about that process on the offical Steamworks SDK documentation.](https://partner.steamgames.com/doc/sdk/uploading){ target="_blank" }  And, as usual, if you run into any issues, please contact us on the project's GitHub issues page or the Discord server.
+At this point, you are ready to upload your game to Steam!  [You can read more about that process on the offical Steamworks SDK documentation.](https://partner.steamgames.com/doc/sdk/uploading){ target="\_blank" }  And, as usual, if you run into any issues, please contact us on the project's GitHub issues page or the Discord server.
 
 Let's also touch on some other small things next.
 
 ### No steam_appid.txt Needed
 
-You will notice that the _steam_appid.txt_ is not included. This file is **only** used for running your game _outside_ of the Steam client so that it knows which game you are playing. When run _through_ the Steam client, Steam is aware of what game you are playing, thus it is not necessary. Valve recommends that you do not ship this file with your game, as [it can potentially cause issues](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_RestartAppIfNecessary){ target="_blank" }.
+You will notice that the `steam_appid.txt` is not included. This file is ***only*** used for running your game _outside_ of the Steam client so that it knows which game you are playing. When run _through_ the Steam client, Steam is aware of what game you are playing, thus it is not necessary. Valve recommends that you do not ship this file with your game, as [it can potentially cause issues](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_RestartAppIfNecessary){ target="\_blank" }.
 
 ### macOS Differences
 
