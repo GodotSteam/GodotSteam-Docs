@@ -4,6 +4,19 @@
 
 ---
 
+**Version 4.5 Changes**
+
+- Added: two new arguments to `steamInit` and `steamInitEx` to set your app ID and run_callbacks interally, thanks to _GreenFox_
+- Added: two Music class callbacks
+- Changed: `generateItems`, `exchangeItems`, `getItemsByID`, and `startPurchase` all list-based arguments are now PoolIntArrays
+- Changed: `getItemsByID` now takes one argument, counts the elements in the passed array instead
+- Changed: `getItemsWithPrices` no longer requires any arguments passed to it
+- Changed: in-editor docs have been updated
+- Fixed: `getResultItems` now returns all item data
+- Fixed: missing DEFVAL for `steamInitEx`
+- Fixed: Joy Con name in `getInputTypeForHandle`
+- Removed: `getNumItemsWithPrices` as it was unnecessary
+
 **Version 4.4.2 Changes**
 
 - Fixed: `requestEquippedProfileItems` was missing method bind, thanks to _BOTLANNER_

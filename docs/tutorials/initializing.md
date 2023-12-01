@@ -126,6 +126,24 @@ func _process(_delta: float) -> void:
 
 I highly suggest, much like the initialization process, you put this `_process()` function with the `Steam.run_callbacks()` in a global (singleton) script so it is always checking for callbacks. Though, if you want, you can put it in any `_process()` function in any given script that might be using callback information.
 
+## New Shortcuts
+
+We recently introduced some new shortcuts by way of extra arguments to send to `steamInit` and `steamInitEx`. These exist in GodotSteam 3.22 and GodotSteam 4.5 or newer.
+
+First, you can pass your app ID as the second argument and GodotSteam will internally set your OS enviroment variable. This will tell Steam what game you are playing. By default this is set as 480 so if you are using the newer versions, you no longer have to set your app ID in your code; just pass it to the initialization function.
+
+Second, you can pass **true** as the third argument and GodotSteam will internally hook up your `run_callbacks()` function. You will no longer have to add this to your `_process()` function as it will already be present and running.
+
+**Please note:** if you want to use these, you must set the prior arguments too or you may have some weird issues. You can use the full range of options like so:
+
+```
+# This asks for stats upon success, sets the app ID as 480, then embeds run_callbacks() automatically.
+
+steamInit( true, 480, true )
+
+steamInitEx( true, 480, true )
+```
+
 ---
 
 ## Altogether Now
