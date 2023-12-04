@@ -414,6 +414,9 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	width: 100%;
 	vertical-align: top;
 }
+.md-nav.md-nav--primary {
+    overflow: hidden auto;
+}
 .md-nav__title .md-nav__button.md-logo :-moz-any(img, svg) {
 	fill:currentcolor;
 	display:block;
