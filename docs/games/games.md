@@ -1371,6 +1371,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/zevergames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Warja -->
+<figure class="game" markdown>
+[![Warja](https://steamcdn-a.akamaihd.net/steam/apps/2433360/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2433360/Warja/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2433360/Warja/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/ReefMakeGame){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Warp-Tek -->
 <figure class="game" markdown>
 [![Warp-Tek](https://steamcdn-a.akamaihd.net/steam/apps/924870/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/924870/WARPTEK/){ target="\_blank" }
