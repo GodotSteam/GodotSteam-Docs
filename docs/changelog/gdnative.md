@@ -2,7 +2,12 @@ www# GDNative Change-Log
 
 ### A history of all changes to the **gdnative** and **gdnative-plugin** branches.
 
-------
+---
+
+**Version 3.22.2 Changes**
+
+- Changed: reverted `steamInit` and `steamInitEx` as new methods won't work with GDNative
+- Removed: all enums as they cannot be used in GDNative
 
 **Version 3.22.1 Changes**
 

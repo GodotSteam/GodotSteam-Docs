@@ -55,9 +55,9 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
     * 20 / "Steam not running"
     * 79 / "Invalid app ID or app not installed"
 
-    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. By default, it sets your game's app ID to 480.
+    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.
 
-    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. By default, it does not do this.
+    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
 
     ------
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_Init){ .md-button .md-button--store target="_blank" }
@@ -79,9 +79,9 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
     * 2 / "Cannot connect to Steam, client probably isn't running"
     * 3 / "Steam client appears to be out of date"
 
-    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. By default, it sets your game's app ID to 480.
+    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.
 
-    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. By default, it does not do this.
+    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
 
 ### steamShutdown
 

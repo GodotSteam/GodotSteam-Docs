@@ -4,6 +4,24 @@ In this tutorial, we will cover the basic initialization of Steamworks in your g
 
 Please note, this tutorial is only valid for the module and GDExtension versions of GodotSteam; the GDNative version will already have these functions present in the `steam.gd` autoload script.
 
+<div class="start-grid" markdown>
+
+!!! guide "Relevant GodotSteam classes and functions"
+	* [Main class](../classes/main.md)
+		* [steamInit()](../classes/main.md#steaminit)
+		* [steamInitEx()](../classes/main.md#steaminitex)
+		* [run_callbacks()](../classes/main.md#run_callbacks)
+	* [Apps class](../classes/apps.md)
+		* [isSubscribed()](../classes/apps.md#issubscribed)
+	* [Friends class](../classes/friends.md)
+		* [getPersonaName()](../classes/friends.md#getpersonaname)
+	* [User class](../classes/user.md)
+		* [getSteamID()](../classes/user.md#getsteamid)
+		* [loggedOn()](../classes/user.md#loggedon)
+	* [Utils class](../classes/utils.md)
+		* [isSteamRunningOnSteamDeck()](../classes/utils.md#issteamrunningonsteamdeck)
+</div>
+
 ---
 
 ## Preparation
@@ -18,36 +36,53 @@ To enable logging in the Godot editor, go to: **Projects > Project Settings > Lo
 
 ---
 
-## Initialize Steam
+## Steam App ID
 
-In my personal projects, I usually create an auto-load GDscript called `global.gd` which is added as a singleton.
+When the game is run through the Steam client, it already knows which game you are playing. However, during development and testing, you must supply a valid app ID somehow. Typically, if you do not already have an app ID, you can use app ID 480 which is Valve's SpaceWar example game.
 
-Thanks to user **B0TLANNER**, we will use a much cleaner method of letting Steam know what game we're running.  It is important that you set these two enviroment variables so they run when your game boots up.
+You can set the app ID in one of three ways, depending on what is easiest for you:
 
-````
+### Method 1: steam_appid.txt
+
+Create a steam_appid.txt file and with _only_ the app ID as the text. This file must be where ever your regular Godot or GodotSteam-enabled editor is located. Though, in the case of plug-ins, sometimes it must be in the root of your project to work correctly.
+
+Also, when shipping your game to Steam, do not include this file as it is not needed. Granted it won't hurt anything if you do.
+
+### Method 2: Pass It To Initialization
+
+You can pass the app ID to either `steamInit` or `steamInitEx` to set it during initialization. This will be the second argument passed; the first being whether you want the local user's statistics and achievements to be pulled during the initialization.  For example:
+
+```
+var initialize_response: Dictionary = steamInitEx( true, 480 )
+print("Did Steam initialize?: %s " % initialize_response)
+```
+
+If you use this method, you **must** pass a true or false as for the first argument.
+
+**Note:** This functionality in the intialization functions only exists in GodotSteam 3.22 and up for Godot 3.x and GodotSteam 4.5 and up for Godot 4.x.  It does not work in GDNative.
+
+### Method 3: Set Environment Variables
+
+You can set two environment variables in an autoload GDscript or the first GDscript to run; preferably the script where you run the Steam initialization function and preferably in the `_init()` function. For example:
+
+```
 func _init() -> void:
 	# Set your game's Steam app ID here
 	OS.set_environment("SteamAppId", str(480))
 	OS.set_environment("SteamGameId", str(480))
-````
+```
 
-We can also just put our game's app ID in a variable and pass it along there.
+Thanks to user **B0TLANNER** for providing this method.
 
-````
-var steam_app_id: int = 480
+---
 
+## Initialize Steam
 
-func _init() -> void:
-	# Set your game's Steam app ID here
-	OS.set_environment("SteamAppId", str(steam_app_id))
-	OS.set_environment("SteamGameId", str(steam_app_id))
-````
-
-The alternative method is creating a `steam_appid.txt` file and placing it with the editor or exported game.
+In my personal projects, I usually create an auto-load GDscript called `global.gd` which is added as a singleton.
 
 I then create a function called `initialize_steam()` and add the code below. This is then called from the `_ready()` function in my `global.gd`:
 
-````
+```
 func _ready() -> void:
 	initialize_steam()
 
@@ -55,7 +90,7 @@ func _ready() -> void:
 func initialize_steam() -> void:
 	var initialize_response: Dictionary = Steam.steamInitEx()
 	print("Did Steam initialize?: %s " % initialize_response)
-````
+```
 
 By default, `steamInitEx()` will query Steamworks for the local user's current statistics and send this data back as a callback (signal). You can pass a boolean (false) to the function to prevent this behavior: `steamInitEx(false)`.
 
@@ -73,7 +108,7 @@ By default, `steamInitEx()` will query Steamworks for the local user's current s
 
 The returned dictionary from `steamInitEx()` can be printed and ignored. However, there are certain conditions where you might not know why the game crashed at boot or does something unexpected; especially in development. For these cases we will check if Steamworks was actually initialized and to stop the game if anything is amiss, we do this:
 
-````
+```
 func initialize_steam() -> void:
 	var initialize_response: Dictionary = Steam.steamInitEx()
 	print("Did Steam initialize?: %s" % initialize_response)
@@ -81,33 +116,35 @@ func initialize_steam() -> void:
 	if initialize_response['status'] > 0:
 		print("Failed to initialize Steam, shutting down: %s" % initialize_response)
 		get_tree().quit()
-````
+```
 
 This code will obviously shut down the game if Steam does not initialize and returns a status of anything except 0.  You may just want to capture the failure data and continue on, though the Steamworks functionality won't quite work.
 
-Most times, in development, getting a failure will probably be caused by a missing API file (steam_api.dll, libsteam_api.so, libsteam_api.dylib) or not setting the game's app ID as an environment variable.  Also not having the `steam_appid.txt` file with your game's app ID in it; if you aren't using the environment variable.
+Most times, in development, getting a failure will probably be caused by a missing API file (steam_api.dll, libsteam_api.so, libsteam_api.dylib) or not setting the game's app ID by one of the methods mentioned earlier.
+
+In any case, the intialization functions should give you a pretty good idea of why it failed. If you still cannot figure it out, please contact us for assistance!
 
 ---
 
 ## Getting More Data
 
-You can check for a few additional things at boot like:
+There are a ton of functions you can call just after initialization to gather more data about your user; everything from location, to language used, to avatars, etc. We will just cover some basic things that are commonly used:
 
-````
+```
 var is_on_steam_deck = Steam.isSteamRunningOnSteamDeck()
 var is_online: bool = Steam.loggedOn()
 var is_owned: bool = Steam.isSubscribed()
 var steam_id: int = Steam.getSteamID()
 var steam_username: String = Steam.getPersonaName()
-````
+```
 
 This will check if Steam is online, if the app is running on the Steam Deck, get the current user's Steam ID64, and check if the current user owns the game. You can also have the game turn itself off if the current user does not own the game by simply doing this:
 
-````
+```
 if is_owned == false:
 	print("User does not own this game")
 	get_tree().quit()
-````
+```
 
 Please note that this behavior might cause problems from people using Family Share, Free Weekends, or other methods of trying the game out. There are other functions to check for those conditions which you might want to consider.
 
@@ -117,32 +154,30 @@ There are other things you may want to do during a boot-up process after Steamwo
 
 ## Callbacks
 
-Last, but not least, anywhere you want or need to retrieve callbacks from Steam, you'll need to add this:
+A very important piece of Steamworks is getting callbacks from Steam itself in response to different function. To receive callbacks you will need to have the `run_callbacks()` function running somewhere; preferably every frame or so.  There are two methods available:
 
-````
+### Method 1: Add It To \_process()
+
+The standard method has been adding the `Steam.run_callbacks()` function to the `_process()` function like so:
+
+```
 func _process(_delta: float) -> void:
 	Steam.run_callbacks()
-````
+```
 
 I highly suggest, much like the initialization process, you put this `_process()` function with the `Steam.run_callbacks()` in a global (singleton) script so it is always checking for callbacks. Though, if you want, you can put it in any `_process()` function in any given script that might be using callback information.
 
-## New Shortcuts
+### Method 2: Pass It To Initialization
 
-We recently introduced some new shortcuts by way of extra arguments to send to `steamInit` and `steamInitEx`. These exist in GodotSteam 3.22 and GodotSteam 4.5 or newer.
-
-First, you can pass your app ID as the second argument and GodotSteam will internally set your OS enviroment variable. This will tell Steam what game you are playing. By default this is set as 480 so if you are using the newer versions, you no longer have to set your app ID in your code; just pass it to the initialization function.
-
-Second, you can pass **true** as the third argument and GodotSteam will internally hook up your `run_callbacks()` function. You will no longer have to add this to your `_process()` function as it will already be present and running.
-
-**Please note:** if you want to use these, you must set the prior arguments too or you may have some weird issues. You can use the full range of options like so:
+You can pass true as the third argument to either initialization function and have GodotSteam check for callbacks internally. Like so:
 
 ```
-# This asks for stats upon success, sets the app ID as 480, then embeds run_callbacks() automatically.
-
-steamInit( true, 480, true )
-
-steamInitEx( true, 480, true )
+var initialize_response: Dictionary = steamInitEx(false, 480, true)
+print("Did Steam initialize?: %s " % initialize_response)
 ```
+However, you must pass the first two arguments which are whether you want the local user's statistics and achievements pulled during initialization and the game's app ID.
+
+**Note:** This only works in GodotSteam 3.22 or newer for Godot 3.x and in GodotSteam 4.5 or newer for Godot 4.x.
 
 ---
 
@@ -150,53 +185,90 @@ steamInitEx( true, 480, true )
 
 Putting it together should give us something like this:
 
-````
-extends Node
+=== "Without internal app ID and callbacks"
+	```
+	extends Node
 
-# Steam variables
-var is_on_steam_deck: bool = false
-var is_online: bool = false
-var is_owned: bool = false
-var steam_app_id: int = 480
-var steam_id: int = 0
-var steam_username: String = ""
-
-
-func _init() -> void:
-	# Set your game's Steam app ID here
-	OS.set_environment("SteamAppId", str(steam_app_id))
-	OS.set_environment("SteamGameId", str(steam_app_id))
+	# Steam variables
+	var is_on_steam_deck: bool = false
+	var is_online: bool = false
+	var is_owned: bool = false
+	var steam_app_id: int = 480
+	var steam_id: int = 0
+	var steam_username: String = ""
 
 
-func _ready() -> void:
-	initialize_steam()
+	func _init() -> void:
+		# Set your game's Steam app ID here
+		OS.set_environment("SteamAppId", str(steam_app_id))
+		OS.set_environment("SteamGameId", str(steam_app_id))
 
 
-func _process(_delta: float) -> void:
-	Steam.run_callbacks()
+	func _ready() -> void:
+		initialize_steam()
 
 
-func initialize_steam() -> void:
-	var initialize_response: Dictionary = Steam.steamInitEx()
-	print("Did Steam initialize?: %s" % initialize_response)
+	func _process(_delta: float) -> void:
+		Steam.run_callbacks()
 
-	if initialize_response['status'] > 0:
-		print("Failed to initialize Steam. Shutting down. %s" % initialize_response)
-		get_tree().quit()
 
-	# Gather additional data
-	is_on_steam_deck = Steam.isSteamRunningOnSteamDeck()
-	is_online: bool = Steam.loggedOn()
-	is_owned: bool = Steam.isSubscribed()
-	steam_id: int = Steam.getSteamID()
-	steam_username: String = Steam.getPersonaName()
-	
-	# Check if account owns the game
-	if is_owned == false:
-		print("User does not own this game")
-		get_tree().quit()
-````
+	func initialize_steam() -> void:
+		var initialize_response: Dictionary = Steam.steamInitEx()
+		print("Did Steam initialize?: %s" % initialize_response)
 
+		if initialize_response['status'] > 0:
+			print("Failed to initialize Steam. Shutting down. %s" % initialize_response)
+			get_tree().quit()
+
+		# Gather additional data
+		is_on_steam_deck = Steam.isSteamRunningOnSteamDeck()
+		is_online: bool = Steam.loggedOn()
+		is_owned: bool = Steam.isSubscribed()
+		steam_id: int = Steam.getSteamID()
+		steam_username: String = Steam.getPersonaName()
+		
+		# Check if account owns the game
+		if is_owned == false:
+			print("User does not own this game")
+			get_tree().quit()
+	```
+=== "With internal app ID and callbacks"
+	```
+	extends Node
+
+	# Steam variables
+	var is_on_steam_deck: bool = false
+	var is_online: bool = false
+	var is_owned: bool = false
+	var steam_app_id: int = 480
+	var steam_id: int = 0
+	var steam_username: String = ""
+
+
+	func _ready() -> void:
+		initialize_steam()
+
+
+	func initialize_steam() -> void:
+		var initialize_response: Dictionary = Steam.steamInitEx(false, steam_app_id, true)
+		print("Did Steam initialize?: %s" % initialize_response)
+
+		if initialize_response['status'] > 0:
+			print("Failed to initialize Steam. Shutting down. %s" % initialize_response)
+			get_tree().quit()
+
+		# Gather additional data
+		is_on_steam_deck = Steam.isSteamRunningOnSteamDeck()
+		is_online: bool = Steam.loggedOn()
+		is_owned: bool = Steam.isSubscribed()
+		steam_id: int = Steam.getSteamID()
+		steam_username: String = Steam.getPersonaName()
+		
+		# Check if account owns the game
+		if is_owned == false:
+			print("User does not own this game")
+			get_tree().quit()
+	```
 ---
 
 This covers the initialization and basic set-up.

@@ -4,6 +4,10 @@
 
 ---
 
+**Version 3.22.2 Changes**
+
+- Fixed: app ID automatically being set to 480, now default is 0 which makes GodotSteam ignore auto-setting app ID
+
 **Version 3.22.1 Changes**
 
 - Added: two new arguments to `steamInit` and `steamInitEx` to set your app ID and run_callbacks interally, thanks to _GreenFox_

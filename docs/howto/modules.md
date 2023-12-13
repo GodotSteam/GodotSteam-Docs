@@ -8,9 +8,9 @@ Here we provide a hopefully thorough explanation of how to set-up, build, and us
 
 By far the easiest way to use GodotSteam is to download our pre-compiled editors and templates; especially good for folks who don't want to set up the tools for compiling and just want to get going.
 
-- [x] Download the [pre-compiled editor from the Releases section](https://github.com/CoaguCo-Industries/GodotSteam/releases){ target="_blank" } and unpack it.
-- [x] Alternatively, for Godot 3.x, you can download and install the [GDNative plug-in through Godot Asset Library](https://godotengine.org/asset-library/asset/1045){ target="_blank" }.
-- [x] Alternatively, for Godot 4.x, you can download and install the [GDExtension 4.0](https://godotengine.org/asset-library/asset/1768){ target="_blank" } or [GDExtension 4.1](https://godotengine.org/asset-library/asset/1972){ target="_blank" } plug-in through Godot Asset Library.
+- [x] Download the [pre-compiled editor from the Releases section](https://github.com/CoaguCo-Industries/GodotSteam/releases){ target="\_blank" } and unpack it.
+- [x] Alternatively, for Godot 3.x, you can download and install the [GDNative plug-in through Godot Asset Library](https://godotengine.org/asset-library/asset/1045){ target="\_blank" }.
+- [x] Alternatively, for Godot 4.x, you can download and install the [GDExtension 4.0](https://godotengine.org/asset-library/asset/1768){ target="\_blank" } or [GDExtension 4.1](https://godotengine.org/asset-library/asset/1972){ target="\_blank" } plug-in through Godot Asset Library.
 - [x] Everything you need should be included.
 
 At this point you can skip all the following steps and check out our tutorials to learn more about integrating Steamworks or just explore the SDK!
@@ -21,15 +21,15 @@ At this point you can skip all the following steps and check out our tutorials t
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
-- [x] Set your system up for [compiling based on Godot's recommendations / required tools.](https://docs.godotengine.org/en/stable/development/compiling/index.html){ target="_blank" }
-- [x] Download and unpack the [Godot source](https://github.com/godotengine/godot){ target="_blank" }.
+- [x] Set your system up for [compiling based on Godot's recommendations / required tools.](https://docs.godotengine.org/en/stable/development/compiling/index.html){ target="\_blank" }
+- [x] Download and unpack the [Godot source](https://github.com/godotengine/godot){ target="\_blank" }.
 - [x] Acquire the GodotSteam source either by downloading it or cloning the repo:
-    * [Download the godot3 or godot4 branch from our repository](https://github.com/CoaguCo-Industries/GodotSteam){ target="_blank" } then unpack it into a folder called **godotsteam** inside your Godot Engine source code **/modules** folder.
+    * [Download the godot3 or godot4 branch from our repository](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } then unpack it into a folder called **godotsteam** inside your Godot Engine source code **/modules** folder.
         * You will have to create the **godotsteam** folder and it must be named exactly this.
     * Alternatively, clone the godot3 or godot4 branch from our repository into your Godot Engine source code **/modules** folder
         * Use ````git clone -b godot3 https://github.com/CoaguCo-Industries/GodotSteam.git godotsteam```` for the Godot 3.x version
         * Use ````git clone -b godot4 https://github.com/CoaguCo-Industries/GodotSteam.git godotsteam```` for the Godot 4.x version
-- [x] Download and unpack the [Steamworks SDK](https://partner.steamgames.com){ target="_blank" }.
+- [x] Download and unpack the [Steamworks SDK](https://partner.steamgames.com){ target="\_blank" }.
     * This requires a Steam developer account.
 
 ---
@@ -87,7 +87,7 @@ Recompile for your platform:
 Some things to be aware of:
 
 - If using Ubuntu 16.10 or higher and having issues with PIE security in GCC, use ````LINKFLAGS='-no-pie'```` to get an executable instead of a shared library.
-- When creating templates for OSX, [please refer to this post for assistance as the documentation is a bit lacking.](http://steamcommunity.com/app/404790/discussions/0/364042703865087202/){ target="_blank" }
+- When creating templates for OSX, [please refer to this post for assistance as the documentation is a bit lacking.](http://steamcommunity.com/app/404790/discussions/0/364042703865087202/){ target="\_blank" }
 
 ---
 
@@ -143,7 +143,7 @@ A lack of the **Steam API .dll/.so/.dylib** for your respective OS will cause th
 
 ## 6. Good to Go
 
-From here you should be able to call various functions of Steamworks. You should be able to look up the functions in Godot itself under the search section. In addition, you should be able to [read the Steamworks API documentation](https://partner.steamgames.com/doc/){ target="_blank" } to see what all is available and cross-reference with GodotSteam's documentation.
+From here you should be able to call various functions of Steamworks. You should be able to look up the functions in Godot itself under the search section. In addition, you should be able to [read the Steamworks API documentation](https://partner.steamgames.com/doc/){ target="\_blank" } to see what all is available and cross-reference with GodotSteam's documentation.
 
 ---
 

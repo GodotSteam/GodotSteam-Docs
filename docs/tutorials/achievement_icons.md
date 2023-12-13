@@ -19,6 +19,8 @@ This quick tutorial will cover to how get achievement icons from Steam's servers
 
 Before you can get achievement icons you first need to have retrieved the user's stats from Steam. This is done by default when initializing Steam, but can optionally be disabled. This tutorial assumes that you have already received the user stats. See [requestCurrentStats()](../classes/user_stats.md#requestcurrentstats) for more information if needed.
 
+---
+
 ## Getting the Handle and Buffer
 
 First you will need to request the icon handle by using the achievement's API name you set in the Steamworks back-end:
