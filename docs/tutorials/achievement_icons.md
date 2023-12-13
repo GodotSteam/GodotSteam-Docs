@@ -42,16 +42,16 @@ Note that the `getImageRGBA()` function can be somewhat expensive so it is recom
 
 ## Creating the Image
 
-This buffer contains the actual image data for our icon. However, as it is simply binary data, we need to load it into an Image so that Godot can use it as a Texture. The format of the data in the buffer is RGBA8 when we receive it from Steam, so we need to tell Godot how to make sense of it by specifying it as such:
+This buffer is a dictionary that contains two keys: `success` and `buffer` which contains the actual image data for our icon. However, as it is simply binary data, we need to load it into an Image so that Godot can use it as a Texture. The format of the data in the buffer is RGBA8 when we receive it from Steam, so we need to tell Godot how to make sense of it by specifying it as such:
 
 === "Godot 2.x, 3.x"
 	````
 	var icon_image: Image = Image.new()
-	icon_image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer)
+	icon_image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer["buffer"])
 	````
 === "Godot 4.x"
 	````
-	var icon_image: Image = Image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer)
+	var icon_image: Image = Image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer["buffer"])
 	````
 
 The size of the image is determined by the images you uploaded when configuring achievements on the Steamworks back-end. Valve recommends larger (256x256) images. If you want to display the image at a different size, say 64x64, you can optionally resize it now. Check the [Godot documentation](https://docs.godotengine.org/en/stable/classes/class_image.html#class-image-method-resize) on `Image.resize()` for which interpolation mode best suits your needs.
@@ -95,7 +95,7 @@ Our complete example should look something like this:
 
 	# Create the image for loading
 	var icon_image: Image = Image.new()
-	icon_image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer)
+	icon_image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer["buffer"])
 
 	# Create a texture from the image
 	var icon_texture: ImageTexture = ImageTexture.new()
@@ -114,7 +114,7 @@ Our complete example should look something like this:
 	var icon_buffer: Dictionary = Steam.getImageRGBA(icon_handle)
 
 	# Create the image for loading
-	var icon_image: Image = Image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer)
+	var icon_image: Image = Image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer["buffer"])
 
 	# Create a texture from the image
 	var icon_texture: ImageTexture = ImageTexture.create_from_image(icon_image)
