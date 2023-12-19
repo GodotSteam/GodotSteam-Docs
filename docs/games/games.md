@@ -550,6 +550,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-facebook: ](https://www.facebook.com/elektricanada){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Hibernation Day -->
+<figure class="game" markdown>
+[![Hibernation Day](https://steamcdn-a.akamaihd.net/steam/apps/2331870/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2331870/Hibernation_Day/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2331870/Hibernation_Day/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://ariorick.itch.io/hibernation-day){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/AriorickGames){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Hot Dog Reporter -->
 <figure class="game" markdown>
 [![Hot Dog Reporter](https://steamcdn-a.akamaihd.net/steam/apps/2605350/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2605350/Hot_Dog_Reporter/){ target="\_blank" }
@@ -1653,6 +1662,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/XionLeak){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCb2FKSG2Khl0pvK-imaxDFA/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.com/invite/ETaJw692mh){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- XMas Clash -->
+<figure class="game" markdown>
+[![XMas Clash](https://steamcdn-a.akamaihd.net/steam/apps/2673690/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2673690/Xmas_Clash/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2673690/Xmas_Clash/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCL5qF63mSIXmz_gXMIERJPQ){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/Provensis){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- XOL -->

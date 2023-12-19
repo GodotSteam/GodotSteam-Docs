@@ -4,6 +4,10 @@
 
 ---
 
+**Version 4.5.2 Changes**
+
+- Fixed: crashes on `generateItems`, `startPurchase`, and `exchangeItems`, thanks to _sepTN_
+
 **Version 4.5.1 Changes**
 
 - Fixed: app ID automatically being set to 480, now default is 0 which makes GodotSteam ignore auto-setting app ID
