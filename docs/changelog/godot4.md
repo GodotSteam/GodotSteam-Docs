@@ -6,7 +6,8 @@
 
 **Version 4.5.2 Changes**
 
-- Fixed: crashes on `generateItems`, `startPurchase`, and `exchangeItems`, thanks to _sepTN_
+- Fixed: `exchangeItems`, `generateItems`, and `startPurchase` using wrong array size function, thanks to _sepTN_
+- Fixed: various spelling issues in in-editor docs, thanks to _sepTN_
 
 **Version 4.5.1 Changes**
 
