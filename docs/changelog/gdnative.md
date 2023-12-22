@@ -1,4 +1,4 @@
-www# GDNative Change-Log
+# GDNative Change-Log
 
 ### A history of all changes to the **gdnative** and **gdnative-plugin** branches.
 

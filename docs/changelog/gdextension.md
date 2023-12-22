@@ -4,6 +4,14 @@
 
 ---
 
+**Version 4.5.2 Changes**
+
+- Fixed: crashes on `generateItems`, `startPurchase`, and `exchangeItems`, thanks to _sepTN_
+
+**Version 4.5.1 Changes**
+
+- Fixed: app ID automatically being set to 480, now default is 0 which makes GodotSteam ignore auto-setting app ID
+
 **Version 4.5 Changes**
 
 - Added: two new arguments to `steamInit` and `steamInitEx` to set your app ID and run_callbacks interally, thanks to _GreenFox_
