@@ -65,7 +65,8 @@ print("Did Steam initialize?: %s " % initialize_response)
 
 If you use this method, you **must** pass a true or false as for the first argument.
 
-**Note:** This functionality in the intialization functions only exists in GodotSteam 3.22 and up for Godot 3.x and GodotSteam 4.5 and up for Godot 4.x.  It does not work in GDNative.
+!!! warning "Notes"
+	This functionality **does not** exist in GDNative. It only exists in GodotSteam 3.22 and up for Godot 3.x and GodotSteam 4.5 and up for Godot 4.x and GDExtension.
 
 ### Method 3: Set Environment Variables
 
@@ -137,7 +138,7 @@ In any case, the intialization functions should give you a pretty good idea of w
 There are a ton of functions you can call just after initialization to gather more data about your user; everything from location, to language used, to avatars, etc. We will just cover some basic things that are commonly used:
 
 ```
-var is_on_steam_deck = Steam.isSteamRunningOnSteamDeck()
+var is_on_steam_deck: bool = Steam.isSteamRunningOnSteamDeck()
 var is_online: bool = Steam.loggedOn()
 var is_owned: bool = Steam.isSubscribed()
 var steam_id: int = Steam.getSteamID()
@@ -152,7 +153,8 @@ if is_owned == false:
 	get_tree().quit()
 ```
 
-Please note that this behavior might cause problems from people using Family Share, Free Weekends, or other methods of trying the game out. There are other functions to check for those conditions which you might want to consider.
+!!! warning "Notes"
+	Shutting the game down with this **is_owned** behavior might cause problems from people using Family Share, Free Weekends, or other methods of trying the game out. There are other functions to check for those conditions which you might want to consider.
 
 There are other things you may want to do during a boot-up process after Steamworks is initialized, like getting current achievements or statistics, but we'll cover that in another tutorial.
 
@@ -183,7 +185,8 @@ print("Did Steam initialize?: %s " % initialize_response)
 ```
 However, you must pass the first two arguments which are whether you want the local user's statistics and achievements pulled during initialization and the game's app ID.
 
-**Note:** This only works in GodotSteam 3.22 or newer for Godot 3.x and in GodotSteam 4.5 or newer for Godot 4.x.  This argument, however, does not exist in the GDExtension version.
+!!! warning "Notes"
+	The argument **does not** exist in the GDExtension version currently. This only works in GodotSteam 3.22 or newer for Godot 3.x and in GodotSteam 4.5 or newer for Godot 4.x.
 
 ---
 
@@ -228,10 +231,10 @@ Putting it together should give us something like this:
 
 		# Gather additional data
 		is_on_steam_deck = Steam.isSteamRunningOnSteamDeck()
-		is_online: bool = Steam.loggedOn()
-		is_owned: bool = Steam.isSubscribed()
-		steam_id: int = Steam.getSteamID()
-		steam_username: String = Steam.getPersonaName()
+		is_online = Steam.loggedOn()
+		is_owned = Steam.isSubscribed()
+		steam_id = Steam.getSteamID()
+		steam_username = Steam.getPersonaName()
 		
 		# Check if account owns the game
 		if is_owned == false:
@@ -265,10 +268,10 @@ Putting it together should give us something like this:
 
 		# Gather additional data
 		is_on_steam_deck = Steam.isSteamRunningOnSteamDeck()
-		is_online: bool = Steam.loggedOn()
-		is_owned: bool = Steam.isSubscribed()
-		steam_id: int = Steam.getSteamID()
-		steam_username: String = Steam.getPersonaName()
+		is_online = Steam.loggedOn()
+		is_owned = Steam.isSubscribed()
+		steam_id = Steam.getSteamID()
+		steam_username = Steam.getPersonaName()
 		
 		# Check if account owns the game
 		if is_owned == false:

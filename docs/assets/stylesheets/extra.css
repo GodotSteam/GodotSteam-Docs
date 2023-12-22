@@ -94,6 +94,20 @@ pre {
 .admonition.function {
 	text-align: left !important;
 }
+.md-typeset .warning > .admonition-title::before {
+	background-color: #ffffff;
+}
+.md-typeset .warning > .admonition-title {
+	background-color: #478CBF;
+}
+.md-typeset .admonition.warning {
+	background-color: rgba(71, 140, 199, 0.25);
+}
+.md-typeset .warning > .admonition-title,
+.md-typeset .admonition.warning {
+	color: #ffffff;
+	border-color: #478CBF;
+}
 .admonition a.md-button {
 	text-align: center !important;
 }
