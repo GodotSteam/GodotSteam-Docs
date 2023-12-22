@@ -30,9 +30,15 @@ Before we go any further, it is recommended that you enable logging in your proj
 
 Of course, if you have a custom logging system, don't worry about this.
 
-To enable logging in the Godot editor, go to: **Projects > Project Settings > Logging > File Logging** and check **Enable File Logging**. This will start placing logs in your project's user data folder. Where are these, you might ask?  [Check out the official Godot Engine documentation to find the locations.](https://docs.godotengine.org/en/stable/tutorials/io/data_paths.html?highlight=user%20data){ target="\_blank" }
+=== "Godot 2.x, 3.x"
+	To enable logging in the Godot editor, go to: **Projects > Project Settings > Logging > File Logging** and check **Enable File Logging**. This will start placing logs in your project's user data folder. Where are these, you might ask?  [Check out the official Godot Engine documentation to find the locations.](https://docs.godotengine.org/en/stable/tutorials/io/data_paths.html?highlight=user%20data){ target="\_blank" }
 
-![Enable Logging](../assets/images/tutorial-initializing-logging.png){ loading=lazy }
+	![Enable Logging](../assets/images/tutorial-initializing-logging.png){ loading=lazy }
+
+=== "Godot 4.x"
+	To enable logging in the Godot editor, go to: **Projects > Project Settings > Debug > File Logging** and check **Enable File Logging**. This will start placing logs in your project's user data folder. Where are these, you might ask?  [Check out the official Godot Engine documentation to find the locations.](https://docs.godotengine.org/en/stable/tutorials/io/data_paths.html?highlight=user%20data){ target="\_blank" }
+
+	![Enable Logging](../assets/images/tutorial-initializing-logging-godot4.png){ loading=lazy }
 
 ---
 
@@ -177,7 +183,7 @@ print("Did Steam initialize?: %s " % initialize_response)
 ```
 However, you must pass the first two arguments which are whether you want the local user's statistics and achievements pulled during initialization and the game's app ID.
 
-**Note:** This only works in GodotSteam 3.22 or newer for Godot 3.x and in GodotSteam 4.5 or newer for Godot 4.x.
+**Note:** This only works in GodotSteam 3.22 or newer for Godot 3.x and in GodotSteam 4.5 or newer for Godot 4.x.  This argument, however, does not exist in the GDExtension version.
 
 ---
 

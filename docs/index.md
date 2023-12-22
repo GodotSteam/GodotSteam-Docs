@@ -47,7 +47,13 @@ Make sure you **don't mix and match** the pre-compiled editors with the plug-ins
 	[:fontawesome-solid-file-zipper: GitHub Drop-in ZIP](https://github.com/CoaguCo-Industries/GodotSteam-Server/zipball/gdnative-plugin){ .md-button .md-button--primary target="\_blank" }
 
 !!! compile "GDExtension Plug-ins"
-	Get integrating Steamworks into your game with the GDExtension plug-in via Godot Engine 4.x
+	Get integrating Steamworks into your game with the GDExtension plug-in via Godot Engine 4.2.x
+
+	[:simple-godotengine: Godot Asset Library](https://godotengine.org/asset-library/asset/2445){ .md-button .md-button--primary target="\_blank" }
+	[:fontawesome-solid-file-zipper: GitHub Drop-in TAR](https://github.com/CoaguCo-Industries/GodotSteam/tarball/gdextension-plugin){ .md-button .md-button--primary target="\_blank" }
+	[:fontawesome-solid-file-zipper: GitHub Drop-in ZIP](https://github.com/CoaguCo-Industries/GodotSteam/zipball/gdextension-plugin){ .md-button .md-button--primary target="\_blank" }
+
+	Get integrating Steamworks into your game with the GDExtension plug-in via Godot Engine 4.1.x
 
 	[:simple-godotengine: Godot Asset Library](https://godotengine.org/asset-library/asset/1972){ .md-button .md-button--primary target="\_blank" }
 	[:fontawesome-solid-file-zipper: GitHub Drop-in TAR](https://github.com/CoaguCo-Industries/GodotSteam/tarball/gdextension-plugin){ .md-button .md-button--primary target="\_blank" }

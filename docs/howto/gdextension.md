@@ -30,11 +30,11 @@ For those of you who are comfortable compiling or want to give it a shot, here a
     - Alternatively, clone this repository into your **GDExtension** folder:
         - Use ````git clone -b gdextension https://github.com/CoaguCo-Industries/GodotSteam.git````
 - [x] Download the [Steamworks SDK](https://partner.steamgames.com); this requires a Steam developer account.
-- [x] Download the [Godot cpp](https://github.com/godotengine/godot-cpp), the 4.0 branch.
+- [x] Download the [Godot cpp](https://github.com/godotengine/godot-cpp), the 4.2 branch (or whatever 4.x  version you need).
     - Unpack the **godot_cpp** into the **GDExtension** folder.
     - **Alternatively**, you can just use these commands inside the **GDExtension** folder to clone them:
   ````
-    git clone --recursive -b 4.0 https://github.com/godotengine/godot-cpp
+    git clone --recursive -b 4.2 https://github.com/godotengine/godot-cpp
   ````
 - [x] CD into the **godot-cpp** folder and compile the bindings (make sure your slashes are OS appropriate):
 ````

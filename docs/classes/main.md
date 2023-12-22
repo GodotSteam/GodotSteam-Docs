@@ -59,6 +59,8 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
 
     You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
 
+    **Note:** This function **does not** contain the second or third argument in **GDNative**. Also, this function **does not** contain the third argument in **GDExtension**.
+
     ------
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_Init){ .md-button .md-button--store target="_blank" }
 
@@ -82,6 +84,8 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
     You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.
 
     You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
+
+    **Note:** This function **does not** contain the second or third argument in **GDNative**. Also, this function **does not** contain the third argument in **GDExtension**.
 
 ### steamShutdown
 
