@@ -4,6 +4,11 @@
 
 ---
 
+**Version 3.22.3 Changes**
+
+- Changed: moved constants to separate file like in Godot 4.x branches
+- Fixed: backported fixes for in-editor docs, thanks to _sepTN_
+
 **Version 3.22.2 Changes**
 
 - Fixed: app ID automatically being set to 480, now default is 0 which makes GodotSteam ignore auto-setting app ID
