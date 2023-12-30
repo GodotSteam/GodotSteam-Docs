@@ -8,6 +8,7 @@
 
 - Changed: moved constants to separate file like in Godot 4.x branches
 - Fixed: backported fixes for in-editor docs, thanks to _sepTN_
+- Fixed: `requestClanOfficerList()` using wrong internal function, thanks to _sepTN_
 
 **Version 3.22.2 Changes**
 

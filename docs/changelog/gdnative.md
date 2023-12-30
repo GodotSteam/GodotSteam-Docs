@@ -4,6 +4,10 @@
 
 ---
 
+**Version 3.22.3 Changes**
+
+- Fixed: `requestClanOfficerList()` using wrong internal function, thanks to _sepTN_
+
 **Version 3.22.2 Changes**
 
 - Changed: reverted `steamInit` and `steamInitEx` as new methods won't work with GDNative

@@ -4,6 +4,10 @@
 
 ---
 
+**Version 4.5.3 Changes**
+
+- Fixed: `requestClanOfficerList()` using wrong internal function, thanks to _sepTN_
+
 **Version 4.5.2 Changes**
 
 - Fixed: `exchangeItems`, `generateItems`, and `startPurchase` using wrong array size function, thanks to _sepTN_
