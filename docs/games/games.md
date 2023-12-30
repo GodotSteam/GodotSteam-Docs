@@ -212,6 +212,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCXeHZLFETcYHjZdJe-b8gUA){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Card Fuse -->
+<figure class="game" markdown>
+[![Card Fuse](https://steamcdn-a.akamaihd.net/steam/apps/2698680/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2698680/Card_Fuse/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2698680/Card_Fuse/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Cat Box Paradox -->
 <figure class="game" markdown>
 [![Cat Cafe Manager](https://steamcdn-a.akamaihd.net/steam/apps/1771200/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1771200/Cat_Box_Paradox/){ target="\_blank" }
