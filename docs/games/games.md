@@ -92,6 +92,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1694380/Am_Madness/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- AstroMiner -->
+<figure class="game" markdown>
+[![AstroMiner](https://steamcdn-a.akamaihd.net/steam/apps/2437660/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2437660/Astrominer/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2437660/Astrominer/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.com/invite/eBUx9XXkcs){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/astrominergame/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Avalog -->
 <figure class="game" markdown>
 [![Avalog](https://steamcdn-a.akamaihd.net/steam/apps/2480820/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2480820/Avalog/){ target="\_blank" }
@@ -1286,6 +1295,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Spaceship Hunters](https://steamcdn-a.akamaihd.net/steam/apps/1819290/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1819290/Spaceship_Hunters){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1819290/Spaceship_Hunters){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- SpecFreq -->
+<figure class="game" markdown>
+[![SpecFreq](https://steamcdn-a.akamaihd.net/steam/apps/2723080/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2723080/SpecFreq/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2723080/SpecFreq/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.com/invite/P9R5gj6wK3){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/specfreqgame/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@specfreq){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- The Spectral Web: Hitodama -->
