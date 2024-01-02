@@ -1225,6 +1225,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/Seedlings_Game){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Sentou Gakuen: Revival -->
+<figure class="game" markdown>
+[![Sentou Gakuen: Revival](https://steamcdn-a.akamaihd.net/steam/apps/405680/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/405680/Sentou_Gakuen_Revival/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/405680/Sentou_Gakuen_Revival/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://gakuen.org/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/SentouGakuen){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Shadow of Asha -->
 <figure class="game" markdown>
 [![Shadow of Asha](https://steamcdn-a.akamaihd.net/steam/apps/2007000/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2007000/Shadow_of_Asha/){ target="\_blank" }
