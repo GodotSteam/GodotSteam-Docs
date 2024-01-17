@@ -34,6 +34,16 @@ Some users have also found that getting or setting achievements doesn't work at 
 
 ---
 
+## Steam Overlay and Forward+ / Vulkan
+
+Every so often folks will find that Steam overlay does not work when running their project from the Godot 4.x editor. This has been the case since the Godot 4 alpha builds. Steam overlay _should_ work fine when using Compability / OpenGL mode; also the Steam overlay will work when the game is exported and run from the Steam client itself, as Steam injects the overlay during boot.
+
+Certain driver versions on GPUs will allow Steam overlay to work with Forward+ mode. If the overlay isn't working, you may want to try changing version numbers.
+
+A user also reported that with NVidia driver version 546.33, in Forward+ mode, that the game stuttered / jittered a bit when Steam was initialized. However, the stuttering went away when switching to Compatibility mode.
+
+---
+
 ## Leaderboard Names
 
 I haven't actually confirmed this yet, but it seems that a dash in the leaderboard name will cause it to fail. For example, ***this-leaderboard*** will probably not work but ***this_leaderboard*** will.

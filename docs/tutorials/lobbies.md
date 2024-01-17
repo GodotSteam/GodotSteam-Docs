@@ -192,7 +192,7 @@ In our example code, I do something like this to make buttons for each lobby:
 
 			# Create a button for the lobby
 			var lobby_button: Button = Button.new()
-			lobby_button.set_text("Lobby %s: %s [%] - %s Player(s)" % [this_lobby, lobby_name, lobby_mode, lobby_num_members])
+			lobby_button.set_text("Lobby %s: %s [%s] - %s Player(s)" % [this_lobby, lobby_name, lobby_mode, lobby_num_members])
 			lobby_button.set_size(Vector2(800, 50))
 			lobby_button.set_name("lobby_%s" % this_lobby)
 			lobby_button.connect("pressed", self, "join_lobby", [this_lobby])
@@ -213,7 +213,7 @@ In our example code, I do something like this to make buttons for each lobby:
 
 			# Create a button for the lobby
 			var lobby_button: Button = Button.new()
-			lobby_button.set_text("Lobby %s: %s [%] - %s Player(s)" % [this_lobby, lobby_name, lobby_mode, lobby_num_members])
+			lobby_button.set_text("Lobby %s: %s [%s] - %s Player(s)" % [this_lobby, lobby_name, lobby_mode, lobby_num_members])
 			lobby_button.set_size(Vector2(800, 50))
 			lobby_button.set_name("lobby_%s" % this_lobby)
 			lobby_button.connect("pressed", Callable(self, "join_lobby").bind(this_lobby))
@@ -445,7 +445,7 @@ func leave_lobby() -> void:
 			if this_member['steam_id'] != steam_id:
 
 				# Close the P2P session
-				Steam.closeP2PSessionWithUser(MEMBERS['steam_id'])
+				Steam.closeP2PSessionWithUser(this_member['steam_id'])
 
 		# Clear the local lobby list
 		lobby_members.clear()
