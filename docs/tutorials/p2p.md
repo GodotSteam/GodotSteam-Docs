@@ -260,7 +260,7 @@ We can compress the **PoolByteArray** / **PackedByteArray** to be smaller with a
 		var this_data: PackedByteArray
 		
 		# Compress the PackedByteArray we create from our dictionary  using the GZIP compression method
-		var compressed_data: PackedByteArray = var_to_bytes(packet_data).compress(File.COMPRESSION_GZIP)
+		var compressed_data: PackedByteArray = var_to_bytes(packet_data).compress(FileAccess.COMPRESSION_GZIP)
 		this_data.append_array(compressed_data)
 
 		# If sending a packet to everyone
