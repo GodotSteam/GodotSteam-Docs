@@ -20,7 +20,7 @@ And, when you're finally read both of those, we can start.
 
 Lyaaaaaaaaaaaaaaa submitted some code showing how they use items in Workshop / UGC:
 
-```
+```gdscript
 extends Node
 
 class_name Steam_Workshop
@@ -118,7 +118,7 @@ func _on_query_completed(p_query_handler    : int,
 
 Following along with Lyaaaaaaaaaaaaaaa's example, here is a class for your Workshop / UGC items.
 
-```
+```gdscript
 extends Node
 
 class_name UGC_Item

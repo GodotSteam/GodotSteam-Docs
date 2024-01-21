@@ -16,7 +16,7 @@ You may want to get the current player's avatar, or someone else's, and display 
 
 The default Steamworks functions to get player avatars requires multiple steps. However, GodotSteam has a unique function which makes getting the avatar data incredibly easy. Just use the following:
 
-````
+````gdscript
 Steam.getPlayerAvatar()
 ````
 
@@ -29,18 +29,18 @@ This function has optional parameters. By default it will get medium-sized (64x6
 To retrieve the avatar data buffer, you'll need to hook the signal for the callback:
 
 === "Godot 2.x, 3.x"
-	````
+	````gdscript
 	Steam.connect("avatar_loaded", self, "_on_loaded_avatar")
 	````
 === "Godot 4.x"
-	````
+	````gdscript
 	Steam.avatar_loaded.connect(_on_loaded_avatar)
 	````
 
 This will return the user's Steam ID, the avatar's size, and the data buffer for rendering the image. If you have read the [Achievement Icons tutorial](achievement_icons.md), this should all look pretty familiar. Our `_on_loaded_avatar` function will look something like this:
 
 === "Godot 2.x, 3.x"
-	````
+	````gdscript
 	func _on_loaded_avatar(user_id: int, avatar_size: int, avatar_buffer: PoolByteArray) -> void:
 		print("Avatar for user: %s" % user_id)
 		print("Size: %s" % avatar_size)
@@ -61,7 +61,7 @@ This will return the user's Steam ID, the avatar's size, and the data buffer for
 		$Sprite.set_texture(avatar_texture)
 	````
 === "Godot 4.x"
-	````
+	````gdscript
 	func _on_loaded_avatar(user_id: int, avatar_size: int, avatar_buffer: PackedByteArray) -> void:
 		print("Avatar for user: %s" % user_id)
 		print("Size: %s" % avatar_size)

@@ -10,7 +10,7 @@ This short tutorial is all about rich presence for your game; specifically the g
 
 First you will need to set up your localization file in the Steamworks back-end. Obviously without this step the rich presence text does not really work as it has nothing to reference. You will need to set up your text file like this:
 
-````
+````gdscript
 "lang" {
 	"language" {
 		"english" {
@@ -34,7 +34,7 @@ You can put various languages in their own nests so these show up for users how 
 
 I have a global function, in my `global.gd` that can be called anywhere in my project and handles this. It is written something like this:
 
-````
+````gdscript
 func set_rich_presence(token: String) -> void:
 	# Set the token
 	var setting_presence = Steam.setRichPresence("steam_display", token)
@@ -45,7 +45,7 @@ func set_rich_presence(token: String) -> void:
 
 And in whatever scene you want to set the token:
 
-````
+````gdscript
 global.set_rich_presence("#something1")
 ````
 

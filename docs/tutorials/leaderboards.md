@@ -9,7 +9,7 @@ This tutorial will cover setting up leaderboards for your games. [You can check 
 First, let's get our signals set up.
 
 === "Godot 2.x, 3.x"
-	````
+	````gdscript
 	Steam.connect("leaderboard_find_result", self, "_on_leaderboard_find_result")
 	Steam.connect("leaderboard_score_uploaded", self, "_on_leaderboard_score_uploaded")
 	Steam.connect("leaderboard_scores_downloaded", self, "_on_leaderboard_scores_downloaded")
@@ -23,13 +23,13 @@ First, let's get our signals set up.
 
 We'll go over each signal and related function in order. First, you'll need to pass your leaderboard's Steamworks back-end name to the `findLeaderboard()` function like so:
 
-````
+````gdscript
 Steam.findLeaderboard( your_leaderboard_name )
 ````
 
 Once Steam finds your leaderboard it will pass back the handle to the `leaderboard_find_result` callback. The `_on_leaderboard_find_result()` function that it is connected to it should look something like this:
 
-````
+````gdscript
 func _on_leaderboard_find_result(handle: int, found: int) -> void:
 	if found == 1:
 		leaderboard_handle = handle
@@ -40,7 +40,7 @@ func _on_leaderboard_find_result(handle: int, found: int) -> void:
 
 Once you have this handle you can use all the additional functions. **Please note** you do not need to save the leaderboard handle since it is stored internally. However, you will only be able to work with one leaderboard at a time unless you store them locally in a variable. I would keep a dictionary of handles locally like:
 
-````
+````gdscript
 var leaderboard_handles: Dictionary = {
 	"top_score": handle1,
 	"most_kills": handle2,
@@ -56,7 +56,7 @@ This way you can call whatever handle you need when updating leaderboards quickl
 
 Before we can download scores, we need to upload them. The function itself is pretty simple:
 
-````
+````gdscript
 Steam.uploadLeaderboardScore( score, keep_best, details, handle )
 ````
 
@@ -64,7 +64,7 @@ The first argument is, obviously, the score. The second is if you want the score
 
 Once you pass a score to Steam, you should receive a callback from `leaderboard_score_uploaded`. This will trigger our `_on_leaderboard_score_uploaded()` function:
 
-````
+````gdscript
 func _on_leaderboard_score_uploaded(success: int, this_handle: int, this_score: Dictionary) -> void:
 	if success == 1:
 		print("Successfully uploaded scores!")
@@ -86,7 +86,7 @@ For the most part you are just looking for a success of 1 to tell that it worked
 
 Naturally you'll want to display leaderboard scores to the player. But before we pull any leaderboard entries, we need to set the maximum amount of details each one contains by setting the `setLeaderboardDetailsMax()` function up:
 
-````
+````gdscript
 var details_max: int = Steam.setLeaderboardDetailsMax( value )
 print("Max details: %s" % details_max)
 ````
@@ -95,7 +95,7 @@ By default the value is set to 0 but you will want to change it to match the num
 
 In most cases you'll want to use `downloadLeaderboardEntries()`, but you can also use `downloadLeaderboardEntriesForUsers()` by passing an array of users' Steam IDs to it. Both will respond with the same callback, but `downloadLeaderboardEntriesForUsers()` does not allow as much control over what you can request:
 
-````
+````gdscript
 Steam.downloadLeaderboardEntries( 1, 10, Steam.LEADERBOARD_DATA_REQUEST_GLOBAL, leaderboard_handle )
 
 Steam.downloadLeaderboardEntriesForUsers( user_array, leaderboard_handle )
@@ -114,7 +114,7 @@ LEADERBOARD_DATA_REQUEST_USERS				| 3			| Used internally by Steam, **do not use
 
 After you request leaderboard entries, you should receive a `leaderboard_scores_downloaded` callback which will trigger our `_on_leaderboard_scores_downloaded()` function. That function should look similar to this:
 
-````
+````gdscript
 func _on_leaderboard_scores_downloaded(message: string, this_leaderboard_handle: int, result: Array) -> void:
 	print("Scores downloaded message: %s" % message)
 

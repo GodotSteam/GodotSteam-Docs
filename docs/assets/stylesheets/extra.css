@@ -60,6 +60,9 @@ kbd,
 pre {
 	color:#eeeeee !important;
 }
+body {
+	background-color: #424242;
+}
 .md-typeset h1 {
 	color: #ffffff !important;
 }
@@ -416,6 +419,10 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	max-width:100%;
 	object-fit:contain;
 	width:auto
+}
+.md-nav__title{
+	background: none !important;
+	box-shadow: none !important;
 }
 .grid {
 	display: inline-block;
@@ -944,6 +951,9 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 .md-typeset .tabbed-labels {
   box-shadow:0 -.1rem #478CBF inset !important;
 }
+.md-footer-meta {
+	background-color: #305f82 !important;
+}
 div.branch-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1153,4 +1163,14 @@ figure.game a span.twemoji {
 .md-typeset table:not([class]) tbody tr:hover {
   background-color:#478CBF;
   box-shadow:0 .05rem 0 var(--md-default-bg-color) inset
+}
+/* Syntax highlight tweaks */
+.highlight :is(.k, .kd, .kn, .kp, .kr, .kt) {
+	color: #F56C81 !important;
+}
+.highlight :is(.no, .nb, .bp) {
+	color: #67B29E !important;
+}
+.highlight :is(.cpf, .l, .s, .sb, .sc, .s2, .si, .s1, .ss) {
+	color: #FFECA1 !important;
 }

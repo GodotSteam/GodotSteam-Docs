@@ -21,13 +21,13 @@ In this quick tutorial we will cover how to get a dictionary of any lobbies belo
 
 We will break down the different Steam functions to call first before looking at the code samples.
 
-````
+````gdscript
 var number_of_friends: int = Steam.getFriendCount(Steam.FRIEND_FLAG_IMMEDIATE)
 ````
 
 This must be run before `getFriendByIndex()` [according to the Steamworks documentation](https://partner.steamgames.com/doc/api/ISteamFriends#GetFriendByIndex){ target="\_blank" }. We'll be using this to iterate over each friend in our friends list.
 
-````
+````gdscript
 var steam_id: int = Steam.getFriendByIndex(index, Steam.FRIEND_FLAG_IMMEDIATE)
 ````
 
@@ -35,7 +35,7 @@ Inside of the loop we'll call `getFriendByIndex()` to get the Steam ID of our fr
 
 **Note:** You must use the same friend flag as the one used when calling `getFriendCount()`. Refer to the [FriendFlags enum](../classes/friends.md#friendflags) for valid options and [the Steamworks documentation on the friend flags](https://partner.steamgames.com/doc/api/ISteamFriends#EFriendFlags){ target="\_blank" } for what they mean.
 
-````
+````gdscript
 var game_info: Dictionary = Steam.getFriendGamePlayed(steam_id)
 ````
 
@@ -57,7 +57,7 @@ This dictionary will be empty if the friend is offline or not playing a game. Ot
 
 ## Putting It All Together
 
-````
+````gdscript
 func get_lobbies_with_friends() -> Dictionary:
 	var results: Dictionary = {}
 
@@ -87,7 +87,7 @@ func get_lobbies_with_friends() -> Dictionary:
 
 If you would rather get back a dictionary of `friend_id -> lobby_id` you can instead use:
 
-````
+````gdscript
 func get_friends_in_lobbies() -> Dictionary:
 	var results: Dictionary = {}
 
@@ -122,7 +122,7 @@ In the likely case that you are not running `get_lobbies_with_friends()` every f
 
 This is a little check you can do before joining the lobby:
 
-````
+````gdscript
 # Check if a friend is in a lobby
 func is_a_friend_still_in_lobby(steam_id: int, lobby_id: int) -> bool:
 	var game_info: Dictionary = Steam.getFriendGamePlayed(steam_id)
@@ -146,7 +146,7 @@ If you don't see any lobbies while testing, make sure to check the flags for how
 
 For instance, you won't be able to see a lobby with this flag:
 
-````
+````gdscript
 Steam.create_lobby(Steam.LOBBY_TYPE_INVISIBLE, 8)
 ````
 

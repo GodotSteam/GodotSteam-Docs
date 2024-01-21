@@ -58,7 +58,7 @@ Also, when shipping your game to Steam, do not include this file as it is not ne
 
 You can pass the app ID to either `steamInit` or `steamInitEx` to set it during initialization. This will be the second argument passed; the first being whether you want the local user's statistics and achievements to be pulled during the initialization.  For example:
 
-```
+```gdscript
 var initialize_response: Dictionary = steamInitEx( true, 480 )
 print("Did Steam initialize?: %s " % initialize_response)
 ```
@@ -72,7 +72,7 @@ If you use this method, you **must** pass a true or false as for the first argum
 
 You can set two environment variables in an autoload GDscript or the first GDscript to run; preferably the script where you run the Steam initialization function and preferably in the `_init()` function. For example:
 
-```
+```gdscript
 func _init() -> void:
 	# Set your game's Steam app ID here
 	OS.set_environment("SteamAppId", str(480))
@@ -89,7 +89,7 @@ In my personal projects, I usually create an auto-load GDscript called `global.g
 
 I then create a function called `initialize_steam()` and add the code below. This is then called from the `_ready()` function in my `global.gd`:
 
-```
+```gdscript
 func _ready() -> void:
 	initialize_steam()
 
@@ -115,7 +115,7 @@ By default, `steamInitEx()` will query Steamworks for the local user's current s
 
 The returned dictionary from `steamInitEx()` can be printed and ignored. However, there are certain conditions where you might not know why the game crashed at boot or does something unexpected; especially in development. For these cases we will check if Steamworks was actually initialized and to stop the game if anything is amiss, we do this:
 
-```
+```gdscript
 func initialize_steam() -> void:
 	var initialize_response: Dictionary = Steam.steamInitEx()
 	print("Did Steam initialize?: %s" % initialize_response)
@@ -137,7 +137,7 @@ In any case, the intialization functions should give you a pretty good idea of w
 
 There are a ton of functions you can call just after initialization to gather more data about your user; everything from location, to language used, to avatars, etc. We will just cover some basic things that are commonly used:
 
-```
+```gdscript
 var is_on_steam_deck: bool = Steam.isSteamRunningOnSteamDeck()
 var is_online: bool = Steam.loggedOn()
 var is_owned: bool = Steam.isSubscribed()
@@ -147,7 +147,7 @@ var steam_username: String = Steam.getPersonaName()
 
 This will check if Steam is online, if the app is running on the Steam Deck, get the current user's Steam ID64, and check if the current user owns the game. You can also have the game turn itself off if the current user does not own the game by simply doing this:
 
-```
+```gdscript
 if is_owned == false:
 	print("User does not own this game")
 	get_tree().quit()
@@ -168,7 +168,7 @@ A very important piece of Steamworks is getting callbacks from Steam itself in r
 
 The standard method has been adding the `Steam.run_callbacks()` function to the `_process()` function like so:
 
-```
+```gdscript
 func _process(_delta: float) -> void:
 	Steam.run_callbacks()
 ```
@@ -179,7 +179,7 @@ I highly suggest, much like the initialization process, you put this `_process()
 
 You can pass true as the third argument to either initialization function and have GodotSteam check for callbacks internally. Like so:
 
-```
+```gdscript
 var initialize_response: Dictionary = steamInitEx(false, 480, true)
 print("Did Steam initialize?: %s " % initialize_response)
 ```
@@ -195,7 +195,7 @@ However, you must pass the first two arguments which are whether you want the lo
 Putting it together should give us something like this:
 
 === "Without internal app ID and callbacks"
-	```
+	```gdscript
 	extends Node
 
 	# Steam variables
@@ -242,7 +242,7 @@ Putting it together should give us something like this:
 			get_tree().quit()
 	```
 === "With internal app ID and callbacks"
-	```
+	```gdscript
 	extends Node
 
 	# Steam variables

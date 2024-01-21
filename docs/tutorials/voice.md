@@ -2,7 +2,8 @@
 
 In case you want to Steam's Voice functionality in your game, we might as well cover that too! This example is based partialy on this [Github repo for networked voice chat in Godot](https://github.com/ikbencasdoei/godot-voip/){ target="\_blank" } and Valve's SpaceWar example. There are additional ideas, details, and such from users **Punny** and **ynot01**.
 
-**Please note:** currently the voice playback sounds pretty choppy. Personally, I have experienced this when using voice chat in the Steam client and am not really sure what causes it. Anyone who has any ideas is welcome to fix this example up!
+!!! warning "Notes"
+	Currently the voice playback sounds pretty choppy. Personally, I have experienced this when using voice chat in the Steam client and am not really sure what causes it. Anyone who has any ideas is welcome to fix this example up!
 
 ---
 
@@ -11,7 +12,7 @@ In case you want to Steam's Voice functionality in your game, we might as well c
 First we will set up a bunch of variables that will get used later on.
 
 === "Godot 2.x, 3.x"
-	```
+	```gdscript
 	var current_sample_rate: int = 48000
 	var has_loopback: bool = false
 	var local_playback: AudioStreamGeneratorPlayback = null
@@ -21,7 +22,7 @@ First we will set up a bunch of variables that will get used later on.
 	var packet_read_limit: int = 5
 	```
 === "Godot 4.x"
-	```
+	```gdscript
 	var current_sample_rate: int = 48000
 	var has_loopback: bool = false
 	var local_playback: AudioStreamGeneratorPlayback = null
@@ -39,14 +40,14 @@ Also, somewhere in the root of our test, we need to create two `AudioStreamPlaye
 
 Also, in our `_process()` function we will add the call to our `check_for_voice()` function:
 
-```
+```gdscript
 func _process(_delta: float) -> void:
 	check_for_voice()
 ```
 
 This function basically just looks to see if there is voice data from Steam available then gets and sends it off to be processed.
 
-```
+```gdscript
 func check_for_voice() -> void:
 	var available_voice: Dictionary = Steam.getAvailableVoice()
 
@@ -74,7 +75,7 @@ Our `Networking.send_message` function can be whatever P2P networking function y
 
 OK, now that we have something, let's hear it. We may want to use the optimal sample rate instead of whatever we set in our `current_sample_rate` variable.  In which case we can use this function:
 
-```
+```gdscript
 func get_sample_rate() -> void:
 	current_sample_rate = Steam.getVoiceOptimalSampleRate()
 	print("Current sample rate: %s" % current_sample_rate)
@@ -82,7 +83,7 @@ func get_sample_rate() -> void:
 
 This function can be attached to a button. We can also add a toggle to this button to change between the optimal rate or back to our default:
 
-```
+```gdscript
 func get_sample_rate(is_toggled: bool) -> void:
 	if is_toggled:
 		current_sample_rate = Steam.getVoiceOptimalSampleRate()
@@ -94,7 +95,7 @@ func get_sample_rate(is_toggled: bool) -> void:
 We have our sample rates figured out so let's try to actual play this data. Since we are just testing things, we will use the `local_` variables and nodes.
 
 === "Godot 2.x, 3.x"
-	```
+	```gdscript
 	func process_voice_data(voice_data: Dictionary, voice_source: String) -> void:
 		# Our sample rate function above without toggling
 		get_sample_rate()
@@ -119,7 +120,7 @@ We have our sample rates figured out so let's try to actual play this data. Sinc
 				$Local.play()
 	```
 === "Godot 4.x"
-	```
+	```gdscript
 	func process_voice_data(voice_data: Dictionary, voice_source: String) -> void:
 		# Our sample rate function above without toggling
 		get_sample_rate()
@@ -148,7 +149,7 @@ We have our sample rates figured out so let's try to actual play this data. Sinc
 
 So how do we actually get our voice data to Steam? We will need to set up a button that can be toggled and attached to the following function:
 
-```
+```gdscript
 func record_voice(is_recording: bool) -> void:
 	# If talking, suppress all other audio or voice comms from the Steam UI
 	Steam.setInGameVoiceSpeaking(steam_id, is_recording)

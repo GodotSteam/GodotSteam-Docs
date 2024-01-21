@@ -19,7 +19,7 @@ A quick, requested tutorial is auto-matchmaking lobbies. While this example does
 
 First let's set up some variables to fill in later:
 
-````
+````gdscript
 var lobby_id: int = 0
 var lobby_max_players: int = 2
 var lobby_members: Array = []
@@ -37,7 +37,7 @@ All of the `_ready()` function callback connections will be the same.
 ## Finding a Lobby
 For our purposes, we will create a button named "Auto Matchmake" and connect a `on_pressed` signal to it called `_on_auto_matchmake_pressed()`. Here is the function that triggers when that button is pressed:
 
-````
+````gdscript
 # Start the auto matchmaking process.
 func _on_auto_matchmake_pressed() -> void:
 	# Set the matchmaking process over
@@ -49,7 +49,7 @@ func _on_auto_matchmake_pressed() -> void:
 
 This starts the main loop that looks for a matching lobby for your player to join:
 
-````
+````gdscript
 # Iteration for trying different distances
 func matchmaking_loop() -> void:
 	# If this matchmake_phase is 3 or less, keep going
@@ -77,7 +77,7 @@ Very important is our `addRequestLobbyListDistanceFilter()` and `matchmake_phase
 
 This loop function will trigger a callback once it finds some lobbies to check through. Sorting through our matches should look like this:
 
-````
+````gdscript
 # A lobby list was created, find a possible lobby
 func _on_lobby_match_list(lobbies: Array) -> void:
 	# Set attempting_join to false

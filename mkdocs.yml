@@ -85,6 +85,11 @@ theme:
   name: material
   favicon: assets/images/favicon.png
   logo: assets/images/inverted-logo.png
+  highlightjs: true
+  hljs_languages:
+    - gdscript
+  palette:
+    scheme: slate
 plugins:
   - search
 markdown_extensions:
@@ -92,6 +97,9 @@ markdown_extensions:
   - md_in_html
   - admonition
   - pymdownx.details
+  - pymdownx.highlight:
+      pygments_lang_class: true
+
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true

@@ -13,7 +13,7 @@ I'd also like to suggest you [check out the Additional Resources section of this
 Next we'll want to set up the signal connections for Steamworks and a command line checker like so:
 
 === "Godot 2.x, 3.x"
-	```
+	```gdscript
 	func _ready() -> void:
 		Steam.connect("p2p_session_request", self, "_on_p2p_session_request")
 		Steam.connect("p2p_session_connect_fail", self, "_on_p2p_session_connect_fail")
@@ -22,7 +22,7 @@ Next we'll want to set up the signal connections for Steamworks and a command li
 		check_command_line()
 	```
 === "Godot 4.x"
-	```
+	```gdscript
 	func _ready() -> void:
 		Steam.p2p_session_request.connect(_on_p2p_session_request)
 		Steam.p2p_session_connect_fail.connect(_on_p2p_session_connect_fail)
@@ -39,7 +39,7 @@ We will get into each of these below.
 
 We'll also need to set `read_p2p_packet()` in our `_process()` function so it is always looking for new packets:
 
-```
+```gdscript
 func _process(_delta) -> void:
 	Steam.run_callbacks()
 
@@ -52,7 +52,7 @@ If you are using the `global.gd` autoload singleton then you can omit the `run_c
 
 Here is a nice bit of code from **tehsquidge** for handling packet reading:
 
-```
+```gdscript
 func _process(delta):
 	Steam.run_callbacks()
 
@@ -75,7 +75,7 @@ func read_all_p2p_packets(read_count: int = 0):
 
 Next we'll check out the P2P networking functionality. [Over in the lobby tutorial](lobbies.md), we did a P2P handshake when someone joins the lobby, it would trigger a `p2p_session_request` callback which would in turn trigger this function:
 
-```
+```gdscript
 func _on_p2p_session_request(remote_id: int) -> void:
 	# Get the requester's name
 	var this_requester: String = Steam.getFriendPersonaName(remote_id)
@@ -98,7 +98,7 @@ It pretty simply acknowledges the session request, accepts it, then sends a hand
 Inside that handshake there was a call to the `read_p2p_packet()` function which does this:
 
 === "Godot 2.x, 3.x"
-	```
+	```gdscript
 	func read_p2p_packet() -> void:
 		var packet_size: int = Steam.getAvailableP2PPacketSize(0)
 
@@ -122,7 +122,7 @@ Inside that handshake there was a call to the `read_p2p_packet()` function which
 			# Append logic here to deal with packet data
 	```
 === "Godot 4.x"
-	```
+	```gdscript
 	func read_p2p_packet() -> void:
 		var packet_size: int = Steam.getAvailableP2PPacketSize(0)
 
@@ -157,7 +157,7 @@ Beyond the handshake, you will probably want to pass a lot of different pieces o
 I have mine set up with two arguments: the first is the recipient as a string and the second is a dictionary. I think the dictionary is best for sending data so you can have a key / value pair to reference and make things less confusing on the receiving end. Each packet will go through the following function:
 
 === "Godot 2.x, 3.x"
-	```
+	```gdscript
 	func send_p2p_packet(this_target: int, packet_data: Dictionary) -> void:
 		# Set the send_type and channel
 		var send_type: int = Steam.P2P_SEND_RELIABLE
@@ -181,7 +181,7 @@ I have mine set up with two arguments: the first is the recipient as a string an
 			Steam.sendP2PPacket(this_target, this_data, send_type, channel)
 	```
 === "Godot 4.x"
-	```
+	```gdscript
 	func send_p2p_packet(this_target: int, packet_data: Dictionary) -> void:
 				# Set the send_type and channel
 		var send_type: int = Steam.P2P_SEND_RELIABLE
@@ -223,7 +223,7 @@ Luckily, we can introduce **compression** to our send function to shrink the siz
 We can compress the **PoolByteArray** / **PackedByteArray** to be smaller with a single line of code:
 
 === "Godot 2.x, 3.x"
-	```
+	```gdscript
 	func send_p2p_packet(target: int, packet_data: Dictionary) -> void:
 		# Set the send_type and channel
 		var send_type: int = Steam.P2P_SEND_RELIABLE
@@ -250,7 +250,7 @@ We can compress the **PoolByteArray** / **PackedByteArray** to be smaller with a
 			Steam.sendP2PPacket(target, this_data, send_type, channel)
 	```
 === "Godot 4.x"
-	```
+	```gdscript
 	func send_p2p_packet(target: int, packet_data: Dictionary) -> void:
 		# Set the send_type and channel
 		var send_type: int = Steam.P2P_SEND_RELIABLE
@@ -281,7 +281,7 @@ Of course, we've now sent a **compressed** PoolByteArray / PackedByteArray to so
 To accomplish this, we add a single line of code to our `read_p2p_packet` function like so:
 
 === "Godot 2.x, 3.x"
-	```
+	```gdscript
 	func read_p2p_packet() -> void:
 		var packet_size: int = Steam.getAvailableP2PPacketSize(0)
 
@@ -307,7 +307,7 @@ To accomplish this, we add a single line of code to our `read_p2p_packet` functi
 			# Append logic here to deal with packet data
 	```
 === "Godot 4.x"
-	```
+	```gdscript
 	func read_p2p_packet() -> void:
 		var packet_size: int = Steam.getAvailableP2PPacketSize(0)
 
@@ -341,7 +341,7 @@ The key point to note here is the format **must be the same for sending and rece
 	
 For the last part of this tutorial we'll handle P2P failures with the following function which is triggered by the `p2p_session_connect_fail` callback:
 
-```
+```gdscript
 func _on_p2p_session_connect_fail(steam_id: int, session_error: int) -> void:
 	# If no error was given
 	if session_error == 0:

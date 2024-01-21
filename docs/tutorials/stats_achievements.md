@@ -18,11 +18,11 @@ Unless you choose to turn it off by passing `false` to the `steamInit()` or `ste
 To retrieve the data from the resulting callback, you need to connect the `current_stats_received` callback to a function like so:
 
 === "Godot 2.x, 3.x"
-	````
+	````gdscript
 	Steam.connect("current_stats_received", self, "_on_steam_stats_ready", [], CONNECT_ONESHOT)
 	````
 === "Godot 4.x"
-	````
+	````gdscript
 	Steam.current_stats_received.connect(_on_steam_stats_ready)
 	````
 
@@ -31,28 +31,28 @@ You'll notice that `CONNECT_ONESHOT` is passed along to prevent this from firing
 In my use-cases this is not desirable, but it may be in yours. If you don't mind the `_on_steam_stats_ready()` firing each time, depending on your function's logic, feel free to omit that part like so:
 
 === "Godot 2.x, 3.x"
-	````
+	````gdscript
 	Steam.connect("current_stats_received", self, "_on_steam_stats_ready")
 	````
 === "Godot 4.x"
-	````
+	````gdscript
 	Steam.current_stats_received.connect(_on_steam_stats_ready)
 	````
 
 If you do keep the `CONNECT_ONESHOT` as I do, I suggest calling for Steam stat updates with `requestUserStats()` and pass with it the user's Steam ID. This function will work with any user: local or remote. You'll also want to connect it's signal in a similar manner:
 
 === "Godot 2.x, 3.x"
-	````
+	````gdscript
 	Steam.connect("user_stats_received", self, "_on_steam_stats_ready")
 	````
 === "Godot 4.x"
-	````
+	````gdscript
 	Steam.user_stats_received.connect(_on_steam_stats_ready)
 	````
 
 It can be connected to the same function as `requestCurrentStats()` as they send the same data back. For our example, here is the `_on_steam_stats_ready()` function we listed in the connected signals:
 
-````
+````gdscript
 func _on_steam_stats_ready(game: int, result: int, user: int) -> void:
 	print("This game's ID: %s" % game)
 	print("Call result: %s" % result)
@@ -65,7 +65,7 @@ func _on_steam_stats_ready(game: int, result: int, user: int) -> void:
 
 In this function you can check if the result is what you expect (ideally it is 1), see if the given stats are for the current player, and check that the game's ID matches. Also you can now pass the achievements and stats to local variables or functions. I will often pass the achievement to a function to parse them correctly as they send back a BOOL for retrieval and a BOOL for earned or not.
 
-````
+````gdscript
 var achievements: Dictionary = {"achieve1":false, "achieve2":false, "achieve3":false}
 
 func _on_steam_stats_ready(game: int, result: int, user: int) -> void:
@@ -109,14 +109,14 @@ func get_achievement(value: String) -> void:
 
 Setting the achievements and statistics is pretty simple too. We'll start with achievements. You need to tell Steam the achievement is unlocked and then store it so 'pops':
 
-````
+````gdscript
 Steam.setAchievement("achieve1")
 Steam.storeStats()
 ````
 
 If you don't call `storeStats()` the achievement pop-up won't trigger but the achievement should be recorded. However, you will still have to call `storeStats()` at some point to upload them. I generally make a generic function to house this process then call it when needed:
 
-````
+````gdscript
 func _fire_Steam_Achievement(value: String) -> void:
 	# Set the achievement to an in-game variable
 	achievements[value] = true
@@ -134,7 +134,7 @@ When that last `storeStats()` is called the achievement will "pop" visually for 
 
 Statistics follow a pretty similar process; both int and float based ones. Set them like so:
 
-````
+````gdscript
 Steam.setStatInt("stat1", value)
 Steam.setStatFloat("stat2", value)
 Steam.storeStats()

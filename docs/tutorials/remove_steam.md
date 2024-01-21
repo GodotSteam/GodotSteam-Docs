@@ -9,7 +9,7 @@ So the example I'll be using for this tutorial is based on solution #2 submitted
 
 We will create two variable to hold our platform and the Steamworks object then modify the usual `initialize_steam()` function to look for the Steam singleton before trying to do anything:
 
-```
+```gdscript
 var this_platform: String = "steam"
 var steam_api: Object = null
 
@@ -42,7 +42,7 @@ Now we can use the `steam_api` object to call our Steam functions elsewhere in t
 
 I also create a helper function to quickly check if anything Steam-wise can be used, like so:
 
-```
+```gdscript
 func is_steam_enabled() -> bool:
 	if this_platform == "steam" and steam_api != null:
 		return true
@@ -51,7 +51,7 @@ func is_steam_enabled() -> bool:
 
 Since it is in my global script, it can be called anywhere I need to use Steam functions. If this function doesn't return true, then I just have my code ignore related Steam portions like so:
 
-```
+```gdscript
 func fire_steam_achievement(value: int) -> void:
 	if not achievements[value]:
 		achievements[value] = true
@@ -77,7 +77,7 @@ Below we have the two submitted user suggestions on how to pull this off; the ex
 
 Albey shared some scripts for his solution in GDScript and there are three separate files. The `SteamHandler.gd` file which swaps out which version of the game this is:
 
-````
+````gdscript
 extends Node
 
 var interface: SteamIntegrationBlank
@@ -95,7 +95,7 @@ func _ready() -> void:
 
 The `SteamIntegrationBlank.gd` file which handles what happens when Steam is not present:
 
-````
+````gdscript
 extends Reference
 class_name SteamIntegrationBlank
 
@@ -109,7 +109,7 @@ func initialise_steam() -> void:
 
 And finally the `SteamIntegration.gd` file for when Steam is present:
 
-````
+````gdscript
 extends SteamIntegrationBlank
 
 const APP_ID = ***
@@ -128,7 +128,7 @@ func initialise_steam() -> void:
 
 [Rutger from Roost Games (maker of Cat Cafe Manager)](https://catcafemanager.com){ target="\_blank" } shared a tidbit about it: "If anyone is wondering how to do that, since I had to find out through the Switch port, I have a `platform` global as a wrapper for any platform specific stuff, it just does this in the `_ready()`". His example code is as following:
 
-````
+````gdscript
 if Engine.has_singleton("Steam"):
 	self.platform = "steam"
 	self.Steam = Engine.get_singleton("Steam")

@@ -18,7 +18,7 @@ In this tutorial we will talk about authenticating users with Steam. Networking 
 
 First, in both your clients and server, you'll want to set two variables: `auth_ticket` and `client_auth_tickets`. You will keep the local client's ticket dictionary in `auth_ticket`, obviously, and a list of all connected clients in your `client_auth_tickets` array. More on that later.
 
-````
+````gdscript
 # Set up some variables
 var auth_ticket: Dictionary		# Your auth ticket
 var client_auth_tickets: Array	# Array of tickets from other clients
@@ -27,13 +27,13 @@ var client_auth_tickets: Array	# Array of tickets from other clients
 Now, we'll set up the signals for authentication callbacks:
 
 === "Godot 2.x, 3.x"
-	````
+	````gdscript
 	func _ready() -> void:
 		Steam.connect("get_auth_session_ticket_response", self, "_on_get_auth_session_ticket_response")
 		Steam.connect("validate_auth_ticket_response", self, "_on_validate_auth_ticket_response")
 	````
 === "Godot 4.x"
-	````
+	````gdscript
 	func _ready() -> void:
 		Steam.get_auth_session_ticket_response.connect(_on_get_auth_session_ticket_response)
 		Steam.validate_auth_ticket_response.connect(_on_validate_auth_ticket_response)
@@ -41,7 +41,7 @@ Now, we'll set up the signals for authentication callbacks:
 
 Next we implement the respective functions for when we receive the signals:
 
-````
+````gdscript
 # Callback from getting the auth ticket from Steam
 func _on_get_auth_session_ticket_response(this_auth_ticket: int, result: int) -> void:
 	print("Auth session result: %s" % result)
@@ -52,7 +52,7 @@ Our `_on_get_auth_session_ticket_response()` function will print out the auth ti
 
 Speaking of validation:
 
-````
+````gdscript
 # Callback from attempting to validate the auth ticket
 func _on_validate_auth_ticket_response(auth_id: int, response: int, owner_id: int) -> void:
 	print("Ticket Owner: %s" % auth_id)
@@ -84,7 +84,7 @@ The `_on_validate_auth_ticket_response()` function is received in response to `b
 
 First you'll want to get an auth ticket from Steam and store it in your `auth_ticket` dictionary variable; this way you can pass it along to the server or other clients as needed:
 
-````
+````gdscript
 auth_ticket = Steam.getAuthSessionTicket()
 ````
 
@@ -98,7 +98,7 @@ Now that you have your auth ticket, you'll want to pass it along to the server o
 
 Your server or other clients will now want to take your auth ticket and validate it before allowing you to join the game. In a peer-to-peer situation, every client will want to validate the ticket of every other player. The server or clients will want to pass your `auth_ticket` dictionary's buffer and size, as well as your Steam ID, to `beginAuthSession()`. For this we'll create a `validate_auth_session()` function:
 
-````
+````gdscript
 func validate_auth_session(ticket: Dictionary, steam_id: int) -> void:
 	var auth_response: int = Steam.beginAuthSession(ticket.buffer, ticket.size, steam_id)
 
@@ -133,19 +133,19 @@ Finally when the game is over or the client is leaving the game, you'll want to 
 
 When the client is ready to leave the game, they will pass their own ticket handle to the `cancelAuthTicket()` function like so:
 
-````
+````gdscript
 Steam.cancelAuthTicket(auth_ticket.id)
 ````
 
 This will trigger the `_on_validate_auth_ticket_response()` function for the server or other clients to let them know the player has left and invalidated their auth ticket. Additionally, you should call `endAuthSession()` to also close out the auth session with the server or other clients:
 
-````
+````gdscript
 Steam.endAuthSession(steam_id)
 ````
 
 You will need to pass the Steam ID of every client connected. You can do this in a loop from your `client_auth_tickets` array like so:
 
-````
+````gdscript
 for this_client_ticket in client_auth_tickets:
 	Steam.endAuthSession(this_client_ticket.id)
 
