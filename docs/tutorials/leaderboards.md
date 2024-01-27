@@ -159,9 +159,9 @@ A user in our Discord noted that sometimes `downloadLeaderboardEntriesForUsers()
 
 Prefer video tutorials? Feast your eyes and ears!
 
-!!! video "['How To Build Leaderboards Out' by FinePointCGI](https://www.youtube.com/watch?v=VCwNxfYZ8Cw&t=3394s){ target="\_blank" }"
+[ :simple-youtube: 'How To Build Leaderboards Out' by FinePointCGI](https://www.youtube.com/watch?v=VCwNxfYZ8Cw&t=3394s){ .md-button .md-button--resource target="\_blank" }
 
-!!! video "['Godot 4 Steam Leaderboards' by Gwizz](https://www.youtube.com/watch?v=51qre_hodZI){ target="\_blank" }"
+[ :simple-youtube: 'Godot 4 Steam Leaderboards' by Gwizz](https://www.youtube.com/watch?v=51qre_hodZI){ .md-button .md-button--resource target="\_blank" }
 
 ### Example Project
 
