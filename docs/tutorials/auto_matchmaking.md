@@ -2,29 +2,26 @@
 
 A quick, requested tutorial is auto-matchmaking lobbies. While this example does not show how to match specific criteria, it will be noted where you can place such matches. This tutorial is basically an extension of the [lobbies](lobbies.md) and [P2P networking](p2p.md) tutorials. Because of that we'll focus only on what's different; please refer to the aforementioned tutorials for additional information and layouts.
 
-<div class="start-grid" markdown>
-
-!!! guide "Relevant GodotSteam classes and functions"
+??? guide "Relevant GodotSteam classes and functions"
 	* [Matchmaking class](../classes/matchmaking.md)
 		* [addRequestLobbyListDistanceFilter()](../classes/matchmaking.md#addrequestlobbylistdistancefilter)
 		* [getLobbyData()](../classes/matchmaking.md#getlobbydata)
 		* [getNumLobbyMembers()](../classes/matchmaking.md#getnumlobbymembers)
 		* [joinLobby()](../classes/matchmaking.md#joinlobby)
 		* [requestLobbyList()](../classes/matchmaking.md#requestlobbylist)
-</div>
 
----
-
+{==
 ## Set Up
+==}
 
 First let's set up some variables to fill in later:
 
-````gdscript
+```gdscript
 var lobby_id: int = 0
 var lobby_max_players: int = 2
 var lobby_members: Array = []
 var matchmaking_phase: int = 0
-````
+```
 
 Carried over from the lobby tutorial is `lobby_id`, which obviously houses the lobby's ID, and `lobby_members`, which will be an array of dictionaries of lobby members and their Steam ID 64's.
 
@@ -32,12 +29,13 @@ New to this tutorial is `matchmaking_phase` which keeps track of which iteration
 
 All of the `_ready()` function callback connections will be the same.
 
----
-
+{==
 ## Finding a Lobby
+==}
+
 For our purposes, we will create a button named "Auto Matchmake" and connect a `on_pressed` signal to it called `_on_auto_matchmake_pressed()`. Here is the function that triggers when that button is pressed:
 
-````gdscript
+```gdscript
 # Start the auto matchmaking process.
 func _on_auto_matchmake_pressed() -> void:
 	# Set the matchmaking process over
@@ -45,11 +43,11 @@ func _on_auto_matchmake_pressed() -> void:
 
 	# Start the loop!
 	matchmaking_loop()
-````			
+```			
 
 This starts the main loop that looks for a matching lobby for your player to join:
 
-````gdscript
+```gdscript
 # Iteration for trying different distances
 func matchmaking_loop() -> void:
 	# If this matchmake_phase is 3 or less, keep going
@@ -69,7 +67,7 @@ func matchmaking_loop() -> void:
 
 	else:
 		print("[STEAM] Failed to automatically match you with a lobby. Please try again.")
-````
+```
 
 As it notes in the code above, you could have a list of different filters the player can pick from before searching for a lobby. These can be applied to terms that `addRequestLobbyListStringFilter()` looks for ahead of time. Things like game modes, maps, difficulties, etc.
 
@@ -77,7 +75,7 @@ Very important is our `addRequestLobbyListDistanceFilter()` and `matchmake_phase
 
 This loop function will trigger a callback once it finds some lobbies to check through. Sorting through our matches should look like this:
 
-````gdscript
+```gdscript
 # A lobby list was created, find a possible lobby
 func _on_lobby_match_list(lobbies: Array) -> void:
 	# Set attempting_join to false
@@ -108,7 +106,7 @@ func _on_lobby_match_list(lobbies: Array) -> void:
 		# Increment the matchmake_phase
 		matchmake_phase += 1
 		matchmaking_loop()
-````
+```
 
 This will go through every lobby returned and, if none of them match, it will iterate the `matchmake_phase` variable and start the loop again but moving one step further in the distance filter.
 
@@ -116,6 +114,10 @@ Much like the previous additional filters, you can sort by other lobby data in t
 
 The first lobby that matches your criteria and has space for the user, triggers the `joinLobby()` function to fire and the player should soon join their automatically found lobby.
 
----
+{==
+## Additional Resources
+==}
+
+### Example Project
 
 To see this tutorial in action, [check out our GodotSteam Example Project on GitHub](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="\_blank" }. There you can get a full view of the code used which can serve as a starting point for you to branch out from.

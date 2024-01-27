@@ -1,16 +1,12 @@
 # User
 
-Functions for accessing and manipulating Steam user information.
+Functions for accessing and manipulating Steam user information. This is also where the APIs for [Steam Voice](https://partner.steamgames.com/doc/features/voice){ target="\_blank" } are exposed.
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
-This is also where the APIs for [Steam Voice](https://partner.steamgames.com/doc/features/voice){ target="\_blank" } are exposed.
-
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### advertiseGame
 
@@ -112,7 +108,7 @@ This is also where the APIs for [Steam Voice](https://partner.steamgames.com/do
 ### getAuthTicketForWebApi
 
 !!! function "getAuthTicketForWebApi( ```string``` service_identity )"
-	Request a ticket which will be used for the [AuthenticateUserTicket Web API](https://partner.steamgames.com/doc/webapi/ISteamUserAuth){ target="_blank" }.
+	Request a ticket which will be used for the [AuthenticateUserTicket Web API](https://partner.steamgames.com/doc/webapi/ISteamUserAuth){ target="\_blank" }.
 
 	Triggers a [get_ticket_for_web_api](#get_ticket_for_web_api) callback which will include the actual ticket.
 
@@ -440,32 +436,11 @@ This is also where the APIs for [Steam Voice](https://partner.steamgames.com/do
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#UserHasLicenseForApp){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
-
-### duration_control
-
-!!! function "duration_control"
-	Sent for games with enabled anti indulgence / duration control, for enabled users. Lets the game know whether persistent rewards or XP should be granted at normal rate, half rate, or zero rate.
-
-	**Returns:**
-	### 
-	* result (int)
-	* duration (dictionary)
-		* app_id (uint32)
-		* applicable (bool)
-		* seconds_last_5hrs (int32)
-		* progress (int)
-		* notification (int)
-		* notification_verbal (string)
-
-	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#DurationControl_t){ .md-button .md-button--store target="_blank" }
 
 ### client_game_server_deny
 
@@ -482,6 +457,25 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#ClientGameServerDeny_t){ .md-button .md-button--store target="_blank" }
+
+### duration_control
+
+!!! function "duration_control"
+	Sent for games with enabled anti indulgence / duration control, for enabled users. Lets the game know whether persistent rewards or XP should be granted at normal rate, half rate, or zero rate.
+
+	**Returns:**
+
+	* result (int)
+	* duration (dictionary)
+		* app_id (uint32)
+		* applicable (bool)
+		* seconds_last_5hrs (int32)
+		* progress (int)
+		* notification (int)
+		* notification_verbal (string)
+
+	---
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#DurationControl_t){ .md-button .md-button--store target="_blank" }
 
 ### encrypted_app_ticket_response
 
@@ -634,11 +628,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#ValidateAuthTicketResponse_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### FailureType
 

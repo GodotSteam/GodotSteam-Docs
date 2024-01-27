@@ -2,13 +2,11 @@
 
 Exposes a wide range of information and actions for applications and [Downloadable Content (DLC)](https://partner.steamgames.com/doc/store/application/dlc){ target="\_blank" }.
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### getAppBuildId
 
@@ -339,13 +337,11 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#UninstallDLC){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
-------
 
 ### dlc_installed
 
@@ -356,7 +352,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
     * app_id (uint32_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#DlcInstalled_t){ .md-button .md-button--store target="_blank" }
 
 ### file_details_result
@@ -371,7 +367,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
     * file_hash (uint8)
     * flags (uint32_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#FileDetailsResult_t){ .md-button .md-button--store target="_blank" }
 
 ### new_launch_url_parameters
@@ -381,7 +377,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
     
     **Returns:** nothing
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#NewUrlLaunchParameters_t){ .md-button .md-button--store target="_blank" }
 
 ### timed_trial_status
@@ -396,19 +392,17 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
     * seconds_allowed (uint32)
     * seconds_played (uint32)
     
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#TimedTrialStatus_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### RegisterActivationCodeResult
 
 Enumerator | Value
----------- | -----
+------- | -----
 ACTIVATION_CODE_RESULT_OK | 0
 ACTIVATION_CODE_RESULT_FAIL | 1
 ACTIVATION_CODE_RESULT_ALREADY_REGISTERED | 2

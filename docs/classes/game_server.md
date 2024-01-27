@@ -1,12 +1,10 @@
 # Game Server
 
-These are only available in the [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+!!! info "Only available in the [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### associateWithClan
 
@@ -407,13 +405,11 @@ These are only available in the [GodotSteam Server branches](https://github.com/
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#WasRestartRequested){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### associate_clan
 

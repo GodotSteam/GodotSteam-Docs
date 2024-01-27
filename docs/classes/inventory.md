@@ -1,16 +1,12 @@
 # Inventory
 
-Steam Inventory query and manipulation API.
+Steam Inventory query and manipulation API. See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inventory){ target="\_blank" } for more information.
 
-These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
 
-See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inventory){ target="\_blank" } for more information.
-
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### addPromoItem
 
@@ -502,13 +498,11 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inven
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SetProperty){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### inventory_definition_update
 
@@ -588,11 +582,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryStartPurchaseResult_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### SteamItemFlags
 

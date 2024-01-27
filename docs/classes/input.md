@@ -1,16 +1,12 @@
 # Input
 
-Steam Input API is a flexible action-based API that supports all major controller types - Xbox, PlayStation, Nintendo Switch Pro, and Steam Controllers.
- 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+Steam Input API is a flexible action-based API that supports all major controller types - Xbox, PlayStation, Nintendo Switch Pro, and Steam Controllers. See the [Steam Input](https://partner.steamgames.com/doc/features/steam_controller){ target="\_blank" } documentation for more information.
 
-See the [Steam Input](https://partner.steamgames.com/doc/features/steam_controller){ target="\_blank" } documentation for more information.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### activateActionSet
 
@@ -429,13 +425,11 @@ See the [Steam Input](https://partner.steamgames.com/doc/features/steam_control
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerVibrationExtended){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### input_configuration_loaded
 
@@ -484,11 +478,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* old_gamepad_slot (int)
 	* new_gamepad_slot (int)
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### InputActionOrigin
 

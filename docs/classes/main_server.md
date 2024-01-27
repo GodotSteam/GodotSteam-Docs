@@ -1,12 +1,10 @@
 # Main Server
 
-These are only available in the [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+!!! info "Only available in the [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### isServerSecure
 
@@ -62,11 +60,9 @@ These are only available in the [GodotSteam Server branches](https://github.com/
 !!! function "serverShutdown()"
 	Shut down the server connection to Steam.
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### AccountType
 

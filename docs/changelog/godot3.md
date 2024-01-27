@@ -1,25 +1,25 @@
 # Godot 3.x Change-Log
 
-A history of all changes to the **godot3** branch.
+A history of all to the ***godot3*** branch.
 
 ---
 
-## Version 3.22.3 Changes
+## Version 3.22.3
 
 - Changed: moved constants to separate file like in Godot 4.x branches
 - Fixed: backported fixes for in-editor docs, ***thanks to sepTN***
 - Fixed: `requestClanOfficerList()` using wrong internal function, ***thanks to _sepTN***
 
-## Version 3.22.2 Changes
+## Version 3.22.2
 
 - Fixed: app ID automatically being set to 480, now default is 0 which makes GodotSteam ignore auto-setting app ID
 
-## Version 3.22.1 Changes
+## Version 3.22.1
 
 - Added: two new arguments to `steamInit()` and `steamInitEx()` to set your app ID and run_callbacks interally, ***thanks to GreenFox***
 - Fixed: issue with callback that caused compiling failure in Linux
 
-## Version 3.22 Changes
+## Version 3.22
 
 - Added: two Music class callbacks
 - Changed: `generateItems()`, `exchangeItems()`, `getItemsByID()`, and `startPurchase()` all list-based arguments are now PoolIntArrays
@@ -31,7 +31,7 @@ A history of all changes to the **godot3** branch.
 - Fixed: Joy Con name in `getInputTypeForHandle()`
 - Removed: `getNumItemsWithPrices()` as it was unnecessary
 
-## Version 3.21.3 Changes
+## Version 3.21.3
 
 - Fixed: `requestEquippedProfileItems()` was missing method bind, ***thanks to BOTLANNER***
 - Fixed: `get_ticket_for_web_api` callback for getting actual ticket buffer, ***thanks to dicarne***
@@ -42,13 +42,13 @@ A history of all changes to the **godot3** branch.
 - Changed: cast handle in `setSize()` as Steam HHTMLBrowser
 - Removed: unnecessary `steam_appid.txt` from zips in Github Actions
 
-## Version 3.21.2 Changes
+## Version 3.21.2
 
 - Fixed: missing descriptions for some in-editor functions/signals
 - Fixed: `receiveMessagesOnChannel()`, `receiveMessagesOnPollGroup()`, and `receiveMessagesOnConnection()` had overwriting dictionary keys
 
 
-## Version 3.21 Changes
+## Version 3.21
 
 - Added: new enums and constant related to new Steam initialization function
 - Added: new enums for `NetworkingConfigValue`
@@ -57,14 +57,14 @@ A history of all changes to the **godot3** branch.
 - Added: new Remote Play function `startRemotePlayTogether()`
 - Changed: UGC function`setItemTags()` to have new argument for admin tags
 - Changed: compatible with Steamworks SDK 1.58
-- Changed: in-editor docs now reflect all changes
+- Changed: in-editor docs now reflect all
 - Fixed: `gamepad_text_input_dismissed` signal passing back string instead of int for `app_id` 
 
-## Version 3.20.1 Changes
+## Version 3.20.1
 
 - Fixed: wrong variant type for `join_requested`
 
-## Version 3.20 Changes
+## Version 3.20
 
 - Added: full GodotSteam documentation into the editor
 - Added: `steamShutdown()` to allow Steamworks to be manually shutdown
@@ -78,14 +78,14 @@ A history of all changes to the **godot3** branch.
 - Fixed: missing function argument binds
 - Removed: enums that are not in the SDK but Valve's docs
 
-## Version 3.19.3 Changes
+## Version 3.19.3
 
 - Added: new Input callback `input_gamepad_slot_change`
 - Added: new User callback `get_ticket_for_web_api`
 - Added: new User function `getAuthTicketForWebApi()`
 - Changed: `getAuthSessionTicket()` argument is now optional, defaults to NULL
 
-## Version 3.19.2 Changes
+## Version 3.19.2
 
 - Added: new return values for `overlay_toggled`; this will break compatibility with this
 - Added: new Input and Parental Settings enums
@@ -97,11 +97,11 @@ A history of all changes to the **godot3** branch.
 - Changed: Steam Input max analog and digital actions values
 - Removed: ERegisterActivationCodeResult due to removal in SDK
 
-## Version 3.19.1 Changes
+## Version 3.19.1
 
 - Fixed: issue with UGC tags occasionally getting lost upon update, ***thanks to EIREXE***
 
-## Version 3.19 Changes
+## Version 3.19
 
 * Changed: various backports from godot4 branch
 * Fixed: various lobby list functions now return the `server_list_request` handle
@@ -109,17 +109,17 @@ A history of all changes to the **godot3** branch.
 * Fixed: typo in returned dictionary for `createSocketPair()`
 * Fixed: `requestInternetServerList()` causing crashes
 
-## Version 3.18.5 Changes
+## Version 3.18.5
 
 * Fixed: `createListenSocketP2P()`
 * Fixed: other issues with reading array size
 
-## Version 3.18.4 Changes
+## Version 3.18.4
 
 * Changed: documentation updates for Doxygen, ***thanks to Ralian***
 * Removed: `isCyberCafe()` function
 
-## Version 3.18.3 Changes
+## Version 3.18.3
 
 * Added: networking type message constants
 * Added: more descriptions and tutorial links to in-editor docs
@@ -127,18 +127,18 @@ A history of all changes to the **godot3** branch.
 * Fixed: `sendLobbyChatMsg()` truncating non-English strings
 * Removed: `MarketingMessageFlags` as they don't exist in the header files
 
-## Version 3.18.2 Changes
+## Version 3.18.2
 
 * Changed: minor internal variable names
 * Fixed: `filterText()` truncating input; ***thanks to tcoxon***
 
-## Version 3.18.1 Changes
+## Version 3.18.1
 
 * Added: link to SDK placeholder
 * Added: more descriptions to in-editor docs
 * Fixed: some regressions that made their way into 3.18
 
-## Version 3.18 Changes
+## Version 3.18
 
 * Added: `avatar_image_loaded` callback to get raw response from Steamworks
 * Changed: project layout to be Git clone friendly
@@ -146,26 +146,26 @@ A history of all changes to the **godot3** branch.
 * Fixed: `getSessionConnectionInfo()` using old networking struct
 * Removed: unused networking stricts
 
-## Version 3.17.5 Changes
+## Version 3.17.5
 
 * Changed: `submitItemUpdate()` to use null if no notes are passed, ***thanks to mashumafi***
 * Removed: unused server signals
 
-## Version 3.17.4 Changes
+## Version 3.17.4
 
 * Changed: `leaderboard_scores_downloaded` and `leaderboard_score_updated` now pass back their handles; this is incompatible with earlier versions
 * Fixed: issue where `leaderboard_score_uploaded` would not fire if passed `leaderboard_handle` was not internally stored
 
-## Version 3.17.3 Changes
+## Version 3.17.3
 
 * Fixed: `getVoice()` and `getAvailableVoice()` functions
 * Removed: all server functionality, put back into server branch
 
-## Version 3.17.2 Changes
+## Version 3.17.2
 
 * Fixed: location data structs for new Networking classes, ***thanks to Kryx-Ikyr***
 
-## Version 3.17.1 Changes
+## Version 3.17.1
 
 * Fixed: missing comma in `getVideoURL()` argument function
 * Fixed: argument name mismatch with file_details_result
@@ -174,16 +174,16 @@ A history of all changes to the **godot3** branch.
 * Fixed: wrong int type for server ID in `getLobbyGameServer()`
 * Fixed: not casting account ID for `createQueryUserUGCRequest()`
 
-## Version 3.17 Changes
+## Version 3.17
 
 * Added: new functions, enums for Steamworks SDK 1.55
 * Fixed: `getPublicIP()` in Game Servers class
 
-## Version 3.16.1 Changes
+## Version 3.16.1
 
 * Fixed: issues with `getPSNID()` and `getStadiaID()` functions when compiling on Linux
 
-## Version 3.16 Changes
+## Version 3.16
 
 * Added: new enums for Community Profile item types and properties in Friends class
 * Added: new functions `hasEquippedProfileItem()`, `getProfileItemPropertyString()`, and `getProfileItemPropertyInt()` in Friends class
@@ -192,13 +192,13 @@ A history of all changes to the **godot3** branch.
 * Added: new functions `setXboxPairwiseID()`, `getXboxPairwiseID()`, `setPSNID()`, `getPSNID()`, `setStadiaID()`, and `getStadiaID()` to Networking Types class
 * Changed: minor correction to `createListenSocketP2P()` in attempt to fix possible crash
 
-## Version 3.15 Changes
+## Version 3.15
 
 * Changed: `sendMessageToConnection()` and `sendMessages()` now take PoolByteArrays to send any data
 * Fixed: issue with receiving messages, now allows more than one at a time; ***thanks to Frostings***
 * Fixed: `getQueryUGCChildren()` not working correctly; ***thanks to EIREXE***
 
-## Version 3.14 Changes
+## Version 3.14
 
 * Added: inventory handle argument to various Inventory class functions, defaults to 0 to use internally store argument
 * Changed: various Inventory class functions to send back the new inventory handle as well as storing it internally
@@ -211,22 +211,22 @@ A history of all changes to the **godot3** branch.
 * Fixed: `deserializeResult()` to accept incoming PoolByteArray buffer
 * Fixed: various message functions in new networking classes; ***thanks to Avantir-Chaosfire***
 
-## Version 3.13.3 Changes
+## Version 3.13.3
 
 * Fixed: get correct size of lobby message in `sendLobbyChatMsg()`; ***thanks to GreenFox***
 
-## Version 3.13.2 Changes
+## Version 3.13.2
 
 * Fixed: various functions and callbacks that sent back scrambled IP addresses
 
-## Version 3.13.1 Changes
+## Version 3.13.1
 
 * Changed: all HTML Surface functions can now have the handle passed to them or not; will use internal handle if not passed
 * Changed: all HTML Surface callbacks now send back their browser handles, if applicable
 * Changed: `fileWrite()` and `fileWriteAsync()` now allow you to pass size or not; will determine if not passed
 * Fixed: `fileWrite()` and `fileWriteAsync()` passing wrong byte array size
 
-## Version 3.13 Changes
+## Version 3.13
 
 * Added: missing function `getPlaybackStatus()` to Music class
 * Added: missing function `setDurationControlOnlineState()` to Users class
@@ -252,7 +252,7 @@ A history of all changes to the **godot3** branch.
 * Changed: removed data_size argument from various Remote Storage functions and get size internally
 * Changed: `playerDetails()` and `serverRules()` IP argument to a string
 * Changed: various Networking Messages, Networking Sockets, and Networking Utils functions to use internal struct system with Networking Type functions
-* Changed: a variety of miscellaneous small changes and corrections
+* Changed: a variety of miscellaneous small and corrections
 * Fixed: some missing function binds
 * Fixed: `lobby_message` callback data, ***thanks to kongo555***
 * Fixed: missing default value for `getAvailableP2PPacketSize()`, `readP2PPacket()`, `sendP2PPacket()`
@@ -271,11 +271,11 @@ A history of all changes to the **godot3** branch.
 * Removed: `initGameServer()` as it is unnecessary
 * Removed: `connectByIPAddress()`, `isPingMeasurementInProgress()`, `setLinkedLobby()` as they are not in the SDK
 
-## Version 3.12.1 Changes
+## Version 3.12.1
 
 * Fixed: incorrect case on `app_installed` and `app_uninstalled`, ***thanks to craftablescience***
 
-## Version 3.12 Changes
+## Version 3.12
 
 * Added: missing D_METHOD to all functions, should show the right argument names in-editor
 * Added: Input origin enums for PS5 and Steam Deck
@@ -306,41 +306,41 @@ A history of all changes to the **godot3** branch.
 * Removed: `getQuickConnectionStatus()` and `getFirstConfigValue()` as they were removed from SDK 1.53
 * Removed: `setDebugOutputFunction()` from Networking Utils
 
-## Version 3.11.1 Changes
+## Version 3.11.1
 
 * Removed: unused structs
 
-## Version 3.11 Changes
+## Version 3.11
 
 * Added: server branch merged into master
 * Changed: spacing in default arguments in [godotsteam.h]
 * Changed: renamed STEAM_GAMESERVER_CALLBACK as STEAM_CALLBACK
 * Removed: `SteamGameServer_RunCallbacks()` function
 
-## Version 3.10.5 Changes
+## Version 3.10.5
 
 * Added: more helper functions for newer networking classes, translations for steamnetworkingtypes
 * Fixed: lots of compiler warnings on Linux, ***thanks to gregcsokas***
 
-## Version 3.10.4 Changes
+## Version 3.10.4
 
 * Added: new helper functions for newer networking classes, translations for steamnetworkingtypes
 * Fixed: default argument inputInit function, ***thanks to hhyyrylainen***
 
-## Version 3.10.3 Changes
+## Version 3.10.3
 
 * Changed: various internal variable / arguments names for clarity, will affect signal-returned dictionaries
 
-## Version 3.10.2 Changes
+## Version 3.10.2
 
 * Removed: not logged in as error condition in `steamInit()` function
 
-## Version 3.10.1 Changes
+## Version 3.10.1
 
 * Changed: various compilation errors for OSX, ***thanks to SapphireMH***
 * Removed: `receiveRelayAuthTicket()`, `findRelayAuthTicketForServer()`, `getHostedDedicatedServerAddress()`, and `getGameCoordinatorServerLogin()` as they rely on datagram header that was removed from base SDK
 
-## Version 3.10 Changes
+## Version 3.10
 
 * Added: various Steam Deck specific functions, ***thanks to EIREXE***
 * Added: new AppLists class of functions and callbacks
@@ -358,7 +358,7 @@ A history of all changes to the **godot3** branch.
 * Fixed: `receivedRelayAuthTicket()`, `getGameCoordinatorServerLogin()`, `FindRelayAuthTicketForServer()` in Networking Sockets class
 * Removed: second call for steam_api.h in godotsteam.cpp
 
-## Version 3.9.7 Changes
+## Version 3.9.7
 
 * Added: two Matchmaking Server call results
 * Added: `requestHandle()` to various HTTP functions so handle can be passed
@@ -374,30 +374,30 @@ A history of all changes to the **godot3** branch.
 * Fixed: `network_connection_status_changed` callback, now provides the full connection information
 * Removed: unnecessary bool from `setLeaderboardDetailsMax()`
 
-## Version 3.9.6 Changes
+## Version 3.9.6
 
 * Added: ability to provide different locations for custom modules, ***thanks to dsnopek***
 * Changed: `gamepad_text_input_dismissed` to return submitted boolean and use UTF8 string, ***thanks to EIREXE***
 
-## Version 3.9.5 Changes
+## Version 3.9.5
 
 * Added: `setLeaderboardDetailsMax()` function back in to set the internal details variable
 * Fixed: `leaderboard_scores_downloaded` sigal to provide the actual details for leaderboard results
 
-## Version 3.9.4 Changes
+## Version 3.9.4
 
 * Fixed: conversion issue in `getGlobalStatInt()` and `getGlobalStatIntHistory()` that caused compiling failure on Linux
 
-## Version 3.9.3 Changes
+## Version 3.9.3
 
 * Changed: restored `getGlobalStatInt()` and `getGlobalStatIntHistory()` functions
 
-## Version 3.9.2 Changes
+## Version 3.9.2
 
 * Added: `getNextMostAchievedAchievementInfo()` function, moved out of `getMostAchievedAchievementInfo()`
 * Fixed: `getMostAchievedAchievementInfo()` causing a crash
 
-## Version 3.9.1 Changes
+## Version 3.9.1
 
 * Added: documentation to P2P functions, constants, and signals; thanks to blaze-the-star
 * Fixed: `destroyResult()` and `getResultItemProperty()` being bound to the wrong functions
@@ -406,13 +406,13 @@ A history of all changes to the **godot3** branch.
 * Removed: `storeStats()` from `setAchievement()`, `resetAllStats()` as it should be called manually after them
 * Removed: `requestCurrentStats()` from `storeStats()` as it should be called manually
 
-## Version 3.9 Changes
+## Version 3.9
 
 * Added: new UGC functions `addRequiredTagGroup()`, `getQueryUGCNumTags()`, `getQueryUGCTag()`, `getQueryUGCTagDisplayName()`
 * Added: new Friends function `activateGameOverlayInviteDialogConnectString()`
 * Added: default values to leaderboard functions, you can now pass handles for specific leaderboards or use the internally-stored, last-called handle
 * Added: multiple controller types from Input function `getInputTypeForHandle()`
-* Changed: minor readability changes to function arguments and defaults
+* Changed: minor readability to function arguments and defaults
 * Changed: additional spacing and readability to overall module
 * Changed: replaced leaderboardDetailsMax with k_cLeaderboardDetailsMax
 * Changed: applied EIREXE's UTF-16 fix module-wide
@@ -426,9 +426,9 @@ A history of all changes to the **godot3** branch.
 * Fixed: minor corrections to various functions
 * Fixed: `destroyResult()` and `getResultItemProperty()` being bound to the wrong functions
 * Removed: `setLeaderboardDetailsMax()` as it is unnecessary
-* Removed: `getAuthSessionTicketID()` as it is no longer useful due to auth function changes
+* Removed: `getAuthSessionTicketID()` as it is no longer useful due to auth function
 
-## Version 3.8.2 Changes
+## Version 3.8.2
 
 * Added: different avatar constants
 * Changed: array deletions for Clang, ***thanks to SapphireMH***
@@ -437,7 +437,7 @@ A history of all changes to the **godot3** branch.
 * Fixed: logic check for `setOverlayNotificationPosition()`, ***thanks to SapphireMH***
 * Fixed: UTF8 not being handled correctly in some UGC functions, ***thanks to EIREXE***
 
-## Version 3.8.1 Changes
+## Version 3.8.1
 
 * Added: extra newline beween each class section for readability
 * Added: new signal, steamworks_error, currently used for call results failures
@@ -445,7 +445,7 @@ A history of all changes to the **godot3** branch.
 * Changed: `getSyncPlatforms()` now returns a dictionary with the bitwise and full name version of the platform
 * Changed: separated callbacks and call results in the godotsteam.cpp into two categories
 
-## Version 3.8 Changes
+## Version 3.8
 
 * Added: default argument to `steamInit()` to pull all current stats or not, defaults to true so no one has to change anything
 * Added: new SteamNetworkingMessages class; with functions, callbacks, constants, and enums
@@ -456,7 +456,7 @@ A history of all changes to the **godot3** branch.
 * Fixed: `retrieveConnectionDetails()` and `getAllLobbyData()` functions
 * Fixed: (probably) various NetworkingSockets and NetworkingUtils functions
 
-## Version 3.7 Changes
+## Version 3.7
 
 * Added: Networking Sockets class - all functions, enums, structs, and callbacks (still beta in Steamworks)
 * Added: Networking Utils class - all functions, enums, structs, and callbacks (still beta in Steamworks)
@@ -467,13 +467,13 @@ A history of all changes to the **godot3** branch.
 * Fixed: call result for `JoinParty()`, was previously callback
 * Removed: mingw_patch.py since it fixes one issue but creates additional issues
 
-## Version 3.6.1 Changes
+## Version 3.6.1
 
 * Changed: function `getLobbyDataByIndex()` to `getAllLobbyData()`
 * Changed: commented out `getAllLobbyData()` until crash is fixed
 * Fixed: issue where not having the game installed or owning the game caused a crash
 
-## Version 3.6 Changes
+## Version 3.6
 
 * Added: newest functions for Apps, Friends, and UserStats
 * Added: all functions and callbacks for Videos
@@ -483,7 +483,7 @@ A history of all changes to the **godot3** branch.
 * Changed: moved callback code block to end of function block in godotsteam.cpp
 * Fixed: incorrect signal link for `unsubscribe_item` and `subscribe_item` callbacks
 
-## Version 3.5 Changes
+## Version 3.5
 
 * Added: all Music Remote functions, callbacks, enums, and constants
 * Added: all Parties functions, callbacks, enums, and constants
@@ -493,14 +493,14 @@ A history of all changes to the **godot3** branch.
 * Changed: moved pragma into Windows if
 * Fixed: `getAuthSessionTicket()` to properly give buffer, ***thanks to EIREXE***
 
-## Version 3.4.1 Changes
+## Version 3.4.1
 
 * Added: organization separators for all binds
 * Changed: enums are now callable as constants in Godot
 * Changed: case on enums
 * Fixed: some mis-spelling in enums
 
-## Version 3.4 Changes
+## Version 3.4
 
 * Added: `getAuthSessionTicketID()` to aquire additional ticket data
 * Added: additional pragma to silence offset warnings in Steamworks SDK itself
@@ -519,7 +519,7 @@ A history of all changes to the **godot3** branch.
 * Removed: `getLeaderboardHandle()` as redundant
 * Removed: `getDownloadedLeaderboardEntry()` as it should not be called manually, has been added to `leaderboard_scores_download` callback
 
-## Version 3.3.2 Changes
+## Version 3.3.2
 
 * Added: all Inventory functions, callbacks, and enums
 * Added: rule to suppress MSVC-only warning about strcpy
@@ -531,14 +531,14 @@ A history of all changes to the **godot3** branch.
 * Removed: unnecessary cookieHandle argument from HTTP functions
 * Removed: unnecessary cookieHandle returns from HTTP callbacks
 
-## Version 3.3.1 Changes
+## Version 3.3.1
 
 * Added: all HTML Surface functions, callbacks, and enums
 * Added: all HTTP functions, callbacks, and enums
 * Changed: `sendRemotePlayTogetherInvite()` now works since it was added back to the SDK
 * Fixed: (probably) output for `getLaunchCommandLine()`
 
-## Version 3.3 Changes
+## Version 3.3
 
 * Added: all Steam Input functions; used to be Steam Controller
 * Added: all Steam Input constants
@@ -556,13 +556,13 @@ A history of all changes to the **godot3** branch.
 * Changed: SteamInput function shutdown to `inputShutdown()`
 * Removed: `user_achievement_icon_fetched` signal / callback as it is never called
 
-## Version 3.2.1 Changes
+## Version 3.2.1
 
 * Added: back some needed UGC constants
 * Changed: int to uint32 in some for loops
 * Fixed: compiling issues on Linux
 
-## Version 3.2.0 Changes
+## Version 3.2.0
 
 * Added: all remaining UGC functions and callbacks
 * Added: all new Remote Play functions and callbacks
@@ -574,7 +574,7 @@ A history of all changes to the **godot3** branch.
 * Fixed: a few missing default returns
 * Removed: non-listed UGC enums
 
-## Version 3.1 Changes
+## Version 3.1
 
 * Added: all remaining User Stats functions
 * Added: missing User Stats constants, mostly leaderboard stuff
@@ -585,14 +585,14 @@ A history of all changes to the **godot3** branch.
 * Changed: `getDownloadedLeaderboardEntry()` to use handle correctly
 * Fixed: delete used memory in `getInstalledDepots()`
 
-## Version 3.0.2 Changes
+## Version 3.0.2
 
 * Added: more verbose response to `steamInit()`, now returns a dictionary
 * Added: missing initialization constants
 * Changed: `steamInit()` to give actual response on Steamworks status (from bool to int)
 * Fixed: `currentAppID()` not utilized correctly
 
-## Version 3.0.1 Changes
+## Version 3.0.1
 
 * Added: MacOS C++ rule back in for compiling
 * Added: all missing Steam Utils functions (except deprecated or non-relevant functions)
@@ -603,7 +603,7 @@ A history of all changes to the **godot3** branch.
 * Changed: `gamepad_text_input_dismissed` callback
 * Fixed: `lobby_message` bug, ***thanks to Frostings***
 
-## Version 3.0 Changes
+## Version 3.0
 
 * Added: missing Matchmaking signals-callbacks
 * Added: missing User signals-callbacks
@@ -620,13 +620,13 @@ A history of all changes to the **godot3** branch.
 * Fixed: `addFavoriteGame()` and `getItemInstallInfo()` functions
 * Removed: `connection_changed` signal
 
-## Version 2.8.5 Changes
+## Version 2.8.5
 
 * Added: Networking functions, ***thanks to Antokolos***
 * Changed: linked against Steamworks 1.44
 * Fixed: `leaderboard_uploaded` always returning false even when successful
 
-## Version 2.8.4 Changes
+## Version 2.8.4
 
 * Added: `persona_state_change` callback
 * Added: additional user statistics and achievement signals
@@ -642,17 +642,17 @@ A history of all changes to the **godot3** branch.
 * Fixed: `getDownloadedLeaderboardEntry()` returning wrong SteamID, ***thanks to marcelofg55***
 * Removed: `drawAvatar()`
 
-## Version 2.8.3 Changes
+## Version 2.8.3
 
 * Added: additional user statistics and achievement signals
 * Changed: minor notations
 
-## Version 2.8.2 Changes
+## Version 2.8.2
 
 * Fixed: Linux not compiling correctly with new Friends and Matchmaking updates
 * Fixed: various Friends functions not providing correct data
 
-## Version 2.8.1 Changes
+## Version 2.8.1
 
 * Added: additional missing lobby signals
 * Fixed: various lobby functions due to incorrect Steam lobby ID
@@ -660,7 +660,7 @@ A history of all changes to the **godot3** branch.
 * Fixed: config.py still using env
 * Fixed: location of core Godot includes
 
-## Version 2.8.0 Changes
+## Version 2.8.0
 
 * Added: all remaining matchmaking functions
 * Added: all remaining friend functions
@@ -671,7 +671,7 @@ A history of all changes to the **godot3** branch.
 * Fixed: `getInstalledDepots()`, `getDLCDownloadProgress()`, `getItemUpdateProgress()`, `getSubscribedItems()`
 * Removed: `setGameInfo()`, `clearGameInfo()`, `inviteFriend()`
 
-## Version 2.7.0 Changes
+## Version 2.7.0
 
 * Added: `getAchievementDisplayAttribute()`, `getAchievementName()`, `getAchievementIcon()`, `getImageRGBA()`, and `getImageSize()`, ***thanks to marcelofg55***
 * Added: all missing SteamApps functions
@@ -682,20 +682,20 @@ A history of all changes to the **godot3** branch.
 * Fixed: issue with getAchievement failing to compile
 * Removed: `hasOtherApp()` function
 
-## Version 2.6.0 Changes
+## Version 2.6.0
 
 * Added: `getCurrentBetaName()`, `addScreenshotToLibrary()`, and `setLocation()`, ***thanks to marcelofg55***
 * Added: Steam controller functionality, ***thanks to marcelofg55***
 * Added: more workshop functionality
-* Changed: various small maintenance changes
+* Changed: various small maintenance
 
-## Version 2.5.0 Changes
+## Version 2.5.0
 
 * Added: `getFileNameAndSize()`, `getQuota()`, `getSyncPlatforms()` functions
 * Changed: small corrections with Steam ID variable
 * Fixed: small things with `getQuota()`
 
-## Version 2.4.1 Changes
+## Version 2.4.1
 
 * Added: `getNumAchievements()`, `getAchievementAchievedPercent()`, `requestGlobalAchievementPercentages()` functions
 * Added: related signals to new functions
@@ -705,36 +705,36 @@ A history of all changes to the **godot3** branch.
 * Removed: related callback to `requestAppProofOfPurchaseKey()`
 * Removed: commented out deprecated functions
 
-## Version 2.4.0 Changes
+## Version 2.4.0
 
 * Added: more Screenshot features
 * Added: notes for callback
 * Fixed: types in `validate_auth_ticket_response`
 
-## Version 2.3.0 Changes
+## Version 2.3.0
 
 * Added: implemented Auth Session functions, ***thanks to marcelofg55***
 
-## Version 2.2.1 Changes
+## Version 2.2.1
 
 * Fixed: `getFileTimestamp()` and `getSteamID()` return types, ***thanks to marcelofg55***
 
-## Version 2.2.0 Changes
+## Version 2.2.0
 
 * Added: `getNumberOfCurrentPlayers()`, ***thanks to marcelofg55***
 * Added: `leaderboard_uploaded` and `number_of_current_players` callbacks, ***thanks to marcelofg55***
 
-## Version 2.1.1 Changes
+## Version 2.1.1
 
 * Fixed: `fileRead()` and `fileWrite()`, ***thanks to marcelofg55***
 
-## Version 2.1.0 Changes
+## Version 2.1.0
 
 * Added: two more functions for Remote Storage
 * Changed: instances of int32 and int64 to int32_t and int64_t respectively; mostly for Linux compilation
 * Removed: -no-pie from SCsub; now suggested for Ubuntu 16.10 and higher
 
-## Version 2.0.0 Changes
+## Version 2.0.0
 
 * Added: Remote Storage functionality for Steam Cloud, ***thanks to marcelofg55***
 * Added: new functions to documentation

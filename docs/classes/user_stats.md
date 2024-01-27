@@ -2,13 +2,11 @@
 
 Provides functions for accessing and submitting stats, achievements, and leaderboards.
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### attachLeaderboardUGC
 
@@ -722,13 +720,11 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#UploadLeaderboardScore){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### current_stats_received
 
@@ -902,11 +898,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#UserStatsUnloaded_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### LeaderboardDataRequest
 

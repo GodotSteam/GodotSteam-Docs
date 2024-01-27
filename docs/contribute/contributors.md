@@ -1,8 +1,11 @@
-#Code Contributors
+# Code Contributors and Donors
 
 Here is a list of all the great contributors, both those who have provided code for GodotSteam through pull requests or those who have donated to the project. A big thanks to all of you!
 
-<hr/>
+<a href="https://github.com/CoaguCo-Industries/GodotSteam/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CoaguCo-Industries/GodotSteam" />
+</a>
+
 <div class="contrib-grid" markdown>
 
 !!! contributors1 "Code Contributors"

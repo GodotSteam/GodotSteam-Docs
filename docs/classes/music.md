@@ -1,18 +1,12 @@
 # Music
 
-Functions to control music playback in the Steam client.
+Functions to control music playback in the Steam client. This gives games the opportunity to do things like pause the music or lower the volume when an important cut scene is shown, and then start playing again afterwards. These functions only work with soundtracks you purchased or own on Steam.
 
-This gives games the opportunity to do things like pause the music or lower the volume when an important cut scene is shown, and then start playing again afterwards.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
-
-**Note**: These functions only work with soundtracks you purchased or own on Steam.
-
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### getPlaybackStatus
 
@@ -105,13 +99,11 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#SetVolume){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### music_playback_status_has_changed
 
@@ -128,11 +120,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	**Returns:** new_volume (float)
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### AudioPlaybackStatus
 

@@ -1,16 +1,15 @@
 # Networking
 
-Networking functions for making connections and sending data between clients, traversing NATs when possible.
+Networking functions for making connections and sending data between clients, traversing NATs when possible. See the [Steam Networking](https://partner.steamgames.com/doc/features/multiplayer/networking){ target="\_blank" } overview for more information.
 
-These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
-  
-**NOTE**: This API is deprecated and may be removed in a future Steamworks SDK release. Valve suggest using [Networking Sockets](networking_sockets.md) or [Networking Messages](networking_messages.md) instead. See the [Steam Networking](https://partner.steamgames.com/doc/features/multiplayer/networking){ target="\_blank" } overview for more information.
+!!! warning "This API Is Deprecated"
+	It may be removed in a future Steamworks SDK release but should continue to work. Valve suggest using [Networking Sockets](networking_sockets.md) or [Networking Messages](networking_messages.md) instead. 
 
----
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
 
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### acceptP2PSessionWithUser
 
@@ -98,7 +97,7 @@ These are available in both the main [GodotSteam branches](https://github.com/Co
 ### getAvailableP2PPacketSize
 
 !!! function "getAvailableP2PPacketSize( ```int``` channel )"
-	Calls [IsP2PPacketAvailable](https://partner.steamgames.com/doc/api/ISteamNetworking#IsP2PPacketAvailable){ target="_blank" } under the hood, returns the size of the available packet or zero if there is no such packet.
+	Calls [IsP2PPacketAvailable](https://partner.steamgames.com/doc/api/ISteamNetworking#IsP2PPacketAvailable){ target="\_blank" } under the hood, returns the size of the available packet or zero if there is no such packet.
 
 	**Returns:** uint32_t
 
@@ -148,13 +147,11 @@ These are available in both the main [GodotSteam branches](https://github.com/Co
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#SendP2PPacket){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### p2p_session_connect_fail
 
@@ -181,11 +178,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#P2PSessionRequest_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### P2PSend
 

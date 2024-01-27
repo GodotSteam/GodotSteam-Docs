@@ -1,17 +1,56 @@
-# Contributing Code To GodotSteam
+# Contributing Code Or Docs To GodotSteam
 
-Thanks for contributing to the GodotSteam source code! We only have a few minor rules for contributing code to make the whole process easier for everyone.
+<div class="link-grid" markdown>
+
+[:octicons-code-square-16: Main Project](https://github.com/CoaguCo-Industries/GodotSteam/){ .md-button .md-button--primary }
+[:material-server: Server](https://github.com/CoaguCo-Industries/GodotSteam-Server/){ .md-button .md-button--primary }
+[:fontawesome-solid-book: Documentation](https://github.com/CoaguCo-Industries/GodotSteam-Docs/){ .md-button .md-button--primary }
+[:material-file-document: Examples](https://github.com/CoaguCo-Industries/GodotSteam-Examples/){ .md-button .md-button--primary }
+
+</div>
+
+{==
+### Modifying Code
+==}
+
+There is a convention we try to keep, which seems like a hodge-podge of styles:
+
+- [x] Use camel-case for all function names. We mostly follow Valve's lead with this instead of Godot's, but we have discussed changing it.
+- [x] Use snake-case for all signal names, variables, and arguments.
+- [x] Make sure your code compiles before submitting a pull-request. Run a quick:
+
+	=== "Godot 2.x, 3.x"
+
+		```shell
+		scons platform=[your platform] production=yes tools=yes target=release_debug
+		```
+	
+	=== "Godot 4.x"
+
+		```shell
+		scons platform=[your platform] tools=yes target=editor
+		```
+
+We'll figure the rest out later. So far that's it!
+
+{==
+## Modifying Examples
+==}
+
+Add new examples or edit the existing ones. 
+
+Please try to keep most of the standard Godot conventions, use snake_case, double linebreak between functions, etc.
+
+Don't shy away from explaining things in the comments. Since these are meant for people to learn adn figure out how Steamworks functions, definitely pack in any information you think necessary.
+
+{==
+## Modifying Docs
+==}
+
+Feel free to make any edits you think are needed, really. CSS changes, new tutorials, extra links, fixes for functions or signals, or even adding your own game to the ["Games Using GodotSteam" list](/games/games).
+
+Try to make any new or edited content fit the same styles as the other pages.  But if you have an eye for design and think of something better, please share that too.
 
 ---
 
-- [x] Use camel-case for any new function names; ie. newSteamFunction()
-- [x] Use all lower-case, underscore-separated names for all variables and arguments; ie. new_argument, new_variable
-- [x] Make sure your new function names, variables, and argument clearly state what they are.
-- [x] Make sure your code compiles before submitting a pull-request. You may want to use the following to test your changes:
-
-	=== "Godot 2.x, 3.x"
-		`scons platform=[your platform] production=yes tools=yes target=release_debug`
-	=== "Godot 4.x"
-		`scons platform=[your platform] tools=yes target=editor`
-
-So far that's it! Thanks again for helping make the project useful for the community!
+Thank you for helping make the project more useful for the community!

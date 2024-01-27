@@ -1,196 +1,239 @@
 # How-To GDExtension
 
-## Please Note
-
-If you are using the GDExtension version of GodotSteam, make sure **not to download or use the module version** in tandem; it will cause a lot of problems. The two are not compatible with each other.
-
-This also means you cannot use the GodotSteam templates for exporting; you must use the normal Godot templates.
-
----
-## 1a. Downloading
-
-Just like the module version, the easiest way to use GodotSteam is downloading the plug-in and installing it into your project.
-
-- [x] Download the [pre-compiled plug-in from the Release section](https://github.com/CoaguCo-Industries/GodotSteam/releases) and unpack it.
-- [x] Alternatively you can download and install the [GDExtension plug-in through Godot Asset Library](https://godotengine.org/asset-library/asset/1768).
-- [x] Everything you need should be included.
-    - Users on Linux may have issues with the libsteam_api.so, if so then [read our Linux Caveats doc](../tutorials/linux_caveats.md).
-
-At this point you can skip all the following steps and check our our tutorials to learn more about integrating Steamworks or just explore the SDK!
-
----
-## 1b. Compile Yourself
-
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
-- [x] Set your system up for [compiling based on Godot's recommendations / required tools.](https://docs.godotengine.org/en/stable/development/compiling/index.html)
-- [x] Create a new folder and call it **GDExtension** (or whatever you want).
-- [x] Acquire the GodotSteam GDExtension source either by downloading it or cloning the repo:
-    - Download this repository then unpack it into the **GDExtension** folder.
-    - Alternatively, clone this repository into your **GDExtension** folder:
-        - Use ````git clone -b gdextension https://github.com/CoaguCo-Industries/GodotSteam.git````
-- [x] Download the [Steamworks SDK](https://partner.steamgames.com); this requires a Steam developer account.
-- [x] Download the [Godot cpp](https://github.com/godotengine/godot-cpp), the 4.2 branch (or whatever 4.x  version you need).
-    - Unpack the **godot_cpp** into the **GDExtension** folder.
-    - **Alternatively**, you can just use these commands inside the **GDExtension** folder to clone them:
-  ````
-    git clone --recursive -b 4.2 https://github.com/godotengine/godot-cpp
-  ````
-- [x] CD into the **godot-cpp** folder and compile the bindings (make sure your slashes are OS appropriate):
-````
+{==
+### :fontawesome-solid-toolbox: Set Up Tools
+==}
+
+Follow Godot's documentation to setup the required tools for your operating system.
+
+<div class="button-grid" markdown>
+
+[:material-microsoft-windows: Windows](https://docs.godotengine.org/en/latest/contributing/development/compiling/compiling_for_windows.html){ .md-button .md-button--primary target="\_blank" }
+[:material-linux: Linux](https://docs.godotengine.org/en/latest/contributing/development/compiling/compiling_for_linuxbsd.html){ .md-button .md-button--primary target="\_blank" }
+[:material-apple: Mac](https://docs.godotengine.org/en/latest/contributing/development/compiling/compiling_for_macos.html){ .md-button .md-button--primary target="\_blank" }
+
+</div>
+
+{==
+### :simple-godotengine: Get GodotSteam GDExtension
+==}
+
+This is a little different from the modules as we get GodotSteam's source first and _then_ Godot's.
+
+#### Cloning the Source
+
+You can clone the source into a folder called ***godotsteam_gdextension*** like so:
+
+```shell
+git clone -b gdextension https://github.com/CoaguCo-Industries/GodotSteam.git godotsteam_gdextension
+```
+
+Cloning the repo should also pull the sub-module for Godot CPP, so you can [skip to Get the Steamworks SDK.](#get-the-steamworks-sdk)
+
+However, you may want to change the version of Godot CPP, depending on your target version. If so, [read the next section Get Godot CPP](#get-godot-cpp).
+
+#### Downloading the Source
+
+Alternatively, you can [download the GDExtension source from our repository](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } then unpack it into a folder named ***godotsteam_extension***.  You will need to pull the Godot CPP source yourself if you use this method.
+
+{==
+### :simple-godotengine: Get Godot CPP
+==}
+
+#### Cloning the Source
+
+If you changed your target version or manually downloaded the GDExtension source, you can head into the ***godotsteam_gdextension*** folder and clone the latest Godot CPP source in a folder called ***godot-cpp*** like so:
+
+```shell
+git clone https://github.com/godotengine/godot.git -b godot-4.2.1-stable godot-cpp
+```
+
+You may need to change the given tag(s) above from whatever it is to whatever the current version or whatever version you need.
+
+#### Downloading the Source
+
+Alternatively, you can download and unpack the [Godot CPP source from their Github](https://github.com/godotengine/godot-cpp){ target="\_blank" } in a folder called ***godot-cpp***.
+
+#### Compile the Bindings
+
+In either case, you will want to head into the **godot-cpp** folder and compile the bindings for your platform. Make sure your slashes are OS appropriate:
+
+```shell
   scons platform=<your platform> target=template_release
   scons platform=<your platform> target=template_debug
-````
+```
 
----
-## 2. Setting Up the SDK
+{==
+### :simple-steam: Get the Steamworks SDK
+==}
 
-Move the following from the unzipped Steamworks SDK to the **/godotsteam/sdk** folder:
-````
-    sdk/public/
-    sdk/redistributable_bin/
-````
+Download the [Steamworks SDK from Valve's partners site](https://partner.steamgames.com){ target="\_blank" }. This requires a Steam developer account.
 
----
-## 3. Double-Checking Folder / File Structure
+Move the ***public*** and ***redistributable_bin*** folders from the unzipped Steamworks SDK into the ***godotsteam_gdextension/godotsteam/sdk/*** so you have the following layout:
 
-The compiling directory contents should now look like this:
-````
-  godot-cpp/
-  --- bin/*
-  --- cmake/*
-  --- gdextension/*
-  --- gen/*
-  --- include/*
-  --- misc/*
-  --- src/*
-  --- test/*
-  --- tools/*
-  --- binding_generator.py
-  --- CMakeLists.txt
-  --- LICENSE
-  --- Makefile
-  --- README.md
-  --- SConstruct
-  bin/
-  godotsteam/
-  --- doc_classes/*
-  --- sdk/
-  --- --- public/steam/*
-  --- --- redistributable_bin/*
-  --- api.json
-  --- godotsteam.h
-  --- godotsteam.cpp
-  --- register_types.cpp
-  --- register_types.h
-  godotsteam.gdextension
-  SConstruct
-  README.md
-  LICENSE.txt
-````
+```shell
+godotsteam_gdextension/
+└─ godotsteam/
+   └─ sdk/
+      ├─ public/*
+      └─ redistributable_bin/*
+```
 
----
-## 4. Compiling Time
+{==
+### :material-file-tree: Double-Checking Folder / File Structure
+==}
 
-Before compiling, create a `bin` directory in the GDExtension folder. This is where the compiled binaries will be placed.
+Before we start compiling, let us make sure everything is in place. Your ***godotsteam_gdextension*** directory should look something like this:
 
-The Visual Studio instructions carried over from GDNative probably do not work anymore so they were removed. If anyone would like to contribute new ones, please feel free to do so!
+```shell
+godotsteam_gdextension
+│─ bin/
+├─ godot-cpp/
+│  ├─ bin/*
+│  ├─ cmake/*
+│  ├─ gdextension/*
+│  ├─ gen/*
+│  ├─ include/*
+│  ├─ misc/*
+│  ├─ src/*
+│  ├─ test/*
+│  ├─ tools/*
+│  ├─ binding_generator.py
+│  └─ SConstruct
+├─ godotsteam/
+│  ├─ doc_classes/*
+│  ├─ sdk/
+│  │  ├─ public/steam/*
+│  │  └─ redistributable_bin/*
+│  ├─ api.json
+│  ├─ godotsteam.h
+│  ├─ godotsteam.cpp
+│  ├─ gdootsteam_constants.h
+│  ├─ register_types.cpp
+│  ├─ register_types.h
+│  └─ godotsteam.gdextension
+└─ SConstruct
+```
+You probably will not have the ***bin/*** folder in the root so go ahead and create that.
+
+{==
+### :octicons-terminal-16: Compiling Time
+==}
+
+Just run the following command for your operating system from the ***godotsteam_gdextension*** folder root:
 
 === "Windows PowerShell"
-    Just open the powershell or VS command prompt and run:
 
-    ````
+    ```shell
     scons platform=windows target=template_release
     scons platform=windows target=template_debug
-    ````
+    ```
+
 === "Linux"
-    Just run terminal from within the **GDExtension** folder and run:
 
-    ````
-    scons platform=linux target=template_release
-    scons platform=linux target=template_debug
-    ````
+    ```shell
+    scons platform=linuxbsd target=template_release
+    scons platform=linuxbsd target=template_debug
+    ```
 
-    You can also replace `platform=linux` with `platform=linuxbsd`.
 === "macOS"
-    Run the following from a terminal within the **GDExtension** folder:
-    ````
+
+    ```shell
     scons platform=macos target=template_release
     scons platform=macos target=template_debug
-    ````
+    ```
 
----
-## 5. All Together Now
+The Visual Studio instructions carried over from ***GDNative*** _probably do not_ work anymore so they were removed. If anyone would like to contribute new ones, please feel free to do so!
 
-Copy the **/win64**, **/linuxbsd**, or **/osx** folder from within the **GDExtension/bin/** folder then place it into the **/addons/godotsteam/** folder inside your **game's project folder**. Then you will want to copy the matching Steam API file and put it in with the corresponding platform's folder.
+{==
+### :fontawesome-solid-box: All Together Now
+==}
 
-Sound a little confusing? It should look a little something like this:
+When compiling is finished, create a brand new folder somewhere called ***addons*** and, inside that, create a folder called ***godotsteam***.
+
+Now copy the whole ***win64/***, ***linuxbsd/***, or ***osx/*** folder(s) from within the ***godotsteam_gdextension/bin/*** folder into ***addons/godotsteam/***. We will want to rename that ***linuxbsd*** folder to ***linux64*** or ***linux32*** depending on what you created.
+
+You will also want to copy the matching Steamworks API file(s) from ***godotsteam_gdextension/godotsteam/sdk/redistributable_bin/*** and put them in with the corresponding platform's folder.
+
+This all sound a little confusing? It should look a little something like this:
   
-=== "For Windows"
-    **Note:** If you compile for Windows 32-bit, get the steam_api.dll file instead.
-    ````
-    /addons/godotsteam/win64/godotsteam.windows.template_debug.x86_64.dll
-    /addons/godotsteam/win64/godotsteam.windows.template_release.x86_64
-    /addons/godotsteam/win64/steam_api64.dll
-    ````
-=== "For Linux"
-    **Note:** You will want to rename linuxbsd to x11.
-    ````
-    /addons/godotsteam/linux/libgodotsteam.linux.template_debug.x86_64.so
-    /addons/godotsteam/linux/libgodotsteam.linux.template_release.x86_64.so
-    /addons/godotsteam/linux/libsteam_api.so
-    ````
-=== "For Mac"
-    Nothing extra for Mac, just this.
-    ````
-    /addons/godotsteam/osx/libgodotsteam.macos.template_debug.universal.dylib
-    /addons/godotsteam/osx/libgodotsteam.macos.template_release.universal.dylib
-    /addons/godotsteam/osx/libsteam_api.dylib
-    ````
+=== "Windows 64-bit"
 
-Copy the **godotsteam.gdextension** file from the base of your compiling folder and place it in the **addons/godotsteam/** folder in your project.
+    ```shell
+    addons
+    └─ godotsteam
+       └─ win64
+          │─ godotsteam.windows.template_debug.x86_64.dll
+          │─ godotsteam.windows.template_release.x86_64.dll
+          └─ steam_api64.dll
+    ```
 
-That's it!  Done!
+=== "Windows 32-bit"
 
----
-## 6. Usage
+    ```shell
+    addons
+    └─ godotsteam
+       └─ win32
+          │─ godotsteam.windows.template_debug.x86_32.dll
+          │─ godotsteam.windows.template_release.x86_32.dll
+          └─ steam_api.dll
+    ```
 
-Now you should be able to call functions from **Steam** like you would normally with the **GodotSteam module**:
-````
-  func _init() -> void:
-      # Set your game's Steam app ID here
-      OS.set_environment("SteamAppId", str(480))
-      OS.set_environment("SteamGameId", str(480))
+=== "Linux 64-bit"
 
+    ```shell
+    addons
+    └─ godotsteam
+       └─ linux64
+          │─ libgodotsteam.linuxbsd.template_debug.x86_64.so
+          │─ libgodotsteam.linuxbsd.template_release.x86_64.so
+          └─ libsteam_api.so
+    ```
 
-func _ready():
-    Steam.steamInit()
-    var isRunning = Steam.isSteamRunning()
-    
-    if (!isRunning):
-        print("Steam is not running.")
-        return
-        
-    print("Steam is running.")
-    
-    var id = Steam.getSteamID()
-    var name = Steam.getFriendPersonaName(id)
-    print("Your steam name: " + str(name))
-````
+=== "Linux 32-bit"
 
-Note that you **do not** have to enable this in the editor for the extension to work; it is just always present.
+    ```shell
+    addons
+    └─ godotsteam
+       └─ linux32
+          │─ libgodotsteam.linuxbsd.template_debug.x86_32.so
+          │─ libgodotsteam.linuxbsd.template_release.x86_32.so
+          └─ libsteam_api.so
+    ```
 
-Make sure add your game's app ID as the environment variables for SteamAppId and SteamGameId. If you do not have a game app ID yet, you can use 480 for testing.  Alternatively, you can create a file called **steam_appid.txt** with your game's app ID as the text, or 480, and place it with your editor or at the root of your game's project folder. You'll need this to run the game from the editor. However, we do recommend the environment variable method.
+=== "Mac"
 
-The documentation for GodotSteam modules should apply to GodotSteam GDExtension as they are built from the same code and have all the same functions; generally speaking.
+    ```shell
+    addons
+    └─ godotsteam
+       └─ osx
+          │─ libgodotsteam.debug.framework
+          │  │─ libgodotsteam.macos.template_debug.universal
+          │  └─ libsteam_api.dylib
+          │─ libgodotsteam.framework
+          │  │─ libgodotsteam.macos.template_release.universal
+          │  └─ libgodotsteam.framework/libsteam_api.dylib
+          └─ libsteam_api.dylib
+    ```
 
----
-## 7. Exporting / Shipping Your Game
+Lastly, copy the **godotsteam.gdextension** file from the base of your ***godotsteam_gdextensioni*** folder and place it into the **addons/godotsteam/** folder.
 
-For a full explanation of exporting and shipping your game with GodotSteam, [please refer to our Export and Shipping tutorial.](../tutorials/exporting_shipping.md)
+This can now be added to any project you have; just pop it into the root of the project and go!
 
-That being said, you should be able to export your game with the normal Godot templates. Also, here is a quick rundown of some things to remember.
+#### Renaming Notes
 
-When uploading your game to Steam, you _**must**_ upload your game's executable and **Steam API .dll/.so/.dylb** (steam_api.dll, steam_api64.dll, libsteam_api.dylib, and/or libsteam_api.so) as well as the **exported GodotSteam file .dll/.so/.dylib** (godotsteam.dll, libgodotsteam.so, and/or libgodotsteam.dylib).
+Typically we rename the produced shared library files by removing the ***template_*** prefixes and operating system naming like ***windows***, ***linuxbsd***, or ***macos*** as those are implied through their parent folders. Just in case you like a tidier plug-in.
 
-*Do not* include any .lib files as they are unnecessary; however, they won't hurt anything.
+{==
+### :octicons-thumbsup-16: Good to Go
+==}
+
+This GDExtension **does not** have to be enabled as it is **always present** if the addon is there.
+
+From here you should have access to all of the Steamworks SDK functions and callbacks.
+
+You should be able to [read the Steamworks API documentation](https://partner.steamgames.com/doc/){ target="\_blank" } to see what all is available and cross-reference with GodotSteam's documentation.
+
+Feel free to check out our tutorials if you want to learn some basics or just start tinkering!

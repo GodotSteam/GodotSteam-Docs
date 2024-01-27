@@ -1,14 +1,12 @@
 # Game Search
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
-
----
-
-## Functions
-
 These functions are not listed in the official Steamworks SDK documentation but do exist in the SDK header files.
 
----
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+
+{==
+## :material-function-variant: Functions
+==}
 
 ### acceptGame
 
@@ -119,13 +117,11 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 	**Returns:** int
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### end_game_result
 
@@ -218,11 +214,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* game_id (uint64_t)
 	* player_id (uint64_t)
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### GameSearchErrorCode
 

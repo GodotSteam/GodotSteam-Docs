@@ -1,15 +1,15 @@
 # Server 4.x Change-Log
 
-### A history of all changes to the **server4** branch.
+A history of all changes to the ***server4*** branch.
 
 ---
 
-**Version 4.0.1 Changes**
+## Version 4.0.1
 
 - Changed: how initialization functions work, passing empty string now uses default IP (expected behavior)
-- Fixed: incorrect verbal message from `serverInitEx`
+- Fixed: incorrect verbal message from `serverInitEx()`
 
-**Version 4.0 Changes**
+## Version 4.0
 
 - Added: missing server functions from steam_gameserver.h
 - Added: missing enums for server modes

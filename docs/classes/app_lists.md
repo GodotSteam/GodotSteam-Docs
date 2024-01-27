@@ -1,13 +1,12 @@
 # App Lists
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+This is a restricted interface that can only be used by previously approved apps. It is not listed in the official Steamworks SDK documentation, either. Contact your Steam Account Manager if you believe you need access to this API.
 
-**Note:** This is a restricted interface that can only be used by previously approved apps. It is not listed in the official Steamworks SDK documentation, either. Contact your Steam Account Manager if you believe you need access to this API.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
----
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### getAppListBuildId
 
@@ -46,13 +45,11 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
 
     **Return:** int
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
-------
 
 ### app_installed
 

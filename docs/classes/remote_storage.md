@@ -1,16 +1,12 @@
 # Remote Storage
 
-Provides functions for reading, writing, and accessing files which can be stored remotely in the Steam Cloud.
+Provides functions for reading, writing, and accessing files which can be stored remotely in the Steam Cloud. See [Steam Cloud](https://partner.steamgames.com/doc/features/cloud){ target="\_blank" } for more information.
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
-  
-See [Steam Cloud](https://partner.steamgames.com/doc/features/cloud){ target="\_blank" } for more information.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### beginFileWriteBatch
 
@@ -460,13 +456,11 @@ See [Steam Cloud](https://partner.steamgames.com/doc/features/cloud){ target="\
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#SetSyncPlatforms){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
-------
 
 ### download_ugc_result
 
@@ -571,11 +565,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
     ------
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#RemoteStorageUnsubscribePublishedFileResult_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### RemoteStoragePlatform
 

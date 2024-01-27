@@ -4,9 +4,32 @@ One of the more requested tutorials is multiplayer lobbies and P2P networking th
 
 I'd also like to suggest you [check out the Additional Resources section of this tutorial](#additional-resources) before continuing on.
 
----
+??? guide "Relevant GodotSteam classes and functions"
+	* [Matchmaking class](../classes/matchmaking.md)
+		* [addRequestLobbyListFilterSlotsAvailable()](../classes/matchmaking.md#addrequestlobbylistfilterslotsavailable)
+		* [addRequestLobbyListNearValueFilter()](../classes/matchmaking.md#addrequestlobbylistnearvaluefilter)
+		* [addRequestLobbyListNumericalFilter()](../classes/matchmaking.md#addrequestlobbylistnumericalfilter)
+		* [addRequestLobbyListResultCountFilter()](../classes/matchmaking.md#addrequestlobbylistresultcountfilter)
+		* [addRequestLobbyListStringFilter()](../classes/matchmaking.md#addrequestlobbyliststringfilter)
+		* [createLobby()](../classes/matchmaking.md#createlobby)
+		* [getLobbyData()](../classes/matchmaking.md#getlobbydata)
+		* [getLobbyMemberByIndex()](../classes/matchmaking.md#getlobbymemberbyindex)
+		* [getNumLobbyMembers()](../classes/matchmaking.md#getnumlobbymembers)
+		* [joinLobby()](../classes/matchmaking.md#joinlobby)
+		* [leaveLobby()](../classes/matchmaking.md#leavelobby)
+		* [requestLobbyList()](../classes/matchmaking.md#requestlobbylist)
+		* [sendLobbyChatMsg()](../classes/matchmaking.md#sendlobbychatmsg)
+		* [setLobbyData()](../classes/matchmaking.md#setlobbydata)
+		* [setLobbyJoinable()](../classes/matchmaking.md#setlobbyjoinable)
+	* [Networking class](../classes/networking.md)
+		* [allowP2PPacketRelay()](../classes/networking.md#allowp2ppacketrelay)
+		* [closeP2PSessionWithUser()](../classes/networking.md#closep2psessionwithuser)
+	* [Friends class](../classes/friends.md)
+		* [getFriendPersonaName()](../classes/friends.md#getfriendpersonaname)
 
+{==
 ## Set Up
+==}
 
 First let's set up some variables to fill in later:
 
@@ -24,13 +47,14 @@ var steam_username: String = ""
 
 Your Steam ID and username may actually be in a different GDScript, especially if you use the `global.gd` the way I do [mentioned in the initialization tutorial](initializing.md). The most important will be the `lobby_id`, which obviously houses the lobby's ID, and `lobby_members`, which will be an array of dictionaries of lobby members and their Steam ID 64's.
 
----
-
-## The ***_ready()*** Function
+{==
+## The \_ready() Function
+==}
 
 Next we'll want to set up the signal connections for Steamworks and a command line checker like so:
 
 === "Godot 2.x, 3.x"
+
 	```gdscript
 	func _ready() -> void:
 		Steam.connect("join_requested", self, "_on_lobby_join_requested")
@@ -46,7 +70,9 @@ Next we'll want to set up the signal connections for Steamworks and a command li
 		# Check for command line arguments
 		check_command_line()
 	```
+
 === "Godot 4.x"
+
 	```gdscript
 	func _ready() -> void:
 		Steam.join_requested.connect(_on_lobby_join_requested)
@@ -88,9 +114,9 @@ This is important if the player is accepting a Steam invite or right-clicks a fr
 
 Additionally, you'll need to add the appropriate scene name to your Steamworks launch options on the Steamworks website. You'll want to add the full scene path (res://your-scene.tscn) on the **Arguments** line in your launch option. [You can read more about that, with details, in this link.](https://github.com/CoaguCo-Industries/GodotSteam/issues/100){ target="\_blank" } Big thanks to **Antokolos** for answering this issue and providing a solid example.
 
----
-
+{==
 ## Creating Lobbies
+==}
 
 Next we'll set up our lobby creation functions. You'll probably want to connect this function to a button somewhere in your game:
 
@@ -114,7 +140,7 @@ The second variable is the maximum number of players allowed to join the lobby. 
 
 Next we'll cover the callback from Steam saying the lobby has been created:
 
-````gdscript
+```gdscript
 func _on_lobby_created(connect: int, this_lobby_id: int) -> void:
 	if connect == 1:
 		# Set the lobby ID
@@ -131,7 +157,7 @@ func _on_lobby_created(connect: int, this_lobby_id: int) -> void:
 		# Allow P2P connections to fallback to being relayed through Steam if needed
 		var set_relay: bool = Steam.allowP2PPacketRelay(true)
 		print("Allowing Steam to be relay backup: %s" % set_relay)
-````
+```
 
 Once this callback fires, you'll have your lobby ID which you can pass off to our `lobby_id` variable for later use. As the note says, the lobby should be set to joinable by default but, just in case, we add it here. You can make the lobby unjoinable too.
 
@@ -139,20 +165,20 @@ You can also set some lobby data now; which can be whatever **key / value** pair
 
 And you'll notice I set `allowP2PPacketRelay()` to true at this point; this allows, as the note mentions, P2P connections to fallback to being relayed through Steam if needed. This usually happens if you have NAT or firewall issues.
 
----
-
+{==
 ## Get Lobby Lists
+==}
 
 Now that we can create lobbies, let's query and pull a list of lobbies. I usually have a button that will open a lobby interface which is a list of buttons, one per lobby:
 
-````gdscript
+```gdscript
 func _on_open_lobby_list_pressed() -> void:
 	# Set distance to worldwide
 	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_WORLDWIDE)
 
 	print("Requesting a lobby list")
 	Steam.requestLobbyList()
-````
+```
 
 Before requesting the lobby list with `requestLobbyList()` you can add more search queries like:
 
@@ -180,7 +206,8 @@ Once you set all, some, or none of these, you can then call `requestLobbyList()`
 In our example code, I do something like this to make buttons for each lobby:
 
 === "Godot 2.x, 3.x"
-	````gdscript
+
+	```gdscript
 	func _on_lobby_match_list(these_lobbies: Array) -> void:
 		for this_lobby in these_lobbies:
 			# Pull lobby data from Steam, these are specific to our example
@@ -199,9 +226,11 @@ In our example code, I do something like this to make buttons for each lobby:
 
 			# Add the new lobby to the list
 			$Lobbies/Scroll/List.add_child(lobby_button)
-	````
+	```
+
 === "Godot 4.x"
-	````gdscript
+
+	```gdscript
 	func _on_lobby_match_list(these_lobbies: Array) -> void:
 		for this_lobby in these_lobbies:
 			# Pull lobby data from Steam, these are specific to our example
@@ -220,17 +249,17 @@ In our example code, I do something like this to make buttons for each lobby:
 
 			# Add the new lobby to the list
 			$Lobbies/Scroll/List.add_child(lobby_button)
-	````
+	```
 
 You should now have a way to call lobby lists and display them.
 
----
-
+{==
 ## Joining Lobbies
+==}
 	
 Next we'll tackle joining a lobby. Clicking one of the lobby buttons we created in the last step will fire this function:
 
-````gdscript
+```gdscript
 func join_lobby(this_lobby_id: int) -> void:
 	print("Attempting to join lobby %s" % lobby_id)
 
@@ -239,11 +268,11 @@ func join_lobby(this_lobby_id: int) -> void:
 
 	# Make the lobby join request to Steam
 	Steam.joinLobby(this_lobby_id)
-````
+```
 
 This will attempt to join the lobby you click on and, when it succeeds, it will fire the `_on_lobby_joined()` callback:
 
-````gdscript
+```gdscript
 func _on_lobby_joined(this_lobby_id: int, _permissions: int, _locked: bool, response: int) -> void:
 	# If joining was successful
 	if response == Steam.CHAT_ROOM_ENTER_RESPONSE_SUCCESS:
@@ -277,13 +306,13 @@ func _on_lobby_joined(this_lobby_id: int, _permissions: int, _locked: bool, resp
 
 		#Reopen the lobby list
 		_on_open_lobby_list_pressed()
-````
+```
 
 For a more clear explanation of these chat room responses, [check out the enums listings in the Friends class](../classes/main.md#chatroomenterresponse).
 
 If the player is already in-game and accepts a Steam invite or clicks on a friend in their friend list then selects 'Join Game' from there, it will trigger the `join_requested` callback. This function will handle that:
 
-````gdscript
+```gdscript
 func _on_Lobby_Join_Requested(this_lobby_id: int, friend_id: int) -> void:
 	# Get the lobby owner's name
 	var owner_name: String = Steam.getFriendPersonaName(friend_id)
@@ -292,17 +321,17 @@ func _on_Lobby_Join_Requested(this_lobby_id: int, friend_id: int) -> void:
 
 	# Attempt to join the lobby
 	join_lobby(this_lobby_id)
-````
+```
 
 It will then follow the normal `join_lobby()` process of setting up all lobby members, handshakes, etc. Not to sound repetitive, but note again that if the player is not in-game and accepts a Steam invite or joins a game through the friends list then we are back to the command line situation talked about earlier.
 
----
-
+{==
 ## Getting Lobby Members
+==}
 	
 Depending on how you set up your lobby interface, you'll probably want the player to see some kind of chat window with a player list. Our `get_lobby_members()` will help with finding out who all is in this lobby:
 
-````gdscript
+```gdscript
 func get_lobby_members() -> void:
 	# Clear your previous lobby list
 	lobby_members.clear()
@@ -320,19 +349,19 @@ func get_lobby_members() -> void:
 
 		# Add them to the list
 		lobby_members.append({"steam_id":member_steam_id, "steam_name":member_steam_name})
-````
+```
 
 This will get the lobby members from Steam then loop through and get their names and Steam ID's then append them to our `lobby_members` array for later use. You can then display this list in your lobby room.
 
----
-
+{==
 ## Persona Changes / Avatars / Names
+==}
 	
 Sometimes you will see that a user's name and avatar, sometimes one or the other, won't immediately show up correctly. This is because our local user only really knows about friends and players they have played with; whatever is stored in local cache.
 
 A bit after a lobby is joined, this data will be sent by Steam which triggers a `persona_state_change` callback. You will want to update your player list to reflect this and get the correct name and avatar for unknown players. Our connect `_on_persona_change()` function will do that:
 
-````gdscript
+```gdscript
 # A user's information has changed
 func _on_persona_change(this_steam_id: int, _flag: int) -> void:
 	# Make sure you're in a lobby and this user is valid or Steam might spam your console log
@@ -341,32 +370,32 @@ func _on_persona_change(this_steam_id: int, _flag: int) -> void:
 
 		# Update the player list
 		get_lobby_members()
-````
+```
 
 All this really does is refresh our lobby list information to get the avatar and name right by re-calling `get_lobby_Members()` again.
 
----
-
+{==
 ## P2P Handshakes
+==}
 
 You'll also note in the joining lobbies part we fire the initial P2P handshake; this just opens and checks our P2P session:
 
-````gdscript
+```gdscript
 func make_p2p_handshake() -> void:
 	print("Sending P2P handshake to the lobby")
 	
 	send_p2p_packet(0, {"message": "handshake", "from": steam_id})
-````
+```
 
 We won't get into what all this means just yet, but I wanted to show the code for the handshake function here since it is referenced; [more on that in the P2P tutorial](p2p.md). Your handshake messages can be anything and disregarded for the most part. Again, it is just to test our P2P session.
 
----
-
+{==
 ## Lobby Updates / Changes
+==}
 
 Now that a player has joined the lobby, everyone in the lobby will receive a callback notifying of the change. We will handle it like this:
 
-````gdscript
+```gdscript
 func _on_lobby_chat_update(this_lobby_id: int, change_id: int, making_change_id: int, chat_state: int) -> void:
 	# Get the user who has made the lobby change
 	var changer_name: String = Steam.getFriendPersonaName(change_id)
@@ -393,17 +422,17 @@ func _on_lobby_chat_update(this_lobby_id: int, change_id: int, making_change_id:
 
 	# Update the lobby now that a change has occurred
 	get_lobby_members()
-````
+```
 
 For the most part this will update when players join or leave the lobby. However, if you add functionality to kick or ban players, it will show that too. At the end of this function, I always update the player list so we can show the correct list of players in the lobby.
 
----
-
+{==
 ## Lobby Chat / Messages
+==}
 
 You may also want players to be able to chat while in the lobby and waiting for a game to start. If you have a **LineEdit** node for messaging, clicking a "send" button should trigger something like this:
 
-````gdscript
+```gdscript
 func _on_send_chat_pressed() -> void:
 	# Get the entered chat message
 	var this_message: String = $Chat.get_text()
@@ -419,17 +448,17 @@ func _on_send_chat_pressed() -> void:
 
 	# Clear the chat input
 	$Chat.clear()
-````
+```
 
 The $Chat is your **LineEdit** and will probably be different in your project. Most importantly is your get the text and send it to `sendLobbyChatMsg()`.
 
----
-
+{==
 ## Leaving A Lobby
+==}
 
 Next we'll handle leaving a lobby. If you have a button do to so, have it connect to this function:
 
-````gdscript
+```gdscript
 func leave_lobby() -> void:
 	# If in a lobby, leave it
 	if lobby_id != 0:
@@ -449,24 +478,30 @@ func leave_lobby() -> void:
 
 		# Clear the local lobby list
 		lobby_members.clear()
-````
+```
 
 This will inform Steam you have left the lobby then clear your `lobby_id` variable, as well as your `lobby_members` array after it closes your P2P sessions with all players in the lobby. You'll notice at this point we don't have any functions to handle invites through Steam. This will be added in the second half of the lobby tutorial at a later time.
 
----
-
-## Additional Resources
-
-I'd like to point out some additional resources for you to check out:
-
-First is this [video tutorial put together by **DawnsCrow Games**](https://youtu.be/si50G3S1XGU){ target="\_blank" }.
-
-Second is [**JDare**'s has a repo, **GodotSteamHL**](https://github.com/JDare/GodotSteamHL){ target="\_blank" }, designed to streamline Steam's networking functionality (lobbies and P2P) which should serve as a handy guide and/or useful script.
-
-I highly suggest you [check out the Example project](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="\_blank" }, specifically the **/src/examples/lobby.tscn** which will have the full working code and test interface for this tutorial.
-
----
+{==
+## Up Next
+==}
 
 That concludes the lobby tutorial. At this point you may want to [check out the P2P tutorial which compliments this one](p2p.md). Obviously this code should not be used for production and more for a very, very, very, simple guide on where to start.
+
+{==
+## Additional Resources
+==}
+
+### Video Tutorials
+
+Prefer video tutorials? Feast your eyes and ears!
+
+[ :simple-youtube: 'Godot Tutorial: GodotSteam Lobby System' by DawnsCrow Games](https://youtu.be/si50G3S1XGU){ .md-button .md-button--resource target="\_blank" }
+
+### Related Projects
+
+[ :simple-github: 'GodotSteamHL' by JDare](https://github.com/JDare/GodotSteamHL){ .md-button .md-button--resource target="\_blank" }
+
+### Example Project
 
 [To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="\_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.

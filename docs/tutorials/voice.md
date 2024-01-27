@@ -5,13 +5,25 @@ In case you want to Steam's Voice functionality in your game, we might as well c
 !!! warning "Notes"
 	Currently the voice playback sounds pretty choppy. Personally, I have experienced this when using voice chat in the Steam client and am not really sure what causes it. Anyone who has any ideas is welcome to fix this example up!
 
----
+??? guide "Relevant GodotSteam classes and functions"
+	* [Friends class](../classes/friends.md)
+		* [setInGameVoiceSpeaking()](../classes/friends.md#setingamevoicespeaking)
+	* [User class](../classes/user.md)
+		* [decompressVoice()](../classes/user.md#decompressvoice)
+		* [getAvailableVoice()](../classes/user.md#getavailablevoice)
+		* [getVoice()](../classes/user.md#getvoice)
+		* [getVoiceOptimalSampleRate()](../classes/user.md#getvoiceoptimalsamplerate)
+		* [startVoiceRecording()](../classes/user.md#startvoicerecording)
+		* [stopVoiceRecording()](../classes/user.md#stopvoicerecording)
 
+{==
 ## Preparations
+==}
 
 First we will set up a bunch of variables that will get used later on.
 
 === "Godot 2.x, 3.x"
+
 	```gdscript
 	var current_sample_rate: int = 48000
 	var has_loopback: bool = false
@@ -21,7 +33,9 @@ First we will set up a bunch of variables that will get used later on.
 	var network_voice_buffer: PoolByteArray = PoolByteArray()
 	var packet_read_limit: int = 5
 	```
+
 === "Godot 4.x"
+
 	```gdscript
 	var current_sample_rate: int = 48000
 	var has_loopback: bool = false
@@ -36,7 +50,9 @@ A few quick things to mention, `has_loopback` will toggle whether or not you can
 
 Also, somewhere in the root of our test, we need to create two `AudioStreamPlayer` nodes. One named **Local** and one named **Network** which we can use as `$Local` and `$Network` respectively.
 
+{==
 ## Getting Voice Data
+==}
 
 Also, in our `_process()` function we will add the call to our `check_for_voice()` function:
 
@@ -71,7 +87,9 @@ func check_for_voice() -> void:
 
 Our `Networking.send_message` function can be whatever P2P networking function you have for sending packets / data. At the time of writing this, I wonder how necessary this is since Steam is recording voice data and we are checking if there is any available; surely it knows who we are talking to, if anyone. Do we need to send this data back as a packet?
 
+{==
 ## Processing Voice Data
+==}
 
 OK, now that we have something, let's hear it. We may want to use the optimal sample rate instead of whatever we set in our `current_sample_rate` variable.  In which case we can use this function:
 
@@ -95,6 +113,7 @@ func get_sample_rate(is_toggled: bool) -> void:
 We have our sample rates figured out so let's try to actual play this data. Since we are just testing things, we will use the `local_` variables and nodes.
 
 === "Godot 2.x, 3.x"
+
 	```gdscript
 	func process_voice_data(voice_data: Dictionary, voice_source: String) -> void:
 		# Our sample rate function above without toggling
@@ -119,7 +138,9 @@ We have our sample rates figured out so let's try to actual play this data. Sinc
 				$Local.stream = local_audio
 				$Local.play()
 	```
+
 === "Godot 4.x"
+
 	```gdscript
 	func process_voice_data(voice_data: Dictionary, voice_source: String) -> void:
 		# Our sample rate function above without toggling
@@ -145,7 +166,9 @@ We have our sample rates figured out so let's try to actual play this data. Sinc
 				$Local.play()
 	```
 
+{==
 ## Recording Voice
+==}
 
 So how do we actually get our voice data to Steam? We will need to set up a button that can be toggled and attached to the following function:
 
@@ -167,5 +190,15 @@ You may want to provide the option for always-on voice chat, in which case you'd
 ---
 
 And that's the basics of Steam Voice chat. Again, there is a weird choppiness to the playback in this example but surely we can iron that out at some point.
+
+{==
+## Additional Resources
+==}
+
+### Related Projects
+
+[:simple-github: 'Godot VOIP' by ikbencasdoei](https://github.com/ikbencasdoei/godot-voip){ .md-button .md-button--resource target="\_blank" }
+
+### Example Project
 
 [To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="\_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.

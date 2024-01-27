@@ -2,8 +2,9 @@
 
 A lot of folks like to ship on other platforms like Playstation, XBox, Switch, Itch.io, etc. Removing deeply embedded Steamworks stuff can be a pain and some have opted to keep separate repositories for their game's Steam version. However, there is an alternative to this: programmatically ignoring the Steamworks bits. Below are some examples shared by users in our Discord.
 
----
+{==
 ## How We Do It
+==}
 
 So the example I'll be using for this tutorial is based on solution #2 submitted by Rutger. I am actively using this in my current project.
 
@@ -72,12 +73,13 @@ So when you need to export for non-Steam platforms, you can just use vanilla God
 
 Below we have the two submitted user suggestions on how to pull this off; the example above, as mnetioned, was based on solution #2 but do also check out solution 1 if that makes more sense for you.
 
----
+{==
 ## Solution 1: Multiple Files
+==}
 
 Albey shared some scripts for his solution in GDScript and there are three separate files. The `SteamHandler.gd` file which swaps out which version of the game this is:
 
-````gdscript
+```gdscript
 extends Node
 
 var interface: SteamIntegrationBlank
@@ -91,11 +93,11 @@ func _ready() -> void:
 	interface.initialise_steam()
 	if interface.status != interface.STATUS_OK:
 		get_tree().quit()
-````
+```
 
 The `SteamIntegrationBlank.gd` file which handles what happens when Steam is not present:
 
-````gdscript
+```gdscript
 extends Reference
 class_name SteamIntegrationBlank
 
@@ -105,11 +107,11 @@ var status := STATUS_OK
 
 func initialise_steam() -> void:
 	pass
-````
+```
 
 And finally the `SteamIntegration.gd` file for when Steam is present:
 
-````gdscript
+```gdscript
 extends SteamIntegrationBlank
 
 const APP_ID = ***
@@ -121,18 +123,19 @@ func initialise_steam() -> void:
 
 	var init: Dictionary = Steam.steamInit()
 	status = init['status']
-````
+```
 
----
+{==
 ## Solution 2: Check For Singleton
+==}
 
 [Rutger from Roost Games (maker of Cat Cafe Manager)](https://catcafemanager.com){ target="\_blank" } shared a tidbit about it: "If anyone is wondering how to do that, since I had to find out through the Switch port, I have a `platform` global as a wrapper for any platform specific stuff, it just does this in the `_ready()`". His example code is as following:
 
-````gdscript
+```gdscript
 if Engine.has_singleton("Steam"):
 	self.platform = "steam"
 	self.Steam = Engine.get_singleton("Steam")
-````
+```
 
 ---
 

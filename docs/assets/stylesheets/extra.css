@@ -43,7 +43,9 @@ html {
 	--md-shadow-z3:0 0.2rem 0.5rem rgba(0,0,0,.2),0 0 0.05rem rgba(0,0,0,.35);
 }
 .md-typeset .tabbed-set>input:first-child:checked~.tabbed-labels>:first-child,
-.md-typeset .tabbed-set>input:nth-child(2):checked~.tabbed-labels>:nth-child(2) {
+.md-typeset .tabbed-set>input:nth-child(2):checked~.tabbed-labels>:nth-child(2),
+.md-typeset .tabbed-set>input:nth-child(3):checked~.tabbed-labels>:nth-child(3),
+.md-typeset .tabbed-set>input:nth-child(4):checked~.tabbed-labels>:nth-child(4){
 	background-color:#478CBF;
 	color:#ffffff;
 }
@@ -60,11 +62,31 @@ kbd,
 pre {
 	color:#eeeeee !important;
 }
+strong > em {
+	color: #57aae5;
+}
 body {
 	background-color: #424242;
 }
 .md-typeset h1 {
 	color: #ffffff !important;
+}
+h2 > span.twemoji,
+h3 > span.twemoji,
+h4 > span.twemoji,
+label span.twemoji {
+	margin-right: .5em;
+}
+.critic {
+	background-color: #35688E !important;
+	margin: 3em 0 2em !important;
+}
+.md-typeset blockquote {
+	 color: #478CBF;
+}
+.md-typeset blockquote svg {
+	color: #ffffff;
+	margin-right: 0.5em;
 }
 .md-typeset hr {
 	border-bottom: .05rem solid #aaaaaa !important;
@@ -97,22 +119,44 @@ body {
 .admonition.function {
 	text-align: left !important;
 }
-.md-typeset .warning > .admonition-title::before {
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .info > .admonition-title:before,
+.md-typeset .video > .admonition-title:before,
+.md-typeset .resource > .admonition-title:before,
+.md-typeset .resource-small > .admonition-title:before {
 	background-color: #ffffff;
 }
-.md-typeset .warning > .admonition-title {
-	background-color: #478CBF;
+.md-typeset .warning > .admonition-title,
+.md-typeset .info > .admonition-title,
+.md-typeset .video > .admonition-title,
+.md-typeset .resource > .admonition-title,
+.md-typeset .resource-small > .admonition-title
+{
+	background-color: #35688E;
 }
-.md-typeset .admonition.warning {
+.md-typeset .admonition.warning,
+.md-typeset .admonition.info {
 	background-color: rgba(71, 140, 199, 0.25);
 }
 .md-typeset .warning > .admonition-title,
-.md-typeset .admonition.warning {
+.md-typeset .admonition.warning,
+.md-typeset .info > .admonition-title,
+.md-typeset .admonition.info {
 	color: #ffffff;
-	border-color: #478CBF;
+	border-color: #35688E;
+}
+.admonition-title > a:hover {
+	color: #ffffff;
+	text-decoration: none !important;
+}
+.md-typeset .md-button {
+	padding: 1em 2em !important;
 }
 .admonition a.md-button {
 	text-align: center !important;
+}
+.admonition.source a.md-button {
+	text-align: left !important;
 }
 .admonition-title {
 	text-align: left !important;
@@ -339,18 +383,29 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	padding: .625em 0em .625em 1em !important;
 }
 .md-typeset .md-button--primary,
+.md-typeset .md-button--resource,
+.md-typeset .md-button--resource-small,
 .md-typeset .md-button--store {
-	background-color: #282828;
-	border-color: #282828;
+	background-color: #282828 !important;
+	border-color: #282828 !important;
 	color: #fff;
 	text-decoration: none;
-	margin-bottom: 
 }
 .md-typeset .md-button--primary:hover,
+.md-typeset .md-button--resource:hover,
+.md-typeset .md-button--resource-small:hover,
 .md-typeset .md-button--store:hover {
 	background-color: #478CBF !important;
 	border-color: #478CBF !important;
-	text-decoration: none;
+	text-decoration: none !important;
+}
+.md-typeset .md-button--resource,
+.md-typeset .md-button--resource-small {
+	width: 100%;
+	padding: 0.25em 0.25em 0.25em 0.75em !important;
+}
+.md-typeset .md-button--resource-small {
+	width: 40% !important;
 }
 .md-typeset .md-button:-webkit-any(:focus, :hover) {
 	background-color: #478CBF;
@@ -939,10 +994,10 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	min-width:10em;
 }
 .md-typeset .tabbed-labels::before {
-    background: #478CBF !important;
+	background: #478CBF !important;
 }
 .md-typeset .tabbed-labels > label:focus {
-	background-color:#478CBF;
+	background-color:#478CBF !important;
 }
 .md-typeset .tabbed-labels > label:hover {
 	background-color:#478CBF;
@@ -963,6 +1018,10 @@ div.branch-grid div.admonition {
   flex-basis: 48%;
 }
 div.link-grid {
+	padding-bottom: 1.25em;
+}
+div.link-grid,
+div.button-grid {
   display: block;
 }
 div.link-grid a {
@@ -973,6 +1032,12 @@ div.link-grid a {
 }
 div.link-grid a:hover {
   text-decoration: none;
+}
+div.button-grid a {
+  display: inline-block;
+  margin: 1em 1em 0;
+  width: 28%;
+  text-align: center;
 }
 div.start-grid {
   display: flex;
@@ -1008,7 +1073,7 @@ div.start-grid div.admonition a {
 .md-typeset details.guide,
 .md-typeset details.function,
 .md-typeset details.signal {
-  background-color: none;
+  background-color: #394c59;
   border-color: none;
   border: none;
   color: #ffffff;
@@ -1030,10 +1095,7 @@ div.start-grid div.admonition a {
 
 .md-typeset .admonition.compile,
 .md-typeset .admonition.example,
-.md-typeset .admonition.guide,
-.md-typeset .admonition.server,
-.md-typeset .admonition.source,
-.md-typeset .admonition.steam {
+.md-typeset .admonition.guide{
 	display: block !important;
 	min-width: 100% !important;
 	text-align: left !important;
@@ -1046,6 +1108,11 @@ div.start-grid div.admonition a {
 .md-typeset .admonition.source a,
 .md-typeset .admonition.steam a {
   margin-right: 2em;	
+}
+
+.md-typeset .admonition.source,
+.md-typeset .admonition.server {
+	margin-bottom: 3em;
 }
 
 .md-typeset .admonition .md-button--primary {
@@ -1173,4 +1240,10 @@ figure.game a span.twemoji {
 }
 .highlight :is(.cpf, .l, .s, .sb, .sc, .s2, .si, .s1, .ss) {
 	color: #FFECA1 !important;
+}
+@media screen and (min-width: 45em) {
+  [dir="ltr"] .md-typeset .inline
+{
+    margin-right: .5rem;
+  }
 }

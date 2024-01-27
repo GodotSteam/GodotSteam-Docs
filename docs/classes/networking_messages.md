@@ -1,16 +1,12 @@
 # Networking Messages
 
-Networking API intended to make it easy to port non-connection-oriented code to take advantage of P2P connectivity and [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay){ target="\_blank" }.
+Networking API intended to make it easy to port non-connection-oriented code to take advantage of P2P connectivity and [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay){ target="\_blank" }. These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).
 
-These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
 
-These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
-
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### acceptSessionWithUser
 
@@ -152,3 +148,74 @@ These are available in both the main [GodotSteam branches](https://github.com/Co
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SendMessageToUser){ .md-button .md-button--store target="_blank" }
+
+{==
+## :material-signal: Signals
+==}
+
+### network_messages_session_request
+
+!!! function "network_messages_session_request"
+	Posted when a remote host is sending us a message, and we do not already have a session with them.
+
+	**Returns:**
+
+	* identity (string)
+
+	---
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SteamNetworkingMessagesSessionRequest_t){ .md-button .md-button--store target="_blank" }
+
+### network_messages_session_failed
+
+!!! function "network_messages_session_failed"
+	Posted when we fail to establish a connection, or we detect that communications have been disrupted it an unusual way. There is no notification when a peer proactively closes the session. ("Closed by peer" is not a concept of UDP-style communications, and Networking Messages is primarily intended to make porting UDP code easy.)
+
+	Remember: callbacks are asynchronous. See notes on [sendMessageToUser](#sendmessagetouser), and NETWORKING_SEND_AUTO_RESTART_BROKEN_SESSION in particular.
+
+	Also, if a session times out due to inactivity, no callbacks will be posted. The only way to detect that this is happening is that querying the session state may return none, connecting, and findingroute again.
+
+	**Returns:**
+
+	* reason (int)
+
+	The returned integer will map to these enums: [NetworkingConnectionEnd](#networkconnectionend)
+
+	---
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SteamNetworkingMessagesSessionFailed_t){ .md-button .md-button--store target="_blank" }
+
+{==
+## :material-numeric: Enums
+==}
+
+### NetworkingConnectionEnd
+
+Enumerator | Value
+---------- | -----
+CONNECTION_END_INVALID | 0
+CONNECTION_END_APP_MIN | 1000
+CONNECTION_END_MAX | 1999
+CONNECTION_END_APP_EXCEPTION_MIN | 2000
+CONNECTION_END_APP_EXCEPTION_MAX | 2999
+CONNECTION_END_LOCAL_MIN | 3000
+CONNECTION_END_LOCAL_OFFLINE_MODE | 3001
+CONNECTION_END_LOCAL_MANY_RELAY_CONNECTIVITY | 3002
+CONNECTION_END_LOCAL_HOSTED_sERVER_PRIMARY_RELAY | 3003
+CONNECTION_END_LOCAL_NETWORK_CONFIG | 3004
+CONNECTION_END_LOCAL_RIGHTS | 3005
+CONNECTION_END_LOCAL_MAX | 3999
+CONNECTION_END_REMOVE_MIN | 4000
+CONNECTION_END_REMOTE_TIMEOUT | 4001
+CONNECTION_END_REMOTE_BAD_CRYPT | 4002
+CONNECTION_END_REMOTE_BAD_CERT | 4003
+CONNECTION_END_REMOTE_NOT_LOGGED_IN | 4004
+CONNECTION_END_REMOTE_NOT_RUNNING_APP | 4005
+CONNECTION_END_BAD_PROTOCOL_VERSION | 4006
+CONNECTION_END_REMOTE_MAX | 4999
+CONNECTION_END_MISC_MIN | 5000
+CONNECTION_END_MISC_GENERIC | 5001
+CONNECTION_END_MISC_INTERNAL_ERROR | 5002
+CONNECTION_END_MISC_TIMEOUT | 5003
+CONNECTION_END_MISC_RELAY_CONNECTIVITY | 5004
+CONNECTION_END_MISC_STEAM_CONNECTIVITY | 5005
+CONNECTION_END_MISC_NO_RELAY_SESSIONS_TO_CLIENT | 5006
+CONNECTION_END_MISC_MAX | 5999

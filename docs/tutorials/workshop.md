@@ -2,23 +2,50 @@
 
 A hot topic that comes up: Workshop / UGC. There are a lot of moving parts and we'll probably miss quite a few in this tutorial. Luckily some smart folks have provided some information based on their experiences that we can use.
 
----
+??? guide "Relevant GodotSteam classes and functions"
+    * [Friends class](../classes/friends.md)
+        * [activateGameOverlayToWebPage()](../classes/friends.md/#activategameoverlaytowebpage)
+    * [UGC class](../classes/ugc.md)
+        * [createItem()](../classes/ugc.md#createitem)
+        * [createQueryUserUGCRequest()](../classes/ugc.md#createqueryuserugcrequest)
+        * [getItemInstallInfo()](../classes/ugc.md#getiteminstallinfo)
+        * [getSubscribedItems()](../classes/ugc.md#getsubscribeditems)
+        * [getQueryUGCResult()](../classes/ugc.md#getqueryugcresult)
+        * [releaseQueryUGCRequest()](../classes/ugc.md#releasequeryugcrequest)
+        * [sendQueryUGCRequest()](../classes/ugc.md#sendqueryugcrequest)
+        * [setReturnOnlyIDs()](../classes/ugc.md#setreturnonlyids)
+        * [startItemUpdate()](../classes/ugc.md#startitemupdate)
+        * [submitItemUpdate()](../classes/ugc.md#submititemupdate)
+        * [setItemContent()](../classes/ugc.md#setitemcontent)
+        * [setItemDescription()](../classes/ugc.md#setitemdescription)
+        * [setItemMetadata()](../classes/ugc.md#setitemmetadata)
+        * [setItemPreview()](../classes/ugc.md#setitempreview)
+        * [setItemTags()](../classes/ugc.md#setitemtags)
+        * [setItemTitle()](../classes/ugc.md#setitemtitle)
+        * [setItemUpdateLanguage()](../classes/ugc.md#setitemupdatelanguage)
+        * [setItemVisibility()](../classes/ugc.md#setitemvisibility)
+    * [User class](../classes/user.md)
+        * [getSteamID()](../classes/user.md#getsteamid)
 
+{==
 ## Before You Start
+==}
 
-Before anything else, you'll want to read [Valve's write-up on Workshop / UGC which will cover a lot of steps that aren't covered in this tutorial.](https://partner.steamgames.com/doc/features/workshop) Once you get through that, you should also read through [Valve's write-up on the implementation of Workshop / UGC so you'll be ready to continue on.](https://partner.steamgames.com/doc/features/workshop/implementation)
+Before anything else, you'll want to read [Valve's write-up on Workshop / UGC which will cover a lot of steps that aren't covered in this tutorial.](https://partner.steamgames.com/doc/features/workshop){ target="\_blank" } Once you get through that, you should also read through [Valve's write-up on the implementation of Workshop / UGC so you'll be ready to continue on.](https://partner.steamgames.com/doc/features/workshop/implementation){ target="\_blank" }
 
 And, when you're finally read both of those, we can start.
 
----
-
+{==
 ## Uploading / Downloading In Workshop / UGC
+==}
 
-[KarpPaul of Forgotten Dream Games has given us this pretty great tutorial on uploading and downloading items in Workshop / UGC.](https://forgottendreamgames.com/blog/godotsteam-how-to-upload-and-download-user-generated-content-ugc-repost.html) Since he has written everything, with code examples, there isn't any reason to reiterate it here when you can just click the link and read it all yourself.
+[**KarpPaul of Forgotten Dream Games** has given us this pretty great tutorial on uploading and downloading items in Workshop / UGC.](https://forgottendreamgames.com/blog/godotsteam-how-to-upload-and-download-user-generated-content-ugc-repost.html){ target="\_blank" } Since he has written everything, with code examples, there isn't any reason to reiterate it here when you can just click the link and read it all yourself.
 
+{==
 ## Using Items In Workshop / UGC
+==}
 
-Lyaaaaaaaaaaaaaaa submitted some code showing how they use items in Workshop / UGC:
+**Lyaaaaaaaaaaaaaaa** submitted some code showing how they use items in Workshop / UGC:
 
 ```gdscript
 extends Node
@@ -113,8 +140,9 @@ func _on_query_completed(p_query_handler    : int,
                     p_results_returned,
                     _page_number)
 ```
-
+{==
 ## Workshop / UGC Items
+==}
 
 Following along with Lyaaaaaaaaaaaaaaa's example, here is a class for your Workshop / UGC items.
 

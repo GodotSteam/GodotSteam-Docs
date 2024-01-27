@@ -2,13 +2,11 @@
 
 A small and easy to use HTTP client to send and receive data from the web.
 
-These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### createCookieContainer
 
@@ -89,7 +87,7 @@ These are available in both the main [GodotSteam branches](https://github.com/Co
 ### getHTTPResponseHeaderSize
 
 !!! function "getHTTPResponseHeaderSize( ```uint32``` request_handle, ```string``` header_name )"
-	Checks if a header is present in an HTTP response and returns its size. This must be called after the HTTP request has completed and returned the HTTP response via the [http_request_completed](#http_request_completed) call result associated with this request handle. If the response header exists in the response, then you can allocate a correctly sized buffer to get the associated value with [getHTTPResponseHeaderValue](#gethttpresponseheadervalue). Here is a list of standard response header names on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Response_fields){ target="_blank" }.
+	Checks if a header is present in an HTTP response and returns its size. This must be called after the HTTP request has completed and returned the HTTP response via the [http_request_completed](#http_request_completed) call result associated with this request handle. If the response header exists in the response, then you can allocate a correctly sized buffer to get the associated value with [getHTTPResponseHeaderValue](#gethttpresponseheadervalue). Here is a list of standard response header names on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Response_fields){ target="\_blank" }.
 
 	**Returns:** uint32
 
@@ -99,7 +97,7 @@ These are available in both the main [GodotSteam branches](https://github.com/Co
 ### getHTTPResponseHeaderValue
 
 !!! function "getHTTPResponseHeaderValue( ```uint32``` request_handle, ```string``` header_name, ```uint32``` buffer_size )"
-	Gets a header value from an HTTP response. This must be called after the HTTP request has completed and returned the HTTP response via the [http_request_completed](#http_request_completed) call result associated with this request handle. You should first call [getHTTPResponseHeaderSize](#gethttpresponseheadersize) to check for the presence of the header and to get the size. You can then allocate a buffer with that size and pass it into this function. Here is a list of standard response header names on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Response_fields){ target="_blank" }.
+	Gets a header value from an HTTP response. This must be called after the HTTP request has completed and returned the HTTP response via the [http_request_completed](#http_request_completed) call result associated with this request handle. You should first call [getHTTPResponseHeaderSize](#gethttpresponseheadersize) to check for the presence of the header and to get the size. You can then allocate a buffer with that size and pass it into this function. Here is a list of standard response header names on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Response_fields){ target="\_blank" }.
 
 	**Returns:** uint8
 
@@ -296,13 +294,11 @@ These are available in both the main [GodotSteam branches](https://github.com/Co
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestUserAgentInfo){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### http_request_completed
 
@@ -348,11 +344,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#HTTPRequestHeadersReceived_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### HTTPMethod
 

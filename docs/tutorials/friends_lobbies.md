@@ -2,9 +2,7 @@
 
 In this quick tutorial we will cover how to get a dictionary of any lobbies belonging to friends that are visible to the user. This was created as it's a pretty common feature for multiplayer games.
 
-<div class="start-grid" markdown>
-
-!!! guide "Relevant GodotSteam classes and functions"
+??? guide "Relevant GodotSteam classes and functions"
 	* [Friends class](../classes/friends.md)
 		* [getFriendByIndex](../classes/friends.md#getfriendbyindex)
 		* [getFriendCount](../classes/friends.md#getfriendcount)
@@ -13,31 +11,31 @@ In this quick tutorial we will cover how to get a dictionary of any lobbies belo
 		* [createLobby](../classes/matchmaking.md#createlobby)
 	* [Utils class](../classes/utils.md)
 		* [getAppID](../classes/utils.md#getappid)
-</div>
 
----
-
+{==
 ## Functions Explained
+==}
 
 We will break down the different Steam functions to call first before looking at the code samples.
 
-````gdscript
+```gdscript
 var number_of_friends: int = Steam.getFriendCount(Steam.FRIEND_FLAG_IMMEDIATE)
-````
+```
 
 This must be run before `getFriendByIndex()` [according to the Steamworks documentation](https://partner.steamgames.com/doc/api/ISteamFriends#GetFriendByIndex){ target="\_blank" }. We'll be using this to iterate over each friend in our friends list.
 
-````gdscript
+```gdscript
 var steam_id: int = Steam.getFriendByIndex(index, Steam.FRIEND_FLAG_IMMEDIATE)
-````
+```
 
 Inside of the loop we'll call `getFriendByIndex()` to get the Steam ID of our friend at this index.
 
-**Note:** You must use the same friend flag as the one used when calling `getFriendCount()`. Refer to the [FriendFlags enum](../classes/friends.md#friendflags) for valid options and [the Steamworks documentation on the friend flags](https://partner.steamgames.com/doc/api/ISteamFriends#EFriendFlags){ target="\_blank" } for what they mean.
+!!! warning "Notes"
+	You must use the same friend flag as the one used when calling `getFriendCount()`. Refer to the [FriendFlags enum](../classes/friends.md#friendflags) for valid options and [the Steamworks documentation on the friend flags](https://partner.steamgames.com/doc/api/ISteamFriends#EFriendFlags){ target="\_blank" } for what they mean.
 
-````gdscript
+```gdscript
 var game_info: Dictionary = Steam.getFriendGamePlayed(steam_id)
-````
+```
 
 With our friend's Steam ID we can now get information about the game our friend may or may not be playing.
 
@@ -53,11 +51,11 @@ This dictionary will be empty if the friend is offline or not playing a game. Ot
 - **query_port**: int
 	- Depends on the lobby settings, but `ip`, `game_port`, and `query_port` will probably all just be zeros.
 
----
-
+{==
 ## Putting It All Together
+==}
 
-````gdscript
+```gdscript
 func get_lobbies_with_friends() -> Dictionary:
 	var results: Dictionary = {}
 
@@ -83,11 +81,11 @@ func get_lobbies_with_friends() -> Dictionary:
 			results[lobby].append(steam_id)
 
 	return results
-````
+```
 
 If you would rather get back a dictionary of `friend_id -> lobby_id` you can instead use:
 
-````gdscript
+```gdscript
 func get_friends_in_lobbies() -> Dictionary:
 	var results: Dictionary = {}
 
@@ -110,19 +108,19 @@ func get_friends_in_lobbies() -> Dictionary:
 			results[steam_id] = lobby
 
 	return results
-````
+```
 
 From here you can create your UI however you like, and simply call `joinLobby(lobby_id)` when the user has made a selection.
 
----
-
+{==
 ## Checking if a Friend Is Still in a Lobby
+==}
 
 In the likely case that you are not running `get_lobbies_with_friends()` every frame, there's a small chance a user might click on a lobby a friend has since left, or worse, a lobby that no longer exists.
 
 This is a little check you can do before joining the lobby:
 
-````gdscript
+```gdscript
 # Check if a friend is in a lobby
 func is_a_friend_still_in_lobby(steam_id: int, lobby_id: int) -> bool:
 	var game_info: Dictionary = Steam.getFriendGamePlayed(steam_id)
@@ -136,18 +134,18 @@ func is_a_friend_still_in_lobby(steam_id: int, lobby_id: int) -> bool:
 
 	# Return true if they are in the same game and have the same lobby_id
 	return app_id == Steam.getAppID() and lobby is int and lobby == lobby_id
-````
+```
 
----
-
+{==
 ## Troubleshooting
+==}
 
 If you don't see any lobbies while testing, make sure to check the flags for how the lobby was created.
 
 For instance, you won't be able to see a lobby with this flag:
 
-````gdscript
+```gdscript
 Steam.create_lobby(Steam.LOBBY_TYPE_INVISIBLE, 8)
-````
+```
 
 If the lobby is configured in such a way that it's invisible to you, or at max capacity, then Steam won't provide a lobby ID.

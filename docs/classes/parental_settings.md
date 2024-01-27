@@ -1,12 +1,10 @@
 # Parental Settings
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### isAppBlocked
 
@@ -50,13 +48,11 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
 
 	**Returns:** bool
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### parental_setting_changed
 
@@ -65,11 +61,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	
 	**Returns:** nothing
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### ParentalFeature
 

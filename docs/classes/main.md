@@ -1,12 +1,10 @@
 # Main
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
----
-
-## Functions
-
-------
+{==
+## :material-function-variant: Functions
+==}
 
 ### isSteamRunning
 
@@ -94,13 +92,11 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
 
     **Returns:** nothing
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### steamworks_error
 
@@ -114,11 +110,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	**Note:** this callback is unique to GodotSteam.
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### AccountType
 

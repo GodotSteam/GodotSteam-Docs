@@ -1,16 +1,12 @@
 # Networking Utils
 
-Miscellaneous networking utilities for checking the local networking environment and estimating pings.
+Miscellaneous networking utilities for checking the local networking environment and estimating pings. These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).
 
-These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
 
-These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
-
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### checkPingDataUpToDate
 
@@ -310,13 +306,11 @@ These are available in both the main [GodotSteam branches](https://github.com/Co
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingUtils#shortcuts){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### relay_network_status
 
@@ -334,11 +328,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steamnetworkingtypes#SteamRelayNetworkStatus_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### NetworkingAvailability
 

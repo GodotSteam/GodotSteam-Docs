@@ -1,16 +1,12 @@
 # Music Remote
 
-Allows direct interaction with the Steam Music player.
+Allows direct interaction with the Steam Music player. These functions only work with soundtracks you purchased or own on Steam.
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
-**Note**: These functions only work with soundtracks you purchased or own on Steam.
-
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### activationSuccess
 
@@ -337,11 +333,11 @@ These are only available in the main [GodotSteam branches](https://github.com/Co
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateVolume){ .md-button .md-button--store target="_blank" }
 
----
+{==
+## :material-signal: Signals
+==}
 
-## Signals
-
----
+These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
 
 ### music_player_remote_to_front
 

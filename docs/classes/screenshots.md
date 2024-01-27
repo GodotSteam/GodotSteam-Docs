@@ -1,16 +1,12 @@
 # Screenshots
 
-Functions for adding screenshots to the user's screenshot library.
+Functions for adding screenshots to the user's screenshot library. See [Steam Screenshots](https://partner.steamgames.com/doc/features/screenshots){ target="\_blank" } for more information.
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
-  
-See [Steam Screenshots](https://partner.steamgames.com/doc/features/screenshots){ target="\_blank" } for more information.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
----
-
-## Functions
-
-------
+{==
+## :material-function-variant: Functions
+==}
 
 ### addScreenshotToLibrary
 
@@ -122,13 +118,11 @@ See [Steam Screenshots](https://partner.steamgames.com/doc/features/screenshots
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamScreenshots#WriteScreenshot){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### screenshot_ready
 
@@ -140,7 +134,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* handle (uint32_t)
 	* result (uint32_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamScreenshots#ScreenshotReady_t){ .md-button .md-button--store target="_blank" }
 
 ### screenshot_requested
@@ -150,19 +144,17 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	**Returns:** nothing
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamScreenshots#ScreenshotRequested_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### VRScreenshotType
 
 Enumerator | Value
----------- | -----
+------- | -----
 VR_SCREENSHOT_TYPE_NONE | 0
 VR_SCREENSHOT_TYPE_MONO | 1
 VR_SCREENSHOT_TYPE_STEREO | 2

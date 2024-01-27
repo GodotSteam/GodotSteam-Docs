@@ -2,13 +2,11 @@
 
 Functions to allow game servers to set stats and achievements on players.
 
-These are only available in the [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+!!! info "Only available in the [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### clearUserAchievement
 
@@ -156,13 +154,11 @@ These are only available in the [GodotSteam Server branches](https://github.com/
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#UpdateUserAvgRateStat){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### stats_received
 

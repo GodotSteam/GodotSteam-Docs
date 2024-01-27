@@ -1,16 +1,12 @@
 # Matchmaking Servers
 
-Functions which provide access to the game server browser.
+Functions which provide access to the game server browser. See [Game Servers](https://partner.steamgames.com/doc/features/multiplayer/game_servers){ target="\_blank" } for more information.
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
-See [Game Servers](https://partner.steamgames.com/doc/features/multiplayer/game_servers){ target="\_blank" } for more information.
-
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### cancelQuery
 
@@ -245,13 +241,11 @@ See [Game Servers](https://partner.steamgames.com/doc/features/multiplayer/game
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#ServerRules){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### server_failed_to_respond
 
@@ -267,11 +261,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	
 	**Returns:** nothing
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### MatchMakingServerResponse
 

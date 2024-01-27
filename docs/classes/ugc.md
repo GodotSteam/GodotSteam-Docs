@@ -2,13 +2,11 @@
 
 Functions to create, consume, and interact with the [Steam Workshop](https://partner.steamgames.com/doc/features/workshop){ target="\_blank" }.
 
-These are available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }.
+!!! info "Available in both the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### addAppDependency
 
@@ -1202,13 +1200,11 @@ These are available in both the main [GodotSteam branches](https://github.com/Co
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#UpdateItemPreviewVideo){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
-------
 
 ### add_app_dependency_result
 
@@ -1221,7 +1217,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* file_id (uint64_t)
 	* app_id (uint32_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#AddAppDependencyResult_t){ .md-button .md-button--store target="_blank" }	
 
 ### add_ugc_dependency_result
@@ -1235,7 +1231,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* file_id (uint64_t)
 	* child_id (uint32_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#AddUGCDependencyResult_t){ .md-button .md-button--store target="_blank" }
 
 ### get_app_dependencies_result
@@ -1250,7 +1246,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* app_dependencies (uint32)
 	* total_app_dependencies (uint32)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#GetAppDependenciesResult_t){ .md-button .md-button--store target="_blank" }
 
 ### get_item_vote_result
@@ -1266,7 +1262,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* vote_down (bool)
 	* vote_skipped (bool)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#GetUserItemVoteResult_t){ .md-button .md-button--store target="_blank" }
 
 ### item_created
@@ -1280,7 +1276,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* file_id (uint64_t)
 	* accept_tos (bool)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#CreateItemResult_t){ .md-button .md-button--store target="_blank" }
 
 ### item_deleted
@@ -1293,7 +1289,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* result (int)
 	* file_id (uint64_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#DeleteItemResult_t){ .md-button .md-button--store target="_blank" }
 
 ### item_downloaded
@@ -1307,7 +1303,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* file_id (uint64_t)
 	* app_id (uint32_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#DownloadItemResult_t){ .md-button .md-button--store target="_blank" }
 
 ### item_installed
@@ -1320,7 +1316,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* app_id (uint32_t)
 	* file_id (uint64_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#ItemInstalled_t){ .md-button .md-button--store target="_blank" }
 
 ### item_updated
@@ -1334,7 +1330,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* result (int)
 	* accept_tos (bool)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#SubmitItemUpdateResult_t){ .md-button .md-button--store target="_blank" }
 
 ### remove_app_dependency_result
@@ -1348,7 +1344,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* file_id (uint64_t)
 	* app_id (uint32_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#RemoveAppDependencyResult_t){ .md-button .md-button--store target="_blank" }
 
 ### remove_ugc_dependency_result
@@ -1362,7 +1358,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* file_id (uint64_t)
 	* child_id (uint64_t)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#RemoveUGCDependencyResult_t){ .md-button .md-button--store target="_blank" }
 
 ### set_user_item_vote
@@ -1376,7 +1372,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* file_id (uint64_t)
 	* vote_up (bool)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#SetUserItemVoteResult_t){ .md-button .md-button--store target="_blank" }
 
 ### start_playtime_tracking
@@ -1388,7 +1384,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	* result (int)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#StartPlaytimeTrackingResult_t){ .md-button .md-button--store target="_blank" }
 
 ### stop_playtime_tracking
@@ -1400,7 +1396,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	* result (int)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#StopPlaytimeTrackingResult_t){ .md-button .md-button--store target="_blank" }
 
 ### ugc_query_completed
@@ -1416,7 +1412,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* total_matching (uint32)
 	* cached (bool)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#SteamUGCQueryCompleted_t){ .md-button .md-button--store target="_blank" }
 
 ### user_favorite_items_list_changed
@@ -1430,7 +1426,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* file_id (uint64_t)
 	* was_add_request (bool)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#UserFavoriteItemsListChanged_t){ .md-button .md-button--store target="_blank" }
 
 ### user_subscribed_items_list_changed
@@ -1442,7 +1438,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	* app_id (uint32)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#UserSubscribedItemsListChanged_t){ .md-button .md-button--store target="_blank" }
 
 ### workshop_eula_status
@@ -1460,19 +1456,17 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 		* accepted (bool)
 		* needs_action (bool)
 
-    ------
+    ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#WorkshopEULAStatus_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### ItemPreviewType
 
 Enumerator | Value
----------- | -----
+------- | -----
 ITEM_PREVIEW_TYPE_IMAGE | 0
 ITEM_PREVIEW_TYPE_YOUTUBE_VIDEO | 1
 ITEM_PREVIEW_TYPE_SKETCHFAB | 2
@@ -1483,7 +1477,7 @@ ITEM_PREVIEW_TYPE_RESERVED_MAX | 255
 ### ItemState
 
 Enumerator | Value
----------- | -----
+------- | -----
 ITEM_STATE_NONE | 0
 ITEM_STATE_SUBSCRIBED | 1
 ITEM_STATE_LEGACY_ITEM | 2
@@ -1495,7 +1489,7 @@ ITEM_STATE_DOWNLOAD_PENDING | 32
 ### ItemStatistic
 
 Enumerator | Value
----------- | -----
+------- | -----
 ITEM_STATISTIC_NUM_SUBSCRIPTIONS | 0
 ITEM_STATISTIC_NUM_FAVORITES | 1
 ITEM_STATISTIC_NUM_FOLLOWERS | 2
@@ -1513,7 +1507,7 @@ ITEM_STATISTIC_NUM_PLAYTIME_SESSIONS_DURING_TIME_PERIOD | 12
 ### ItemUpdateStatus
 
 Enumerator | Value
----------- | -----
+------- | -----
 ITEM_UPDATE_STATUS_INVALID | 0
 ITEM_UPDATE_STATUS_PREPARING_CONFIG | 1
 ITEM_UPDATE_STATUS_PREPARING_CONTENT | 2
@@ -1524,7 +1518,7 @@ ITEM_UPDATE_STATUS_COMMITTING_CHANGES | 5
 ### UGCMatchingUGCType
 
 Enumerator | Value
----------- | -----
+------- | -----
 UGC_MATCHINGUGCTYPE_ITEMS | 0
 UGC_MATCHING_UGC_TYPE_ITEMS_MTX | 1
 UGC_MATCHING_UGC_TYPE_ITEMS_READY_TO_USE | 2
@@ -1543,7 +1537,7 @@ UGC_MATCHING_UGC_TYPE_ALL | ~0
 ### UGCQuery
 
 Enumerator | Value
----------- | -----
+------- | -----
 UGC_QUERY_RANKED_BY_VOTE | 0
 UGC_QUERY_RANKED_BY_PUBLICATION_DATE | 1
 UGC_QUERY_ACCEPTED_FOR_GAME_RANKED_BY_ACCEPTANCE_DATE | 2
@@ -1568,7 +1562,7 @@ UGC_QUERY_RANKED_BY_LAST_UPDATED_DATE | 19
 ### UserUGCList
 
 Enumerator | Value
----------- | -----
+------- | -----
 USER_UGC_LIST_PUBLISHED | 0
 USER_UGC_LIST_VOTED_ON | 1
 USER_UGC_LIST_VOTED_UP | 2
@@ -1581,7 +1575,7 @@ USER_UGC_LIST_FOLLOWED | 8
 ### UserUGCListSortOrder
 
 Enumerator | Value
----------- | -----
+------- | -----
 USERUGCLISTSORTORDER_CREATIONORDERDESC | 0
 USERUGCLISTSORTORDER_CREATIONORDERASC | 1
 USERUGCLISTSORTORDER_TITLEASC | 2
@@ -1593,7 +1587,7 @@ USERUGCLISTSORTORDER_FORMODERATION | 6
 ### UGCContentDescriptorID
 
 Enumerator | Value
----------- | -----
+------- | -----
 UGCCONTENTDESCRIPTOR_NUDITY_OR_SEXUAL_CONTENT | 1
 UGCCONTENTDESCRIPTOR_FREQUENT_VIOLENCE_OR_GORE | 2
 UGCCONTENTDESCRIPTOR_ADULT_ONLY_SEXUAL_CONTENT | 3

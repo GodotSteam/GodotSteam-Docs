@@ -1,77 +1,88 @@
 # Tutorials - Leaderboards
 
-This tutorial will cover setting up leaderboards for your games. [You can check out the example project on GitHub to see a somewhat working version.](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="\_blank" }
+This tutorial will cover setting up leaderboards for your games. I will add more to this tutorial at a later date with other functions but this should cover all the basics for working with leaderboards.
 
----
+??? guide "Relevant GodotSteam classes and functions"
+	* [User Stats class](../classes/user_stats.md)
+		* [findLeaderboard()](../classes/user_stats.md#findLeaderboard)
+		* [uploadLeaderboardScore()](../classes/user_stats.md#uploadLeaderboardScore)
+		* [setLeaderboardDetailsMax()](../classes/user_stats.md#setLeaderboardDetailsMax)
+		* [downloadLeaderboardEntries()](../classes/user_stats.md#downloadLeaderboardEntries)
+		* [downloadLeaderboardEntriesForUsers()](../classes/user_stats.md#downloadLeaderboardEntriesForUsers)
 
+{==
 ## Set Up
+==}
 
 First, let's get our signals set up.
 
 === "Godot 2.x, 3.x"
-	````gdscript
+
+	```gdscript
 	Steam.connect("leaderboard_find_result", self, "_on_leaderboard_find_result")
 	Steam.connect("leaderboard_score_uploaded", self, "_on_leaderboard_score_uploaded")
 	Steam.connect("leaderboard_scores_downloaded", self, "_on_leaderboard_scores_downloaded")
-	````
+	```
+
 === "Godot 4.x"
-	````
+
+	```
 	Steam.leaderboard_find_result.connect(_on_leaderboard_find_result)
 	Steam.leaderboard_score_uploaded.connect(_on_leaderboard_score_uploaded)
 	Steam.leaderboard_scores_downloaded.connect(_on_leaderboard_scores_downloaded)
-	````
+	```
 
 We'll go over each signal and related function in order. First, you'll need to pass your leaderboard's Steamworks back-end name to the `findLeaderboard()` function like so:
 
-````gdscript
+```gdscript
 Steam.findLeaderboard( your_leaderboard_name )
-````
+```
 
 Once Steam finds your leaderboard it will pass back the handle to the `leaderboard_find_result` callback. The `_on_leaderboard_find_result()` function that it is connected to it should look something like this:
 
-````gdscript
+```gdscript
 func _on_leaderboard_find_result(handle: int, found: int) -> void:
 	if found == 1:
 		leaderboard_handle = handle
 		print("Leaderboard handle found: %s" % leaderboard_handle)
 	else:
 		print("No handle was found")
-````
+```
 
 Once you have this handle you can use all the additional functions. **Please note** you do not need to save the leaderboard handle since it is stored internally. However, you will only be able to work with one leaderboard at a time unless you store them locally in a variable. I would keep a dictionary of handles locally like:
 
-````gdscript
+```gdscript
 var leaderboard_handles: Dictionary = {
 	"top_score": handle1,
 	"most_kills": handle2,
 	"most_games": handlde3
 	}
-````
+```
 
 This way you can call whatever handle you need when updating leaderboards quickly. Otherwise you have to query each leaderboard again with `findLeaderboard()` then wait for the callback then upload the new score. If you aren't updating leaderboards frequently or that many of them, then using the internally stored handle will probably work fine.
 
----
-
+{==
 ## Uploading Scores
+==}
 
 Before we can download scores, we need to upload them. The function itself is pretty simple:
 
-````gdscript
+```gdscript
 Steam.uploadLeaderboardScore( score, keep_best, details, handle )
-````
+```
 
 The first argument is, obviously, the score. The second is if you want the score to update regardless of whether it is better than the current score for the user. The third are details which must be integers; they essentially can be anything but [here is what Valve says about it.](https://partner.steamgames.com/doc/api/ISteamUserStats#UploadLeaderboardScore){ target="\_blank" }  The fourth is the leaderboard handle we are updating. You do not have to pass the handle though, if you want to use the internally stored one.
 
 Once you pass a score to Steam, you should receive a callback from `leaderboard_score_uploaded`. This will trigger our `_on_leaderboard_score_uploaded()` function:
 
-````gdscript
+```gdscript
 func _on_leaderboard_score_uploaded(success: int, this_handle: int, this_score: Dictionary) -> void:
 	if success == 1:
 		print("Successfully uploaded scores!")
 		# Add additional logic to use other variables passed back
 	else:
 		print("Failed to upload scores!")
-````		
+```		
 
 For the most part you are just looking for a success of 1 to tell that it worked. However, you may with to use the additional variables passed back by the signal for logic in your game. They are contained in the dictionary called `this_score` which contains these keys:
 
@@ -80,26 +91,26 @@ For the most part you are just looking for a success of 1 to tell that it worked
 - **new_rank:** the new global rank of this player
 - **prev_rank:** the previous rank of this player
 	
----
-
+{==
 ## Downloading Scores
+==}
 
 Naturally you'll want to display leaderboard scores to the player. But before we pull any leaderboard entries, we need to set the maximum amount of details each one contains by setting the `setLeaderboardDetailsMax()` function up:
 
-````gdscript
+```gdscript
 var details_max: int = Steam.setLeaderboardDetailsMax( value )
 print("Max details: %s" % details_max)
-````
+```
 
 By default the value is set to 0 but you will want to change it to match the number of details you upload with scores from the previous section. If you do not save any details with the scores you can safely ignore this part and move on to just requesting leaderboard entries.
 
 In most cases you'll want to use `downloadLeaderboardEntries()`, but you can also use `downloadLeaderboardEntriesForUsers()` by passing an array of users' Steam IDs to it. Both will respond with the same callback, but `downloadLeaderboardEntriesForUsers()` does not allow as much control over what you can request:
 
-````gdscript
+```gdscript
 Steam.downloadLeaderboardEntries( 1, 10, Steam.LEADERBOARD_DATA_REQUEST_GLOBAL, leaderboard_handle )
 
 Steam.downloadLeaderboardEntriesForUsers( user_array, leaderboard_handle )
-````
+```
 
 Just like uploading, downloading scores does not require a leaderboard handle to be included if you are using the internally stored one. You will noticed, as I mentioned above, that `downloadLeaderboardEntriesForUsers()` only takes an array of users' Steam IDs as it's other argument whereas `downloadLeaderboardEntries()` has quite a few others; which we will cover right now.
 
@@ -114,7 +125,7 @@ LEADERBOARD_DATA_REQUEST_USERS				| 3			| Used internally by Steam, **do not use
 
 After you request leaderboard entries, you should receive a `leaderboard_scores_downloaded` callback which will trigger our `_on_leaderboard_scores_downloaded()` function. That function should look similar to this:
 
-````gdscript
+```gdscript
 func _on_leaderboard_scores_downloaded(message: string, this_leaderboard_handle: int, result: Array) -> void:
 	print("Scores downloaded message: %s" % message)
 
@@ -124,7 +135,7 @@ func _on_leaderboard_scores_downloaded(message: string, this_leaderboard_handle:
 	# Add logic to display results
 	for this_result in result:
 		# Use each entry that is returned
-````
+```
 
 The message is just a basic message to inform you to the status the download; whether successful or not and why. The second piece sent back are the results as an array. Each entry in the array is actually a dictionary like so:
 
@@ -134,14 +145,24 @@ The message is just a basic message to inform you to the status the download; wh
 - **ugc_handle:** handle for any UGC that is attached to this entry
 - **details:** any details you stored with this entry for later use
 
----
-
+{==
 ## Possible Oddities
+==}
 
 A user in our Discord noted that sometimes `downloadLeaderboardEntriesForUsers()` would trigger a callback but have zero entries. Oddly, they reported that creating a second leaderboard then deleting the first one would fix this.  While I don't understand why this would be the case, in the event you come across this, perhaps try this solution!
 
----
+{==
+## Additional Resources
+==}
 
-I will add more to this tutorial at a later date with other functions but this should cover all the basics for working with leaderboards.
+### Video Tutorials
+
+Prefer video tutorials? Feast your eyes and ears!
+
+!!! video "['How To Build Leaderboards Out' by FinePointCGI](https://www.youtube.com/watch?v=VCwNxfYZ8Cw&t=3394s){ target="\_blank" }"
+
+!!! video "['Godot 4 Steam Leaderboards' by Gwizz](https://www.youtube.com/watch?v=51qre_hodZI){ target="\_blank" }"
+
+### Example Project
 
 [To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="\_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.

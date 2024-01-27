@@ -1,20 +1,14 @@
 # HTML Surface
 
-Interface for rendering and interacting with HTML pages.
+Interface for rendering and interacting with HTML pages. You can use this interface to render and display HTML pages directly inside your game or application. You must call [htmlInit](#htmlinit) prior to using this interface, and [htmlShutdown](#htmlshutdown) when you're done using it. See [Steam HTML Surface](https://partner.steamgames.com/doc/features/html_surface){ target="\_blank" } for more information.
 
-You can use this interface to render and display HTML pages directly inside your game or application. You must call [htmlInit](#htmlinit) prior to using this interface, and [htmlShutdown](#htmlshutdown) when you're done using it.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
-
-See [Steam HTML Surface](https://partner.steamgames.com/doc/features/html_surface){ target="\_blank" } for more information.
-
----
-
-## Functions
+{==
+## :material-function-variant: Functions
+==}
 
 The **this_handle** argument is optional. If you do not pass one, GodotSteam will use the internally stored handle instead.
-
----
 
 ### addHeader
 
@@ -378,13 +372,11 @@ The **this_handle** argument is optional. If you do not pass one, GodotSteam wil
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#ViewSource){ .md-button .md-button--store target="_blank" }
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### html_browser_ready
 
@@ -713,11 +705,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 		---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_VerticalScroll_t){ .md-button .md-button--store target="_blank" }
 
----
-
-## Enums
-
----
+{==
+## :material-numeric: Enums
+==}
 
 ### HTMLKeyModifiers
 

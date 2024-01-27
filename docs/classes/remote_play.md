@@ -1,16 +1,12 @@
 # Remote Play
 
-Functions that provide information about Steam Remote Play sessions, streaming your game content to another computer or to a Steam Link app or hardware.
+Functions that provide information about Steam Remote Play sessions, streaming your game content to another computer or to a Steam Link app or hardware. See [Steam Remote Play](https://partner.steamgames.com/doc/features/remoteplay){ target="\_blank" } for more information.
 
-These are only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }.
-  
-See [Steam Remote Play](https://partner.steamgames.com/doc/features/remoteplay){ target="\_blank" } for more information.
+!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
 
----
-
-## Functions
-
----
+{==
+## :material-function-variant: Functions
+==}
 
 ### getSessionClientFormFactor
 
@@ -95,13 +91,11 @@ See [Steam Remote Play](https://partner.steamgames.com/doc/features/remoteplay)
 
 	**Returns:** bool
 
----
-
-## Signals
+{==
+## :material-signal: Signals
+==}
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
----
 
 ### remote_play_session_connected
 

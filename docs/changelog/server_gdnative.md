@@ -1,16 +1,16 @@
 # Server GDNative Change-Log
 
-### A history of all changes to the **server gdnative** branch.
+A history of all changes to the ***server gdnative*** branch.
 
 ---
 
-**Version 3.0.1 Changes**
+## Version 3.0.1
 
 - Changed: updated included Steam server script
 - Changed: how initialization functions work, passing empty string now uses default IP (expected behavior)
-- Fixed: incorrect verbal message from `serverInitEx`
+- Fixed: incorrect verbal message from `serverInitEx()`
 
-**Version 3.0 Changes**
+## Version 3.0
 
 - Added: missing server functions from steam_gameserver.h
 - Added: missing enums for server modes

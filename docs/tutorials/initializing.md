@@ -4,9 +4,7 @@ In this tutorial, we will cover the basic initialization of Steamworks in your g
 
 Please note, this tutorial is only valid for the module and GDExtension versions of GodotSteam; the GDNative version will already have these functions present in the `steam.gd` autoload script.
 
-<div class="start-grid" markdown>
-
-!!! guide "Relevant GodotSteam classes and functions"
+??? guide "Relevant GodotSteam classes and functions"
 	* [Main class](../classes/main.md)
 		* [steamInit()](../classes/main.md#steaminit)
 		* [steamInitEx()](../classes/main.md#steaminitex)
@@ -20,11 +18,10 @@ Please note, this tutorial is only valid for the module and GDExtension versions
 		* [loggedOn()](../classes/user.md#loggedon)
 	* [Utils class](../classes/utils.md)
 		* [isSteamRunningOnSteamDeck()](../classes/utils.md#issteamrunningonsteamdeck)
-</div>
 
----
-
+{==
 ## Preparation
+==}
 
 Before we go any further, it is recommended that you enable logging in your project if you have not done so. This will help both you, and us, debug any issues you might run into down the road.
 
@@ -40,9 +37,9 @@ Of course, if you have a custom logging system, don't worry about this.
 
 	![Enable Logging](../assets/images/tutorial-initializing-logging-godot4.png){ loading=lazy }
 
----
-
+{==
 ## Steam App ID
+==}
 
 When the game is run through the Steam client, it already knows which game you are playing. However, during development and testing, you must supply a valid app ID somehow. Typically, if you do not already have an app ID, you can use app ID 480 which is Valve's SpaceWar example game.
 
@@ -81,9 +78,9 @@ func _init() -> void:
 
 Thanks to user **B0TLANNER** for providing this method.
 
----
-
+{==
 ## Initialize Steam
+==}
 
 In my personal projects, I usually create an auto-load GDscript called `global.gd` which is added as a singleton.
 
@@ -109,9 +106,10 @@ By default, `steamInitEx()` will query Steamworks for the local user's current s
     - 1 - Some other failure
 	- 2 - We cannot connect to Steam, steam probably isn't running
 	- 3 - Steam client appears to be out of date
----
 
+{==
 ## Checking For Errors
+==}
 
 The returned dictionary from `steamInitEx()` can be printed and ignored. However, there are certain conditions where you might not know why the game crashed at boot or does something unexpected; especially in development. For these cases we will check if Steamworks was actually initialized and to stop the game if anything is amiss, we do this:
 
@@ -131,9 +129,9 @@ Most times, in development, getting a failure will probably be caused by a missi
 
 In any case, the intialization functions should give you a pretty good idea of why it failed. If you still cannot figure it out, please contact us for assistance!
 
----
-
+{==
 ## Getting More Data
+==}
 
 There are a ton of functions you can call just after initialization to gather more data about your user; everything from location, to language used, to avatars, etc. We will just cover some basic things that are commonly used:
 
@@ -158,9 +156,9 @@ if is_owned == false:
 
 There are other things you may want to do during a boot-up process after Steamworks is initialized, like getting current achievements or statistics, but we'll cover that in another tutorial.
 
----
-
+{==
 ## Callbacks
+==}
 
 A very important piece of Steamworks is getting callbacks from Steam itself in response to different function. To receive callbacks you will need to have the `run_callbacks()` function running somewhere; preferably every frame or so.  There are two methods available:
 
@@ -188,13 +186,14 @@ However, you must pass the first two arguments which are whether you want the lo
 !!! warning "Notes"
 	The argument **does not** exist in the GDExtension version currently. This only works in GodotSteam 3.22 or newer for Godot 3.x and in GodotSteam 4.5 or newer for Godot 4.x.
 
----
-
+{==
 ## Altogether Now
+==}
 
 Putting it together should give us something like this:
 
 === "Without internal app ID and callbacks"
+
 	```gdscript
 	extends Node
 
@@ -241,7 +240,9 @@ Putting it together should give us something like this:
 			print("User does not own this game")
 			get_tree().quit()
 	```
+
 === "With internal app ID and callbacks"
+
 	```gdscript
 	extends Node
 
@@ -278,8 +279,23 @@ Putting it together should give us something like this:
 			print("User does not own this game")
 			get_tree().quit()
 	```
----
 
 This covers the initialization and basic set-up.
+
+{==
+## Additional Resources
+==}
+
+### Video Tutorials
+
+Prefer video tutorials? Feast your eyes and ears!
+
+[ :simple-youtube: 'Godot + Steam tutorial' by BluePhoenixGames](https://www.youtube.com/watch?v=J0GrG-AffCI&t=571s){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-youtube: 'Integrating Steamworks' by FinePointCGI](https://www.youtube.com/watch?v=VCwNxfYZ8Cw){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-youtube: 'Godot 4 Steam Integration' by Gwizz](https://www.youtube.com/watch?v=l0b5mh2HjyE){ .md-button .md-button--resource target="\_blank" }
+
+### Example Project
 
 [To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="\_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.
