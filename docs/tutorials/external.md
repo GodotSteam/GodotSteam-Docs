@@ -32,6 +32,15 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-steam: Valve's Official Steamworks SDK Site](https://partner.steamgames.com/doc/sdk){ .md-button .md-button--resource target="\_blank" }
 
+[ :simple-godotengine: 'Godot Auto Export' by Mr.Eliptik](https://mreliptik.dev/godot-auto-export){ .md-button .md-button--resource target="\_blank" }
+
+
+{==
+## Steam-related Godot Tools
+==}
+
+[ :simple-steam: 'Steam Upload GUI' by RPicster ](https://github.com/rpicster/steam-upload-gui){ .md-button .md-button--resource target="\_blank" }
+
 {==
 ## Other Steam APIs For Godot
 ==}
