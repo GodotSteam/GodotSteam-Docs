@@ -98,6 +98,7 @@ theme:
     - gdscript
   palette:
     scheme: slate
+    primary: custom
 plugins:
   - search
 markdown_extensions:

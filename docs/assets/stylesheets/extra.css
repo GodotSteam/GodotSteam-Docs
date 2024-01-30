@@ -108,7 +108,7 @@ label span.twemoji {
   padding: .295em .295em;
 }
 .md-typeset pre>code {
-	scrollbar-color:var(--md-default-fg-color--lighter) transparent;
+	scrollbar-color:#478CBF #3A526A !important;
 }
 .md-typeset pre>code:hover {
 	scrollbar-color:var(--md-accent-fg-color) transparent;
@@ -544,13 +544,13 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	-ms-scroll-snap-type:y mandatory;
 }
 .md-nav--primary .md-nav__item--active>.md-nav__link:-webkit-any(:focus, :hover) {
-	color:var(--md-accent-fg-color)
+	color: #478CBF !important;
 }
 .md-nav--primary .md-nav__item--active>.md-nav__link:-moz-any(:focus, :hover) {
-	color:var(--md-accent-fg-color)
+	color: #478CBF !important;
 }
 .md-nav--primary .md-nav__item--active>.md-nav__link:is(:focus, :hover) {
-	color:var(--md-accent-fg-color)
+	color: #478CBF !important;
 }
 .md-nav__toggle:-webkit-any(:checked, :indeterminate)~.md-nav {
 	display:block
@@ -793,7 +793,7 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	backface-visibility:hidden;
 	margin:0 .2rem;
 	overflow-y:auto;
-	scrollbar-color:var(--md-default-fg-color--lighter) transparent;
+	scrollbar-color: #478CBF #3A526A !important;
 	scrollbar-width:thin
 }
 .md-sidebar__scrollwrap:hover {
@@ -1005,6 +1005,9 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 }
 .md-typeset .tabbed-labels {
   box-shadow:0 -.1rem #478CBF inset !important;
+}
+.md-typeset .tabbed-labels a {
+  text-decoration: none !important;
 }
 .md-footer-meta {
 	background-color: #305f82 !important;
