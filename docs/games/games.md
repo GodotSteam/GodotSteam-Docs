@@ -468,6 +468,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://www.galaxy-drift.com/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Gamebox -->
+<figure class="game" markdown>
+[![Gamebox](https://steamcdn-a.akamaihd.net/steam/apps/2744620/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2744620/Gamebox/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2744620/Gamebox/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Games For Stream -->
 <figure class="game" markdown>
 [![Games For Stream](https://steamcdn-a.akamaihd.net/steam/apps/2538580/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2538580/Games_for_Stream/){ target="\_blank" }
@@ -1476,6 +1483,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![TETRAGUN](https://steamcdn-a.akamaihd.net/steam/apps/1656310/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1656310/TETRAGUN/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1656310/TETRAGUN/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- This Side Up -->
+<figure class="game" markdown>
+[![This Side Up](https://steamcdn-a.akamaihd.net/steam/apps/2617930/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2617930/This_Side_Up/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2617930/This_Side_Up/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Touhou: Gensokyo Survivors -->
