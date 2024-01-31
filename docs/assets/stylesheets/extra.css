@@ -519,13 +519,13 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	color: #478cbf;
 }
 .md-nav__link:-webkit-any(:focus, :hover) {
-	color:#478cbf
+	color:#478cbf !important;
 }
 .md-nav__link:-moz-any(:focus, :hover) {
-	color:#478cbf
+	color:#478cbf !important;
 }
 .md-nav__link:is(:focus, :hover) {
-	color:#478cbf
+	color:#478cbf !important;
 }
 .md-nav--primary :-webkit-any(.md-nav__title,
 .md-nav__item) {
