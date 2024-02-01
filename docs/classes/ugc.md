@@ -339,6 +339,8 @@ Functions to create, consume, and interact with the [Steam Workshop](https://pa
 	* processed (uint64)
 	* total (uint64)
 
+	You may notice that data comes back in ***processed*** and ***total*** in status 2; unsure if this is a bug or intended.
+
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#GetItemUpdateProgress){ .md-button .md-button--store target="_blank" }
 
@@ -1330,7 +1332,9 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	**Returns:**
 
 	* result (int)
-	* accept_tos (bool)
+	* need_to_accept_tos (bool)
+
+	If **need_to_accept_tos** comes back true, you should direct the user to accept the legal agreement.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#SubmitItemUpdateResult_t){ .md-button .md-button--store target="_blank" }

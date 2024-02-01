@@ -1,6 +1,6 @@
 # Multiplayer Peer Change-Log
 
-A history of all changes to the ***multiplayer-peer*** branch.
+A history of all changes to [the ***multiplayer-peer*** branch.](https://github.com/CoaguCo-Industries/GodotSteam/tree/multiplayer-peer){ target="\_blank" }
 
 ---
 

@@ -1,6 +1,6 @@
 # Godot 4.x GDExtension Change-Log
 
-A history of all changes to the ***gdextension*** branch.
+A history of all changes to [the ***gdextension*** branch.](https://github.com/CoaguCo-Industries/GodotSteam/tree/gdextension){ target="\_blank" }
 
 ---
 

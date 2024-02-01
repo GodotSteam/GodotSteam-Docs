@@ -628,7 +628,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	**Returns:** int
 
-	The current leaderboard details max value.
+	The current leaderboard details max value.  This can only go as high as k_cLeaderboardDetailsMax / 256.
 
 	**Note:** This is a GodotSteam specific function.
 

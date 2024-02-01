@@ -90,7 +90,29 @@ For the most part you are just looking for a success of 1 to tell that it worked
 - **score_changed:** if the score was changed (0 if false, 1 if true)
 - **new_rank:** the new global rank of this player
 - **prev_rank:** the previous rank of this player
-	
+
+### Passing Extra Details
+
+If you want to pass extra details, here are some neat hints from ***sepTN***:
+
+> You can add small data as detail, for example embedding the character name (as a string) into that leaderboard entry. If you try to put detail that has a bigger size than possible, it will simply ignore it.  To retrieve it, you need to process it again because Steam will spit out arrays (PackedInt32Array).
+
+Here is some code that was shared:
+
+=== "Godot 2.x / 3.x"
+
+	```
+	# Godot 2 and 3 have no equivalent for to_int32_array I am aware of. Any corrections welcome!
+	#
+	Steam.uploadLeaderboardScore(score, keep_best, var2bytes(details), handle)
+	```
+
+=== "Godot 4.x"
+
+	```
+	Steam.uploadLeaderboardScore(score, keep_best, var_to_bytes(details).to_int32_array(), handle)
+	```
+
 {==
 ## Downloading Scores
 ==}

@@ -96,9 +96,11 @@ label span.twemoji {
 	word-break: break-word;
 	text-decoration: underline;
 }
-.md-typeset a:hover {
+.md-typeset a:hover,
+.md-typeset a:focus,
+.md-typeset a:active {
 	color: #478cbf;
- 	text-decoration: underline;
+ 	text-decoration: none;
 }
 .md-typeset pre {
 	color: #fff;
@@ -519,13 +521,13 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	color: #478cbf;
 }
 .md-nav__link:-webkit-any(:focus, :hover) {
-	color:#478cbf
+	color:#478cbf !important;
 }
 .md-nav__link:-moz-any(:focus, :hover) {
-	color:#478cbf
+	color:#478cbf !important;
 }
 .md-nav__link:is(:focus, :hover) {
-	color:#478cbf
+	color:#478cbf !important;
 }
 .md-nav--primary :-webkit-any(.md-nav__title,
 .md-nav__item) {
@@ -992,6 +994,9 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	transition:background-color .25s,color .25s;
 	white-space:nowrap;
 	min-width:10em;
+}
+.md-typeset .tabbed-labels--linked > label > a {
+	padding: 0 !important;
 }
 .md-typeset .tabbed-labels::before {
 	background: #478CBF !important;

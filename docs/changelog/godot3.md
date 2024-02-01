@@ -1,6 +1,6 @@
 # Godot 3.x Change-Log
 
-A history of all to the ***godot3*** branch.
+A history of all to [the ***godot3*** branch.](https://github.com/CoaguCo-Industries/GodotSteam/tree/godot3){ target="\_blank" }
 
 ---
 

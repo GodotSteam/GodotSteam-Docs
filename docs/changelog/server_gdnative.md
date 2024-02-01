@@ -1,6 +1,6 @@
 # Server GDNative Change-Log
 
-A history of all changes to the ***server gdnative*** branch.
+A history of all changes to [the ***server gdnative*** branch.](https://github.com/CoaguCo-Industries/GodotSteam-Server/tree/gdnative){ target="\_blank" }
 
 ---
 
