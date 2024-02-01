@@ -1,6 +1,6 @@
 # Godot 4.x Change-Log
 
-A history of all changes to the ***godot4*** branch.
+A history of all changes to [the ***godot4*** branch.](https://github.com/CoaguCo-Industries/GodotSteam/tree/godot4){ target="\_blank" }
 
 ---
 

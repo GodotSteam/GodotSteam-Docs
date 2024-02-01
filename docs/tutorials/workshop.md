@@ -255,3 +255,11 @@ func _on_item_updated(p_result : int, p_accept_tos : bool) -> void:
     if p_accept_tos:
         Steam_Workshop.open_tos()
 ```
+
+{==
+## Weird Issues
+==}
+
+***KarpPaul*** had some information about getting "access is denied" from `getQueryUGCResult`:
+
+> Regarding the issue that I had with steamworks (Steam.getQueryUGCResult returns "access is denied" when the workshop is set visible to developers and customers). I talked to steam support and they were not able to reproduce the error. I checked the ipc log and indeed everything looks normal - no access denied results in steam logs. However, the error is still in the game. No idea why this happens and how, maybe I am doing smth wrong. I wonder if anybody else will encounter this.... anyway, it is not critical, so I just make my workshop visible to everyone and decide to ignore the issue for now.

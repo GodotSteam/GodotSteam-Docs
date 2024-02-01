@@ -34,6 +34,15 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-godotengine: 'Godot Auto Export' by Mr.Eliptik](https://mreliptik.dev/godot-auto-export){ .md-button .md-button--resource target="\_blank" }
 
+{==
+## Debugging Resources
+==}
+
+[ :simple-steam: 'Debugging the Steamworks API' by Valve ](https://partner.steamgames.com/doc/sdk/api/debugging){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-steam: 'How to debug Windows games on Steam Deck' by Valve ](https://partner.steamgames.com/doc/steamdeck/debugging){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-godotengine: 'Overview of debugging tools' by Godot ](https://docs.godotengine.org/en/stable/tutorials/scripting/debug/overview_of_debugging_tools.html){ .md-button .md-button--resource target="\_blank" }
 
 {==
 ## Steam-related Godot Tools
