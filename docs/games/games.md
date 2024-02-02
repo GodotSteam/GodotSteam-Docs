@@ -784,6 +784,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://www.lingothegame.com){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Lefties' Righteous Arcade Empourium -->
+<figure class="game" markdown>
+[![Lefties' Righteous Arcade Empourium](https://steamcdn-a.akamaihd.net/steam/apps/2733260/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2733260/Lefties_Righteous_Arcade_Emporium//){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2733260/Lefties_Righteous_Arcade_Emporium/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-facebook: ](https://www.facebook.com/profile.php?id=61555892340942){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/LeftiesArcade){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCX1yhdSLf4fVoZbpVlSTJSw){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Looking Up I See Only A Ceiling -->
 <figure class="game" markdown>
 [![Looking Up I See Only A Ceiling](https://steamcdn-a.akamaihd.net/steam/apps/1742930/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1742930/Looking_Up_I_See_Only_A_Ceiling/){ target="\_blank" }
