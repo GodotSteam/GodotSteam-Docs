@@ -767,6 +767,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://sonderland.games/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Lefties' Righteous Arcade Empourium -->
+<figure class="game" markdown>
+[![Lefties' Righteous Arcade Empourium](https://steamcdn-a.akamaihd.net/steam/apps/2733260/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2733260/Lefties_Righteous_Arcade_Emporium//){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2733260/Lefties_Righteous_Arcade_Emporium/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-facebook: ](https://www.facebook.com/profile.php?id=61555892340942){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/LeftiesArcade){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCX1yhdSLf4fVoZbpVlSTJSw){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Lila's Sky Ark -->
 <figure class="game" markdown>
 [![Lila's Sky Ark](https://steamcdn-a.akamaihd.net/steam/apps/1573390/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1573390/Lilas_Sky_Ark/){ target="\_blank" }
@@ -782,16 +792,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1814170/Lingo/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.lingothegame.com){ target="\_blank" .md-button .md-button--store }
-</figure>
-
-<!-- Lefties' Righteous Arcade Empourium -->
-<figure class="game" markdown>
-[![Lefties' Righteous Arcade Empourium](https://steamcdn-a.akamaihd.net/steam/apps/2733260/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2733260/Lefties_Righteous_Arcade_Emporium//){ target="\_blank" }
-
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2733260/Lefties_Righteous_Arcade_Emporium/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-facebook: ](https://www.facebook.com/profile.php?id=61555892340942){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/LeftiesArcade){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCX1yhdSLf4fVoZbpVlSTJSw){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Looking Up I See Only A Ceiling -->
@@ -1260,6 +1260,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/pyliot){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/F3YGmmWDPH){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UC0yUy-QQ1x1XX8JggF-x-Ng/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Siege 'n Sow -->
+<figure class="game" markdown>
+[![Siege 'n Sow](https://steamcdn-a.akamaihd.net/steam/apps/2773700/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2773700/Siege_n_Sow/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2773700/Siege_n_Sow/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Silk Roads: Caravan Kings -->
