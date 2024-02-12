@@ -4,6 +4,16 @@ A history of all to [the ***godot3*** branch.](https://github.com/CoaguCo-Indust
 
 ---
 
+## Version 3.22.4
+
+- Added: missing k_nSteamNetworkingSend_AutoRestartBrokenSession to constants
+- Added: two missing Input constants: INPUT_HANDLE_ALL_CONTROLLERS and INPUT_MAX_ACTIVE_LAYERS
+- Changed: `getInputTypeForHandle()` now returns int / enum instead of string for device models
+- Changed: updated in-editor docs for missing content
+- Changed: order of constants to be alphabetic
+- Changed: changed returned variable name to `need_to_accept_tos` in `item_updated` callback
+- Changed: Github Actions scripts, one for Vulkan and another for version numbers
+
 ## Version 3.22.3
 
 - Changed: moved constants to separate file like in Godot 4.x branches

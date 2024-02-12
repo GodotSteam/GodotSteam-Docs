@@ -4,6 +4,17 @@ A history of all changes to [the ***gdextension*** branch.](https://github.com/C
 
 ---
 
+## Version 4.5.4
+
+- Added: missing k_nSteamNetworkingSend_AutoRestartBrokenSession to constants
+- Added: two missing Input constants: INPUT_HANDLE_ALL_CONTROLLERS and INPUT_MAX_ACTIVE_LAYERS
+- Changed: `getInputTypeForHandle()` now returns int / enum instead of string for device models
+- Changed: `createBrowser` now like module version
+- Changed: `html_browser_ready` now call result instead of callback
+- Changed: order of constants to be alphabetic
+- Changed: changed returned variable name to `need_to_accept_tos` in `item_updated` callback
+- Changed: Github Actions scripts, one for Vulkan and another for version numbers
+
 ## Version 4.5.3
 
 - Fixed: `requestClanOfficerList()` using wrong internal function, ***thanks to sepTN***
