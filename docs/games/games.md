@@ -13,7 +13,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![100 Steps](https://steamcdn-a.akamaihd.net/steam/apps/2374420/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2374420/100_Steps/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2374420/100_Steps/){ target="\_blank" .md-button .md-button--store }
-[ :blue_square: ](https://bsky.app/profile/endorth){ target="\_blank" .md-button .md-button--store }
+[ :material-butterfly: ](https://bsky.app/profile/endorth){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/Endorth4){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://endorth.itch.io/){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -313,6 +313,18 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-discord: ](https://discord.gg/xsq2Fy2qRT){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Crop and Claw -->
+<figure class="game" markdown>
+[![Crop and Claw](https://steamcdn-a.akamaihd.net/steam/apps/2760970/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2760970/Crop_and_Claw/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2760970/Crop_and_Claw/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/dino_leaf){ target="\_blank" .md-button .md-button--store }
+[ :material-butterfly: ](https://bsky.app/profile/dinoleaf.bsky.social){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://dinoleaf.itch.io/crop-and-claw){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://cropandclaw.com/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://dinoleaf.com/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 </div>
 
 ---
@@ -326,6 +338,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Dave Dave Dave](https://steamcdn-a.akamaihd.net/steam/apps/1625760/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1625760/Dave_Dave_Dave/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1625760/Dave_Dave_Dave/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Deal of the Dead: Final Cut -->
+<figure class="game" markdown>
+[![Deal of the Dead: Final Cut](https://steamcdn-a.akamaihd.net/steam/apps/2754660/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2754660/Deal_of_the_Dead_Final_Cut/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2754660/Deal_of_the_Dead_Final_Cut/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/SnarkleStudios){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@snarklestudios){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Dipod: The Foot Legacy -->
@@ -1543,6 +1564,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2372500/Trolley_Delayma/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://albertnez.itch.io/trolley-delayma){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/albertnez){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- TRUFFLE -->
+<figure class="game" markdown>
+[![TRUFFLE](https://steamcdn-a.akamaihd.net/steam/apps/2684930/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2684930/TRUFFLE/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2684930/TRUFFLE/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/ethanrobichaux_){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Turing Complete -->
