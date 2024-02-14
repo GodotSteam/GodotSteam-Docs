@@ -62,6 +62,31 @@ Also remember that leaderboards need to be published to be functional.
 ## Using the Module and Plug-in
 ==}
 
-On occasion folks will download the pre-compiled editor (module version) and then install the plug-in from the Godot Asset Library. This will result in a few weird errors, most of which will prevent anything from working. If you do this, you'll need to pick one or the other.
+On occasion folks will download the pre-compiled editor (module version) and then install the plug-in from the Godot Asset Library. This will result in a few weird errors as you will probably be making duplicate calls.
 
-If you stick with the pre-compiles, which is recommended, you'll need to completely remove the plug-in to get things working again.
+If you stick with the pre-compiles, which I recommended, you'll need to completely remove the plug-in from you project's folder and in the settings.
+
+{==
+## Steam on Flatpak
+==}
+
+The Flatpak version of Steam will not work with GodotSteam in testing (through the editor) as it will be unable to find the running process correctly.  This may or may not affect the Steam version of Godot and downloading the plug-in version through the Asset Library; I have not yet tested this setup.
+
+At the time of writing, we have not found a way to get these two talking.  However, your shipped game will work fine.  Also, if anyone knows how to solve this, please let us know!
+
+{==
+## GDNative Quirks
+==}
+GDNative is the odd-man-out in GodotSteam as it has some extra "got ya's" that need to be listed.
+
+### No Enums
+
+There is no way to bind the enums so they are not present.
+
+### Rich Presence
+
+Rich presence will work fine on all operating systems _except_ Windows.  It will occasionally make the value the key on random calls.
+
+### Getting Lobbies
+
+For whatever reason, the get lobby callback would not return a single array like everything else so the callback will send an array of lobbies and the total count.
