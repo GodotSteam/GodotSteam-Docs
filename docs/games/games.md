@@ -1610,6 +1610,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/inflogamescoop){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Under The Yoke -->
+<figure class="game" markdown>
+[![Under The Yoke](https://steamcdn-a.akamaihd.net/steam/apps/2592060/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2592060/Under_The_Yoke/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2592060/Under_The_Yoke/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Undergrown -->
 <figure class="game" markdown>
 [![Undergrown](https://steamcdn-a.akamaihd.net/steam/apps/2300950/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2300950/Undergrown/){ target="\_blank" }
