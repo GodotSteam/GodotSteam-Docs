@@ -74,6 +74,8 @@ The Flatpak version of Steam will not work with GodotSteam in testing (through t
 
 At the time of writing, we have not found a way to get these two talking.  However, your shipped game will work fine.  Also, if anyone knows how to solve this, please let us know!
 
+If you are using something like Fedora Atomic, you can install Distrobox to work around this.
+
 {==
 ## GDNative Quirks
 ==}
