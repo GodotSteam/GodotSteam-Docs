@@ -52,6 +52,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-steam: 'Godot Steam Devkit Notifier' by tuc0w](https://github.com/tuc0w/godot-steam-devkit-notifier){ .md-button .md-button--resource target="\_blank" }
 
+[ :simple-steam: 'Godot4 - Deploy To SteamOS' by taw.moe](https://github.com/LauraWebdev/Godot4-DeployToSteamOS){ .md-button .md-button--resource target="\_blank" }
+
 {==
 ## Other Steam APIs For Godot
 ==}
