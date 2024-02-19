@@ -900,6 +900,17 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/blokgames_){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- Miss Peacock -->
+<figure class="game" markdown>
+[![Miss Peacock](https://steamcdn-a.akamaihd.net/steam/apps/2616200/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2616200/Miss_Peacock/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2616200/Miss_Peacock/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/OtterClub_/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://otterclub.io/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-facebook: ](https://www.facebook.com/otter.club.game){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@Otter-Club/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- MMA Simulator -->
 <figure class="game" markdown>
 [![MMA Simulator](https://steamcdn-a.akamaihd.net/steam/apps/913820/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/913820/MMA_Simulator/){ target="\_blank" }
