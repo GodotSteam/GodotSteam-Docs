@@ -62,6 +62,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-godotengine: 'EIRTeam.Steamworks' by EIRTeam](https://github.com/EIRTeam/EIRTeam.Steamworks){ .md-button .md-button--resource target="\_blank" }
 
+[ :simple-godotengine: 'Godot Steam Audio' by stechyo](https://github.com/stechyo/godot-steam-audio){ .md-button .md-button--resource target="\_blank" }
+
 {==
 ## Know Of More?
 ==}
