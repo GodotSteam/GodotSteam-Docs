@@ -6,17 +6,15 @@ Every so often we get someone who asks how to use GodotSteam with C# so I figure
 ## Where's The Mono Build?
 ==}
 
-To the point, GodotSteam does not have a C# version currently. I tried once or twice to compile a version with Mono and it failed; I have yet to attempt this again.
-
-That doesn't mean it isn't on the to-do list but there is no timeline for when this will happen. However, anyone and everyone is welcome to make that work and submit a pull request for it!
+To the point, GodotSteam does not have a C# version currently. I am in the process of adding said builds to our Github Actions list so we can start producing them with every update!
 
 {==
 ## Workarounds
 ==}
 
-Another user from the Discord, **jolexxa**, mentions this advice:
+Thankfully, for those of you using the GDExtension version of the project, there is a lovely project that will help!  Thanks to LauraWebdev, we have this cool plug-in: [GodtoSteam C# Bindings]](https://github.com/LauraWebdev/GodotSteam_CSharpBindings){ target="\_blank" }
 
-"My current recommendation is to use GodotSteam as a GDExtension and write 'glue' code in GDScript that can be called from C# to interface with Steam. Definitely a little overhead to doing that but it shouldn't be much worse that interfacing with the engine normally from C#."
+While I am still trying to get up to speed on all this C# business, you can read more about how it works on Github.  There are even some excellent pieces of example code!
 
 {==
 ## Other Resources
