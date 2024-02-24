@@ -4,6 +4,11 @@ A history of all changes to [the ***multiplayer-peer*** branch.](https://github.
 
 ---
 
+## Version 4.6
+
+- Changed: all-new Github Actions files with Mono attempt
+- Removed: demo has been removed and added to the GodotSteam Example repo instead
+
 ## Version 4.5.1
 
 - Added: doc_classes folder for writing

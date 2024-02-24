@@ -4,6 +4,13 @@ A history of all changes to [the ***gdnative*** branch.](https://github.com/Coag
 
 ---
 
+## Version 3.23
+
+- Added: two new Friends class constants
+- Added: new function `dismissGamepadTextInput()`
+- Added: new general constant ACCOUNT_ID_INVALID
+- Removed: App Lists class functions, callbacks, etc. due to SDK 1.59 changes
+
 ## Version 3.22.4
 
 - Added: missing k_nSteamNetworkingSend_AutoRestartBrokenSession to constants

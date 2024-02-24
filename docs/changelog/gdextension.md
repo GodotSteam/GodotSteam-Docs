@@ -4,6 +4,24 @@ A history of all changes to [the ***gdextension*** branch.](https://github.com/C
 
 ---
 
+## Version 4.6 Changes
+
+- Added: new Remote Storage enum to WorkshopFileType
+- Added: two new UGC enums to ItemState and ItemPreviewType
+- Added: two new Friends class constants
+- Added: new function `dismissGamepadTextInput()`
+- Added: new Remote Play enum, form factor for VR headset
+- Added: two new result enums; not supported and family size limit exceeded
+- Added: three new enums to NetworkingConfigValue
+- Added: new general constant ACCOUNT_ID_INVALID
+- Changed: FEATURE_KIOSK_MODE enum now deprecated
+- Changed: minor housekeeping by rearranging some functions
+- Changed: k_ESteamNetworkingConfig_SDRClient_DebugTicketAddress was replaced by k_ESteamNetworkingConfig_SDRClient_DevTicket, value is the same but reference changed
+- Changed: updated in-editor docs
+- Fixed: spelling error in `getProfileItemPropertyInt()` bind
+- Removed: App Lists class functions, callbacks, etc. due to SDK 1.59 changes
+- Removed: Remote Play enums mistakenly added as constants
+
 ## Version 4.5.4
 
 - Added: missing k_nSteamNetworkingSend_AutoRestartBrokenSession to constants

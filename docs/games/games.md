@@ -740,6 +740,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/kinitopet){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+<!-- KIPIDON -->
+<figure class="game" markdown>
+[![KIRO II - The Wizards Guild](https://steamcdn-a.akamaihd.net/steam/apps/2578160/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2578160/KIPIDON/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2578160/KIPIDON/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://jcportals.neocities.org/portals/games/kipidon/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@rizi-jc-clascy/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/xvKBu8d){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- KIRO II - The Wizards Guild -->
 <figure class="game" markdown>
 [![KIRO II - The Wizards Guild](https://steamcdn-a.akamaihd.net/steam/apps/2219370/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2219370/KIRO_II_The_Wizards_Guild){ target="\_blank" }
@@ -1424,6 +1434,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2145320/Super_Mando/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://paponga.com/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Super RPS -->
+<figure class="game" markdown>
+[![Super RPS](https://steamcdn-a.akamaihd.net/steam/apps/2634770/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2634770/Super_RPS/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2634770/Super_RPS/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@blueexabyte/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.com/invite/pshZtWJxVV){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Swing Lord -->
