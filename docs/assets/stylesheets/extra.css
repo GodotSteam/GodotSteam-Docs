@@ -279,9 +279,16 @@ div#games {
 	flex-wrap: wrap;
 }
 .md-typeset figure.game {
-	flex-basis: 45%;
+	flex-basis: 100%;
 	background-color: #282828;
 	padding:0 .85em;
+}
+div#games h2 {
+	overflow: hidden;
+	width: 0%;
+}
+.md-typeset figure.game img {
+	width: 90%
 }
 .md-typeset table:not([class]) {
 	background-color: #282828;
@@ -1222,6 +1229,9 @@ div.start-grid div.admonition a {
 }
 .md-typeset .md-button--store {
   padding: .2em .5em !important;
+}
+.md-typeset figure.game .md-button--store {
+	font-size: 1.3em;
 }
 a span.twemoji {
 	margin-right: 10px;

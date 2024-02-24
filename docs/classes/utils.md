@@ -6,6 +6,20 @@
 ## :material-function-variant: Functions
 ==}
 
+### dismissFloatingGamepadTextInput
+
+!!! function "dismissFloatingGamepadTextInput( )"
+	Dismisses the floating keyboard.
+
+	**Returns:** bool
+
+### dismissGamepadTextInput
+
+!!! function "dismissGamepadTextInput( )"
+	Dismisses the full-screen text input dialog.
+
+	**Returns:** bool
+
 ### filterText
 
 !!! function "filterText( ```int``` context, ```uint64_t``` steam_id, ```string``` message )"

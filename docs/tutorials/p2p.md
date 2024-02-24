@@ -6,7 +6,7 @@ Please note this tutorial uses the **older Steamworks Networking class** and thi
 
 I'd also like to suggest you [check out the Additional Resources section of this tutorial](#additional-resources) before continuing on.
 
-!!! guide "Relevant GodotSteam classes and functions"
+??? guide "Relevant GodotSteam classes and functions"
 	* [Networking class](../classes/networking.md)
 		* [acceptP2PSessionWithUser()](../classes/networking.md#acceptp2psessionwithuser)
 		* [getAvailableP2PPacketSize()](../classes/networking.md#getavailablep2ppacketsize)

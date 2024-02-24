@@ -6,7 +6,7 @@
 
 GodotSteam is an open-source and fully functional Steamworks SDK / API module and plug-in for the [Godot Engine](https://godotengine.org){ target="\_blank" }. It comes for all versions of Godot from 2.x to 4.x as well as GDNative and GDExtension plug-ins.
 
-On this site, you can find tutorials, lists of functions and signals, and even [games currently using GodotSteam](games/games.md).
+On this site, you can find tutorials, lists of functions and signals, and even games currently using GodotSteam.
 
 {==
 ## Download It
@@ -260,7 +260,7 @@ Have fun!
 ## Have A Game Using GodotSteam?
 ==}
 
-Finally got your Steam store page up? Whether you are about to release your game, already did, or are just tinkering away at it, you can send me the details and I will post it in [the Games Using GodotSteam section](games/games.md).
+Finally got your Steam store page up? Whether you are about to release your game, already did, or are just tinkering away at it, you can send me the details and I will post it in the Games Using GodotSteam section.
 
 You can use the button below to submit your game to the list or submit a pull-request to our Docs repository. Please remember to include your game's Steam store page URL. Additionally you can include up to four additional links like your Mastodon or Twitter account, Discord invite link, development website, devlog, or anything relevant to your game or studio.
 

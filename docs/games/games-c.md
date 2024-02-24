@@ -1,0 +1,144 @@
+# Games Using GodotSteam | Starts With C
+
+Here is a showcase of games using the GodotSteam module. Have a game on Steam using GodotSteam? Let me know by sending the game URL to [games@godotsteam.com](mailto:games@godotsteam.com){ target="\_blank" }!  Feel free to include up to four additional links like dev-log, Mastodon, Twitter, website, Itch.io page, etc.
+
+---
+
+<div id="games" markdown>
+
+<!-- Captain Collision -->
+## Captain Collision
+<figure class="game" markdown>
+[![Captain Collision](https://steamcdn-a.akamaihd.net/steam/apps/1693380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1693380/Captain_Collision/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1693380/Captain_Collision/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Capital Island -->
+## Capital Island
+<figure class="game" markdown>
+[![Capital Island](https://steamcdn-a.akamaihd.net/steam/apps/1757570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1757570/Capital_Island/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1757570/Capital_Island/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/WillDreamsGames){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/willdreamsgames/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCXeHZLFETcYHjZdJe-b8gUA){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Card Fuse -->
+## Card Fuse
+<figure class="game" markdown>
+[![Card Fuse](https://steamcdn-a.akamaihd.net/steam/apps/2698680/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2698680/Card_Fuse/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2698680/Card_Fuse/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Cat Box Paradox -->
+## Cat Box Paradox
+<figure class="game" markdown>
+[![Cat Box Paradox](https://steamcdn-a.akamaihd.net/steam/apps/1771200/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1771200/Cat_Box_Paradox/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1771200/Cat_Box_Paradox/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/CatBoxParadox){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.biscuitlocker.com/game_cat_box_paradox/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Cat Cafe Manager -->
+## Cat Cafe Manager
+<figure class="game" markdown>
+[![Cat Cafe Manager](https://steamcdn-a.akamaihd.net/steam/apps/1354830/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1354830/Cat_Cafe_Manager/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1354830/Cat_Cafe_Manager/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/roostgames){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/uNhAYFV6KH){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://catcafemanager.com){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Chicken Fight -->
+## Chicken Fight
+<figure class="game" markdown>
+[![Chicken Fight](https://steamcdn-a.akamaihd.net/steam/apps/2159470/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2159470/Chicken_Fight/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2159470/Chicken_Fight/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/LightBulbEngine){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/CXWc7ar6Xp){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@lightbulbengine/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Chillquarium -->
+## Chillquarium
+<figure class="game" markdown>
+[![Chillquarium](https://steamcdn-a.akamaihd.net/steam/apps/2276930/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2276930/Chillquarium/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2276930/Chillquarium/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.com/invite/wzFChuVRjx){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Clive vs Hives 2 -->
+## Clive vs Hives 2
+<figure class="game" markdown>
+[![Clive vs Hives 2](https://steamcdn-a.akamaihd.net/steam/apps/1883230/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1883230/Clive_vs_Hives_2/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1883230/Clive_vs_Hives_2/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Collection Quest -->
+## Collection Quest
+<figure class="game" markdown>
+[![Collection Quest](https://steamcdn-a.akamaihd.net/steam/apps/1278090/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1278090/Collection_Quest/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1278090/Collection_Quest/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCOc_IzuiLnY4LLDc_VHOj3A){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Comic Company Manager -->
+## Comic Company Manager
+<figure class="game" markdown>
+[![Comic Company Manager](https://steamcdn-a.akamaihd.net/steam/apps/1612950/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1612950/Comic_Company_Manager/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1612950/Comic_Company_Manager/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Commuter -->
+## Commuter
+<figure class="game" markdown>
+[![Commuter](https://steamcdn-a.akamaihd.net/steam/apps/1802500/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1802500/Commuter/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1802500/Commuter/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Constelleum -->
+## Constelleum
+<figure class="game" markdown>
+[![Constelleum](https://steamcdn-a.akamaihd.net/steam/apps/1796970/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1796970/Constelleum/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1796970/Constelleum/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://constelleum.com/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Corvian Curse -->
+## Corvian Curse
+<figure class="game" markdown>
+[![Corvian Curse](https://steamcdn-a.akamaihd.net/steam/apps/2626080/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2626080/Corvian_Curse/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2626080/Corvian_Curse/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://made-by-gare.itch.io/corvian-curse){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/madebygare){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@madebygare){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/xsq2Fy2qRT){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+<!-- Crop and Claw -->
+## Crop and Claw
+<figure class="game" markdown>
+[![Crop and Claw](https://steamcdn-a.akamaihd.net/steam/apps/2760970/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2760970/Crop_and_Claw/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2760970/Crop_and_Claw/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/dino_leaf){ target="\_blank" .md-button .md-button--store }
+[ :material-butterfly: ](https://bsky.app/profile/dinoleaf.bsky.social){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://dinoleaf.itch.io/crop-and-claw){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://cropandclaw.com/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://dinoleaf.com/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+</div>
