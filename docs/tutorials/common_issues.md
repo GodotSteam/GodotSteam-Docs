@@ -36,7 +36,9 @@ Some users have also found that getting or setting achievements doesn't work at 
 ## Steam Overlay and Forward+ / Vulkan
 ==}
 
-Every so often folks will find that Steam overlay does not work when running their project from the Godot 4.x editor. This has been the case since the Godot 4 alpha builds. Steam overlay _should_ work fine when using Compability / OpenGL mode; also the Steam overlay will work when the game is exported and run from the Steam client itself, as Steam injects the overlay during boot.
+Every so often folks will find that Steam overlay does not work or flickers when running their project from the Godot 4.x editor or a standalone Forward+ build outside of Steam. This has been the case since the Godot 4 alpha builds. Steam overlay _should_ work fine when using Compability / OpenGL mode.
+
+The Steam overlay will render correctly once a Forward+ build is run from the Steam client itself, as Steam injects the overlay during boot. When run from Steam as a Non-Steam app, the overlay will display correctly, but won't be tied to the app ID, so achievements and game artwork won't show up inside the overlay.
 
 ### Driver Updates
 
