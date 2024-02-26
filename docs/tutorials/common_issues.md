@@ -66,7 +66,17 @@ Also remember that leaderboards need to be published to be functional.
 
 On occasion folks will download the pre-compiled editor (module version) and then install the plug-in from the Godot Asset Library. This will result in a few weird errors as you will probably be making duplicate calls.
 
-If you stick with the pre-compiles, which I recommended, you'll need to completely remove the plug-in from you project's folder and in the settings.
+### Using Plug-In First
+
+If you installed the plug-in and want to switch to the pre-compiled module, or your own compiled version; you'll need to completely remove the plug-in from you project's folder and in the settings.
+
+If using Godot 4 and the GodotSteam GDExtension, check in the .godot folder for any traces of the extension in your extension_list.cfg and remove it.
+
+### Using Module First
+
+If you are coming from the pre-compiled modules versions and want to switch to the plug-ins, make sure you remove the Steam shared library file (steam_api64.dll, libsteam_api.so, or libsteam_api.dylib) from either the root of your project or sitting next to your editor executable.
+
+In some cases, this will prevent the plug-in from loading correctly.
 
 {==
 ## Steam on Flatpak

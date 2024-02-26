@@ -113,6 +113,8 @@ Here is some code that was shared:
 	Steam.uploadLeaderboardScore(score, keep_best, var_to_bytes(details).to_int32_array(), handle)
 	```
 
+When you download these scores and need to get our score details back to something readable, make sure you reverse this with `bytes_to_var()` or `bytes2var()` on Godot 4 and Godot 3 respectively.
+
 {==
 ## Downloading Scores
 ==}

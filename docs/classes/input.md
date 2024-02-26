@@ -73,7 +73,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	**Returns:** uint64_t
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetActiveActionSetLayers){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetActionSetHandle){ .md-button .md-button--store target="_blank" }
  
 ### getActionOriginFromXboxOrigin
 
