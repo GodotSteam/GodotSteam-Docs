@@ -348,7 +348,7 @@ To accomplish this, we add a single line of code to our `read_p2p_packet` functi
 			var packet_code: PackedByteArray = this_packet['data']
 			
 			# Decompress the array before turning it into a useable dictionary
-			var readable_data: Dictionary = bytes_to_var(packet_code.decompress_dynamic(-1, File.COMPRESSION_GZIP))
+			var readable_data: Dictionary = bytes_to_var(packet_code.decompress_dynamic(-1, FileAccess.COMPRESSION_GZIP))
 
 			# Print the packet to output
 			print("Packet: %s" % readable_data)
