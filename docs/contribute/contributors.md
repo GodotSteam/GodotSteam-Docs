@@ -88,6 +88,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Martin Eigel
 	- Michael Macha
 	- Mike King
+	- Mikk Maasik
 	- MudbuG
 	- Nicholas Orlowski
 	- Simone Mändl
