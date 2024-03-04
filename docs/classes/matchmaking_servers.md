@@ -2,7 +2,7 @@
 
 Functions which provide access to the game server browser. See [Game Servers](https://partner.steamgames.com/doc/features/multiplayer/game_servers){ target="\_blank" } for more information.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

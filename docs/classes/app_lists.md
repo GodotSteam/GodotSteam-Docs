@@ -2,7 +2,7 @@
 
 This is a restricted interface that can only be used by previously approved apps. It is not listed in the official Steamworks SDK documentation, either. Contact your Steam Account Manager if you believe you need access to this API.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 !!! warning "This class has been removed as of Steamworks SDK 1.59 and no longer exists in GodotSteam as of versions 3.23 / 4.6"
 

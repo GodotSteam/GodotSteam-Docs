@@ -2,7 +2,7 @@
 
 Miscellaneous networking utilities for checking the local networking environment and estimating pings. These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

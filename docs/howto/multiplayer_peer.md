@@ -44,12 +44,12 @@ Alternatively, you can download and unpack the [Godot source from their Github](
 Head into the ***godot/modules/*** folder and clone the source like so:
 
 ```shell
-git clone -b godot4 https://github.com/CoaguCo-Industries/GodotSteam.git godotsteam
+git clone -b godot4 https://github.com/GodotSteam/GodotSteam.git godotsteam
 ```
 
 #### Downloading the Source
 
-Alternatively, you can [download the godot4 branch from our repository](https://github.com/CoaguCo-Industries/GodotSteam/tree/godot4){ target="\_blank" } then unpack it into a folder named ***godotsteam*** inside your Godot source ***godot/modules/*** folder.
+Alternatively, you can [download the godot4 branch from our repository](https://github.com/GodotSteam/GodotSteam/tree/godot4){ target="\_blank" } then unpack it into a folder named ***godotsteam*** inside your Godot source ***godot/modules/*** folder.
 
 {==
 ### :simple-godotengine: Get GodotSteam Multiplayer Peer
@@ -58,9 +58,9 @@ Alternatively, you can [download the godot4 branch from our repository](https://
 Head into the ***godot/modules*** folder and clone the source like so:
 
 ```shell
-git clone -b multiplayer-peer https://github.com/CoaguCo-Industries/GodotSteam.git godotsteam_multiplayer
+git clone -b multiplayer-peer https://github.com/GodotSteam/GodotSteam.git godotsteam_multiplayer
 ```
-Alternatively, you can [download the multiplayer-peer branch from our repository](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } then unpack it into a folder called ***godotsteam_multiplayer*** inside your Godot source ***godot/modules/*** folder.
+Alternatively, you can [download the multiplayer-peer branch from our repository](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } then unpack it into a folder called ***godotsteam_multiplayer*** inside your Godot source ***godot/modules/*** folder.
 
 {==
 ### :simple-steam: Get the Steamworks SDK

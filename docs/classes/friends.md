@@ -2,7 +2,7 @@
 
 Access information about individual users and interact with the [Steam Overlay](https://partner.steamgames.com/doc/features/overlay){ target="\_blank" }.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

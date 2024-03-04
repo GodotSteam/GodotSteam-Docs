@@ -2,7 +2,7 @@
 
 Interface for rendering and interacting with HTML pages. You can use this interface to render and display HTML pages directly inside your game or application. You must call [htmlInit](#htmlinit) prior to using this interface, and [htmlShutdown](#htmlshutdown) when you're done using it. See [Steam HTML Surface](https://partner.steamgames.com/doc/features/html_surface){ target="\_blank" } for more information.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

@@ -2,7 +2,7 @@
 
 Functions to control music playback in the Steam client. This gives games the opportunity to do things like pause the music or lower the volume when an important cut scene is shown, and then start playing again afterwards. These functions only work with soundtracks you purchased or own on Steam.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

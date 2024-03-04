@@ -74,4 +74,4 @@ C-Sharp Tools
 ## Know Of More?
 ==}
 
-If you make tutorials or guides related to GodotSteam, or just know of some we missed, please feel free to send them in by [e-mail to tutorials@godotsteam.com](mailto:tutorials@godotsteam.com) or just [submit a pull-request to our documentation repo](https://github.com/CoaguCo-Industries/GodotSteam-Docs/pulls){ target="\_blank" }!
+If you make tutorials or guides related to GodotSteam, or just know of some we missed, please feel free to send them in by [e-mail to tutorials@godotsteam.com](mailto:tutorials@godotsteam.com) or just [submit a pull-request to our documentation repo](https://github.com/GodotSteam/GodotSteam-Docs/pulls){ target="\_blank" }!

@@ -2,7 +2,7 @@
 
 Functions to allow game servers to set stats and achievements on players.
 
-!!! info "Only available in the [GodotSteam Server branches](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" }"
+!!! info "Only available in the [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

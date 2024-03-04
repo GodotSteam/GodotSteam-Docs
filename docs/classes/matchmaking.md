@@ -2,7 +2,7 @@
 
 Functions for clients to access matchmaking services, favorite servers, and to operate on game lobbies. See [Steam Matchmaking & Lobbies](https://partner.steamgames.com/doc/features/multiplayer/matchmaking){ target="\_blank" } for more information.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

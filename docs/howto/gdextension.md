@@ -27,7 +27,7 @@ This is a little different from the modules as we get GodotSteam's source first 
 You can clone the source into a folder called ***godotsteam_gdextension*** like so:
 
 ```shell
-git clone -b gdextension https://github.com/CoaguCo-Industries/GodotSteam.git godotsteam_gdextension
+git clone -b gdextension https://github.com/GodotSteam/GodotSteam.git godotsteam_gdextension
 ```
 
 Cloning the repo should also pull the sub-module for Godot CPP, so you can [skip to Get the Steamworks SDK.](#get-the-steamworks-sdk)
@@ -36,7 +36,7 @@ However, you may want to change the version of Godot CPP, depending on your targ
 
 #### Downloading the Source
 
-Alternatively, you can [download the GDExtension source from our repository](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } then unpack it into a folder named ***godotsteam_extension***.  You will need to pull the Godot CPP source yourself if you use this method.
+Alternatively, you can [download the GDExtension source from our repository](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } then unpack it into a folder named ***godotsteam_extension***.  You will need to pull the Godot CPP source yourself if you use this method.
 
 {==
 ### :simple-godotengine: Get Godot CPP

@@ -2,7 +2,7 @@
 
 Provides functions to interface with the Steam video and broadcasting platforms. See [Steam Video](https://partner.steamgames.com/doc/features/streaming_video){ target="\_blank" } for more information.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

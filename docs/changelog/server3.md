@@ -1,6 +1,6 @@
 # Server 3.x Change-Log
 
-A history of all changes to [the ***server3*** branch.](https://github.com/CoaguCo-Industries/GodotSteam-Server/tree/godot3){ target="\_blank" }
+A history of all changes to [the ***server3*** branch.](https://github.com/GodotSteam/GodotSteam-Server/tree/godot3){ target="\_blank" }
 
 ---
 

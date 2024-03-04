@@ -2,7 +2,7 @@
 
 Functions for accessing and manipulating Steam user information. This is also where the APIs for [Steam Voice](https://partner.steamgames.com/doc/features/voice){ target="\_blank" } are exposed.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

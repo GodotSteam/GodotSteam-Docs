@@ -1,6 +1,6 @@
 # Godot 2.x Change-Log
 
-A history of all to [the ***godot2*** branch.](https://github.com/CoaguCo-Industries/GodotSteam/tree/godot2){ target="\_blank" }
+A history of all to [the ***godot2*** branch.](https://github.com/GodotSteam/GodotSteam/tree/godot2){ target="\_blank" }
 
 ---
 

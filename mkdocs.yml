@@ -3,7 +3,7 @@ site_url: https://godotsteam.com
 site_description: An open-source and fully functional Steamworks SDK / API module and plug-in for the Godot Game Engine.
 site_author: GP Garcia
 copyright: Copyright &copy; 2015-Current | GP Garcia | CoaguCo Industries | Contributors
-repo_url: https://github.com/CoaguCo-Industries/GodotSteam
+repo_url: https://github.com/GodotSteam/GodotSteam
 repo_name: GodotSteam
 nav:
   - Introduction: 'index.md'
@@ -14,10 +14,10 @@ nav:
     - How-To Multiplayer Peer: 'howto/multiplayer_peer.md'
     - How-To Server: 'howto/server.md'
   - Repositories:
-    - GodotSteam: 'https://github.com/CoaguCo-Industries/GodotSteam'
-    - GodotSteam Server: 'https://github.com/CoaguCo-Industries/GodotSteam-Server'
-    - Example Project: 'https://github.com/CoaguCo-Industries/GodotSteam-Example-Project'
-    - Documentation: 'https://github.com/CoaguCo-Industries/GodotSteam-Docs'
+    - GodotSteam: 'https://github.com/GodotSteam/GodotSteam'
+    - GodotSteam Server: 'https://github.com/GodotSteam/GodotSteam-Server'
+    - Example Project: 'https://github.com/GodotSteam/GodotSteam-Example-Project'
+    - Documentation: 'https://github.com/GodotSteam/GodotSteam-Docs'
   - Classes:
     - Main: 'classes/main.md'
     - Main Server: 'classes/main_server.md'
@@ -100,7 +100,7 @@ nav:
     - X Games (4): 'games/games-x.md'
     - Y Games (1): 'games/games-y.md'
     - Z Games (0): 'games/games-z.md'
-  - To-Do: 'https://github.com/orgs/CoaguCo-Industries/projects/2'
+  - To-Do: 'https://github.com/orgs/GodotSteam/projects/2'
   - Change-Logs:
     - Godot 4.x: 'changelog/godot4.md'
     - Godot 3.x: 'changelog/godot3.md'
@@ -149,7 +149,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/CoaguCo-Industries/GodotSteam
+      link: https://github.com/GodotSteam/GodotSteam
     - icon: fontawesome/brands/mastodon
       link: https://mastodon.gamedev.place/@coaguco
     - icon: fontawesome/brands/twitter

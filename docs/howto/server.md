@@ -53,18 +53,18 @@ Head into the ***godot/modules/*** folder and clone the source like so:
 === "Godot 3.x"
 
     ```shell
-    git clone -b godot3 https://github.com/CoaguCo-Industries/GodotSteam-Server.git godotsteam_server
+    git clone -b godot3 https://github.com/GodotSteam/GodotSteam-Server.git godotsteam_server
     ```
 
 === "Godot 4.x"
 
     ```shell
-    git clone -b godot4 https://github.com/CoaguCo-Industries/GodotSteam-Server.git godotsteam_server
+    git clone -b godot4 https://github.com/GodotSteam/GodotSteam-Server.git godotsteam_server
     ```
 
 #### Downloading the Source
 
-Alternatively, you can [download the branch you need from our repository](https://github.com/CoaguCo-Industries/GodotSteam-Server){ target="\_blank" } then unpack it into a folder named ***godotsteam_server*** inside your Godot source ***godot/modules/*** folder.
+Alternatively, you can [download the branch you need from our repository](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" } then unpack it into a folder named ***godotsteam_server*** inside your Godot source ***godot/modules/*** folder.
 
 {==
 ### :simple-steam: Get the Steamworks SDK

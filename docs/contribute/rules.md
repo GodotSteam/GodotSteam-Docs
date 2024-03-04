@@ -2,10 +2,10 @@
 
 <div class="link-grid" markdown>
 
-[:octicons-code-square-16: Main Project](https://github.com/CoaguCo-Industries/GodotSteam/){ .md-button .md-button--primary }
-[:material-server: Server](https://github.com/CoaguCo-Industries/GodotSteam-Server/){ .md-button .md-button--primary }
-[:fontawesome-solid-book: Documentation](https://github.com/CoaguCo-Industries/GodotSteam-Docs/){ .md-button .md-button--primary }
-[:material-file-document: Examples](https://github.com/CoaguCo-Industries/GodotSteam-Examples/){ .md-button .md-button--primary }
+[:octicons-code-square-16: Main Project](https://github.com/GodotSteam/GodotSteam/){ .md-button .md-button--primary }
+[:material-server: Server](https://github.com/GodotSteam/GodotSteam-Server/){ .md-button .md-button--primary }
+[:fontawesome-solid-book: Documentation](https://github.com/GodotSteam/GodotSteam-Docs/){ .md-button .md-button--primary }
+[:material-file-document: Examples](https://github.com/GodotSteam/GodotSteam-Examples/){ .md-button .md-button--primary }
 
 </div>
 

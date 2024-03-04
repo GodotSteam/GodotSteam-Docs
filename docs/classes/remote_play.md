@@ -2,7 +2,7 @@
 
 Functions that provide information about Steam Remote Play sessions, streaming your game content to another computer or to a Steam Link app or hardware. See [Steam Remote Play](https://partner.steamgames.com/doc/features/remoteplay){ target="\_blank" } for more information.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

@@ -2,7 +2,7 @@
 
 Allows direct interaction with the Steam Music player. These functions only work with soundtracks you purchased or own on Steam.
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" }"
+!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

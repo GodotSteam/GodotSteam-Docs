@@ -59,24 +59,24 @@ Head into the ***godot/modules/*** folder and clone the source like so:
 === "Godot 2.x"
 
     ```shell
-    git clone -b godot2 https://github.com/CoaguCo-Industries/GodotSteam.git godotsteam
+    git clone -b godot2 https://github.com/GodotSteam/GodotSteam.git godotsteam
     ```
 
 === "Godot 3.x"
 
     ```shell
-    git clone -b godot3 https://github.com/CoaguCo-Industries/GodotSteam.git godotsteam
+    git clone -b godot3 https://github.com/GodotSteam/GodotSteam.git godotsteam
     ```
 
 === "Godot 4.x"
 
     ```shell
-    git clone -b godot4 https://github.com/CoaguCo-Industries/GodotSteam.git godotsteam
+    git clone -b godot4 https://github.com/GodotSteam/GodotSteam.git godotsteam
     ```
 
 #### Downloading the Source
 
-Alternatively, you can [download the branch you need from our repository](https://github.com/CoaguCo-Industries/GodotSteam){ target="\_blank" } then unpack it into a folder named ***godotsteam*** inside your Godot source ***godot/modules/*** folder.
+Alternatively, you can [download the branch you need from our repository](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } then unpack it into a folder named ***godotsteam*** inside your Godot source ***godot/modules/*** folder.
 
 {==
 ### :simple-steam: Get the Steamworks SDK

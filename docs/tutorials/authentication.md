@@ -162,4 +162,4 @@ That concludes this simple tutorial for authenticated sessions.
 
 ### Example Project
 
-To see this tutorial in action, [check out our GodotSteam Example Project on GitHub](https://github.com/CoaguCo-Industries/GodotSteam-Example-Project){ target="\_blank" }. There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+To see this tutorial in action, [check out our GodotSteam Example Project on GitHub](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" }. There you can get a full view of the code used which can serve as a starting point for you to branch out from.

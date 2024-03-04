@@ -2,8 +2,8 @@
 
 Here is a list of all the great contributors, both those who have provided code for GodotSteam through pull requests or those who have donated to the project. A big thanks to all of you!
 
-<a href="https://github.com/CoaguCo-Industries/GodotSteam/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=CoaguCo-Industries/GodotSteam" />
+<a href="https://github.com/GodotSteam/GodotSteam/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=GodotSteam/GodotSteam" />
 </a>
 
 <div class="contrib-grid" markdown>
@@ -107,4 +107,4 @@ Here is a list of all the great contributors, both those who have provided code 
 
 <hr/>
 
-The best way you can help out with this module is by making some pull requests with fixes or additions. [There is a healthy list of additions and fixes needed in the To-Do section currently.](https://github.com/orgs/CoaguCo-Industries/projects/2) You can also provide tutorials for different aspects of the module.
+The best way you can help out with this module is by making some pull requests with fixes or additions. [There is a healthy list of additions and fixes needed in the To-Do section currently.](https://github.com/orgs/GodotSteam/projects/2) You can also provide tutorials for different aspects of the module.

@@ -1,6 +1,6 @@
 # Server GDExtension Change-Log
 
-A history of all changes to [the ***server gdextension*** branch.](https://github.com/CoaguCo-Industries/GodotSteam-Server/tree/gdextension){ target="\_blank" }
+A history of all changes to [the ***server gdextension*** branch.](https://github.com/GodotSteam/GodotSteam-Server/tree/gdextension){ target="\_blank" }
 
 ---
 

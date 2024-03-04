@@ -1,6 +1,6 @@
 # Server 4.x Change-Log
 
-A history of all changes to [the ***server4*** branch.](https://github.com/CoaguCo-Industries/GodotSteam-Server/tree/godot4){ target="\_blank" }
+A history of all changes to [the ***server4*** branch.](https://github.com/GodotSteam/GodotSteam-Server/tree/godot4){ target="\_blank" }
 
 ---
 
