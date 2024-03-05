@@ -28,7 +28,7 @@ They contain the pre-compiled editors, templates, and necessary Steam shared lib
 
 === ":fontawesome-solid-people-group: Multiplayer Peer Builds"
 
-	[ :fontawesome-brands-github: Godot 4.2.1 - Steamworks 1.58 - GodotSteam 4.5.1 MP](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.5.1-mp){ .md-button .md-button--resource target="\_blank" }
+	[ :fontawesome-brands-github: Godot 4.2.1 - Steamworks 1.59 - GodotSteam 4.6 MP](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.6-mp){ .md-button .md-button--resource target="\_blank" }
 
 	[ :fontawesome-brands-github: For All Versions](https://github.com/GodotSteam/GodotSteam/releases){ .md-button .md-button--resource target="\_blank" }	
 
