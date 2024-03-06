@@ -2,6 +2,8 @@
 
 Networking API intended to make it easy to port non-connection-oriented code to take advantage of P2P connectivity and [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay){ target="\_blank" }. These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).
 
+You must call [addIdentity](networking_types.md#addidentity) or [addIpAddress](networking_types.md#addipaddress) prior to making any calls that use identity_reference.
+
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"
 
 {==
