@@ -4,6 +4,8 @@ Miscellaneous types and functions used by networking APIs. These are part of the
 
 These Networking Type functions are all unique to GodotSteam since we cannot work with C++ structs directly in GDscript. These will create networking identities to use with [Networking Messages](networking_messages.md), [Networking Sockets](networking_sockets.md), and [Networking Utils](networking_utils.md) classes. Much like how it works in a C++ implementation, the struct must be created (with either [addIdentity](#addidentity) or [addIPAddress](#addipaddress)) then it must be populated with data (Steam ID, IP address, etc.).
 
+For more information on using Networking Types for [Networking Messages](networking_messages.md), look over the _on_network_messages_session_request function in the [Networking Tutorial](https://github.com/GodotSteam/GodotSteam-Example-Project/blob/godot3/example/src/networking.gd) to understand the flow of addIdentity, setIdentitySteamID64, & acceptSessionWithUser before you call your Networking Messages functions.
+
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"
 
 {==
