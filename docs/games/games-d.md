@@ -38,6 +38,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@evilturtle){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## District Panic
+<figure class="game" markdown>
+[![District Panic](https://steamcdn-a.akamaihd.net/steam/apps/2807390/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2807390/District_Panic/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2807390/District_Panic/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/DKhERbjn){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Dome Keeper
 <figure class="game" markdown>
 [![Dome Keeper](https://steamcdn-a.akamaihd.net/steam/apps/1637320/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1637320/Dome_Keeper/){ target="\_blank" }

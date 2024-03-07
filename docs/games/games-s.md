@@ -68,6 +68,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UC0yUy-QQ1x1XX8JggF-x-Ng/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## SkyDribble
+<figure class="game" markdown>
+[![SkyDribble](https://steamcdn-a.akamaihd.net/steam/apps/2462380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2462380/SkyDribble/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2462380/SkyDribble/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Siege 'n Sow
 <figure class="game" markdown>
 [![Siege 'n Sow](https://steamcdn-a.akamaihd.net/steam/apps/2773700/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2773700/Siege_n_Sow/){ target="\_blank" }
@@ -185,11 +192,30 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-discord: ](https://discord.com/invite/ZE3MtNXaYD){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Storm's Harvest
+<figure class="game" markdown>
+[![Storm's Harvest](https://steamcdn-a.akamaihd.net/steam/apps/2593140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2593140/Storms_Harvest/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2593140/Storms_Harvest/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/GoofyGourds){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://goofy-gourd-studios.itch.io/storms-harvest){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/goofygourdstudios/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/A2xuuTEaUA){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Subcube
 <figure class="game" markdown>
 [![Subcube](https://steamcdn-a.akamaihd.net/steam/apps/873830/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/873830/Subcube/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/873830/Subcube/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+## Super Cave Boy
+<figure class="game" markdown>
+[![Super Cave Boy](https://steamcdn-a.akamaihd.net/steam/apps/2102440/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2102440/Super_Cave_Boy/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2102440/Super_Cave_Boy/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://super-cave-boy.com/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Super Mando
@@ -239,24 +265,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/oliver_joyce){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/whiskeybarrelstudios/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.com/invite/swordsandsandals){ target="\_blank" .md-button .md-button--store }
-</figure>
-
-## SkyDribble
-<figure class="game" markdown>
-[![SkyDribble](https://steamcdn-a.akamaihd.net/steam/apps/2462380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2462380/SkyDribble/){ target="\_blank" }
-
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2462380/SkyDribble/){ target="\_blank" .md-button .md-button--store }
-</figure>
-
-## Storm's Harvest
-<figure class="game" markdown>
-[![Storm's Harvest](https://steamcdn-a.akamaihd.net/steam/apps/2593140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2593140/Storms_Harvest/){ target="\_blank" }
-
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2593140/Storms_Harvest/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/GoofyGourds){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-itch-io: ](https://goofy-gourd-studios.itch.io/storms-harvest){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-instagram: ](https://www.instagram.com/goofygourdstudios/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-discord: ](https://discord.gg/A2xuuTEaUA){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 </div>
