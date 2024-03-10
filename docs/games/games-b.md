@@ -6,6 +6,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
+## Backpack Battles
+<figure class="game" markdown>
+[![Backpack Battles](https://steamcdn-a.akamaihd.net/steam/apps/2427700/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2427700/Backpack_Battles/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2427700/Backpack_Battles/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/sbEkqeUKNr){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://playwithfurcifer.github.io/backpack-battles-presskit/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@playwithfurcifer/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Barkelona
 <figure class="game" markdown>
 [![Barkelona](https://steamcdn-a.akamaihd.net/steam/apps/2434300/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2434300/Barkelona/){ target="\_blank" }
