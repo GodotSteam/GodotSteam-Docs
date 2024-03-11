@@ -6,7 +6,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
-<!-- Ends -->
 ## Ends
 <figure class="game" markdown>
 [![Ends](https://steamcdn-a.akamaihd.net/steam/apps/2256260/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2256260/Ends/){ target="\_blank" }
@@ -14,7 +13,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2256260/Ends/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Exostation -->
+## Escape From Zeta Aurigae
+<figure class="game" markdown>
+[![Escape From Zeta Aurigae](https://steamcdn-a.akamaihd.net/steam/apps/2774410/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2774410/Escape_from_Zeta_Aurigae/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2774410/Escape_from_Zeta_Aurigae/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Exostation
 <figure class="game" markdown>
 [![Exostation](https://steamcdn-a.akamaihd.net/steam/apps/1813120/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1813120/Exostation/){ target="\_blank" }
