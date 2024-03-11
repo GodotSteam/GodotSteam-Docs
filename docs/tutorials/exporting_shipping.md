@@ -2,7 +2,7 @@
 
 This topic comes up a lot and _also_ trips folks up a lot; so this tutorial is here to help.
 
-Exporting and shipping your game with GodotSteam is pretty easy once you get the flow down. This tutorial assumes you are downloading pre-compiled versions of the GodotSteam templates instead of compiling them; however, it will obviously work the same with the ones you compile yourself.
+Exporting and shipping your game with GodotSteam is pretty easy once you get the flow down. This tutorial assumes you are downloading [pre-compiled versions of the GodotSteam templates](https://github.com/GodotSteam/GodotSteam/releases) instead of compiling them; however, it will obviously work the same with the ones you compile yourself.
 
 {==
 ## Exporting for Modules / Pre-Compiles
