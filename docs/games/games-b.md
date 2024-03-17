@@ -93,6 +93,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/mikeklubnika){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Bunny Hungry
+<figure class="game" markdown>
+[![Bunny Hungry](https://steamcdn-a.akamaihd.net/steam/apps/2667010/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/ggidk_games){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/ftRgpTkzeP){ target="\_blank" .md-button .md-button--store }
+
 ## Burrito Bear
 <figure class="game" markdown>
 [![Burrito Bear](https://steamcdn-a.akamaihd.net/steam/apps/1941420/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1941420/Burrito_Bear/){ target="\_blank" }
