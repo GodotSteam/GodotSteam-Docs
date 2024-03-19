@@ -2,9 +2,6 @@
 
 In case you want to Steam's Voice functionality in your game, we might as well cover that too! This example is based partialy on this [Github repo for networked voice chat in Godot](https://github.com/ikbencasdoei/godot-voip/){ target="\_blank" } and Valve's SpaceWar example. There are additional ideas, details, and such from users **Punny** and **ynot01**.
 
-!!! warning "Notes"
-	Currently the voice playback sounds pretty choppy. Personally, I have experienced this when using voice chat in the Steam client and am not really sure what causes it. Anyone who has any ideas is welcome to fix this example up!
-
 ??? guide "Relevant GodotSteam classes and functions"
 	* [Friends class](../classes/friends.md)
 		* [setInGameVoiceSpeaking()](../classes/friends.md#setingamevoicespeaking)
@@ -49,6 +46,19 @@ First we will set up a bunch of variables that will get used later on.
 A few quick things to mention, `has_loopback` will toggle whether or not you can hear yourself in voice chat. While not great in-game, it is handy when testing. You also notice `local_` / `network_` prefixed variables; these are to house data on your end and someone else's. In theory, the `network_` will cover all audio output from the network / Steam (anything that isn't you).
 
 Also, somewhere in the root of our test, we need to create two `AudioStreamPlayer` nodes. One named **Local** and one named **Network** which we can use as `$Local` and `$Network` respectively.
+
+In order to add the voice data to the audio stream, we need to set up the `AudioStreamGeneratorPlayback`. Make sure the `AudioStreamPlayer` nodes both have and `AudioStreamGenerator` as their streams. Set the stream's `buffer_length` to something like 0.1:
+
+```gdscript
+func _ready() -> void:
+    $Local.stream.mix_rate = current_sample_rate
+    $Local.play()
+    local_playback = $Local.get_stream_playback()
+
+    $Network.stream.mix_rate = current_sample_rate
+    $Network.play()
+    network_playback = $Network.get_stream_playback()
+```
 
 {==
 ## Getting Voice Data
@@ -99,7 +109,7 @@ func get_sample_rate() -> void:
 	print("Current sample rate: %s" % current_sample_rate)
 ```
 
-This function can be attached to a button. We can also add a toggle to this button to change between the optimal rate or back to our default:
+This function can be attached to a button. We can also add a toggle to this button to change between the optimal rate or back to our default. When changing the sample rate, remember to change the `AudioStreamGenerator`'s mix rate too:
 
 ```gdscript
 func get_sample_rate(is_toggled: bool) -> void:
@@ -107,6 +117,8 @@ func get_sample_rate(is_toggled: bool) -> void:
 		current_sample_rate = Steam.getVoiceOptimalSampleRate()
 	else:
 		current_sample_rate = 48000
+    $Local.stream.mix_rate = current_sample_rate
+    $Network.stream.mix_rate = current_sample_rate
 	print("Current sample rate: %s" % current_sample_rate)
 ```
 
@@ -145,7 +157,7 @@ We have our sample rates figured out so let's try to actual play this data. Sinc
 	func process_voice_data(voice_data: Dictionary, voice_source: String) -> void:
 		# Our sample rate function above without toggling
 		get_sample_rate()
-
+        
 		var decompressed_voice: Dictionary = Steam.decompressVoice(voice_data['buffer'], voice_data['written'], current_sample_rate)
 		
 		if decompressed_voice['result'] == Steam.VOICE_RESULT_OK and decompressed_voice['size'] > 0:
@@ -155,15 +167,22 @@ We have our sample rates figured out so let's try to actual play this data. Sinc
 				local_voice_buffer = decompressed_voice['uncompressed']
 				local_voice_buffer.resize(decompressed_voice['size'])
 				
-				# We now create an audio stream to put our data into
-				var local_audio: AudioStreamWAV = AudioStreamWAV.new()
-				local_audio.mix_rate = current_sample_rate
-				local_audio.data = local_voice_buffer
-				local_audio.format = AudioStreamWAV.FORMAT_16_BITS
-
-				# Lastly, put this into a node and play it
-				$Local.stream = local_audio
-				$Local.play()
+                # We now iterate through the local_voice_buffer and push the samples to the audio generator
+                for i: int in range(0, mini(local_playback.get_frames_available() * 2, local_voice_buffer.size()), 2):
+                    # Steam's audio data is represented as 16-bit single channel PCM audio, so we need to convert it to amplitudes
+                    # Combine the low and high bits to get full 16-bit value
+		            var raw_value: int = LOCAL_VOICE_BUFFER[0] | (LOCAL_VOICE_BUFFER[1] << 8)
+		            # Make it a 16-bit signed integer
+		            raw_value = (raw_value + 32768) & 0xffff
+		            # Convert the 16-bit integer to a float on from -1 to 1
+		            var amplitude: float = float(raw_value - 32768) / 32768.0
+                    
+                    # push_frame() takes a Vector2. The x represents the left channel and the y represents the right channel
+                    local_playback.push_frame(Vector2(amplitude, amplitude))
+                    
+                    # Delete the used samples
+                    local_voice_buffer.remove_at(0)
+                    local_voice_buffer.remove_at(0)
 	```
 
 {==
