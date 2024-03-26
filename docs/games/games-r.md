@@ -10,8 +10,11 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![RAM: Random Access Mayhem](https://steamcdn-a.akamaihd.net/steam/apps/2256450/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2256450/RAM_Random_Access_Mayhem/
 ){ target="\_blank" }
 
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2256450/RAM_Random_Access_Mayhem/
-){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2256450/RAM_Random_Access_Mayhem/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/xylemstudios/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-tiktok: ](https://www.tiktok.com/@xylemstudios){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/Xylem_Studios){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/playlist?list=PLVgqh3HCUiYQ8tJSJPSsMY0XoAqjl7enD){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Redd's Runaway
