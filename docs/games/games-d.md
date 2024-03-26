@@ -56,6 +56,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCWOgdIjhxyzHe6pmE1yGX6Q){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Dominoes 3D Simulator
+<figure class="game" markdown>
+[![Dominoes 3D Simulator](https://steamcdn-a.akamaihd.net/steam/apps/1612500/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1612500/Dominoes3D_Simulator/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1612500/Dominoes3D_Simulator/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## The Dope Game
 <figure class="game" markdown>
 [![The Dope Game](https://steamcdn-a.akamaihd.net/steam/apps/466800/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/466800/The_Dope_Game/){ target="\_blank" }

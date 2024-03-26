@@ -6,6 +6,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
+## Feed The Cups
+<figure class="game" markdown>
+[![Feed The Cups](https://steamcdn-a.akamaihd.net/steam/apps/2336220/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2336220/Feed_the_Cups/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2336220/Feed_the_Cups/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+
 ## Final Hope: The Plot
 <figure class="game" markdown>
 [![Final Hope: The Plot](https://steamcdn-a.akamaihd.net/steam/apps/1339030/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1339030/Final_Hope_The_Plot/){ target="\_blank" }
