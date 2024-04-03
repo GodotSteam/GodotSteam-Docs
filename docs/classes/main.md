@@ -6,6 +6,78 @@
 ## :material-function-variant: Functions
 ==}
 
+### getSteamID32
+
+!!! function "getSteamID32( ```uint64_t``` steam_id )"
+    Convert a SteamID64 into a SteamID.
+
+    **Returns:** uint32_t
+
+    **Note:** This function is only in GodotSteam.
+
+### isAnonAccount
+
+!!! function "isAnonAccount( ```uint64_t``` steam_id )"
+    Is this an anonymous account?
+
+    **Returns:** bool
+
+    **Note:** While this is not listed in the Steamworks docs, it is in the SDK. 
+
+### isAnonUserAccount
+
+!!! function "isAnonUserAccount( ```uint64_t``` steam_id )"
+    Is this an anonymous user account? Used to create an account or reset a password, but do not try to do this.
+
+    **Returns:** bool
+
+    **Note:** While this is not listed in the Steamworks docs, it is in the SDK. 
+
+### isChatAccount
+
+!!! function "isChatAccount( ```uint64_t``` steam_id )"
+    Is this a chat account ID?
+
+    **Returns:** bool
+
+    **Note:** While this is not listed in the Steamworks docs, it is in the SDK. 
+
+### isClanAccount
+
+!!! function "isClanAccount( ```uint64_t``` steam_id )"
+    Is this a clan account ID?
+
+    **Returns:** bool
+
+    **Note:** While this is not listed in the Steamworks docs, it is in the SDK. 
+
+### isConsoleUserAccount
+
+!!! function "isConsoleUserAccount( ```uint64_t``` steam_id )"
+    Is this a faked up Steam ID for a PSN friend account?
+
+    **Returns:** bool
+
+    **Note:** While this is not listed in the Steamworks docs, it is in the SDK. 
+
+### isIndividualAccount
+
+!!! function "isIndividualAccount( ```uint64_t``` steam_id )"
+    Is this an individual user account ID?
+
+    **Returns:** bool
+
+    **Note:** While this is not listed in the Steamworks docs, it is in the SDK. 
+
+### isLobby
+
+!!! function "isLobby( ```uint64_t``` steam_id )"
+    Is this a lobby account ID?
+
+    **Returns:** bool
+
+    **Note:** While this is not listed in the Steamworks docs, it is in the SDK. 
+
 ### isSteamRunning
 
 !!! function "isSteamRunning()"
