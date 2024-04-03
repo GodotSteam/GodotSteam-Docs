@@ -119,14 +119,19 @@ When you download these scores and need to get our score details back to somethi
 ## Downloading Scores
 ==}
 
+### Setting Max Details Or Not
+
 Naturally you'll want to display leaderboard scores to the player. But before we pull any leaderboard entries, we need to set the maximum amount of details each one contains by setting the `setLeaderboardDetailsMax()` function up:
 
 ```gdscript
 var details_max: int = Steam.setLeaderboardDetailsMax( value )
 print("Max details: %s" % details_max)
 ```
+In GodotSteam versions 4.6 or older, by default, the value is set to 0 but you may want to change it to match the number of details you upload with scores from the previous section. If you do not save any details with the scores you can safely ignore this part and move on to just requesting leaderboard entries.
 
-By default the value is set to 0 but you will want to change it to match the number of details you upload with scores from the previous section. If you do not save any details with the scores you can safely ignore this part and move on to just requesting leaderboard entries.
+In GodotSteam 4.6.1 and higher, the default value for max leaderboard details is 256 or the Steam maximum. This change makes it so you don't have to call `setLeaderboardDetailsMax()` first anymore; only if you want to change the max or turn off details.
+
+### Getting Scores
 
 In most cases you'll want to use `downloadLeaderboardEntries()`, but you can also use `downloadLeaderboardEntriesForUsers()` by passing an array of users' Steam IDs to it. Both will respond with the same callback, but `downloadLeaderboardEntriesForUsers()` does not allow as much control over what you can request:
 

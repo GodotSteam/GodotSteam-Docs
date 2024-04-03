@@ -13,7 +13,7 @@
 
     **Returns:** uint32_t
 
-    **Note:** This function is only in GodotSteam.
+    **Note:** This is a GodotSteam specific function.
 
 ### isAnonAccount
 
