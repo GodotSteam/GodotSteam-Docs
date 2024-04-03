@@ -23,6 +23,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- EIREXE
 	- endaye
 	- Fischer96
+	- freehuntx
 	- Frostings
 	- greenfox1505
 	- guimarca
