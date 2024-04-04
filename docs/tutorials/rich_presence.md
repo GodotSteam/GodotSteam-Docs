@@ -67,6 +67,61 @@ Please note this bug *does not exist* in the pre-compiled module versions nor GD
 
 This behavior definitely seems to be a GDNative problem so we can't really fix it on our and an issue has been submitted to the Godot GitHub page.
 
+Thankfully, **Furcifer** has shared some code that should help with this!
+
+```gdscript
+var iteration = 0
+var richPresenceKeyValue = []
+var updatingRichPresence = false
+
+func callNextFrame(methodName, arguments = []):
+	get_tree().connect("idle_frame", self, methodName, arguments, CONNECT_ONESHOT)
+
+func updateRichPresence():
+	iteration = 0
+	richPresenceKeyValue.clear()
+	
+	addRichPresence("numwins", String(Game.getNumWins()))
+	addRichPresence("steam_display", "#status_Ingame")
+
+	if not updatingRichPresence:
+		updatingRichPresence = true
+		setPresenceDelayed()
+
+func addRichPresence(key, value):
+	richPresenceKeyValue.push_back([key, value])
+	Steam.setRichPresence(key, value)
+
+func setPresenceDelayed():
+	var remaining = []
+	for tuple in richPresenceKeyValue:
+		var success = forceSetProperty(tuple[0], tuple[1])
+		if not success:
+			remaining.push_back(tuple)
+	
+	richPresenceKeyValue = remaining
+	
+	if not richPresenceKeyValue.empty():
+		iteration += 1
+		recallSetPresenceDelayed() # recalls this function after a frame
+	else:
+		updatingRichPresence = false
+
+func recallSetPresenceDelayed():
+	Util.callNextFrame(self, "setPresenceDelayed")
+
+func forceSetProperty(key : String, value : String) -> bool:
+	for i in 10:
+		var setval = Steam.getFriendRichPresence(STEAM_ID, key)
+		if setval == key:
+			#print("could not set key ", key, " - iteration: ", iteration, "/",i)
+			Steam.setRichPresence(key, value)
+		else:
+			return true
+	
+	return false
+```
+
 {==
 ## Additional Resources
 ==}

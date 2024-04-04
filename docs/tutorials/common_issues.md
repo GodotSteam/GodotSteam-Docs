@@ -102,6 +102,8 @@ There is no way to bind the enums so they are not present.
 
 Rich presence will work fine on all operating systems _except_ Windows.  It will occasionally make the value the key on random calls.
 
+[Thankfully, Furcifer shared some code to help with this issue. You can read more about it in the Rich Presence tutorial!](../rich_presence)
+
 ### Getting Lobbies
 
 For whatever reason, the get lobby callback would not return a single array like everything else so the callback will send an array of lobbies and the total count.

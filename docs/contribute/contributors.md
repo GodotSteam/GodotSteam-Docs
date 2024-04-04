@@ -100,6 +100,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Ronan Docherty
 	- RosenX
 	- Shine Right Studio
+	- Siddhant Chereddy
 	- Thorsten Schleinzer
 	- Wonderful Days Studio
 	- Zeo Löwenhielm
