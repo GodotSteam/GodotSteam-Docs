@@ -15,6 +15,37 @@ If you aren't using the environment variables to set what game you're running, t
 This can have quite a few causes but a common one is not having your depots or packages set up correctly. Check out [the packages page in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/store/application/packages){ target="\_blank" } for more on how to do it.
 
 {==
+## Error `steam ConnectToGlobalUser failed.`
+==}
+
+This error may be seen on initialization. This can have a few causes:
+
+- Steam is not started
+- The currently signed-in user does not have access to the game (i.e. it's not in the users Steam Library)
+
+
+{==
+## The game does not appear in my library!
+==}
+
+When you do not have access to the game you created, you likely haven't received a grant for it!
+If you have created the Steam App with the currently signed-in account, you should have received an [autogrant](https://partner.steamgames.com/doc/store/application/packages/autogrants).
+To check whether you have an autogrant, go to:
+
+1. Your Steam Dashboard
+2. Under _Users & Permissions_
+   3. Select _Overview_
+
+Make sure, the `Developer Comp` package is there, as shown in the screenshot below:
+![](../assets/images/tutorials-common_issues-steam-users-overview.png)
+
+If it is **not** there, you need to add it. To do this, click the `Add/Manage Groups` button on this very screen.
+Then, on the next screen, select the Group for your app that includes your account (likely called `Everyone`, which includes all partner account members).
+On the next screen, you should then be able to add the autogrant:
+
+![](../assets/images/tutorials-common_issues-steam-autogrant.png)
+
+{==
 ## Parse Error
 ==}
 
