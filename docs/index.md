@@ -216,11 +216,25 @@ While we suggest the latest and greatest version of Valve's Steamworks SDK 1.58 
 ## Quick Start
 ==}
 
-If you are downloading our pre-compiles or using the GDNative plugin, or have finished fresh compiling, you can move on to the how-to sections or just start experimenting.
+### :fontawesome-solid-book-bookmark: Tutorials And Resources
 
-### :fontawesome-solid-book: How-To Guides
+Tutorials that try to cover all the aspects of Steamworks; many more to come and they are all works-in-progress. Feel free to submit corrections or new ones  So far there are topics such as:
 
-Based on what you want to work with, use one of these how-to guides to continue on.
+[:fontawesome-solid-book-bookmark: Initializing Steam](tutorials/initializing.md){ .md-button .md-button--resource }
+
+[:fontawesome-solid-book-bookmark: Lobbies](tutorials/lobbies.md){ .md-button .md-button--resource }
+
+[:fontawesome-solid-book-bookmark: Stats and Achievements](tutorials/stats_achievements.md){ .md-button .md-button--resource }
+
+[:fontawesome-solid-book-bookmark: Leaderboards](tutorials/leaderboards.md){ .md-button .md-button--resource }
+
+A list of things related to Godot and Steam like video and text tutorials, linked to other tools and plug-ins, and other Steam API projects.
+
+[:fontawesome-solid-book-bookmark: External Resources](tutorials/external.md){ .md-button .md-button--resource }
+
+### :fontawesome-solid-book: Compiling How-To Guides
+
+If you want to build GdotoSteam from scratch, use one of these compiling how-to guides to continue on:
 
 [:fontawesome-solid-book: Module How-To](howto/modules.md){ .md-button .md-button--resource }
 

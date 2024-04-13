@@ -13,12 +13,16 @@ For Godot 3.x users, one option you need to make sure is disabled is Codesign. F
 Apparently, for Godot 4.x users, codesign is fine but you may want to keep the notarizing stuff empty.
 
 {==
-## Disabling Library Validation
+## Entitlements
 ==}
 
-This one is apparently still valid though Valve says it is only needed on Catalina 10.15, but you will want to disable library validation to allow Steamworks to load and the overlay to work properly.
+This one is apparently still valid though Valve says it is only needed on Catalina 10.15, but you will want to `disable library validation` and `allow Dyld environment variables` to allow Steamworks to load and the overlay to work properly.
 
-![Disable Validation](../assets/images/mac-caveats2.png){ loading=lazy }
+=== "Godot 3.x"
+	![Disable Validation / Allow Dyld Environment Variables](../assets/images/mac-caveats-entitlements-godot3.png){ loading=lazy }
+
+=== "Godot 4.x"
+	![Disable Validation / Allow Dyld Environment Variables](../assets/images/mac-caveats-entitlements-godot4.png){ loading=lazy }
 
 {==
 ## App Icon

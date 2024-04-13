@@ -100,6 +100,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/ggidk_games){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/ftRgpTkzeP){ target="\_blank" .md-button .md-button--store }
+</figure>
 
 ## Burrito Bear
 <figure class="game" markdown>
