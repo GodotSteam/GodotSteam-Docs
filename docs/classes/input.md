@@ -278,9 +278,9 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getSessionInputConfigurationSettings
 
 !!! function "getSessionInputConfigurationSettings()"
-	Get a bitmask of the Steam Input Configuration types opted in for the current session. Returns ESteamInputConfigurationEnableType values.	
+	Get a bitmask of the Steam Input Configuration types opted in for the current session. Returns InputConfigurationEnableType values.
 
-	**Returns:** uint16
+	**Returns:** uint16 / InputConfigurationEnableType (enum)
 
 	**Note:** user can override the settings from the Steamworks Partner site so the returned values may not exactly match your default configuration.
 

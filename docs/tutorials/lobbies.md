@@ -313,7 +313,7 @@ For a more clear explanation of these chat room responses, [check out the enums 
 If the player is already in-game and accepts a Steam invite or clicks on a friend in their friend list then selects 'Join Game' from there, it will trigger the `join_requested` callback. This function will handle that:
 
 ```gdscript
-func _on_Lobby_Join_Requested(this_lobby_id: int, friend_id: int) -> void:
+func _on_lobby_join_requested(this_lobby_id: int, friend_id: int) -> void:
 	# Get the lobby owner's name
 	var owner_name: String = Steam.getFriendPersonaName(friend_id)
 

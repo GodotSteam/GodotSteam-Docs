@@ -2,6 +2,9 @@
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
+!!! warning "Notes"
+	Currently you cannot compile GodotSteam with MinGW so it does require use of Visual Studio redistributables on Windows. Most Windows games will use it so, for the most part, end users are fine. However, if they report any issues with running things, direct them to install the latest Visual Studio redistributables.
+
 {==
 ### :fontawesome-solid-toolbox: Set Up Tools
 ==}
@@ -73,10 +76,10 @@ Move the ***public*** and ***redistributable_bin*** folders from the unzipped St
 ```shell
 godot/
 └─ modules/
-   └─ godotsteam/
-      └─ sdk/
-         ├─ public/*
-         └─ redistributable_bin/*
+	└─ godotsteam/
+		└─ sdk/
+			├─ public/*
+			└─ redistributable_bin/*
 ```
 
 {==
@@ -88,27 +91,27 @@ Before we start compiling, let us make sure everything is in place. Your ***godo
 ```shell
 godot/
 └─ modules/
-   ├─ godotsteam/
-   │  ├─ doc_classes/
-   │  ├─ sdk/
-   │  │  ├─ public/*
-   │  │  └─ redistributable_bin/*
-   │  ├─ config.py
-   │  ├─ godotsteam.cpp
-   │  ├─ godotsteam.h
-   │  ├─ godotsteam_constants.h
-   │  ├─ register_types.cpp
-   │  ├─ register_types.h
-   │  └─ SCsub
-   └─ godotsteam_multiplayer/
-      ├─ config.py
-      ├─ register_types.cpp
-      ├─ register_types.h
-      ├─ SCsub
-      ├─ steam_id.cpp
-      ├─ steam_id.h
-      ├─ steam_multiplayer_peer.cpp
-      └─ steam_multiplayer_peer.h
+	├─ godotsteam/
+	│  ├─ doc_classes/
+	│  ├─ sdk/
+	│  │  ├─ public/*
+	│  │  └─ redistributable_bin/*
+	│  ├─ config.py
+	│  ├─ godotsteam.cpp
+	│  ├─ godotsteam.h
+	│  ├─ godotsteam_constants.h
+	│  ├─ register_types.cpp
+	│  ├─ register_types.h
+	│  └─ SCsub
+	└─ godotsteam_multiplayer/
+		├─ config.py
+		├─ register_types.cpp
+		├─ register_types.h
+		├─ SCsub
+		├─ steam_id.cpp
+		├─ steam_id.h
+		├─ steam_multiplayer_peer.cpp
+		└─ steam_multiplayer_peer.h
 ```
 
 You can also just put the ***godotsteam*** and ***godotsteam_multiplayer*** directories where ever you like and just point to them in SCONS when compiling: 
@@ -152,8 +155,8 @@ When the compiling is finished, make sure to copy the Steam shared library, for 
 By default, it should be in the ***godot/bin/*** folder. You can move them to a new location as long as you keep the two files together.
 
 !!! warning "Missing Shared Library"
-    
-    A lack of the **Steam API .dll/.so/.dylib** for your respective OS will cause the editor or game to fail and crash when testing or running the game _outside_ of the Steam client.
+	 
+	 A lack of the **Steam API .dll/.so/.dylib** for your respective OS will cause the editor or game to fail and crash when testing or running the game _outside_ of the Steam client.
 
 #### A General Note
 

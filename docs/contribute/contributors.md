@@ -28,6 +28,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- greenfox1505
 	- guimarca
 	- Handagotes
+	- Hangman
 	- hhyyrylainen
 	- Hung-Fan Liu
 	- IlyaStuurFedorov

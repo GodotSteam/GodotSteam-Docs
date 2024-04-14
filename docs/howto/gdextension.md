@@ -2,6 +2,9 @@
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
+!!! warning "Notes"
+	Currently you cannot compile GodotSteam with MinGW so it does require use of Visual Studio redistributables on Windows. Most Windows games will use it so, for the most part, end users are fine. However, if they report any issues with running things, direct them to install the latest Visual Studio redistributables.
+
 {==
 ### :fontawesome-solid-toolbox: Set Up Tools
 ==}
@@ -77,8 +80,8 @@ Move the ***public*** and ***redistributable_bin*** folders from the unzipped St
 godotsteam_gdextension/
 └─ godotsteam/
    └─ sdk/
-      ├─ public/*
-      └─ redistributable_bin/*
+	  ├─ public/*
+	  └─ redistributable_bin/*
 ```
 
 {==
@@ -126,24 +129,24 @@ Just run the following command for your operating system from the ***godotsteam_
 
 === "Windows PowerShell"
 
-    ```shell
-    scons platform=windows target=template_release
-    scons platform=windows target=template_debug
-    ```
+	```shell
+	scons platform=windows target=template_release
+	scons platform=windows target=template_debug
+	```
 
 === "Linux"
 
-    ```shell
-    scons platform=linuxbsd target=template_release
-    scons platform=linuxbsd target=template_debug
-    ```
+	```shell
+	scons platform=linuxbsd target=template_release
+	scons platform=linuxbsd target=template_debug
+	```
 
 === "macOS"
 
-    ```shell
-    scons platform=macos target=template_release
-    scons platform=macos target=template_debug
-    ```
+	```shell
+	scons platform=macos target=template_release
+	scons platform=macos target=template_debug
+	```
 
 The Visual Studio instructions carried over from ***GDNative*** _probably do not_ work anymore so they were removed. If anyone would like to contribute new ones, please feel free to do so!
 
@@ -161,62 +164,62 @@ This all sound a little confusing? It should look a little something like this:
   
 === "Windows 64-bit"
 
-    ```shell
-    addons
-    └─ godotsteam
-       └─ win64
-          │─ godotsteam.windows.template_debug.x86_64.dll
-          │─ godotsteam.windows.template_release.x86_64.dll
-          └─ steam_api64.dll
-    ```
+	```shell
+	addons
+	└─ godotsteam
+	   └─ win64
+		  │─ godotsteam.windows.template_debug.x86_64.dll
+		  │─ godotsteam.windows.template_release.x86_64.dll
+		  └─ steam_api64.dll
+	```
 
 === "Windows 32-bit"
 
-    ```shell
-    addons
-    └─ godotsteam
-       └─ win32
-          │─ godotsteam.windows.template_debug.x86_32.dll
-          │─ godotsteam.windows.template_release.x86_32.dll
-          └─ steam_api.dll
-    ```
+	```shell
+	addons
+	└─ godotsteam
+	   └─ win32
+		  │─ godotsteam.windows.template_debug.x86_32.dll
+		  │─ godotsteam.windows.template_release.x86_32.dll
+		  └─ steam_api.dll
+	```
 
 === "Linux 64-bit"
 
-    ```shell
-    addons
-    └─ godotsteam
-       └─ linux64
-          │─ libgodotsteam.linuxbsd.template_debug.x86_64.so
-          │─ libgodotsteam.linuxbsd.template_release.x86_64.so
-          └─ libsteam_api.so
-    ```
+	```shell
+	addons
+	└─ godotsteam
+	   └─ linux64
+		  │─ libgodotsteam.linuxbsd.template_debug.x86_64.so
+		  │─ libgodotsteam.linuxbsd.template_release.x86_64.so
+		  └─ libsteam_api.so
+	```
 
 === "Linux 32-bit"
 
-    ```shell
-    addons
-    └─ godotsteam
-       └─ linux32
-          │─ libgodotsteam.linuxbsd.template_debug.x86_32.so
-          │─ libgodotsteam.linuxbsd.template_release.x86_32.so
-          └─ libsteam_api.so
-    ```
+	```shell
+	addons
+	└─ godotsteam
+	   └─ linux32
+		  │─ libgodotsteam.linuxbsd.template_debug.x86_32.so
+		  │─ libgodotsteam.linuxbsd.template_release.x86_32.so
+		  └─ libsteam_api.so
+	```
 
 === "Mac"
 
-    ```shell
-    addons
-    └─ godotsteam
-       └─ osx
-          │─ libgodotsteam.debug.framework
-          │  │─ libgodotsteam.macos.template_debug.universal
-          │  └─ libsteam_api.dylib
-          │─ libgodotsteam.framework
-          │  │─ libgodotsteam.macos.template_release.universal
-          │  └─ libgodotsteam.framework/libsteam_api.dylib
-          └─ libsteam_api.dylib
-    ```
+	```shell
+	addons
+	└─ godotsteam
+	   └─ osx
+		  │─ libgodotsteam.debug.framework
+		  │  │─ libgodotsteam.macos.template_debug.universal
+		  │  └─ libsteam_api.dylib
+		  │─ libgodotsteam.framework
+		  │  │─ libgodotsteam.macos.template_release.universal
+		  │  └─ libgodotsteam.framework/libsteam_api.dylib
+		  └─ libsteam_api.dylib
+	```
 
 Lastly, copy the **godotsteam.gdextension** file from the base of your ***godotsteam_gdextensioni*** folder and place it into the **addons/godotsteam/** folder.
 

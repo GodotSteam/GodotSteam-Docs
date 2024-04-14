@@ -186,6 +186,8 @@ However, you must pass the first two arguments which are whether you want the lo
 !!! warning "Notes"
 	The argument **does not** exist in the GDExtension version currently. This only works in GodotSteam 3.22 or newer for Godot 3.x and in GodotSteam 4.5 or newer for Godot 4.x.
 
+Some users have noticed that if their `run_callbacks` sits in a script or node that can be paused, said callbacks will fail to trigger. Make sure this function resides in a script or node that is always processing!
+
 {==
 ## Altogether Now
 ==}

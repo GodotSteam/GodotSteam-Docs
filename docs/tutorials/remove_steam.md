@@ -137,6 +137,12 @@ if Engine.has_singleton("Steam"):
 	self.Steam = Engine.get_singleton("Steam")
 ```
 
+{==
+## Caveats For GDExtension
+==}
+
+When using the GDExtension of GodotSteam, you need to also alter the `extension_list.cfg` file located in your .godot folder in your project. If you do not, then the game will produce some errors in your log files when run. They are harmless, however, just a little annoying. [There is a proposal to fix this behavior so fingers crossed!](https://github.com/godotengine/godot-proposals/issues/9322)
+
 ---
 
 Hopefully these examples give you some ideas on how to remove Steamworks features from your game without having to make a bunch of different builds and repositories.

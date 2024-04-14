@@ -23,7 +23,6 @@ This error may be seen on initialization. This can have a few causes:
 - Steam is not started
 - The currently signed-in user does not have access to the game (i.e. it's not in the users Steam Library)
 
-
 {==
 ## The game does not appear in my library!
 ==}
@@ -138,3 +137,9 @@ Rich presence will work fine on all operating systems _except_ Windows.  It will
 ### Getting Lobbies
 
 For whatever reason, the get lobby callback would not return a single array like everything else so the callback will send an array of lobbies and the total count.
+
+{==
+## Steam Eating Inputs
+==}
+
+Sometimes folks will notice that Steam tends to "eat" inputs meant for Godot. If you aren't using Steam Inputs class, you can go into the game's setting and just turn Inputs off.  This will allow Godot to resume getting input data.

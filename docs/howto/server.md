@@ -2,6 +2,9 @@
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
+!!! warning "Notes"
+	Currently you cannot compile GodotSteam with MinGW so it does require use of Visual Studio redistributables on Windows. Most Windows games will use it so, for the most part, end users are fine. However, if they report any issues with running things, direct them to install the latest Visual Studio redistributables.
+
 {==
 ### :fontawesome-solid-toolbox: Set Up Tools
 ==}
@@ -26,15 +29,15 @@ You can clone the latest Godot source in a folder called ***godot*** like so:
 
 === "Godot 3.x"
 
-    ```shell
-    git clone https://github.com/godotengine/godot.git -b 3.5.3-stable godot
-    ```
+	```shell
+	git clone https://github.com/godotengine/godot.git -b 3.5.3-stable godot
+	```
 
 === "Godot 4.x"
 
-    ```shell
-    git clone https://github.com/godotengine/godot.git -b 4.2.1-stable godot
-    ```
+	```shell
+	git clone https://github.com/godotengine/godot.git -b 4.2.1-stable godot
+	```
 
 You may need to change the given tag(s) above from whatever it is to whatever the current version or whatever version you need.
 
@@ -52,15 +55,15 @@ Head into the ***godot/modules/*** folder and clone the source like so:
 
 === "Godot 3.x"
 
-    ```shell
-    git clone -b godot3 https://github.com/GodotSteam/GodotSteam-Server.git godotsteam_server
-    ```
+	```shell
+	git clone -b godot3 https://github.com/GodotSteam/GodotSteam-Server.git godotsteam_server
+	```
 
 === "Godot 4.x"
 
-    ```shell
-    git clone -b godot4 https://github.com/GodotSteam/GodotSteam-Server.git godotsteam_server
-    ```
+	```shell
+	git clone -b godot4 https://github.com/GodotSteam/GodotSteam-Server.git godotsteam_server
+	```
 
 #### Downloading the Source
 
@@ -78,9 +81,9 @@ Move the ***public*** and ***redistributable_bin*** folders from the unzipped St
 godot/
 └─ modules/
    └─ godotsteam_server/
-      └─ sdk/
-         ├─ public/*
-         └─ redistributable_bin/*
+	  └─ sdk/
+		 ├─ public/*
+		 └─ redistributable_bin/*
 ```
 
 {==
@@ -93,16 +96,16 @@ Before we start compiling, let us make sure everything is in place. Your ***godo
 godot/
 └─ modules/
    └─ godotsteam_server/
-      ├─ doc_classes/
-      ├─ sdk/
-      │  ├─ public/*
-      │  └─ redistributable_bin/*
-      ├─ config.py
-      ├─ godotsteam_server.cpp
-      ├─ godotsteam_server.h
-      ├─ register_types.cpp
-      ├─ register_types.h
-      └─ SCsub
+	  ├─ doc_classes/
+	  ├─ sdk/
+	  │  ├─ public/*
+	  │  └─ redistributable_bin/*
+	  ├─ config.py
+	  ├─ godotsteam_server.cpp
+	  ├─ godotsteam_server.h
+	  ├─ register_types.cpp
+	  ├─ register_types.h
+	  └─ SCsub
 ```
 
 You can also just put the ***godotsteam_server*** directory where ever you like and just point to it in SCONS when compiling: 
@@ -119,43 +122,43 @@ To compile editors, use this SCONS line:
 
 === "Godot 3.x"
 
-    ```shell
-    scons platform=<your platform> production=yes tools=yes target=release_debug
-    ```
+	```shell
+	scons platform=<your platform> production=yes tools=yes target=release_debug
+	```
 
 === "Godot 4.x"
 
-    ```shell
-    scons platform=<your platform> tools=yes target=editor
-    ```
+	```shell
+	scons platform=<your platform> tools=yes target=editor
+	```
 
 To compile debug templates, use this SCONS line:
 
 === "Godot 3.x"
 
-    ```shell
-    scons platform=<your platform> production=yes tools=no target=release_debug
-    ```
+	```shell
+	scons platform=<your platform> production=yes tools=no target=release_debug
+	```
 
 === "Godot 4.x"
 
-    ```shell
-    scons platform=<your platform> tools=no target=template_debug
-    ```
+	```shell
+	scons platform=<your platform> tools=no target=template_debug
+	```
 
 To compile release templates, use this SCONS line:
 
 === "Godot 3.x"
 
-    ```shell
-    scons platform=<your platform> production=yes tools=no target=release
-    ```
+	```shell
+	scons platform=<your platform> production=yes tools=no target=release
+	```
 
 === "Godot 4.x"
 
-    ```shell
-    scons platform=<your platform> tools=no target=template_release
-    ```
+	```shell
+	scons platform=<your platform> tools=no target=template_release
+	```
 
 #### A Linux Note
 
@@ -170,8 +173,8 @@ When the compiling is finished, make sure to copy the Steam shared library, for 
 By default, it should be in the ***godot/bin/*** folder. You can move them to a new location as long as you keep the two files together.
 
 !!! warning "Missing Shared Library"
-    
-    A lack of the **Steam API .dll/.so/.dylib** for your respective OS will cause the editor or game to fail and crash when testing or running the game _outside_ of the Steam client.
+	
+	A lack of the **Steam API .dll/.so/.dylib** for your respective OS will cause the editor or game to fail and crash when testing or running the game _outside_ of the Steam client.
 
 #### A General Note
 

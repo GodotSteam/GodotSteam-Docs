@@ -2,6 +2,9 @@
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
+!!! warning "Notes"
+	Currently you cannot compile GodotSteam with MinGW so it does require use of Visual Studio redistributables on Windows. Most Windows games will use it so, for the most part, end users are fine. However, if they report any issues with running things, direct them to install the latest Visual Studio redistributables.
+
 {==
 ### :fontawesome-solid-toolbox: Set Up Tools
 ==}
@@ -76,8 +79,8 @@ Move the ***public*** and ***redistributable_bin*** folders from the unzipped St
 godotsteam_gdnative/
 └─ godotsteam/
    └─ sdk/
-      ├─ public/*
-      └─ redistributable_bin/*
+	  ├─ public/*
+	  └─ redistributable_bin/*
 ```
 
 {==
@@ -119,46 +122,46 @@ Just run the following command for your operating system from the ***godotsteam_
 
 === "Windows Powershell / VS Prompt"
 
-    ```shell
-    scons platform=windows production=yes target=release
-    ```
+	```shell
+	scons platform=windows production=yes target=release
+	```
 
 === "Windows VS"
-    Follow these steps for Visual Studio (big thanks to **willnationsdev**):
+	Follow these steps for Visual Studio (big thanks to **willnationsdev**):
 
-    - [x] Create a new Visual Studio project.
-    - [x] Name it **GDNative** and make sure it DOES NOT create a directory.
-        - Uncheck the box here.
-    - [x] Select the **GDNative** folder we were working in.
-    - [x] Choose Win32 Desktop Wizard template.
-    - [x] Select options for both a dynamic library (.dll) and an empty project.
-    - [x] Things should look like this:
-      ```shell
-      GDNative -godot-cpp -godot_headers -lib -GDNative --.vs --GDNative.sln --GDNative.vcxproj --GDNative.vcsproj.filters -src
-      ```
-    - [x] Make sure you have a debug, x64 configuration for the solution.
-        - The options are located in the toolbar at the top left.
-    - [x] Go to "Project > GDNative Properties" to open the project properties.
-    - [x] Ensure you are on the x64 Debug configurations at the top and make these changes:
-        - VC++ Directories > Include Directories. Add 'GDNative\godot-cpp\include', 'GDNative\godot-cpp\include\core', and 'GDNative\godot-cpp\godot-headers' to the list.
-        - VC++ Directories > Library Directories. Add 'GDNative\godotsteam'.
-        - VC++ Directories > Source Directories. Add 'GDNative\godotsteam'.
-        - C/C++ > Linker > System. Subsystem = "Console (/SUBSYSTEM:CONSOLE)"
-        - C/C++ > Linker > Input. Add "godot-cpp.windows.64.lib" (without quotes) to the Additional Dependencies parameter.
-    - [x] Click on Apply and then Save.
-    - [x] Now build the solution.
+	- [x] Create a new Visual Studio project.
+	- [x] Name it **GDNative** and make sure it DOES NOT create a directory.
+		- Uncheck the box here.
+	- [x] Select the **GDNative** folder we were working in.
+	- [x] Choose Win32 Desktop Wizard template.
+	- [x] Select options for both a dynamic library (.dll) and an empty project.
+	- [x] Things should look like this:
+	  ```shell
+	  GDNative -godot-cpp -godot_headers -lib -GDNative --.vs --GDNative.sln --GDNative.vcxproj --GDNative.vcsproj.filters -src
+	  ```
+	- [x] Make sure you have a debug, x64 configuration for the solution.
+		- The options are located in the toolbar at the top left.
+	- [x] Go to "Project > GDNative Properties" to open the project properties.
+	- [x] Ensure you are on the x64 Debug configurations at the top and make these changes:
+		- VC++ Directories > Include Directories. Add 'GDNative\godot-cpp\include', 'GDNative\godot-cpp\include\core', and 'GDNative\godot-cpp\godot-headers' to the list.
+		- VC++ Directories > Library Directories. Add 'GDNative\godotsteam'.
+		- VC++ Directories > Source Directories. Add 'GDNative\godotsteam'.
+		- C/C++ > Linker > System. Subsystem = "Console (/SUBSYSTEM:CONSOLE)"
+		- C/C++ > Linker > Input. Add "godot-cpp.windows.64.lib" (without quotes) to the Additional Dependencies parameter.
+	- [x] Click on Apply and then Save.
+	- [x] Now build the solution.
 
 === "Linux"
 
-    ```shell
-    scons platform=linux production=yes target=release
-    ```
+	```shell
+	scons platform=linux production=yes target=release
+	```
 
 === "Mac"
 
-    ```shell
-    scons platform=osx production=yes target=release
-    ```
+	```shell
+	scons platform=osx production=yes target=release
+	```
 
 {==
 ### :fontawesome-solid-box: All Together Now
@@ -174,33 +177,33 @@ This all sound a little confusing? It should look a little something like this:
   
 === "Windows"
 
-    ```shell
-    addons
-    └─ godotsteam
-       └─ win64
-          │─ godotsteam.dll
-          └─ steam_api64.dll
-    ```
+	```shell
+	addons
+	└─ godotsteam
+	   └─ win64
+		  │─ godotsteam.dll
+		  └─ steam_api64.dll
+	```
 
 === "Linux"
 
-    ```shell
-    addons
-    └─ godotsteam
-       └─ x11
-          │─ libgodotsteam.so
-          └─ libsteam_api.so
-    ```
+	```shell
+	addons
+	└─ godotsteam
+	   └─ x11
+		  │─ libgodotsteam.so
+		  └─ libsteam_api.so
+	```
 
 === "Mac"
 
-    ```shell
-    addons
-    └─ godotsteam
-       └─ osx
-          │─ libgodotsteam.dylib
-          └─ libsteam_api.dylib
-    ```
+	```shell
+	addons
+	└─ godotsteam
+	   └─ osx
+		  │─ libgodotsteam.dylib
+		  └─ libsteam_api.dylib
+	```
 
 #### Making godotsteam.gdnlib
 
@@ -224,33 +227,33 @@ Replace (read below) with the following, based on platform. You can also use all
 
 === "Using Windows"
 
-    ```shell
-    [entry]
-    Windows.64="res://addons/godotsteam/win64/godotsteam.dll"
+	```shell
+	[entry]
+	Windows.64="res://addons/godotsteam/win64/godotsteam.dll"
 
-    [dependencies]
-    Windows.64=[ "res://addons/godotsteam/win64/steam_api64.dll" ]
-    ```
+	[dependencies]
+	Windows.64=[ "res://addons/godotsteam/win64/steam_api64.dll" ]
+	```
 
 === "Using Linux"
 
-    ```shell
-    [entry]
-    X11.64="res://addons/godotsteam/x11/libgodotsteam.so"
+	```shell
+	[entry]
+	X11.64="res://addons/godotsteam/x11/libgodotsteam.so"
 
-    [dependencies]
-    X11.64=[ "res://addons/godotsteam/x11/libsteam_api.so" ]
-    ```
+	[dependencies]
+	X11.64=[ "res://addons/godotsteam/x11/libsteam_api.so" ]
+	```
 
 === "Using OSX"
 
-    ```shell
-    [entry]
-    OSX.64="res://addons/godotsteam/osx/libgodotsteam.dylib"
+	```shell
+	[entry]
+	OSX.64="res://addons/godotsteam/osx/libgodotsteam.dylib"
 
-    [dependencies]
-    OSX.64=[ "res://addons/godotsteam/osx/libsteam_api.dylib" ]
-    ```
+	[dependencies]
+	OSX.64=[ "res://addons/godotsteam/osx/libsteam_api.dylib" ]
+	```
  
 To double-check this worked, place the ***addons*** folder in a Godot project then open the ***.gdnlib*** file in the ***Inspector***. It will have the correct data in the GUI editor that pops up in the bottom panel.
 
