@@ -20,7 +20,7 @@ They contain the pre-compiled editors, templates, and necessary Steam shared lib
 
 === ":simple-godotengine: Regular Builds"
 	
-	[ :fontawesome-brands-github: Godot 4.2.1 - Steamworks 1.59 - GodotSteam 4.6](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.6){ .md-button .md-button--resource target="\_blank" }
+	[ :fontawesome-brands-github: Godot 4.2.1 - Steamworks 1.59 - GodotSteam 4.6.1](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.6.1){ .md-button .md-button--resource target="\_blank" }
 
 	[ :fontawesome-brands-github: Godot 3.5.3 - Steamworks 1.59 - GodotSteam 3.23](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.23){ .md-button .md-button--resource target="\_blank" }
 
