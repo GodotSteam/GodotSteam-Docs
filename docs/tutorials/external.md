@@ -14,6 +14,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-youtube: 'GodotSteam Series' by Gwizz](https://www.youtube.com/playlist?list=PLqF5LscxmBZWLr22FPYNkPE--T7wWXvwR){ .md-button .md-button--resource target="\_blank" }
 
+[ :simple-youtube: 'GodotSteam and SteamMultiplayerPeer' by Michael Macha](https://www.youtube.com/playlist?list=PLg_8mgEWE2p8ZA-AqUUJ3CYEtrRVFhl_v){ .md-button .md-button--resource target="\_blank" }
+
 {==
 ## Godot Networking + Steam
 ==}
