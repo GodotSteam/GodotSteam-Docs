@@ -38,6 +38,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2255140/Paranoia_Party/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Parking Garage Rally Circuit
+<figure class="game" markdown>
+[![Paranoia Party](https://steamcdn-a.akamaihd.net/steam/apps/2737300/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2737300/Parking_Garage_Rally_Circuit/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2737300/Parking_Garage_Rally_Circuit/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.walaber.com/parking-garage-rally-circuit){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Pincrediball
 <figure class="game" markdown>
 [![Pincrediball](https://steamcdn-a.akamaihd.net/steam/apps/2378150/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2378150/Pincrediball){ target="\_blank" }
