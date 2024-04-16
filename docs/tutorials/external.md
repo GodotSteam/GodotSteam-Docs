@@ -30,9 +30,11 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :fontawesome-solid-gamepad: 'GodotSteam: How To Upload and Download UGC' by Forgotten Dream Games](https://forgottendreamgames.com/blog/godotsteam-how-to-upload-and-download-user-generated-content-ugc-repost.html){ .md-button .md-button--resource target="\_blank" }
 
-[ :simple-steam: Valve's Official Steamworks SDK Site](https://partner.steamgames.com/doc/sdk){ .md-button .md-button--resource target="\_blank" }
-
 [ :simple-godotengine: 'Godot Auto Export' by Mr.Eliptik](https://mreliptik.dev/godot-auto-export){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-godotengine: 'GodotSteam and SteamMultiplayerPeer' by Michael Macha](https://michaelmacha.wordpress.com/2024/04/08/godotsteam-and-steammultiplayerpeer/){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-steam: Valve's Official Steamworks SDK Site](https://partner.steamgames.com/doc/sdk){ .md-button .md-button--resource target="\_blank" }
 
 {==
 ## Debugging Resources
