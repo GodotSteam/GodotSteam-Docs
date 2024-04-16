@@ -4,12 +4,16 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ---
 
+## Version 4.6.2
+
+- Fixed: incorrect constant for PUBLISHED_FILE_UPDATE_HANDLE_INVALID
+
 ## Version 4.6.1
 
 - Added: internal notes about where enums are found
 - Added: minor extra helper functions from Steam's client header
-- Added: `getSteamID32` function to convert SteamID64 to SteamID
-- Changed: replaced deprecated Controller struct with Inputs struct in `getDigitalActionData`
+- Added: `getSteamID32()` function to convert SteamID64 to SteamID
+- Changed: replaced deprecated Controller struct with Inputs struct in `getDigitalActionData()`
 - Changed: in-editor docs
 - Changed: leaderboard details max now set at highest instead of zero by default
 
