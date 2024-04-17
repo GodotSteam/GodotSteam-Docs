@@ -4,7 +4,7 @@ A history of all to [the ***godot3*** branch.](https://github.com/GodotSteam/God
 
 ---
 
-## Version 3.32.1
+## Version 3.23.1
 
 - Added: internal notes about where enums are found
 - Added: minor extra helper functions from Steam's client header

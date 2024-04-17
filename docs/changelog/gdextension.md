@@ -4,7 +4,21 @@ A history of all changes to [the ***gdextension*** branch.](https://github.com/G
 
 ---
 
-## Version 4.6 Changes
+## Version 4.6.2
+
+- Added: internal notes about where enums are found
+- Added: minor extra helper functions from Steam's client header
+- Added: `getSteamID32()` function to convert SteamID64 to SteamID
+- Changed: replaced deprecated Controller struct with Inputs struct in `getDigitalActionData()`
+- Changed: leaderboard details max now set at highest instead of zero by default
+- Fixed: incorrect constant for PUBLISHED_FILE_UPDATE_HANDLE_INVALID
+- Fixed: `getAllLobbyData()` sending back all pairs, ***thanks to freehuntx***
+
+## Version 4.6.1
+
+- Skipped to keep versioning the game with 4.x module
+
+## Version 4.6
 
 - Added: new Remote Storage enum to WorkshopFileType
 - Added: two new UGC enums to ItemState and ItemPreviewType
