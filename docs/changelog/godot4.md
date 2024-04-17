@@ -4,6 +4,15 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ---
 
+## Version 4.6.3
+
+- Changed: returned values for getFriendGamePlayed, ***thanks to SlejmUr***
+- Changed: `getItemPrice()` now returns base price and price, ***thanks to SlejmUr***
+- Changed: `getFriendMessage()` and callback `connected_friend_chat_message` now returns the type, ***thanks to SlejmUr***
+- Changed: updated in-editor docs with changes
+- Fixed: missing info_flags key in `getSessionConnectionInfo()`, ***thanks to SlejmUr***
+- Fixed: `getServerDetails()` not sending back needed struct, ***thanks to SlejmUr***
+
 ## Version 4.6.2
 
 - Fixed: incorrect constant for PUBLISHED_FILE_UPDATE_HANDLE_INVALID

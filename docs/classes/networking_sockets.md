@@ -299,6 +299,7 @@ These are part of the newer networking classes; not to be confused with the [old
 	* end_reason (int)
 	* end_debug (string)
 	* debug_description (string)
+	* info_flags (int)
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#GetConnectionInfo){ .md-button .md-button--store target="_blank" }

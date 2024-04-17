@@ -194,7 +194,12 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https
 !!! function "getItemPrice( ```uint32``` definition )"
 	After a successful call to [requestPrices](#requestprices), you can call this method to get the pricing for a specific item definition.
 
-	**Returns:** uint64_t
+	**Returns:** dictionary
+
+	Contains the following keys:
+
+	* price (uint64_t)
+	* base_price (uint64_t)
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemPrice){ .md-button .md-button--store target="_blank" }

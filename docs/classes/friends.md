@@ -406,6 +406,7 @@ Access information about individual users and interact with the [Steam Overlay]
 
 	* ret (int)
 	* text (string)
+	* type (int / ChatEntryType)
 
  	---
  	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamFriends#GetFriendMessage){ .md-button .md-button--store target="_blank" }
@@ -1199,6 +1200,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	* chat (dictionary):
 		* ret (int)
 		* text (string)
+		* type (int / ChatEntryType)
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamFriends#GameConnectedFriendChatMsg_t){ .md-button .md-button--store target="_blank" }

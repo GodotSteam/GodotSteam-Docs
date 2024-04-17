@@ -81,6 +81,7 @@ You must call [addIdentity](networking_types.md#addidentity) or [addIpAddress](n
 	* end_reason (int)
 	* end_debug (string)
 	* debug_description (string)
+	* info_flags (int)
 
 	If **get_status** is true:
 

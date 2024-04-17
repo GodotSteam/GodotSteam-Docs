@@ -53,6 +53,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- SapphireMH
 	- sepTN
 	- shuriken1812
+	- SlejmUr
 	- StephenCathcart
 	- troykinsella
 	- xsellier
