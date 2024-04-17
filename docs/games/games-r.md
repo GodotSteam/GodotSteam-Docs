@@ -7,6 +7,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 <div id="games" markdown>
 
 ## RAM: Random Access Mayhem
+<figure class="game" markdown>
 [![RAM: Random Access Mayhem](https://steamcdn-a.akamaihd.net/steam/apps/2256450/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2256450/RAM_Random_Access_Mayhem/
 ){ target="\_blank" }
 
