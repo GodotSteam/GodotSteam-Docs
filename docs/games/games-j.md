@@ -6,7 +6,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
-<!-- Jump 'n' Brawl -->
+## Joe 'n Jo
+<figure class="game" markdown>
+[![Joe 'n Jo](https://steamcdn-a.akamaihd.net/steam/apps/2823860/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2823860/Joe_n_Jo/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2823860/Joe_n_Jo/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/ethanrobichaux_){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Jump 'n' Brawl
 <figure class="game" markdown>
 [![Jump 'n' Brawl](https://steamcdn-a.akamaihd.net/steam/apps/2174440/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2174440/JumpnBrawl/){ target="\_blank" }
@@ -14,7 +21,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2174440/JumpnBrawl/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Jurl -->
 ## Jurl
 <figure class="game" markdown>
 [![Jurl](https://steamcdn-a.akamaihd.net/steam/apps/2368940/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2368940/Jurl/){ target="\_blank" }
