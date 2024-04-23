@@ -55,6 +55,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- shuriken1812
 	- SlejmUr
 	- StephenCathcart
+	- Tamper2
 	- troykinsella
 	- xsellier
 	- vaartis
