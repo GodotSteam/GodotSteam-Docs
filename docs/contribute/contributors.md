@@ -55,7 +55,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- shuriken1812
 	- SlejmUr
 	- StephenCathcart
-	- Tamper2
+	- [Tamper2](https://honkofheroes.com/){ target="\_blank" }
 	- troykinsella
 	- xsellier
 	- vaartis
@@ -80,7 +80,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Garrett Steffen
 	- Hung-Fan Liu
 	- InkRobert
-	- [Jayden Sipe](https://jaydensipe.github.io/)
+	- [Jayden Sipe](https://jaydensipe.github.io/){ target="\_blank" }
 	- Jeroen Heijmans
 	- Jez
 	- John Flickinger
@@ -112,4 +112,4 @@ Here is a list of all the great contributors, both those who have provided code 
 
 <hr/>
 
-The best way you can help out with this module is by making some pull requests with fixes or additions. [There is a healthy list of additions and fixes needed in the To-Do section currently.](https://github.com/orgs/GodotSteam/projects/3) You can also provide tutorials for different aspects of the module.
+The best way you can help out with this module is by making some pull requests with fixes or additions. [There is a healthy list of additions and fixes needed in the To-Do section currently.](https://github.com/orgs/GodotSteam/projects/3){ target="\_blank" } You can also provide tutorials for different aspects of the module.
