@@ -210,6 +210,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/873830/Subcube/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Subzero Tides
+<figure class="game" markdown>
+[![Subcube](https://steamcdn-a.akamaihd.net/steam/apps/2544930/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2544930/Subzero_Tides/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2544930/Subzero_Tides/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/LogicalProgres3){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://logicalprogression.tech/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Super Cave Boy
 <figure class="game" markdown>
 [![Super Cave Boy](https://steamcdn-a.akamaihd.net/steam/apps/2102440/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2102440/Super_Cave_Boy/){ target="\_blank" }
