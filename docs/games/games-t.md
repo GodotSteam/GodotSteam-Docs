@@ -60,6 +60,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1664580/Terra_Ventura/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/LogicalProgres3){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://logicalprogression.tech/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- TETRAGUN -->
