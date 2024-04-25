@@ -50,7 +50,7 @@ Alternatively, you can [download the GDNative source from our repository](https:
 If you changed your target version or manually downloaded the GDNative source, you can head into the ***godotsteam_gdnative*** folder and clone the latest Godot CPP source in a folder called ***godot-cpp*** like so:
 
 ```shell
-git clone https://github.com/godotengine/godot.git -b godot-3.5.1-stable godot-cpp
+git clone https://github.com/godotengine/godot-cpp.git -b godot-3.5.1-stable godot-cpp
 ```
 
 You may need to change the given tag(s) above from whatever it is to whatever the current version or whatever version you need.
@@ -281,7 +281,7 @@ In a text editor, create a file called ***steam.gd*** and place the following in
 ```gdscript
 extends Node
 
-onready var Steam: Object = preload("res://addons/godotsteam/godotsteam.gdns").new()
+@onready var Steam: Object = preload("res://addons/godotsteam/godotsteam.gdns").new()
 var steam_app_id: int = 480   # or your game's app ID
 
 
