@@ -281,7 +281,7 @@ In a text editor, create a file called ***steam.gd*** and place the following in
 ```gdscript
 extends Node
 
-@onready var Steam: Object = preload("res://addons/godotsteam/godotsteam.gdns").new()
+onready var Steam: Object = preload("res://addons/godotsteam/godotsteam.gdns").new()
 var steam_app_id: int = 480   # or your game's app ID
 
 
