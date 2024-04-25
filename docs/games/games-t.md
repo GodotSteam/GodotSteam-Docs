@@ -6,7 +6,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
-<!-- TailQuest: Defense -->
 ## TailQuest: Defense
 <figure class="game" markdown>
 [![TailQuest: Defense](https://steamcdn-a.akamaihd.net/steam/apps/824090/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/824090/TailQuest_Defense/){ target="\_blank" }
@@ -15,7 +14,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://kivnao.games){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Tamagoneko -->
 ## Tamagoneko
 <figure class="game" markdown>
 [![Tamagoneko](https://steamcdn-a.akamaihd.net/steam/apps/2320570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2320570/Tamagoneko/){ target="\_blank" }
@@ -24,7 +22,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/GDFET_official){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- TD Worlds -->
 ## TD Worlds
 <figure class="game" markdown>
 [![TD Worlds](https://steamcdn-a.akamaihd.net/steam/apps/1659180/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1659180/TD_Worlds/){ target="\_blank" }
@@ -34,7 +31,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/TDWorlds_game){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Teamkill -->
 ## Teamkill
 <figure class="game" markdown>
 [![Teamkill](https://steamcdn-a.akamaihd.net/steam/apps/1730020/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1730020/Teamkill/){ target="\_blank" }
@@ -42,7 +38,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1730020/Teamkill/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- TechBeat Heart -->
 ## TechBeat Heart
 <figure class="game" markdown>
 [![TechBeat Heart](https://steamcdn-a.akamaihd.net/steam/apps/1520330/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1520330/TechBeat_Heart/){ target="\_blank" }
@@ -53,7 +48,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/lostmachine.games/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Terra Ventura -->
+## Tempus Bound
+<figure class="game" markdown>
+[![Tempus Bound](https://steamcdn-a.akamaihd.net/steam/apps/1466580/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1466580/Tempus_Bound/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1466580/Tempus_Bound/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/Jasonsumm){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://tempusbound.com/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Terra Ventura
 <figure class="game" markdown>
 [![Terra Ventura](https://steamcdn-a.akamaihd.net/steam/apps/1664580/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1664580/Terra_Ventura/){ target="\_blank" }
@@ -63,7 +66,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://logicalprogression.tech/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- TETRAGUN -->
 ## TETRAGUN
 <figure class="game" markdown>
 [![TETRAGUN](https://steamcdn-a.akamaihd.net/steam/apps/1656310/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1656310/TETRAGUN/){ target="\_blank" }
@@ -71,7 +73,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1656310/TETRAGUN/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- This Side Up -->
 ## This Side Up
 <figure class="game" markdown>
 [![This Side Up](https://steamcdn-a.akamaihd.net/steam/apps/2617930/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2617930/This_Side_Up/){ target="\_blank" }
@@ -79,7 +80,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2617930/This_Side_Up/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Touhou: Gensokyo Survivors -->
 ## Touhou: Gensokyo Survivors
 <figure class="game" markdown>
 [![Touhou: Gensokyo Survivors](https://steamcdn-a.akamaihd.net/steam/apps/2349830/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2349830/Touhou_Gensokyo_Survivors/){ target="\_blank" }
@@ -90,7 +90,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@xeloph986){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Tower Tactics: Liberation -->
 ## Tower Tactics: Liberation
 <figure class="game" markdown>
 [![Tower Tactics: Liberation](https://steamcdn-a.akamaihd.net/steam/apps/1709900/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1709900/Tower_Tactics_Liberation){ target="\_blank" }
@@ -100,7 +99,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/asraworks){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Trash of the Titans -->
 ## Trash of the Titans
 <figure class="game" markdown>
 [![Trash of the Titans](https://steamcdn-a.akamaihd.net/steam/apps/2450400/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2450400/Trash_of_the_Titans){ target="\_blank" }
@@ -109,7 +107,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://trash-of-the-titans.manakeep.com/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Trolley Delayma -->
 ## Trollery Delayma
 <figure class="game" markdown>
 [![Trolley Delayma](https://steamcdn-a.akamaihd.net/steam/apps/2372500/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2372500/Trolley_Delayma/){ target="\_blank" }
@@ -119,7 +116,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/albertnez){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- TRUFFLE -->
 ## TRUFFLE
 <figure class="game" markdown>
 [![TRUFFLE](https://steamcdn-a.akamaihd.net/steam/apps/2684930/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2684930/TRUFFLE/){ target="\_blank" }
@@ -128,7 +124,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/ethanrobichaux_){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Turing Complete -->
 ## Turing Complete
 <figure class="game" markdown>
 [![Turing Complete](https://steamcdn-a.akamaihd.net/steam/apps/1444480/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1444480/Turing_Complete/){ target="\_blank" }
@@ -138,7 +133,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/6){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-<!-- Twilight Oracle -->
 ## Twilight Oracle
 <figure class="game" markdown>
 [![Twilight Oracle](https://steamcdn-a.akamaihd.net/steam/apps/2338490/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2338490/Twilight_Oracle/){ target="\_blank" }
