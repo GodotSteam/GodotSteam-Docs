@@ -50,7 +50,7 @@ Alternatively, you can [download the GDExtension source from our repository](htt
 If you changed your target version or manually downloaded the GDExtension source, you can head into the ***godotsteam_gdextension*** folder and clone the latest Godot CPP source in a folder called ***godot-cpp*** like so:
 
 ```shell
-git clone https://github.com/godotengine/godot.git -b godot-4.2.2-stable godot-cpp
+git clone git@github.com:godotengine/godot-cpp.git -b 4.1 godot-cpp
 ```
 
 You may need to change the given tag(s) above from whatever it is to whatever the current version or whatever version you need.
