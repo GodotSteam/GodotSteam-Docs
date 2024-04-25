@@ -61,6 +61,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- vaartis
 	- VictorienXP
 	- yeonghoey
+	- Zee Weasel
 
 !!! contributors2 "Donors"
 	- AndreaJens
@@ -106,6 +107,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Siddhant Chereddy
 	- Thorsten Schleinzer
 	- Wonderful Days Studio
+	- Zee Weasel
 	- Zeo Löwenhielm
 
 </div>
