@@ -169,7 +169,7 @@ func _on_leaderboard_scores_downloaded(message: string, this_leaderboard_handle:
 The message is just a basic message to inform you to the status the download; whether successful or not and why. The second piece sent back are the results as an array. Each entry in the array is actually a dictionary like so:
 
 - **score:** this user's score
-- **steamID:** this user's Steam ID; you can use this to get their avatar, name, etc.
+- **steam_id:** this user's Steam ID; you can use this to get their avatar, name, etc.
 - **global_rank:** obviously their global ranking for this leaderboard
 - **ugc_handle:** handle for any UGC that is attached to this entry
 - **details:** any details you stored with this entry for later use
