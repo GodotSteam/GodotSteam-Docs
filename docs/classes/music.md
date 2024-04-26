@@ -108,7 +108,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_playback_status_has_changed
 
 !!! function "music_playback_status_has_changed"
-	No notes about this in the Steam docs, but we can assume it just updates us about the plaback status.
+	No notes about this in the Steam docs, but we can assume it just updates us about the playback status.
 
 	**Returns:** nothing
 
