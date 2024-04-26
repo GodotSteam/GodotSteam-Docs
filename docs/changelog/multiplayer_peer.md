@@ -6,7 +6,7 @@ A history of all changes to [the ***multiplayer-peer*** branch.](https://github.
 
 ## Version 4.7
 
-Version bump to sync with 4.x branch
+- Added: in-editor docs, ***thanks to grossqx***
 
 ## Version 4.6.3
 

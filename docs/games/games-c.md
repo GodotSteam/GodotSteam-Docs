@@ -54,6 +54,8 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Chess Opening Repertoire Builder](https://steamcdn-a.akamaihd.net/steam/apps/2755460/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2755460/Chess_Opening_Repertoire_Builder/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2755460/Chess_Opening_Repertoire_Builder/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://branegames.itch.io/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/GamesBrane){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Chicken Fight
