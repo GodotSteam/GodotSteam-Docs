@@ -4,6 +4,18 @@ A history of all to [the ***godot3*** branch.](https://github.com/GodotSteam/God
 
 ---
 
+## Version 3.24
+
+- Changed: internal argument for `executeJavascript()` to match godot4
+- Changed: returned values for `getFriendGamePlayed()`, ***thanks to SlejmUr***
+- Changed: `getItemPrice()` now returns base price and price, ***thanks to SlejmUr***
+- Changed: `getFriendMessage()` and callback `connected_friend_chat_message` now returns the type, ***thanks to SlejmUr***
+- Changed: updated in-editor docs with changes
+- Changed: minor organizational things, variable naming, etc.
+- Fixed: missing info_flags key in `getSessionConnectionInfo()`, ***thanks to SlejmUr***
+- Fixed: `getServerDetails()` not sending back needed struct, ***thanks to SlejmUr***
+- Removed: unused internal variables
+
 ## Version 3.23.1
 
 - Added: internal notes about where enums are found

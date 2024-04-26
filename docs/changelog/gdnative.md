@@ -4,6 +4,22 @@ A history of all changes to [the ***gdnative*** branch.](https://github.com/Godo
 
 ---
 
+## Version 3.24
+
+- Changed: `createBrowser` now accepts empty strings like the godot3 branch
+- Changed: minor organizational things, variable naming, etc.
+- Changed: `getItemPrice()` now returns base price and price, ***thanks to SlejmUr***
+- Fixed: missing info_flags key in `getSessionConnectionInfo()`, ***thanks to SlejmUr***
+- Fixed: `requestClanOfficerList()` using wrong SDK call
+- Fixed: issues with `getResultItems()`
+- Fixed: `addRequestLobbyListDistanceFilter()`
+- Fixed: `getServerDetails()` not sending back needed struct, ***thanks to SlejmUr***
+- Fixed: regressions in `receiveMessagesOnChannel()`, `receiveMessagesOnConnection()`, and `receiveMessagesOnPollGroup()`
+- Fixed: `getConnectionRealTimeStatus()` checking the wrong value, ***thanks to tamper2***
+- Fixed: missing cast on `setSize()`
+- Fixed: `addRequiredTagGroup()` backported from godot3 branch
+- Removed: unused internal variables
+
 ## Version 3.23.1
 
 - Added: internal notes about where enums are found

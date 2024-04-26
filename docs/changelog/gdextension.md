@@ -4,6 +4,14 @@ A history of all changes to [the ***gdextension*** branch.](https://github.com/G
 
 ---
 
+## Version 4.7
+
+- Changed: minor organization and readability changes
+- Fixed: `htmlInit()` not returning bool for success
+- Fixed: regression in `receiveMessagesOnChannel()`
+- Fixed: missing argument bind in `getListenSocketAddress()`
+- Removed: unused docs XML
+
 ## Version 4.6.3
 
 - Changed: returned values for getFriendGamePlayed, ***thanks to SlejmUr***

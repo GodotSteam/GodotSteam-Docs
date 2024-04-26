@@ -4,6 +4,13 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ---
 
+## Version 4.7
+
+- Changed: minor organization and readability changes
+- Fixed: `htmlInit()` not returning bool for success
+- Fixed: incorrect argument bind for `createBeacon()`
+- Fixed: incorrect argument bind for `setItemMetadata()`
+
 ## Version 4.6.3
 
 - Changed: returned values for getFriendGamePlayed, ***thanks to SlejmUr***

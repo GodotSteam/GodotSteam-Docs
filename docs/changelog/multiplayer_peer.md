@@ -4,6 +4,10 @@ A history of all changes to [the ***multiplayer-peer*** branch.](https://github.
 
 ---
 
+## Version 4.7
+
+Version bump to sync with 4.x branch
+
 ## Version 4.6.3
 
 - Fixed: lobby_state breaking after calling close on peer, ***thanks to Hangman***
