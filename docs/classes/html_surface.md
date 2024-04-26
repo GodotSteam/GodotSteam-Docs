@@ -119,7 +119,7 @@ The **this_handle** argument is optional. If you do not pass one, GodotSteam wil
 !!! function "htmlInit()"
 	Initializes the HTML Surface API. This must be called prior to using any other functions in this interface. You _must_ call [htmlShutdown](#htmlshutdown) when you are done using the interface to free up the resources associated with it. Failing to do so will result in a memory leak.
 
-	**Returns:** void
+	**Returns:** bool
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#Init){ .md-button .md-button--store target="_blank" }
