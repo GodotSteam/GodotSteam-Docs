@@ -58,6 +58,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/GamesBrane){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Chesslike
+<figure class="game" markdown>
+[![Chesslike](https://steamcdn-a.akamaihd.net/steam/apps/2655760/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2655760/Chesslike/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2655760/Chesslike/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Chicken Fight
 <figure class="game" markdown>
 [![Chicken Fight](https://steamcdn-a.akamaihd.net/steam/apps/2159470/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2159470/Chicken_Fight/){ target="\_blank" }

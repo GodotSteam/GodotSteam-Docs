@@ -47,6 +47,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCREVI9PBbV_1sXuBUTi5sXA){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Forgotten Secrets: Escape Room
+<figure class="game" markdown>
+[![Forgotten Secrets: Escape Room](https://steamcdn-a.akamaihd.net/steam/apps/2830320/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2830320/Forgotten_Secrets_Escape_Room/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2830320/Forgotten_Secrets_Escape_Room/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCojVSa8GcxNT2ImOyvmlohg){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/SteamyCupGames){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Fruit Salad
 <figure class="game" markdown>
 [![Fruit Salad](https://steamcdn-a.akamaihd.net/steam/apps/1848520/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1848520/Fruit_Salad/){ target="\_blank" }
