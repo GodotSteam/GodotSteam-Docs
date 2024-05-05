@@ -5,6 +5,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 ---
 <div id="games" markdown>
 
+## Data Garden
+<figure class="game" markdown>
+[![Data Garden](https://steamcdn-a.akamaihd.net/steam/apps/2644670/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2644670/Data_Garden/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2644670/Data_Garden/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Dave Dave Dave
 <figure class="game" markdown>
 [![Dave Dave Dave](https://steamcdn-a.akamaihd.net/steam/apps/1625760/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1625760/Dave_Dave_Dave/){ target="\_blank" }

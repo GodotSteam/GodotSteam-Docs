@@ -77,4 +77,11 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1365540/Hot_Tiles/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Human Souvenir
+<figure class="game" markdown>
+[![Human Souvenir](https://steamcdn-a.akamaihd.net/steam/apps/2817970/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2817970/Human_Souvenir/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2817970/Human_Souvenir/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 </div>
