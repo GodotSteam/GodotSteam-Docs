@@ -10,6 +10,9 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Data Garden](https://steamcdn-a.akamaihd.net/steam/apps/2644670/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2644670/Data_Garden/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2644670/Data_Garden/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/shaman.garage/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](http://www.shamangarage.com/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://shamangarage.itch.io){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Dave Dave Dave

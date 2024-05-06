@@ -98,7 +98,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Mikk Maasik
 	- MudbuG
 	- Nicholas Orlowski
-	- Simone Mändl
+	- pixelriot
 	- Ranoller
 	- René Habermann
 	- Ricardo Sernaglia
@@ -106,6 +106,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- RosenX
 	- Shine Right Studio
 	- Siddhant Chereddy
+	- Simone Mändl
 	- Thorsten Schleinzer
 	- Wonderful Days Studio
 	- Zee Weasel

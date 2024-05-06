@@ -302,12 +302,10 @@ Need some help? Get support for the project through the [GodotSteam GitHub issue
 ## Donating And Contributing
 ==}
 
-Want to help out? The best way is to contribute fixes or additions through pull-requests on GitHub. We also accept donations through these places:
+Want to help out? The best way is to contribute fixes or additions through pull-requests on GitHub. We also accept donations, one-time or re-occurring, through Github Sponsors:
 
 <div class="link-grid" markdown>
 
 [:fontawesome-brands-github: GitHub Sponsors](https://github.com/sponsors/Gramps){ .md-button .md-button--primary target="\_blank" }
-[:simple-kofi: Ko-Fi](https://ko-fi.com/grampsgarcia){ .md-button .md-button--primary target="\_blank" }
-[:fontawesome-brands-paypal: Paypal](https://www.paypal.me/sithlordkyle){ .md-button .md-button--primary target="\_blank" }
 
 </div>
