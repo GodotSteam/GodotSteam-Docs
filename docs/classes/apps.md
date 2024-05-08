@@ -26,7 +26,12 @@ Exposes a wide range of information and actions for applications and [Downloada
 !!! function "getAppInstallDir( ```uint32_t``` app_id )"
     Gets the install folder for a specific app ID. This works even if the application is not installed, based on where the game would be installed with the default Steam library location. 
 
-    **Return**: string
+    **Return**: Dictionary
+
+    Contains the following keys:
+
+    * directory (string)
+    * install_size (int)
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#GetAppInstallDir){ .md-button .md-button--store target="_blank" }
@@ -167,18 +172,6 @@ Exposes a wide range of information and actions for applications and [Downloada
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#GetLaunchQueryParam){ .md-button .md-button--store target="_blank" }
 
-### getLeaderboardDisplayType
-
-!!! function "getLeaderboardDisplayType( ```uint64_t``` this_leaderboard )"
-    Returns the display type of a leaderboard handle.
-
-    **Returns:** dictionary
-
-    Contains the following keys:
-
-    * return (int)
-    * verbal (string)
-
 ### installDLC
 
 !!! function "installDLC( ```uint32_t``` dlc_id )"
@@ -224,8 +217,6 @@ Exposes a wide range of information and actions for applications and [Downloada
     Checks if the license owned by the user provides low violence depots. 
 
     **Return**: bool
-
-    True if the user owns the DLC and it's currently installed, otherwise false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#BIsLowViolence){ .md-button .md-button--store target="_blank" }

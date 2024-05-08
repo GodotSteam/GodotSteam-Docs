@@ -92,6 +92,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Kat Hirsch
 	- Kent Jofur
 	- Kodera Software
+	- [Mauricio Castillo](https://twitter.com/maurimodev){ target="\_blank" }
 	- Martin Eigel
 	- Michael Macha
 	- Mike King
