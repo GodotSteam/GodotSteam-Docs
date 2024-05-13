@@ -80,8 +80,10 @@ Here is a list of all the great contributors, both those who have provided code 
 	- eflake
 	- Elgenzay
 	- Garrett Steffen
+	- Hannes Breuer
 	- Hung-Fan Liu
 	- InkRobert
+	- isikdos
 	- [Jayden Sipe](https://jaydensipe.github.io/){ target="\_blank" }
 	- Jeroen Heijmans
 	- Jez
