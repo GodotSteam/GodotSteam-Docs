@@ -66,7 +66,7 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### connectP2P
 
-!!! function "connectP2P( ```string``` identity_reference, ```int``` port, ```array``` options )"
+!!! function "connectP2P( ```uint64_t``` remote_steam_id, ```int``` port, ```array``` options )"
 	Begin connecting to a server that is identified using a platform-specific identifier. This uses the default rendezvous service, which depends on the platform and library configuration. (E.g. on Steam, it goes through the steam backend.) The traffic is relayed over the Steam Datagram Relay network.
 
 	If you use this, you probably want to call [initRelayNetworkAccess](#initrelaynetworkaccess) when your app initializes. If you need to set any initial config options, pass them here.
@@ -88,7 +88,7 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### connectToHostedDedicatedServer
 
-!!! function "connectToHostedDedicatedServer( ```string``` identity_reference, ```int``` virtual_port, ```array``` options )"
+!!! function "connectToHostedDedicatedServer( ```uint64_t``` remote_steam_id, ```int``` virtual_port, ```array``` options )"
 	Client call to connect to a server hosted in a Valve data center, on the specified virtual port. You must have placed a ticket for this server into the cache, or else this connect attempt will fail!
 
 	Pass your **options** as an array of arrays; each sub-array containing:
@@ -137,7 +137,7 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### createListenSocketIP
 
-!!! function "createListenSocketIP( ```string``` ip_reference, ```Array``` options )"
+!!! function "createListenSocketIP( ```string``` ip_address, ```Array``` options )"
 	Creates a "server" socket that listens for clients to connect to by calling [connectByIPAddress](#connectbyipaddress), over ordinary UDP (IPv4 or IPv6)
 
 	Pass your **options** as an array of arrays; each sub-array containing:
@@ -204,14 +204,14 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### createSocketPair
 
-!!! function "createSocketPair( ```bool``` loopback, ```string``` identity_reference1, ```string``` identity_reference2 )"
+!!! function "createSocketPair( ```bool``` loopback, ```uint64_t``` remote_steam_id1, ```uint64_t``` remote_steam_id2 )"
 	Create a pair of connections that are talking to each other, e.g. a loopback connection. This is very useful for testing, or so that your client/server code can work the same even when you are running a local "server".
 
 	The two connections will immediately be placed into the connected state, and no callbacks will be posted immediately. After this, if you close either connection, the other connection will receive a callback, exactly as if they were communicating over the network. You must close *both* sides in order to fully clean up the resources!
 
 	By default, internal buffers are used, completely bypassing the network, the chopping up of messages into packets, encryption, copying the payload, etc. This means that loopback packets, by default, will not simulate lag or loss. Passing true for **loopback** will cause the socket pair to send packets through the local network loopback device (127.0.0.1) on ephemeral ports. Fake lag and loss are supported in this case, and CPU time is expended to encrypt and decrypt.
 
-	If you wish to assign a specific identity to either connection, you may pass a particular identity. Otherwise, if you pass nullptr, the respective connection will assume a generic "localhost" identity. If you use real network loopback, this might be translated to the actual bound loopback port. Otherwise, the port will be zero.
+	If you use real network loopback, this might be translated to the actual bound loopback port. Otherwise, the port will be zero.
 
 	**Returns:** dictionary
 
@@ -238,7 +238,7 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### findRelayAuthTicketForServer
 
-!!! function "findRelayAuthTicketForServer( ```int``` gameServer, ```int``` port )"
+!!! function "findRelayAuthTicketForServer( ```int``` game_server, ```int``` port )"
 	Search cache for a ticket to talk to the server on the specified virtual port. If found, returns the number of seconds until the ticket expires, and optionally the complete cracked ticket. Returns 0 if we don't have a ticket.
 
 	**Currently not enabled; requires datagram header.**
@@ -289,7 +289,7 @@ These are part of the newer networking classes; not to be confused with the [old
 
 	Contains the following keys:
 
-	* identity (string)
+	* identity (uint64_t)
 	* user_data (uint64)
 	* listen_socket (uint32)
 	* remote_address (string)
@@ -383,7 +383,7 @@ These are part of the newer networking classes; not to be confused with the [old
 
 	* result (int)
 	* identity_type (int)
-	* ip (uint32)
+	* ip (string)
 	* ports (uint16)
 
 ### getGameCoordinatorServerLogin
@@ -451,6 +451,8 @@ These are part of the newer networking classes; not to be confused with the [old
 
 	**Returns:** string
 
+	**Notes:** Was removed in GodotSteam 3.25 / 4.8.
+
 ### getRemoteFakeIPForConnection
 
 !!! function "getRemoteFakeIPForConnection( ```uint32``` connection_handle )" 
@@ -465,6 +467,7 @@ These are part of the newer networking classes; not to be confused with the [old
 	Contains the following keys:
 
 	* result (int)
+	* ip_address (string)
 	* port (uint16)
 	* ip_type (int)
 
@@ -497,7 +500,7 @@ These are part of the newer networking classes; not to be confused with the [old
 	* payload (string)
 	* size (int)
 	* connection (int)
-	* identity (string)
+	* identity (uint64_t)
 	* receiver_user_data (uint64_t)
 	* time_received (uint64_t)
 	* message_number (uint64_t)
@@ -510,7 +513,7 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### receiveMessagesOnPollGroup
 
-!!! function "receiveMessagesOnPollGroup( ```uint32``` pollGroup, ```int``` max_messages )"
+!!! function "receiveMessagesOnPollGroup( ```uint32``` poll_group, ```int``` max_messages )"
 	Same as [receiveMessagesOnConnection](#receivemessagesonconnection), but will return the next messages available on any connection in the poll group. Examine **connection** to know which connection. **user_data** might also be useful.
 
 	**Returns:** array 
@@ -524,7 +527,7 @@ These are part of the newer networking classes; not to be confused with the [old
 	* payload (string)
 	* size (int)
 	* connection (int)
-	* identity (string)
+	* identity (uint64_t)
 	* receiver_user_data (uint64_t)
 	* time_received (uint64_t)
 	* message_number (uint64_t)
@@ -548,7 +551,7 @@ These are part of the newer networking classes; not to be confused with the [old
 
 	* game_server (string)
 	* authorized_client (string)
-	* public_ip (uint32)
+	* public_ip (string)
 	* expiry (int32)
 	* routing (int)
 	* app_id (uint32)
@@ -561,9 +564,8 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### resetIdentity
 
-!!! function "resetIdentity( ```string``` identity_reference )"
+!!! function "resetIdentity( ```uint64_t``` remote_steam_id )"
 	Reset the identity associated with this instance. Any open connections are closed. Any previous certificates, etc are discarded.
-	You can pass a specific identity that you want to use, or you can pass NULL, in which case the identity will be invalid until you set it using [setCertificate](#setcertificate).
 
 	**Note:** This function is not actually supported on Steam!  It is included for use on other platforms where the active user can sign out and a new user can sign in.
 
@@ -633,7 +635,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	**Returns:**
 
 	* result (int)
-	* identity (string) as "fake_ip_identity"
+	* identity (uint64_t)
 	* fake_ip (string)
 	* port_list (array)
 
@@ -659,7 +661,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	* connect_handle (uint64_t)
 	* connection (dictionary)
-		* identity (string)
+		* identity (uint64_t)
 		* user_data (uint64_t)
 		* listen_socket (uint32)
 		* remote_address (string)

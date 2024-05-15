@@ -10,7 +10,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### addFavoriteGame
 
-!!! function "addFavoriteGame( ```uint32``` ip, ```uint16``` port, ```uint16``` queryPort, ```uint32``` flags, ```uint32``` lastPlayed )"
+!!! function "addFavoriteGame( ```string``` ip, ```uint16``` port, ```uint16``` queryPort, ```uint32``` flags, ```uint32``` lastPlayed )"
 	Adds the game server to the local favorites list or updates the time played of the server if it already exists in the list.
 
 	**Returns:** int
@@ -283,7 +283,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### removeFavoriteGame
 
-!!! function "removeFavoriteGame( ```uint32``` app_id, ```uint32``` ip, ```uint16``` port, ```uint16``` query_port, ```uint32``` flags )"
+!!! function "removeFavoriteGame( ```uint32``` app_id, ```string``` ip, ```uint16``` port, ```uint16``` query_port, ```uint32``` flags )"
 	Removes the game server from the local favorites list.
 
 	**Returns:** bool

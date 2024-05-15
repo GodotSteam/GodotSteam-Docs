@@ -24,7 +24,7 @@ This error may be seen on initialization. This can have a few causes:
 - The currently signed-in user does not have access to the game (i.e. it's not in the users Steam Library)
 
 {==
-## The game does not appear in my library!
+## Game Does Not Appear In Steam Library
 ==}
 
 When you do not have access to the game you created, you likely haven't received a grant for it!
@@ -33,7 +33,7 @@ To check whether you have an autogrant, go to:
 
 1. Your Steam Dashboard
 2. Under _Users & Permissions_
-   3. Select _Overview_
+3. Select _Overview_
 
 Make sure, the `Developer Comp` package is there, as shown in the screenshot below:
 ![](../assets/images/tutorials-common_issues-steam-users-overview.png)
@@ -53,6 +53,14 @@ Some people get `Parse Error: The identifier Steam isn't declared in the current
 - Either you're not using a pre-compiled editor.
 - You didn't actually include GodotSteam in your build when compiling.
 - You're using a non-GodotSteam template when exporting from a GodotSteam-enabled editor.
+
+{==
+## Double-Precision Editor Crashes
+==}
+
+If you are using Godot Engine that has double-precision enabled, using the GDNative or GDExtension plug-ins may crash the editor as they are not compiled with double-precision.
+
+If you need this feature, you will need to self-compile the editor or plugi-ns.
 
 {==
 ## Achievements Not Working
@@ -132,7 +140,7 @@ There is no way to bind the enums so they are not present.
 
 Rich presence will work fine on all operating systems _except_ Windows.  It will occasionally make the value the key on random calls.
 
-[Thankfully, Furcifer shared some code to help with this issue. You can read more about it in the Rich Presence tutorial!](../rich_presence)
+[Thankfully, Furcifer shared some code to help with this issue. You can read more about it in the Rich Presence tutorial!](rich_presence.md)
 
 ### Getting Lobbies
 

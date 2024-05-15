@@ -47,7 +47,7 @@ Don't shy away from explaining things in the comments. Since these are meant for
 ## Modifying Docs
 ==}
 
-Feel free to make any edits you think are needed, really. CSS changes, new tutorials, extra links, fixes for functions or signals, or even adding your own game to the ["Games Using GodotSteam" list](/games/games).
+Feel free to make any edits you think are needed, really. CSS changes, new tutorials, extra links, fixes for functions or signals, or even adding your own game to the "Games Using GodotSteam" list.
 
 Try to make any new or edited content fit the same styles as the other pages.  But if you have an eye for design and think of something better, please share that too.
 

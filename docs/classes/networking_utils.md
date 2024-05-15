@@ -187,9 +187,9 @@ Miscellaneous networking utilities for checking the local networking environment
 
 !!! function "getRelayNetworkStatus()"
 	Fetch current status of the relay network.
-	
+
 	[relay_network_status](#relay_network_status) is also a callback. It will be triggered on both the user and gameserver interfaces any time the status changes, or ping measurement starts or stops.
-	
+
 	**Returns:** int which can be:
 
 	* -102 - cannot try
@@ -209,9 +209,9 @@ Miscellaneous networking utilities for checking the local networking environment
 
 !!! function "initRelayNetworkAccess()"
 	If you know that you are going to be using the relay network (for example, because you anticipate making P2P connections), call this to initialize the relay network. If you do not call this, the initialization will be delayed until the first time you use a feature that requires access to the relay network, which will delay that first access.
-	
+
 	You can also call this to force a retry if the previous attempt has failed. Performing any action that requires access to the relay network will also trigger a retry, and so calling this function is never strictly necessary, but it can be useful to call it a program launch time, if access to the relay network is anticipated. Use [getRelayNetworkStatus](#getrelaynetworkstatus) or listen for [relay_network_status](#relay_network_status) callbacks to know when initialization has completed. Typically initialization completes in a few seconds.
-		
+
 	**Returns:** void
 
 	**Note:** dedicated servers hosted in known data centers do <strong>not</strong> need to call this, since they do not make routing decisions. However, if the dedicated server will be using P2P functionality, it will act as a "client" and this should be called.

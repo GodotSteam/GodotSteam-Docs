@@ -271,7 +271,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https
 
 	**Note:** If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally stored ID.
 
-	**Returns:** string.
+	**Returns:** int / Result enum.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetResultStatus){ .md-button .md-button--store target="_blank" }

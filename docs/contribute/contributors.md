@@ -33,6 +33,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Hung-Fan Liu
 	- IlyaStuurFedorov
 	- JDare
+	- jeremybeier
 	- Jupither
 	- kongo555
 	- Kryx-Ikyr

@@ -30,7 +30,7 @@ Functions which provide access to the game server browser. See [Game Servers](h
 	The calls that create this type of query are: [pingServer](#pingserver), [playerDetails](#playerdetails), and [serverRules](#serverrules). You should call this to cancel any in-progress requests before destructing a callback object that may have been passed to one of the above calls to avoid crashing when callbacks occur.
 
 	**Returns:** void
-	
+
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#CancelServerQuery){ .md-button .md-button--store target="_blank" }
 
@@ -85,7 +85,7 @@ Functions which provide access to the game server browser. See [Game Servers](h
 	You can pass a *server_list_request* handle or, if you do not, it will use the last internally stored one.
 
 	**Returns:** bool
-	
+
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#IsRefreshing){ .md-button .md-button--store target="_blank" }
 
@@ -165,7 +165,7 @@ Functions which provide access to the game server browser. See [Game Servers](h
 	[See MatchMakingKeyValuePair_t for more information.](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#MatchMakingKeyValuePair_t){ target="_blank" }
 
 	**Returns:** uint64_t
-	
+
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#RequestFavoritesServerList){ .md-button .md-button--store target="_blank" }
 
@@ -180,16 +180,16 @@ Functions which provide access to the game server browser. See [Game Servers](h
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#RequestFriendsServerList){ .md-button .md-button--store target="_blank" }
-	
+
 ### requestHistoryServerList
 
 !!! function "requestHistoryServerList( ```uint32``` app_id, ```array``` filters )"
 	Request a new list of game servers from the 'history' server list.
 
 	[See MatchMakingKeyValuePair_t for more information.](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#MatchMakingKeyValuePair_t){ target="_blank" }
-	
+
 	**Returns:** uint64_t
-	
+
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#RequestHistoryServerList){ .md-button .md-button--store target="_blank" }
 	
@@ -209,7 +209,7 @@ Functions which provide access to the game server browser. See [Game Servers](h
 
 !!! function "requestLANServerList( ```uint32``` app_id )"
 	Request a new list of game servers from the 'LAN' server list.
-	
+
 	[See MatchMakingKeyValuePair_t for more information.](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#MatchMakingKeyValuePair_t){ target="_blank" }
 
 	**Returns:** uint64_t
@@ -221,7 +221,7 @@ Functions which provide access to the game server browser. See [Game Servers](h
 
 !!! function "requestSpectatorServerList( ```uint32``` app_id, ```array``` filters )"
 	Request a new list of game servers from the 'spectator' server list.
-	
+
 	[See MatchMakingKeyValuePair_t for more information.](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#MatchMakingKeyValuePair_t){ target="_blank" }
 
 	**Returns:** uint64_t
@@ -233,9 +233,9 @@ Functions which provide access to the game server browser. See [Game Servers](h
 
 !!! function "serverRules( ```string``` ip, ```uint16``` port )"
 	Queries an individual game server directly via IP/Port to request the list of rules that the server is running. [(See setKeyValue to set the rules on the server side.)](https://partner.steamgames.com/doc/api/ISteamGameServer#SetKeyValue){ target="\_blank" }
-	
+
 	You must inherit from the ISteamMatchmakingRulesResponse object to receive this callback.
-	
+
 	**Returns:** int
 
     ---
@@ -247,19 +247,120 @@ Functions which provide access to the game server browser. See [Game Servers](h
 
 These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
 
-### server_failed_to_respond
+### ping_server_failed_to_respond
 
-!!! function "server_failed_to_respond"
-	There are no notes in the Steamworks documentation.
-	
-	**Returns:** nothing
+!!! function "ping_server_failed_to_respond"
+	The server has failed to respond to a ping request.
 
-### server_responded
+	**Returns:** void
 
-!!! function "server_responded"
-	There are no notes in the Steamworks documentation.
-	
-	**Returns:** nothing
+### ping_server_responded
+
+!!! function "ping_server_responded"
+	The server has responded to a ping request.
+
+	**Returns:** server_details (dictionary)
+
+	Contains the following keys:
+
+	* name (string)
+	* connection_address (string)
+	* query_address (string)
+	* ping (int)
+	* success_response (bool)
+	* no_refresh (bool)
+	* game_dir (string)
+	* map (string)
+	* description (string)
+	* app_id (int)
+	* players (int)
+	* max_players (int)
+	* bot_players (int)
+	* password (bool)
+	* secure (bool)
+	* last_played (int)
+	* server_version (int)
+	* game_tags (string)
+	* steam_id (uint64_t)
+
+### player_details_failed_to_respond
+
+!!! function "player_details_failed_to_respond"
+	The server failed to respond to a player details request.
+
+	**Returns:** void	
+
+### player_details_player_added
+
+!!! function "player_details_player_added"
+	The server has responded to a player details request.
+
+	**Returns:**
+
+	* name (string)
+	* score (int)
+	* time_played (float)
+
+### player_details_refresh_complete
+
+!!! function "player_details_refresh_complete"
+	The server has completed a player details request.
+
+	**Returns:** void
+
+### request_server_list_refresh_complete
+
+!!! function "request_server_list_refresh_complete"
+	A server list request has completed.
+
+	**Returns:**
+
+	* request_handle (uint64_t)
+	* response (int / MatchMakingServerResponse enum)
+
+### request_server_list_server_failed_to_respond
+
+!!! function "request_server_list_server_failed_to_respond"
+	A server failed to respond to a list request.
+
+	**Returns:**
+
+	* request_handle (uint64_t)
+	* server (int)
+
+### request_server_list_server_responded
+
+!!! function "request_server_list_server_responded"
+	A server has responded to a list request.
+
+	**Returns:**
+
+	* request_handle (uint64_t)
+	* server (int)
+
+### server_rules_failed_to_respond
+
+!!! function "server_rules_failed_to_respond"
+	The server failed to respond with a rules request.
+
+	**Returns:** void
+
+### server_rules_refresh_complete
+
+!!! function "server_rules_refresh_complete"
+	The server has completed a rules refresh.
+
+	**Returns:** void
+
+### server_rules_responded
+
+!!! function "server_rules_responded"
+	The server responded with a rules request.
+
+	**Returns:**
+
+	* rule (string)
+	* value (string)
 
 {==
 ## :material-numeric: Enums

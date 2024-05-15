@@ -83,7 +83,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### getAuthSessionTicket
 
-!!! function "getAuthSessionTicket( ```string``` network_identity )"
+!!! function "getAuthSessionTicket( ```uint64_t``` remote_steam_id = 0 )"
 	Retrieve an authentication ticket to be sent to the entity who wishes to authenticate you.
 
 	After calling this you can send the ticket to the entity where they can then call [beginAuthSession](#beginauthsession) to verify this entity's integrity.
@@ -100,7 +100,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 	* buffer (PoolByteArray / PackedByteArray)
 	* size (uint32_t)
 
-	**Note:** As of Steamworks SDK 1.57, you may pass a network identity that was created with our [Networking Types](networking_types.md) class. However, this is optional and defaults to NULL.
+	**Note:** As of Steamworks SDK 1.57, you may pass a Steam ID class. However, this is optional and defaults to NULL.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#GetAuthSessionTicket){ .md-button .md-button--store target="_blank" }
@@ -127,7 +127,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 	Most applications will only use compressed data and should ignore the other parameters, which exist primarily for backwards compatibility. See [getVoice](#getVoice) for further explanation of "uncompressed" data.
 
 	See [Steam Voice](https://partner.steamgames.com/doc/features/voice){ target="_blank" } for more information.
-	
+
 	**Returns:** dictionary
 
 	Contains the following keys:
@@ -144,7 +144,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 	Retrieves anti indulgence / duration control for current user / game combination.
 
 	Triggers a [duration_control](#duration_control) call result.
-	
+
 	**Returns:** void
 
     ---
@@ -177,7 +177,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 	Gets the level of the users Steam badge for your game.
 
 	The user can have two different badges for a series; the regular badge (max level 5) and the foil badge (max level 1).
-	
+
 	**Returns:** int
 
 	---
