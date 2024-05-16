@@ -4,6 +4,36 @@ A history of all to [the ***godot3*** branch.](https://github.com/GodotSteam/God
 
 ---
 
+## Version 3.25
+
+- Added: Steam Matchmaking response handlers, ***thanks to jeremybeier***
+- Added: all missing Messages and Sockets constants
+- Changed: Networking Messages, Sockets, and Utils now use Steam IDs instead of identity system
+- Changed: UserUGCListSortOrder enums for readability
+- Changed: UGCContentDescriptorID enums for readability
+- Changed: `getResultStatus()` now returns the integer / enum
+- Changed: cleaned up `addItemPreviewFile()`, `check_file_signature`, and `showGamepadTextInput()`
+- Changed: various bits and pieces
+- Changed: IP logic for all related functions
+- Changed: `addFavoriteGame()`, `initiateGameConnection()`, `terminateGameConnection()`, and `removeFavoriteGame()` now take strings for IP
+- Changed: `getAuthSessionTicket()` now defaults to 0 for Steam ID
+- Changed: IP address now accepted instead of IP references
+- Fixed: `getFriendCount()` has correct bit-wise value
+- Fixed: server browser functionality, ***thanks to jeremybeier***
+- Fixed: wrong string IP conversions, ***thanks to jeremybeier***
+- Fixed: server list request filters, ***thanks to jeremybeier***
+- Fixed: typo with UGC_MATCHING_UGC_TYPE_ITEMS enum
+- Fixed: minor case issue with Workshop enums
+- Fixed: `playerDetails()`, `requestFavoritesServerList()`, `requestInternetServerList()`, `requestSpectatorServerList()`, `requestFriendsServerList()`, `requestHistoryServerList()`, and `pingServer()`, ***thanks to jeremybeier***
+- Fixed: regressions caused by minor update
+- Fixed: typo with NETWORKING_CONFIG_TYPE_STRING enum
+- Fixed: typo with LOBBY_COMPARISON_EQUAL_TO_GREATER_THAN
+- Fixed: in-editor docs
+- Removed: Networking Types identity system and related bits
+- Removed: P2P Networking constants as they are duplicates of the P2PSend enum
+- Removed: previous, non-functioning Matchmaking Server call results
+- Removed: `getIdentity()` as it is redundant now
+
 ## Version 3.24
 
 - Changed: internal argument for `executeJavascript()` to match godot4
