@@ -4,6 +4,28 @@ A history of all changes to [the ***gdnative*** branch.](https://github.com/Godo
 
 ---
 
+## Version 3.25
+
+- Added: Steam Matchmaking response handlers, ***thanks to jeremybeier***
+- Added: all missing Messages and Sockets constants
+- Changed: Networking Messages, Sockets, and Utils now use Steam IDs instead of identity system
+- Changed: cleaned up `addItemPreviewFile()`, `check_file_signature`, and `showGamepadTextInput()`
+- Changed: various bits and pieces
+- Changed: IP logic for all related functions
+- Changed: `addFavoriteGame()`, `initiateGameConnection()`, `terminateGameConnection()`, and `removeFavoriteGame()` now take strings for IP
+- Changed: `getAuthSessionTicket()` now defaults to 0 for Steam ID
+- Changed: IP address now accepted instead of IP references
+- Fixed: `getFriendCount()` has correct bit-wise value
+- Fixed: server browser functionality, ***thanks to jeremybeier***
+- Fixed: wrong string IP conversions, ***thanks to jeremybeier***
+- Fixed: server list request filters, ***thanks to jeremybeier***
+- Fixed: `playerDetails()`, `requestFavoritesServerList()`, `requestInternetServerList()`, `requestSpectatorServerList()`, `requestFriendsServerList()`, `requestHistoryServerList()`, and `pingServer()`, ***thanks to jeremybeier***
+- Fixed: regressions caused by minor update
+- Removed: Networking Types identity system and related bits
+- Removed: P2P Networking constants as they are duplicates of the P2PSend enum
+- Removed: previous, non-functioning Matchmaking Server call results
+- Removed: `getIdentity()` as it is redundant now
+
 ## Version 3.24
 
 - Changed: `createBrowser` now accepts empty strings like the godot3 branch
