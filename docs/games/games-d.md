@@ -31,6 +31,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@snarklestudios){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Devastating Fog
+<figure class="game" markdown>
+[![Devastating Fog](https://steamcdn-a.akamaihd.net/steam/apps/1581060/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2764650/Devastating_Fog/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2764650/Devastating_Fog/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/juk3nn){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@juk3n_niegotowe){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://juk3n.itch.io/devastating-fog){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Dipod: The Foot Legacy
 <figure class="game" markdown>
 [![Dipod: The Foot Legacy](https://steamcdn-a.akamaihd.net/steam/apps/1581060/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1581060/Dipod_The_Foot_Legacy/){ target="\_blank" }
