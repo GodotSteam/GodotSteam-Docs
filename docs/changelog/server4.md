@@ -4,6 +4,35 @@ A history of all changes to [the ***server4*** branch.](https://github.com/Godot
 
 ---
 
+## Version 4.3
+
+- Changed: constants list to add missing and remove unused
+- Changed: Networking Messages, Sockets, and Utils now use Steam IDs instead of identity system
+- Changed: various bits and pieces
+- Changed: IP logic for all related functions
+- Changed: UserUGCListSortOrder enums for readability
+- Changed: UGCContentDescriptorID enums for readability
+- Changed: `getResultStatus()` now returns the integer / enum
+- Changed: `getAuthSessionTicket()` now defaults to 0 for Steam ID
+- Fixed: wrong string IP conversions, ***thanks to jeremybeier***
+- Fixed: typo with UGC_MATCHING_UGC_TYPE_ITEMS enum
+- Fixed: minor case issue with Workshop enums
+- Fixed: typo with NETWORKING_CONFIG_TYPE_STRING enum
+- Removed: unnecessary enums
+- Removed: Networking Types identity system and related bits
+- Removed: P2P Networking constants as they are duplicates of the P2PSend enum
+- Removed: `getIdentity()` as it is redundant now
+
+## Version 4.2
+
+- Added: new Remote Storage enum to WorkshopFileType
+- Added: two new UGC enums to ItemState and ItemPreviewType
+- Added: new Remote Play enum, form factor for VR headset
+- Added: two new result enums; not supported and family size limit exceeded
+- Added: three new enums to NetworkingConfigValue
+- Added: new general constant ACCOUNT_ID_INVALID
+- Changed: k_ESteamNetworkingConfig_SDRClient_DebugTicketAddress was replaced by k_ESteamNetworkingConfig_SDRClient_DevTicket, value is the same but reference changed
+
 ## Version 4.1
 
 - Added: a missing constant

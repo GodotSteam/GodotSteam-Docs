@@ -34,9 +34,9 @@ They contain the pre-compiled editors, templates, and necessary Steam shared lib
 
 === ":octicons-server-24: Server Builds"
 
-	[ :fontawesome-brands-github: Godot 4.2.1 - Steamworks 1.59 - GodotSteam Server 4.1](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.1){ .md-button .md-button--resource target="\_blank" }
+	[ :fontawesome-brands-github: Godot 4.2.2 - Steamworks 1.59 - GodotSteam Server 4.3](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.3){ .md-button .md-button--resource target="\_blank" }
 
-	[ :fontawesome-brands-github: Godot 3.5.3 - Steamworks 1.59 - GodotSteam Server 3.1](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.1){ .md-button .md-button--resource target="\_blank" }
+	[ :fontawesome-brands-github: Godot 3.5.3 - Steamworks 1.59 - GodotSteam Server 3.3](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.3){ .md-button .md-button--resource target="\_blank" }
 
 	[:fontawesome-brands-github: For All Server Versions](https://github.com/GodotSteam/GodotSteam-Server/releases){ .md-button .md-button--resource target="\_blank" }
 
@@ -52,21 +52,13 @@ They contain the pre-compiled editors, templates, and necessary Steam shared lib
 
 === ":octicons-plug-24: GDNative Server"
 
-	[ :simple-godotengine: Godot Asset Library | Steamworks 1.58 - GodotSteam Server GDNative 3.0.1](https://godotengine.org/asset-library/asset/2222){ .md-button .md-button--resource target="\_blank" }
+	[ :simple-godotengine: Godot Asset Library | Steamworks 1.59 - GodotSteam Server GDNative 3.3](https://godotengine.org/asset-library/asset/2222){ .md-button .md-button--resource target="\_blank" }
 
-	[ :fontawesome-brands-github: GitHub | Steamworks 1.58 - GodotSteam Server GDNative 3.0.1](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.0.1-gdn){ .md-button .md-button--resource target="\_blank" }
+	[ :fontawesome-brands-github: GitHub | Steamworks 1.59 - GodotSteam Server GDNative 3.3](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.3-gdn){ .md-button .md-button--resource target="\_blank" }
 
 	[ :fontawesome-brands-github: For All Versions](https://github.com/GodotSteam/GodotSteam-Server/releases){ .md-button .md-button--resource target="\_blank" }
 
 ### GDExtension Plug-ins
-
-=== ":octicons-plug-24: GDExtension 4.0.x"
-
-	[ :simple-godotengine: Godot Asset Library | Steamworks 1.58 - GodotSteam GDExtension 4.5.2](https://godotengine.org/asset-library/asset/1972){ .md-button .md-button--resource target="\_blank" }
-
-	[ :fontawesome-solid-file-zipper: GitHub | Steamworks 1.58 - GodotSteam GDExtension 4.5.2](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.5.2-gde){ .md-button .md-button--resource target="\_blank" }
-
-	[ :fontawesome-brands-github: For All Versions](https://github.com/GodotSteam/GodotSteam/releases){ .md-button .md-button--resource target="\_blank" }
 
 === ":octicons-plug-24: GDExtension 4.1.x - 4.2.x"
 
@@ -76,11 +68,19 @@ They contain the pre-compiled editors, templates, and necessary Steam shared lib
 
 	[ :fontawesome-brands-github: For All Versions](https://github.com/GodotSteam/GodotSteam/releases){ .md-button .md-button--resource target="\_blank" }
 
+=== ":octicons-plug-24: GDExtension 4.0.x Deprecated"
+
+	[ :simple-godotengine: Godot Asset Library | Steamworks 1.58 - GodotSteam GDExtension 4.5.2](https://godotengine.org/asset-library/asset/1972){ .md-button .md-button--resource target="\_blank" }
+
+	[ :fontawesome-solid-file-zipper: GitHub | Steamworks 1.58 - GodotSteam GDExtension 4.5.2](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.5.2-gde){ .md-button .md-button--resource target="\_blank" }
+
+	[ :fontawesome-brands-github: For All Versions](https://github.com/GodotSteam/GodotSteam/releases){ .md-button .md-button--resource target="\_blank" }
+
 === ":octicons-plug-24: GDExtension Server"
 
-	[ :simple-godotengine: Godot Asset Library | Steamworks 1.58 - GodotSteam Server GDExtension 4.0.1](https://godotengine.org/asset-library/asset/2218){ .md-button .md-button--resource target="\_blank" }
+	[ :simple-godotengine: Godot Asset Library | Steamworks 1.59 - GodotSteam Server GDExtension 4.3](https://godotengine.org/asset-library/asset/2218){ .md-button .md-button--resource target="\_blank" }
 
-	[ :fontawesome-brands-github: GitHub | Steamworks 1.58 - GodotSteam Server GDExtension 4.0.1](https://github.com/GodotSteam/GodotSteam-Server/tarball/gdextension-plugin){ .md-button .md-button--resource target="\_blank" }
+	[ :fontawesome-brands-github: GitHub | Steamworks 1.59 - GodotSteam Server GDExtension 4.3](https://github.com/GodotSteam/GodotSteam-Server/tarball/gdextension-plugin){ .md-button .md-button--resource target="\_blank" }
 
 	[ :fontawesome-brands-github: All Server Versions](https://github.com/GodotSteam/GodotSteam-Server/releases){ .md-button .md-button--resource target="\_blank" }
 
