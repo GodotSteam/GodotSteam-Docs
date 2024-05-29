@@ -161,6 +161,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-discord: ](https://discord.gg/UhjNrJs){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Speglar
+<figure class="game" markdown>
+[![Speglar](https://steamcdn-a.akamaihd.net/steam/apps/2772890/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2772890/Speglar/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2772890/Speglar/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.com/invite/zBvgudR975){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/DexterGramfors){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Spirit of Shotgun
 <figure class="game" markdown>
 [![Spirit of Shotgun](https://steamcdn-a.akamaihd.net/steam/apps/1910230/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1910230/Spirit_of_Shotgun/){ target="\_blank" }

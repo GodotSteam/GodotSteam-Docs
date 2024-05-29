@@ -92,7 +92,7 @@ nav:
     - P Games (17): 'games/games-p.md'
     - Q Games (0): 'games/games-q.md'
     - R Games (11): 'games/games-r.md'
-    - S Games (33): 'games/games-s.md'
+    - S Games (34): 'games/games-s.md'
     - T Games (16): 'games/games-t.md'
     - U Games (7): 'games/games-u.md'
     - V Games (2): 'games/games-v.md'
@@ -100,6 +100,7 @@ nav:
     - X Games (4): 'games/games-x.md'
     - Y Games (1): 'games/games-y.md'
     - Z Games (0): 'games/games-z.md'
+  - Skillet: 'projects/skillet.md'
   - To-Do: 'https://github.com/orgs/GodotSteam/projects/3'
   - Change-Logs:
     - Godot 4.x: 'changelog/godot4.md'
