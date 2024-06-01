@@ -35,6 +35,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- JDare
 	- jeremybeier
 	- Jupither
+	- Kliiyu
 	- kongo555
 	- Kryx-Ikyr
 	- hungFI
