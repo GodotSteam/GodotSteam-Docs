@@ -122,7 +122,7 @@ Inside that handshake there was a call to the `read_p2p_packet()` function which
 				print("WARNING: read an empty packet with non-zero size!")
 
 			# Get the remote user's ID
-			var packet_sender: int = this_packet['steam_id_remote']
+			var packet_sender: int = this_packet['remote_steam_id']
 
 			# Make the packet data readable
 			var packet_code: PoolByteArray = this_packet['data']
@@ -148,7 +148,7 @@ Inside that handshake there was a call to the `read_p2p_packet()` function which
 				print("WARNING: read an empty packet with non-zero size!")
 
 			# Get the remote user's ID
-			var packet_sender: int = this_packet['steam_id_remote']
+			var packet_sender: int = this_packet['remote_steam_id']
 
 			# Make the packet data readable
 			var packet_code: PackedByteArray = this_packet['data']
