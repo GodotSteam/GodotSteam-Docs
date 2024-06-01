@@ -20,12 +20,12 @@ First let's set up some variables to fill in later:
 var lobby_id: int = 0
 var lobby_max_players: int = 2
 var lobby_members: Array = []
-var matchmaking_phase: int = 0
+var matchmake_phase: int = 0
 ```
 
 Carried over from the lobby tutorial is `lobby_id`, which obviously houses the lobby's ID, and `lobby_members`, which will be an array of dictionaries of lobby members and their Steam ID 64's.
 
-New to this tutorial is `matchmaking_phase` which keeps track of which iteration of the matchmaking search our code does. Also new is `lobby_max_players` which is used to check if the lobby has space for our player.
+New to this tutorial is `matchmake_phase` which keeps track of which iteration of the matchmaking search our code does. Also new is `lobby_max_players` which is used to check if the lobby has space for our player.
 
 All of the `_ready()` function callback connections will be the same.
 
