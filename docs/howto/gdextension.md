@@ -168,8 +168,8 @@ This all sound a little confusing? It should look a little something like this:
 	addons
 	└─ godotsteam
 	   └─ win64
-		  │─ godotsteam.windows.template_debug.x86_64.dll
-		  │─ godotsteam.windows.template_release.x86_64.dll
+		  │─ libgodotsteam.windows.template_debug.x86_64.dll
+		  │─ libgodotsteam.windows.template_release.x86_64.dll
 		  └─ steam_api64.dll
 	```
 
@@ -179,8 +179,8 @@ This all sound a little confusing? It should look a little something like this:
 	addons
 	└─ godotsteam
 	   └─ win32
-		  │─ godotsteam.windows.template_debug.x86_32.dll
-		  │─ godotsteam.windows.template_release.x86_32.dll
+		  │─ libgodotsteam.windows.template_debug.x86_32.dll
+		  │─ libgodotsteam.windows.template_release.x86_32.dll
 		  └─ steam_api.dll
 	```
 
