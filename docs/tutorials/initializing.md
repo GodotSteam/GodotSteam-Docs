@@ -178,7 +178,7 @@ I highly suggest, much like the initialization process, you put this `_process()
 You can pass true as the third argument to either initialization function and have GodotSteam check for callbacks internally. Like so:
 
 ```gdscript
-var initialize_response: Dictionary = steamInitEx(false, 480, true)
+var initialize_response: Dictionary = Steam.steamInit(false, 480, true)
 print("Did Steam initialize?: %s " % initialize_response)
 ```
 However, you must pass the first two arguments which are whether you want the local user's statistics and achievements pulled during initialization and the game's app ID.
@@ -262,7 +262,7 @@ Putting it together should give us something like this:
 
 
 	func initialize_steam() -> void:
-		var initialize_response: Dictionary = Steam.steamInitEx(false, steam_app_id, true)
+		var initialize_response: Dictionary = Steam.steamInit(false, steam_app_id, true)
 		print("Did Steam initialize?: %s" % initialize_response)
 
 		if initialize_response['status'] > 0:
