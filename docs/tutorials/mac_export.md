@@ -36,8 +36,33 @@ You should be able to create it online or with a Photoshop plug-in. Unfortunatel
 ## Steamworks Components
 ==}
 
-Second, you need to add the `libsteam_api.dylib` to the `{your game}.app/Contents/MacOS` folder:
+Second, you need to add the following files to your app Contents:
+- `libsteam_api.dylib` to `{your game}.app/Contents/MacOS` folder
+- `libgodotsteam.framework` to `{your game}.app/Contents/Frameworks` folder
 
 The `libsteam_api.dylib` should be in the `redistributable_bin/osx` folder inside the Steamworks SDK. Make sure it matches the Steamworks API version you are using to compile the editor/template or it will crash.
 
 Alternatively, if you are using the pre-compiled one from GodotSteam's GitHub release section, you can thank **SapphireMH** for already including this file for you!
+
+Here is a handy shell script you can run after you export your mac build to zip file.
+
+```shell
+#!/bin/bash
+
+GAME_NAME="Your Game"
+
+# Define the path to the ZIP file
+ZIP_FILE="./builds/mac/$GAME_NAME.zip"
+
+# Check if the zip file exists
+if [ -f "$ZIP_FILE" ]; then
+    unzip -o "$ZIP_FILE" -d "./builds/mac" || exit
+fi
+
+# copy dylib file
+cp "./src/addons/godotsteam/osx/libsteam_api.dylib" "./builds/mac/$GAME_NAME.app/Contents/MacOS/libsteam_api.dylib" || exit
+
+# copy framework folder
+cp -R "./src/addons/godotsteam/osx/libgodotsteam.framework/" "./builds/mac/$GAME_NAME.app/Contents/Frameworks/libgodotsteam.framework/" || exit
+```
+
