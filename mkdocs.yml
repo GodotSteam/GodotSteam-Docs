@@ -1,23 +1,31 @@
 site_name: GodotSteam
 site_url: https://godotsteam.com
 site_description: An open-source and fully functional Steamworks SDK / API module and plug-in for the Godot Game Engine.
-site_author: GP Garcia
+site_author: GP Garcia | Contributors
+
 copyright: Copyright &copy; 2015-Current | GP Garcia | CoaguCo Industries | Contributors
+
 repo_url: https://github.com/GodotSteam/GodotSteam
 repo_name: GodotSteam
+
+#################################################
+# Navigation
+#################################################
 nav:
   - Introduction: 'index.md'
-  - Compiling How-To's:
+
+  - News:
+    - blog/index.md
+
+  - Compiling:
     - How-To Godot 2, 3, 4: 'howto/modules.md'
     - How-To GDExtension: 'howto/gdextension.md'
     - How-To GDNative: 'howto/gdnative.md'
     - How-To Multiplayer Peer: 'howto/multiplayer_peer.md'
     - How-To Server: 'howto/server.md'
-  - Repositories:
-    - GodotSteam: 'https://github.com/GodotSteam/GodotSteam'
-    - GodotSteam Server: 'https://github.com/GodotSteam/GodotSteam-Server'
-    - Example Project: 'https://github.com/GodotSteam/GodotSteam-Example-Project'
-    - Documentation: 'https://github.com/GodotSteam/GodotSteam-Docs'
+
+  - Repositories: 'https://github.com/GodotSteam/'
+
   - Classes:
     - Main: 'classes/main.md'
     - Main Server: 'classes/main_server.md'
@@ -45,11 +53,13 @@ nav:
     - Remote Play: 'classes/remote_play.md'
     - Remote Storage: 'classes/remote_storage.md'
     - Screenshots: 'classes/screenshots.md'
+    - Timeline: 'classes/timeline.md'
     - UGC: 'classes/ugc.md'
     - User: 'classes/user.md'
     - User Stats: 'classes/user_stats.md'
     - Utils: 'classes/utils.md'
     - Video: 'classes/video.md'
+
   - Tutorials:
     - Achievement Icons: 'tutorials/achievement_icons.md'
     - Authentication: 'tutorials/authentication.md'
@@ -70,39 +80,46 @@ nav:
     - Stats and Achievements: 'tutorials/stats_achievements.md'
     - Voice: 'tutorials/voice.md'
     - Workshop: 'tutorials/workshop.md'
+
   - External Resources: 'tutorials/external.md'
+
   - Common Issues: 'tutorials/common_issues.md'
+
   - Games Using GodotSteam:
-    - 0 to 9 Games (2): 'games/games-0-9.md'
-    - A Games (10): 'games/games-a.md'
-    - B Games (13): 'games/games-b.md'
-    - C Games (17): 'games/games-c.md'
-    - D Games (13): 'games/games-d.md'
-    - E Games (3): 'games/games-e.md'
-    - F Games (8): 'games/games-f.md'
-    - G Games (11): 'games/games-g.md'
-    - H Games (9): 'games/games-h.md'
-    - I Games (8): 'games/games-i.md'
-    - J Games (3): 'games/games-j.md'
-    - K Games (8): 'games/games-k.md'
-    - L Games (10): 'games/games-l.md'
-    - M Games (10): 'games/games-m.md'
-    - N Games (3): 'games/games-n.md'
-    - O Games (2): 'games/games-o.md'
-    - P Games (17): 'games/games-p.md'
-    - Q Games (0): 'games/games-q.md'
-    - R Games (11): 'games/games-r.md'
-    - S Games (34): 'games/games-s.md'
-    - T Games (16): 'games/games-t.md'
-    - U Games (7): 'games/games-u.md'
-    - V Games (2): 'games/games-v.md'
-    - W Games (8): 'games/games-w.md'
-    - X Games (4): 'games/games-x.md'
-    - Y Games (1): 'games/games-y.md'
-    - Z Games (0): 'games/games-z.md'
-  - Skillet: 'projects/skillet.md'
-  - To-Do: 'https://github.com/orgs/GodotSteam/projects/3'
-  - Change-Logs:
+    - 0 to 9 Games: 'games/games-0-9.md'
+    - A Games: 'games/games-a.md'
+    - B Games: 'games/games-b.md'
+    - C Games: 'games/games-c.md'
+    - D Games: 'games/games-d.md'
+    - E Games: 'games/games-e.md'
+    - F Games: 'games/games-f.md'
+    - G Games: 'games/games-g.md'
+    - H Games: 'games/games-h.md'
+    - I Games: 'games/games-i.md'
+    - J Games: 'games/games-j.md'
+    - K Games: 'games/games-k.md'
+    - L Games: 'games/games-l.md'
+    - M Games: 'games/games-m.md'
+    - N Games: 'games/games-n.md'
+    - O Games: 'games/games-o.md'
+    - P Games: 'games/games-p.md'
+    - Q Games: 'games/games-q.md'
+    - R Games: 'games/games-r.md'
+    - S Games: 'games/games-s.md'
+    - T Games: 'games/games-t.md'
+    - U Games: 'games/games-u.md'
+    - V Games: 'games/games-v.md'
+    - W Games: 'games/games-w.md'
+    - X Games: 'games/games-x.md'
+    - Y Games: 'games/games-y.md'
+    - Z Games: 'games/games-z.md'
+
+  - Projects:
+    - Components: 'projects/components.md'
+    - Skillet: 'projects/skillet.md'
+    - To-Do: 'https://github.com/orgs/GodotSteam/projects/3'
+
+  - Changes:
     - Godot 4.x: 'changelog/godot4.md'
     - Godot 3.x: 'changelog/godot3.md'
     - Godot 2.x: 'changelog/godot2.md'
@@ -113,40 +130,42 @@ nav:
     - Server 4.x: 'changelog/server4.md'
     - Server GDExtension: 'changelog/server_gdextension.md'
     - Server GDNative: 'changelog/server_gdnative.md'
+
   - Contributors:
     - Contributing: 'contribute/rules.md'
     - Contributor List: 'contribute/contributors.md'
     - Donating: 'contribute/donations.md'
+
+
+#################################################
+# Theme and extra
+#################################################
 theme:
-  name: material
   favicon: assets/images/favicon.png
-  logo: assets/images/inverted-logo.png
+  features:
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - announce.dismiss
+    - content.code.copy
+    - content.code.select
+  font:
+    text: Roboto
+    code: Roboto Mono
   highlightjs: true
   hljs_languages:
     - gdscript
+  icon:
+    repo: fontawesome/brands/github
+  language: en
+  logo: assets/images/logo-outlined.png
+  name: material
   palette:
     scheme: slate
     primary: custom
-plugins:
-  - search
-markdown_extensions:
-  - attr_list
-  - md_in_html
-  - admonition
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.highlight:
-      pygments_lang_class: true
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - tables
+
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -157,5 +176,69 @@ extra:
       link: https://twitter.com/coaguco
     - icon: fontawesome/solid/paper-plane
       link: mailto:hello@godotsteam.com
+
+
+#################################################
+# Plug-in and Extensions
+#################################################
+plugins:
+  - search
+  - badges
+
+  - blog:
+      blog_toc: true
+      archive_date_format: MMMM yyyy
+      pagination_per_page: 5
+#      archive_pagination_per_page: 10
+
+  - social:
+      cards_layout_options:
+        background_color: "#424242"
+        logo: docs/assets/images/godotsteam-icon.png
+
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
+      categories:
+        - categories
+        - tags
+
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
+
+
 extra_css:
   - assets/stylesheets/extra.css

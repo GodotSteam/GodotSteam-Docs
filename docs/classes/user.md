@@ -124,7 +124,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 !!! function "getAvailableVoice()"
 	Checks to see if there is captured audio data available from [getVoice](#getvoice), and gets the size of the data.
 
-	Most applications will only use compressed data and should ignore the other parameters, which exist primarily for backwards compatibility. See [getVoice](#getVoice) for further explanation of "uncompressed" data.
+	Most applications will only use compressed data and should ignore the other parameters, which exist primarily for backwards compatibility. See [getVoice](#getvoice) for further explanation of "uncompressed" data.
 
 	See [Steam Voice](https://partner.steamgames.com/doc/features/voice){ target="_blank" } for more information.
 
@@ -157,7 +157,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 	This should be called after requesting an encrypted app ticket with [requestEncryptedAppTicket](#requestencryptedappticket) and receiving the [encrypted_app_ticket_response](#encrypted_app_ticket_response) call result.
 
-	You should then pass this encrypted ticket to your secure servers to be decrypted using your secret key using [decryptTicket](#decryptticket)
+	You should then pass this encrypted ticket to your secure servers to be decrypted using your secret key.
 
 	**Returns:** dictionary
 
@@ -210,7 +210,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 !!! function "getVoice()"
 	Read captured audio data from the microphone buffer.
 
-	The compressed data can be transmitted by your application and decoded back into raw audio data using DecompressVoice on the other side. The compressed data provided is in an arbitrary format and is not meant to be played directly.
+	The compressed data can be transmitted by your application and decoded back into raw audio data using [decompressVoice](#decompressvoice) on the other side. The compressed data provided is in an arbitrary format and is not meant to be played directly.
 
 	This should be called once per frame, and at worst no more than four times a second to keep the microphone input delay as low as possible. Calling this any less may result in gaps in the returned stream.
 
@@ -236,7 +236,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 !!! function "getVoiceOptimalSampleRate()"
 	Gets the native sample rate of the Steam voice decoder.
 
-	Using this sample rate for [decompressVoice](#decompressVoice) will perform the least CPU processing. However, the final audio quality will depend on how well the audio device (and/or your application's audio output SDK) deals with lower sample rates. You may find that you get the best audio output quality when you ignore this function and use the native sample rate of your audio output device, which is usually 48000 or 44100.
+	Using this sample rate for [decompressVoice](#decompressvoice) will perform the least CPU processing. However, the final audio quality will depend on how well the audio device (and/or your application's audio output SDK) deals with lower sample rates. You may find that you get the best audio output quality when you ignore this function and use the native sample rate of your audio output device, which is usually 48000 or 44100.
 
 	See [Steam Voice](https://partner.steamgames.com/doc/features/voice){ target="_blank" } for more information.
 

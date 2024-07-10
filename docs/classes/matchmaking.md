@@ -146,8 +146,6 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 	* flags (uint32)
 	* last_played (uint32)
 
-	**Note:** You must call [getFavoriteGameCount](#getfavoritegamecount) before calling this. This is already used in GodotSteam's implementation, however.
-
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmaking#GetFavoriteGame){ .md-button .md-button--store target="_blank" }
 
@@ -250,7 +248,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 !!! function "inviteUserToLobby( ```uint64_t``` steam_lobby_id, ```uint64_t``` steam_id_invitee )"
 	Invite another user to the lobby.
 
-	If the specified user clicks the join link, a [join_requested](#join_requested) callback will be posted if the user is in-game, or if the game isn't running yet then the game will be automatically launched with the command line parameter ```+connect_lobby <64-bit lobby Steam ID>``` instead.
+	If the specified user clicks the join link, a [join_requested](friends.md#join_requested) callback will be posted if the user is in-game, or if the game isn't running yet then the game will be automatically launched with the command line parameter ```+connect_lobby <64-bit lobby Steam ID>``` instead.
 
 	**Returns:** bool
 

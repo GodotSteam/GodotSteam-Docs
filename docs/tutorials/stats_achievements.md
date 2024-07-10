@@ -6,7 +6,7 @@ At some point you may want to save statistics to Steam's database and / or use t
 	* [User Stats class](../classes/user_stats.md)
 		* [requestCurrentStats()](../classes/user_stats.md#requestcurrentstats)
 		* [getAchievement()](../classes/user_stats.md#getachievement)
-		* [setAchievement()](../classes/user_stats.md#setschievement)
+		* [setAchievement()](../classes/user_stats.md#setachievement)
 		* [setStatFloat()](../classes/user_stats.md#setstatfloat)
 		* [setStatInt()](../classes/user_stats.md#setstatint)
 		* [storeStats()](../classes/user_stats.md#storestats)

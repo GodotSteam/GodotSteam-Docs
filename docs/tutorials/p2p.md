@@ -384,11 +384,11 @@ func _on_p2p_session_connect_fail(steam_id: int, session_error: int) -> void:
 
 	# Else if connection timed out
 	elif session_error == 4:
-		print("WARNING: Session failure with %s: connection timed out % steam_id)
+		print("WARNING: Session failure with %s: connection timed out" % steam_id)
 
 	# Else if unused
 	elif session_error == 5:
-		print("WARNING: Session failure with %s: unused % steam_id)
+		print("WARNING: Session failure with %s: unused" % steam_id)
 
 	# Else no known error
 	else:

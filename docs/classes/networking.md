@@ -97,7 +97,7 @@ Networking functions for making connections and sending data between clients, tr
 ### getAvailableP2PPacketSize
 
 !!! function "getAvailableP2PPacketSize( ```int``` channel )"
-	Calls [IsP2PPacketAvailable](https://partner.steamgames.com/doc/api/ISteamNetworking#IsP2PPacketAvailable){ target="\_blank" } under the hood, returns the size of the available packet or zero if there is no such packet.
+	Calls [isP2PPacketAvailable](https://partner.steamgames.com/doc/api/ISteamNetworking#IsP2PPacketAvailable){ target="\_blank" } under the hood, returns the size of the available packet or zero if there is no such packet.
 
 	**Returns:** uint32_t
 
@@ -108,7 +108,7 @@ Networking functions for making connections and sending data between clients, tr
 
 	This call is not blocking, and will return false if no data is available.
 
-	Before calling this you should have called [getAvailableP2PPacketSize](#getavailablep2ppacketsize) / [isP2PPacketAvailable](#isp2ppacketavailable).
+	Before calling this you should have called [getAvailableP2PPacketSize](#getavailablep2ppacketsize).
 
 	**Returns:** dictionary
 

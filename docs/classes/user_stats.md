@@ -15,7 +15,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	Attaches a piece of user generated content the current user's entry on a leaderboard.
 
-	This content could be a replay of the user achieving the score or a ghost to race against. The attached handle will be available when the entry is retrieved and can be accessed by other users using [getDownloadedLeaderboardEntry](#getdownloadedleaderboardentry). To create and download user generated content see the documentation for the Steam Workshop.
+	This content could be a replay of the user achieving the score or a ghost to race against. The attached handle will be available when the entry is retrieved and can be accessed by other users using the [leaderboard_scores_downloaded](#leaderboard_scores_downloaded) callback. To create and download user generated content see the documentation for the Steam Workshop.
 
 	Once attached, the content will be available even if the underlying Cloud file is changed or deleted by the user.
 
@@ -426,7 +426,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	You must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this.
 
-	To receive stats for other users use [getUserStat](#getuserstat).
+	To receive stats for other users use [getUserStatFloat](#getuserstatfloat).
 
 	**Returns:** float
 
@@ -440,7 +440,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	You must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this.
 
-	To receive stats for other users use [getUserStat](#getuserstat).
+	To receive stats for other users use [getUserStatInt](#getuserstatint).
 
 	**Returns:** int
 
@@ -495,7 +495,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	You must have called [requestUserStats](#requestuserstats) and it needs to return successfully via its callback prior to calling this.
 
-	The equivalent function for the local user is [getStat](#getstat).
+	The equivalent function for the local user is [getStatFloat](#getstatfloat).
 
 	**Returns:** float.
 
@@ -509,7 +509,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	You must have called [requestUserStats](#requestuserstats) and it needs to return successfully via its callback prior to calling this.
 
-	The equivalent function for the local user is [getStat](#getstat).
+	The equivalent function for the local user is [getStatInt](#getstatint).
 
 	**Returns:** int
 
@@ -521,7 +521,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 !!! function "indicateAchievementProgress( ```string``` name, ```int``` currentProgress, ```int``` maxProgress )"
 	Shows the user a pop-up notification with the current progress of an achievement.
 
-	Calling this function will not set the progress or unlock the achievement, the game must do that manually by calling [setStat](#setstats).
+	Calling this function will not set the progress or unlock the achievement, the game must do that manually by calling [setStatInt](#setstatint) or [setStatFloat](#setstatfloat).
 
 	Triggers a [user_stats_stored](#user_stats_stored) callback.
 
@@ -843,6 +843,21 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#NumberOfCurrentPlayers_t){ .md-button .md-button--store target="_blank" }
 
+### user_achievement_icon_fetched
+
+!!! function "user_achievement_icon_fetched"
+	Result of an achievement icon that has been fetched.
+
+	**Returns:**
+
+	* game_id (int)
+	* achievement_name (string)
+	* achieved (bool)
+	* icon_handle (int)
+
+	---
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#UserAchievementIconFetched_t){ .md-button .md-button--store target="_blank" }
+
 ### user_achievement_stored
 
 !!! function "user_achievement_stored"
@@ -850,7 +865,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	**Returns:**
 
-	* game (uint64_t)
+	* game_id (uint64_t)
 	* group_achieve (bool)
 	* name (string)
 	* current_progress (uint32_t)
@@ -866,7 +881,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	**Returns:**
 
-	* game (uint64_t)
+	* game_id (uint64_t)
 	* result (uint32_t)
 	* user (uint64_t) as Steam ID
 
@@ -880,7 +895,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 	
 	**Returns:**
 
-	* game (uint64_t)
+	* game_id (uint64_t)
 	* result (uint32_t)
 
 	---

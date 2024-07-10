@@ -113,6 +113,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2330090/SKIP/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Slide
+<figure class="game" markdown>
+[![SKIP](https://steamcdn-a.akamaihd.net/steam/apps/3028840/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3028840/Slide/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3028840/Slide/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/fenekito){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/fenekitodev/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+
 ## Snowyland
 <figure class="game" markdown>
 [![Snowyland](https://steamcdn-a.akamaihd.net/steam/apps/1731730/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1731730/Snowyland/){ target="\_blank" }
@@ -175,6 +185,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Spirit of Shotgun](https://steamcdn-a.akamaihd.net/steam/apps/1910230/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1910230/Spirit_of_Shotgun/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1910230/Spirit_of_Shotgun/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+## Spotless
+<figure class="game" markdown>
+[![Spotless](https://steamcdn-a.akamaihd.net/steam/apps/2638610/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2638610/Spotless/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2638610/Spotless/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://x.com/GhostieGamesDev){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/ghostiegamesdev/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Square 'n' Balls

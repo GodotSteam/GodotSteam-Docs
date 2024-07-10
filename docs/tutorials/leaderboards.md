@@ -4,11 +4,11 @@ This tutorial will cover setting up leaderboards for your games. I will add more
 
 ??? guide "Relevant GodotSteam classes and functions"
 	* [User Stats class](../classes/user_stats.md)
-		* [findLeaderboard()](../classes/user_stats.md#findLeaderboard)
-		* [uploadLeaderboardScore()](../classes/user_stats.md#uploadLeaderboardScore)
-		* [setLeaderboardDetailsMax()](../classes/user_stats.md#setLeaderboardDetailsMax)
-		* [downloadLeaderboardEntries()](../classes/user_stats.md#downloadLeaderboardEntries)
-		* [downloadLeaderboardEntriesForUsers()](../classes/user_stats.md#downloadLeaderboardEntriesForUsers)
+		* [findLeaderboard()](../classes/user_stats.md#findleaderboard)
+		* [uploadLeaderboardScore()](../classes/user_stats.md#uploadleaderboardscore)
+		* [setLeaderboardDetailsMax()](../classes/user_stats.md#setleaderboarddetailsmax)
+		* [downloadLeaderboardEntries()](../classes/user_stats.md#downloadleaderboardentries)
+		* [downloadLeaderboardEntriesForUsers()](../classes/user_stats.md#downloadleaderboardentriesforusers)
 
 {==
 ## Set Up

@@ -74,7 +74,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https
 !!! function "deserializeResult( ```PoolIntArray``` buffer )"
 	Deserializes a result set and verifies the signature bytes.
 
-	This call has a potential soft-failure mode where the handle status is set to 27. [getResultItems](#getresultitems) will still succeed in this mode. The "expired" result could indicate that the data may be out of date - not just due to timed expiration (one hour), but also because one of the items in the result set may have been traded or consumed since the result set was generated. You could compare the timestamp from [getResultTimestamp](#getresulttimestamp) to [getServerRealTime](#getserverrealtime) to determine how old the data is. You could simply ignore the "expired" result code and continue as normal, or you could request the player with expired data to send an updated result set.
+	This call has a potential soft-failure mode where the handle status is set to 27. [getResultItems](#getresultitems) will still succeed in this mode. The "expired" result could indicate that the data may be out of date - not just due to timed expiration (one hour), but also because one of the items in the result set may have been traded or consumed since the result set was generated. You could compare the timestamp from [getResultTimestamp](#getresulttimestamp) to [getServerRealTime](utils.md#getserverrealtime) to determine how old the data is. You could simply ignore the "expired" result code and continue as normal, or you could request the player with expired data to send an updated result set.
 
 	You should call [checkResultSteamID](#checkresultsteamid) on the result handle when it completes to verify that a remote player is not pretending to have a different user's inventory.
 
@@ -281,7 +281,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https
 !!! function "getResultTimestamp( ```int32``` this_inventory_handle )"
 	Gets the server time at which the result was generated.
 
-	You can compare this value against [getServerRealTime](#getserverrealtime) to determine the age of the result.
+	You can compare this value against [getServerRealTime](utils.md#getserverrealtime) to determine the age of the result.
 
 	**Returns:** uint32
 
@@ -328,7 +328,6 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https
 	Request the list of "eligible" promo items that can be manually granted to the given user.
 
 	These are promo items of type "manual" that won't be granted automatically. An example usage of this is an item that becomes available every week.
-	After calling this function you need to call [getEligiblePromoItemDefinitionIDs](#geteligiblepromoitemdefinitionids) to get the actual item definition ids.
 
 	Triggers a [inventory_eligible_promo_item](#inventory_eligible_promo_item) callback.
 
@@ -356,7 +355,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https
 
 	A result set can be serialized on the local client, transmitted to other players via your game networking, and deserialized by the remote players. This is a secure way of preventing hackers from lying about posessing rare/high-value items. Serializes a result set with signature bytes to an output buffer. The size of a serialized result depends on the number items which are being serialized. When securely transmitting items to other players, it is recommended to use [getItemsByID](#getitemsbyid) first to create a minimal result set.
 
-	**Returns:** bool
+	**Returns:** String
 
 	**Note:** If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally stored ID.
 
@@ -422,7 +421,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https
 ### startUpdateProperties
 
 !!! function "startUpdateProperties()"
-	Starts a transaction request to update dynamic properties on items for the current user. This call is rate-limited by user, so property modifications should be batched as much as possible (e.g. at the end of a map or game session). After calling [setProperty](#setproperty) or [removeProperty](#removeproperty) for all the items that you want to modify, you will need to call [submitUpdateProperties](#submitupdateproperties) to send the request to the Steam servers. A [inventory_result_ready](#inventory_result_ready) callback will be fired with the results of the operation.
+	Starts a transaction request to update dynamic properties on items for the current user. This call is rate-limited by user, so property modifications should be batched as much as possible (e.g. at the end of a map or game session). After calling [setPropertyInt](#setpropertyint), [setPropertyfloat](#setpropertyfloat),[setPropertyBool](#setpropertybool), [setPropertyString](#setpropertystring), or [removeProperty](#removeproperty) for all the items that you want to modify, you will need to call [submitUpdateProperties](#submitupdateproperties) to send the request to the Steam servers. A [inventory_result_ready](#inventory_result_ready) callback will be fired with the results of the operation.
 
 	**Returns:** void
 

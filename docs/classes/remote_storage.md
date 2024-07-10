@@ -145,7 +145,7 @@ Provides functions for reading, writing, and accessing files which can be stored
 !!! function "fileWriteAsync( ```string``` file, ```PoolByteArray``` data )"
 	Creates a new file and asynchronously writes the raw byte data to the Steam Cloud, and then closes the file. If the target file already exists, it is overwritten.
 
-	Triggers a [file_write_async_complete](#_file_write_async_complete) call result.
+	Triggers a [file_write_async_complete](#file_write_async_complete) call result.
 
 	**Returns:** void
 

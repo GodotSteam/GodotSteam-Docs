@@ -31,6 +31,21 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@snarklestudios){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Death by Deduction
+<figure class="game" markdown>
+[![Death by Deduction](https://steamcdn-a.akamaihd.net/steam/apps/3002650/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3002650/Death_by_Deduction/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3002650/Death_by_Deduction/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+## Depths Of Deception
+<figure class="game" markdown>
+
+[![Depths Of Deception](https://steamcdn-a.akamaihd.net/steam/apps/2894130/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2894130/Depths_Of_Deception/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2894130/Depths_Of_Deception/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Devastating Fog
 <figure class="game" markdown>
 [![Devastating Fog](https://steamcdn-a.akamaihd.net/steam/apps/2764650/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2764650/Devastating_Fog/){ target="\_blank" }
