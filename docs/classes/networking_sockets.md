@@ -64,12 +64,30 @@ These are part of the newer networking classes; not to be confused with the [old
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#CloseListenSocket){ .md-button .md-button--store target="_blank" }
 
+### connectByIPAddress
+
+!!! function "connectByIPAddress( ```string``` ip_address_with_port, ```array``` options )"
+	Creates a connection and begins talking to a "server" over UDP at the given IPv4 or IPv6 address.  The remote host must be listening with a matching call to [createListenSocketIP](#createlistensocketip) on the specified port.
+
+	A [network_connection_status_changed](#network_connection_status_changed) callback will be triggered when we start connecting, and then another one on either timeout or successful connection.
+
+	If the server does not have any identity configured, then their network address will be the only identity in use.  Or, the network host may provide a platform-specific identity with or without a valid certificate to authenticate that identity.  (These details will be contained in the [network_connection_status_changed](#network_connection_status_changed).)  It's up to your application to decide whether to allow the connection.
+
+	By default, all connections will get basic encryption sufficient to prevent casual eavesdropping.  But note that without certificates (or a shared secret distributed through some other out-of-band mechanism), you don't have any way of knowing who is actually on the other end, and thus are vulnerable to man-in-the-middle attacks.
+
+	If you need to set any initial config options, pass them here.
+
+	**Returns:** uint32
+
+	---
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#ConnectByIPAddress){ .md-button .md-button--store target="_blank" }
+
 ### connectP2P
 
 !!! function "connectP2P( ```uint64_t``` remote_steam_id, ```int``` port, ```array``` options )"
 	Begin connecting to a server that is identified using a platform-specific identifier. This uses the default rendezvous service, which depends on the platform and library configuration. (E.g. on Steam, it goes through the steam backend.) The traffic is relayed over the Steam Datagram Relay network.
 
-	If you use this, you probably want to call [initRelayNetworkAccess](#initrelaynetworkaccess) when your app initializes. If you need to set any initial config options, pass them here.
+	If you use this, you probably want to call [initRelayNetworkAccess](networking_utils.md#initrelaynetworkaccess) when your app initializes. If you need to set any initial config options, pass them here.
 
 	[See SteamNetworkingConfigValue_t](https://partner.steamgames.com/doc/api/steamnetworkingtypes#SteamNetworkingConfigValue_t){ target="_blank" } for more about why this is preferable to setting the options "immediately" after creation.
 
@@ -314,7 +332,7 @@ These are part of the newer networking classes; not to be confused with the [old
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#GetConnectionName){ .md-button .md-button--store target="_blank" }
 
-### GetConnectionRealTimeStatus
+### getConnectionRealTimeStatus
 
 !!! function "GetConnectionRealTimeStatus( ```uint32``` connection_handle, ```int``` lanes, ```bool``` get_status )" 
 	Returns a small set of information about the real-time state of the connection and the queue status of each lane.
@@ -583,7 +601,22 @@ These are part of the newer networking classes; not to be confused with the [old
 !!! function "sendMessages( ```int``` messages, ```PoolByteArray``` data, ```uint32``` connection_handle, ```int``` flags )"
 	Send one or more messages without copying the message payload. This is the most efficient way to send messages.
 
-	**Returns:** void
+	**Returns:** array
+
+	The array contains the **message number** that was assigned to the message if sending was successful.  If sending failed, then a negative [Result value](main.md#result) is placed into the array.  For example, the array will hold
+	RESULT_INVALID_STATE / -k_EResultInvalidState if the connection was in an invalid state.
+
+	Possible failure codes include:
+
+	- [RESULT_INVALID_PARAM](main.md#result) / k_EResultInvalidParam
+		- invalid connection handle, or the individual message is too big; more than MAX_STEAM_PACKET_SIZE / k_cbMaxSteamNetworkingSocketsMessageSizeSend or 512 * 1024.
+	- [RESULT_INVALID_STATE](main.md#result) / k_EResultInvalidState
+		- Connection is in an invalid state
+	- [RESULT_NO_CONNECTION](main.md#result) / k_EResultNoConnection
+		- Connection has ended
+	- [RESULT_IGNORED](main.md#result) / k_EResultIgnored
+		- You used k_nSteamNetworkingSend_NoDelay, and the message was dropped because we were not ready to send it.
+	- [RESULT_LIMIT_EXCEEDED](main.md#result) / k_EResultLimitExceeded
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#SendMessages){ .md-button .md-button--store target="_blank" }

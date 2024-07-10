@@ -14,6 +14,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- ArchiRocksTech
 	- Avencherus
 	- blaze-the-star
+	- brogan89
 	- cbinners
 	- ClockRate
 	- ConnorBP
@@ -23,6 +24,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- EIREXE
 	- endaye
 	- Fischer96
+	- Foxushka
 	- freehuntx
 	- Frostings
 	- greenfox1505
@@ -32,6 +34,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- hhyyrylainen
 	- Hung-Fan Liu
 	- IlyaStuurFedorov
+	- ismailgamedev
 	- JDare
 	- jeremybeier
 	- Jupither
@@ -86,6 +89,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Hung-Fan Liu
 	- InkRobert
 	- isikdos
+	- Jakub Nowak
 	- [Jayden Sipe](https://jaydensipe.github.io/){ target="\_blank" }
 	- Jeroen Heijmans
 	- Jez

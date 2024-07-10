@@ -356,8 +356,6 @@ Access information about individual users and interact with the [Steam Overlay]
 
 	**Note:** Large Steam groups cannot be iterated by the local user.
 
-	**Note:** If you're getting the number of lobby members then you should use [getNumLobbyMembers](#getnumlobbymembers) instead.
-
  	---
  	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamFriends#GetFriendCountFromSource){ .md-button .md-button--store target="_blank" }
 
@@ -385,10 +383,9 @@ Access information about individual users and interact with the [Steam Overlay]
 	* game_port (uint16)
 	* id (int) as App ID
 	* ip (string)
-	* lobby (uint64_t **or** String)
-		* If the friend is in a lobby visible to the user, it will be an int of the Lobby ID
-		* Otherwise, it will be a String equal to: `"No valid lobby"`
+	* game_port (uint16)
 	* query_port (uint16)
+	* lobby (uint64_t)
 	
 	**Note:** The dictionary will be empty if the friend is offline or not playing a game.
 
@@ -536,11 +533,11 @@ Access information about individual users and interact with the [Steam Overlay]
 
  	---
  	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamFriends#GetFriendsGroupMembersCount){ .md-button .md-button--store target="_blank" }
-		
+
 ### getFriendsGroupMembersList
 
 !!! function "```array``` getFriendsGroupMembersList( ```int16``` friend_group, ```int``` member_count )"
-	Gets the number of friends in the given friends group. If fewer friends exist than requested those positions' Steam IDs will be invalid. You must call [getFriendsGroupMembersCount](#getfrendsgroupmemberscount) before calling this to set up the **member_count** argument with an appropriate size!
+	Gets the number of friends in the given friends group. If fewer friends exist than requested those positions' Steam IDs will be invalid.
 
 	**Returns:** array
 
@@ -795,7 +792,7 @@ Access information about individual users and interact with the [Steam Overlay]
 ### hasEquippedProfileItem
 
 !!! function "hasEquippedProfileItem( ```uint64_t``` steam_id, ```int``` item_type )"
-	After calling [requestEquippedProfileItems](#requestEquippedProfileItems), you can use this function to check if the user has a type of profile item equipped or not.
+	After calling [requestEquippedProfileItems](#requestequippedprofileitems), you can use this function to check if the user has a type of profile item equipped or not.
 
 	**Returns:** void
 
@@ -908,9 +905,9 @@ Access information about individual users and interact with the [Steam Overlay]
 
 	May additionally trigger the following callbacks:
 
-	* [connect_chat_join](#connect_chat_join)
-	* [connect_chat_leave](#connect_chat_leave)
-	* [connect_clan_chat_message](#connect_clan_chat_message)
+	* [connected_chat_join](#connected_chat_join)
+	* [connected_chat_join](#connected_chat_join)
+	* [connected_clan_chat_message](#connected_clan_chat_message)
 
 	**Returns:** void
 
@@ -971,6 +968,16 @@ Access information about individual users and interact with the [Steam Overlay]
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamFriends#RequestClanOfficerList){ .md-button .md-button--store target="_blank" }
+
+### requestEquippedProfileItems
+
+!!! function "requestEquippedProfileItems( ```uint64_t``` steam_id )"
+	Requests the list of equipped Steam Community profile items for the given user from Steam.
+
+	**Returns:** void
+
+	---
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamFriends#RequestEquippedProfileItems){ .md-button .md-button--store target="_blank" }
 
 ### requestFriendRichPresence
 

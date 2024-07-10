@@ -178,8 +178,11 @@ Networking API intended to make it easy to port non-connection-oriented code to 
 	**Returns:**
 
 	* reason (int)
+	* remote_steam_id (int)
+	* connection_state (int)
+	* debug_message (string)
 
-	The returned integer will map to these enums: [NetworkingConnectionEnd](#networkconnectionend)
+	The returned reason integer will map to these enums: [NetworkingConnectionEnd](#networkingconnectionend)
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SteamNetworkingMessagesSessionFailed_t){ .md-button .md-button--store target="_blank" }

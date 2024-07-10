@@ -114,9 +114,9 @@ Miscellaneous networking utilities for checking the local networking environment
 ### getLocalPingLocation
 
 !!! function "getLocalPingLocation()"
-	Return location info for the current host. Returns the approximate age of the data, in seconds, or -1 if no data is available. You can use this value in [checkPingDataUpToDate](#checkpinguptodate).
+	Return location info for the current host. Returns the approximate age of the data, in seconds, or -1 if no data is available. You can use this value in [checkPingDataUpToDate](#checkpingdatauptodate).
 
-	It takes a few seconds to initialize access to the relay network. If you call this very soon after calling [initializeRelayNetworkAccess](#initializerelaynetworkaccess), the data may not be available yet.
+	It takes a few seconds to initialize access to the relay network. If you call this very soon after calling [initRelayNetworkAccess](#initrelaynetworkaccess), the data may not be available yet.
 
 	This always return the most up-to-date information we have available right now, even if we are in the middle of re-calculating ping times.
 
@@ -269,7 +269,7 @@ Miscellaneous networking utilities for checking the local networking environment
 !!! function "setConfigValue( ```int``` setting, ```int``` scope_type, ```int``` data_type )"
 	Set a configuration value.
 
-	Currently not enabled. Use [setConnectionConfigValue](#setconnectionconfigvalue) or [setGlobalConfigValue](#setglobalconfigvalue) functions.
+	Currently not enabled. Use [setConnectionConfigValueFloat](#setconnectionconfigvaluefloat), [setConnectionConfigValueInt32](#setconnectionconfigvalueint32), [setConnectionConfigValueString](#setconnectionconfigvaluestring), [setGlobalConfigValueFloat](#setglobalconfigvaluefloat), [setGlobalConfigValueInt32](#setglobalconfigvalueint32), or [setGlobalConfigValueString](#setglobalconfigvaluestring) functions.
 
 	**Returns:** bool
 

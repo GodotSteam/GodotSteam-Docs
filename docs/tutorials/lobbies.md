@@ -124,7 +124,7 @@ Next we'll set up our lobby creation functions. You'll probably want to connect 
 func create_lobby() -> void:
 	# Make sure a lobby is not already set
 	if lobby_id == 0:
-		Steam.createLobby(Steam.LOBBY_TYPE_PUBLIC, lobby_max_members)
+		Steam.createLobby(Steam.LOBBY_TYPE_PUBLIC, lobby_members_max)
 ```
 
 In this example we have `createLobby()` using our variables and enum. The first variables covers the type of lobby; we are using a public lobby open to all. There are, of course, four settings in total you can use:

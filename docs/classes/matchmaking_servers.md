@@ -51,7 +51,7 @@ Functions which provide access to the game server browser. See [Game Servers](h
 !!! function "getServerDetails( ```int``` server, ```uint64_t``` server_list_request = 0 )"
 	Get the details of a given server in the list.
 
-	You can get the valid range of index values by calling [getServerCount](#getservercount). You will also receive index values in [server_responded](#server_responded) callbacks.
+	You can get the valid range of index values by calling [getServerCount](#getservercount). You will also receive index values in [request_server_list_server_responded](#request_server_list_server_responded) callbacks.
 
 	You can pass a *server_list_request* handle or, if you do not, it will use the last internally stored one.
 
@@ -122,7 +122,7 @@ Functions which provide access to the game server browser. See [Game Servers](h
 !!! function "refreshQuery( ```uint64_t``` server_list_request = 0 )"
 	Ping every server in your list again but don't update the list of servers.
 
-	The query callback installed when the server list was requested will be used again to post notifications and [refresh_complete](#refresh_complete) will be called again, so the callback must remain valid until it completes or the request is released with [releaseRequest](#releaserequest).
+	The query callback installed when the server list was requested will be used again to post notifications and [request_server_list_refresh_complete](#request_server_list_refresh_complete) will be called again, so the callback must remain valid until it completes or the request is released with [releaseRequest](#releaserequest).
 
 	You can pass a *server_list_request* handle or, if you do not, it will use the last internally stored one.
 

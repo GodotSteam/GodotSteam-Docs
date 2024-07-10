@@ -4,6 +4,23 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ---
 
+## Version 4.9
+
+- Added: missing `user_achievement_icon_fetched` callback
+- Added: new functions and enums to Apps class
+- Added: new Steam Timeline class functions, enums, and constants
+- Added: new functions to UGC class
+- Added: new enum BetaBranchFlags
+- Added: new value NETWORKING_CONFIG_IP_LOCAL_HOST_ALLOW_WITHOUT_AUTH for NetworkingConfigValue enum
+- Changed: updated for Steamworks SDK 1.60
+- Changed: `network_messages_session_failed` callback now returns the Steam ID associated with the user whose session failed
+- Changed: `global_stats_received` had call result name change under-the-hood, does not affect anything
+- Changed: `sendMessages()` now returns the message result
+- Changed: `getQueryUGCResult()` now passes back additional value total_files_size
+- Changed: enum RemoteStoragePlatform now cast as uint32_t, fixes Rust compatibility, ***thanks to GreenFox***
+- Changed: `item_installed` signal now returns additional data - legacy_content and manifest_id
+- Fixed: incorrect signal name for `inventory_definition_update`, ***thanks to Foxushka***
+
 ## Version 4.8
 
 - Added: Steam Matchmaking response handlers, ***thanks to jeremybeier***

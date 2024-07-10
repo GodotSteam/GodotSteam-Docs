@@ -57,9 +57,9 @@ Functions to allow game servers to set stats and achievements on players.
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GetUserStat){ .md-button .md-button--store target="_blank" }
 
-### serverRequestUserStats
+### requestUserStats
 
-!!! function "serverRequestUserStats( ```uint64_t``` steam_id )"
+!!! function "requestUserStats( ```uint64_t``` steam_id )"
 	Asynchronously downloads stats and achievements for the specified user from the server. These stats will only be auto-updated for clients currently playing on the server. For other users you'll need to call this function again to refresh any data.
 
 	Triggers a [stats_received](#stats_received) call result.
@@ -72,14 +72,14 @@ Functions to allow game servers to set stats and achievements on players.
 ### setUserAchievement
 
 !!! function "setUserAchievement( ```uint64_t``` steam_id, ```string``` name )"
-	Unlocks an achievement for the specified user. You must have called [serverRequestUserStats](#serverrequestuserstats) and it needs to return successfully via its callback prior to calling this! This call only modifies Steam's in-memory state and is very cheap. To submit the stats to the server you must call [storeUserStats](#storeuserstats).
+	Unlocks an achievement for the specified user. You must have called [requestUserStats](#requestuserstats) and it needs to return successfully via its callback prior to calling this! This call only modifies Steam's in-memory state and is very cheap. To submit the stats to the server you must call [storeUserStats](#storeuserstats).
 
 	**Returns:** bool
 
 	This function returns **true** upon success if all of the following conditions are met; otherwise, **false**.
 	
 	- The specified achievement "API Name" exists in App Admin on the Steamworks website, and the changes are published.
-	- [serverRequestUserStats](#serverrequestuserstats) has completed and successfully returned its callback for the specified user.
+	- [requestUserStats](#requestuserstats) has completed and successfully returned its callback for the specified user.
 	- The stat must be allowed to be set by game server.
 
 	**Note:** These updates will work only on stats that game servers are allowed to edit. If the "Set By" field for this stat is "Official GS" then only game servers that have been declared as officially controlled by you will be able to set it. To do this you must set the IP range of your official servers in the [Dedicated Servers](https://partner.steamgames.com/apps/dedicatedservers/){ target="_blank" } section of App Admin.
@@ -90,14 +90,14 @@ Functions to allow game servers to set stats and achievements on players.
 ### setUserStatFloat
 
 !!! function "setUserStatFloat( ```uint64_t``` steam_id, ```string``` name, ```float``` stat )"
-	Sets / updates the value of a given stat for the specified user. You must have called [serverRequestUserStats](#serverrequestuserstats) and it needs to return successfully via its callback prior to calling this. This call only modifies Steam's in-memory state and is very cheap. To submit the stats to the server you must call [storeUserStats](#storeuserstats).
+	Sets / updates the value of a given stat for the specified user. You must have called [requestUserStats](#requestuserstats) and it needs to return successfully via its callback prior to calling this. This call only modifies Steam's in-memory state and is very cheap. To submit the stats to the server you must call [storeUserStats](#storeuserstats).
 
 	**Returns:** bool
 
 	This function returns **true** upon success if all of the following conditions are met; otherwise, **false**.
 	
 	- The specified stat exists in App Admin on the Steamworks website, and the changes are published.
-	- [serverRequestUserStats](#serverrequestuserstats) has completed and successfully returned its callback for the specified user.
+	- [requestUserStats](#requestuserstats) has completed and successfully returned its callback for the specified user.
 	- The type passed to this function must match the type listed in the App Admin panel of the Steamworks website.
 	- The stat must be allowed to be set by game server.
 
@@ -109,14 +109,14 @@ Functions to allow game servers to set stats and achievements on players.
 ### setUserStatInt()
 
 !!! function "setUserStatInt( ```uint64_t``` steam_id, ```string``` name, ```int``` stat )"
-	Sets / updates the value of a given stat for the specified user. You must have called [serverRequestUserStats](#serverrequestuserstats) and it needs to return successfully via its callback prior to calling this. This call only modifies Steam's in-memory state and is very cheap. To submit the stats to the server you must call [storeUserStats](#storeuserstats).
+	Sets / updates the value of a given stat for the specified user. You must have called [requestUserStats](#requestuserstats) and it needs to return successfully via its callback prior to calling this. This call only modifies Steam's in-memory state and is very cheap. To submit the stats to the server you must call [storeUserStats](#storeuserstats).
 
 	**Returns:** bool
 
 	This function returns **true** upon success if all of the following conditions are met; otherwise, **false**.
 	
 	- The specified stat exists in App Admin on the Steamworks website, and the changes are published.
-	- [serverRequestUserStats](#serverrequestuserstats) has completed and successfully returned its callback for the specified user.
+	- [requestUserStats](#requestuserstats) has completed and successfully returned its callback for the specified user.
 	- The type passed to this function must match the type listed in the App Admin panel of the Steamworks website.
 	- The stat must be allowed to be set by game server.
 
@@ -140,14 +140,14 @@ Functions to allow game servers to set stats and achievements on players.
 ### updateUserAvgRateStat
 
 !!! function "updateUserAvgRateStat( ```uint64_t``` steam_id, ```string``` name, ```float``` this_session, ```double``` session_length )"
-	Updates an AVGRATE stat with new values for the specified user. You must have called [serverRequestUserStats](#serverrequestuserstats) and it needs to return successfully via its callback prior to calling this. This call only modifies Steam's in-memory state and is very cheap. To submit the stats to the server you must call [storeUserStats](#storeuserstats).
+	Updates an AVGRATE stat with new values for the specified user. You must have called [requestUserStats](#requestuserstats) and it needs to return successfully via its callback prior to calling this. This call only modifies Steam's in-memory state and is very cheap. To submit the stats to the server you must call [storeUserStats](#storeuserstats).
 
 	**Returns:** bool
 
 	This function returns **true** upon success if all of the following conditions are met; otherwise, **false**.
 
 	- The specified stat exists in App Admin on the Steamworks website, and the changes are published.
-	- [serverRequestUserStats](#serverrequestuserstats) has completed and successfully returned its callback for the specified user.
+	- [requestUserStats](#requestuserstats) has completed and successfully returned its callback for the specified user.
 	- The type must be AVGRATE in the Steamworks Partner backend.
 	- The stat must be allowed to be set by game server.
 
@@ -165,7 +165,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 !!! function "stats_received"
 	Result when getting the latests stats and achievements for a user from the server.
 
-	Emits signal in response to function [serverRequestUserStats](#serverrequestuserstats).
+	Emits signal in response to function [requestUserStats](#requestuserstats).
 
 	**Returns:**
 

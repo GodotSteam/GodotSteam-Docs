@@ -20,7 +20,6 @@ Exposes a wide range of information and actions for applications and [Downloada
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#BIsTimedTrial){ .md-button .md-button--store target="_blank" }
 
-
 ### getAppInstallDir
 
 !!! function "getAppInstallDir( ```uint32_t``` app_id )"

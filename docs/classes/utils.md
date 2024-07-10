@@ -157,7 +157,7 @@
 !!! function "getSteamUILanguage()"
 	Returns the language the steam client is running in.
 
-	You probably want [getCurrentGameLanguage](#getcurrentgamelanguage) instead, this should only be used in very special cases.
+	You probably want [getCurrentGameLanguage](apps.md#getcurrentgamelanguage) instead, this should only be used in very special cases.
 
 	For a full list of languages see [Supported Languages](https://partner.steamgames.com/doc/store/localization#supported_languages){ target="_blank" }.
 
@@ -388,7 +388,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### floating_gamepad_text_input_dismissed
 
 !!! function "floating_gamepad_text_input_dismissed"
-	Called when the floating keyboard invoked from [showFloatingGamepadTextInput](#showFloatingGamepadTextInput) has been closed.
+	Called when the floating keyboard invoked from [showFloatingGamepadTextInput](#showfloatinggamepadtextinput) has been closed.
 
 	**Returns:** nothing
 

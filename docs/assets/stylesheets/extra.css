@@ -77,10 +77,20 @@ h4 > span.twemoji,
 label span.twemoji {
 	margin-right: .5em;
 }
+h3 {
+	font-weight: bold !important;
+}
+.md-tabs {
+  background-color: #478CBF !important;
+}
 .critic {
 	background-color: #35688E !important;
 	margin: 3em 0 2em !important;
 }
+.md-typeset .critic.block h2 {
+	font-weight: bold;
+}
+
 .md-typeset blockquote {
 	 color: #478CBF;
 }
@@ -488,10 +498,17 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	background: none !important;
 	box-shadow: none !important;
 }
+.md-nav__title[for="__toc"] {
+	background-color: #478CBF !important;
+	padding: 5px 15px;
+}
 .grid {
 	display: inline-block;
 	width: 45%;
 	vertical-align: top;
+}
+.grid.full {
+	width: 100% !important;
 }
 .contrib-grid {
 	text-align: center;
@@ -1246,7 +1263,7 @@ figure.game a span.twemoji {
 	display:none;
 }
 .md-typeset table:not([class]) tbody tr:hover {
-  background-color:#478CBF;
+  background-color: #478CBF;
   box-shadow:0 .05rem 0 var(--md-default-bg-color) inset
 }
 /* Syntax highlight tweaks */
@@ -1264,4 +1281,131 @@ figure.game a span.twemoji {
 {
     margin-right: .5rem;
   }
+}
+.md-nav__container a.md-nav__link {
+	margin-left: -10px !important;
+	background-color: #478CBF !important;
+	color: #ffffff !important;
+	padding: 5px 10px !important;
+}
+label.md-nav__link,
+.md-nav__link--active {
+	margin-left: -10px;
+	background-color: #478CBF !important;
+	color: #ffffff !important;
+	padding: 5px 10px;
+}
+label.md-nav__link,
+.md-nav__link--active:hover {
+	color: #ffffff !important;
+}
+.md-nav__link--active:hover,
+.md-nav__container a.md-nav__link:hover {
+	color: #ffffff !important;
+	background-color: #35688E !important;
+}
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+	box-shadow: none;
+}
+aside {
+	background-color: #35688E !important;
+}
+aside.md-source-file {
+	padding: 10px 25px 5px;
+}
+.metadata {
+    list-style:none;
+    padding:0;
+    margin:0;
+    margin-bottom: 15px;
+    color: #999;
+    font-size:0.85em;
+}
+.metadata.page-metadata .contributors-text{
+    margin-right:5px
+}
+body[dir=rtl] .metadata.page-metadata .contributors-text{
+    margin-right:0;
+    margin-left:5px
+}
+.page-metadata .contributors{
+    display:inline-block;
+    list-style:none;
+    margin:0!important;
+    padding:0!important
+}
+.page-metadata .contributors li{
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    padding:0
+}
+
+.md-nav__link svg {
+	margin-top: 3%;
+	vertical-align: middle;
+	height: .8em;
+}
+
+.intro {
+	background-color: #424242;
+}
+
+.md-typeset .grid.cards > ul > li {
+	background: #272727;
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child {
+	padding: 1em 0 0;
+	font-size: 1.3em;
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child strong {
+	margin-left: 0.5em;
+}
+
+.badge.tag-steam .title,
+.badge.tag-godot .title {
+	width: 40px;
+	text-align: center;
+}
+
+.badge.tag-steam .title {
+  background-color: #424242;
+}
+.badge.tag-godot .title {
+	background-color: #478CBF;
+}
+.badge.tag-steam .value,
+.badge.tag-godot .value {
+	width: 55px;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+}
+.badge.tag-steam .value {
+  background-color: #e0e0e0;
+}
+.badge.tag-godot .value {
+	background-color: #a8daff;
+}
+.md-button--downloads {
+	width: 100%;
+	background-color: #478CBF;
+	color: #ffffff !important;
+	text-decoration: none !important;
+	border-color: #478CBF !important;
+}
+.md-button--downloads:hover {
+	background-color: #35688E !important;
+	border-color: #35688E !important;
+}
+.md-clipboard:hover {
+	color: #478CBF !important;
+}
+.toclink {
+	font-weight: bold;
+}
+.md-nav--primary .md-nav__item > .md-nav__link:hover {
+	color: white !important;
 }

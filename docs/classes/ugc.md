@@ -515,7 +515,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://pa
 
 	**Returns:** string
 
-	**Note:** This must only be called with the handle obtained from a successful [ugc_query_completed](#ugcquerycompleted) call result.
+	**Note:** This must only be called with the handle obtained from a successful [ugc_query_completed](#ugc_query_completed) call result.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCPreviewURL){ .md-button .md-button--store target="_blank" }
@@ -1169,7 +1169,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://pa
 !!! function "unsubscribeItem( ```uint64_t``` published_file_id )"
 	Unsubscribe from a workshop item. This will result in the item being removed after the game quits.
 
-	Triggers a [unsubscribe_item](#unsubscribe_item) callback.
+	Triggers a [unsubscribe_item](remote_storage.md#unsubscribe_item) callback.
 
 	**Returns:** void
 

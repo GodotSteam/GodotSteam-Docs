@@ -15,7 +15,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 
 	If **allow_responses_to_modify** is true then any response to your requests using this cookie container may add new cookies to the container which may be transmitted with future requests. Otherwise, if it's false then only cookies you explicitly set will be sent.
 
-	You can associate the cookie container with a http request by using [setHTTPRequestCookieContainer](#sethttprequestcookiecontainer), and you can set a cookie using [setCookie](#setcookie). Don't forget to free the container when you're done with it to prevent leaking memory by calling [releaseCookieContainer](#releasecookiecontainer)!
+	You can associate the cookie container with a http request by using [setHTTPRequestCookieContainer](#sethttprequestcookiecontainer), and you can set a cookie using [setHTTPCookie](#sethttpcookie). Don't forget to free the container when you're done with it to prevent leaking memory by calling [releaseCookieContainer](#releasecookiecontainer)!
 	
 	**Returns:** uint32_t
 
@@ -26,7 +26,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 
 !!! function "createHTTPRequest( ```int``` request_method, ```string``` absolute_url )"
 
-	Initializes a new HTTP request. Requires the method such as GET or POST and the absolute URL for the request. Both http and https are supported, so this string must start with "http://" or "https://" and should look like "http://store.steampowered.com/app/10/" or similar. This call returns a handle that you can use to make further calls to setup and then send the HTTP request with [sendHTTPRequest](#senthttprequest) or [sendHTTPRequestAndStreamResponse](#sendhttprequestandstreamresponse). Don't forget to free the HTTP request when you're done with it to prevent leaking memory by calling [releaseHTTPRequest](#releasehttprequest).
+	Initializes a new HTTP request. Requires the method such as GET or POST and the absolute URL for the request. Both http and https are supported, so this string must start with "http://" or "https://" and should look like "http://store.steampowered.com/app/10/" or similar. This call returns a handle that you can use to make further calls to setup and then send the HTTP request with [sendHTTPRequest](#sendhttprequest) or [sendHTTPRequestAndStreamResponse](#sendhttprequestandstreamresponse). Don't forget to free the HTTP request when you're done with it to prevent leaking memory by calling [releaseHTTPRequest](#releasehttprequest).
 
 	**Returns:** uint32_t
 
@@ -67,7 +67,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 
 !!! function "getHTTPResponseBodyData( ```uint32``` request_handle, ```uint32``` buffer_size )"
 	Gets the body data from an HTTP response. This must be called after the HTTP request has completed and returned the HTTP response via the [http_request_completed](#http_request_completed) call result associated with this request handle. You should first call [getHTTPResponseBodySize](#gethttpresponsebodysize) or use the **body_size** variable provided in the call result, you can then allocate a buffer with that size to pass into this function.
-	This is only for HTTP requests which were sent with [sendHTTPRequest](#sendhttprequest). Use [getHTTPStreamingResponseBodyData](#gethttpstreamingresponsebodydata) if you're using streaming HTTP requests via [sendHTTPRequestAndStreamResponse](#sendhttprequestandstreamreponse).
+	This is only for HTTP requests which were sent with [sendHTTPRequest](#sendhttprequest). Use [getHTTPStreamingResponseBodyData](#gethttpstreamingresponsebodydata) if you're using streaming HTTP requests via [sendHTTPRequestAndStreamResponse](#sendhttprequestandstreamresponse).
 
 	**Returns:** PoolByteArray
 
@@ -137,7 +137,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### releaseHTTPRequest
 
 !!! function "releaseHTTPRequest( ```uint32``` request_handle )"
-	Releases an HTTP request handle, freeing the memory allocated within Steam. You _must_ call this when you are done using each [HTTPRequestHandle](#httprequesthandle) that you obtained via [createHTTPRequest](#createhttprequest)!
+	Releases an HTTP request handle, freeing the memory allocated within Steam. You _must_ call this when you are done using each  HTTP request handle that you obtained via [createHTTPRequest](#createhttprequest)!
 
 	**Returns:** bool
 
@@ -251,7 +251,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 !!! function "setHTTPRequestNetworkActivityTimeout( ```uint32``` request_handle, ```uint32``` timeout_seconds )"
 	Set the timeout in seconds for the HTTP request.
 
-	The default timeout is 60 seconds if you don't call this. This can get bumped everytime we get more data. Use [setHTTPRequestAbsoluteTimeoutMS](#sethttprequestabsolutetimeout) if you need a strict maximum timeout.
+	The default timeout is 60 seconds if you don't call this. This can get bumped everytime we get more data. Use [setHTTPRequestAbsoluteTimeoutMS](#sethttprequestabsolutetimeoutms) if you need a strict maximum timeout.
 
 	**Returns:** bool
 

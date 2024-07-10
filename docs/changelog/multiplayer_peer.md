@@ -4,6 +4,15 @@ A history of all changes to [the ***multiplayer-peer*** branch.](https://github.
 
 ---
 
+## Version 4.9 Changes
+
+- Added: get_lobby_id() function to expose the lobby ID
+- Removed: Mono flags from GA files
+
+## Version 4.8
+
+Version bump to sync with 4.x branch
+
 ## Version 4.7
 
 - Added: in-editor docs, ***thanks to grossqx***
