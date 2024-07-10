@@ -12,13 +12,13 @@ To the point, GodotSteam does not have a C# version currently. I am in the proce
 ## Workarounds
 ==}
 
-Thankfully, for those of you using the GDExtension version of the project, there is a lovely project that will help!  Thanks to **LauraWebdev**, we have this cool plug-in: [GodtoSteam C# Bindings](https://github.com/LauraWebdev/GodotSteam_CSharpBindings){ target="_blank" }
+Thankfully, for those of you using the GDExtension version of the project, there is a lovely project that will help!  Thanks to **LauraWebdev**, we have this cool plug-in: [GodtoSteam C# Bindings](https://github.com/LauraWebdev/GodotSteam_CSharpBindings){ target="\_blank" }
 
 While I am still trying to get up to speed on all this C# business, you can read more about how it works on Github. There are even some excellent pieces of example code!
 
 ### SteamMultiplayerPeer
 
-If you are using [SteamMultiplayerPeer](https://github.com/expressobits/steam-multiplayer-peer) for networking you can use a C# wrapper. It's currently not merged but there is a [PR](https://github.com/expressobits/steam-multiplayer-peer/pull/21/commits/9ed16cdc27fcd21c9cd28dbe652c55f79b1b3a82). You can put that script anyway in your Godot project and it will work with the rest of the C# bindings above.
+If you are using [SteamMultiplayerPeer](https://github.com/expressobits/steam-multiplayer-peer) for networking you can use a C# wrapper. It's currently not merged but there is a [PR](https://github.com/expressobits/steam-multiplayer-peer/pull/21/commits/9ed16cdc27fcd21c9cd28dbe652c55f79b1b3a82). You can put the script anywhere in your Godot project and it will work with the rest of the C# bindings above.
 
 {==
 ## Other Resources
