@@ -194,7 +194,7 @@ plugins:
   - social:
       cards_layout_options:
         background_color: "#424242"
-        logo: docs/assets/images/godotsteam-icon.png
+        logo: docs/assets/images/logo-outlined.png
 
   - rss:
       match_path: blog/posts/.*
