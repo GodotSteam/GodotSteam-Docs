@@ -20,6 +20,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/961190/Abstract_Hell/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Achieve-Its
+<figure class="game" markdown>
+[![Achieve-Its](https://steamcdn-a.akamaihd.net/steam/apps/3050660/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3050660/AchieveIts/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3050660/AchieveIts/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/davidarthurpaul){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@Lacozy){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## The Adventure of NAYU
 <figure class="game" markdown>
 [![The Adventure of NAYU](https://steamcdn-a.akamaihd.net/steam/apps/1476340/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1476340/The_Adventure_of_NAYU/){ target="\_blank" }
