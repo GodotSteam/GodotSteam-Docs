@@ -51,6 +51,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-itch-io: ](https://sergicollado.itch.io/ride-with-the-reaper){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Riff Raff
+<figure class="game" markdown>
+[![Riff Raff](https://steamcdn-a.akamaihd.net/steam/apps/2800900/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2800900/Rift_Riff/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2800900/Rift_Riff/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://riftriff.com/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Robo Legend
 <figure class="game" markdown>
 [![Robo Legend](https://steamcdn-a.akamaihd.net/steam/apps/1992480/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1992480/Robo_Legend/){ target="\_blank" }

@@ -155,7 +155,7 @@ LEADERBOARD_DATA_REQUEST_USERS				| 3			| Used internally by Steam, **do not use
 After you request leaderboard entries, you should receive a `leaderboard_scores_downloaded` callback which will trigger our `_on_leaderboard_scores_downloaded()` function. That function should look similar to this:
 
 ```gdscript
-func _on_leaderboard_scores_downloaded(message: string, this_leaderboard_handle: int, result: Array) -> void:
+func _on_leaderboard_scores_downloaded(message: String, this_leaderboard_handle: int, result: Array) -> void:
 	print("Scores downloaded message: %s" % message)
 
 	# Save this for later leaderboard interactions, if you want
