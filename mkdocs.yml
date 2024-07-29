@@ -177,6 +177,8 @@ extra:
       link: https://twitter.com/coaguco
     - icon: fontawesome/solid/paper-plane
       link: mailto:hello@godotsteam.com
+    - icon: fontawesome/brands/twitch
+      link: https://www.twitch.tv/godotsteam
 
 
 #################################################
