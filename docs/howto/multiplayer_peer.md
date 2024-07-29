@@ -179,7 +179,7 @@ export LD_PRELOAD=~/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so;
 export LD_PRELOAD=~/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so;
 ```
 
-This can be done in an .sh file that runs these before running your executable. This issue may not arise for all users and can also just be done by the user in a terminal separately. You can [read more about it in our Linux Caveats doc](../tutorials/linux_caveats.md).
+This can be done in an .sh file that runs these before running your executable. This issue may not arise for all users and can also just be done by the user in a terminal separately. You can [read more about it in our Linux Caveats doc](../issues/linux_issues.md).
 
 {==
 ### :octicons-thumbsup-16: Good to Go

@@ -34,7 +34,7 @@ Or, similar to Godot itself, you can download the pre-compiled editor / template
 
 For the most part, the pre-compiles and plug-ins are functionally the same. One major difference is the plug-ins have no in-editor documentation.
 
-GDNative, however, has no access to Steam constants or enums, an issue with Rich Presence on Windows, others which are documented in the [Common Issues section.](/issues/common_issues/#gdnative-quirks)
+GDNative, however, has no access to Steam constants or enums, an issue with Rich Presence on Windows, others which are documented in the [Common Issues section.](issues/common_issues.md/#gdnative)
 
 ### Master / Dedicated Servers
 
@@ -190,7 +190,7 @@ Pre-compiled editors and template zips are self-contained and have everything yo
 ## Compile It Yourself
 ==}
 
-Roll up your sleeves and build your own versions of GodotSteam. More instructions are available on each branch's readme page or up above [under the ***Compiling*** tab.](howto/modules,md)
+Roll up your sleeves and build your own versions of GodotSteam. More instructions are available on each branch's readme page or up above [under the ***Compiling*** tab.](howto/modules.md)
 
 <div class="grid full cards" markdown>
 

@@ -58,7 +58,7 @@ There is no way to access Steam's enums or contants in GDNative.
 
 Rich presence will work fine on all operating systems _except_ Windows.  It will occasionally make the value the key on random calls.
 
-[Thankfully, Furcifer shared some code to help with this issue. You can read more about it in the Rich Presence tutorial!](rich_presence.md)
+[Thankfully, Furcifer shared some code to help with this issue. You can read more about it in the Rich Presence tutorial!](../tutorials/rich_presence.md)
 
 ### Getting Lobbies
 
