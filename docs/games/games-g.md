@@ -81,6 +81,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/redkoibox){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Gun Crate Raccoon
+<figure class="game" markdown>
+[![Gun Crate Raccoon](https://steamcdn-a.akamaihd.net/steam/apps/3001620/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3001620/Gun_Crate_Raccoon/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3001620/Gun_Crate_Raccoon/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/mynameiswhm){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 <!-- Gunmetal Gothic -->
 ## Gunmetal Gothic
 <figure class="game" markdown>
