@@ -12,18 +12,15 @@ This short tutorial is all about rich presence for your game; specifically the g
 ## Setting It Up
 ==}
 
-First you will need to set up your localization file in the Steamworks back-end. Obviously without this step the rich presence text does not really work as it has nothing to reference. You will need to set up your text file like this:
+First you will need to set up your localization file in the Steamworks back-end. Obviously without this step the rich presence text does not really work as it has nothing to reference. You will need to set up your text file like this and save it as `.vdf` file:
 
 ```gdscript
 "lang" {
-	"language" {
-		"english" {
-			"tokens" {
-				"#something1"	"Rich presence string"
-				"#something2"	"Another string"
-				"#something_with_input"	"{something: %input%"
-			}
-		}
+	"Language" "english"
+	"Tokens" {
+		"#something1"   "Rich presence string"
+		"#something2"   "Another string"
+		"#something_with_input"	"{#something%something_number%}: %score%"
 	}
 }
 ```

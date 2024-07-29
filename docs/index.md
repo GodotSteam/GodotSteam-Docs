@@ -2,7 +2,47 @@
 
 # GodotSteam Documentation
 
-Welcome! On this site you can find everything from tutorials to resources to lists of functions and signals, and even games currently using GodotSteam.  If you find any mistakes or have some additions to make, [please check out our documentation repository here.](https://github.com/GodotSteam/GodotSteam-Docs){ target="\_blank" }
+Welcome!  If you find any mistakes or have some additions to make, [please check out our documentation repository here.](https://github.com/GodotSteam/GodotSteam-Docs){ target="\_blank" }
+
+{==
+## Where Do I Start?
+==}
+
+### Fastest Start
+
+#### GDExtension / GDNative Plug-ins
+
+Most users will want to install the GDExtension or GDNative plug-in to quickly use GodotSteam. To get started:
+
+- [x] Open your Godot editor
+- [x] Click on the 'Assets' tab
+- [x] Search for 'GodotSteam'
+- [x] If using Godot 4.x, install the GDExtension 4.1 / 4.2 plug-in
+- [ ] If using Godot 3.x, install the GDNative plug-in
+
+You may need to restart your browser but the plug-in does not need to be enabled manually.  Check by calling the **Steam** class.
+
+#### Pre-Compiled Bundles
+
+Or, similar to Godot itself, you can download the pre-compiled editor / template versions from Github; [which are linked below.](#download-it)
+
+- [x] Download the Pre-Compile Editor / Template bundle below
+- [x] Extract it
+- [x] Run the editor
+
+### Differences Between Pre-Compiles and Plug-ings
+
+For the most part, the pre-compiles and plug-ins are functionally the same. One major difference is the plug-ins have no in-editor documentation.
+
+GDNative, however, has no access to Steam constants or enums, an issue with Rich Presence on Windows, others which are documented in the [Common Issues section.](/issues/common_issues/#gdnative-quirks)
+
+### Master / Dedicated Servers
+
+The GodotSteam Server builds are meant for master or player-hosted / run dedicated servers and have the same available options as the standard GodotSteam builds: pre-compiled editor / template bundles, GDExtension plug-in, and GDNative plug-in.  The server builds have Steam server classes and very few of the standard classes.
+
+### C-Sharp Users
+
+As there are currently no .NET-enabled versions of GodotSteam, you will want to [download the GodotSteam C# Bindings from LauraWebdev.](https://github.com/LauraWebdev/GodotSteam_CSharpBindings){ target="\_blank" }  [Also check out ChickenSoft for other C# tools and tips.](https://chickensoft.games/){ target="\_blank" }
 
 {==
 ## Download It
@@ -15,7 +55,7 @@ Pre-compiled editors and template zips are self-contained and have everything yo
 <div class="grid full cards" markdown>
 
 - 	:simple-godotengine:{ .godotsteam .lg .middle } __Godot 4.1.x / Godot 4.2.x Versions__
-
+	
 	---
 
 	<span class="badge-group">
@@ -81,7 +121,7 @@ Pre-compiled editors and template zips are self-contained and have everything yo
 	[ :octicons-plug-24: Server GDExtension](https://godotengine.org/asset-library/asset/2218){ .md-button .md-button--downloads target="\_blank" }
 
 - 	:simple-godotengine:{ .godotsteam .lg .middle } __Godot 3.5.3 Versions__
-
+	
 	---
 
 	<span class="badge-group">

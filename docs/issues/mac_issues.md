@@ -1,6 +1,6 @@
-# Tutorials - Mac Caveats
+# Issues - Mac Platform
 
-There are issues some users might run into on macOS when using Godot and GodotSteam. This tutorial page is here to cover them.
+There are issues some users might run into on macOS when using Godot and GodotSteam.
 
 {==
 ## M1 and M2 Machine Issues

@@ -66,6 +66,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-godotengine: 'GodotSteam C# Bindings' by taw.moe](https://github.com/LauraWebdev/GodotSteam_CSharpBindings){ .md-button .md-button--resource target="\_blank" }
 
+[ :chicken: ChickenSoft C# Tools ](https://chickensoft.games/){ .md-button .md-button--resource target="\_blank" }
+
 {==
 ## Other Steam APIs For Godot
 ==}
