@@ -37,6 +37,7 @@ You should be able to create it online or with a Photoshop plug-in. Unfortunatel
 ==}
 
 Second, you need to add the following files to your app Contents:
+
 - `libsteam_api.dylib` to `{your game}.app/Contents/MacOS` folder
 - `libgodotsteam.framework` to `{your game}.app/Contents/Frameworks` folder
 

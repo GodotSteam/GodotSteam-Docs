@@ -48,6 +48,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- mashumafi
 	- MichaelBelousov
 	- mikix
+	- mynameiswhm
 	- [Oleksii Zaremskyi](https://savelife.in.ua/){ target="\_blank" }
 	- pixelriot
 	- polyrain
