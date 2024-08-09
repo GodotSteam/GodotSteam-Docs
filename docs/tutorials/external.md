@@ -40,6 +40,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-steam: Valve's Official Steamworks SDK Site](https://partner.steamgames.com/doc/sdk){ .md-button .md-button--resource target="\_blank" }
 
+[ :simple-steam: 'Guide To Graphical Assets On  Your Steam Store Page' by Ann Li ](https://noblesteedgames.com/blog/a-handy-guide-to-graphical-assets-on-your-steam-store-page/){ .md-button .md-button--resource target="\_blank" }
+
 {==
 ## Debugging Resources
 ==}
