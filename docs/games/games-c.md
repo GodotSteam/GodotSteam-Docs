@@ -6,6 +6,17 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
+## Canvas of Kings
+<figure class="game" markdown>
+[![Canvas of Kings](https://steamcdn-a.akamaihd.net/steam/apps/2498570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2498570/Canvas_of_Kings/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2498570/Canvas_of_Kings/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/MightofMe){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/mightofmerchants/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/JTBS2xWedR){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-tiktok: ](https://www.tiktok.com/@mightofmerchants){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Captain Collision
 <figure class="game" markdown>
 [![Captain Collision](https://steamcdn-a.akamaihd.net/steam/apps/1693380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1693380/Captain_Collision/){ target="\_blank" }
@@ -23,15 +34,11 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCXeHZLFETcYHjZdJe-b8gUA){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-## Canvas of Kings
+## Capybara
 <figure class="game" markdown>
-[![Canvas of Kings](https://steamcdn-a.akamaihd.net/steam/apps/2498570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2498570/Canvas_of_Kings/){ target="\_blank" }
+[![Capybara](https://steamcdn-a.akamaihd.net/steam/apps/3118290/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3118290/Capybara/){ target="\_blank" }
 
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2498570/Canvas_of_Kings/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/MightofMe){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-instagram: ](https://www.instagram.com/mightofmerchants/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-discord: ](https://discord.gg/JTBS2xWedR){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-tiktok: ](https://www.tiktok.com/@mightofmerchants){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3118290/Capybara/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Card Fuse
