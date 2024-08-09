@@ -162,7 +162,7 @@ h3 {
 	text-decoration: none !important;
 }
 .md-typeset .md-button {
-	padding: 1em 2em !important;
+	padding: 1em 1em !important;
 }
 .admonition a.md-button {
 	text-align: center !important;
@@ -501,6 +501,12 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 .md-nav__title[for="__toc"] {
 	background-color: #478CBF !important;
 	padding: 5px 15px;
+}
+.md-typeset .grid {
+  grid-gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,16rem),1fr));
+  margin: 1em 0;
 }
 .grid {
 	display: inline-block;
@@ -1408,4 +1414,9 @@ body[dir=rtl] .metadata.page-metadata .contributors-text{
 }
 .md-nav--primary .md-nav__item > .md-nav__link:hover {
 	color: white !important;
+}
+span.version {
+	width: 5em;
+	font-size: 1.3em;
+	font-weight: bold;
 }

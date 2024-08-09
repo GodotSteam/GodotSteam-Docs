@@ -934,6 +934,13 @@ Functions to create, consume, and interact with the [Steam Workshop](https://pa
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#SetRankedByTrendDays){ .md-button .md-button--store target="_blank" }
 
+### setRequiredGameVersions
+
+!!! function "setRequiredGameVersions( ```uint64_t``` query_handle, ```String``` game_branch_min, ```String``` game_branch_max)"
+	An empty string for either parameter means that it will match any version on that end of the range. This will only be applied if the actual content has been changed.
+	
+	**Returns:** bool
+
 ### setReturnAdditionalPreviews
 
 !!! function "setReturnAdditionalPreviews( ```uint64_t``` query_handle, ```bool``` return_additional_previews )"

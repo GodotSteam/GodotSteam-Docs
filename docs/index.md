@@ -8,11 +8,12 @@ Welcome!  If you find any mistakes or have some additions to make, [please check
 ## Where Do I Start?
 ==}
 
-### Fastest Start
 
-#### GDExtension / GDNative Plug-ins
+### In Most Cases
 
-Most users will want to install the GDExtension or GDNative plug-in to quickly use GodotSteam. To get started:
+Most users will just want to [install the GDExtension or GDNative plug-in to quickly use the standard GodotSteam.](https://godotengine.org/asset-library/asset/2445){ target="\_blank" }
+
+**To get started**:
 
 - [x] Open your Godot editor
 - [x] Click on the 'Assets' tab
@@ -20,45 +21,26 @@ Most users will want to install the GDExtension or GDNative plug-in to quickly u
 - [x] If using Godot 4.x, install the GDExtension 4.1 / 4.2 plug-in
 - [ ] If using Godot 3.x, install the GDNative plug-in
 
-You may need to restart your browser but the plug-in does not need to be enabled manually.  Check by calling the **Steam** class.
+You may need to restart your editor but the _plug-in does not need to be enabled_ manually.  Check by calling the **Steam** class.
 
-#### Pre-Compiled Bundles
+**However, you might be trying to make something else.** If so, keep reading to find out about other versions of GodotSteam.
 
-Or, similar to Godot itself, you can download the pre-compiled editor / template versions from Github; [which are linked below.](#download-it)
+---
 
-- [x] Download the Pre-Compile Editor / Template bundle below
-- [x] Extract it
-- [x] Run the editor
+### What Are You Making?
 
-### Differences Between Pre-Compiles and Plug-ings
-
-For the most part, the pre-compiles and plug-ins are functionally the same. One major difference is the plug-ins have no in-editor documentation.
-
-GDNative, however, has no access to Steam constants or enums, an issue with Rich Presence on Windows, others which are documented in the [Common Issues section.](issues/common_issues.md/#gdnative)
-
-### Master / Dedicated Servers
-
-The GodotSteam Server builds are meant for master or player-hosted / run dedicated servers and have the same available options as the standard GodotSteam builds: pre-compiled editor / template bundles, GDExtension plug-in, and GDNative plug-in.  The server builds have Steam server classes and very few of the standard classes.
-
-### C-Sharp Users
-
-As there are currently no .NET-enabled versions of GodotSteam, you will want to [download the GodotSteam C# Bindings from LauraWebdev.](https://github.com/LauraWebdev/GodotSteam_CSharpBindings){ target="\_blank" }  [Also check out ChickenSoft for other C# tools and tips.](https://chickensoft.games/){ target="\_blank" }
-
-{==
-## Download It
-==}
-
-These downloads contain everything you need to start working with Steamworks. [Previous versions of all branches can be found on Github.](https://github.com/GodotSteam/GodotSteam/releases){ target="\_blank" }
-
-Pre-compiled editors and template zips are self-contained and have everything you need to work with GodotSteam. The GDNative and GDExtension plug-ins require [an official version of Godot Engine.](https://godotengine.org){ target="\_blank" }
+Depending on what your end goals are, you will probably want to use a different version of GodotSteam. See which of the following best fits your project.
 
 <div class="grid full cards" markdown>
 
-- 	:simple-godotengine:{ .godotsteam .lg .middle } __Godot 4.1.x / Godot 4.2.x Versions__
+- 	:material-gamepad-variant:{ .godotsteam .lg .middle } __Singleplayer or Steam Networking__
+
+	You are making a singleplayer game or a multiplayer game that solely uses Steam's networking classes. You also might be just checking things out. You will want the standard GodotSteam version.
 	
 	---
 
 	<span class="badge-group">
+		<span class="badge badge-normal version">Godot 4</span>
 		<span class="badge badge-normal tag-godot">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
@@ -85,46 +67,11 @@ Pre-compiled editors and template zips are self-contained and have everything yo
 	[ :fontawesome-brands-github: Pre-compiled Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.9){ .md-button .md-button--downloads target="\_blank" }
 
 	[:octicons-plug-24: GDExtension | Godot Asset Library](https://godotengine.org/asset-library/asset/2445){ .md-button .md-button--downloads target="\_blank" }
+ 
+ 	---
 
-	[ :fontawesome-solid-people-group: MultiplayerPeer Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.9-mp){ .md-button .md-button--downloads target="\_blank" }
-
-- 	:simple-godotengine:{ .godotsteam .lg .middle } __Server 4.1.x / 4.2.x Versions__
-
-	---
-
-	<span class="badge-group">
-		<span class="badge badge-normal tag-godot">
-			<span class="sep">[</span>
-			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
-			<span class="sep">|</span>
-			<span class="value">4.2.2</span>
-			<span class="sep">]</span>
-		</span>
-		<span class="badge badge-normal tag-steam">
-			<span class="sep">[</span>
-			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
-			<span class="sep">|</span>
-			<span class="value">1.59</span>
-			<span class="sep">]</span>
-		</span>
-		<span class="badge badge-normal tag-steam">
-			<span class="sep">[</span>
-			<span class="title">:octicons-server-24:{ .steam title="GodotSteam Server" }</span>
-			<span class="sep">|</span>
-			<span class="value">4.3</span>
-			<span class="sep">]</span>
-		</span>
-	</span>
-
-	[ :octicons-server-24: Server Pre-Compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.3){ .md-button .md-button--downloads target="\_blank" }
-
-	[ :octicons-plug-24: Server GDExtension](https://godotengine.org/asset-library/asset/2218){ .md-button .md-button--downloads target="\_blank" }
-
-- 	:simple-godotengine:{ .godotsteam .lg .middle } __Godot 3.5.3 Versions__
-	
-	---
-
-	<span class="badge-group">
+ 	<span class="badge-group">
+ 		<span class="badge badge-normal version">Godot 3</span>
 		<span class="badge badge-normal tag-godot">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
@@ -152,11 +99,100 @@ Pre-compiled editors and template zips are self-contained and have everything yo
 
 	[ :octicons-plug-24: GDNative | Godot Asset Library](https://godotengine.org/asset-library/asset/1045){ .md-button .md-button--downloads target="\_blank" }
 
-- 	:simple-godotengine:{ .godotsteam .lg .middle } __Server 3.5.3 Versions__
+- 	:fontawesome-solid-people-group:{ .godotsteam .lg .middle } __Multiplayer Using Godot's Nodes__
+
+	You are making a multiplayer game using Godot 4's multiplayer nodes like synchronizer and spawner but you want to use Steam's networking with it. Sounds like you want the MultiplayerPeer version.
 
 	---
 
 	<span class="badge-group">
+		<span class="badge badge-normal version">Godot 4</span>
+		<span class="badge badge-normal tag-godot">
+			<span class="sep">[</span>
+			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
+			<span class="sep">|</span>
+			<span class="value">4.2.2</span>
+			<span class="sep">]</span>
+		</span>
+		<span class="badge badge-normal tag-steam">
+			<span class="sep">[</span>
+			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
+			<span class="sep">|</span>
+			<span class="value">1.60</span>
+			<span class="sep">]</span>
+		</span>
+		<span class="badge badge-normal tag-steam">
+			<span class="sep">[</span>
+			<span class="title">:simple-godotengine:{ .steam title="GodotSteam MultiplayerPeer" }</span>
+			<span class="sep">|</span>
+			<span class="value">4.9</span>
+			<span class="sep">]</span>
+		</span>
+	</span>
+
+	[ :fontawesome-solid-people-group: MultiplayerPeer Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.9-mp){ .md-button .md-button--downloads target="\_blank" }
+
+	---
+
+	[<h3>ExpressoBit's SteamMultiplayerPeer</h3>](https://github.com/expressobits/steam-multiplayer-peer){ target="\_blank" }
+
+	A separate project using Steam Sockets networking class with Godot's multiplayer nodes and available as a GDExtension.
+
+	[ :octicons-plug-24: Expresso SteamMultiplayerPeer GDExtension](https://godotengine.org/asset-library/asset/2258){ .md-button .md-button--downloads target="\_blank" }
+
+-	:simple-dotnet:{ .godotsteam .lg .middle } __C# In General__
+
+	You are making a singleplayer or multiplayer game with only Steam's networking classes or also with Godot's multiplayer nodes in C#. You also might be checking things out with C#.
+
+	Sadly, there are currently no .NET-enabled versions of GodotSteam yet. However, you can use LauraWebdev's C# bindings with any version of standard version of GodotSteam.
+
+	If you would like to help resolve this issue, we are trying to create Github Action processes to reliably build pre-compiles and templates. [Feel free to check out our existing workflows to edit in C# versions by pull request.](https://github.com/GodotSteam/GodotSteam/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-github: GodotSteam C# Bindings From LauraWebdev](https://github.com/LauraWebdev/GodotSteam_CSharpBindings){ .md-button .md-button--downloads target="\_blank" }
+
+	[ :octicons-tools-24: ChickenSoft For C# Tools and Tips](https://chickensoft.games/){ .md-button .md-button--downloads target="\_blank" }
+
+- 	:octicons-server-24:{ .godotsteam .lg .middle } __Master or Dedicated Server__
+	
+	You are making a master server that runs somewhere and players connected to it or a dedicated server that players can run themselves and other players connect to that. In that case, you will want to use the GodotSteam Server builds.
+
+	---
+
+	<span class="badge-group">
+		<span class="badge badge-normal version">Godot 4</span>
+		<span class="badge badge-normal tag-godot">
+			<span class="sep">[</span>
+			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
+			<span class="sep">|</span>
+			<span class="value">4.2.2</span>
+			<span class="sep">]</span>
+		</span>
+		<span class="badge badge-normal tag-steam">
+			<span class="sep">[</span>
+			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
+			<span class="sep">|</span>
+			<span class="value">1.60</span>
+			<span class="sep">]</span>
+		</span>
+		<span class="badge badge-normal tag-steam">
+			<span class="sep">[</span>
+			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
+			<span class="sep">|</span>
+			<span class="value">4.9</span>
+			<span class="sep">]</span>
+		</span>
+	</span>
+
+	[ :octicons-server-24: Server Pre-Compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.3){ .md-button .md-button--downloads target="\_blank" }
+
+	[ :octicons-plug-24: Server GDExtension](https://godotengine.org/asset-library/asset/2218){ .md-button .md-button--downloads target="\_blank" }
+
+	---
+
+	<span class="badge-group">
+		<span class="badge badge-normal version">Godot 3</span>
 		<span class="badge badge-normal tag-godot">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
@@ -183,8 +219,19 @@ Pre-compiled editors and template zips are self-contained and have everything yo
 	[ :octicons-server-24: Server Pre-compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.3){ .md-button .md-button--downloads target="\_blank" }
 
 	[ :octicons-plug-24: Server GDNative | Godot Asset Library](https://godotengine.org/asset-library/asset/2222){ .md-button .md-button--downloads target="\_blank" }
-
 </div>
+
+---
+
+### Differences Between Pre-Compiles and Plug-ings
+
+For the most part, the pre-compiles and plug-ins are functionally the same. One major difference is the plug-ins have no in-editor documentation.
+
+GDNative, however, has no access to Steam constants or enums, an issue with Rich Presence on Windows, others which are documented in the [Common Issues section.](issues/common_issues.md/#gdnative)
+
+[Previous versions of all branches can be found on Github.](https://github.com/GodotSteam/GodotSteam/releases){ target="\_blank" }
+
+Pre-compiled editors and template zips are self-contained and have everything you need to work with GodotSteam. The GDNative and GDExtension plug-ins require [an official version of Godot Engine.](https://godotengine.org){ target="\_blank" }
 
 {==
 ## Compile It Yourself

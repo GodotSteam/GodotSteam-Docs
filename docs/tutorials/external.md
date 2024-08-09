@@ -51,6 +51,12 @@ We have quite a few tutorials and many more in the works but the more the merrie
 [ :simple-godotengine: 'Overview of debugging tools' by Godot ](https://docs.godotengine.org/en/stable/tutorials/scripting/debug/overview_of_debugging_tools.html){ .md-button .md-button--resource target="\_blank" }
 
 {==
+## GodotSteam-related Tools
+==}
+
+[ :simple-steam: 'GodotSteamSync' by Radome Studio ](https://github.com/Radome-Studio/GodotSteamSync){ .md-button .md-button--resource target="\_blank" }
+
+{==
 ## Steam-related Godot Tools
 ==}
 
