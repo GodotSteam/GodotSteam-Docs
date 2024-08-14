@@ -511,7 +511,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://pa
 !!! function "getQueryUGCPreviewURL( ```uint64_t``` query_handle, ```uint32``` index )"
 	Retrieve the URL to the preview image of an individual workshop item after receiving a querying UGC call result.
 
-	You can use this URL to download and display the preview image instead of having to download it using the [handle_preview_file key in the return dictionary from [getQueryUGCResult](#getqueryugcresult).
+	You can use this URL to download and display the preview image instead of having to download it using the handle_preview_file key in the return dictionary from [getQueryUGCResult](#getqueryugcresult).
 
 	**Returns:** string
 
