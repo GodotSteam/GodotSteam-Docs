@@ -4,7 +4,12 @@ A history of all changes to [the ***multiplayer-peer*** branch.](https://github.
 
 ---
 
-## Version 4.9 Changes
+## Version 4.10
+
+- Changed: now using Steam Flat API, should allow compiling with MinGW
+- Changed: updated in-editor docs
+
+## Version 4.9
 
 - Added: get_lobby_id() function to expose the lobby ID
 - Removed: Mono flags from GA files
