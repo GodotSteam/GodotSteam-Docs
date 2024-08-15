@@ -99,7 +99,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 !!! function "getHTTPResponseHeaderValue( ```uint32``` request_handle, ```string``` header_name, ```uint32``` buffer_size )"
 	Gets a header value from an HTTP response. This must be called after the HTTP request has completed and returned the HTTP response via the [http_request_completed](#http_request_completed) call result associated with this request handle. You should first call [getHTTPResponseHeaderSize](#gethttpresponseheadersize) to check for the presence of the header and to get the size. You can then allocate a buffer with that size and pass it into this function. Here is a list of standard response header names on [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Response_fields){ target="\_blank" }.
 
-	**Returns:** uint8
+	**Returns:** PackedByteArray (4.x) / PoolByteArray (3.x)
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPResponseHeaderValue){ .md-button .md-button--store target="_blank" }
@@ -109,7 +109,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 !!! function "getHTTPStreamingResponseBodyData( ```uint32``` request_handle, ```uint32``` offset, ```uint32``` buffer_size )"
 	Gets the body data from a streaming HTTP response. This must be called after data is received from a streaming HTTP request via the [http_request_completed](#http_request_completed) callback associated with this request handle. Typically you'll want to allocate a buffer associated with the request handle using the Content-Length HTTP response field to receive the total size of the data when you receive the header via [http_request_headers_received](#http_request_headers_received). You can then append data to that buffer as it comes in. This is only for streaming HTTP requests which were sent with [sendHTTPRequestAndStreamResponse](#sendhttprequestandstreamresponse). Use [getHTTPResponseBodyData](#gethttpresponsebodydata) if you're using [sendHTTPRequest](#sendhttprequest).
 
-	**Returns:** uint32
+	**Returns:** PackedByteArray (4.x) / PoolByteArray (3.x)
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPStreamingResponseBodyData){ .md-button .md-button--store target="_blank" }
@@ -260,12 +260,12 @@ A small and easy to use HTTP client to send and receive data from the web.
 
 ### setHTTPRequestRawPostBody
 
-!!! function "setHTTPRequestRawPostBody( ```uint32``` request_handle, ```string``` content_type, ```uint32``` body_length )"
+!!! function "setHTTPRequestRawPostBody( ```uint32``` request_handle, ```string``` content_type, ```string``` body )"
 	Sets the body for an HTTP Post request.
 
 	Will fail and return false on a GET request, and will fail if POST params have already been set for the request. Setting this raw body makes it the only contents for the post, the **content_type** parameter will set the "content-type" header for the request to inform the server how to interpret the body.
 
-	**Returns:** uint8
+	**Returns:** bool
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestRawPostBody){ .md-button .md-button--store target="_blank" }

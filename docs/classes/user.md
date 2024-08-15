@@ -52,7 +52,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### decompressVoice
 
-!!! function "decompressVoice( ```PoolByteArray / PackedByteArray``` voice, ```uint32``` voice_size, ```uint32``` sample_rate )"
+!!! function "decompressVoice( ```PoolByteArray / PackedByteArray``` voice, ```uint32``` sample_rate )"
 	Decodes the compressed voice data returned by [getVoice](#getvoice).
 	
 	The output data is raw single-channel 16-bit PCM audio. The decoder supports any sample rate from 11025 to 48000. See [getVoiceOptimalSampleRate](#getvoiceoptimalsamplerate) for more information.

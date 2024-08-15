@@ -1,3 +1,10 @@
+---
+title: Skillet
+description: The open-source and free-to-play game built to showcase GodotSteam's functionality.
+---
+
+# Skillet
+
 {==
 ## :fontawesome-solid-question: What Is It?
 ==}
@@ -111,19 +118,3 @@ At launch, Skillet has some additional cosmetics and skins from based on other G
 </div>
 
 Post-launch we will reach out to more devs about adding more cosmetics and skins and, of course, any developer making a game with Godot can create a pull request in Skillet's repo to add their own cosmetics to the game.  [If you would like to have your game included in Skillet, feel free to reach out by e-mail.](mailto:skillet@godotsteam.com)
-
-{==
-## :material-license: The Licenses
-==}
-
-### Code
-
-The code from Skillet is [licensed under MIT license](https://en.wikipedia.org/wiki/MIT_License){ target="\_blank" }. You may use any code from the repo for your projects as is or modified; in free or commercial games.
-
-### Art Assets
-
-The art assets in Skillet are housed in a private repo and are not available publicly or allowed to be used in any other projects. Skillet's public repo will contain placeholder versions that are [licensed under Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){ target="\_blank" }.
-
-### Font Assets
-
-Both fonts used in Skillet were purchased and licensed from [Creative Fabrica](https://www.creativefabrica.com){ target="\_blank" } but are not included in the public repo due to licensing restriction.

@@ -4,6 +4,16 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ---
 
+## Version 4.10
+
+- Changed: now using Steam Flat API, should allow compiling with MinGW
+- Changed: updated in-editor docs
+
+## Version 4.9.1
+
+- Fixed: fixed typo in RESULT_ADMINISTRATOR_OK, ***thanks to sepTN***
+- Fixed: fixed a variety of types and code corrections, ***thanks to bobsayhilol***
+
 ## Version 4.9
 
 - Added: missing `user_achievement_icon_fetched` callback

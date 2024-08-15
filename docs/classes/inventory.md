@@ -355,7 +355,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https
 
 	A result set can be serialized on the local client, transmitted to other players via your game networking, and deserialized by the remote players. This is a secure way of preventing hackers from lying about posessing rare/high-value items. Serializes a result set with signature bytes to an output buffer. The size of a serialized result depends on the number items which are being serialized. When securely transmitting items to other players, it is recommended to use [getItemsByID](#getitemsbyid) first to create a minimal result set.
 
-	**Returns:** String
+	**Returns:** PackedByteArray (4.x) / PoolByteArray (3.x)
 
 	**Note:** If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally stored ID.
 
