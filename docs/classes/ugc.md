@@ -150,7 +150,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://pa
 
 ### initWorkshopForGameServer
 
-!!! function "initWorkshopForGameServer( ```uint32_t``` workshop_depot_id )"
+!!! function "initWorkshopForGameServer( ```uint32_t``` workshop_depot_id, ```string``` folder )"
 	Lets game servers set a specific workshop folder before issuing any UGC commands.
 
 	This is helpful if you want to support multiple game servers running out of the same install folder.
