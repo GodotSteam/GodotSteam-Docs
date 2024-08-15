@@ -134,7 +134,7 @@ Depending on what your end goals are, you will probably want to use a different 
 
 	---
 
-	[<h3>ExpressoBit's SteamMultiplayerPeer</h3>](https://github.com/expressobits/steam-multiplayer-peer){ target="\_blank" }
+	[<h3>ExpressoBits's SteamMultiplayerPeer</h3>](https://github.com/expressobits/steam-multiplayer-peer){ target="\_blank" }
 
 	A separate project using Steam Sockets networking class with Godot's multiplayer nodes and available as a GDExtension.
 
