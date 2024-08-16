@@ -12,7 +12,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3056310/Elementyle/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://x.com/Elementyle){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-firefox-browser: ](https://www.elementyle.comsd){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.elementyle.com){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Ends
