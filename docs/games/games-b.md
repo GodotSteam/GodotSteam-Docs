@@ -71,6 +71,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1392650/BLASTRONAUT/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Boosted Survivors
+<figure class="game" markdown>
+[![Boosted Survivors](https://steamcdn-a.akamaihd.net/steam/apps/3161850/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3161850/Boosted_Survivors/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3161850/Boosted_Survivors/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Brickfest
 <figure class="game" markdown>
 [![Brickfest](https://steamcdn-a.akamaihd.net/steam/apps/845940/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/845940/Brickfest/){ target="\_blank" }
