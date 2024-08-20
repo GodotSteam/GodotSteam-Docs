@@ -48,6 +48,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://skullcrewstudios.com/spiele/berserker){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Biblios: Tome of Darkness
+<figure class="game" markdown>
+[![Biblios: Tome of Darkness](https://steamcdn-a.akamaihd.net/steam/apps/2982730/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2982730/Biblios_Tome_of_Darkness/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2982730/Biblios_Tome_of_Darkness/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## BitBattle
 <figure class="game" markdown>
 [![BitBattle](https://steamcdn-a.akamaihd.net/steam/apps/1282610/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1282610/BitBattle/){ target="\_blank" }
