@@ -31,7 +31,7 @@ You may need to restart your editor but the _plug-in does not need to be enabled
 
 Depending on what your end goals are, you will probably want to use a different version of GodotSteam. See which of the following best fits your project.
 
-<div class="grid cards" markdown>
+<div class="grid full cards" markdown>
 
 - 	:material-gamepad-variant:{ .godotsteam .lg .middle } __Singleplayer or Steam Networking__
 
@@ -64,9 +64,9 @@ Depending on what your end goals are, you will probably want to use a different 
 		</span>
 	</span>
 
-	[ :fontawesome-brands-github: Pre-compiled Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.10){ .md-button target="\_blank" }
+	[ :fontawesome-brands-github: Pre-compiled Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.10){ .md-button .md-button--downloads target="\_blank" }
 
-	[:octicons-plug-24: GDExtension | Godot Asset Library](https://godotengine.org/asset-library/asset/2445){ .md-button target="\_blank" }
+	[:octicons-plug-24: GDExtension | Godot Asset Library](https://godotengine.org/asset-library/asset/2445){ .md-button .md-button--downloads target="\_blank" }
  
  	---
 
