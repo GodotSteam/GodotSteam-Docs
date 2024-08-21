@@ -45,7 +45,7 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.2.2</span>
+			<span class="value">4.3</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
@@ -59,12 +59,12 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.9</span>
+			<span class="value">4.10</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :fontawesome-brands-github: Pre-compiled Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.9){ .md-button .md-button--downloads target="\_blank" }
+	[ :fontawesome-brands-github: Pre-compiled Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.10){ .md-button .md-button--downloads target="\_blank" }
 
 	[:octicons-plug-24: GDExtension | Godot Asset Library](https://godotengine.org/asset-library/asset/2445){ .md-button .md-button--downloads target="\_blank" }
  
@@ -111,7 +111,7 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.2.2</span>
+			<span class="value">4.3</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
@@ -125,16 +125,16 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam MultiplayerPeer" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.9</span>
+			<span class="value">4.10</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :fontawesome-solid-people-group: MultiplayerPeer Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.9-mp){ .md-button .md-button--downloads target="\_blank" }
+	[ :fontawesome-solid-people-group: MultiplayerPeer Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.10-mp){ .md-button .md-button--downloads target="\_blank" }
 
 	---
 
-	[<h3>ExpressoBit's SteamMultiplayerPeer</h3>](https://github.com/expressobits/steam-multiplayer-peer){ target="\_blank" }
+	[<h3>ExpressoBits's SteamMultiplayerPeer</h3>](https://github.com/expressobits/steam-multiplayer-peer){ target="\_blank" }
 
 	A separate project using Steam Sockets networking class with Godot's multiplayer nodes and available as a GDExtension.
 

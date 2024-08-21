@@ -116,9 +116,17 @@ nav:
     - Z Games: 'games/games-z.md'
 
   - Projects:
-    - Components: 'projects/components.md'
-    - Skillet: 'projects/skillet.md'
-    - To-Do: 'https://github.com/orgs/GodotSteam/projects/3'
+    - Components: 
+      - Intro: 'projects/components.md'
+    - Skillet:
+      - Intro: 'projects/skillet/intro.md'
+      - Assets: 'projects/skillet/assets.md'
+      - Editor: 'projects/skillet/editor.md'
+      - Inventory: 'projects/skillet/inventory.md'
+      - Workshop: 'projects/skillet/workshop.md'
+      - Licenses: 'projects/skillet/licenses.md'
+    - General:
+      - To-Do: 'https://github.com/orgs/GodotSteam/projects/3'
 
   - Changes:
     - Godot 4.x: 'changelog/godot4.md'
@@ -131,6 +139,8 @@ nav:
     - Server 4.x: 'changelog/server4.md'
     - Server GDExtension: 'changelog/server_gdextension.md'
     - Server GDNative: 'changelog/server_gdnative.md'
+    - Skillet Editor: 'changelog/skillet_editor.md'
+    - Skillet Assets: 'changelog/skillet_assets.md'
 
   - Contributors:
     - Contributing: 'contribute/rules.md'

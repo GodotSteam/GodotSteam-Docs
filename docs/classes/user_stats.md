@@ -272,7 +272,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 !!! function "getGlobalStatFloatHistory( ```string``` name )"
 	Gets the daily history for an aggregated stat.
 
-	**Returns:** float
+	**Returns:** PackedFloat64Array (4.x) / PoolRealArray (3.x)
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetGlobalStatHistory){ .md-button .md-button--store target="_blank" }
@@ -282,7 +282,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 !!! function "getGlobalStatIntHistory( ```string``` name )"
 	Gets the daily history for an aggregated stat.
 
-	**Returns:** uint64_t
+	**Returns:** PackedInt64Array (4.x) / PoolIntArray (3.x)
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetGlobalStatHistory){ .md-button .md-button--store target="_blank" }	
