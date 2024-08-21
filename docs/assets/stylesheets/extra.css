@@ -1416,7 +1416,7 @@ body[dir=rtl] .metadata.page-metadata .contributors-text{
 	color: white !important;
 }
 span.version {
-	width: 5em;
+	width: 4em;
 	font-size: 1.3em;
 	font-weight: bold;
 }
