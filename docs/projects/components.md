@@ -3,7 +3,9 @@ title: GodotSteam Components
 description: A collection of in-editor tools and custom nodes to make working with Steamworks a little easier.  Each can be used on their own or mixed with the others but all of them depend on GodotSteam to function.
 ---
 
+{==
 # GodotSteam Components
+==}
 
 A collection of editor tools and custom nodes to make the process of setting up Steamworks integration faster.  [The project will be open-source and can be found on Github.](https://github.com/GodotSteam/GodotSteam-Components){ target="\_blank" }
 

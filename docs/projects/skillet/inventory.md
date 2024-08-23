@@ -1,11 +1,17 @@
+---
+title: Skillet Steam Inventory
+description: These are the list of Steam Inventory items in Skillet along with their image and VDF links.
+---
 
 {==
-## :simple-steam: Steam Inventory
+# :simple-steam: Steam Inventory
 ==}
 
 These are the list of Steam Inventory items in Skillet along with their image and VDF links.
 
-### Bundle Items
+---
+
+## Bundle Items
 
 These are bundles of items usually from **Container Items**;  item generators.
 
@@ -22,7 +28,7 @@ These are bundles of items usually from **Container Items**;  item generators.
 
 ---
 
-### Cosmetics
+## Cosmetics
 
 These can be colored by any **Coloring Items** and can only be equipped.
 
@@ -39,7 +45,7 @@ These can be colored by any **Coloring Items** and can only be equipped.
 
 ---
 
-### Utility Items
+## Utility Items
 
 These have either active or passive uses and can combine with **Refill Items** or, in some cases, other in-game items.
 
@@ -56,7 +62,7 @@ These have either active or passive uses and can combine with **Refill Items** o
 
 ---
 
-### Coloring Items
+## Coloring Items
 
 These can be combined with any **Cosmetics**, unless otherwise noted.
 
@@ -79,7 +85,7 @@ These can be combined with any **Cosmetics**, unless otherwise noted.
 
 ---
 
-### Refill Items
+## Refill Items
 
 These are used to refill **Utility Items**.
 
@@ -95,7 +101,7 @@ These are used to refill **Utility Items**.
 
 ---
 
-### Containers
+## Containers
 
 These are like chests where they contain a random item or assortment of items.
 
@@ -112,7 +118,7 @@ These are like chests where they contain a random item or assortment of items.
 
 ---
 
-### Skins
+## Skins
 The base skin for the player character. Do not require coloring items to change the colors.
 
 - Can trade: true
@@ -137,7 +143,7 @@ The base skin for the player character. Do not require coloring items to change 
 
 ---
 
-### Faces
+## Faces
 
 These faces for the player character.
 
