@@ -55,6 +55,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/405680/Sentou_Gakuen_Revival/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://gakuen.org/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-twitter: ](https://twitter.com/SentouGakuen){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/GUJkUWymmT){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Shadow of Asha
