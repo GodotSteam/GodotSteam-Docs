@@ -421,6 +421,9 @@ I highly suggest reading some or all of this to better understand networking.
 
 [ :simple-firefox: 'Client/Server Game Architecture' by Gabriel Gambetta](https://www.gabrielgambetta.com/client-server-game-architecture.html){ .md-button .md-button--resource target="\_blank" }
 
+### Video Tutorials
+
+[ :simple-youtube: Godot 4 Steam Multiplayer' by Gwizz](https://www.youtube.com/watch?v=TPJbqA5OAmY&t=309s){ .md-button .md-button--resource target="\_blank" }
 
 ### Related Projects
 
