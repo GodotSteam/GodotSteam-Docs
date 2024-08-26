@@ -106,6 +106,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://coaguco.com/games/dope){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## D.O.T Defense
+<figure class="game" markdown>
+[![Dream Catcher](https://steamcdn-a.akamaihd.net/steam/apps/3124850/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3124850/DOT_Defence/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3124850/DOT_Defence/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://rattleaxegames.ca/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://x.com/axe_rattle){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Dot Hop
 <figure class="game" markdown>
 [![Dream Catcher](https://steamcdn-a.akamaihd.net/steam/apps/2779710/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2779710/Dot_Hop/){ target="\_blank" }
