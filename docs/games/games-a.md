@@ -57,6 +57,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://www.forgottendreamgames.com/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## All Fridges are Psychotic
+<figure class="game" markdown>
+[![All Fridges are Psychotic](https://steamcdn-a.akamaihd.net/steam/apps/2929590/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2929590/All_Fridges_are_Psychotic){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2929590/All_Fridges_are_Psychotic
+){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Alphaman
 <figure class="game" markdown>
 [![Alphaman](https://steamcdn-a.akamaihd.net/steam/apps/1068800/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1068800/Alphaman/){ target="\_blank" }
