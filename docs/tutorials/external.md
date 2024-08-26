@@ -18,6 +18,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-youtube: 'Godot + Steam | How To Upload To Steam + Add Achievements' by BluePhoenixGames](https://www.youtube.com/watch?v=J0GrG-AffCI){ .md-button .md-button--resource target="\_blank" }
 
+[ :simple-youtube: 'Godot 4 Steam Multiplayer' by Gwizz](https://www.youtube.com/watch?v=TPJbqA5OAmY&t=309s){ .md-button .md-button--resource target="\_blank" }
+
 {==
 ## Godot Networking + Steam
 ==}
