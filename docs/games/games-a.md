@@ -48,6 +48,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-linkedin: ](https://www.linkedin.com/company/wild-wits-games/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Afterlife Reverie
+<figure class="game" markdown>
+[![Afterlife Reverie](https://steamcdn-a.akamaihd.net/steam/apps/3182140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3182140/Afterlife_Reverie/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3182140/Afterlife_Reverie/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://x.com/HellRavenLover?t=UCf2_IfsLCmwRMz3dJ0gag&s=09){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Ailin: Traps and Treasures
 <figure class="game" markdown>
 [![Ailin: Traps and Treasures](https://steamcdn-a.akamaihd.net/steam/apps/2083630/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2083630/Ailin_Traps_and_Treasures/){ target="\_blank" }

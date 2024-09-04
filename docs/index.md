@@ -436,7 +436,7 @@ Finally got your Steam store page up? Whether you are about to release your game
 ## Contributing and Donating
 ==}
 
-Want to help out? There are a few ways and all of them get you listed in our contributors section. Yes, even for tiny corrections.
+Want to help out? There are a few ways and all of them get you listed in our contributors section. Yes, even for tiny corrections. <a rel="me" href="https://mastodon.gamedev.place/@godotsteam"></a>
 
 
 <div class="grid full cards" markdown>
