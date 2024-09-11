@@ -334,7 +334,7 @@ Just make sure there are no compatibility breaks between the SDK and GodotSteam;
 
 - :fontawesome-solid-book: __Compiling How-To Guides__
 
-	If you want to build GdotoSteam from scratch, use one of these compiling how-to guides to continue on:
+	If you want to build GodotSteam from scratch, use one of these compiling how-to guides to continue on:
 
 	---
 
