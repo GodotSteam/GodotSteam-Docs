@@ -1,4 +1,8 @@
-# GDNative Change-Log
+---
+title: GDNative Changelog
+description: A history of all changes made to the gdnative branch.
+icon: material/clipboard-clock-outline
+---
 
 A history of all changes to [the ***gdnative*** branch.](https://github.com/GodotSteam/GodotSteam/tree/gdnative){ target="\_blank" }
 

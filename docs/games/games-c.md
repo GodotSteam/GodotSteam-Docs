@@ -67,6 +67,19 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://catcafemanager.com){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Champy The Useless Vampire
+<figure class="game" markdown>
+[![Champy The Useless Vampire](https://steamcdn-a.akamaihd.net/steam/apps/2426350/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2426350/Champy_the_Useless_Vampire/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2426350/Champy_the_Useless_Vampire/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://x.com/ascension_true){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/FB539xWFcw){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.trueascension.productions/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://true-ascension.itch.io/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@trueascensionproductions/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/trueascension.productions/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Chess Opening Repertoire Builder
 <figure class="game" markdown>
 [![Chess Opening Repertoire Builder](https://steamcdn-a.akamaihd.net/steam/apps/2755460/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2755460/Chess_Opening_Repertoire_Builder/){ target="\_blank" }
@@ -147,6 +160,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/madebygare){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@madebygare){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/xsq2Fy2qRT){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+## Courier: A Cyberpunk Adventure
+<figure class="game" markdown>
+[![Courier: A Cyberpunk Adventure](https://steamcdn-a.akamaihd.net/steam/apps/2326000/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2326000/Courier_A_Cyberpunk_Adventure/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2326000/Courier_A_Cyberpunk_Adventure/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Crop and Claw

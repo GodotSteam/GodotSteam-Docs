@@ -1,8 +1,26 @@
-# Multiplayer Peer Change-Log
+---
+title: MultiplayerPeer Changelog
+description: A history of all changes made to the multiplayer-peer branch.
+icon: material/clipboard-clock-outline
+---
 
-A history of all changes to [the ***multiplayer-peer*** branch.](https://github.com/GodotSteam/GodotSteam/tree/multiplayer-peer){ target="\_blank" }
+A history of all changes to [the ***MultiplayerPeer*** repo.](https://github.com/GodotSteam/MultiplayerPeer){ target="\_blank" }
 
 ---
+
+## Version 4.11
+
+- Changed: in-editor docs
+- Changed: reorganized code-base
+- Changed: more readable error for `sendPending`
+- Changed: removed \_scb from callback names are they are unnecessary due to class call
+- Changed: `lobby_chat_update` to just add or remove players
+- Changed: chat contants names changed
+- Fixed: missing argument hints for `lobby_data_update`
+- Fixed: `get_peer_info` overwriting various dictionary keys
+- Removed: string response to packet send failure, now returns actual error code
+- Removed: matchmaking enums, were not used; can be taken from GodotSteam directly if needed
+- Removed: `lobby_invite`, `lobby_match_list`, `lobby_kicked` as they are bound but not used in MP
 
 ## Version 4.10
 

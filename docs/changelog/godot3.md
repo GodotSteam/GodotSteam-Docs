@@ -1,8 +1,29 @@
-# Godot 3.x Change-Log
+---
+title: Godot 3.x Changelog
+description: A history of all changes made to the godot3 branch.
+icon: material/clipboard-clock-outline
+---
 
 A history of all to [the ***godot3*** branch.](https://github.com/GodotSteam/GodotSteam/tree/godot3){ target="\_blank" }
 
 ---
+
+## Version 3.27
+
+- Added: buffer_size argument to `decompressVoice` with default of original value
+- Added: missing `user_achievement_icon_fetched` signal bind
+- Changed: now using Steam Flat API, should allow compiling with MinGW
+- Changed: updated in-editor docs
+- Changed: `steamworksError` to `steamworks_signal_error` internally, now prints to editor
+- Changed: deprecated `getAvailableVoice`, merged functionality into `getVoice`
+- Fixed: proper type for `network_connection_status_changed`, thanks to ***stickyShift***
+- Fixed: `getResultItemProperty` now takes empty string to send all property list, thanks to ***Stralor***
+- Fixed: missing return value hints from `lobby_data_update`
+- Fixed: fixed typo in RESULT_ADMINISTRATOR_OK, ***thanks to sepTN***
+- Fixed: fixed a variety of types and code corrections, ***thanks to bobsayhilol***
+- Fixed: issue with `setItemTags`
+- Fixed: `get_app_dependencies_result` now passed back app_ids array
+- Fixed: both global stat history functions - `getGlobalStatIntHistory` and `getGlobalStatFloatHistory`
 
 ## Version 3.26
 

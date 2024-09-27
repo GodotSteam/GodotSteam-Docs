@@ -56,6 +56,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/SteamyCupGames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Frame of Mind - A Game of Thoughts
+<figure class="game" markdown>
+[![Frame of Mind - A Game of Thoughts](https://steamcdn-a.akamaihd.net/steam/apps/2515480/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2515480/Frame_of_Mind__A_game_of_thoughts/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2515480/Frame_of_Mind__A_game_of_thoughts/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@FrameOfMind){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/WjduEh4htP){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://purplesloth.itch.io/frame-of-mind){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Fruit Salad
 <figure class="game" markdown>
 [![Fruit Salad](https://steamcdn-a.akamaihd.net/steam/apps/1848520/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1848520/Fruit_Salad/){ target="\_blank" }

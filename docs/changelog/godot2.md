@@ -1,4 +1,8 @@
-# Godot 2.x Change-Log
+---
+title: Godot 2.x Changelog
+description: A history of all changes made to the godot2 branch.
+icon: material/clipboard-clock-outline
+---
 
 A history of all to [the ***godot2*** branch.](https://github.com/GodotSteam/GodotSteam/tree/godot2){ target="\_blank" }
 

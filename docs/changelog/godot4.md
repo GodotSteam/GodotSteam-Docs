@@ -1,8 +1,33 @@
-# Godot 4.x Change-Log
+---
+title: Godot 4.x Changelog
+description: A history of all changes made to the godot4 branch.
+icon: material/clipboard-clock-outline
+---
 
 A history of all changes to [the ***godot4*** branch.](https://github.com/GodotSteam/GodotSteam/tree/godot4){ target="\_blank" }
 
 ---
+
+## Version 4.11 Changes
+
+- Added: `getDLCData` to get all DLC information and `getDLCDataByIndex` now acts as Steam intended with an index passed
+- Added: properties for all variants GodotSteam stores
+- Changed: using Godot's macros for error reporting back to the editor
+- Changed: buffer_size argument to `decompressVoice` with default of original value
+- Changed: `steamworksError` replaced with prints to editor
+- Changed: all options array parameters for all Sockets class functions changed to dictionaries, [check class docs](https://godotsteam.com/classes/networking_sockets/)
+- Changed: deprecated `getAvailableVoice`, merged functionality into `getVoice`
+- Changed: `setLeaderboardDetailsMax` changed to the set/get for leaderboard_details_max, now `set_leaderboard_details_max`
+- Changed: Steam singleton now removed during uninitialization
+- Fixed: proper type for `network_connection_status_changed`, thanks to ***stickyShift***
+- Fixed: `getResultItemProperty` now takes empty string to send all property list, thanks to ***Stralor***
+- Fixed: missing return value hints from `lobby_data_update`
+- Fixed: `get_app_dependencies_result` now passed back app_ids array
+- Fixed: missing argument hints for `item_installed` callback
+- Fixed: both global stat history functions - `getGlobalStatIntHistory` and `getGlobalStatFloatHistory`
+- Fixed: broken returned variable in `network_connection_status_changed`
+- Fixed: a variety of small tweaks
+- Removed: duplicate call on setting embedded callbacks
 
 ## Version 4.10
 

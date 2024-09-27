@@ -92,6 +92,7 @@ Some people get `Parse Error: The identifier Steam isn't declared in the current
 - Either you're not using a pre-compiled editor.
 - You didn't actually include GodotSteam in your build when compiling.
 - You're using a non-GodotSteam template when exporting from a GodotSteam-enabled editor.
+- Your GDExtension files may be out-of-date with your .gdextension file.
 
 {==
 ## Steam Client

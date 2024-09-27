@@ -3,10 +3,13 @@ site_url: https://godotsteam.com
 site_description: An open-source and fully functional Steamworks SDK / API module and plug-in for the Godot Game Engine.
 site_author: GP Garcia | Contributors
 
-copyright: Copyright &copy; 2015-Current | GP Garcia | CoaguCo Industries | Contributors
+copyright: Copyright &copy; 2015-Current | GP Garcia | Contributors
 
 repo_url: https://github.com/GodotSteam/GodotSteam
 repo_name: GodotSteam
+
+edit_uri: https://github.com/GodotSteam/GodotSteam-Docs/tree/master/docs/
+
 
 #################################################
 # Navigation
@@ -29,6 +32,7 @@ nav:
   - Classes:
     - Main: 'classes/main.md'
     - Main Server: 'classes/main_server.md'
+    - MultiplayerPeer: 'classes/multiplayer_peer.md'
     - App Lists: 'classes/app_lists.md'
     - Apps: 'classes/apps.md'
     - Friends: 'classes/friends.md'
@@ -116,8 +120,6 @@ nav:
     - Z Games: 'games/games-z.md'
 
   - Projects:
-    - Components: 
-      - Intro: 'projects/components.md'
     - Skillet:
       - Intro: 'projects/skillet/intro.md'
       - Assets: 'projects/skillet/assets.md'
@@ -154,13 +156,16 @@ nav:
 theme:
   favicon: assets/images/favicon.png
   features:
+    - announce.dismiss
+    - content.code.copy
+    - content.code.select
     - navigation.indexes
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - announce.dismiss
-    - content.code.copy
-    - content.code.select
+    - search.highlight
+    - search.share
+    - search.suggest
   font:
     text: Roboto
     code: Roboto Mono
@@ -178,13 +183,17 @@ theme:
 
 
 extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: env
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/GodotSteam/GodotSteam
     - icon: fontawesome/brands/mastodon
-      link: https://mastodon.gamedev.place/@coaguco
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/coaguco
+      link: https://mastodon.gamedev.place/@godotsteam
+    - icon: fontawesome/brands/patreon
+      link: https://patreon.com/godotsteam
     - icon: fontawesome/solid/paper-plane
       link: mailto:hello@godotsteam.com
     - icon: fontawesome/brands/twitch
@@ -195,7 +204,9 @@ extra:
 # Plug-in and Extensions
 #################################################
 plugins:
-  - search
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - badges
 
   - blog:
@@ -207,7 +218,7 @@ plugins:
   - social:
       cards_layout_options:
         background_color: "#424242"
-        logo: docs/assets/images/logo-outlined.png
+        logo: docs/assets/images/godotsteam-steam-icon.png
 
   - rss:
       match_path: blog/posts/.*

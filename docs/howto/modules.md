@@ -2,9 +2,6 @@
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
-!!! warning "Notes"
-	Currently you cannot compile GodotSteam with MinGW so it does require use of Visual Studio redistributables on Windows. Most Windows games will use it so, for the most part, end users are fine. However, if they report any issues with running things, direct them to install the latest Visual Studio redistributables.
-
 {==
 ### :fontawesome-solid-toolbox: Set Up Tools
 ==}
@@ -36,13 +33,13 @@ You can clone the latest Godot source in a folder called ***godot*** like so:
 === "Godot 3.x"
 
 	```shell
-	git clone https://github.com/godotengine/godot.git -b 3.5.3-stable godot
+	git clone https://github.com/godotengine/godot.git -b 3.6-stable godot
 	```
 
 === "Godot 4.x"
 
 	```shell
-	git clone https://github.com/godotengine/godot.git -b 4.2.1-stable godot
+	git clone https://github.com/godotengine/godot.git -b 4.3-stable godot
 	```
 
 You may need to change the given tag(s) above from whatever it is to whatever the current version or whatever version you need.

@@ -6,6 +6,15 @@
 ## :material-function-variant: Functions
 ==}
 
+### get_godotsteam_version
+
+!!! function "get_godotsteam_version( )"
+    Returns the current version of the GodotSteam editor you are using.
+
+    **Returns:** float
+
+    **Note:** This is a GodotSteam specific function.
+
 ### getSteamID32
 
 !!! function "getSteamID32( ```uint64_t``` steam_id )"

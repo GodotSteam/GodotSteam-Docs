@@ -59,12 +59,12 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.10</span>
+			<span class="value">4.11</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :fontawesome-brands-github: Pre-compiled Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.10){ .md-button .md-button--downloads target="\_blank" }
+	[ :fontawesome-brands-github: Pre-compiled Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.11){ .md-button .md-button--downloads target="\_blank" }
 
 	[:octicons-plug-24: GDExtension | Godot Asset Library](https://godotengine.org/asset-library/asset/2445){ .md-button .md-button--downloads target="\_blank" }
  
@@ -90,12 +90,12 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">3.26</span>
+			<span class="value">3.27</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :fontawesome-brands-github: Pre-compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.26){ .md-button .md-button--downloads target="\_blank" }
+	[ :fontawesome-brands-github: Pre-compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.27){ .md-button .md-button--downloads target="\_blank" }
 
 	[ :octicons-plug-24: GDNative | Godot Asset Library](https://godotengine.org/asset-library/asset/1045){ .md-button .md-button--downloads target="\_blank" }
 
@@ -125,12 +125,12 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam MultiplayerPeer" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.10</span>
+			<span class="value">4.11</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :fontawesome-solid-people-group: MultiplayerPeer Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.10-mp){ .md-button .md-button--downloads target="\_blank" }
+	[ :fontawesome-solid-people-group: MultiplayerPeer Editor and Templates](https://github.com/GodotSteam/MultiPlayerPeer/releases/tag/v4.11-mp){ .md-button .md-button--downloads target="\_blank" }
 
 	---
 
@@ -453,10 +453,12 @@ Want to help out? There are a few ways and all of them get you listed in our con
 
  - :material-heart: __Donations__
 
- 	You can provide donations for the project through Github Sponsors. One-time or reoccuring donors get a variety of perks like access to our sponsors-only repo, special Discord roles, and my undying love.
+ 	You can provide donations for the project through Github Sponsors or Patreon.
 
  	---
 
 	[:material-heart: GitHub Sponsors](https://github.com/sponsors/Gramps){ .md-button .md-button--downloads target="\_blank" }
+
+	[:material-heart: Patreon](https://patreon.com/godotsteam){ .md-button .md-button--downloads target="\_blank" }
 
 </div>

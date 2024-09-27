@@ -2,9 +2,6 @@
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
-!!! warning "Notes"
-	Currently you cannot compile GodotSteam with MinGW so it does require use of Visual Studio redistributables on Windows. Most Windows games will use it so, for the most part, end users are fine. However, if they report any issues with running things, direct them to install the latest Visual Studio redistributables.
-
 {==
 ### :fontawesome-solid-toolbox: Set Up Tools
 ==}

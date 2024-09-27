@@ -85,18 +85,32 @@ Exposes a wide range of information and actions for applications and [Downloada
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#GetDLCCount){ .md-button .md-button--store target="_blank" }
 
-### getDLCDataByIndex
 
-!!! function "getDLCDataByIndex()"
-    Returns metadata for a DLC by index. 
+### getDLCData
 
-    **Return**: array
+!!! function "getDLCData( )"
+    Returns an array of dictionaries containing information about all available DLC for the current game.
+
+    **Returns**: array
 
     Contains dictionaries (dlc) which contain the following keys:
 
-    * app_id (int)
-    * available (bool)
-    * name (string)
+    * app_id (int) | The app ID for the DLC
+    * available (bool) | Whether the DLC is available on the Steam store currently
+    * name (string) | The name of the DLC
+
+    **Note:** This function is unique to GodotSteam.
+
+### getDLCDataByIndex
+
+!!! function "getDLCDataByIndex( `uint32_t` this_dlc_index )"
+    Returns metadata for a DLC by index. 
+
+    **Return**: dictionary, which contains the following keys:
+
+    * app_id (int) | The app ID for the DLC
+    * available (bool) | Whether the DLC is available on the Steam store currently
+    * name (string) | The name of the DLC
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamApps#BGetDLCDataByIndex){ .md-button .md-button--store target="_blank" }

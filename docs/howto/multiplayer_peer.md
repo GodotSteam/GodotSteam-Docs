@@ -1,9 +1,12 @@
+---
+title: How To Compile MultiplayerPeer From Scratch
+description: Complete instructions on how to compile MultiplayerPeer from source code.
+icon: material/book-cog
+---
+
 # How-To Compile Multiplayer Peer
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
-
-!!! warning "Notes"
-	Currently you cannot compile GodotSteam with MinGW so it does require use of Visual Studio redistributables on Windows. Most Windows games will use it so, for the most part, end users are fine. However, if they report any issues with running things, direct them to install the latest Visual Studio redistributables.
 
 {==
 ### :fontawesome-solid-toolbox: Set Up Tools
@@ -30,9 +33,9 @@ Regardless of which option you pick, make sure it is for Godot version 4.0 or hi
 You can clone the latest Godot source in a folder called ***godot*** like so:
 
 ```shell
-git clone https://github.com/godotengine/godot.git -b 4.2.1-stable godot
+git clone https://github.com/godotengine/godot.git -b 4.3-stable godot
 ```
-You may need to change the tag from ***4.2.1-stable*** to whatever the current version is or whatever version you need.
+You may need to change the tag from ***4.3-stable*** to whatever the current version is or whatever version you need.
 
 #### Downloading the Source
 
@@ -41,6 +44,8 @@ Alternatively, you can download and unpack the [Godot source from their Github](
 {==
 ### :simple-godotengine: Get GodotSteam
 ==}
+
+You can alternatively use [GodotSteam Server to add this kind of peer functionality to master or dedicated servers.](https://github.com/GodotSteam/GodotSteam-Server/){ target="\_blank" } 
 
 #### Cloning the Source
 
@@ -61,9 +66,9 @@ Alternatively, you can [download the godot4 branch from our repository](https://
 Head into the ***godot/modules*** folder and clone the source like so:
 
 ```shell
-git clone -b multiplayer-peer https://github.com/GodotSteam/GodotSteam.git godotsteam_multiplayer
+git clone -b main https://github.com/GodotSteam/MultiplayerPeer.git godotsteam_multiplayer_peer
 ```
-Alternatively, you can [download the multiplayer-peer branch from our repository](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } then unpack it into a folder called ***godotsteam_multiplayer*** inside your Godot source ***godot/modules/*** folder.
+Alternatively, you can [download the multiplayer-peer branch from our repository](https://github.com/GodotSteam/MultiplayerPeer){ target="\_blank" } then unpack it into a folder called ***godotsteam_multiplayer_peer*** inside your Godot source ***godot/modules/*** folder.
 
 {==
 ### :simple-steam: Get the Steamworks SDK
@@ -103,21 +108,23 @@ godot/
 	│  ├─ register_types.cpp
 	│  ├─ register_types.h
 	│  └─ SCsub
-	└─ godotsteam_multiplayer/
+	└─ godotsteam_multiplayer_peer/
 		├─ config.py
+		├─ godotsteam_connection_data.h
+		├─ godotsteam_constants.h
+		├─ godotsteam_id.cpp
+		├─ godotsteam_id.h
+		├─ godotsteam_multiplayer_peer.cpp
+		├─ godotsteam_multiplayer_peer.h
 		├─ register_types.cpp
 		├─ register_types.h
 		├─ SCsub
-		├─ steam_id.cpp
-		├─ steam_id.h
-		├─ steam_multiplayer_peer.cpp
-		└─ steam_multiplayer_peer.h
 ```
 
-You can also just put the ***godotsteam*** and ***godotsteam_multiplayer*** directories where ever you like and just point to them in SCONS when compiling: 
+You can also just put the ***godotsteam*** and ***godotsteam_multiplayer_peer*** directories where ever you like and just point to them in SCONS when compiling: 
 
 ```shell
-custom_modules='../path/to/dir/godotsteam, ../path/to/dir/godotsteam_multiplayer'
+custom_modules='../path/to/dir/godotsteam, ../path/to/dir/godotsteam_multiplayer_peer'
 ```
 
 {==
@@ -127,19 +134,19 @@ custom_modules='../path/to/dir/godotsteam, ../path/to/dir/godotsteam_multiplayer
 To compile editors, use this SCONS line:
 
 ```shell
-scons platform=<your platform> tools=yes target=editor
+scons platform=<your platform> target=editor
 ```
 
 To compile debug templates, use this SCONS line:
 
 ```shell
-scons platform=<your platform> tools=no target=template_debug
+scons platform=<your platform> target=template_debug
 ```
 
 To compile release templates, use this SCONS line:
 
 ```shell
-scons platform=<your platform> tools=no target=template_release
+scons platform=<your platform> target=template_release
 ```
 
 #### A Linux Note
@@ -155,7 +162,7 @@ When the compiling is finished, make sure to copy the Steam shared library, for 
 By default, it should be in the ***godot/bin/*** folder. You can move them to a new location as long as you keep the two files together.
 
 !!! warning "Missing Shared Library"
-	 
+
 	 A lack of the **Steam API .dll/.so/.dylib** for your respective OS will cause the editor or game to fail and crash when testing or running the game _outside_ of the Steam client.
 
 #### A General Note

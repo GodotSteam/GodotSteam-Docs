@@ -6,6 +6,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
+## Eat That Ice Cream
+[![Eat That Ice Cream](https://steamcdn-a.akamaihd.net/steam/apps/3182800/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3182800/Eat_That_Ice_Cream/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3182800/Eat_That_Ice_Cream/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Elementyle
 <figure class="game" markdown>
 [![Elementyle](https://steamcdn-a.akamaihd.net/steam/apps/3056310/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3056310/Elementyle/){ target="\_blank" }

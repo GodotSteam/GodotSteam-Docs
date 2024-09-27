@@ -66,7 +66,7 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### connectByIPAddress
 
-!!! function "connectByIPAddress( ```string``` ip_address_with_port, ```array``` options )"
+!!! function "connectByIPAddress( ```string``` ip_address_with_port, ```dictionary``` config_options )"
 	Creates a connection and begins talking to a "server" over UDP at the given IPv4 or IPv6 address.  The remote host must be listening with a matching call to [createListenSocketIP](#createlistensocketip) on the specified port.
 
 	A [network_connection_status_changed](#network_connection_status_changed) callback will be triggered when we start connecting, and then another one on either timeout or successful connection.
@@ -75,7 +75,21 @@ These are part of the newer networking classes; not to be confused with the [old
 
 	By default, all connections will get basic encryption sufficient to prevent casual eavesdropping.  But note that without certificates (or a shared secret distributed through some other out-of-band mechanism), you don't have any way of knowing who is actually on the other end, and thus are vulnerable to man-in-the-middle attacks.
 
-	If you need to set any initial config options, pass them here.
+	If you need to set any initial config options, pass them here.  Pass your **config_options** as dictionary containing the following key/value pairs:
+
+	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* config value (int or string)
+
+	Example:
+	```
+	{
+		NETWORKING_CONFIG_FAKE_PACKET_LAG_SEND : 4,
+		NETWORKING_CONFIG_SEND_BUFFER_SIZE: 5000,
+		NETWORKING_CONFIG_RECV_BUFFER_SIZE: 3000 
+	}
+	```
+
+	Alternately you can pass an empty dictionary.
 
 	**Returns:** uint32
 
@@ -84,20 +98,28 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### connectP2P
 
-!!! function "connectP2P( ```uint64_t``` remote_steam_id, ```int``` port, ```array``` options )"
+!!! function "connectP2P( ```uint64_t``` remote_steam_id, ```int``` port, ```dictionary``` config_options )"
 	Begin connecting to a server that is identified using a platform-specific identifier. This uses the default rendezvous service, which depends on the platform and library configuration. (E.g. on Steam, it goes through the steam backend.) The traffic is relayed over the Steam Datagram Relay network.
 
 	If you use this, you probably want to call [initRelayNetworkAccess](networking_utils.md#initrelaynetworkaccess) when your app initializes. If you need to set any initial config options, pass them here.
 
 	[See SteamNetworkingConfigValue_t](https://partner.steamgames.com/doc/api/steamnetworkingtypes#SteamNetworkingConfigValue_t){ target="_blank" } for more about why this is preferable to setting the options "immediately" after creation.
 
-	Pass your **options** as an array of arrays; each sub-array containing:
+	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* config value (int)
-	* data type (int)
-	* data value (int or string)
+	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* config value (int or string)
 
-	Alternately you can pass an empty array.
+	Example:
+	```
+	{
+		NETWORKING_CONFIG_FAKE_PACKET_LAG_SEND : 4,
+		NETWORKING_CONFIG_SEND_BUFFER_SIZE: 5000,
+		NETWORKING_CONFIG_RECV_BUFFER_SIZE: 3000 
+	}
+	```
+
+	Alternately you can pass an empty dictionary.
 
 	**Returns:** uint32 
 
@@ -106,16 +128,24 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### connectToHostedDedicatedServer
 
-!!! function "connectToHostedDedicatedServer( ```uint64_t``` remote_steam_id, ```int``` virtual_port, ```array``` options )"
+!!! function "connectToHostedDedicatedServer( ```uint64_t``` remote_steam_id, ```int``` virtual_port, ```dictionary``` config_options )"
 	Client call to connect to a server hosted in a Valve data center, on the specified virtual port. You must have placed a ticket for this server into the cache, or else this connect attempt will fail!
 
-	Pass your **options** as an array of arrays; each sub-array containing:
+	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* config value (int)
-	* data type (int)
-	* data value (int or string)
+	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* config value (int or string)
 
-	Alternately you can pass an empty array.
+	Example:
+	```
+	{
+		NETWORKING_CONFIG_FAKE_PACKET_LAG_SEND : 4,
+		NETWORKING_CONFIG_SEND_BUFFER_SIZE: 5000,
+		NETWORKING_CONFIG_RECV_BUFFER_SIZE: 3000 
+	}
+	```
+
+	Alternately you can pass an empty dictionary.
 
 	**Returns:** uint32 
 
@@ -135,18 +165,26 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### createHostedDedicatedServerListenSocket
 
-!!! function "createHostedDedicatedServerListenSocket( ```int``` virtual_port, ```array``` options )"
+!!! function "createHostedDedicatedServerListenSocket( ```int``` virtual_port, ```dictionary``` config_options )"
 	Create a listen socket on the specified virtual port. The physical UDP port to use will be determined by the SDR_LISTEN_PORT environment variable. If a UDP port is not configured, this call will fail.
 
 	This function should be used when you are using the ticket generator library to issue your own tickets. Clients connecting to the server on this virtual port will need a ticket, and they must connect using [connectToHostedDedicatedServer](#connecttohosteddedicatedserver).
 
-	Pass your **options** as an array of arrays; each sub-array containing:
+	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* config value (int)
-	* data type (int)
-	* data value (int or string)
+	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* config value (int or string)
 
-	Alternately you can pass an empty array.
+	Example:
+	```
+	{
+		NETWORKING_CONFIG_FAKE_PACKET_LAG_SEND : 4,
+		NETWORKING_CONFIG_SEND_BUFFER_SIZE: 5000,
+		NETWORKING_CONFIG_RECV_BUFFER_SIZE: 3000 
+	}
+	```
+
+	Alternately you can pass an empty dictionary.
 
 	**Returns:** uint32 
 
@@ -155,16 +193,24 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### createListenSocketIP
 
-!!! function "createListenSocketIP( ```string``` ip_address, ```Array``` options )"
+!!! function "createListenSocketIP( ```string``` ip_address, ```dictionary``` config_options )"
 	Creates a "server" socket that listens for clients to connect to by calling [connectByIPAddress](#connectbyipaddress), over ordinary UDP (IPv4 or IPv6)
 
-	Pass your **options** as an array of arrays; each sub-array containing:
+	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* config value (int)
-	* data type (int)
-	* data value (int or string)
+	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* config value (int or string)
 
-	Alternately you can pass an empty array.
+	Example:
+	```
+	{
+		NETWORKING_CONFIG_FAKE_PACKET_LAG_SEND : 4,
+		NETWORKING_CONFIG_SEND_BUFFER_SIZE: 5000,
+		NETWORKING_CONFIG_RECV_BUFFER_SIZE: 3000 
+	}
+	```
+
+	Alternately you can pass an empty dictionary.
 
 	**Returns:** uint32 
 
@@ -173,18 +219,26 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### createListenSocketP2P
 
-!!! function "createListenSocketP2P( ```int``` virtual_port, ```array``` options )"
+!!! function "createListenSocketP2P( ```int``` virtual_port, ```dictionary``` config_options )"
 	Like [createListenSocketIP](#createlistensocketip), but clients will connect using [connectP2P](#connectp2p). The connection will be relayed through the Valve network.
 
 	**virtual_port** specifies how clients can connect to this socket using [connectP2P](#connectp2p). It's very common for applications to only have one listening socket; in that case, use zero. If you need to open multiple listen sockets and have clients be able to connect to one or the other, then virtual_port should be a small integer (<1000) unique to each listen socket you create.
 
-	Pass your **options** as an array of arrays; each sub-array containing:
+	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* config value (int)
-	* data type (int)
-	* data value (int or string)
+	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* config value (int or string)
 
-	Alternately you can pass an empty array.
+	Example:
+	```
+	{
+		NETWORKING_CONFIG_FAKE_PACKET_LAG_SEND : 4,
+		NETWORKING_CONFIG_SEND_BUFFER_SIZE: 5000,
+		NETWORKING_CONFIG_RECV_BUFFER_SIZE: 3000 
+	}
+	```
+
+	Alternately you can pass an empty dictionary.
 
 	**Returns:** uint32 
 
@@ -193,18 +247,26 @@ These are part of the newer networking classes; not to be confused with the [old
 
 ### createListenSocketP2PFakeIP
 
-!!! function "createListenSocketP2PFakeIP( ```int``` fake_port, ```array``` options )"
+!!! function "createListenSocketP2PFakeIP( ```int``` fake_port, ```dictionary``` config_options )"
 	Create a listen socket that will listen for P2P connections sent to our FakeIP. A peer can initiate connections to this listen socket by calling [connectByIPAddress](#connectbyipaddress).
 
 	**fake_port** refers to the *index* of the fake port requested, not the actual port number. For example, pass 0 to refer to the first port in the reservation. You must call this only after calling [beginAsyncRequestFakeIP](#beginasyncrequestfakeip). However, you do not need to wait for the request to complete before creating the listen socket.
 
-	Pass your **options** as an array of arrays; each sub-array containing:
+	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* config value (int)
-	* data type (int)
-	* data value (int or string)
+	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* config value (int or string)
 
-	Alternately you can pass an empty array.
+	Example:
+	```
+	{
+		NETWORKING_CONFIG_FAKE_PACKET_LAG_SEND : 4,
+		NETWORKING_CONFIG_SEND_BUFFER_SIZE: 5000,
+		NETWORKING_CONFIG_RECV_BUFFER_SIZE: 3000 
+	}
+	```
+
+	Alternately you can pass an empty dictionary.
 
 	**Returns:** uint32 
 

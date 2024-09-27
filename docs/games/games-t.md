@@ -90,6 +90,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@xeloph986){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Town Keeper
+<figure class="game" markdown>
+[![Town Keeper](https://steamcdn-a.akamaihd.net/steam/apps/3104510/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3104510/Town_Keeper/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3104510/Town_Keeper/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Tower Tactics: Liberation
 <figure class="game" markdown>
 [![Tower Tactics: Liberation](https://steamcdn-a.akamaihd.net/steam/apps/1709900/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1709900/Tower_Tactics_Liberation){ target="\_blank" }

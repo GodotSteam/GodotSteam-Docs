@@ -38,6 +38,9 @@ We'll go over each signal and related function in order. First, you'll need to p
 Steam.findLeaderboard( your_leaderboard_name )
 ```
 
+!!! warning "Notes"
+	When using `findOrCreateLeader()`, as opposed to `findLeaderboard()`, make sure not to set the sort method or display types as none. Avoid these enums: LEADERBOARD_SORT_METHOD_NONE and LEADERBOARD_DISPLAY_TYPE_NONE.
+
 Once Steam finds your leaderboard it will pass back the handle to the `leaderboard_find_result` callback. The `_on_leaderboard_find_result()` function that it is connected to it should look something like this:
 
 ```gdscript
