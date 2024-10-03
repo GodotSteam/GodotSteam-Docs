@@ -6,6 +6,17 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
+## You Can't See Ghosts
+<figure class="game" markdown>
+[![You Can't See Ghosts](https://steamcdn-a.akamaihd.net/steam/apps/3165640/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3165640/You_Cant_See_Ghosts/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3165640/You_Cant_See_Ghosts/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-twitter: ](https://twitter.com/SPassionGames){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://simplypassiongames.itch.io/you-cant-see-ghosts){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@SimplyPassionGames){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-facebook: ](https://www.facebook.com/profile.php?id=61565736824834){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Yuke and the Book of Yokai
 <figure class="game" markdown>
 [![Yuke and the Book of Yokai](https://steamcdn-a.akamaihd.net/steam/apps/2730680/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2730680/Yuke_and_the_Book_of_Yokai/){ target="\_blank" }

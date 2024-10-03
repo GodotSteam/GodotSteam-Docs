@@ -52,6 +52,17 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1848350/Gelatine/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Geo Land - The Dream Traveler Remastered
+<figure class="game" markdown>
+[![Geo Land - The Dream Traveler Remastered](https://steamcdn-a.akamaihd.net/steam/apps/2900790/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2900790/Geo_Land__The_Dream_Traveler_Remastered/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2900790/Geo_Land__The_Dream_Traveler_Remastered/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@TheUnsupported){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/bEc4MvsYRz){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://unsupported.itch.io/geo-land-the-dream-traveler-remastered){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://playgeoland.com/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Gleeb Glob
 <figure class="game" markdown>
 [![Gleeb Glob](https://steamcdn-a.akamaihd.net/steam/apps/2005790/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2005790/Gleeb_Glob/){ target="\_blank" }

@@ -131,6 +131,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/ethanrobichaux_){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Turbo Fat
+<figure class="game" markdown>
+[![Turbo Fat](https://steamcdn-a.akamaihd.net/steam/apps/2213410/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2213410/Turbo_Fat/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2213410/Turbo_Fat/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Turing Complete
 <figure class="game" markdown>
 [![Turing Complete](https://steamcdn-a.akamaihd.net/steam/apps/1444480/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1444480/Turing_Complete/){ target="\_blank" }
