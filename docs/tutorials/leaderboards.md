@@ -195,9 +195,9 @@ So first you will need to setup signals
 === "Godot 4.x"
 
 	```
-	Steam.connect("file_share_result", Callable(self, "on_file_share_result"))
-	Steam.connect("file_write_async_complete", Callable(self, "on_file_write_async_complete"))
-	Steam.connect("leaderboard_ugc_set", Callable(self, "on_leaderboard_ugc_set"))
+	Steam.file_share_result.connect(_on_file_share_result)
+	Steam.file_write_async_complete.connect(_on_file_write_async_complete)
+	Steam.leaderboard_ugc_set.connect(_on_leaderboard_ugc_set)
 	```
 	
 ### Creating a file we want to share
@@ -206,15 +206,15 @@ Created file is stored in PackedByteArray format.
 Frist we need to create a file with content that we want to share.
 
 ```gdscript
-var data:PackedByteArray
-Steam.fileWriteAsync("file_name",data,data.size())
+var data: PackedByteArray
+Steam.fileWriteAsync( "file_name", data, data.size() )
 ```
 
 !!! warning "File location"
 	File will be created in location `...\Steam\userdata\<localid?>\<appid>\remote`,
 
 
-Onece it's created you can mark file to be shared
+Once it is created you can mark the file to be shared.
 
 ```gdscript
 func on_file_write_async_complete(result):
@@ -227,8 +227,7 @@ func on_file_write_async_complete(result):
 
 ### Understanding FileShare method
 
-Method is used to mark existing files to be shared that are present in remote local dir.
-As argument we are using filename.
+Method is used to mark existing files to be shared that are present in remote local directory.
 
 ```gdscript
 Steam.fileShare("file_name")
@@ -236,25 +235,25 @@ Steam.fileShare("file_name")
 
 !!! warning "File location"
 	Files you want to share must exist in remote location `...\Steam\userdata\<localid?>\<appid>\remote`. Providing absolute path will not work.
-	Method is only marking files to be shared, othere wise if they not exist you will get error, hence in first step we created the file.
+	The function is only marking files to be shared; otherwise, if they do not exist, you will get error.
 	
 ```gdscript
-func on_file_share_result(result:int,handle,name:String):
+func on_file_share_result( result: int, handle, name: String ):
 	if result == 1:
-		Steam.attachLeaderboardUGC(handle, LEADERBOARD_HANDLE)
+		Steam.attachLeaderboardUGC( handle, LEADERBOARD_HANDLE )
 	elese:
 		pass #Handle errors here
 ```
 
-When you sucesfully set your file and uploded it now you can attach it to leaderboard.
+When you successfully set your file and uploaded it now you can attach it to leaderboard.
 
 !!! warning "Notes"
-	You must call findLeaderboard or findOrCreateLeaderboard to get a leaderboard handle prior to calling this function. You can store it for example as `LEADERBOARD_HANDLE`
+	You must call findLeaderboard or findOrCreateLeaderboard to get a leaderboard handle prior to calling this function. You can store it for example as `LEADERBOARD_HANDLE`.
 
 ```gdscript
-func on_leaderboard_ugc_set(handle:int,result:String) -> void:
+func on_leaderboard_ugc_set( handle:int, result:String ) -> void:
 	if result == 1:
-		print("Hurray!")
+		print( "Hurray!" )
 	elese:
 		pass #Handle errors here
 ```
