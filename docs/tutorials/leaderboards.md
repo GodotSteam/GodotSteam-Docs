@@ -248,7 +248,7 @@ func on_file_share_result( result: int, handle, name: String ):
 When you successfully set your file and uploaded it now you can attach it to leaderboard.
 
 !!! warning "Notes"
-	You must call findLeaderboard or findOrCreateLeaderboard to get a leaderboard handle prior to calling this function. You can store it for example as `LEADERBOARD_HANDLE`.
+	You must call `findLeaderboard()` or `findOrCreateLeaderboard()` to get a leaderboard handle prior to calling this function. You can store it for example as `LEADERBOARD_HANDLE`.
 
 ```gdscript
 func on_leaderboard_ugc_set( handle:int, result:String ) -> void:
