@@ -56,7 +56,7 @@ Also, when shipping your game to Steam, do not include this file as it is not ne
 You can pass the app ID to either `steamInit` or `steamInitEx` to set it during initialization. This will be the second argument passed; the first being whether you want the local user's statistics and achievements to be pulled during the initialization.  For example:
 
 ```gdscript
-var initialize_response: Dictionary = steamInitEx( true, 480 )
+var initialize_response: Dictionary = Steam.steamInitEx( true, 480 )
 print("Did Steam initialize?: %s " % initialize_response)
 ```
 
