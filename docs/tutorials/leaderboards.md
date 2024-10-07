@@ -178,6 +178,89 @@ The message is just a basic message to inform you to the status the download; wh
 - **details:** any details you stored with this entry for later use
 
 {==
+## Uploading UGC to Leaderboard
+==}
+
+You can use this method if you want to attach replays or any other data to leadearboard entry.
+So first you will need to setup signals
+
+=== "Godot 2.x, 3.x"
+
+	```gdscript
+	Steam.connect("file_share_result", self, "_on_file_share_result")
+	Steam.connect("file_share_result", self, "on_file_write_async_complete")
+	Steam.connect("leaderboard_ugc_set", self, "on_leaderboard_ugc_set")
+	```
+
+=== "Godot 4.x"
+
+	```
+	Steam.file_share_result.connect(_on_file_share_result)
+	Steam.file_write_async_complete.connect(_on_file_write_async_complete)
+	Steam.leaderboard_ugc_set.connect(_on_leaderboard_ugc_set)
+	```
+	
+### Creating a file we want to share
+
+Created file is stored in PackedByteArray format.
+Frist we need to create a file with content that we want to share.
+
+```gdscript
+var data: PackedByteArray
+Steam.fileWriteAsync( "file_name", data, data.size() )
+```
+
+!!! warning "File location"
+	File will be created in location `...\Steam\userdata\<localid?>\<appid>\remote`,
+
+
+Once it is created you can mark the file to be shared.
+
+```gdscript
+func on_file_write_async_complete(result):
+	print(result)
+	if result == 1:
+		Steam.fileShare("file_name")
+	elese:
+		pass #Handle errors here
+```
+
+### Understanding FileShare method
+
+Method is used to mark existing files to be shared that are present in remote local directory.
+
+```gdscript
+Steam.fileShare("file_name")
+```
+
+!!! warning "File location"
+	Files you want to share must exist in remote location `...\Steam\userdata\<localid?>\<appid>\remote`. Providing absolute path will not work.
+	The function is only marking files to be shared; otherwise, if they do not exist, you will get error.
+	
+```gdscript
+func on_file_share_result( result: int, handle, name: String ):
+	if result == 1:
+		Steam.attachLeaderboardUGC( handle, LEADERBOARD_HANDLE )
+	elese:
+		pass #Handle errors here
+```
+
+When you successfully set your file and uploaded it now you can attach it to leaderboard.
+
+!!! warning "Notes"
+	You must call `findLeaderboard()` or `findOrCreateLeaderboard()` to get a leaderboard handle prior to calling this function. You can store it for example as `LEADERBOARD_HANDLE`.
+
+```gdscript
+func on_leaderboard_ugc_set( handle:int, result:String ) -> void:
+	if result == 1:
+		print( "Hurray!" )
+	elese:
+		pass #Handle errors here
+```
+
+Once attached you can eiter leave file or delete it as it should be avalible even if deleted through leaderboard.
+
+{==
 ## Possible Oddities
 ==}
 
