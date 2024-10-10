@@ -96,6 +96,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCgZ__VxfMvgIGQTwk3r1aUA){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## The Roottrees are Dead
+<figure class="game" markdown>
+[![The Roottrees are Dead](https://steamcdn-a.akamaihd.net/steam/apps/2754380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2754380/The_Roottrees_are_Dead/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2754380/The_Roottrees_are_Dead/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## RPG In A Box
 <figure class="game" markdown>
 [![RPG In A Box](https://steamcdn-a.akamaihd.net/steam/apps/498310/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/498310/RPG_in_a_Box/){ target="\_blank" }
