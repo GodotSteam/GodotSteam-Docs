@@ -434,7 +434,7 @@ Provides functions for reading, writing, and accessing files which can be stored
 	**Returns:** void
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#SetSyncPlatforms){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#UGCDownload){ .md-button .md-button--store target="_blank" }
 
 ### ugcDownloadToLocation
 
@@ -444,7 +444,7 @@ Provides functions for reading, writing, and accessing files which can be stored
 	**Returns:** void
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#SetSyncPlatforms){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#UGCDownloadToLocation){ .md-button .md-button--store target="_blank" }
 
 ### ugcRead
 
@@ -454,7 +454,7 @@ Provides functions for reading, writing, and accessing files which can be stored
 	**Returns:** PoolByteArray
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#SetSyncPlatforms){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#UGCRead){ .md-button .md-button--store target="_blank" }
 
 {==
 ## :material-signal: Signals
