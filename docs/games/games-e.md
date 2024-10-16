@@ -28,6 +28,24 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2256260/Ends/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Entwined Time
+<figure class="game" markdown>
+[![Entwined Time](https://steamcdn-a.akamaihd.net/steam/apps/3147300/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3147300/Entwined_Time/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3147300/Entwined_Time/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://patashu.itch.io/entwined-time){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/2mA7h3mYak){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+## Epic Pixel War
+<figure class="game" markdown>
+[![Epic Pixel War](https://steamcdn-a.akamaihd.net/steam/apps/2923960/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2923960/Epic_Pixel_War/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2923960/Epic_Pixel_War/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://evoloiduts.itch.io/epic-pixel-war){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-solid-gamepad: ](https://www.newgrounds.com/portal/view/947714){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Escape From Zeta Aurigae
 <figure class="game" markdown>
 [![Escape From Zeta Aurigae](https://steamcdn-a.akamaihd.net/steam/apps/2774410/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2774410/Escape_from_Zeta_Aurigae/){ target="\_blank" }

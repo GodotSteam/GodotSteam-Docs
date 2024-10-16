@@ -6,6 +6,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
+## Hand-Holding Simulator
+<figure class="game" markdown>
+[![Hand-Holding Simulator](https://steamcdn-a.akamaihd.net/steam/apps/3228600/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3228600/HandHolding_Simulator/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3228600/HandHolding_Simulator/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.com/invite/KKRC3Vwa){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## HangTogether
 <figure class="game" markdown>
 [![HangTogether](https://steamcdn-a.akamaihd.net/steam/apps/1701400/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1701400/HangTogether/){ target="\_blank" }
