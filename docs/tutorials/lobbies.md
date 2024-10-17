@@ -182,7 +182,7 @@ func _on_open_lobby_list_pressed() -> void:
 
 Before requesting the lobby list with `requestLobbyList()` you can add more search queries like:
 
-`addRequestLobbyListStringFilter()`<br />Allows you to look for specific works in the lobby metadata
+`addRequestLobbyListStringFilter()`<br />Allows you to look for specific words in the lobby metadata
 
 `addRequestLobbyListNumericalFilter()`<br />Adds a numerical comparions filter (<=, <, =, >, >=, !=)
 
