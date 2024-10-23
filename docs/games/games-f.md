@@ -39,6 +39,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/MinamichanDevs){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Folklands
+<figure class="game" markdown>
+[![Folklands](https://steamcdn-a.akamaihd.net/steam/apps/2282890/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2282890/Folklands/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2282890/Folklands/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/NE42UkhkpF){ target="\_blank" .md-button .md-button--store }
+[ :simple-linktree: ](https://linktr.ee/folklandsgame){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## For Your Information
 <figure class="game" markdown>
 [![For Your Information](https://steamcdn-a.akamaihd.net/steam/apps/1923990/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1923990/For_Your_Information/){ target="\_blank" }

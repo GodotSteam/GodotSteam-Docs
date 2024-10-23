@@ -17,6 +17,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-tiktok: ](https://www.tiktok.com/@mightofmerchants){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Canto I
+<figure class="game" markdown>
+[![Canto I](https://steamcdn-a.akamaihd.net/steam/apps/3096700/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3096700/Canto_I/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3096700/Canto_I/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://ludosgd.itch.io/canto-i){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/ludosgd.bsky.social){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-tumblr: ](https://ludosgd.tumblr.com/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Captain Collision
 <figure class="game" markdown>
 [![Captain Collision](https://steamcdn-a.akamaihd.net/steam/apps/1693380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1693380/Captain_Collision/){ target="\_blank" }

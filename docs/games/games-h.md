@@ -14,6 +14,17 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-discord: ](https://discord.com/invite/KKRC3Vwa){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## HANGAR 8
+<figure class="game" markdown>
+[![HANGAR 8](https://steamcdn-a.akamaihd.net/steam/apps/3204650/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3204650/HANGAR_8/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3204650/HANGAR_8/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/twintaildigital.bsky.social){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-reddit: ](https://www.reddit.com/r/HANGAR8/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-itch-io: ](https://twintaildigital.itch.io/hangar8){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@TwinTailDigital){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## HangTogether
 <figure class="game" markdown>
 [![HangTogether](https://steamcdn-a.akamaihd.net/steam/apps/1701400/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1701400/HangTogether/){ target="\_blank" }

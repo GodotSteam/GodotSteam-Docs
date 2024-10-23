@@ -92,6 +92,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/845940/Brickfest/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Brain Freeze
+<figure class="game" markdown>
+[![Brain Freeze](https://steamcdn-a.akamaihd.net/steam/apps/3088010/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3088010/Brain_Freeze/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3088010/Brain_Freeze/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Brotato
 <figure class="game" markdown>
 [![Brotato](https://steamcdn-a.akamaihd.net/steam/apps/1942280/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1942280/Brotato/){ target="\_blank" }

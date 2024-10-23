@@ -8,13 +8,14 @@ Here is a list of all the great contributors, both those who have provided code 
 
 <div class="contrib-grid" markdown>
 
-!!! contributors1 "Code Contributors"
+!!! contributors1 "Code And Docs Contributors"
 	- AlexHoratio
 	- Antokolos
 	- ArchiRocksTech
 	- Avencherus
 	- blaze-the-star
 	- brogan89
+	- butlersrepos
 	- cbinners
 	- ClockRate
 	- ConnorBP
@@ -110,6 +111,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Mikk Maasik
 	- MudbuG
 	- Nicholas Orlowski
+	- Perroboc
 	- pixelriot
 	- Ranoller
 	- René Habermann

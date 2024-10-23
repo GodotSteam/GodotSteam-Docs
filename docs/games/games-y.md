@@ -6,6 +6,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
+## Yesterdreamt
+<figure class="game" markdown>
+[![Yesterdreamt](https://steamcdn-a.akamaihd.net/steam/apps/1637180/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1637180/Yesterdreamt/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1637180/Yesterdreamt/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/saffronstreams.bsky.social){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@saffronstreams){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/UzQ83rtAGc){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## You Can't See Ghosts
 <figure class="game" markdown>
 [![You Can't See Ghosts](https://steamcdn-a.akamaihd.net/steam/apps/3165640/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3165640/You_Cant_See_Ghosts/){ target="\_blank" }
@@ -15,6 +25,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-itch-io: ](https://simplypassiongames.itch.io/you-cant-see-ghosts){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@SimplyPassionGames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-facebook: ](https://www.facebook.com/profile.php?id=61565736824834){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+## You Have To Climb Out
+<figure class="game" markdown>
+[![You Have To Climb Out](https://steamcdn-a.akamaihd.net/steam/apps/3026480/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3026480/You_Have_To_Climb_Out/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3026480/You_Have_To_Climb_Out/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Yuke and the Book of Yokai

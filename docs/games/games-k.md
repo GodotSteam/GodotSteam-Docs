@@ -72,12 +72,25 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](http://shinerightstudio.com/knights-rubbish){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Koira
+<figure class="game" markdown>
+[![Koira](https://steamcdn-a.akamaihd.net/steam/apps/1626620/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1626620/Koira/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1626620/Koira/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://dont-nod.com/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://studiotolima.com/koira/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/dontnod){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-tiktok: ](https://www.tiktok.com/@dont_nod){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/dontnod_ent/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-facebook: ](https://www.facebook.com/DONTNOD.Entertainment){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-linkedin: ](https://www.linkedin.com/company/dontnod-entertainment/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Kotel Ne Gori: A Friend of Lena Boots
 <figure class="game" markdown>
 [![Kotel Ne Gori: A Friend of Lena Boots](https://steamcdn-a.akamaihd.net/steam/apps/1325870/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1325870/Kotel_Ne_Gori_A_Friend_of_Lena_Boots/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1325870/Kotel_Ne_Gori_A_Friend_of_Lena_Boots/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/8){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 </div>
