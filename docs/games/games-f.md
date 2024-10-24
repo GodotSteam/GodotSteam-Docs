@@ -65,6 +65,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-twitter: ](https://twitter.com/SteamyCupGames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Fracas
+<figure class="game" markdown>
+[![Fracas](https://steamcdn-a.akamaihd.net/steam/apps/2824960/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2824960/Fracas/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2824960/Fracas/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCfvMIfsupw6zfQ6Hs5W3aOA){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-instagram: ](https://www.instagram.com/rookbirdgames/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Frame of Mind - A Game of Thoughts
 <figure class="game" markdown>
 [![Frame of Mind - A Game of Thoughts](https://steamcdn-a.akamaihd.net/steam/apps/2515480/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2515480/Frame_of_Mind__A_game_of_thoughts/){ target="\_blank" }
