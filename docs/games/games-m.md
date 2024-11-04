@@ -34,7 +34,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Meowing Point](https://steamcdn-a.akamaihd.net/steam/apps/2528710/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2528710/Meowing_Point/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2528710/Meowing_Point/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/meowingpoint){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://meowingpoint.com){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://yofrancisco.itch.io/meowingpoint){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -51,7 +50,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Mini Sports](https://steamcdn-a.akamaihd.net/steam/apps/2335250/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2335250/Mini_Sports/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2335250/Mini_Sports/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/blokgames_){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Miss Peacock
@@ -59,7 +57,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Miss Peacock](https://steamcdn-a.akamaihd.net/steam/apps/2616200/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2616200/Miss_Peacock/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2616200/Miss_Peacock/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/OtterClub_/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://otterclub.io/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-facebook: ](https://www.facebook.com/otter.club.game){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@Otter-Club/){ target="\_blank" .md-button .md-button--store }
@@ -70,7 +67,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![MMA Simulator](https://steamcdn-a.akamaihd.net/steam/apps/913820/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/913820/MMA_Simulator/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/913820/MMA_Simulator/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/zevergames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Moonatics
@@ -78,7 +74,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Moonatics](https://steamcdn-a.akamaihd.net/steam/apps/2003450/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2003450/Moonatics/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2003450/Moonatics/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/moonatics_game){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Mutagenic
@@ -86,7 +81,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Mutagenic](https://steamcdn-a.akamaihd.net/steam/apps/2082560/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2082560/Mutagenic/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2082560/Mutagenic/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/zediven_games){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/TzF3aRWnhZ){ target="\_blank" .md-button .md-button--store }
 </figure>
 

@@ -11,7 +11,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Wager](https://steamcdn-a.akamaihd.net/steam/apps/1750810/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1750810/Wager/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1750810/Wager/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/zevergames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Waifu
@@ -26,7 +25,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Warja](https://steamcdn-a.akamaihd.net/steam/apps/2433360/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2433360/Warja/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2433360/Warja/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/ReefMakeGame){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Warp-Tek
@@ -41,7 +39,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Watch Your Plastic Duck](https://steamcdn-a.akamaihd.net/steam/apps/2088360/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2088360/Watch_Your_Plastic_Duck/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2088360/Watch_Your_Plastic_Duck/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/WatchYourDuck){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCNwjouAYcqohKF0D6b0Fobg){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/rFMvF53Dbk){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -61,7 +58,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-itch-io: ](https://torcado.itch.io/windowkill){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/vYdYSX4GJy){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/torcado){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://torcado.com){ target="\_blank" .md-button .md-button--store }
 
 </figure>
@@ -78,7 +74,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Woodland Empire](https://steamcdn-a.akamaihd.net/steam/apps/1419150/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1419150/Woodland_Empire/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1419150/Woodland_Empire/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/obvlong){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.woodland-empire.com/){ target="\_blank" .md-button .md-button--store }
 </figure>
 

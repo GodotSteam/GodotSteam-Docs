@@ -13,7 +13,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2374420/100_Steps/){ target="\_blank" .md-button .md-button--store }
 [ :material-butterfly: ](https://bsky.app/profile/endorth){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/Endorth4){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://endorth.itch.io/){ target="\_blank" .md-button .md-button--store }
 </figure>
 

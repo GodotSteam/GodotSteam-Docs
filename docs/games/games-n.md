@@ -35,7 +35,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Non-Euclidean Chess](https://steamcdn-a.akamaihd.net/steam/apps/1769470/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1769470/NonEuclidean_Chess/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1769470/NonEuclidean_Chess/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/2){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 </div>

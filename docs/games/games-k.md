@@ -32,7 +32,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2592340/Keep_the_Heroes_Out/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://yarncatgames.com/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/DYarncat){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@yarncatdev){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-tiktok: ](https://www.tiktok.com/@yarncatgames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/yarncatgames/){ target="\_blank" .md-button .md-button--store }
@@ -44,7 +43,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2075070/KinitoPET/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.kinitopet.com/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/kinitopet){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## KIPIDON

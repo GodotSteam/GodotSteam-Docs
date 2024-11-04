@@ -19,7 +19,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1040310/I_Know_Everything/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-facebook: ](https://www.facebook.com/nlbproject/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/nlbproject){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/nlbproject/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -29,7 +28,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1688270/Ive_Seen_Everything/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-facebook: ](https://www.facebook.com/nlbproject/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/nlbproject){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/nlbproject/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -52,7 +50,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Indirection](https://steamcdn-a.akamaihd.net/steam/apps/1744450/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1744450/Indirection/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1744450/Indirection/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/jakes1403){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Infinite Pixel Battles

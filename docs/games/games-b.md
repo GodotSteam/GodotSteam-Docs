@@ -67,7 +67,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![BITGUN](https://steamcdn-a.akamaihd.net/steam/apps/1673940/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1673940/BITGUN/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1673940/BITGUN/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/logloggames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://loglog.games/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -111,7 +110,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Buckshot Roulette](https://steamcdn-a.akamaihd.net/steam/apps/2835570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2835570/Buckshot_Roulette/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2835570/Buckshot_Roulette/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/mikeklubnika){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Bunny Hungry
@@ -119,7 +117,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Bunny Hungry](https://steamcdn-a.akamaihd.net/steam/apps/2667010/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/ggidk_games){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/ftRgpTkzeP){ target="\_blank" .md-button .md-button--store }
 </figure>
 

@@ -29,7 +29,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2733260/Lefties_Righteous_Arcade_Emporium/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-facebook: ](https://www.facebook.com/profile.php?id=61555892340942){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/LeftiesArcade){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCX1yhdSLf4fVoZbpVlSTJSw){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -38,8 +37,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Lila's Sky Ark](https://steamcdn-a.akamaihd.net/steam/apps/1573390/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1573390/Lilas_Sky_Ark/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1573390/Lilas_Sky_Ark/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/monolithofminds){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/10){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Lingo
@@ -63,7 +60,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2936750/Lokis_Revenge/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://owlmakesgames.itch.io/lokis-revenge){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://x.com/owlgamedev){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@OwlGameDev){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://owlgame.dev/){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -74,7 +70,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1742930/Looking_Up_I_See_Only_A_Ceiling/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@silver978){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/silver978_){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/silver978_/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://silver978.com/){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -84,7 +79,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Love Exalt 8372](https://steamcdn-a.akamaihd.net/steam/apps/2295280/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2295280?utm_source=godotsteam){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2295280?utm_source=godotsteam){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/team_veki){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://teamveki.itch.io/love-exalt-8372){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/jYW3TXBZAy){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -94,7 +88,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Luck Be A Landlord](https://steamcdn-a.akamaihd.net/steam/apps/1404850/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1404850/Luck_be_a_Landlord/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1404850/Luck_be_a_Landlord/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/TrampolineTales){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## LUL Inc.

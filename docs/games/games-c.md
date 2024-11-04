@@ -11,7 +11,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Canvas of Kings](https://steamcdn-a.akamaihd.net/steam/apps/2498570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2498570/Canvas_of_Kings/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2498570/Canvas_of_Kings/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/MightofMe){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/mightofmerchants/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/JTBS2xWedR){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-tiktok: ](https://www.tiktok.com/@mightofmerchants){ target="\_blank" .md-button .md-button--store }
@@ -39,7 +38,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Capital Island](https://steamcdn-a.akamaihd.net/steam/apps/1757570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1757570/Capital_Island/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1757570/Capital_Island/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/WillDreamsGames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/willdreamsgames/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCXeHZLFETcYHjZdJe-b8gUA){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -63,7 +61,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Cat Box Paradox](https://steamcdn-a.akamaihd.net/steam/apps/1771200/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1771200/Cat_Box_Paradox/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1771200/Cat_Box_Paradox/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/CatBoxParadox){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.biscuitlocker.com/game_cat_box_paradox/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -72,7 +69,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Cat Cafe Manager](https://steamcdn-a.akamaihd.net/steam/apps/1354830/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1354830/Cat_Cafe_Manager/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1354830/Cat_Cafe_Manager/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/roostgames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/uNhAYFV6KH){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://catcafemanager.com){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -82,7 +78,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Champy The Useless Vampire](https://steamcdn-a.akamaihd.net/steam/apps/2426350/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2426350/Champy_the_Useless_Vampire/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2426350/Champy_the_Useless_Vampire/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://x.com/ascension_true){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/FB539xWFcw){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.trueascension.productions/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://true-ascension.itch.io/){ target="\_blank" .md-button .md-button--store }
@@ -96,7 +91,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2755460/Chess_Opening_Repertoire_Builder/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://branegames.itch.io/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/GamesBrane){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Chesslike
@@ -111,7 +105,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Chicken Fight](https://steamcdn-a.akamaihd.net/steam/apps/2159470/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2159470/Chicken_Fight/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2159470/Chicken_Fight/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/LightBulbEngine){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/CXWc7ar6Xp){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@lightbulbengine/){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -167,7 +160,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2626080/Corvian_Curse/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://made-by-gare.itch.io/corvian-curse){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/madebygare){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@madebygare){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/xsq2Fy2qRT){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -184,7 +176,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Crop and Claw](https://steamcdn-a.akamaihd.net/steam/apps/2760970/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2760970/Crop_and_Claw/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2760970/Crop_and_Claw/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/dino_leaf){ target="\_blank" .md-button .md-button--store }
 [ :material-butterfly: ](https://bsky.app/profile/dinoleaf.bsky.social){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://dinoleaf.itch.io/crop-and-claw){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://cropandclaw.com/){ target="\_blank" .md-button .md-button--store }

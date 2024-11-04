@@ -12,7 +12,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1797140/UFOTOFU_HEX/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://inflo.games/projects/ufotofuhex/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/inflogamescoop){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## UltraCook
@@ -20,7 +19,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![UltraCook](https://steamcdn-a.akamaihd.net/steam/apps/2870610/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2870610/UltraCook/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2870610/UltraCook/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/crimmerz){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Under The Yoke
@@ -52,7 +50,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2328140/Unloop/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.threetrees.eu/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/ThreeTreesEU){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/SracgkuFkV){ target="\_blank" .md-button .md-button--store }
 </figure>
 

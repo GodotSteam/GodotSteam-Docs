@@ -89,7 +89,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Grim Horde](https://steamcdn-a.akamaihd.net/steam/apps/1962560/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1962560/Grim_Horde/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1962560/Grim_Horde/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/redkoibox){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Gun Crate Raccoon
@@ -97,7 +96,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Gun Crate Raccoon](https://steamcdn-a.akamaihd.net/steam/apps/3001620/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3001620/Gun_Crate_Raccoon/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3001620/Gun_Crate_Raccoon/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/mynameiswhm){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Gunmetal Gothic -->
@@ -106,7 +104,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Gunmetal Gothic](https://steamcdn-a.akamaihd.net/steam/apps/2248150/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2248150/Gunmetal_Gothic/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2248150/Gunmetal_Gothic/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/ynoham){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@gunmetalgothic){ target="\_blank" .md-button .md-button--store }
 </figure>
 

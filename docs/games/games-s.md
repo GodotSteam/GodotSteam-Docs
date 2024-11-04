@@ -19,7 +19,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Samozbor ID:Heaven](https://steamcdn-a.akamaihd.net/steam/apps/1237570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1237570){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1237570){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/8){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Saturday of Piercing Screams
@@ -27,7 +26,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Saturday of Piercing Screams](https://steamcdn-a.akamaihd.net/steam/apps/1128160/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1128160/Saturday_of_Piercing_Screams/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1128160/Saturday_of_Piercing_Screams/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/8){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## satryn deluxe
@@ -35,8 +33,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![satryn deluxe](https://steamcdn-a.akamaihd.net/steam/apps/1677360/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1677360/satryn_deluxe/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1677360/satryn_deluxe/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/hello_maybell){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/3){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Seedlings
@@ -45,7 +41,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1575510/Seedlings/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://bardsley-creative.itch.io/seedlings){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/Seedlings_Game){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Sentou Gakuen: Revival
@@ -54,7 +49,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/405680/Sentou_Gakuen_Revival/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://gakuen.org/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/SentouGakuen){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/GUJkUWymmT){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -64,7 +58,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2007000/Shadow_of_Asha/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://gamejolt.com/@Pyliot){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/pyliot){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/F3YGmmWDPH){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UC0yUy-QQ1x1XX8JggF-x-Ng/){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -102,7 +95,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Sisypush](https://steamcdn-a.akamaihd.net/steam/apps/2219240/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2219240/Sisypush/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2219240/Sisypush/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/CentiGames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.com/invite/RJANDG9GWn){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@centigames){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -119,7 +111,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![SKIP](https://steamcdn-a.akamaihd.net/steam/apps/3028840/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3028840/Slide/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3028840/Slide/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/fenekito){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/fenekitodev/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -178,7 +169,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2772890/Speglar/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.com/invite/zBvgudR975){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/DexterGramfors){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Spirit of Shotgun
@@ -193,7 +183,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Spotless](https://steamcdn-a.akamaihd.net/steam/apps/2638610/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2638610/Spotless/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2638610/Spotless/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://x.com/GhostieGamesDev){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/ghostiegamesdev/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -210,7 +199,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2501590/Squeebing_Up_the_Tower_of_Friendship/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.spacekraken.studio/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/SpaceKrakenStud){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Starveil
@@ -226,7 +214,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Storm's Harvest](https://steamcdn-a.akamaihd.net/steam/apps/2593140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2593140/Storms_Harvest/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2593140/Storms_Harvest/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/GoofyGourds){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://goofy-gourd-studios.itch.io/storms-harvest){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/goofygourdstudios/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/A2xuuTEaUA){ target="\_blank" .md-button .md-button--store }
@@ -244,7 +231,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Subcube](https://steamcdn-a.akamaihd.net/steam/apps/2544930/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2544930/Subzero_Tides/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2544930/Subzero_Tides/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/LogicalProgres3){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://logicalprogression.tech/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -300,7 +286,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1707650/Swords_and_Sandals_Immortals/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://swordsandsandals.com/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/oliver_joyce){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/whiskeybarrelstudios/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.com/invite/swordsandsandals){ target="\_blank" .md-button .md-button--store }
 </figure>

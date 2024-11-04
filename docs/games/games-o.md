@@ -13,7 +13,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2083320/Omega_Warp/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.ciangames.com/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/ciangames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 <!-- Our Dear Kingdom -->
@@ -22,7 +21,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Our Dear Kingdom](https://steamcdn-a.akamaihd.net/steam/apps/1071440/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1071440/Our_Dear_Kingdom/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1071440/Our_Dear_Kingdom/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/AlexVoxel){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UC7mzNYmr2RKbD1dYz5UCwMg){ target="\_blank" .md-button .md-button--store }
 </figure>
 

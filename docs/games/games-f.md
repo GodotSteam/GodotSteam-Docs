@@ -26,7 +26,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Fishards](https://steamcdn-a.akamaihd.net/steam/apps/1637140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1637140/Fishards/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1637140/Fishards/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/rivernotch){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/rivernotch/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/4){ target="\_blank" .md-button .md-button--store }
 </figure>
@@ -36,7 +35,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Flowers of Satsunai](https://steamcdn-a.akamaihd.net/steam/apps/2107710/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2107710/Flowers_of_Satsunai/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2107710/Flowers_of_Satsunai/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/MinamichanDevs){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Folklands
@@ -62,7 +60,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2830320/Forgotten_Secrets_Escape_Room/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCojVSa8GcxNT2ImOyvmlohg){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/SteamyCupGames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Fracas
@@ -97,7 +94,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2268280/Full_Court_Heroes/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCPrIEKXiR_VI5h4XI4T5sVw){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/tireswinggames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 </div>

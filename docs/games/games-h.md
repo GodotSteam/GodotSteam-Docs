@@ -6,6 +6,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" markdown>
 
+## Hacky
+<figure class="game" markdown>
+[![Hand-Holding Simulator](https://steamcdn-a.akamaihd.net/steam/apps/3292980/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3292980/Hacky/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3292980/Hacky/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/P8g8bqqw5F){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/napasgames.bsky.social){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@napasjet/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Hand-Holding Simulator
 <figure class="game" markdown>
 [![Hand-Holding Simulator](https://steamcdn-a.akamaihd.net/steam/apps/3228600/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3228600/HandHolding_Simulator/){ target="\_blank" }
@@ -37,7 +47,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Haulin' Oats](https://steamcdn-a.akamaihd.net/steam/apps/1254770/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1254770/Haulin_Oats/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1254770/Haulin_Oats/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/CoaguCo){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://coaguco.com/games/hauling){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -46,7 +55,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Hellfire Tactics](https://steamcdn-a.akamaihd.net/steam/apps/1360940/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1360940/Hellfire_Tactics/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1360940/Hellfire_Tactics/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/JWaffleGames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/hTtTpGVHCU){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -56,7 +64,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1977770/Hexes/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://elektri.ca){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/Learyt_Tekuzo){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-facebook: ](https://www.facebook.com/elektricanada){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -66,7 +73,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2331870/Hibernation_Day/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://ariorick.itch.io/hibernation-day){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/AriorickGames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Honk of Heroes
@@ -75,7 +81,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2658580/Honk_of_Heroes/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://honkofheroes.com/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/MadNukin){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.com/invite/rjZm2V5aFS){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -85,7 +90,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2605350/Hot_Dog_Reporter/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://exquisitetrash.club/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/xtrashclub){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/qzGVXuqYQt){ target="\_blank" .md-button .md-button--store }
 </figure>
 

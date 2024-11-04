@@ -25,7 +25,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Achieve-Its](https://steamcdn-a.akamaihd.net/steam/apps/3050660/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3050660/AchieveIts/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3050660/AchieveIts/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/davidarthurpaul){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/@Lacozy){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -34,7 +33,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![The Adventure of NAYU](https://steamcdn-a.akamaihd.net/steam/apps/1476340/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1476340/The_Adventure_of_NAYU/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1476340/The_Adventure_of_NAYU/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/kogeume){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## AETHERIS
@@ -42,7 +40,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![AETHERIS](https://steamcdn-a.akamaihd.net/steam/apps/1786010/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1786010/AETHERIS/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1786010/AETHERIS/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/wildwitsgames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://wildwits.games/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/wildwitsgames/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-linkedin: ](https://www.linkedin.com/company/wild-wits-games/){ target="\_blank" .md-button .md-button--store }
@@ -53,7 +50,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Afterlife Reverie](https://steamcdn-a.akamaihd.net/steam/apps/3182140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3182140/Afterlife_Reverie/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3182140/Afterlife_Reverie/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://x.com/HellRavenLover?t=UCf2_IfsLCmwRMz3dJ0gag&s=09){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Ailin: Traps and Treasures
@@ -61,7 +57,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Ailin: Traps and Treasures](https://steamcdn-a.akamaihd.net/steam/apps/2083630/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2083630/Ailin_Traps_and_Treasures/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2083630/Ailin_Traps_and_Treasures/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/4gotndream){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.forgottendreamgames.com/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -111,7 +106,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Axe Ghost](https://steamcdn-a.akamaihd.net/steam/apps/2712670/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2712670/Axe_Ghost/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2712670/Axe_Ghost/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/axeghostgame){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 </div>

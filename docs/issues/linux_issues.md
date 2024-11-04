@@ -25,8 +25,10 @@ Remember to include it along with your shipped game, as described in the [Export
 ## Steam on Flatpak
 ==}
 
-The Flatpak version of Steam will not work with GodotSteam in testing (through the editor) as it will be unable to find the running process correctly.  This may or may not affect the Steam version of Godot and downloading the plug-in version through the Asset Library; I have not yet tested this setup.
+The Flatpak version of Steam will not work with GodotSteam in testing (through the editor) as it will be unable to find the running process correctly.  This may or may not affect the Steam version of Godot and downloading the plug-in version through the Asset Library; I have not yet tested this setup.  We did, however, get an updated piece of information to fix this situation though, you can symlink Steam out of Flatpak like so:
 
-At the time of writing, we have not found a way to get these two talking.  However, your shipped game will work fine.  Also, if anyone knows how to solve this, please let us know!
+```
+~/.steam to ~/.var/app/com.valvesoftware.Steam/.steam
+```
 
 If you are using something like Fedora Atomic, you can install Distrobox to work around this.

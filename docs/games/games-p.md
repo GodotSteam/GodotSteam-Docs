@@ -12,7 +12,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1137270/Palladium_Adventure_in_Greece/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-facebook: ](https://www.facebook.com/nlbproject/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/nlbproject){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/nlbproject/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -21,7 +20,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Pandora Galaxy](https://steamcdn-a.akamaihd.net/steam/apps/1226610/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1226610/Pandora_Galaxy/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1226610/Pandora_Galaxy/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/simplexcode){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Paralyzed
@@ -52,7 +50,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2506810/Pest_Apocalypse/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.kikimora.games/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/KikimoraGames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.gg/sSmGbJSa4E){ target="\_blank" .md-button .md-button--store }
 </figure>
 
@@ -61,7 +58,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Pincrediball](https://steamcdn-a.akamaihd.net/steam/apps/2378150/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2378150/Pincrediball){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2378150/Pincrediball){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/pincrediball){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-itch-io: ](https://pincrediball.itch.io/pincrediball){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-mastodon: ](https://mastodon.social/@pincrediball){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://www.pincrediball.com/){ target="\_blank" .md-button .md-button--store }
@@ -72,7 +68,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Pine Lily Village](https://steamcdn-a.akamaihd.net/steam/apps/1780070/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1780070/Pine_Lily_Village/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1780070/Pine_Lily_Village/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/laborious_lark){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## PISTOLA
@@ -95,7 +90,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Primal Light](https://steamcdn-a.akamaihd.net/steam/apps/771420/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/771420/Primal_Light/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/771420/Primal_Light/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/PrimalLightGame){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Power of the Ancients
@@ -111,7 +105,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Prop Game](https://steamcdn-a.akamaihd.net/steam/apps/2479580/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2479580/Prop_Game/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2479580/Prop_Game/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/PropGame_){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## The Pulse of Evil
@@ -119,7 +112,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![The Pulse of Evil](https://steamcdn-a.akamaihd.net/steam/apps/2437890/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2437890/The_Pulse_of_Evil/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2437890/The_Pulse_of_Evil/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/MadNukin){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## PumPum
@@ -134,7 +126,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Pusher: Drug Tycoon](https://steamcdn-a.akamaihd.net/steam/apps/2497210/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2497210/PUSHER__Drug_Tycoon/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2497210/PUSHER__Drug_Tycoon/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/PusherTycoon){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-discord: ](https://discord.com/invite/aAwxqpWDg3){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-youtube: ](hhttps://www.youtube.com/channel/UCLuszgb_VKRhLCB_0jk0aoA){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://drug-tycoon.com/){ target="\_blank" .md-button .md-button--store }

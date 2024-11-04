@@ -19,7 +19,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1369320/Virtual_Cottage/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-firefox-browser: ](https://duandigames.com/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-brands-twitter: ](https://twitter.com/DuAndIGames){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/9){ target="\_blank" .md-button .md-button--store }
 </figure>
 
