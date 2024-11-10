@@ -23,6 +23,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://sonderland.games/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Left Stranded
+<figure class="game" markdown>
+[![Left Stranded](https://steamcdn-a.akamaihd.net/steam/apps/1936750/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1936750/Left_Stranded/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1936750/Left_Stranded/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/5eQynQRGUK){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Lefties' Righteous Arcade Empourium
 <figure class="game" markdown>
 [![Lefties' Righteous Arcade Empourium](https://steamcdn-a.akamaihd.net/steam/apps/2733260/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2733260/Lefties_Righteous_Arcade_Emporium//){ target="\_blank" }
