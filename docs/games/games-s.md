@@ -62,11 +62,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UC0yUy-QQ1x1XX8JggF-x-Ng/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
-## SkyDribble
+## The Sheriff
 <figure class="game" markdown>
-[![SkyDribble](https://steamcdn-a.akamaihd.net/steam/apps/2462380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2462380/SkyDribble/){ target="\_blank" }
+[![The Sheriff](https://steamcdn-a.akamaihd.net/steam/apps/2083030/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2083030/The_Sheriff/){ target="\_blank" }
 
-[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2462380/SkyDribble/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2083030/The_Sheriff/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.gg/uXncbanyeR){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Siege 'n Sow
@@ -104,6 +105,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![SKIP](https://steamcdn-a.akamaihd.net/steam/apps/2330090/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2330090/SKIP/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2330090/SKIP/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+## SkyDribble
+<figure class="game" markdown>
+[![SkyDribble](https://steamcdn-a.akamaihd.net/steam/apps/2462380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2462380/SkyDribble/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2462380/SkyDribble/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Slide
