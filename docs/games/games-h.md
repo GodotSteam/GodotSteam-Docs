@@ -50,6 +50,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://coaguco.com/games/hauling){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Haunting Hijinx
+<figure class="game" markdown>
+[![Haunting Hijinx](https://steamcdn-a.akamaihd.net/steam/apps/2499500/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2499500/Haunting_Hijinx/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2499500/Haunting_Hijinx/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Hellfire Tactics
 <figure class="game" markdown>
 [![Hellfire Tactics](https://steamcdn-a.akamaihd.net/steam/apps/1360940/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1360940/Hellfire_Tactics/){ target="\_blank" }
