@@ -56,6 +56,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://riftriff.com/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## The Rise Of The Golden Idol
+<figure class="game" markdown>
+[![The Rise Of The Golden Idol](https://steamcdn-a.akamaihd.net/steam/apps/2716400/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2716400/The_Rise_of_the_Golden_Idol/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2716400/The_Rise_of_the_Golden_Idol/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.thegoldenidol.com/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-youtube: ](https://www.youtube.com/@playstack/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.com/invite/7EPWUg73Ma){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Robo Legend
 <figure class="game" markdown>
 [![Robo Legend](https://steamcdn-a.akamaihd.net/steam/apps/1992480/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1992480/Robo_Legend/){ target="\_blank" }
