@@ -186,6 +186,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1910230/Spirit_of_Shotgun/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Spore Valley
+<figure class="game" markdown>
+[![Spore Valley](https://steamcdn-a.akamaihd.net/steam/apps/3240350/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3240350/Spore_Valley/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3240350/Spore_Valley/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Spotless
 <figure class="game" markdown>
 [![Spotless](https://steamcdn-a.akamaihd.net/steam/apps/2638610/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2638610/Spotless/){ target="\_blank" }
