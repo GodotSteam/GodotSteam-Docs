@@ -61,7 +61,7 @@ func _process(_delta) -> void:
 
 If you are using the `global.gd` autoload singleton then you can omit the `run_callbacks()` command as they'll be running already.
 
-Here is a nice bit of code from **tehsquidge** for handling packet reading:
+Here is a nice bit of code from **Toi Lanh** based on **tehsquidge**'s networking code for handling packet reading:
 
 ```gdscript
 func _process(delta):
@@ -96,7 +96,7 @@ It pretty simply acknowledges the session request, accepts it, then sends a hand
 ## Reading P2P Packets
 ==}
 
-Inside that handshake there was a call to the `read_message()` function which does this:
+Inside that handshake there was a call to the `read_messages()` function which does this:
 
 === "Godot 2.x, 3.x"
 
@@ -109,7 +109,7 @@ Inside that handshake there was a call to the `read_message()` function which do
 			if message.is_empty() or message == null:
 				print("WARNING: read an empty packet with non-zero size!")
     			else:
-       				#make data readable
+       				#make data readable. Do NOT use bytes2var with_objects enabled.
        				message.payload = bytes_to_var(message.payload)
 
 				# Get the remote user's ID
@@ -118,7 +118,7 @@ Inside that handshake there was a call to the `read_message()` function which do
 				# Print the packet to output
 				print("Packet: " + message.payload)
 
-				# Append logic here to deal with packet data
+				# Append logic here to deal with message data. Do NOT use call or call_v here when directly dealing with data without sanatizing your data first. Ideally don't use it at all unless you really know what you're doing.
 	```
 
 === "Godot 4.x"
@@ -138,10 +138,10 @@ Inside that handshake there was a call to the `read_message()` function which do
 				# Print the packet to output
 				print("Message: " + message.payload)
 
-				# Append logic here to deal with packet data
+				# Append logic here to deal with message data. Do NOT use call or call_v here when directly dealing with data without sanatizing your data first. Ideally don't use it at all unless you really know what you're doing.
 	```
 
-If the packet size is greater than zero then it will get the sender's Steam ID and the data they sent. The line `bytes2var` (Godot 2x., 3.x) or `bytes_to_var` (Godot 4.x) is very important as it decodes the data back into something you can read and use. After it is decoded you can pass that data to any number of functions for your game.
+If the packet size is greater than zero then it will get the sender's Steam ID and the data they sent. The line `bytes2var` (Godot 2x., 3.x) or `bytes_to_var` (Godot 4.x) is very important as it decodes the data back into something you can read and use. Do NOT use bytes_to_var_with_objects or bytes2var with objects enabled as it can lead to remote code execution. After it is decoded you can pass that data to any number of functions for your game. It is also important to remember to not allow the other users to call functions directly as well with the packets they're sending (or else it may ALSO lead to compromised user security and remote code execution).
 
 {==
 ## Sending P2P Packets
