@@ -2,16 +2,15 @@
 
 One of the more requested tutorials is multiplayer lobbies and P2P networking through Steam; this tutorial specifically covers the P2P Networking portion and [our lobbies tutorial covers the other half](lobbies.md).
 
-Please note this tutorial uses the **older Steamworks Networking class** and this is for a basic, turn-based lobby / P2P set-up. Only use this as a starting point.
+Please note this tutorial uses the **Steamworks Messages Networking class** and this is for a basic, turn-based lobby / P2P set-up. Only use this as a starting point.
 
 I'd also like to suggest you [check out the Additional Resources section of this tutorial](#additional-resources) before continuing on.
 
 ??? guide "Relevant GodotSteam classes and functions"
-	* [Networking class](../classes/networking.md)
-		* [acceptP2PSessionWithUser()](../classes/networking.md#acceptp2psessionwithuser)
-		* [getAvailableP2PPacketSize()](../classes/networking.md#getavailablep2ppacketsize)
-		* [readP2PPacket()](../classes/networking.md#readp2ppacket)
-		* [sendP2PPacket()](../classes/networking.md#sendp2ppacket)
+	* [Networking Messages class](../classes/networking_messages.md)
+		* [acceptsessionwithuser()](../classes/networking_messages.md#acceptsessionwithuser)
+		* [receiveMessagesOnChannel()](../classes/networking.md#receiveMessagesOnChannel)
+		* [sendMessageToUser()](../classes/networking.md#sendMessageToUser)
 	* [Friends class](../classes/friends.md)
 		* [getFriendPersonaName()](../classes/friends.md#getfriendpersonaname)
 
@@ -25,8 +24,8 @@ Next we'll want to set up the signal connections for Steamworks and a command li
 
 	```gdscript
 	func _ready() -> void:
-		Steam.connect("p2p_session_request", self, "_on_p2p_session_request")
-		Steam.connect("p2p_session_connect_fail", self, "_on_p2p_session_connect_fail")
+		Steam.connect("network_messages_session_request", self, "_on_network_messages_session_request")
+		Steam.connect("network_messages_session_failed", self, "_on_network_messages_session_failed")
 
 		# Check for command line arguments
 		check_command_line()
@@ -36,8 +35,8 @@ Next we'll want to set up the signal connections for Steamworks and a command li
 
 	```gdscript
 	func _ready() -> void:
-		Steam.p2p_session_request.connect(_on_p2p_session_request)
-		Steam.p2p_session_connect_fail.connect(_on_p2p_session_connect_fail)
+		Steam.network_messages_session_request.connect(_on_network_messages_session_request)
+		Steam.network_messages_session_failed.connect(_on_network_messages_session_failed)
 
 		# Check for command line arguments
 		check_command_line()
@@ -49,7 +48,7 @@ We will get into each of these below.
 ## The \_process() Function
 ==}
 
-We'll also need to set `read_p2p_packet()` in our `_process()` function so it is always looking for new packets:
+We'll also need to set `read_message()` in our `_process()` function so it is always looking for new packets:
 
 ```gdscript
 func _process(_delta) -> void:
@@ -57,7 +56,7 @@ func _process(_delta) -> void:
 
 	# If the player is connected, read packets
 	if lobby_id > 0:
-		read_p2p_packet()
+		read_messages()
 ```
 
 If you are using the `global.gd` autoload singleton then you can omit the `run_callbacks()` command as they'll be running already.
@@ -69,32 +68,23 @@ func _process(delta):
 	Steam.run_callbacks()
 
 	if lobby_id > 0:
-		read_all_p2p_packets()
-
-
-func read_all_p2p_packets(read_count: int = 0):
-	if read_count >= PACKET_READ_LIMIT:
-		return
-
-	if Steam.getAvailableP2PPacketSize(0) > 0:
-		read_p2p_packet()
-		read_all_p2p_packets(read_count + 1)
+		read_messages()
 ```
 
 {==
 ## P2P Networking - Session Request
 ==}
 
-Next we'll check out the P2P networking functionality. [Over in the lobby tutorial](lobbies.md), we did a P2P handshake when someone joins the lobby, it would trigger a `p2p_session_request` callback which would in turn trigger this function:
+Next we'll check out the P2P networking functionality. [Over in the lobby tutorial](lobbies.md), we did a P2P handshake when someone joins the lobby, it would trigger a `network_messages_session_request` callback which would in turn trigger this function:
 
 ```gdscript
-func _on_p2p_session_request(remote_id: int) -> void:
+func _on_network_messages_session_request(remote_id: int) -> void:
 	# Get the requester's name
 	var this_requester: String = Steam.getFriendPersonaName(remote_id)
 	print("%s is requesting a P2P session" % this_requester)
 
 	# Accept the P2P session; can apply logic to deny this request if needed
-	Steam.acceptP2PSessionWithUser(remote_id)
+	Steam.acceptSessionWithUser(remote_id)
 
 	# Make the initial handshake
 	make_p2p_handshake()
@@ -106,58 +96,49 @@ It pretty simply acknowledges the session request, accepts it, then sends a hand
 ## Reading P2P Packets
 ==}
 
-Inside that handshake there was a call to the `read_p2p_packet()` function which does this:
+Inside that handshake there was a call to the `read_message()` function which does this:
 
 === "Godot 2.x, 3.x"
 
 	```gdscript
-	func read_p2p_packet() -> void:
-		var packet_size: int = Steam.getAvailableP2PPacketSize(0)
+	func read_messages() -> void:
+		var messages: array = Steam.receiveMessagesOnChannel(0, 100)
 
 		# There is a packet
-		if packet_size > 0:
-			var this_packet: Dictionary = Steam.readP2PPacket(packet_size, 0)
-
-			if this_packet.empty() or this_packet == null:
+		for message in messages
+			if message.is_empty() or message == null:
 				print("WARNING: read an empty packet with non-zero size!")
+    			else:
+       				#make data readable
+       				message.payload = bytes_to_var(message.payload)
 
-			# Get the remote user's ID
-			var packet_sender: int = this_packet['remote_steam_id']
+				# Get the remote user's ID
+				var message_sender: int = message['remote_steam_id']
 
-			# Make the packet data readable
-			var packet_code: PoolByteArray = this_packet['data']
-			var readable_data: Dictionary = bytes2var(packet_code)
+				# Print the packet to output
+				print("Packet: " + message.payload)
 
-			# Print the packet to output
-			print("Packet: %s" % readable_data)
-
-			# Append logic here to deal with packet data
+				# Append logic here to deal with packet data
 	```
 
 === "Godot 4.x"
 
 	```gdscript
-	func read_p2p_packet() -> void:
-		var packet_size: int = Steam.getAvailableP2PPacketSize(0)
+	func read_messages() -> void:
+		var messages: Array = Steam.receiveMessagesOnChannel(0, 1000)
 
-		# There is a packet
-		if packet_size > 0:
-			var this_packet: Dictionary = Steam.readP2PPacket(packet_size, 0)
+		for message in messages
+			if message.is_empty() or message == null:
+				print("WARNING: read an empty message with non-zero size!")
+     		else:
+				message.payload = bytes_to_var(message.payload)
+				# Get the remote user's ID
+				var message_sender: int = this_packet['remote_steam_id']
 
-			if this_packet.is_empty() or this_packet == null:
-				print("WARNING: read an empty packet with non-zero size!")
+				# Print the packet to output
+				print("Message: " + message.payload)
 
-			# Get the remote user's ID
-			var packet_sender: int = this_packet['remote_steam_id']
-
-			# Make the packet data readable
-			var packet_code: PackedByteArray = this_packet['data']
-			var readable_data: Dictionary = bytes_to_var(packet_code)
-
-			# Print the packet to output
-			print("Packet: %s" % readable_data)
-
-			# Append logic here to deal with packet data
+				# Append logic here to deal with packet data
 	```
 
 If the packet size is greater than zero then it will get the sender's Steam ID and the data they sent. The line `bytes2var` (Godot 2x., 3.x) or `bytes_to_var` (Godot 4.x) is very important as it decodes the data back into something you can read and use. After it is decoded you can pass that data to any number of functions for your game.
@@ -173,9 +154,9 @@ I have mine set up with two arguments: the first is the recipient as a string an
 === "Godot 2.x, 3.x"
 
 	```gdscript
-	func send_p2p_packet(this_target: int, packet_data: Dictionary) -> void:
+	func send_message(this_target: int, packet_data: Dictionary) -> void:
 		# Set the send_type and channel
-		var send_type: int = Steam.P2P_SEND_RELIABLE
+		var send_type: int = Steam.NETWORKING_SEND_RELIABLE_NO_NAGLE
 		var channel: int = 0
 
 		# Create a data array to send the data through
@@ -189,19 +170,19 @@ I have mine set up with two arguments: the first is the recipient as a string an
 				# Loop through all members that aren't you
 				for this_member in lobby_members:
 					if this_member['steam_id'] != steam_id:
-						Steam.sendP2PPacket(this_member['steam_id'], this_data, send_type, channel)
+						Steam.sendMessageToUser(this_member['steam_id'], this_data, send_type, channel)
 
 		# Else send it to someone specific
 		else:
-			Steam.sendP2PPacket(this_target, this_data, send_type, channel)
+			Steam.sendMessageToUser(this_target, this_data, send_type, channel)
 	```
 
 === "Godot 4.x"
 
 	```gdscript
-	func send_p2p_packet(this_target: int, packet_data: Dictionary) -> void:
+	func send_message(this_target: int, packet_data: Dictionary) -> void:
 				# Set the send_type and channel
-		var send_type: int = Steam.P2P_SEND_RELIABLE
+		var send_type: int = Steam.NETWORKING_SEND_RELIABLE_NO_NAGLE
 		var channel: int = 0
 
 		# Create a data array to send the data through
@@ -215,21 +196,14 @@ I have mine set up with two arguments: the first is the recipient as a string an
 				# Loop through all members that aren't you
 				for this_member in lobby_members:
 					if this_member['steam_id'] != steam_id:
-						Steam.sendP2PPacket(this_member['steam_id'], this_data, send_type, channel)
+						Steam.sendMessageToUser(this_member['steam_id'], this_data, send_type, channel)
 
 		# Else send it to someone specific
 		else:
-			Steam.sendP2PPacket(this_target, this_data, send_type, channel)
+			Steam.sendMessageToUser(this_target, this_data, send_type, channel)
 	```
 
-The `send_type` variable will corresponed to these enums and integers:
-
-Send Type Enums 				| Values	| Descriptions
----								| ---		| ---
-P2P_SEND_UNRELIABLE				| 0			| Send unreliable
-P2P_SEND_UNRELIABLE_NO_DELAY	| 1			| Send unreliable with no delay
-P2P_SEND_RELIABLE				| 2			| Send reliable
-P2P_SEND_RELIABLE_WITH_BUFFERING| 3			|Send reliable with buffering
+For 'send_type' values please refer to this section of the [SteamWorks Api](https://partner.steamgames.com/doc/api/steamnetworkingtypes#message_sending_flags), these can also be called with their coresponding constant such as Steam.NETWORKING_SEND_RELIABLE_NO_NAGLE
 
 The channel used should match for both read and send functions. You may want to use multiple channels so this should obviously be adjusted.
 
@@ -242,118 +216,103 @@ We can compress the **PoolByteArray** / **PackedByteArray** to be smaller with a
 === "Godot 2.x, 3.x"
 
 	```gdscript
-	func send_p2p_packet(target: int, packet_data: Dictionary) -> void:
+	func send_message(this_target: int, packet_data: Dictionary) -> void:
 		# Set the send_type and channel
-		var send_type: int = Steam.P2P_SEND_RELIABLE
+		var send_type: int = Steam.NETWORKING_SEND_RELIABLE_NO_NAGLE
 		var channel: int = 0
 
 		# Create a data array to send the data through
 		var this_data: PoolByteArray
-		
-		# Compress the PoolByteArray we create from our dictionary  using the GZIP compression method
-		var compressed_data: PoolByteArray = var2bytes(packet_data).compress(File.COMPRESSION_GZIP)
-		this_data.append_array(compressed_data)
+		this_data.append_array(var2bytes(packet_data).compress(File.COMPRESSION_GZIP))
 
 		# If sending a packet to everyone
-		if target == 0:
+		if this_target == 0:
 			# If there is more than one user, send packets
 			if lobby_members.size() > 1:
 				# Loop through all members that aren't you
 				for this_member in lobby_members:
 					if this_member['steam_id'] != steam_id:
-						Steam.sendP2PPacket(this_member['steam_id'], this_data, send_type, channel)
-		
+						Steam.sendMessageToUser(this_member['steam_id'], this_data, send_type, channel)
+
 		# Else send it to someone specific
 		else:
-			Steam.sendP2PPacket(target, this_data, send_type, channel)
+			Steam.sendMessageToUser(this_target, this_data, send_type, channel)
 	```
 
 === "Godot 4.x"
 
 	```gdscript
-	func send_p2p_packet(target: int, packet_data: Dictionary) -> void:
-		# Set the send_type and channel
-		var send_type: int = Steam.P2P_SEND_RELIABLE
+	func send_message(this_target: int, packet_data: Dictionary) -> void:
+				# Set the send_type and channel
+		var send_type: int = Steam.NETWORKING_SEND_RELIABLE_NO_NAGLE
 		var channel: int = 0
 
 		# Create a data array to send the data through
 		var this_data: PackedByteArray
-		
-		# Compress the PackedByteArray we create from our dictionary  using the GZIP compression method
-		var compressed_data: PackedByteArray = var_to_bytes(packet_data).compress(FileAccess.COMPRESSION_GZIP)
-		this_data.append_array(compressed_data)
+		this_data.append_array(var_to_bytes(packet_data).compress(File.COMPRESSION_GZIP))
 
 		# If sending a packet to everyone
-		if target == 0:
+		if this_target == 0:
 			# If there is more than one user, send packets
 			if lobby_members.size() > 1:
 				# Loop through all members that aren't you
 				for this_member in lobby_members:
 					if this_member['steam_id'] != steam_id:
-						Steam.sendP2PPacket(this_member['steam_id'], this_data, send_type, channel)
-		
+						Steam.sendMessageToUser(this_member['steam_id'], this_data, send_type, channel)
+
 		# Else send it to someone specific
 		else:
-			Steam.sendP2PPacket(target, this_data, send_type, channel)
+			Steam.sendMessageToUser(this_target, this_data, send_type, channel)
 	```
 
 Of course, we've now sent a **compressed** PoolByteArray / PackedByteArray to someone else over the internet, so when they receive the packet, they will need to first **decompress** the PoolByteArray / PackedByteArray before they can decode it.
-To accomplish this, we add a single line of code to our `read_p2p_packet` function like so:
+To accomplish this, we add a single line of code to our `read_messages` function like so:
 
 === "Godot 2.x, 3.x"
 
 	```gdscript
-	func read_p2p_packet() -> void:
-		var packet_size: int = Steam.getAvailableP2PPacketSize(0)
+	func read_messages() -> void:
+		var messages: array = Steam.receiveMessagesOnChannel(0, 100)
 
 		# There is a packet
-		if packet_size > 0:
-			var this_packet: Dictionary = Steam.readP2PPacket(packet_size, 0)
+		while messages.size() > 0:
+			var message: Dictionary = messages.pop_front()
 
 			if this_packet.empty() or this_packet == null:
 				print("WARNING: read an empty packet with non-zero size!")
+    			else:
+       				#make data readable
+       				message['data'] = bytes2var(message['data']).decompress_dynamic(-1, File.COMPRESSION_GZIP)
 
-			# Get the remote user's ID
-			var packet_sender: int = this_packet['remote_steam_id']
+				# Get the remote user's ID
+				var message_sender: int = message['remote_steam_id']
 
-			# Make the packet data readable
-			var packet_code: PoolByteArray = this_packet['data']
-			
-			# Decompress the array before turning it into a useable dictionary
-			var readable_data: Dictionary = bytes2var(packet_code.decompress_dynamic(-1, File.COMPRESSION_GZIP))
+				# Print the packet to output
+				print("Packet: %s" % message['data'])
 
-			# Print the packet to output
-			print("Packet: %s" % readable_data)
-
-			# Append logic here to deal with packet data
+				# Append logic here to deal with packet data
 	```
 
 === "Godot 4.x"
 
 	```gdscript
-	func read_p2p_packet() -> void:
-		var packet_size: int = Steam.getAvailableP2PPacketSize(0)
+	func read_messages() -> void:
+		var messages: Array = Steam.receiveMessagesOnChannel(0, 1000)
 
 		# There is a packet
 		if packet_size > 0:
-			var this_packet: Dictionary = Steam.readP2PPacket(packet_size, 0)
+  			for message in messages:
+				if message.is_empty() or message == null:
+					print("WARNING: read an empty message with non-zero size!")
+     				else:
+					message.payload = bytes_to_var(message.payload).decompress_dynamic(-1, File.COMPRESSION_GZIP)
+					# Get the remote user's ID
+					var message_sender: int = this_packet['remote_steam_id']
 
-			if this_packet.is_empty() or this_packet == null:
-				print("WARNING: read an empty packet with non-zero size!")
+					# Print the packet to output
+					print("Message: %s" % message.payload)
 
-			# Get the remote user's ID
-			var packet_sender: int = this_packet['remote_steam_id']
-
-			# Make the packet data readable
-			var packet_code: PackedByteArray = this_packet['data']
-			
-			# Decompress the array before turning it into a useable dictionary
-			var readable_data: Dictionary = bytes_to_var(packet_code.decompress_dynamic(-1, FileAccess.COMPRESSION_GZIP))
-
-			# Print the packet to output
-			print("Packet: %s" % readable_data)
-
-			# Append logic here to deal with packet data
+					# Append logic here to deal with packet data
 	```
 
 The key point to note here is the format **must be the same for sending and receiving**. There's a whole lot to read about compression in Godot, far beyond this tutorial; to learn more, [read all about it here.](https://docs.godotengine.org/en/stable/classes/class_poolbytearray.html#class-poolbytearray-method-compress)
@@ -362,37 +321,11 @@ The key point to note here is the format **must be the same for sending and rece
 ## P2P Session Failures
 ==}
 	
-For the last part of this tutorial we'll handle P2P failures with the following function which is triggered by the `p2p_session_connect_fail` callback:
+For the last part of this tutorial we'll handle P2P failures with the following function which is triggered by the `network_messages_session_failed` callback:
 
 ```gdscript
-func _on_p2p_session_connect_fail(steam_id: int, session_error: int) -> void:
-	# If no error was given
-	if session_error == 0:
-		print("WARNING: Session failure with %s: no error given" % steam_id)
-
-	# Else if target user was not running the same game
-	elif session_error == 1:
-		print("WARNING: Session failure with %s: target user not running the same game" % steam_id)
-
-	# Else if local user doesn't own app / game
-	elif session_error == 2:
-		print("WARNING: Session failure with %s: local user doesn't own app / game" % steam_id)
-
-	# Else if target user isn't connected to Steam
-	elif session_error == 3:
-		print("WARNING: Session failure with %s: target user isn't connected to Steam" % steam_id)
-
-	# Else if connection timed out
-	elif session_error == 4:
-		print("WARNING: Session failure with %s: connection timed out" % steam_id)
-
-	# Else if unused
-	elif session_error == 5:
-		print("WARNING: Session failure with %s: unused" % steam_id)
-
-	# Else no known error
-	else:
-		print("WARNING: Session failure with %s: unknown error %s" % [steam_id, session_error])
+func _on_network_messages_session_failed(steam_id: int, session_error: int, state: int, debug_msg: String) -> void:
+	print(debug_msg)
 ```
 
 This will print a warning message so you know why the session connection failed. From here you can add any additional functionality you want like retrying the connection or something else.
