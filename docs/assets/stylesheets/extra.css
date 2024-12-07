@@ -49,6 +49,13 @@ html {
 	background-color:#478CBF;
 	color:#ffffff;
 }
+.md-meta__link {
+	color: #84bee8 !important;
+}
+.md-meta__link:hover {
+	color: #ffffff !important;
+	text-decoration: underline;
+}
 thead {
 	border-bottom: 1px solid #eee !important;
 }
