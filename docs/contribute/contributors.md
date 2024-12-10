@@ -74,12 +74,15 @@ Here is a list of all the great contributors, both those who have provided code 
 
 !!! contributors2 "Donors"
 	- AndreaJens
+	- [Andrej Skenderija](https://skenda.me/){ target="\_blank" }
 	- Andrew Yates
 	- ArchWitch Games
 	- Avencherus
 	- Charles Maddock
 	- columbiacolles
 	- d4rkd0s
+	- Dana P
+	- David McHale
 	- David Wery
 	- David-AW
 	- DeadlyEssence01
@@ -89,8 +92,11 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Elgenzay
 	- Garrett Steffen
 	- Hannes Breuer
+	- hardtrip
+	- HephepTeam
 	- Hung-Fan Liu
 	- InkRobert
+	- InvoxiPlayGames
 	- isikdos
 	- Jakub Nowak
 	- [Jayden Sipe](https://jaydensipe.github.io/){ target="\_blank" }
@@ -110,6 +116,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Michael Macha
 	- Mike King
 	- Mikk Maasik
+	- MinmoTech
 	- MudbuG
 	- Nicholas Orlowski
 	- Perroboc
@@ -119,13 +126,19 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Ricardo Sernaglia
 	- Ronan Docherty
 	- RosenX
+	- [RPG In-A-Box](https://rpginabox.com/){ target="\_blank" }
+	- SaffronStreams
 	- Shine Right Studio
 	- Siddhant Chereddy
 	- Simone Mändl
 	- Thorsten Schleinzer
+	- TrampolineTales
+	- VestedGrammar
 	- Wonderful Days Studio
+	- xaviervxz
 	- Zee Weasel
 	- Zeo Löwenhielm
+	- zikes
 
 </div>
 
