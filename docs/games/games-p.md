@@ -114,6 +114,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2479580/Prop_Game/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## PropFight
+<figure class="game" markdown>
+[![PropFight](https://steamcdn-a.akamaihd.net/steam/apps/2881590/header.jpg){ loading=lazy align=left }]https://store.steampowered.com/app/2881590/PropFight/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2881590/PropFight/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## The Pulse of Evil
 <figure class="game" markdown>
 [![The Pulse of Evil](https://steamcdn-a.akamaihd.net/steam/apps/2437890/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2437890/The_Pulse_of_Evil/){ target="\_blank" }

@@ -70,6 +70,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-discord: ](https://discord.gg/uXncbanyeR){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## The Short Trip
+<figure class="game" markdown>
+[![The Short Trip](https://steamcdn-a.akamaihd.net/steam/apps/3305430/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3305430/The_Short_Trip/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3305430/The_Short_Trip/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Siege 'n Sow
 <figure class="game" markdown>
 [![Siege 'n Sow](https://steamcdn-a.akamaihd.net/steam/apps/2773700/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2773700/Siege_n_Sow/){ target="\_blank" }
