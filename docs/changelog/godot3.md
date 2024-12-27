@@ -1,10 +1,10 @@
 ---
 title: Godot 3.x Changelog
 description: A history of all changes made to the godot3 branch.
-icon: material/clipboard-clock-outline
+icon: material/gamepad-square
 ---
 
-A history of all to [the ***godot3*** branch.](https://github.com/GodotSteam/GodotSteam/tree/godot3){ target="\_blank" }
+A history of all changes to [the ***godot3*** branch.](https://github.com/GodotSteam/GodotSteam/tree/godot3){ target="\_blank" }
 
 ---
 

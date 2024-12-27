@@ -1,4 +1,9 @@
-# How-To GDExtension
+---
+title: How To Compile GDExtension From Scratch
+description: Complete instructions on how to compile GDExtension from source code.
+icon: material/book-cog
+---
+
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 

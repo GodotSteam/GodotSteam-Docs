@@ -119,8 +119,14 @@
 
 ### steamInit
 
-!!! function "steamInit( ```bool``` retrieve_stats = true, ```uint32_t``` app_id, ```bool``` embed_callbacks )"
+!!! function "steamInit( ```bool``` retrieve_stats = false, ```uint32_t``` app_id, ```bool``` embed_callbacks )"
     Starts up the Steam API.
+
+    As of Steamworks SDK 1.61, the first argument defaults to false and will do nothing even is set to true. Prior to SDK 1.61, this argument defaults to true and will request the player's current statistics and achievements.
+
+    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.
+
+    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
 
     **Return:** dictionary
 
@@ -134,10 +140,6 @@
     * 20 / "Steam not running"
     * 79 / "Invalid app ID or app not installed"
 
-    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.
-
-    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
-
     **Note:** This function **does not** contain the second or third argument in **GDNative**. Also, this function **does not** contain the third argument in **GDExtension**.
 
     ------
@@ -145,8 +147,14 @@
 
 ### steamInitEx
 
-!!! function "steamInitEx( ```bool``` retrieve_stats = true, ```uint32_t``` app_id, ```bool``` embed_callbacks )"
+!!! function "steamInitEx( ```bool``` retrieve_stats = false, ```uint32_t``` app_id, ```bool``` embed_callbacks )"
     Initialize the Steamworks SDK. On success **STEAM_API_INIT_RESULT_OK** is returned. Otherwise, if **error_message** is non-NULL, it will receive a non-localized message that explains the reason for the failure.
+
+    As of Steamworks SDK 1.61, the first argument defaults to false and will do nothing even is set to true. Prior to SDK 1.61, this argument defaults to true and will request the player's current statistics and achievements.
+
+    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.
+
+    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
 
     **Returns:** dictionary
 
@@ -160,10 +168,6 @@
     * 2 / "Cannot connect to Steam, client probably isn't running"
     * 3 / "Steam client appears to be out of date"
 
-    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.
-
-    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
-
     **Note:** This function **does not** contain the second or third argument in **GDNative**. Also, this function **does not** contain the third argument in **GDExtension**.
 
 ### steamShutdown
@@ -172,24 +176,6 @@
     Shuts down the Steamworks API, releases pointers and frees memory.
 
     **Returns:** nothing
-
-{==
-## :material-signal: Signals
-==}
-
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
-
-### steamworks_error
-
-!!! function "steamworks_error"
-	Intended to serve as generic error messaging for failed call results.
-	
-	**Returns:**
-
-	* failed_signal (string)
-	* message (string)
-
-	**Note:** this callback is unique to GodotSteam.
 
 {==
 ## :material-numeric: Enums

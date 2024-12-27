@@ -4,8 +4,6 @@ description: Complete instructions on how to compile MultiplayerPeer from source
 icon: material/book-cog
 ---
 
-# How-To Compile Multiplayer Peer
-
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
 {==

@@ -223,6 +223,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-firefox-browser: ](https://www.spacekraken.studio/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## The SS Destiny Disaster
+<figure class="game" markdown>
+[![The SS Destiny Disaster](https://steamcdn-a.akamaihd.net/steam/apps/3197230/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3197230/The_SS_Destiny_Disaster/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3197230/The_SS_Destiny_Disaster/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Starveil
 <figure class="game" markdown>
 [![Starveil](https://steamcdn-a.akamaihd.net/steam/apps/2357590/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2357590/Starveil/){ target="\_blank" }

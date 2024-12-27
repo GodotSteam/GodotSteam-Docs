@@ -1,7 +1,7 @@
 ---
 title: Godot 4.x Changelog
 description: A history of all changes made to the godot4 branch.
-icon: material/clipboard-clock-outline
+icon: material/gamepad-square
 ---
 
 A history of all changes to [the ***godot4*** branch.](https://github.com/GodotSteam/GodotSteam/tree/godot4){ target="\_blank" }

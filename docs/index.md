@@ -52,19 +52,19 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 			<span class="sep">|</span>
-			<span class="value">1.60</span>
+			<span class="value">1.61</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.11</span>
+			<span class="value">4.12</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :fontawesome-brands-github: Pre-compiled Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.11){ .md-button .md-button--downloads target="\_blank" }
+	[ :fontawesome-brands-github: Pre-compiled Editor and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.12){ .md-button .md-button--downloads target="\_blank" }
 
 	[:octicons-plug-24: GDExtension | Godot Asset Library](https://godotengine.org/asset-library/asset/2445){ .md-button .md-button--downloads target="\_blank" }
  
@@ -76,26 +76,26 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 			<span class="sep">|</span>
-			<span class="value">3.5.3</span>
+			<span class="value">3.6</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 			<span class="sep">|</span>
-			<span class="value">1.60</span>
+			<span class="value">1.61</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">3.27</span>
+			<span class="value">3.28</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :fontawesome-brands-github: Pre-compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.27){ .md-button .md-button--downloads target="\_blank" }
+	[ :fontawesome-brands-github: Pre-compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.28){ .md-button .md-button--downloads target="\_blank" }
 
 	[ :octicons-plug-24: GDNative | Godot Asset Library](https://godotengine.org/asset-library/asset/1045){ .md-button .md-button--downloads target="\_blank" }
 
@@ -118,19 +118,19 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 			<span class="sep">|</span>
-			<span class="value">1.60</span>
+			<span class="value">1.61</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam MultiplayerPeer" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.11</span>
+			<span class="value">4.12</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :fontawesome-solid-people-group: MultiplayerPeer Editor and Templates](https://github.com/GodotSteam/MultiPlayerPeer/releases/tag/v4.11-mp){ .md-button .md-button--downloads target="\_blank" }
+	[ :fontawesome-solid-people-group: MultiplayerPeer Editor and Templates](https://github.com/GodotSteam/MultiPlayerPeer/releases/tag/v4.12-mp){ .md-button .md-button--downloads target="\_blank" }
 
 	---
 
@@ -166,26 +166,26 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.2.2</span>
+			<span class="value">4.3</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 			<span class="sep">|</span>
-			<span class="value">1.60</span>
+			<span class="value">1.61</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.9</span>
+			<span class="value">4.4</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :octicons-server-24: Server Pre-Compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.3){ .md-button .md-button--downloads target="\_blank" }
+	[ :octicons-server-24: Server Pre-Compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.4){ .md-button .md-button--downloads target="\_blank" }
 
 	[ :octicons-plug-24: Server GDExtension](https://godotengine.org/asset-library/asset/2218){ .md-button .md-button--downloads target="\_blank" }
 
@@ -197,26 +197,26 @@ Depending on what your end goals are, you will probably want to use a different 
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 			<span class="sep">|</span>
-			<span class="value">3.5.3</span>
+			<span class="value">3.6</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 			<span class="sep">|</span>
-			<span class="value">1.59</span>
+			<span class="value">1.61</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:octicons-server-24:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">3.3</span>
+			<span class="value">3.4</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[ :octicons-server-24: Server Pre-compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.3){ .md-button .md-button--downloads target="\_blank" }
+	[ :octicons-server-24: Server Pre-compiled Editors and Templates](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.4){ .md-button .md-button--downloads target="\_blank" }
 
 	[ :octicons-plug-24: Server GDNative | Godot Asset Library](https://godotengine.org/asset-library/asset/2222){ .md-button .md-button--downloads target="\_blank" }
 </div>
@@ -404,22 +404,13 @@ Finally got your Steam store page up? Whether you are about to release your game
 
 <div class="grid full cards" markdown>
 
-- :fontawesome-brands-github: __Github Issues__
+- :fontawesome-brands-github: __Github Discussions__
 
-	These should only be used for actual bugs in the project. Please direct questions to either an e-mail or Discord.
+	Any issues, bugs or questions can be directed to Github Discussions where we have a forum-style setup that also includes places to share your project, ask about implementations, and more.
 	
 	--- 
 
-	[:fontawesome-brands-github: Create An Issue](https://github.com/GodotSteam/GodotSteam/issues){ .md-button .md-button--downloads target="\_blank" }
-
-
--  :fontawesome-solid-paper-plane: __By E-Mail__
-
-	Send me an e-mail with as many details as you can about your issue. Unless you are just saying hi.
-
-	---
-
-	[:fontawesome-solid-paper-plane: Send A Support E-Mail](mailto:support@godotsteam.com){ .md-button .md-button--downloads target="\_blank" }
+	[:fontawesome-brands-github: Post A Question](https://github.com/GodotSteam/GodotSteam/discussions){ .md-button .md-button--downloads target="\_blank" }
 
 - :material-account-group: __Community Support__
 	
@@ -443,7 +434,7 @@ Want to help out? There are a few ways and all of them get you listed in our con
 
  - :octicons-git-pull-request-24: __Pull Requests__
 
- 	A huge help is the contributions of fixes and additions through pull-requests on GitHub. 
+ 	Provide contributions with fixes and additions through pull-requests on GitHub. 
 
  	---
 
@@ -453,12 +444,10 @@ Want to help out? There are a few ways and all of them get you listed in our con
 
  - :material-heart: __Donations__
 
- 	You can provide donations for the project through Github Sponsors or Patreon.
+ 	If you are more flush, you can fund work on the project through Github Sponsors.
 
  	---
 
 	[:material-heart: GitHub Sponsors](https://github.com/sponsors/Gramps){ .md-button .md-button--downloads target="\_blank" }
-
-	[:material-heart: Patreon](https://patreon.com/godotsteam){ .md-button .md-button--downloads target="\_blank" }
 
 </div>

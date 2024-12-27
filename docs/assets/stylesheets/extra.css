@@ -95,10 +95,16 @@ h3 {
 .md-tabs {
   background-color: #478CBF !important;
 }
+
 .critic {
-	background-color: #35688E !important;
-	margin: 0em 0 2em !important;
+		margin: 0em 0 2em !important;
 }
+
+.critic ~ .critic {
+	background-color: #35688E !important;
+	margin: 8em 0 2em !important;	
+}
+
 .md-typeset .critic.block h2 {
 	font-weight: bold;
 }
@@ -129,7 +135,7 @@ h3 {
 }
 .md-typeset code {
 	background-color: #282828;
-  padding: .295em .295em;
+  padding: .05em .295em;
 }
 .md-typeset pre>code {
 	scrollbar-color:#478CBF #3A526A !important;
@@ -517,7 +523,7 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 .md-typeset .grid {
   grid-gap: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(min(100%,16rem),1fr));
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,25rem),1fr));
   margin: 1em 0;
 }
 .grid {

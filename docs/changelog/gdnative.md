@@ -1,10 +1,10 @@
 ---
 title: GDNative Changelog
 description: A history of all changes made to the gdnative branch.
-icon: material/clipboard-clock-outline
+icon: material/power-plug-outline
 ---
 
-A history of all changes to [the ***gdnative*** branch.](https://github.com/GodotSteam/GodotSteam/tree/gdnative){ target="\_blank" }
+A history of all changes to [the ***gdnative*** branch;](https://github.com/GodotSteam/GodotSteam/tree/gdnative){ target="\_blank" } which is now retired. This branch still works fine but will not receive any further updates.
 
 ---
 
@@ -260,7 +260,7 @@ A history of all changes to [the ***gdnative*** branch.](https://github.com/Godo
 
 * Removed: not logged in as a failure condition for `steamInit()`
 
-## Version 3.1**
+## Version 3.1
 
 * Added: various Steam Deck specific functions, ***thanks to EIREXE***
 * Added: new AppLists class of functions and callbacks
@@ -279,22 +279,22 @@ A history of all changes to [the ***gdnative*** branch.](https://github.com/Godo
 * Removed: `receiveRelayAuthTicket()`, `findRelayAuthTicketForServer()`, `getHostedDedicatedServerAddress()`, and `getGameCoordinatorServerLogin()` as they rely on datagram header that was removed from base SDK
 * Removed: second call for steam_api.h in godotsteam.cpp
 
-## Version 3.0.1**
+## Version 3.0.1
 
 * Fixed: two issues with godotsteam.cpp that causes compiling error on Linux
 
-## Version 3.0.0**
+## Version 3.0.0
 
 * Added: all missing functions to bring GDNative version in-line with module version
 * Changed: rebuilt and restructured layout of project folder
 * Removed: enums as they don't work in GDNative
 * Removed: default arguments for functions as they don't work in GDNative
 
-## Version 2.1.0**
+## Version 2.1.0
 
 * Added: Steamworks P2P functions thanks to Antokolos
 
-## Version 2.0.0**
+## Version 2.0.0
 
 * Added: all current GodotSteam functions and signals
 * Added: [godotsteam.h] file
@@ -302,7 +302,7 @@ A history of all changes to [the ***gdnative*** branch.](https://github.com/Godo
 * Changed: various parts of the CPP files
 * Removed: pre-compiled TSCN and TRES files
 
-## Version 1.1.0**
+## Version 1.1.0
 
 * Added: [godotsteam.h] file
 * Added: `getCurrentGameLanguage()`
@@ -312,7 +312,7 @@ A history of all changes to [the ***gdnative*** branch.](https://github.com/Godo
 * Changed: minor things in godotsteam.cpp
 * Removed: pre-compiled TSCN and TRES files
 
-## Version 1.0.0**
+## Version 1.0.0
 
 * Added: most pre-existing GodotSteam code over
 * Added: GodotSteam GDNative documentation

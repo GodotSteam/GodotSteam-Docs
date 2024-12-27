@@ -1,4 +1,9 @@
-# How-To GDNative
+---
+title: How To Compile GDNative From Scratch
+description: Complete instructions on how to compile GDNative from source code.
+icon: material/book-cog
+---
+
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 

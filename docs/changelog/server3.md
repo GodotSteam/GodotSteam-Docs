@@ -1,4 +1,8 @@
-# Server 3.x Change-Log
+---
+title: Server 3.x Changelog
+description: A history of all changes made to the server godot3 branch.
+icon: material/server-outline
+---
 
 A history of all changes to [the ***server3*** branch.](https://github.com/GodotSteam/GodotSteam-Server/tree/godot3){ target="\_blank" }
 

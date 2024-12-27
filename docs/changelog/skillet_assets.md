@@ -1,4 +1,8 @@
-# Skillet Assets Change-Log
+---
+title: Skillet Asset Change-Log
+description: A history of all changes made to the Skillet asset branch.
+icon: material/format-paint
+---
 
 A history of all changes to [the ***assets*** branch of the Skillet repository.](https://github.com/GodotSteam/Skillet/tree/assets){ target="\_blank" }
 
