@@ -52,6 +52,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2774410/Escape_from_Zeta_Aurigae/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Everything Ends In 0
+<figure class="game" markdown>
+[![Everything Ends In 0](https://steamcdn-a.akamaihd.net/steam/apps/3170670/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3170670/Everything_Ends_In_0/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3170670/Everything_Ends_In_0/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Exostation
 <figure class="game" markdown>
 [![Exostation](https://steamcdn-a.akamaihd.net/steam/apps/1813120/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1813120/Exostation/){ target="\_blank" }
