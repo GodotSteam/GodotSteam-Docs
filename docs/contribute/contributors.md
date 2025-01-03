@@ -88,6 +88,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- DeadlyEssence01
 	- Dillon Joel Steyl
 	- Don Piano
+	- Dreamfarer
 	- eflake
 	- Elgenzay
 	- Garrett Steffen
