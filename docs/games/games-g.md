@@ -70,6 +70,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2005790/Gleeb_Glob/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Globs
+<figure class="game" markdown>
+[![Globs](https://steamcdn-a.akamaihd.net/steam/apps/3219110/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3219110/Globs/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3219110/Globs/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Glory's Witness
 <figure class="game" markdown>
 [![Glory's Witness](https://steamcdn-a.akamaihd.net/steam/apps/1505270/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1505270/_Glorys_Witness/){ target="\_blank" }
