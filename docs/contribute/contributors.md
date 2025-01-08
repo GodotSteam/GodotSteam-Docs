@@ -68,6 +68,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- troykinsella
 	- xsellier
 	- vaartis
+	- wpbirney
 	- VictorienXP
 	- yeonghoey
 	- Zee Weasel
