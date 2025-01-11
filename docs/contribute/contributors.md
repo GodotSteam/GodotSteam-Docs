@@ -43,6 +43,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- kongo555
 	- Kryx-Ikyr
 	- hungFI
+	- larsvanhilten
 	- Lunatix89
 	- marcelofg55
 	- MartinAppDev

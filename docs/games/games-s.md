@@ -107,6 +107,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@centigames){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## Skillet
+<figure class="game" markdown>
+[![Skillet](https://steamcdn-a.akamaihd.net/steam/apps/3013040/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3013040/Skillet/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3013040/Skillet/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@godotsteam){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-discord: ](https://discord.com/invite/SJRSq6K){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://godotsteam.com/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## SKIP
 <figure class="game" markdown>
 [![SKIP](https://steamcdn-a.akamaihd.net/steam/apps/2330090/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2330090/SKIP/){ target="\_blank" }
