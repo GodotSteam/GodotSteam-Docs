@@ -33,7 +33,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1637140/Fishards/){ target="\_blank" .md-button .md-button--store }
 [ :fontawesome-brands-instagram: ](https://www.instagram.com/rivernotch/){ target="\_blank" .md-button .md-button--store }
-[ :fontawesome-solid-microphone: ](https://coaguco.com/coagucast/episode/4){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Flowers of Satsunai
@@ -92,6 +91,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [![Fruit Salad](https://steamcdn-a.akamaihd.net/steam/apps/1848520/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1848520/Fruit_Salad/){ target="\_blank" }
 
 [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1848520/Fruit_Salad/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
+## Fruity Rogue
+<figure class="game" markdown>
+[![Fruity Rogue](https://steamcdn-a.akamaihd.net/steam/apps/3221570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3221570/Fruity_Rogue/){ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3221570/Fruity_Rogue/){ target="\_blank" .md-button .md-button--store }
+[ :fontawesome-brands-firefox-browser: ](https://www.fruityrogue.com/){ target="\_blank" .md-button .md-button--store }
 </figure>
 
 ## Full Court Heroes
