@@ -61,16 +61,6 @@ func _process(_delta) -> void:
 
 If you are using the `global.gd` autoload singleton then you can omit the `run_callbacks()` command as they'll be running already.
 
-Here is a nice bit of code from **Toi Lanh** based on **tehsquidge**'s networking code for handling packet reading:
-
-```gdscript
-func _process(delta):
-	Steam.run_callbacks()
-
-	if lobby_id > 0:
-		read_messages()
-```
-
 {==
 ## P2P Networking - Session Request
 ==}
@@ -102,30 +92,30 @@ Inside that handshake there was a call to the `read_messages()` function which d
 
 	```gdscript
 	func read_messages() -> void:
-		var messages: array = Steam.receiveMessagesOnChannel(0, 100)
+		var messages: array = Steam.receiveMessagesOnChannel(send_channel, max_messages)
 
 		# There is a packet
 		for message in messages
 			if message.is_empty() or message == null:
 				print("WARNING: read an empty packet with non-zero size!")
     			else:
-       				#make data readable. Do NOT use bytes2var with_objects enabled.
+       				# Make data readable.
        				message.payload = bytes_to_var(message.payload)
 
 				# Get the remote user's ID
 				var message_sender: int = message['remote_steam_id']
 
 				# Print the packet to output
-				print("Packet: " + message.payload)
+				print("Message Payload: %s" % message.payload)
 
-				# Append logic here to deal with message data. Do NOT use call or call_v here when directly dealing with data without sanatizing your data first. Ideally don't use it at all unless you really know what you're doing.
+				# Append logic here to deal with message data. 
 	```
 
 === "Godot 4.x"
 
 	```gdscript
 	func read_messages() -> void:
-		var messages: Array = Steam.receiveMessagesOnChannel(0, 1000)
+		var messages: Array = Steam.receiveMessagesOnChannel(send_channel, max_messages)
 
 		for message in messages
 			if message.is_empty() or message == null:
@@ -136,12 +126,16 @@ Inside that handshake there was a call to the `read_messages()` function which d
 				var message_sender: int = this_packet['remote_steam_id']
 
 				# Print the packet to output
-				print("Message: " + message.payload)
+				print("Message Payload: %s" % message.payload)
 
-				# Append logic here to deal with message data. Do NOT use call or call_v here when directly dealing with data without sanatizing your data first. Ideally don't use it at all unless you really know what you're doing.
+				# Append logic here to deal with message data. 
 	```
 
-If the packet size is greater than zero then it will get the sender's Steam ID and the data they sent. The line `bytes2var` (Godot 2x., 3.x) or `bytes_to_var` (Godot 4.x) is very important as it decodes the data back into something you can read and use. Do NOT use bytes_to_var_with_objects or bytes2var with objects enabled as it can lead to remote code execution. After it is decoded you can pass that data to any number of functions for your game. It is also important to remember to not allow the other users to call functions directly as well with the packets they're sending (or else it may ALSO lead to compromised user security and remote code execution).
+If the packet size is greater than zero then it will get the sender's Steam ID and the data they sent. The line `bytes2var` (Godot 2x., 3.x) or `bytes_to_var` (Godot 4.x) is very important as it decodes the data back into something you can read and use. After it is decoded you can pass that data to any number of functions for your game. 
+
+WARNING: You should avoid using bytes_to_var_with_objects, or bytes2var with objects when trying to decode the Message payload, this is because code can be executed if malicious data is sent. The Official Godot docs warn against this, and doing so may lead to compromising the security of your players. [Check the warning here.](https://docs.godotengine.org/en/stable/classes/class_%40globalscope.html#class-globalscope-method-bytes-to-var)
+
+Additionally, after decoding your payload, avoid giving users free reign of the call functions as this may lead to similar security exploits as well. When dealing with other players, it is important to sanitize their inputs to prevent malicious action.
 
 {==
 ## Sending P2P Packets
@@ -203,7 +197,7 @@ I have mine set up with two arguments: the first is the recipient as a string an
 			Steam.sendMessageToUser(this_target, this_data, send_type, channel)
 	```
 
-For 'send_type' values please refer to this section of the [SteamWorks Api](https://partner.steamgames.com/doc/api/steamnetworkingtypes#message_sending_flags), these can also be called with their coresponding constant such as Steam.NETWORKING_SEND_RELIABLE_NO_NAGLE
+For 'send_type' values please refer to this section of the [SteamWorks API](https://partner.steamgames.com/doc/api/steamnetworkingtypes#message_sending_flags), these can also be called with their coresponding constant such as Steam.NETWORKING_SEND_RELIABLE_NO_NAGLE
 
 The channel used should match for both read and send functions. You may want to use multiple channels so this should obviously be adjusted.
 
@@ -275,13 +269,13 @@ To accomplish this, we add a single line of code to our `read_messages` function
 		var messages: array = Steam.receiveMessagesOnChannel(0, 100)
 
 		# There is a packet
-		while messages.size() > 0:
+		for message in messages:
 			var message: Dictionary = messages.pop_front()
 
 			if this_packet.empty() or this_packet == null:
 				print("WARNING: read an empty packet with non-zero size!")
     			else:
-       				#make data readable
+       				#Make data readable
        				message['data'] = bytes2var(message['data']).decompress_dynamic(-1, File.COMPRESSION_GZIP)
 
 				# Get the remote user's ID
@@ -290,7 +284,7 @@ To accomplish this, we add a single line of code to our `read_messages` function
 				# Print the packet to output
 				print("Packet: %s" % message['data'])
 
-				# Append logic here to deal with packet data
+				# Append logic here to deal with message data
 	```
 
 === "Godot 4.x"
@@ -305,14 +299,14 @@ To accomplish this, we add a single line of code to our `read_messages` function
 				if message.is_empty() or message == null:
 					print("WARNING: read an empty message with non-zero size!")
      				else:
-					message.payload = bytes_to_var(message.payload).decompress_dynamic(-1, File.COMPRESSION_GZIP)
+					message.payload = bytes_to_var(message.payload).decompress_dynamic(-1, FileAccess.COMPRESSION_GZIP)
 					# Get the remote user's ID
 					var message_sender: int = this_packet['remote_steam_id']
 
 					# Print the packet to output
 					print("Message: %s" % message.payload)
 
-					# Append logic here to deal with packet data
+					# Append logic here to deal with message data
 	```
 
 The key point to note here is the format **must be the same for sending and receiving**. There's a whole lot to read about compression in Godot, far beyond this tutorial; to learn more, [read all about it here.](https://docs.godotengine.org/en/stable/classes/class_poolbytearray.html#class-poolbytearray-method-compress)
