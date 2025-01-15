@@ -13,6 +13,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Antokolos
 	- ArchiRocksTech
 	- Avencherus
+	- bearlikelion
 	- blaze-the-star
 	- brogan89
 	- butlersrepos
