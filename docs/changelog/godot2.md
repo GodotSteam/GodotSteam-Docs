@@ -1,10 +1,10 @@
 ---
 title: Godot 2.x Changelog
 description: A history of all changes made to the godot2 branch.
-icon: material/clipboard-clock-outline
+icon: material/gamepad-square
 ---
 
-A history of all to [the ***godot2*** branch.](https://github.com/GodotSteam/GodotSteam/tree/godot2){ target="\_blank" }
+A history of all changes to [the ***godot2*** branch;](https://github.com/GodotSteam/GodotSteam/tree/godot2){ target="\_blank" } which is now retired. This branch still works fine but will not receive any further updates.
 
 ---
 

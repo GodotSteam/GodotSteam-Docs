@@ -459,7 +459,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### input_device_disconnected
 
 !!! function "input_device_disconnected"
-	Called when a new controller has been connected, will fire once per controller if multiple new controllers connect in the same frame.
+	Called when a new controller has been disconnected, will fire once per controller if multiple new controllers disconnect in the same frame.
 
 	**Returns:**
 

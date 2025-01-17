@@ -1,12 +1,28 @@
 ---
 title: Godot 4.x Changelog
 description: A history of all changes made to the godot4 branch.
-icon: material/clipboard-clock-outline
+icon: material/gamepad-square
 ---
 
 A history of all changes to [the ***godot4*** branch.](https://github.com/GodotSteam/GodotSteam/tree/godot4){ target="\_blank" }
 
 ---
+
+## Version 4.12 Changes
+
+- Added: new Timeline functions, call results, and enums
+- Added: new Inputs enums for Horipad; `INPUT_ACTION_ORIGIN`
+- Added: new Networking config enum `NETWORKING_CONFIG_SEND_TIME_SINCE_PREVIOUS_PACKET`
+- Added: new Networking config enums for fake packet jitter; `NETWORKING_CONFIG_FAKE_JITTER_`
+- Changed: `equipped_profile_items` callback now sends `from_cache` bool
+- Changed: first argument for `steamInit` and `steamInitEx` no longer calls for stats as they are synced by client; left to prevent compatibility breakage
+- Fixed: `getAchievement` and related achievement functions breaking under rare conditions
+- Fixed: incorrect type for `set_inventory_update_handle`
+- Removed: `setTimelineGameMode` function which was removed in 1.61
+- Removed: `current_stats_received` callback removed for redundancy
+- Removed: Google Stadia, Nintendo, Epic Games, and WeGame Networking identity types fully removed, from 1.61
+- Removed: unncessary commenting
+- Removed: `sendMessages` until it can be fixed in Windows
 
 ## Version 4.11 Changes
 

@@ -1,12 +1,16 @@
 ---
 title: MultiplayerPeer Changelog
 description: A history of all changes made to the multiplayer-peer branch.
-icon: material/clipboard-clock-outline
+icon: material/account-supervisor
 ---
 
 A history of all changes to [the ***MultiplayerPeer*** repo.](https://github.com/GodotSteam/MultiplayerPeer){ target="\_blank" }
 
 ---
+
+## Version 4.12
+
+- Changed: version bump to match Godot 4.x branch update
 
 ## Version 4.11
 

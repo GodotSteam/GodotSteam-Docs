@@ -1,6 +1,10 @@
-# Server GDNative Change-Log
+---
+title: Server GDNative Changelog
+description: A history of all changes made to the server gdnative branch.
+icon: material/power-plug-outline
+---
 
-A history of all changes to [the ***server gdnative*** branch.](https://github.com/GodotSteam/GodotSteam-Server/tree/gdnative){ target="\_blank" }
+A history of all changes to [the ***server gdnative*** branch;](https://github.com/GodotSteam/GodotSteam-Server/tree/gdnative){ target="\_blank" } which is now retired. This branch still works fine but will not receive any further updates.
 
 ---
 

@@ -95,7 +95,7 @@ Exposes a wide range of information and actions for applications and [Downloada
 
     Contains dictionaries (dlc) which contain the following keys:
 
-    * app_id (int) | The app ID for the DLC
+    * id (int) | The app ID for the DLC
     * available (bool) | Whether the DLC is available on the Steam store currently
     * name (string) | The name of the DLC
 
@@ -108,7 +108,7 @@ Exposes a wide range of information and actions for applications and [Downloada
 
     **Return**: dictionary, which contains the following keys:
 
-    * app_id (int) | The app ID for the DLC
+    * id (int) | The app ID for the DLC
     * available (bool) | Whether the DLC is available on the Steam store currently
     * name (string) | The name of the DLC
 

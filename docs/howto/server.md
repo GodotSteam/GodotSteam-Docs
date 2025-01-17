@@ -1,4 +1,8 @@
-# How-To Servers
+---
+title: How To Compile Servers From Scratch
+description: Complete instructions on how to compile servers from source code.
+icon: material/book-cog
+---
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 

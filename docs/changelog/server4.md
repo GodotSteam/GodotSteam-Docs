@@ -1,8 +1,27 @@
-# Server 4.x Change-Log
+---
+title: Server 4.x Changelog
+description: A history of all changes made to the server godot4 branch.
+icon: material/server-outline
+---
 
 A history of all changes to [the ***server4*** branch.](https://github.com/GodotSteam/GodotSteam-Server/tree/godot4){ target="\_blank" }
 
 ---
+
+## Version 4.4
+
+- Added: public properties with set/get functions
+- Added: failures now print to editor
+- Changed: updated to Steamworks SDK 1.61
+- Changed: added new enums from newest SDK, removed the now missing ones
+- Changed: deprecating `serverInit` in next patch, migrate to `serverInitEx`
+- Changed: return typed for `getHTTPResponseHeaderValue` and `getHTTPStreamingResponseBodyData`
+- Changed: `configureConnectionLanes` now has correct type for lanes argument
+- Changed: NetworkingSockets now take dictionary for options, based on godot4 branch in main GodotSteam repo
+- Changed: reworked `getUserAchievement`, `getUserStatFloat`, `getUserStatInt` to mirror godot4 branch in main GodotSteam repo
+- Fixed: `setHTTPRequestRawPostBody`, backport from godot4 branch in main GodotSteam repo
+- Fixed: `serializeResult` now returns PackedByteArray
+- Fixed: misspelled enum
 
 ## Version 4.3
 

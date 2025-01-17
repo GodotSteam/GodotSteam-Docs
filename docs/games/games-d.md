@@ -77,6 +77,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 [ :fontawesome-brands-discord: ](https://discord.gg/DKhERbjn){ target="\_blank" .md-button .md-button--store }
 </figure>
 
+## DOCAAY
+<figure class="game" markdown>
+[![DOCAAY](https://steamcdn-a.akamaihd.net/steam/apps/3182450/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3182450/DOCAAY/{ target="\_blank" }
+
+[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3182450/DOCAAY/){ target="\_blank" .md-button .md-button--store }
+</figure>
+
 ## Dome Keeper
 <figure class="game" markdown>
 [![Dome Keeper](https://steamcdn-a.akamaihd.net/steam/apps/1637320/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1637320/Dome_Keeper/){ target="\_blank" }

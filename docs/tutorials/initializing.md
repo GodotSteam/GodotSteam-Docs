@@ -194,7 +194,7 @@ Some users have noticed that if their `run_callbacks` sits in a script or node t
 
 Putting it together should give us something like this:
 
-=== "Without internal app ID and callbacks"
+=== "With internal app ID and callbacks"
 
 	```gdscript
 	extends Node
@@ -243,7 +243,7 @@ Putting it together should give us something like this:
 			get_tree().quit()
 	```
 
-=== "With internal app ID and callbacks"
+=== "Without internal app ID and callbacks"
 
 	```gdscript
 	extends Node
