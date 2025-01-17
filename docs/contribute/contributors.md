@@ -125,6 +125,7 @@ Here is a list of all the great contributors, both those who have provided code 
 	- Nicholas Orlowski
 	- Perroboc
 	- pixelriot
+	- [PurpleMossCollectors](http://purplemosscollectors.com/){ target="\_blank" }
 	- Ranoller
 	- René Habermann
 	- Ricardo Sernaglia
