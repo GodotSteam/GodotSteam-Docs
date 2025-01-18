@@ -112,7 +112,7 @@ Networking API intended to make it easy to port non-connection-oriented code to 
 
 	Contains the following keys:
 
-	* payload (string)
+	* payload (PackedByteArray)
 	* size (int)
 	* connection (uint32)
 	* identity (uint64_t)
