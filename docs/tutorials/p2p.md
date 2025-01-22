@@ -103,7 +103,7 @@ Inside that handshake there was a call to the `read_messages()` function which d
        				message.payload = bytes_to_var(message.payload)
 
 				# Get the remote user's ID
-				var message_sender: int = message['remote_steam_id']
+				var message_sender: int = message['identity']
 
 				# Print the packet to output
 				print("Message Payload: %s" % message.payload)
@@ -123,7 +123,7 @@ Inside that handshake there was a call to the `read_messages()` function which d
      		else:
 				message.payload = bytes_to_var(message.payload)
 				# Get the remote user's ID
-				var message_sender: int = this_packet['remote_steam_id']
+				var message_sender: int = message['identity']
 
 				# Print the packet to output
 				print("Message Payload: %s" % message.payload)
