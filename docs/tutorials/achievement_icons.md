@@ -23,7 +23,7 @@ This quick tutorial will cover to how get achievement icons from Steam's servers
 ## :material-file-document-check: Prerequisites
 ==}
 
-Before you can get achievement icons you first need to have retrieved the user's stats from Steam. This is done by default when initializing Steam, but can optionally be disabled. This tutorial assumes that you have already received the user stats. See [requestCurrentStats()](../classes/user_stats.md#requestcurrentstats) for more information if needed.
+Before you can get achievement icons you first need to have retrieved the user's stats from Steam. This is done by default when initializing Steam, but can optionally be disabled. This tutorial assumes that you have already received the user stats.  Starting in **SDK 1.61 (GodotSteam 3.27 / 4.12)**, this is now done automatically by the Steam client so you should be good to go.
 
 {==
 ## :material-database: Getting the Handle and Buffer
@@ -42,13 +42,13 @@ var icon_size: Dictionary = Steam.getImageSize(icon_handle)
 var icon_buffer: Dictionary = Steam.getImageRGBA(icon_handle)
 ```
 
-Note that the `getImageRGBA()` function can be somewhat expensive so it is recommended to only call this once per image handle and cache the result if you will need to access the image data multiple times.
+Note that the **getImageRGBA()** function can be somewhat expensive so it is recommended to only call this once per image handle and cache the result if you will need to access the image data multiple times.
 
 {==
 ## :material-image: Creating the Image
 ==}
 
-This buffer is a dictionary that contains two keys: `success` and `buffer` which contains the actual image data for our icon. However, as it is simply binary data, we need to load it into an Image so that Godot can use it as a Texture. The format of the data in the buffer is RGBA8 when we receive it from Steam, so we need to tell Godot how to make sense of it by specifying it as such:
+This buffer is a dictionary that contains two keys: **success** and **buffer** which contains the actual image data for our icon. However, as it is simply binary data, we need to load it into an Image so that Godot can use it as a Texture. The format of the data in the buffer is RGBA8 when we receive it from Steam, so we need to tell Godot how to make sense of it by specifying it as such:
 
 === "Godot 2.x, 3.x"
 
@@ -63,7 +63,7 @@ This buffer is a dictionary that contains two keys: `success` and `buffer` which
 	var icon_image: Image = Image.create_from_data(icon_size.width, icon_size.height, false, Image.FORMAT_RGBA8, icon_buffer["buffer"])
 	```
 
-The size of the image is determined by the images you uploaded when configuring achievements on the Steamworks back-end. Valve recommends larger (256x256) images. If you want to display the image at a different size, say 64x64, you can optionally resize it now. Check the [Godot documentation](https://docs.godotengine.org/en/stable/classes/class_image.html#class-image-method-resize) on `Image.resize()` for which interpolation mode best suits your needs.
+The size of the image is determined by the images you uploaded when configuring achievements on the Steamworks back-end. Valve recommends larger (256x256) images. If you want to display the image at a different size, say 64x64, you can optionally resize it now. Check the [Godot documentation](https://docs.godotengine.org/en/stable/classes/class_image.html#class-image-method-resize) on **Image.resize()** for which interpolation mode best suits your needs.
 
 ```gdscript
 icon_image.resize(64, 64, Image.INTERPOLATE_LANCZOS)
@@ -84,7 +84,7 @@ Now that all the pixels are set in the right places, we can create the actual te
 	var icon_texture: ImageTexture = ImageTexture.create_from_image(icon_image)
 	```
 
-Finally we can display the icon. Using the previous `icon_texture`, we can place this icon on our waiting Sprite or TextureRect, etc.
+Finally we can display the icon. Using the previous **icon_texture**, we can place this icon on our waiting Sprite or TextureRect, etc.
 
 ```gdscript
 $Sprite.texture = icon_texture
