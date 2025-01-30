@@ -1,3 +1,9 @@
+---
+title: Music
+description: A class reference for Music.
+icon: material/music
+---
+
 # Music
 
 Functions to control music playback in the Steam client. This gives games the opportunity to do things like pause the music or lower the volume when an important cut scene is shown, and then start playing again afterwards. These functions only work with soundtracks you purchased or own on Steam.

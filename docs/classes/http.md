@@ -1,3 +1,9 @@
+---
+title: HTTP
+description: A class reference for HTTP.
+icon: material/connection
+---
+
 # HTTP
 
 A small and easy to use HTTP client to send and receive data from the web.

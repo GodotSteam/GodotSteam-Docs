@@ -4,6 +4,7 @@ description: Complete instructions on how to compile GDExtension from source cod
 icon: material/book-cog
 ---
 
+# Compiling The GodotSteam GDExtension From Scratch
 
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 

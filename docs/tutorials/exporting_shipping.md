@@ -1,4 +1,13 @@
+---
+title: Exporting and Shipping
+description: A guide on exporting and shipping your game on Steam.
+icon: material/export
+---
+
 # Tutorials - Exporting and Shipping
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 This topic comes up a lot and _also_ trips folks up a lot; so this tutorial is here to help.
 
@@ -104,7 +113,7 @@ On the next screen you will want to click on the "Install From File" button and 
 Despite "installing" the templates, you will still have to select them in the custom template fields during export; which is why this step is optional.
 
 {==
-## Additional Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Video Tutorials

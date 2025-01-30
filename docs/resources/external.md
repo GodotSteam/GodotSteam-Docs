@@ -1,6 +1,12 @@
+---
+title: External Resources
+description: A list of resources for Godot and Steam.
+icon: octicons/link-external-24
+---
+
 # External Resources
 
-We have quite a few tutorials and many more in the works but the more the merrier! Game development is hard enough so we have a list of all external resources we know about that might help you understand, or work with, Steam easier.
+We have quite a few tutorials and many more in the works but the more the merrier! Game development is hard enough so we have a list of all external resources we know about that might help you understand or work with Steam easier.
 
 {==
 ## Video Tutorials

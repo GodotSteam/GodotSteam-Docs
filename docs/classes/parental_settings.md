@@ -1,3 +1,9 @@
+---
+title: Parental Settings
+description: A class reference for Parental Settings.
+icon: material/eye-settings-outline
+---
+
 # Parental Settings
 
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"

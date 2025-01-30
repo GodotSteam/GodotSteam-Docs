@@ -1,3 +1,9 @@
+---
+title: App Lists
+description: A class reference for App Lists.
+icon: material/list-box
+---
+
 # App Lists (Deprecated Since SDK 1.59)
 
 This is a restricted interface that can only be used by previously approved apps. It is not listed in the official Steamworks SDK documentation, either. Contact your Steam Account Manager if you believe you need access to this API.

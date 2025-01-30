@@ -1,3 +1,9 @@
+---
+title: Server
+description: A class reference for Steam Server.
+icon: material/server-network
+---
+
 # Main Server
 
 !!! info "Only available in the [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"

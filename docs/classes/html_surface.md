@@ -1,3 +1,9 @@
+---
+title: HTML Surface
+description: A class reference for HTML Surface.
+icon: octicons/browser-16
+---
+
 # HTML Surface
 
 Interface for rendering and interacting with HTML pages. You can use this interface to render and display HTML pages directly inside your game or application. You must call [htmlInit](#htmlinit) prior to using this interface, and [htmlShutdown](#htmlshutdown) when you're done using it. See [Steam HTML Surface](https://partner.steamgames.com/doc/features/html_surface){ target="\_blank" } for more information.

@@ -1,3 +1,9 @@
+---
+title: Networking Utils
+description: A class reference for Networking Utilities.
+icon: material/plus-network
+---
+
 # Networking Utils
 
 Miscellaneous networking utilities for checking the local networking environment and estimating pings. These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).

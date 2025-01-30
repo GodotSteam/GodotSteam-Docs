@@ -1,4 +1,13 @@
-# Tutorials - Workshop
+---
+title: UGC / Workshop
+description: A guide on setting up UGC / Workshop
+icon: material/tools
+---
+
+# Tutorials - UGC / Workshop
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 A hot topic that comes up: Workshop / UGC. There are a lot of moving parts and we'll probably miss quite a few in this tutorial. Luckily some smart folks have provided some information based on their experiences that we can use.
 
@@ -28,7 +37,7 @@ A hot topic that comes up: Workshop / UGC. There are a lot of moving parts and w
         * [getSteamID()](../classes/user.md#getsteamid)
 
 {==
-## Before You Start
+## :material-file-document-check: Preparations
 ==}
 
 Before anything else, you'll want to read [Valve's write-up on Workshop / UGC which will cover a lot of steps that aren't covered in this tutorial.](https://partner.steamgames.com/doc/features/workshop){ target="\_blank" } Once you get through that, you should also read through [Valve's write-up on the implementation of Workshop / UGC so you'll be ready to continue on.](https://partner.steamgames.com/doc/features/workshop/implementation){ target="\_blank" }
@@ -263,3 +272,11 @@ func _on_item_updated(p_result : int, p_accept_tos : bool) -> void:
 ***KarpPaul*** had some information about getting "access is denied" from `getQueryUGCResult`:
 
 > Regarding the issue that I had with steamworks (Steam.getQueryUGCResult returns "access is denied" when the workshop is set visible to developers and customers). I talked to steam support and they were not able to reproduce the error. I checked the ipc log and indeed everything looks normal - no access denied results in steam logs. However, the error is still in the game. No idea why this happens and how, maybe I am doing smth wrong. I wonder if anybody else will encounter this.... anyway, it is not critical, so I just make my workshop visible to everyone and decide to ignore the issue for now.
+
+{==
+## :material-content-save-settings: Additional Resources
+==}
+
+### Example Project
+
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

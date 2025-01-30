@@ -1,3 +1,9 @@
+---
+title: User
+description: A class reference for User.
+icon: fontawesome/regular/user
+---
+
 # User
 
 Functions for accessing and manipulating Steam user information. This is also where the APIs for [Steam Voice](https://partner.steamgames.com/doc/features/voice){ target="\_blank" } are exposed.

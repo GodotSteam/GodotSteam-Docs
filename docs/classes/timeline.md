@@ -1,3 +1,9 @@
+---
+title: Timeline
+description: A class reference for Timeline.
+icon: material/timeline
+---
+
 # Timeline
 
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"

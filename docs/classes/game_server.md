@@ -1,3 +1,9 @@
+---
+title: Game Server
+description: A class reference for Game Server.
+icon: material/server-network
+---
+
 # Game Server
 
 !!! info "Only available in the [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"

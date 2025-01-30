@@ -1,3 +1,9 @@
+---
+title: Main
+description: A class reference for Steam main.
+icon: material/home
+---
+
 # Main
 
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"

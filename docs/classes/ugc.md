@@ -1,3 +1,9 @@
+---
+title: UGC
+description: A class reference for UGC / Steam Workshop.
+icon: material/toolbox
+---
+
 # UGC
 
 Functions to create, consume, and interact with the [Steam Workshop](https://partner.steamgames.com/doc/features/workshop){ target="\_blank" }.

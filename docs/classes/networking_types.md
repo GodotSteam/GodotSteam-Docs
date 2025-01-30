@@ -1,3 +1,9 @@
+---
+title: Networking Types
+description: A class reference for Networking Types.
+icon: material/table-network
+---
+
 # Networking Types
 
 Miscellaneous types and functions used by networking APIs. These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).

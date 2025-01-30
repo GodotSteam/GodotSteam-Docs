@@ -1,9 +1,18 @@
+---
+title: C-Sharp
+description: A guide on using C-Sharp with GodotSteam.
+icon: material/dot-net
+---
+
 # Tutorials - C-Sharp
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 Every so often we get someone who asks how to use GodotSteam with C# so I figured I would write this up. First and foremost, I have never used C# so my understanding of it is prety much null and void.
 
 {==
-## Where's The Mono Build?
+## Where's The DotNet Build?
 ==}
 
 To the point, GodotSteam does not have a C# version currently. I am in the process of adding said builds to our Github Actions list so we can start producing them with every update!
@@ -21,7 +30,7 @@ While I am still trying to get up to speed on all this C# business, you can read
 If you are using [SteamMultiplayerPeer](https://github.com/expressobits/steam-multiplayer-peer) for networking you can use a C# wrapper. It's currently not merged but there is a [PR](https://github.com/expressobits/steam-multiplayer-peer/pull/21/commits/9ed16cdc27fcd21c9cd28dbe652c55f79b1b3a82). You can put the script anywhere in your Godot project and it will work with the rest of the C# bindings above.
 
 {==
-## Other Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 The awesome folks at Chickensoft are all about C#, visit them here or at their Discord:

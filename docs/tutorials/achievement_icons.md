@@ -1,4 +1,13 @@
+---
+title: Achievement Icons
+description: A guide on getting achievement icons from Steam.
+icon: octicons/trophy-24
+---
+
 # Tutorials - Achievement Icons
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 This quick tutorial will cover to how get achievement icons from Steam's servers. It was made because there are some extra steps folks need to use to render the images and it may not be very clear otherwise.
 
@@ -11,7 +20,7 @@ This quick tutorial will cover to how get achievement icons from Steam's servers
 		* [getImageSize()](../classes/utils.md#getimagesize)
 
 {==
-## Prerequisites
+## :material-file-document-check: Prerequisites
 ==}
 
 Before you can get achievement icons you first need to have retrieved the user's stats from Steam. This is done by default when initializing Steam, but can optionally be disabled. This tutorial assumes that you have already received the user stats. See [requestCurrentStats()](../classes/user_stats.md#requestcurrentstats) for more information if needed.
@@ -131,9 +140,9 @@ Our complete example should look something like this:
 And that's how you display an achievement icon.
 
 {==
-## Extra Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Example Project
 
-To see this tutorial in action, [check out our GodotSteam Example Project on GitHub](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" }. There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

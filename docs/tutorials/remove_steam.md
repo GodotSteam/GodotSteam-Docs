@@ -1,4 +1,13 @@
+---
+title: Removing Steam
+description: A guide on setting up fairly simple Steam removal to ship on other platforms.
+icon: material/select-remove
+---
+
 # Tutorials - Removing Steam Easily
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 A lot of folks like to ship on other platforms like Playstation, XBox, Switch, Itch.io, etc. Removing deeply embedded Steamworks stuff can be a pain and some have opted to keep separate repositories for their game's Steam version. However, there is an alternative to this: programmatically ignoring the Steamworks bits. Below are some examples shared by users in our Discord.
 

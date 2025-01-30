@@ -1,3 +1,9 @@
+---
+title: Screenshots
+description: A class reference for Screenshots.
+icon: material/monitor-screenshot
+---
+
 # Screenshots
 
 Functions for adding screenshots to the user's screenshot library. See [Steam Screenshots](https://partner.steamgames.com/doc/features/screenshots){ target="\_blank" } for more information.

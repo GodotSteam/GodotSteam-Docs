@@ -1,4 +1,13 @@
+---
+title: Voice
+description: A guide on setting up voice chat in your game.
+icon: material/account-voice
+---
+
 # Tutorials - Voice
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 In case you want to Steam's Voice functionality in your game, we might as well cover that too! This example is based partialy on this [Github repo for networked voice chat in Godot](https://github.com/ikbencasdoei/godot-voip/){ target="\_blank" } and Valve's SpaceWar example. There are additional ideas, details, and such from users **Punny** and **ynot01**.
 
@@ -14,7 +23,7 @@ In case you want to Steam's Voice functionality in your game, we might as well c
 		* [stopVoiceRecording()](../classes/user.md#stopvoicerecording)
 
 {==
-## Preparations
+## :material-file-document-check: Preparations
 ==}
 
 First we will set up a bunch of variables that will get used later on.
@@ -211,7 +220,7 @@ You may want to provide the option for always-on voice chat, in which case you'd
 And that's the basics of Steam Voice chat. Again, there is a weird choppiness to the playback in this example but surely we can iron that out at some point.
 
 {==
-## Additional Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Related Projects
@@ -220,4 +229,6 @@ And that's the basics of Steam Voice chat. Again, there is a weird choppiness to
 
 ### Example Project
 
-[To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+### Example Project
+
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

@@ -1,152 +1,114 @@
-# Code Contributors and Donors
+---
+title: Code and Docs Contributors
+description: A list of all our lovely code and docs contributors
+icon: material/account-star
+---
 
-Here is a list of all the great contributors, both those who have provided code for GodotSteam through pull requests or those who have donated to the project. A big thanks to all of you!
+# Code and Docs Contributors
 
-<a href="https://github.com/GodotSteam/GodotSteam/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=GodotSteam/GodotSteam" />
-</a>
+Here is a list of all the great contributors, both those who have provided code for GodotSteam through pull requests and/or updates to our documentation.
 
-<div class="contrib-grid" markdown>
+{==
+## :material-heart: Full Contributor List
+==}
 
-!!! contributors1 "Code And Docs Contributors"
-	- AlexHoratio
-	- Antokolos
-	- ArchiRocksTech
-	- Avencherus
-	- bearlikelion
-	- blaze-the-star
-	- brogan89
-	- butlersrepos
-	- cbinners
-	- ClockRate
-	- ConnorBP
-	- craftablescience
-	- Deozaan
-	- dsnopek
-	- EIREXE
-	- endaye
-	- Fischer96
-	- Foxushka
-	- freehuntx
-	- Frostings
-	- greenfox1505
-	- guimarca
-	- Handagotes
-	- Hangman
-	- hhyyrylainen
-	- Hung-Fan Liu
-	- IlyaStuurFedorov
-	- ismailgamedev
-	- JDare
-	- jeremybeier
-	- Jupither
-	- Kliiyu
-	- kongo555
-	- Kryx-Ikyr
-	- hungFI
-	- larsvanhilten
-	- Lunatix89
-	- marcelofg55
-	- MartinAppDev
-	- mashumafi
-	- MichaelBelousov
-	- mikix
-	- mynameiswhm
-	- [Oleksii Zaremskyi](https://savelife.in.ua/){ target="\_blank" }
-	- pixelriot
-	- polyrain
-	- profour
-	- qarmin
-	- Ralian
-	- raulsntos
-	- rebane2001
-	- rsomers1998
-	- SapphireMH
-	- sepTN
-	- shuriken1812
-	- SlejmUr
-	- StephenCathcart
-	- [Tamper2](https://honkofheroes.com/){ target="\_blank" }
-	- troykinsella
-	- xsellier
-	- vaartis
-	- wpbirney
-	- VictorienXP
-	- yeonghoey
-	- Zee Weasel
+<div class="grid cards contrib_list" markdown>
 
-!!! contributors2 "Donors"
-	- AndreaJens
-	- [Andrej Skenderija](https://skenda.me/){ target="\_blank" }
-	- Andrew Yates
-	- ArchWitch Games
-	- Avencherus
-	- Charles Maddock
-	- columbiacolles
-	- d4rkd0s
-	- Dana P
-	- David McHale
-	- David Wery
-	- David-AW
-	- DeadlyEssence01
-	- Dillon Joel Steyl
-	- Don Piano
-	- Dreamfarer
-	- eflake
-	- Elgenzay
-	- Garrett Steffen
-	- Hannes Breuer
-	- hardtrip
-	- HephepTeam
-	- Hung-Fan Liu
-	- InkRobert
-	- InvoxiPlayGames
-	- isikdos
-	- Jakub Nowak
-	- [Jayden Sipe](https://jaydensipe.github.io/){ target="\_blank" }
-	- Jeroen Heijmans
-	- Jez
-	- John Flickinger
-	- John H Wright
-	- Josef Attenberger
-	- Josh Culp
-	- Justo Delgado
-	- Kat Hirsch
-	- Kent Jofur
-	- Kodera Software
-	- LucasBBX
-	- [Mauricio Castillo](https://twitter.com/maurimodev){ target="\_blank" }
-	- Martin Eigel
-	- Michael Macha
-	- Mike King
-	- Mikk Maasik
-	- MinmoTech
-	- MudbuG
-	- Nicholas Orlowski
-	- Perroboc
-	- pixelriot
-	- [PurpleMossCollectors](http://purplemosscollectors.com/){ target="\_blank" }
-	- Ranoller
-	- René Habermann
-	- Ricardo Sernaglia
-	- Ronan Docherty
-	- RosenX
-	- [RPG In-A-Box](https://rpginabox.com/){ target="\_blank" }
-	- SaffronStreams
-	- Shine Right Studio
-	- Siddhant Chereddy
-	- Simone Mändl
-	- Thorsten Schleinzer
-	- TrampolineTales
-	- VestedGrammar
-	- Wonderful Days Studio
-	- xaviervxz
-	- Zee Weasel
-	- Zeo Löwenhielm
-	- zikes
+- :material-file-document-edit: AdriaandeJongh
+- :material-file-document-edit: aesereht
+- :material-code-tags: AlexHoratio
+- :material-code-tags: Antokolos
+- :material-code-tags: ArchiRocksTech
+- :material-code-tags: Avencherus
+- :material-code-tags: bearlikelion
+- :material-code-tags: blaze-the-star
+- :material-code-tags: bobsayshilol
+- :material-file-document-edit: brogan89
+- :material-file-document-edit: butlersrepos
+- :material-code-tags: cbinners
+- :material-code-tags: ClockRate
+- :material-code-tags: coffeebeats
+- :material-code-tags: ConnorBP
+- :material-code-tags: craftablescience
+- :material-file-document-edit: dannroda
+- :material-file-document-edit: DaveThornton
+- :material-file-document-edit: Deozaan
+- :material-file-document-edit: dglwilkins
+- :material-code-tags: dsnopek
+- :material-code-tags: EIREXE
+- :material-file-document-edit: endaye
+- :material-file-document-edit: eviltrout
+- :material-code-tags: Fischer96
+- :material-code-tags: Foxushka
+- :material-code-tags: freehuntx
+- :material-code-tags: Frostings
+- :material-code-tags: greenfox1505
+- :material-code-tags: guimarca
+- :material-code-tags: Handagotes
+- :material-code-tags: Hangman
+- :material-code-tags: hhyyrylainen
+- :material-code-tags: Hung-Fan Liu
+- :material-code-tags: IlyaStuurFedorov
+- :material-code-tags: ismailgamedev
+- :material-code-tags: jacobcoughenour
+- :material-code-tags: JDare
+- :material-code-tags: jeremybeier
+- :material-file-document-edit: JimmyJohn1026
+- :material-file-document-edit: jolexxa
+- :material-file-document-edit: Jordan Rushing
+- :material-code-tags: Jupither
+- :material-file-document-edit: karmaral
+- :material-file-document-edit: Kliiyu
+- :material-code-tags: kongo555
+- :material-code-tags: Kryx-Ikyr
+- :material-code-tags: hungFI
+- :material-file-document-edit: larsvanhilten
+- :material-code-tags: Lunatix89
+- :material-code-tags: marcelofg55
+- :material-code-tags: MartinAppDev
+- :material-code-tags: mashumafi
+- :material-code-tags: MichaelBelousov
+- :material-code-tags: :material-file-document-edit: mikix
+- :material-file-document-edit: mkckr0
+- :material-file-document-edit: mynameiswhm
+- [:material-code-tags: Oleksii Zaremskyi](https://savelife.in.ua/){ target="\_blank" }
+- :material-file-document-edit: P-Kelley
+- :material-code-tags: pixelriot
+- :material-code-tags: :material-file-document-edit: polyrain
+- :material-code-tags: profour
+- :material-code-tags: qarmin
+- :material-code-tags: Ralian
+- :material-code-tags: raulsntos
+- :material-file-document-edit: rebane2001
+- :material-code-tags: rsomers1998
+- :material-code-tags: :material-file-document-edit: SapphireMH
+- :material-code-tags: :material-file-document-edit: sepTN
+- :material-code-tags: shuriken1812
+- :material-code-tags: SlejmUr
+- :material-file-document-edit: StephenCathcart
+- :material-file-document-edit: Straven35
+- :material-file-document-edit: Structed
+- [:material-code-tags: Tamper2](https://honkofheroes.com/){ target="\_blank" }
+- :material-code-tags: TCROC
+- :material-file-document-edit: Toi Lanh
+- :material-file-document-edit: TriMay
+- :material-code-tags: troykinsella
+- :material-code-tags: xsellier
+- :material-code-tags: vaartis
+- :material-file-document-edit: WAFFO
+- :material-code-tags: wpbirney
+- :material-code-tags: VictorienXP
+- :material-code-tags: yeonghoey
+- :material-code-tags: ynot01
+- :material-file-document-edit: Yolwoocle
+- :material-code-tags: :material-file-document-edit: Zee Weasel
 
 </div>
 
-<hr/>
+{==
+## :material-file-question-outline: Missing or Incorrect?
+==}
 
-The best way you can help out with this module is by making some pull requests with fixes or additions. [There is a healthy list of additions and fixes needed in the To-Do section currently.](https://github.com/orgs/GodotSteam/projects/3){ target="\_blank" } You can also provide tutorials for different aspects of the module.
+If your name is missing from our contributor list but you have made some changes, no matter how large or small, [please let us know!](mailto:contributors@godotsteam.com){ target="\_blank"}  Also if you are listed here and want a URL added to your credit, [please also drop us a line.](mailto:contributors@godotsteam.com){ target="\_blank"}
+
+If you are a part of our Discord channel and do not have your contributor role, please reach out to us either on Discord or [by e-mail.](mailto:contributors@godotsteam.com){ target="\_blank"} When you e-mail us, please make sure to include your Discord username.

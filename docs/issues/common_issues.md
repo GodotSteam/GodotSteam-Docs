@@ -1,3 +1,9 @@
+---
+title: Common Issues
+description: A list of common issues you may run into.
+icon: octicons/issue-opened-16
+---
+
 # Common Issues
 
 What could possibly go wrong? Well, we will cover some of those common pitfalls people find themselves in. This should help you troubleshoot some of the basics for when things don't seem to be working.  You can also come ask questions on Discord.

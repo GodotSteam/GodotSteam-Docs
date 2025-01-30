@@ -1,3 +1,9 @@
+---
+title: Mac Issues
+description: A list of common Mac issues you may run into.
+icon: simple/apple
+---
+
 # Issues - Mac Platform
 
 There are issues some users might run into on macOS when using Godot and GodotSteam.
