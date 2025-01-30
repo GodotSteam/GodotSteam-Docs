@@ -1,6 +1,6 @@
 site_name: GodotSteam
 site_url: https://godotsteam.com
-site_description: An open-source and fully functional Steamworks SDK / API module and plug-in for the Godot Game Engine.
+site_description: An ecosystem of tools for Godot Engine and Valve's Steam. For Linux, Mac, and Windows.
 site_author: GP Garcia | Contributors
 
 copyright: Copyright &copy; 2015-Current | GP Garcia | Contributors
@@ -15,82 +15,97 @@ edit_uri: https://github.com/GodotSteam/GodotSteam-Docs/tree/master/docs/
 # Navigation
 #################################################
 nav:
-  - Introduction: 'index.md'
-
+  - Home: 'index.md'
+  - Getting Started:
+    - Introduction: 'getting_started/introduction.md'
+    - What Are You Making?: 'getting_started/what_are_you_making.md'
+    - Compiling:
+      - Overview: 'howto/overview.md'
+      - Module: 'howto/modules.md'
+      - GDExtension: 'howto/gdextension.md'
+      - GDNative: 'howto/gdnative.md'
+      - Multiplayer Peer: 'howto/multiplayer_peer.md'
+      - Server: 'howto/server.md'
+    - Tutorials:
+      - Achievement Icons: 'tutorials/achievement_icons.md'
+      - Authentication: 'tutorials/authentication.md'
+      - Auto-Matchmaking: 'tutorials/auto_matchmaking.md'
+      - Avatars: 'tutorials/avatars.md'
+      - C#: 'tutorials/c-sharp.md'
+      - Exporting and Shipping: 'tutorials/exporting_shipping.md'
+      - Friends' Lobbies: 'tutorials/friends_lobbies.md'
+      - Initializing Steam: 'tutorials/initializing.md'
+      - Inputs: 'tutorials/inputs.md'
+      - Leaderboards: 'tutorials/leaderboards.md'
+      - Lobbies: 'tutorials/lobbies.md'
+      - Mac Exporting: 'tutorials/mac_export.md'
+      - MultiplayerPeer: 'tutorials/multiplayer_peer.md'
+      - Networking: 'tutorials/networking.md'
+      - Networking Messages: 'tutorials/networking_messages.md'
+      - Networking Sockets: 'tutorials/networking_sockets.md'
+      - Remove Steam: 'tutorials/remove_steam.md'
+      - Rich Presence: 'tutorials/rich_presence.md'
+      - Stats and Achievements: 'tutorials/stats_achievements.md'
+      - Voice: 'tutorials/voice.md'
+      - Workshop: 'tutorials/workshop.md'
+    - Resources:
+      - External: 'resources/external.md'
   - News:
     - blog/index.md
-
-  - Compiling:
-    - How-To Godot 2, 3, 4: 'howto/modules.md'
-    - How-To GDExtension: 'howto/gdextension.md'
-    - How-To GDNative: 'howto/gdnative.md'
-    - How-To Multiplayer Peer: 'howto/multiplayer_peer.md'
-    - How-To Server: 'howto/server.md'
-
+  - Documentation:
+    - Classes:
+      - Main: 'classes/main.md'
+      - Main Server: 'classes/main_server.md'
+      - MultiplayerPeer: 'classes/multiplayer_peer.md'
+      - App Lists: 'classes/app_lists.md'
+      - Apps: 'classes/apps.md'
+      - Friends: 'classes/friends.md'
+      - Game Search: 'classes/game_search.md'
+      - Game Server: 'classes/game_server.md'
+      - Game Server Stats: 'classes/game_server_stats.md'
+      - HTML Surface: 'classes/html_surface.md'
+      - HTTP: 'classes/http.md'
+      - Input: 'classes/input.md'
+      - Inventory: 'classes/inventory.md'
+      - Matchmaking: 'classes/matchmaking.md'
+      - Matchmaking Servers: 'classes/matchmaking_servers.md'
+      - Music: 'classes/music.md'
+      - Music Remote: 'classes/music_remote.md'
+      - Networking: 'classes/networking.md'
+      - Networking Messages: 'classes/networking_messages.md'
+      - Networking Sockets: 'classes/networking_sockets.md'
+      - Networking Types: 'classes/networking_types.md'
+      - Networking Utils: 'classes/networking_utils.md'
+      - Parental Settings: 'classes/parental_settings.md'
+      - Parties: 'classes/parties.md'
+      - Remote Play: 'classes/remote_play.md'
+      - Remote Storage: 'classes/remote_storage.md'
+      - Screenshots: 'classes/screenshots.md'
+      - Timeline: 'classes/timeline.md'
+      - UGC: 'classes/ugc.md'
+      - User: 'classes/user.md'
+      - User Stats: 'classes/user_stats.md'
+      - Utils: 'classes/utils.md'
+      - Video: 'classes/video.md'
+    - Common Issues:
+      - General: 'issues/common_issues.md'
+      - Linux Platform: 'issues/linux_issues.md'
+      - Mac Platform: 'issues/mac_issues.md'
+    - Changes:
+      - Godot 4.x: 'changelog/godot4.md'
+      - Godot 3.x: 'changelog/godot3.md'
+      - Godot 2.x: 'changelog/godot2.md'
+      - GDExtension: 'changelog/gdextension.md'
+      - GDNative: 'changelog/gdnative.md'
+      - Multiplayer Peer: 'changelog/multiplayer_peer.md'
+      - Server 4.x: 'changelog/server4.md'
+      - Server 3.x: 'changelog/server3.md'
+      - Server GDExtension: 'changelog/server_gdextension.md'
+      - Server GDNative: 'changelog/server_gdnative.md'
+      - Skillet Editor: 'changelog/skillet_editor.md'
+      - Skillet Assets: 'changelog/skillet_assets.md'
   - Repositories: 'https://github.com/GodotSteam/'
-
-  - Classes:
-    - Main: 'classes/main.md'
-    - Main Server: 'classes/main_server.md'
-    - MultiplayerPeer: 'classes/multiplayer_peer.md'
-    - App Lists: 'classes/app_lists.md'
-    - Apps: 'classes/apps.md'
-    - Friends: 'classes/friends.md'
-    - Game Search: 'classes/game_search.md'
-    - Game Server: 'classes/game_server.md'
-    - Game Server Stats: 'classes/game_server_stats.md'
-    - HTML Surface: 'classes/html_surface.md'
-    - HTTP: 'classes/http.md'
-    - Input: 'classes/input.md'
-    - Inventory: 'classes/inventory.md'
-    - Matchmaking: 'classes/matchmaking.md'
-    - Matchmaking Servers: 'classes/matchmaking_servers.md'
-    - Music: 'classes/music.md'
-    - Music Remote: 'classes/music_remote.md'
-    - Networking: 'classes/networking.md'
-    - Networking Messages: 'classes/networking_messages.md'
-    - Networking Sockets: 'classes/networking_sockets.md'
-    - Networking Types: 'classes/networking_types.md'
-    - Networking Utils: 'classes/networking_utils.md'
-    - Parental Settings: 'classes/parental_settings.md'
-    - Parties: 'classes/parties.md'
-    - Remote Play: 'classes/remote_play.md'
-    - Remote Storage: 'classes/remote_storage.md'
-    - Screenshots: 'classes/screenshots.md'
-    - Timeline: 'classes/timeline.md'
-    - UGC: 'classes/ugc.md'
-    - User: 'classes/user.md'
-    - User Stats: 'classes/user_stats.md'
-    - Utils: 'classes/utils.md'
-    - Video: 'classes/video.md'
-
-  - Tutorials:
-    - Achievement Icons: 'tutorials/achievement_icons.md'
-    - Authentication: 'tutorials/authentication.md'
-    - Auto-Matchmaking: 'tutorials/auto_matchmaking.md'
-    - Avatars: 'tutorials/avatars.md'
-    - C#: 'tutorials/c-sharp.md'
-    - Exporting and Shipping: 'tutorials/exporting_shipping.md'
-    - Friends' Lobbies: 'tutorials/friends_lobbies.md'
-    - Initializing Steam: 'tutorials/initializing.md'
-    - Leaderboards: 'tutorials/leaderboards.md'
-    - Lobbies: 'tutorials/lobbies.md'
-    - Mac Exporting: 'tutorials/mac_export.md'
-    - P2P Networking: 'tutorials/p2p.md'
-    - Remove Steam: 'tutorials/remove_steam.md'
-    - Rich Presence: 'tutorials/rich_presence.md'
-    - Stats and Achievements: 'tutorials/stats_achievements.md'
-    - Voice: 'tutorials/voice.md'
-    - Workshop: 'tutorials/workshop.md'
-
-  - External Resources: 'tutorials/external.md'
-
-  - Common Issues:
-    - General: 'issues/common_issues.md'
-    - Linux Platform: 'issues/linux_issues.md'
-    - Mac Platform: 'issues/mac_issues.md'
-
-  - Games Using GodotSteam:
+  - Games:
     - 0 to 9 Games: 'games/games-0-9.md'
     - A Games: 'games/games-a.md'
     - B Games: 'games/games-b.md'
@@ -118,51 +133,31 @@ nav:
     - X Games: 'games/games-x.md'
     - Y Games: 'games/games-y.md'
     - Z Games: 'games/games-z.md'
-
-  - Projects:
-    - Skillet:
-      - Intro: 'projects/skillet/intro.md'
-      - Assets: 'projects/skillet/assets.md'
-      - Editor: 'projects/skillet/editor.md'
-      - Inventory: 'projects/skillet/inventory.md'
-      - Workshop: 'projects/skillet/workshop.md'
-      - Licenses: 'projects/skillet/licenses.md'
-    - General:
-      - To-Do: 'https://github.com/orgs/GodotSteam/projects/3'
-
-  - Changes:
-    - Godot 4.x: 'changelog/godot4.md'
-    - Godot 3.x: 'changelog/godot3.md'
-    - Godot 2.x: 'changelog/godot2.md'
-    - GDExtension: 'changelog/gdextension.md'
-    - GDNative: 'changelog/gdnative.md'
-    - Multiplayer Peer: 'changelog/multiplayer_peer.md'
-    - Server 4.x: 'changelog/server4.md'
-    - Server 3.x: 'changelog/server3.md'
-    - Server GDExtension: 'changelog/server_gdextension.md'
-    - Server GDNative: 'changelog/server_gdnative.md'
-    - Skillet Editor: 'changelog/skillet_editor.md'
-    - Skillet Assets: 'changelog/skillet_assets.md'
-
   - Contributors:
-    - Contributing: 'contribute/rules.md'
-    - Contributor List: 'contribute/contributors.md'
-    - Donating: 'contribute/donations.md'
+    - How To Contribute: 'contribute/rules.md'
+    - Donation Info: 'contribute/donations.md'
+    - Code & Docs Contributors: 'contribute/contributors.md'
+    - Donors & Benefactors: 'contribute/donors.md'
+  - Donate: https://github.com/sponsors/Gramps
 
 
 #################################################
 # Theme and extra
 #################################################
 theme:
+  custom_dir: docs/overrides
   favicon: assets/images/favicon.png
   features:
     - announce.dismiss
     - content.code.copy
     - content.code.select
     - navigation.indexes
+    - navigation.instant
+    - navigation.path
+    - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
+    - navigation.top
     - search.highlight
     - search.share
     - search.suggest
@@ -190,12 +185,16 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/GodotSteam/GodotSteam
+    - icon: simple/discord
+      link: https://discord.gg/SJRSq6K
     - icon: fontawesome/brands/mastodon
       link: https://mastodon.gamedev.place/@godotsteam
-    - icon: fontawesome/brands/patreon
-      link: https://patreon.com/godotsteam
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/godotsteam.com
     - icon: fontawesome/solid/paper-plane
       link: mailto:hello@godotsteam.com
+    - icon: simple/peertube
+      link: https://makertube.net/c/making_____with_godotsteam/videos
     - icon: fontawesome/brands/twitch
       link: https://www.twitch.tv/godotsteam
 
@@ -213,7 +212,6 @@ plugins:
       blog_toc: true
       archive_date_format: MMMM yyyy
       pagination_per_page: 5
-#      archive_pagination_per_page: 10
 
   - social:
       cards_layout_options:
@@ -228,10 +226,6 @@ plugins:
       categories:
         - categories
         - tags
-
-  - git-revision-date-localized:
-      enable_creation_date: true
-      fallback_to_build_date: true
 
 
 markdown_extensions:

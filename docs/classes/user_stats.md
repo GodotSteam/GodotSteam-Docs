@@ -1,3 +1,9 @@
+---
+title: User Stats
+description: A class reference for User Statistics.
+icon: material/clipboard-edit
+---
+
 # User Stats
 
 Provides functions for accessing and submitting stats, achievements, and leaderboards.

@@ -1,3 +1,9 @@
+---
+title: Apps
+description: A class reference for Apps.
+icon: material/application
+---
+
 # Apps
 
 Exposes a wide range of information and actions for applications and [Downloadable Content (DLC)](https://partner.steamgames.com/doc/store/application/dlc){ target="\_blank" }.

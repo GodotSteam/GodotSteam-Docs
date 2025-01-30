@@ -1,4 +1,13 @@
+---
+title: Rich Presence
+description: A guide on setting rich presence for your game.
+icon: material/message-draw
+---
+
 # Tutorials - Rich Presence
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 This short tutorial is all about rich presence for your game; specifically the game's enhanced rich presence. You have probably seen a friend in-game, in your friend list, that has a secondary text string with some information about the game. Usually something about the level they are on, a lobby, number of players, etc. Well, that's what this tutorial is all about.
 
@@ -9,7 +18,7 @@ This short tutorial is all about rich presence for your game; specifically the g
 		* [setRichPresence()](../classes/friends.md#setrichpresence)
 
 {==
-## Setting It Up
+## :material-file-document-check: Preparations
 ==}
 
 First you will need to set up your localization file in the Steamworks back-end. Obviously without this step the rich presence text does not really work as it has nothing to reference. You will need to set up your text file like this and save it as `.vdf` file:
@@ -120,7 +129,7 @@ func forceSetProperty(key : String, value : String) -> bool:
 ```
 
 {==
-## Additional Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Video Tutorials
@@ -131,4 +140,4 @@ Prefer video tutorials? Feast your eyes and ears!
 
 ### Example Project
 
-[To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

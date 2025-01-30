@@ -4,6 +4,8 @@ description: Complete instructions on how to compile MultiplayerPeer from source
 icon: material/book-cog
 ---
 
+# Compiling The GodotSteam MultiplayerPeer From Scratch
+
 For those of you who are comfortable compiling or want to give it a shot, here are some steps to follow.
 
 {==

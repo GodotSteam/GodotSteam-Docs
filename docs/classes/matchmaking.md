@@ -1,3 +1,9 @@
+---
+title: Matchmaking
+description: A class reference for Matchmaking.
+icon: fontawesome/solid/users-rectangle
+---
+
 # Matchmaking
 
 Functions for clients to access matchmaking services, favorite servers, and to operate on game lobbies. See [Steam Matchmaking & Lobbies](https://partner.steamgames.com/doc/features/multiplayer/matchmaking){ target="\_blank" } for more information.

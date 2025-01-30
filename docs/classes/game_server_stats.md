@@ -1,3 +1,9 @@
+---
+title: Game Server Stats
+description: A class reference for Game Server Statistics.
+icon: material/list-box
+---
+
 # Game Server Stats
 
 Functions to allow game servers to set stats and achievements on players.

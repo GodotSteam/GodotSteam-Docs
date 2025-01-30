@@ -1,6 +1,15 @@
-# Tutorials - Authentication
+---
+title: Authentication
+description: A guide on setting up authentication.
+icon: material/security-network
+---
 
-In this tutorial we will talk about authenticating users with Steam. Networking is out of scope for this tutorial; you will need to implement your own networking code. You can check out the [lobbies](lobbies.md) and [p2p networking](p2p.md) tutorials for more on that, or even use Godot's high-level networking. [You can read more about the whole authentication process in Steam's documentation page on the subject.](https://partner.steamgames.com/doc/features/auth){ target="\_blank" }
+# Tutorials - Authentication
+:material-badge-account-horizontal: _By Gramps_
+
+---
+
+In this tutorial we will talk about authenticating users with Steam. Networking is out of scope for this tutorial; you will need to implement your own networking code. You can check out the [lobbies](lobbies.md) and various networking tutorials for more on that, or even use Godot's high-level networking. [You can read more about the whole authentication process in Steam's documentation page on the subject.](https://partner.steamgames.com/doc/features/auth){ target="\_blank" }
 
 ??? guide "Relevant GodotSteam classes and functions"
 	* [User class](../classes/user.md)
@@ -157,9 +166,9 @@ The [Steamworks documentation](https://partner.steamgames.com/doc/features/auth)
 That concludes this simple tutorial for authenticated sessions.
 
 {==
-## Additional Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Example Project
 
-To see this tutorial in action, [check out our GodotSteam Example Project on GitHub](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" }. There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

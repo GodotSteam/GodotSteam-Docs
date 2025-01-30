@@ -1,3 +1,9 @@
+---
+title: Networking Sockets
+description: A class reference for Networking Sockets.
+icon: material/power-socket
+---
+
 # Networking Sockets
 
 These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).

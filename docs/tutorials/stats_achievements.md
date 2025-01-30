@@ -1,4 +1,13 @@
+---
+title: Statistics and Achievements
+description: A guide on using statistics and achievements in your game.
+icon: material/trophy-award
+---
+
 # Tutorials - Stats And Achievements
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 At some point you may want to save statistics to Steam's database and / or use their achievement system. You will want to [read up about these in Steam's documentation](https://partner.steamgames.com/doc/features/achievements){ target="\_blank" } as I won't be covering the basics on how to set it up in the Steamworks back-end.
 
@@ -12,7 +21,7 @@ At some point you may want to save statistics to Steam's database and / or use t
 		* [storeStats()](../classes/user_stats.md#storestats)
 
 {==
-## Preparations
+## :material-file-document-check: Preparations
 ==}
 
 First thing, you'll want to set up your achievements and statistics in the Steamworks back-end. Most importantly, you want to publish these changes live. If not, they will not be exposed to the Steamworks API and you will get errors when trying to retrieve or set them. Once they have been published you can continue on with this tutorial.
@@ -152,7 +161,7 @@ Steam.storeStats()
 When that last `storeStats()` is called the stats will update on Steam's servers.
 
 {==
-## Additional Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Video Tutorials
@@ -169,4 +178,4 @@ Prefer video tutorials? Feast your eyes and ears!
 
 ### Example Project
 
-[To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

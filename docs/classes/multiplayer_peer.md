@@ -1,3 +1,9 @@
+---
+title: MultiplayerPeer
+description: A class reference for MultiplayerPeer.
+icon: material/account-multiple
+---
+
 # MultiplayerPeer
 
 !!! info "Only available in the [GodotSteam MultiplayerPeer repo](https://github.com/GodotSteam/MultiplayerPeer){ target="\_blank" }"

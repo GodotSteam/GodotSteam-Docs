@@ -1,3 +1,9 @@
+---
+title: Music Remote
+description: A class reference for Music Remote.
+icon: material/music-box-multiple
+---
+
 # Music Remote
 
 Allows direct interaction with the Steam Music player. These functions only work with soundtracks you purchased or own on Steam.

@@ -1,3 +1,9 @@
+---
+title: Inventory
+description: A class reference for Inventory.
+icon: material/invoice-list
+---
+
 # Inventory
 
 Steam Inventory query and manipulation API. See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inventory){ target="\_blank" } for more information.

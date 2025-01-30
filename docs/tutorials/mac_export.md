@@ -1,4 +1,13 @@
+---
+title: Mac Exporting
+description: A guide on specific quirks for exporting a game on MacOS.
+icon: material/apple
+---
+
 # Tutorials - Mac Exporting
+:material-badge-account-horizontal: _By Adriaan de Jongh and Gramps_
+
+---
 
 When exporting for macOS, there are a few additional things to consider.
 
@@ -64,4 +73,3 @@ cp "./src/addons/godotsteam/osx/libsteam_api.dylib" "./builds/mac/$GAME_NAME.app
 # copy framework folder
 cp -R "./src/addons/godotsteam/osx/libgodotsteam.framework/" "./builds/mac/$GAME_NAME.app/Contents/Frameworks/libgodotsteam.framework/" || exit
 ```
-

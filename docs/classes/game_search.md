@@ -1,3 +1,9 @@
+---
+title: Game Search
+description: A class reference for Game Search.
+icon: octicons/search-24
+---
+
 # Game Search
 
 These functions are not listed in the official Steamworks SDK documentation but do exist in the SDK header files.

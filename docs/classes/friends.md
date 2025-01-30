@@ -1,3 +1,9 @@
+---
+title: Friends
+description: A class reference for Friends.
+icon: material/heart
+---
+
 # Friends
 
 Access information about individual users and interact with the [Steam Overlay](https://partner.steamgames.com/doc/features/overlay){ target="\_blank" }.

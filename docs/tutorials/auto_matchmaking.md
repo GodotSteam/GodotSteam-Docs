@@ -1,6 +1,15 @@
-# Tutorials - Lobby Auto-Matchmaking
+---
+title: Lobby Auto-Matchmaking
+description: A guide on setting up automatic matchmaking for lobbies.
+icon: material/account-group
+---
 
-A quick, requested tutorial is auto-matchmaking lobbies. While this example does not show how to match specific criteria, it will be noted where you can place such matches. This tutorial is basically an extension of the [lobbies](lobbies.md) and [P2P networking](p2p.md) tutorials. Because of that we'll focus only on what's different; please refer to the aforementioned tutorials for additional information and layouts.
+# Tutorials - Lobby Auto-Matchmaking
+:material-badge-account-horizontal: _By Gramps_
+
+---
+
+A quick, requested tutorial is auto-matchmaking lobbies. While this example does not show how to match specific criteria, it will be noted where you can place such matches. This tutorial is basically an extension of the [lobbies](lobbies.md) and the various networking tutorials. Because of that we'll focus only on what's different; please refer to the aforementioned tutorials for additional information and layouts.
 
 ??? guide "Relevant GodotSteam classes and functions"
 	* [Matchmaking class](../classes/matchmaking.md)
@@ -115,9 +124,9 @@ Much like the previous additional filters, you can sort by other lobby data in t
 The first lobby that matches your criteria and has space for the user, triggers the `joinLobby()` function to fire and the player should soon join their automatically found lobby.
 
 {==
-## Additional Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Example Project
 
-To see this tutorial in action, [check out our GodotSteam Example Project on GitHub](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" }. There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

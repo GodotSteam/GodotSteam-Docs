@@ -1,4 +1,13 @@
+---
+title: Avatars
+description: A guide on getting player avatars.
+icon: fontawesome/regular/user
+---
+
 # Tutorials - Avatars
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 You may want to get the current player's avatar, or someone else's, and display it in your game. This tutorial will walk you through the basics of avatar retrieval and passing it to a sprite so you can use it.
 
@@ -87,7 +96,7 @@ Naturally that texture could be applied elsewhere, depending on where you place 
 That covers the basics of getting player avatars.
 
 {==
-## Additional Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Video Tutorials
@@ -100,4 +109,4 @@ Prefer video tutorials? Feast your eyes and ears!
 
 ### Example Project
 
-To see this tutorial in action, [check out our GodotSteam Example Project on GitHub](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" }. There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

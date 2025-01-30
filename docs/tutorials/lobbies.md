@@ -1,6 +1,15 @@
-# Tutorials - Lobbies
+---
+title: Lobbies
+description: A guide on setting up lobbies for networked games.
+icon: fontawesome/solid/users-between-lines
+---
 
-One of the more requested tutorials is multiplayer lobbies and P2P networking through Steam; this tutorial specifically covers the lobby portion and [our P2P tutorial covers the other half](p2p.md). Please note, only use this as a starting point.
+# Tutorials - Lobbies
+:material-badge-account-horizontal: _By Gramps_
+
+---
+
+One of the more requested tutorials is multiplayer lobbies and P2P networking through Steam; this tutorial specifically covers the lobby portion and any of our networking tutorials should cover the other half. Please note, only use this as a starting point.
 
 I'd also like to suggest you [check out the Additional Resources section of this tutorial](#additional-resources) before continuing on.
 
@@ -387,7 +396,7 @@ func make_p2p_handshake() -> void:
 	send_p2p_packet(0, {"message": "handshake", "from": steam_id})
 ```
 
-We won't get into what all this means just yet, but I wanted to show the code for the handshake function here since it is referenced; [more on that in the P2P tutorial](p2p.md). Your handshake messages can be anything and disregarded for the most part. Again, it is just to test our P2P session.
+We won't get into what all this means just yet, but I wanted to show the code for the handshake function here since it is referenced; more on that in the networking tutorials. Your handshake messages can be anything and disregarded for the most part. Again, it is just to test our P2P session.
 
 {==
 ## Lobby Updates / Changes
@@ -473,7 +482,7 @@ func leave_lobby() -> void:
 			# Make sure this isn't your Steam ID
 			if this_member['steam_id'] != steam_id:
 
-				# Close the P2P session
+				# Close the P2P session using the Networking class
 				Steam.closeP2PSessionWithUser(this_member['steam_id'])
 
 		# Clear the local lobby list
@@ -486,10 +495,17 @@ This will inform Steam you have left the lobby then clear your `lobby_id` variab
 ## Up Next
 ==}
 
-That concludes the lobby tutorial. At this point you may want to [check out the P2P tutorial which compliments this one](p2p.md). Obviously this code should not be used for production and more for a very, very, very, simple guide on where to start.
+That concludes the lobby tutorial. At this point you may want to check out one of the networking tutorials:
+
+- [Networking](networking.md)
+- [Networking Messages](networking_messages.md)
+- [Networking Sockets](networking_sockets.md)
+- [MultiplayerPeer](multiplayer_peer.md)
+
+Obviously this code should not be used for production and more for a very, very, very, simple guide on where to start.
 
 {==
-## Additional Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Video Tutorials
@@ -504,4 +520,4 @@ Prefer video tutorials? Feast your eyes and ears!
 
 ### Example Project
 
-[To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

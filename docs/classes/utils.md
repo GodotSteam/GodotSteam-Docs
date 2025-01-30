@@ -1,3 +1,9 @@
+---
+title: Utils
+description: A class reference for Utilities.
+icon: material/tools
+---
+
 # Utils
 
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"

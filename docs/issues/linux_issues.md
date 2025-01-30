@@ -1,3 +1,9 @@
+---
+title: Linux Issues
+description: A list of common Linux issues you may run into.
+icon: simple/linux
+---
+
 # Issues - Linux Platform
 
 There are issues some users might run into on Linux when using Godot and GodotSteam.

@@ -1,3 +1,9 @@
+---
+title: Networking
+description: A class reference for Networking.
+icon: material/network
+---
+
 # Networking
 
 Networking functions for making connections and sending data between clients, traversing NATs when possible. See the [Steam Networking](https://partner.steamgames.com/doc/features/multiplayer/networking){ target="\_blank" } overview for more information.

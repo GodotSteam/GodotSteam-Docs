@@ -1,4 +1,13 @@
+---
+title: Leaderboards
+description: A guide on setting up leaderboards for your game.
+icon: material/controller
+---
+
 # Tutorials - Leaderboards
+:material-badge-account-horizontal: _By Gramps_
+
+---
 
 This tutorial will cover setting up leaderboards for your games. I will add more to this tutorial at a later date with other functions but this should cover all the basics for working with leaderboards.
 
@@ -267,7 +276,7 @@ Once attached you can eiter leave file or delete it as it should be avalible eve
 A user in our Discord noted that sometimes `downloadLeaderboardEntriesForUsers()` would trigger a callback but have zero entries. Oddly, they reported that creating a second leaderboard then deleting the first one would fix this.  While I don't understand why this would be the case, in the event you come across this, perhaps try this solution!
 
 {==
-## Additional Resources
+## :material-content-save-settings: Additional Resources
 ==}
 
 ### Video Tutorials
@@ -280,4 +289,4 @@ Prefer video tutorials? Feast your eyes and ears!
 
 ### Example Project
 
-[To see this tutorial in action, check out our GodotSteam Example Project on GitHub.](https://github.com/GodotSteam/GodotSteam-Example-Project){ target="\_blank" } There you can get a full view of the code used which can serve as a starting point for you to branch out from.
+[Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

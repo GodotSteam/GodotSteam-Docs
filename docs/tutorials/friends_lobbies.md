@@ -1,4 +1,13 @@
+---
+title: Exporting and Shipping
+description: A guide on exporting and shipping your game on Steam.
+icon: fontawesome/solid/users-rectangle
+---
+
 # Tutorials - Friends' Lobbies
+:material-badge-account-horizontal: _By polypi_
+
+---
 
 In this quick tutorial we will cover how to get a dictionary of any lobbies belonging to friends that are visible to the user. This was created as it's a pretty common feature for multiplayer games.
 

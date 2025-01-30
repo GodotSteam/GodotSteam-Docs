@@ -1,3 +1,9 @@
+---
+title: Remote Storage
+description: A class reference for Remote Storage.
+icon: material/storage-tank-outline
+---
+
 # Remote Storage
 
 Provides functions for reading, writing, and accessing files which can be stored remotely in the Steam Cloud. See [Steam Cloud](https://partner.steamgames.com/doc/features/cloud){ target="\_blank" } for more information.
