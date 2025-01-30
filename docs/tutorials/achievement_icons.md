@@ -26,7 +26,7 @@ This quick tutorial will cover to how get achievement icons from Steam's servers
 Before you can get achievement icons you first need to have retrieved the user's stats from Steam. This is done by default when initializing Steam, but can optionally be disabled. This tutorial assumes that you have already received the user stats. See [requestCurrentStats()](../classes/user_stats.md#requestcurrentstats) for more information if needed.
 
 {==
-## Getting the Handle and Buffer
+## :material-database: Getting the Handle and Buffer
 ==}
 
 First you will need to request the icon handle by using the achievement's API name you set in the Steamworks back-end:
@@ -45,7 +45,7 @@ var icon_buffer: Dictionary = Steam.getImageRGBA(icon_handle)
 Note that the `getImageRGBA()` function can be somewhat expensive so it is recommended to only call this once per image handle and cache the result if you will need to access the image data multiple times.
 
 {==
-## Creating the Image
+## :material-image: Creating the Image
 ==}
 
 This buffer is a dictionary that contains two keys: `success` and `buffer` which contains the actual image data for our icon. However, as it is simply binary data, we need to load it into an Image so that Godot can use it as a Texture. The format of the data in the buffer is RGBA8 when we receive it from Steam, so we need to tell Godot how to make sense of it by specifying it as such:
@@ -90,7 +90,7 @@ Finally we can display the icon. Using the previous `icon_texture`, we can place
 $Sprite.texture = icon_texture
 ```
 {==
-## All-In-One
+## :material-collapse-all-outline: All-In-One
 ==}
 
 Our complete example should look something like this:

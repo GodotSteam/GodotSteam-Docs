@@ -57,6 +57,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	---
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3146520/WEBFISHING/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://webfishing.net){ target="\_blank" .md-button .md-button--store }
 
 - [![Windowkill](https://steamcdn-a.akamaihd.net/steam/apps/2726450/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2726450/Windowkill/){ target="\_blank" }
 
