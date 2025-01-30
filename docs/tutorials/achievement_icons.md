@@ -89,6 +89,7 @@ Finally we can display the icon. Using the previous `icon_texture`, we can place
 ```gdscript
 $Sprite.texture = icon_texture
 ```
+
 {==
 ## :material-collapse-all-outline: All-In-One
 ==}
