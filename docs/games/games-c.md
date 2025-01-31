@@ -73,6 +73,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-discord: ](https://discord.gg/uNhAYFV6KH){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://catcafemanager.com){ target="\_blank" .md-button .md-button--store }
 
+- [![Cats vs Aliens](https://steamcdn-a.akamaihd.net/steam/apps/2896390/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2896390/Cats_vs_Aliens/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2896390/Cats_vs_Aliens/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-youtube: ](https://www.youtube.com/@EchoInAVoid){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/echoinavoid.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 - [![Champy The Useless Vampire](https://steamcdn-a.akamaihd.net/steam/apps/2426350/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2426350/Champy_the_Useless_Vampire/){ target="\_blank" }
 
 	---
