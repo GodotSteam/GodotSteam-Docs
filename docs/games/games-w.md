@@ -74,6 +74,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2341410/Wizards_Way_Out/){ target="\_blank" .md-button .md-button--store }
 
+- [![Wizards In Shorts](https://steamcdn-a.akamaihd.net/steam/apps/3173220/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3173220/Wizards_in_Shorts/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3173220/Wizards_in_Shorts/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://dylanhabs.github.io/){ target="\_blank" .md-button .md-button--store }
+
+
 - [![Woodland Empire](https://steamcdn-a.akamaihd.net/steam/apps/1419150/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1419150/Woodland_Empire/){ target="\_blank" }
 
 	---

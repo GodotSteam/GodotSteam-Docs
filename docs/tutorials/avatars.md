@@ -119,6 +119,8 @@ Prefer video tutorials? Feast your eyes and ears!
 
 [:simple-youtube:'How Do We Load Our Friends Avatar' _by FinePointCGI_](https://www.youtube.com/watch?v=VCwNxfYZ8Cw&t=6301s){ .md-button .md-button--resource target="\_blank" }
 
+[ :simple-peertube: GodotSteam - How It Works - Player Avatars _by Gramps / GodotSteam_](https://makertube.net/w/2mFQ5ai4Z6ZarENMghPaxN){ .md-button .md-button--resource target="\_blank" }
+
 ### Example Project
 
 [Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.

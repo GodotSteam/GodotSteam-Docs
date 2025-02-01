@@ -144,6 +144,12 @@ And that's how you display an achievement icon.
 ## :material-content-save-settings: Additional Resources
 ==}
 
+### Video Tutorials
+
+Prefer video tutorials? Feast your eyes and ears!
+
+[ :simple-peertube: GodotSteam - How It Works - Achievement Icons _by Gramps / GodotSteam_](https://makertube.net/w/hDCtLQovk5RyB7eujb93RV){ .md-button .md-button--resource target="\_blank" }
+
 ### Example Project
 
 [Later this year you can see this tutorial in action with more in-depth information by checking out our upcoming free-to-play game Skillet on GitHub.](https://github.com/GodotSteam/Skillet){ target="\_blank" } There you will be able to view of the code used which can serve as a starting point for you to branch out from.
