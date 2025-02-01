@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="assets/stylesheets/intro.css" />
+
+<section id="banner">
+	<h2>GodotSteam</h2>
+	<p>Making Godot Engine a little more powerful with the Steamworks SDK</p>
+	<ul class="actions special">
+		<li><a href="getting_started/introduction" class="button primary">Get Started</a></li>
+		<li><a href="https://github.com/GodotSteam/GodotSteam/releases" class="button primary">Download</a></li>
+	</ul>
+</section>
+
+<!-- Main -->
+<section id="main" class="container">
+
+	<section class="box special">
+		<header class="major">
+			<h2>An ecosystem of tools for Godot Engine and Valve's Steam.
+			<br />
+			For Linux, Mac, and Windows.</h2>
+			<p>The GodotSteam project spans various pre-compiled modules, an equal amount of plug-ins, text and video tutorial series, an open-source game project, as well as more things in the pipeline.</p>
+		</header>
+		<span class="image featured"><img src="assets/images/home_intro.jpg" alt="" /></span>
+	</section>
+
+	<section class="box special features">
+		<div class="features-row">
+			<section>
+				<h3>Standard</h3>
+				<p>The core version of GodotSteam packed with all of Valve's Steamworks SDK magic. Built and run since the days of Godot 2.</p>
+			</section>
+			<section>
+				<h3>Server</h3>
+				<p>If you need a master server to orchestrate your online game or perhaps dedicated servers for players to run, look no further.</p>
+			</section>
+		</div>
+		<div class="features-row">
+			<section>
+				<h3>MultiplayerPeer</h3>
+				<p>Love Godot 4's multiplayer synchronizer and spawners? Merge them with the power of Steam's networking and lobbies with this handy version.</p>
+			</section>
+			<section>
+				<h3>Skillet</h3>
+				<p>Our free-to-play, open-source game that showcases almost all the functionality of GodotSteam. Kind of like one, large example project you can poke.</p>
+			</section>
+		</div>
+	</section>
+</section>
+
+<section id="cta">
+	<h2>Sponsors? Sponsors!</h2>
+	<p>GodotSteam wouldn't keep growing without help from cool folks like these</p>
+
+	<div class="row">
+		<div class="col-12">
+			<div class="box alt">
+				<div class="row gtr-0 gtr-uniform">
+					<div class="col-3">
+						<span class="image fit">
+							<a href="https://bippinbits.com/" target="_blank">
+								<img src="assets/images/home_sponsors1.png" alt="Bippinbits">
+							</a>
+						</span>
+					</div>
+					<div class="col-3">
+						<span class="image fit">
+							<img src="assets/images/home_sponsors2.png" alt="Maurimo">
+						</span>
+					</div>
+					<div class="col-3">
+						<span class="image fit">
+							<a href="https://purplemosscollectors.com" target="_blank">
+								<img src="assets/images/home_sponsors3.png" alt="Purple Moss Collectors">
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="more" class="container">
+	<div class="row">
+		<div class="col-6 col-12-narrower">
+
+			<section class="box special">
+				<span class="image featured"><img src="assets/images/home_support.jpg" alt="Need support? Visit us on Github or Discord!" /></span>
+				<h3>Need Support?</h3>
+				<p>Head over to either Github Discussions or Discord to report issues / bugs, ask questions, discuss implementations, share your project, and more. Plenty of really smart folks on both.</p>
+				<ul class="actions special">
+					<li><a href="https://github.com/GodotSteam/GodotSteam/discussions" class="button fit">Github</a></li>
+					<li><a href="https://discord.gg/SJRSq6K" class="button fit">Discord</a></li>
+				</ul>
+			</section>
+
+		</div>
+		<div class="col-6 col-12-narrower">
+
+			<section class="box special">
+				<span class="image featured"><img src="assets/images/home_games.jpg" alt="Add your cool game to the list!" /></span>
+				<h3>Using GodotSteam?</h3>
+				<p>Finally got your Steam store page up? Share it with us so we can share it with others! Either send in an e-mail or add it to our documentation directly by pull-request on Github.</p>
+				<ul class="actions special">
+					<li><a href="mailto:games@godotsteam.com" class="button fit">E-Mail Us</a></li>
+					<li><a href="https://github.com/GodotSteam/GodotSteam-Docs/pulls" class="button fit">Pull-Request</a></li>
+				</ul>
+			</section>
+
+		</div>
+	</div>
+</section>
+
+{% endblock %}
