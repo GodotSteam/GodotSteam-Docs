@@ -224,6 +224,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2357590/Starveil/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-discord: ](https://discord.com/invite/ZE3MtNXaYD){ target="\_blank" .md-button .md-button--store }
 
+- [![StompyBoy](https://steamcdn-a.akamaihd.net/steam/apps/3433880/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3433880/StompyBoy/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3433880/StompyBoy/){ target="\_blank" .md-button .md-button--store }
+
 - [![Storm's Harvest](https://steamcdn-a.akamaihd.net/steam/apps/2593140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2593140/Storms_Harvest/){ target="\_blank" }
 
 	---
