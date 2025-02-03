@@ -68,6 +68,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: MartinAppDev
 - :material-code-tags: mashumafi
 - :material-code-tags: MichaelBelousov
+- :material-code-tags: Michael Janeway
 - :material-code-tags: :material-file-document-edit: mikix
 - :material-file-document-edit: mkckr0
 - :material-file-document-edit: mynameiswhm
