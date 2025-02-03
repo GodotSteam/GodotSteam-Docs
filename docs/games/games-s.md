@@ -39,6 +39,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1677360/satryn_deluxe/){ target="\_blank" .md-button .md-button--store }
 
+- [![Screaming Head](https://steamcdn-a.akamaihd.net/steam/apps/3372460/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3372460/Screaming_Head/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3372460/Screaming_Head/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/lexa.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 - [![Seedlings](https://steamcdn-a.akamaihd.net/steam/apps/1575510/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1575510/Seedlings/){ target="\_blank" }
 
 	---

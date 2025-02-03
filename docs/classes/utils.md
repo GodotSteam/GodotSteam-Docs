@@ -6,7 +6,7 @@ icon: material/tools
 
 # Utils
 
-!!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
+!!! info "Available in both the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"
 
 {==
 ## :material-function-variant: Functions

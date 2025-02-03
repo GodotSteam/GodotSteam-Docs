@@ -9,6 +9,14 @@ A history of all changes to [the ***server gdextension*** branch.](https://githu
 
 ---
 
+## Version 4.5
+
+- Added: missing Utils class: functions, enums, constants
+- Changed: minor clean-ups
+- Fixed: wrong accessor for Networking Sockets, thanks to ***Michael Janesway***
+- Fixed: missing callback fro `validate_auth_ticket_response`, thanks to ***Michael Janesway***
+- Fixed: all wronge accessors for all other class functions
+
 ## Version 4.4
 
 - Added: public properties with set/get functions
