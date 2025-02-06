@@ -38,6 +38,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-youtube: ](https://www.youtube.com/@EvilTurtleProductions){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/publisher/EvilTurtleProductions){ target="\_blank" .md-button .md-button--store }
 
+- [![Keep It Running: Together](https://steamcdn-a.akamaihd.net/steam/apps/3448380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3448380/Keep_It_Running_Together/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3448380/Keep_It_Running_Together/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@evilturtle){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://evildraggie.itch.io/keepitrunning){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-youtube: ](https://www.youtube.com/@EvilTurtleProductions){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/publisher/EvilTurtleProductions){ target="\_blank" .md-button .md-button--store }
+
 - [![Keep The Heroes Out](https://steamcdn-a.akamaihd.net/steam/apps/2592340/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2592340/Keep_the_Heroes_Out/){ target="\_blank" }
 
 	---
