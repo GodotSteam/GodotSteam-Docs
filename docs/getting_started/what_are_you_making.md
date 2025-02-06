@@ -183,11 +183,11 @@ The GodotSteam Server version is good if you want to build a centralized master 
 		<span class="sep">[</span>
 		<span class="title">:simple-godotengine:{ .steam title="GodotSteam Server" }</span>
 		<span class="sep">|</span>
-		<span class="value">4.4</span>
+		<span class="value">4.5</span>
 		<span class="sep">]</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.4){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.5){ target="\_blank" }
 
 	[:octicons-arrow-right-24: Download GDExtension](https://godotengine.org/asset-library/asset/2218){ target="\_blank" }
 
@@ -214,12 +214,12 @@ The GodotSteam Server version is good if you want to build a centralized master 
 			<span class="sep">[</span>
 			<span class="title">:octicons-server-24:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">3.4</span>
+			<span class="value">3.5</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.4){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.5){ target="\_blank" }
 
 	[:octicons-arrow-right-24: Download GDNative (Deprecated)](https://godotengine.org/asset-library/asset/2222){ target="\_blank" }
 </div>
