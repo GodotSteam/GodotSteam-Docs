@@ -69,4 +69,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-discord: ](https://discord.gg/enigmadev){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-google-play: ](https://play.google.com/store/apps/details?id=com.enigmadev.uploadsimulator2){ target="\_blank" .md-button .md-button--store }
 
+- [![Upstream](https://steamcdn-a.akamaihd.net/steam/apps/3245890/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3245890/Upstream/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3245890/Upstream/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://gllamagames.com/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-youtube: ](https://www.youtube.com/@GllamaGames){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-twitch: ](https://www.twitch.tv/gllamagames){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/gllama.games){ target="\_blank" .md-button .md-button--store }
+
 </div>

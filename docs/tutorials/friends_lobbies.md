@@ -1,6 +1,6 @@
 ---
-title: Exporting and Shipping
-description: A guide on exporting and shipping your game on Steam.
+title: Friends Lobbies
+description: A guide on getting friends' lobbies.
 icon: fontawesome/solid/users-rectangle
 ---
 
