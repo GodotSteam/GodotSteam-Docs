@@ -32,6 +32,7 @@ nav:
       - Auto-Matchmaking: 'tutorials/auto_matchmaking.md'
       - Avatars: 'tutorials/avatars.md'
       - C#: 'tutorials/c-sharp.md'
+      - DLC: 'tutorials/dlc.md'
       - Exporting and Shipping: 'tutorials/exporting_shipping.md'
       - Friends' Lobbies: 'tutorials/friends_lobbies.md'
       - Initializing Steam: 'tutorials/initializing.md'

@@ -1371,6 +1371,10 @@
  section.special, article.special {
      text-align: center;
 }
+section.special a:hover {
+    text-decoration: none !important;
+    color: #ffffff !important;
+}
  header p {
      color: #999;
      position: relative;
@@ -2022,6 +2026,10 @@
      font-style: normal;
      font-size: 5em;
      color: inherit;
+}
+#cta a:hover {
+    text-decoration: none !important;
+    color: #ffffff !important;
 }
  #cta p {
      font-size: 1.5em;

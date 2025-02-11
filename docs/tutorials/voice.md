@@ -140,7 +140,7 @@ We have our sample rates figured out so let's try to actual play this data. Sinc
 		# Our sample rate function above without toggling
 		get_sample_rate()
 
-		var decompressed_voice: Dictionary = Steam.decompressVoice(voice_data['buffer'], voice_data['written'], current_sample_rate)
+		var decompressed_voice: Dictionary = Steam.decompressVoice(voice_data['buffer'], current_sample_rate)
 		
 		if decompressed_voice['result'] == Steam.VOICE_RESULT_OK and decompressed_voice['size'] > 0:
 			print("Decompressed voice: %s" % decompressed_voice['size'])
@@ -167,7 +167,7 @@ We have our sample rates figured out so let's try to actual play this data. Sinc
 		# Our sample rate function above without toggling
 		get_sample_rate()
         
-		var decompressed_voice: Dictionary = Steam.decompressVoice(voice_data['buffer'], voice_data['written'], current_sample_rate)
+		var decompressed_voice: Dictionary = Steam.decompressVoice(voice_data['buffer'], current_sample_rate)
 		
 		if decompressed_voice['result'] == Steam.VOICE_RESULT_OK and decompressed_voice['size'] > 0:
 			print("Decompressed voice: %s" % decompressed_voice['size'])
