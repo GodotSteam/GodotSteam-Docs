@@ -121,7 +121,7 @@ func check_command_line() -> void:
 
 This is important if the player is accepting a Steam invite or right-clicks a friend's name then selects 'Join Game' or 'Join Lobby' and doesn't have the game open. Doing either action will launch the game with the additional command `+connect_lobby <Steam Lobby ID>`. Sadly Godot doesn't really understand this command argument so our `check_command_line()` function has to be written to work within those constraints.
 
-Additionally, you'll need to add the appropriate scene name to your Steamworks launch options on the Steamworks website. You'll want to add the full scene path (res://your-scene.tscn) on the **Arguments** line in your launch option. [You can read more about that, with details, in this link.](https://github.com/GodotSteam/GodotSteam/issues/100){ target="\_blank" } Big thanks to **Antokolos** for answering this issue and providing a solid example.
+Additionally, you'll need to add the appropriate scene name to your Steamworks launch options on the Steamworks website. You'll want to add the full scene path (res://your-scene.tscn) on the **Arguments** line in your launch option. [You can read more about that, with details, in this link.](https://github.com/GodotSteam/GodotSteam/discussions/751){ target="\_blank" } Big thanks to **Antokolos** for answering this issue and providing a solid example.
 
 {==
 ## Creating Lobbies
