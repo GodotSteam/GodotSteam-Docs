@@ -88,7 +88,7 @@ However, if you just want to skip all of this and directly upload zipped builds 
 
 Before sending things over to Steam, we need to gather up all our files.  For the most part this is just your game's executable, accompanying .pck file, GodotSteam shared libraries if you are using the plug-ins, and the Steamworks API file:
 
-- On Linux, make sure you use the `libsteam_api.so` file from the _correct_ folder. I am not sure why Valve did not differentiate in naming between 32 and 64-bit files for Linux, but they do not.
+- On Linux, make sure you use the **libsteam_api.so** file from the _correct_ folder. I am not sure why Valve did not differentiate in naming between 32 and 64-bit files for Linux, but they do not.
 - On Mac, the Steamworks redistributables are already included in your app directory so there's not thing else to add.
 - On Windows, use the **steam_api.dll** for 32-bit or **steam_api64.dll** for 64-bit.
 
