@@ -66,6 +66,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1360940/Hellfire_Tactics/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-discord: ](https://discord.gg/hTtTpGVHCU){ target="\_blank" .md-button .md-button--store }
 
+- [![Hepatomancy](https://steamcdn-a.akamaihd.net/steam/apps/3064110/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3064110/Hepatomancy/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3064110/Hepatomancy/){ target="\_blank" .md-button .md-button--store }
+
 - [![Hexes](https://steamcdn-a.akamaihd.net/steam/apps/1977770/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1977770/Hexes/){ target="\_blank" }
 
 	---
