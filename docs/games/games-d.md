@@ -29,6 +29,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1625760/Dave_Dave_Dave/){ target="\_blank" .md-button .md-button--store }
 
+- [![Dawnfolk](https://steamcdn-a.akamaihd.net/steam/apps/2308630/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2308630/Dawnfolk/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2308630/Dawnfolk/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://dawnfolk.com/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://darenn.itch.io/dawnfolk){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/darenn.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 - [![Deal of the Dead: Final Cut](https://steamcdn-a.akamaihd.net/steam/apps/2754660/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2754660/Deal_of_the_Dead_Final_Cut/){ target="\_blank" }
 
 	---
