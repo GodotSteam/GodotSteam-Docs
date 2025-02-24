@@ -9,7 +9,7 @@ icon: material/dot-net
 
 ---
 
-Every so often we get someone who asks how to use GodotSteam with C# so I figured I would write this up. First and foremost, I have never used C# so my understanding of it is prety much null and void.
+Every so often we get someone who asks how to use GodotSteam with C# so I figured I would write this up. First and foremost, I have never used C# so my understanding of it is pretty much null and void.
 
 {==
 ## Where's The DotNet Build?
@@ -21,7 +21,7 @@ To the point, GodotSteam does not have a C# version currently. I am in the proce
 ## Workarounds
 ==}
 
-Thankfully, for those of you using the GDExtension version of the project, there is a lovely project that will help!  Thanks to **LauraWebdev**, we have this cool plug-in: [GodtoSteam C# Bindings](https://github.com/LauraWebdev/GodotSteam_CSharpBindings){ target="\_blank" }
+Thankfully, for those of you using the GDExtension version of the project, there is a lovely project that will help!  Thanks to **LauraWebdev**, we have this cool plug-in: [GodotSteam C# Bindings](https://github.com/LauraWebdev/GodotSteam_CSharpBindings){ target="\_blank" }
 
 While I am still trying to get up to speed on all this C# business, you can read more about how it works on Github. There are even some excellent pieces of example code!
 
