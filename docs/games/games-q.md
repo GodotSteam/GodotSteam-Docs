@@ -19,5 +19,9 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
     ---
 
     [ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3498550/Questwood/){ target="\_blank" .md-button .md-button--store }
+    [ :fontawesome-brands-firefox-browser: ](https://www.lyricalgames.net/){ target="\_blank" .md-button .md-button--store }
+    [ :fontawesome-brands-discord: ](https://discord.gg/kC38vQDw){ target="\_blank" .md-button .md-button--store }
+    [ :fontawesome-brands-reddit: ](https://www.reddit.com/user/LyricalGamesOfficial/){ target="\_blank" .md-button .md-button--store }
+    [ :fontawesome-brands-itch-io: ](https://lyricalgames.itch.io/){ target="\_blank" .md-button .md-button--store }
 
 </div>
