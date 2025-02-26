@@ -101,6 +101,8 @@ Inside that handshake there was a call to the `read_messages()` function which d
 
 	```gdscript
 	func read_messages() -> void:
+ 		# The maximum number of messages you want to read per call
+ 		var max_messages: int = 10
 		var messages: array = Steam.receiveMessagesOnChannel(send_channel, max_messages)
 
 		# There is a packet
@@ -124,6 +126,8 @@ Inside that handshake there was a call to the `read_messages()` function which d
 
 	```gdscript
 	func read_messages() -> void:
+ 		# The maximum number of messages you want to read per call
+ 		var max_messages: int = 10
 		var messages: Array = Steam.receiveMessagesOnChannel(send_channel, max_messages)
 
 		# There is a packet
@@ -133,7 +137,7 @@ Inside that handshake there was a call to the `read_messages()` function which d
      		else:
 				message.payload = bytes_to_var(message.payload)
 				# Get the remote user's ID
-				var message_sender: int = this_packet['remote_steam_id']
+				var message_sender: int = message.identity
 
 				# Print the packet to output
 				print("Message Payload: %s" % message.payload)
