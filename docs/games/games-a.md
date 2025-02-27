@@ -94,6 +94,11 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1814150/Atomic_Cyclecar_Racing/){ target="\_blank" .md-button .md-button--store }
 
+- [![Atomic Cyclecar Racing 2](https://steamcdn-a.akamaihd.net/steam/apps/3533560/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3533560/Atomic_Cyclecar_Racing_2){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3533560/Atomic_Cyclecar_Racing_2){ target="\_blank" .md-button .md-button--store }
 
 - [![Avalog](https://steamcdn-a.akamaihd.net/steam/apps/2480820/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2480820/Avalog/){ target="\_blank" }
 

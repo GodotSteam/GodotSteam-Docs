@@ -103,6 +103,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: ynot01
 - :material-file-document-edit: Yolwoocle
 - :material-code-tags: :material-file-document-edit: Zee Weasel
+- :material-file-document-edit: zegenie
 
 </div>
 
