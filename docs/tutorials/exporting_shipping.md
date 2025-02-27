@@ -310,3 +310,5 @@ Prefer video tutorials? Feast your eyes and ears!
 [ :simple-youtube: 'Godot + Steam tutorial | Export' by BluePhoenixGames](https://www.youtube.com/watch?v=J0GrG-AffCI&t=49s){ .md-button .md-button--resource target="\_blank" }
 
 [ :simple-youtube: 'How Do You Export Your Game' by FinePointCGI](https://www.youtube.com/watch?v=VCwNxfYZ8Cw&t=6538s){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-peertube: GodotSteam - How It Works - Exporting and Shipping _by Gramps / GodotSteam_](https://makertube.net/w/aExfBFQikyUsXJMCkKhSc5){ .md-button .md-button--resource target="\_blank" }
