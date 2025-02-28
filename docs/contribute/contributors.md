@@ -72,6 +72,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: :material-file-document-edit: mikix
 - :material-file-document-edit: mkckr0
 - :material-file-document-edit: mynameiswhm
+- :material-code-tags: obscurelyme
 - [:material-code-tags: Oleksii Zaremskyi](https://savelife.in.ua/){ target="\_blank" }
 - :material-file-document-edit: P-Kelley
 - :material-code-tags: pixelriot
