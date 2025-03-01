@@ -42,6 +42,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: Foxushka
 - :material-code-tags: freehuntx
 - :material-code-tags: Frostings
+- :material-code-tags: gkwaerp
 - :material-code-tags: greenfox1505
 - :material-code-tags: guimarca
 - :material-code-tags: Handagotes
