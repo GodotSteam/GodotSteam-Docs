@@ -546,7 +546,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 	* browser_handle (uint32)
 	* page_data (dictionary)
-		* bgra (string)
+		* rgba (string)
 		* wide (uint32)
 		* tall (uint32)
 		* update_x (uint32)

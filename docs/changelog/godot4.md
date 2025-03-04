@@ -8,7 +8,20 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ---
 
-## Version 4.12 Changes
+## Version 4.13
+
+- Added: missing functions `openDeveloperTools` and `setDPIScalingFactor`
+- Added: two missing Video class callbacks: `broadcast_upload_start` and `broadcast_upload_stop`
+- Changed: minor housekeeping
+- Changed: updated docs
+- Changed: `getItemDefinitionProperty` now returns dictionary, thanks to ***gkwaerp***
+- Changed: returned dictionary of `html_needs_paint` signal key 'bgra' renamed to 'rbga', thanks to ***obscurelyme***
+- Fixed: history variables not initialized in `getGlobalStatIntHistory` and `getGlobalStatFloatHistory`
+- Fixed: missing argument in `activateGameOverlayToWebPage`
+- Fixed: missing argument in `keyDown`
+- Fixed: incorrect callback signal for `get_opf_settings_result`
+
+## Version 4.12
 
 - Added: new Timeline functions, call results, and enums
 - Added: new Inputs enums for Horipad; `INPUT_ACTION_ORIGIN`
@@ -24,7 +37,7 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 - Removed: unncessary commenting
 - Removed: `sendMessages` until it can be fixed in Windows
 
-## Version 4.11 Changes
+## Version 4.11
 
 - Added: `getDLCData` to get all DLC information and `getDLCDataByIndex` now acts as Steam intended with an index passed
 - Added: properties for all variants GodotSteam stores

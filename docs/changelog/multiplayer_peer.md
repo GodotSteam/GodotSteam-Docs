@@ -8,6 +8,10 @@ A history of all changes to [the ***MultiplayerPeer*** repo.](https://github.com
 
 ---
 
+## Version 4.13
+
+- Changed: version bump to match Godot 4.x branch update
+
 ## Version 4.12
 
 - Changed: version bump to match Godot 4.x branch update

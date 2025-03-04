@@ -58,6 +58,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2698680/Card_Fuse/){ target="\_blank" .md-button .md-button--store }
 
+- [![Card Heroes of Millford](https://steamcdn-a.akamaihd.net/steam/apps/3343630/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3343630/Card_Heroes_of_Millford/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3343630/Card_Heroes_of_Millford/){ target="\_blank" .md-button .md-button--store }
+
 - [![Cat Box Paradox](https://steamcdn-a.akamaihd.net/steam/apps/1771200/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1771200/Cat_Box_Paradox/){ target="\_blank" }
 
 	---

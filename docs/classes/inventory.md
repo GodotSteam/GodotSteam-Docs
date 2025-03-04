@@ -172,7 +172,12 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https
 
 	**Note:** Call [loadItemDefinitions](#loaditemdefinitions) first, to ensure that items are ready to be used before calling [getItemDefinitionProperty](#getitemdefinitionproperty).
 
-	**Returns:** string.
+	**Returns:** Dictionary.
+
+	Contains the following keys:
+
+    * property (string)
+    * success (bool)
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemDefinitionProperty){ .md-button .md-button--store target="_blank" }
