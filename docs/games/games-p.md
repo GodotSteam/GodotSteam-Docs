@@ -55,6 +55,17 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-firefox-browser: ](https://www.kikimora.games/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-discord: ](https://discord.gg/sSmGbJSa4E){ target="\_blank" .md-button .md-button--store }
 
+- [![Phobos Down](https://steamcdn-a.akamaihd.net/steam/apps/2754880/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2754880/Phobos_Down/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2754880/Phobos_Down/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://www.fractilegames.com/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://fractilegames.itch.io/phobos-down){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@fractilegames){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/fractilegames.bsky.social){ target="\_blank" .md-button .md-button--store }
+
+
 - [![Pincrediball](https://steamcdn-a.akamaihd.net/steam/apps/2378150/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2378150/Pincrediball){ target="\_blank" }
 
 	---
