@@ -169,7 +169,7 @@ The GodotSteam Server version is good if you want to build a centralized master 
 		<span class="sep">[</span>
 		<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 		<span class="sep">|</span>
-		<span class="value">4.3</span>
+		<span class="value">4.4</span>
 		<span class="sep">]</span>
 	</span>
 	<span class="badge badge-normal tag-steam">
@@ -183,11 +183,11 @@ The GodotSteam Server version is good if you want to build a centralized master 
 		<span class="sep">[</span>
 		<span class="title">:simple-godotengine:{ .steam title="GodotSteam Server" }</span>
 		<span class="sep">|</span>
-		<span class="value">4.5</span>
+		<span class="value">4.5.1</span>
 		<span class="sep">]</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.5){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.5.1){ target="\_blank" }
 
 	[:octicons-arrow-right-24: Download GDExtension](https://godotengine.org/asset-library/asset/2218){ target="\_blank" }
 
