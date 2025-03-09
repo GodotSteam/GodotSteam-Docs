@@ -72,7 +72,7 @@ func get_lobbies_with_friends() -> Dictionary:
 		var steam_id: int = Steam.getFriendByIndex(i, Steam.FRIEND_FLAG_IMMEDIATE)
 		var game_info: Dictionary = Steam.getFriendGamePlayed(steam_id)
 
-		if game_info.empty():
+		if game_info.is_empty():
 			# This friend is not playing a game
 			continue
 		else:
