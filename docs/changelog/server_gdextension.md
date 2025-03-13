@@ -9,6 +9,15 @@ A history of all changes to [the ***server gdextension*** branch.](https://githu
 
 ---
 
+## Version 4.5.2
+
+- Fixed: crash when GodotSteam converts IP addresses internally
+
+## Version 4.5.1
+
+- Changed: updated docs
+- Changed: `getItemDefinitionProperty` now returns dictionary, thanks to ***gkwaerp***
+
 ## Version 4.5
 
 - Added: missing Utils class: functions, enums, constants
