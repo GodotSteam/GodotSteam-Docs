@@ -26,6 +26,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3109050/Waifu/){ target="\_blank" .md-button .md-button--store }
 
+- [![Wake Cup](https://steamcdn-a.akamaihd.net/steam/apps/2881430/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2881430/Wake_Cup/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3109050/Waifu/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-twitch: ](https://twitch.tv/tobugis){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.gg/WkTN2NAbxc){ target="\_blank" .md-button .md-button--store }
+
 - [![Warja](https://steamcdn-a.akamaihd.net/steam/apps/2433360/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2433360/Warja/){ target="\_blank" }
 
 	---
