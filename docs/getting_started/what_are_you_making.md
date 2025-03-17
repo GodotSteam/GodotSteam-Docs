@@ -136,14 +136,14 @@ As we mentioned earlier, you can also use [ExpressoBits' SteamMultiplayerPeer GD
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.3</span>
+			<span class="value">4.4</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:material-network:{ .steam title="ExpressoBits SMP" }</span>
 			<span class="sep">|</span>
-			<span class="value">0.2.1</span>
+			<span class="value">0.2.2</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
