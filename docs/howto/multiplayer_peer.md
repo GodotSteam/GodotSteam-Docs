@@ -33,9 +33,9 @@ Regardless of which option you pick, make sure it is for Godot version 4.0 or hi
 You can clone the latest Godot source in a folder called ***godot*** like so:
 
 ```shell
-git clone https://github.com/godotengine/godot.git -b 4.3-stable godot
+git clone https://github.com/godotengine/godot.git -b 4.4-stable godot
 ```
-You may need to change the tag from ***4.3-stable*** to whatever the current version is or whatever version you need.
+You may need to change the tag from ***4.4-stable*** to whatever the current version is or whatever version you need.
 
 #### Downloading the Source
 

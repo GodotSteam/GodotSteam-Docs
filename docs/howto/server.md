@@ -39,7 +39,7 @@ You can clone the latest Godot source in a folder called ***godot*** like so:
 === "Godot 4.x"
 
 	```shell
-	git clone https://github.com/godotengine/godot.git -b 4.3-stable godot
+	git clone https://github.com/godotengine/godot.git -b 4.4-stable godot
 	```
 
 You may need to change the given tag(s) above from whatever it is to whatever the current version or whatever version you need.
