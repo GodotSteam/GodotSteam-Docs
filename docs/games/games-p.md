@@ -22,6 +22,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-facebook: ](https://www.facebook.com/nlbproject/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-youtube: ](https://www.youtube.com/nlbproject/){ target="\_blank" .md-button .md-button--store }
 
+- [![Pancake Patrol](https://steamcdn-a.akamaihd.net/steam/apps/2587840/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2587840/Pancake_Patrol/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2587840/Pancake_Patrol/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://powerplins.com){ target="\_blank" .md-button .md-button--store }
+
 - [![Pandora Galaxy](https://steamcdn-a.akamaihd.net/steam/apps/1226610/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1226610/Pandora_Galaxy/){ target="\_blank" }
 
 	---
