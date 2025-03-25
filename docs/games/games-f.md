@@ -14,6 +14,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" class="grid cards" markdown>
 
+- [![Fallacy Quiz](https://steamcdn-a.akamaihd.net/steam/apps/2847380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2847380/Fallacy_Quiz/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2847380/Fallacy_Quiz/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://timkrief.itch.io/fallacy-quiz){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://fallacyquiz.com/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://links.timkrief.com/){ target="\_blank" .md-button .md-button--store }
+	[ :material-file-document: ](https://projects.timkrief.com/presskit/fallacy-quiz/?lang=en){ target="\_blank" .md-button .md-button--store }
+
 - [![Farm Invader](https://steamcdn-a.akamaihd.net/steam/apps/3277240/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3277240/Farm_Invader/){ target="\_blank" }
 
 	---
