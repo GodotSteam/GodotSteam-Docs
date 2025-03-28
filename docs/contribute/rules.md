@@ -28,7 +28,8 @@ One of the best way to help with the project is code contribution.  [We keep a s
 
 When modifying the code to any of GodotSteam branches, there is a convention we try to keep. Honestly, it is a hodge-podge of styles:
 
-- [x] Use camel-case for all function names. We mostly follow Valve's lead with this instead of Godot's, but we have discussed changing it.
+- [x] All Steamworks function names retain Valve's style except the first letter is lowercase. Example: SetAchievements = setAchievements
+- [x] Use snake-case for all other function names; similar to how Godot does it.
 - [x] Use snake-case for all signal names, variables, and arguments.
 
 ### Compile It
@@ -51,11 +52,11 @@ Most importantly, we ask that you make sure your code compiles before submitting
 ## :material-file-document-edit: Modifying Docs
 ==}
 
-Feel free to make any edits you think are needed: CSS changes, new tutorials, extra links, fixes for functions or signals, or even adding your own game to the "Games Using GodotSteam" list.
+Feel free to make any edits you think are needed: CSS changes, new tutorials, extra links, fixes for functions or signals, or even adding your own game to the "Games Using GodotSteam" list.  Any large changes should be discussed by the same routes as major code changes.
 
-Any large changes, however, should be discussed by the same routes as major code changes.
+The documentation uses [MKDocs](https://www.mkdocs.org/) and [Material For MKDocs](https://squidfunk.github.io/mkdocs-material/); if you want to set up a local version of the docs to see your updates before pushing to repo, you will need to install those.
 
-Try to make any new or edited content fit the same styles as the other pages.  But if you have an eye for design and think of something better, please share that too!
+Try to make any new or edited content fit the same styles as the other pages. But if you have an eye for design and think of something better, please share that too!
 
 {==
 ## :material-gamepad-variant: Modifying Skillet

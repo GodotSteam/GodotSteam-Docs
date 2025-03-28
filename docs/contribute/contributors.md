@@ -94,7 +94,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - [:material-code-tags: Tamper2](https://honkofheroes.com/){ target="\_blank" }
 - :material-code-tags: TCROC
 - :material-file-document-edit: Toi Lanh
-- :material-file-document-edit: TriMay
+- :material-code-tags: :material-file-document-edit: TriMay
 - :material-code-tags: troykinsella
 - :material-code-tags: xsellier
 - :material-code-tags: vaartis

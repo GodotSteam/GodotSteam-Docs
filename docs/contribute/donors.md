@@ -6,7 +6,7 @@ icon: material/account-heart
 
 # Donors and Benefactors
 
-Here is a list of all our amazing current and past donors who have carried this project over the years financially.
+Here is a list of all our amazing current and past donors who have financially carried this project over the years.
 
 {==
 ## :material-heart: Current Donors List
@@ -14,9 +14,7 @@ Here is a list of all our amazing current and past donors who have carried this 
 
 <div class="grid cards contrib_list" markdown>
 
-- Dana P
 - Dreamfarer
-- Garrett Steffen
 - HephepTeam
 - InvoxiPlayGames
 - Jez
@@ -26,16 +24,17 @@ Here is a list of all our amazing current and past donors who have carried this 
 - LucasBBX
 - [Mauricio Castillo](https://bsky.app/profile/maurimo.dev){ target="\_blank" }
 - Michael Macha
-- MinmoTech
 - Perroboc
 - [PurpleMossCollectors](http://purplemosscollectors.com/){ target="\_blank" }
-- René Habermann
+- [René Habermann](https://bippinbits.com/){ target="\_blank" }
 - [RPG in a Box](https://rpginabox.com/){ target="\_blank" }
 - SaffronStreams
 - Thorsten Schleinzer
 - VestedGrammar
-- xaviervxz
+- xaviervx
+- WAFFO
 - zikes
+- And two secret sponsors
 
 </div>
 
@@ -53,6 +52,7 @@ Here is a list of all our amazing current and past donors who have carried this 
 - Charles Maddock
 - columbiacolles
 - d4rkd0s
+- Dana P
 - David McHale
 - David Wery
 - David-AW
@@ -78,6 +78,7 @@ Here is a list of all our amazing current and past donors who have carried this 
 - Martin Eigel
 - Mike King
 - Mikk Maasik
+- MinmoTech
 - MudbuG
 - Nicholas Orlowski
 - pixelriot

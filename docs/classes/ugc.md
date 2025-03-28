@@ -827,9 +827,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemPreview
 
 !!! function "setItemPreview( ```uint64_t``` update_handle, ```string``` preview_file )"
-	Sets the primary preview image for the item.
-
-	The format should be one that both the web and the application (if necessary) can render. Suggested formats include JPG, PNG and GIF.
+	Sets the primary preview image for this item. **preview_file** points to a local image file, which _must be_ under 1MB in size. The format should be one that both the web and the application (if necessary) can render. Suggested formats include JPG, PNG and GIF.
 
 	**Returns:** bool
 
