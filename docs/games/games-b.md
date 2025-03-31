@@ -107,6 +107,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2835570/Buckshot_Roulette/){ target="\_blank" .md-button .md-button--store }
 
+- [![Burgleville](https://steamcdn-a.akamaihd.net/steam/apps/3147130/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3147130/Burgleville/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3147130/Burgleville/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.gg/vBQ93WZBGs){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://www.burgleville.com/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-youtube: ](https://www.youtube.com/@Burgleville){ target="\_blank" .md-button .md-button--store }
+
 - [![Bunny Hungry](https://steamcdn-a.akamaihd.net/steam/apps/2667010/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" }
 
 	---

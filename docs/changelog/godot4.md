@@ -8,6 +8,22 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ---
 
+## Version 4.14
+
+- Added: new functions and enums to SteamRemotePlay
+- Added: Steam icon to the class
+- Added: Project Settings for Steam, optional app ID, can set auto-initialization, can set embedded callbacks, thanks to ***TriMay***
+- Changed: replaced previous `MouseCursor` enum with new `HTMLMouseCursor` enum
+- Changed: updated docs
+- Changed: updated to Steamworks SDK 1.62
+- Changed: `getNumSubscribedItems` and `getSubscribedItems` now take include_locally_disabled argument
+- Fixed: various bits in the in-editor docs
+- Fixed: `network_messages_session_failed` missing returned properties in bind
+- Removed: `UserRestrictions` enum
+- Removed: `SetPersonaName` function and related callback `name_changed`
+- Removed: `GetUserRestrictions` function
+- Removed: `steamInit` as it is a wrapper of `steamInitEx`
+
 ## Version 4.13
 
 - Added: missing functions `openDeveloperTools` and `setDPIScalingFactor`

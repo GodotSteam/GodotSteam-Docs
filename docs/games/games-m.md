@@ -69,6 +69,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/913820/MMA_Simulator/){ target="\_blank" .md-button .md-button--store }
 
+- [![Mobs 'N Monsters](https://steamcdn-a.akamaihd.net/steam/apps/3277990/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3277990/Mobs_N_Monsters/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3277990/Mobs_N_Monsters/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://ghostiegames.itch.io/mobs-n-monsters){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/ghostiegamesdev.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 - [![Moonatics](https://steamcdn-a.akamaihd.net/steam/apps/2003450/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2003450/Moonatics/){ target="\_blank" }
 
 	---
