@@ -8,6 +8,11 @@ A history of all changes to [the ***server3*** branch.](https://github.com/Godot
 
 ---
 
+## Version 3.6
+
+- Added: new functions to UGC
+- Changed: `getNumSubscribedItems` and `getSubscribedItems` now take include_locally_disabled argument
+
 ## Version 3.5.1
 
 - Changed: minor clean-ups

@@ -8,6 +8,11 @@ A history of all changes to [the ***server4*** branch.](https://github.com/Godot
 
 ---
 
+## Version 4.6
+
+- Added: new functions to UGC
+- Changed: `getNumSubscribedItems` and `getSubscribedItems` now take include_locally_disabled argument
+
 ## Version 4.5.2
 
 - Fixed: crash when GodotSteam converts IP addresses internally

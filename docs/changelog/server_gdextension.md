@@ -5,9 +5,14 @@ icon: material/power-plug-outline
 ---
 
 
-A history of all changes to [the ***server gdextension*** branch.](https://github.com/GodotSteam/GodotSteam-Server/tree/gdextension){ target="\_blank" }
+A history of all changes to [the ***server-gdextension*** branch.](https://github.com/GodotSteam/GodotSteam-Server/tree/gdextension){ target="\_blank" }
 
 ---
+
+## Version 4.6
+
+- Added: new functions to UGC
+- Changed: `getNumSubscribedItems` and `getSubscribedItems` now take include_locally_disabled argument
 
 ## Version 4.5.2
 

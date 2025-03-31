@@ -13,17 +13,17 @@ A history of all changes to [the ***gdextension*** branch.](https://github.com/G
 - Added: new functions and enums to SteamRemotePlay
 - Added: Steam icon to the class
 - Added: Project Settings for Steam, optional app ID, can set auto-initialization, can set embedded callbacks, thanks to ***TriMay***
+- Added: new functions to UGC
 - Changed: replaced previous `MouseCursor` enum with new `HTMLMouseCursor` enum
 - Changed: updated docs
 - Changed: updated to Steamworks SDK 1.62
 - Changed: `getNumSubscribedItems` and `getSubscribedItems` now take include_locally_disabled argument
-- Changed: a little bit of housekeeping'
+- Changed: `steamInit` now return intended boolean and first argument removed since client syncs stats/achieves at boot
 - Fixed: various bits in the in-editor docs
 - Fixed: `network_messages_session_failed` missing returned properties in bind
 - Removed: `UserRestrictions` enum
 - Removed: `SetPersonaName` function and related callback `name_changed`
 - Removed: `GetUserRestrictions` function
-- Removed: `steamInit` as it is a wrapper of `steamInitEx`
 
 ## Version 4.13
 

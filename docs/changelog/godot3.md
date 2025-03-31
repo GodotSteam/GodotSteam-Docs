@@ -8,6 +8,46 @@ A history of all changes to [the ***godot3*** branch.](https://github.com/GodotS
 
 ---
 
+## Version 3.29
+
+- Added: new functions and enums to SteamRemotePlay
+- Added: Steam icon to the class
+- Added: Project Settings for Steam, optional app ID, can set embedded callbacks, thanks to ***TriMay***
+- Added: missing HTML Surface functions `openDeveloperTools` and `setDPIScalingFactor`
+- Added: missing Video class callbacks `broadcast_upload_start` and`broadcast_upload_stop`
+- Added: new functions to UGC
+- Changed: replaced previous `MouseCursor` enum with new `HTMLMouseCursor` enum
+- Changed: updated docs
+- Changed: updated to Steamworks SDK 1.62
+- Changed: `getNumSubscribedItems` and `getSubscribedItems` now take include_locally_disabled argument
+- Changed: `steamInit` now return intended boolean and first argument removed since client syncs stats/achieves at boot
+- Changed: added missing is_system_key argument to `key_down` function
+- Fixed: various bits in the in-editor docs
+- Fixed: `network_messages_session_failed` missing returned properties in bind
+- Fixed: `connected_friend_chat_message` having the wrong signal name
+- Fixed: wrong signal name for `get_opf_settings_result`
+- Removed: `UserRestrictions` enum
+- Removed: `SetPersonaName` function and related callback `name_changed`
+- Removed: `GetUserRestrictions` function
+
+## Version 3.28
+
+- Added: new Timeline functions, call results, and enums
+- Added: new Inputs enums for Horipad; `INPUT_ACTION_ORIGIN`
+- Added: new Networking config enum `NETWORKING_CONFIG_SEND_TIME_SINCE_PREVIOUS_PACKET`
+- Added: new Networking config enums for fake packet jitter; `NETWORKING_CONFIG_FAKE_JITTER_`
+- Changed: `equipped_profile_items` callback now sends `from_cache` bool
+- Changed: first argument for `steamInit` and `steamInitEx` no longer calls for stats as they are synced by client; left to prevent compatibility breakage
+- Changed: various small bits to match Godot 4 branch
+- Fixed: getAchievement and related achievement functions breaking under rare conditions
+- Fixed: `getAchievement` and related achievement functions breaking under rare conditions
+- Fixed: incorrect type for `set_inventory_update_handle`
+- Removed: `setTimelineGameMode` function which was removed in 1.61
+- Removed: `current_stats_received` callback removed for redundancy
+- Removed: Google Stadia, Nintendo, Epic Games, and WeGame Networking identity types fully removed, from 1.61
+- Removed: unncessary commenting
+- Removed: `sendMessages` until it can be fixed in Windows
+
 ## Version 3.27
 
 - Added: buffer_size argument to `decompressVoice` with default of original value
