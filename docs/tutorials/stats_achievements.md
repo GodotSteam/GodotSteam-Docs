@@ -72,7 +72,7 @@ It can be connected to the same function as **requestCurrentStats()** as they se
 
 ```gdscript
 func _on_steam_stats_ready(this_game: int, this_result: int, this_user: int) -> void:
-	print("Received local player stats and achievements from Steam: %s / %s /%s" % [this_user, this_result, this game])
+	print("Received local player stats and achievements from Steam: %s / %s /%s" % [this_user, this_result, this_game])
 
 	# These will check against the data we pulled in the initialization tutorial
 	if this_user != steam_id:
