@@ -77,6 +77,22 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 ### get_opf_settings_result
 
+!!! function "broadcast_upload_start"
+    Automatically called whenever the user starts broadcasting.
+
+    **Returns:** is_rtmp (bool)
+
+    ---
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamVideo#BroadcastUploadStart_t){ .md-button .md-button--store target="_blank" }
+
+!!! function "broadcast_upload_stop"
+    Automatically called whenever the user stops broadcasting.
+
+    **Returns:** result (int / [BroadcastUploadResult](classes/main/#broadcastuploadresult))
+
+    ---
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamVideo#BroadcastUploadStop_t){ .md-button .md-button--store target="_blank" }
+
 !!! function "get_opf_settings_result"
 	Triggered when the OPF Details for 360 video playback are retrieved. After receiving this you can use [getOPFStringForApp](#getopfstringforapp) to access the OPF details.
 

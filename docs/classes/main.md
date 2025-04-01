@@ -24,7 +24,7 @@ icon: material/home
 ### getSteamID32
 
 !!! function "getSteamID32( ```uint64_t``` steam_id )"
-    Convert a SteamID64 into a SteamID.
+    Convert a SteamID64 into a SteamID32.
 
     **Returns:** uint32_t
 
@@ -121,46 +121,30 @@ icon: material/home
 !!! function "run_callbacks()"
     Enables your application to receive callbacks from Steamworks. Must be placed in your \_process function.
 
+    Alternatively, you can check **Embed Callbacks** in the **Project Settings > Steam > Initialization** panel and this will automatically set for you.
+
     **Returns:** void
 
 ### steamInit
 
-!!! function "steamInit( ```bool``` retrieve_stats = false, ```uint32_t``` app_id, ```bool``` embed_callbacks )"
-    Starts up the Steam API.
+!!! function "steamInit( ```uint32_t``` app_id, ```bool``` embed_callbacks )"
+    Initialize the SDK, without worrying about the cause of failure.
 
-    As of Steamworks SDK 1.61, the first argument defaults to false and will do nothing even is set to true. Prior to SDK 1.61, this argument defaults to true and will request the player's current statistics and achievements.
+    You can pass your **app ID** to the _first argument_ and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.  You can pass **true** to the _second argument_ to have GodotSteam connect and use **run_callbacks** internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.  Lastly, if you set the **app_id** and/or check **Embed Callbacks** in the **Project Settings > Steam > Initialization**, these will automatically set for you and you can just call **steamInitEx()** with no arguments filled out.
 
-    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.
+    **Return:** bool
 
-    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
-
-    **Return:** dictionary
-
-    * status (int)
-    * verbal (string) 
-    
-    You will receive one of these results:
-    
-    * 1 / "Steamworks active"
-    * 2 / "Steamworks failed to initialize"
-    * 20 / "Steam not running"
-    * 79 / "Invalid app ID or app not installed"
-
-    **Note:** This function **does not** contain the second or third argument in **GDNative**. Also, this function **does not** contain the third argument in **GDExtension**.
+    **Note:** This function **does not** contain the second or third argument in **GDNative** but does contain the first, deprecated argument for retrieving statistics and achievements.
 
     ------
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_Init){ .md-button .md-button--store target="_blank" }
 
 ### steamInitEx
 
-!!! function "steamInitEx( ```bool``` retrieve_stats = false, ```uint32_t``` app_id, ```bool``` embed_callbacks )"
+!!! function "steamInitEx( ```uint32_t``` app_id, ```bool``` embed_callbacks )"
     Initialize the Steamworks SDK. On success **STEAM_API_INIT_RESULT_OK** is returned. Otherwise, if **error_message** is non-NULL, it will receive a non-localized message that explains the reason for the failure.
 
-    As of Steamworks SDK 1.61, the first argument defaults to false and will do nothing even is set to true. Prior to SDK 1.61, this argument defaults to true and will request the player's current statistics and achievements.
-
-    You can pass your app ID to the second argument and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.
-
-    You can pass true to the third argument to have GodotSteam connect and use run_callbacks internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.
+    You can pass your **app ID** to the _first argument_ and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.  You can pass **true** to the _second argument_ to have GodotSteam connect and use **run_callbacks** internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.  Lastly, if you set the **app_id** and/or check **Embed Callbacks** in the **Project Settings > Steam > Initialization**, these will automatically set for you and you can just call **steamInitEx()** with no arguments filled out.
 
     **Returns:** dictionary
 
@@ -174,12 +158,14 @@ icon: material/home
     * 2 / "Cannot connect to Steam, client probably isn't running"
     * 3 / "Steam client appears to be out of date"
 
-    **Note:** This function **does not** contain the second or third argument in **GDNative**. Also, this function **does not** contain the third argument in **GDExtension**.
+    **Note:** This function **does not** contain the second or third argument in **GDNative** but does contain the first, deprecated argument for retrieving statistics and achievements.
 
 ### steamShutdown
 
 !!! function "steamShutdown"
     Shuts down the Steamworks API, releases pointers and frees memory.
+
+    This is called automatically by GodotSteam when the game or app shuts down.
 
     **Returns:** nothing
 
