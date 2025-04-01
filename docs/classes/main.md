@@ -30,6 +30,25 @@ icon: material/home
 
     **Note:** This is a GodotSteam specific function.
 
+### get_steam_init_result
+
+!!! function "get_steam_init_result( )"
+    Returns the Steam initialization dictionary. Primarily used with the auto-initialization process, set in the Project Settings; however, it can also be used with [steamInit](main.md#steaminit) or [steamInitEx](main.md#steaminitex) as it passes back the same result dictionary as they do.
+
+    **Returns:** dictionary
+
+    * status (int)
+    * verbal (string)
+
+    You will receive one of these integer results:
+
+    * 0 / "Steamworks active"
+    * 1 / "Failed (generic)"
+    * 2 / "Cannot connect to Steam, client probably isn't running"
+    * 3 / "Steam client appears to be out of date"
+
+    **Note:** This is a GodotSteam specific function.
+
 ### isAnonAccount
 
 !!! function "isAnonAccount( ```uint64_t``` steam_id )"

@@ -30,26 +30,26 @@ The standard GodotSteam version will be what you want if you are just making a s
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.4</span>
+			<span class="value">4.4.1</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 			<span class="sep">|</span>
-			<span class="value">1.61</span>
+			<span class="value">1.62</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.13</span>
+			<span class="value">4.14</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.13){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.14){ target="\_blank" }
 
 	[:octicons-arrow-right-24: Download GDExtension](https://godotengine.org/asset-library/asset/2445){ target="\_blank" }
 
@@ -69,19 +69,19 @@ The standard GodotSteam version will be what you want if you are just making a s
 			<span class="sep">[</span>
 			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 			<span class="sep">|</span>
-			<span class="value">1.61</span>
+			<span class="value">1.62</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">3.28</span>
+			<span class="value">3.29</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.28){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.298){ target="\_blank" }
 
 	[:octicons-arrow-right-24: Download GDNative (Deprecated)](https://godotengine.org/asset-library/asset/1045){ target="\_blank" }
 
@@ -106,21 +106,21 @@ As we mentioned earlier, you can also use [ExpressoBits' SteamMultiplayerPeer GD
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.4</span>
+			<span class="value">4.4.1</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 			<span class="sep">|</span>
-			<span class="value">1.61</span>
+			<span class="value">1.62</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam MultiplayerPeer" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.13</span>
+			<span class="value">4.14</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
@@ -169,25 +169,25 @@ The GodotSteam Server version is good if you want to build a centralized master 
 		<span class="sep">[</span>
 		<span class="title">:simple-godotengine:{ .godotengine title="Godot Engine" }</span>
 		<span class="sep">|</span>
-		<span class="value">4.4</span>
+		<span class="value">4.4.1</span>
 		<span class="sep">]</span>
 	</span>
 	<span class="badge badge-normal tag-steam">
 		<span class="sep">[</span>
 		<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 		<span class="sep">|</span>
-		<span class="value">1.61</span>
+		<span class="value">1.60</span>
 		<span class="sep">]</span>
 	</span>
 	<span class="badge badge-normal tag-steam">
 		<span class="sep">[</span>
 		<span class="title">:simple-godotengine:{ .steam title="GodotSteam Server" }</span>
 		<span class="sep">|</span>
-		<span class="value">4.5.2</span>
+		<span class="value">4.6</span>
 		<span class="sep">]</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.5.2){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v4.6){ target="\_blank" }
 
 	[:octicons-arrow-right-24: Download GDExtension](https://godotengine.org/asset-library/asset/2218){ target="\_blank" }
 
@@ -207,19 +207,19 @@ The GodotSteam Server version is good if you want to build a centralized master 
 			<span class="sep">[</span>
 			<span class="title">:simple-steam:{ .steam title="Steamworks SDK" }</span>
 			<span class="sep">|</span>
-			<span class="value">1.61</span>
+			<span class="value">1.62</span>
 			<span class="sep">]</span>
 		</span>
 		<span class="badge badge-normal tag-steam">
 			<span class="sep">[</span>
 			<span class="title">:octicons-server-24:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">3.5.1</span>
+			<span class="value">3.6</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.5.1){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam-Server/releases/tag/v3.6){ target="\_blank" }
 
 	[:octicons-arrow-right-24: Download GDNative (Deprecated)](https://godotengine.org/asset-library/asset/2222){ target="\_blank" }
 </div>

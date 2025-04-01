@@ -88,7 +88,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 !!! function "broadcast_upload_stop"
     Automatically called whenever the user stops broadcasting.
 
-    **Returns:** result (int / [BroadcastUploadResult](classes/main/#broadcastuploadresult))
+    **Returns:** result (int / [BroadcastUploadResult](main.md/#broadcastuploadresult))
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamVideo#BroadcastUploadStop_t){ .md-button .md-button--store target="_blank" }
