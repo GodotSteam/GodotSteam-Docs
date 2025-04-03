@@ -81,7 +81,7 @@ The standard GodotSteam version will be what you want if you are just making a s
 		</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.298){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.29){ target="\_blank" }
 
 	[:octicons-arrow-right-24: Download GDNative (Deprecated)](https://godotengine.org/asset-library/asset/1045){ target="\_blank" }
 
@@ -125,7 +125,7 @@ As we mentioned earlier, you can also use [ExpressoBits' SteamMultiplayerPeer GD
 		</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/MultiPlayerPeer/releases/tag/v4.13-mp){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/MultiPlayerPeer/releases/tag/v4.14-mp){ target="\_blank" }
 
 - :simple-godotengine:{ .lg .middle } __ExpressoBits SteamMultiplayerPeer__
 
