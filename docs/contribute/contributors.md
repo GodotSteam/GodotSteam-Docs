@@ -91,6 +91,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-file-document-edit: StephenCathcart
 - :material-file-document-edit: Straven35
 - :material-file-document-edit: Structed
+- :material-file-document-edit: swagmaster0
 - [:material-code-tags: Tamper2](https://honkofheroes.com/){ target="\_blank" }
 - :material-code-tags: TCROC
 - :material-file-document-edit: Toi Lanh
