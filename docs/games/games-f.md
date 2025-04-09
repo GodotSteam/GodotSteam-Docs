@@ -55,6 +55,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2107710/Flowers_of_Satsunai/){ target="\_blank" .md-button .md-button--store }
 
+- [![Fogpiercer](https://steamcdn-a.akamaihd.net/steam/apps/3219010/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3219010/Fogpiercer/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3219010/Fogpiercer/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.gg/bWxcZjn){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://madcookies.games/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-youtube: ](https://www.youtube.com/@madcookiesstudio){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/krystof-klestil.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 - [![Folklands](https://steamcdn-a.akamaihd.net/steam/apps/2282890/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2282890/Folklands/){ target="\_blank" }
 
 	---
