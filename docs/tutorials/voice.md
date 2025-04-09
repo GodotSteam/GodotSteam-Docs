@@ -177,7 +177,7 @@ We have our sample rates figured out so let's try to actual play this data. Sinc
 				local_voice_buffer.resize(decompressed_voice['size'])
 				
                 # We now iterate through the local_voice_buffer and push the samples to the audio generator
-                for i: int in range(0, mini(local_playback.get_frames_available() * 2, local_voice_buffer.size()), 2):
+                for i: int in local_playback.get_frames_available():
                     # Steam's audio data is represented as 16-bit single channel PCM audio, so we need to convert it to amplitudes
                     # Combine the low and high bits to get full 16-bit value
 		            var raw_value: int = LOCAL_VOICE_BUFFER[0] | (LOCAL_VOICE_BUFFER[1] << 8)
@@ -216,8 +216,6 @@ Easy-peasy! You will notice our `setInGameVoiceSpeaking` has a note that it is u
 You may want to provide the option for always-on voice chat, in which case you'd probably want to fire this function once in your `_ready()` or somewhere else to start recording until the player turns it off.
 
 ---
-
-And that's the basics of Steam Voice chat. Again, there is a weird choppiness to the playback in this example but surely we can iron that out at some point.
 
 {==
 ## :material-content-save-settings: Additional Resources
