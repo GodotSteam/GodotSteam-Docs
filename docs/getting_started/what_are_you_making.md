@@ -143,7 +143,7 @@ As we mentioned earlier, you can also use [ExpressoBits' SteamMultiplayerPeer GD
 			<span class="sep">[</span>
 			<span class="title">:material-network:{ .steam title="ExpressoBits SMP" }</span>
 			<span class="sep">|</span>
-			<span class="value">0.2.2</span>
+			<span class="value">0.2.3</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
