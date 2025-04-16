@@ -20,6 +20,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3182800/Eat_That_Ice_Cream/){ target="\_blank" .md-button .md-button--store }
 
+- [![Electro Havoc](https://steamcdn-a.akamaihd.net/steam/apps/2980110/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2980110/Electro_Havoc/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2980110/Electro_Havoc/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/mhaddy.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 - [![Elementyle](https://steamcdn-a.akamaihd.net/steam/apps/3056310/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3056310/Elementyle/){ target="\_blank" }
 
 	---

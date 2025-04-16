@@ -33,7 +33,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 - [![Bearnard](https://steamcdn-a.akamaihd.net/steam/apps/2422210/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2422210/Bearnard/){ target="\_blank" }
 
-
 	---
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2422210/Bearnard/){ target="\_blank" .md-button .md-button--store }
@@ -107,6 +106,27 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2835570/Buckshot_Roulette/){ target="\_blank" .md-button .md-button--store }
 
+- [![Bubble Battle](https://steamcdn-a.akamaihd.net/steam/apps/3180520/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3180520/Bubble_Battle/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3180520/Bubble_Battle/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.com/invite/fHJheB2JF3){ target="\_blank" .md-button .md-button--store }
+
+- [![Bullet Quest](https://steamcdn-a.akamaihd.net/steam/apps/1946490/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1946490/Bullet_Quest/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1946490/Bullet_Quest/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCOc_IzuiLnY4LLDc_VHOj3A){ target="\_blank" .md-button .md-button--store }
+
+- [![Bunny Hungry](https://steamcdn-a.akamaihd.net/steam/apps/2667010/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.gg/ftRgpTkzeP){ target="\_blank" .md-button .md-button--store }
+
 - [![Burgleville](https://steamcdn-a.akamaihd.net/steam/apps/3147130/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3147130/Burgleville/){ target="\_blank" }
 
 	---
@@ -115,13 +135,6 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-discord: ](https://discord.gg/vBQ93WZBGs){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://www.burgleville.com/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-youtube: ](https://www.youtube.com/@Burgleville){ target="\_blank" .md-button .md-button--store }
-
-- [![Bunny Hungry](https://steamcdn-a.akamaihd.net/steam/apps/2667010/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" }
-
-	---
-
-	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2667010/bunny_hungry/){ target="\_blank" .md-button .md-button--store }
-	[ :fontawesome-brands-discord: ](https://discord.gg/ftRgpTkzeP){ target="\_blank" .md-button .md-button--store }
 
 - [![Burrito Bear](https://steamcdn-a.akamaihd.net/steam/apps/1941420/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1941420/Burrito_Bear/){ target="\_blank" }
 
