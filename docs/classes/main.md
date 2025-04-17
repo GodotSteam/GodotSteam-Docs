@@ -17,7 +17,7 @@ icon: material/home
 !!! function "get_godotsteam_version( )"
     Returns the current version of the GodotSteam editor you are using.
 
-    **Returns:** float
+    **Returns:** String
 
     **Note:** This is a GodotSteam specific function.
 
@@ -33,7 +33,7 @@ icon: material/home
 ### get_steam_init_result
 
 !!! function "get_steam_init_result( )"
-    Returns the Steam initialization dictionary. Primarily used with the auto-initialization process, set in the Project Settings; however, it can also be used with [steamInit](main.md#steaminit) or [steamInitEx](main.md#steaminitex) as it passes back the same result dictionary as they do.
+    Returns the Steam initialization dictionary from either [steamInitEX](#steaminitex) or auto-initialization set in the Project Settings.  If you use [steamInit](#steaminit), this does not get filled out.
 
     **Returns:** dictionary
 
@@ -56,7 +56,7 @@ icon: material/home
 
     **Returns:** bool
 
-    **Note:** While this is not listed in the Steamworks docs, it is in the SDK. 
+    **Note:** While this is not listed in the Steamworks docs, it is in the SDK file steamclientpublic.h
 
 ### isAnonUserAccount
 
