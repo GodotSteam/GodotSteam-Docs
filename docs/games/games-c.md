@@ -132,6 +132,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2276930/Chillquarium/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-discord: ](https://discord.com/invite/wzFChuVRjx){ target="\_blank" .md-button .md-button--store }
 
+<!--
+Header image does not resolve currently.
+- [![Click and Conquer](https://steamcdn-a.akamaihd.net/steam/apps/3267900/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3267900/Click_and_Conquer/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3267900/Click_and_Conquer/){ target="\_blank" .md-button .md-button--store }
+-->
+
 - [![Clive vs Hives 2](https://steamcdn-a.akamaihd.net/steam/apps/1883230/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1883230/Clive_vs_Hives_2/){ target="\_blank" }
 
 	---

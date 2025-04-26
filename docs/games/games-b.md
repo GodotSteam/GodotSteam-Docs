@@ -31,6 +31,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-itch-io: ](https://hoodmentality.itch.io/barkelona){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-facebook: ](https://www.facebook.com/people/Barkelona/100092625319820/){ target="\_blank" .md-button .md-button--store }
 
+- [![Barricade](https://steamcdn-a.akamaihd.net/steam/apps/2006180/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2006180/Barricade/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2006180/Barricade/){ target="\_blank" .md-button .md-button--store }
+
 - [![Bearnard](https://steamcdn-a.akamaihd.net/steam/apps/2422210/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2422210/Bearnard/){ target="\_blank" }
 
 	---
@@ -82,23 +88,30 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3161850/Boosted_Survivors/){ target="\_blank" .md-button .md-button--store }
 
-- [![Brickfest](https://steamcdn-a.akamaihd.net/steam/apps/845940/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/845940/Brickfest/){ target="\_blank" }
-
-	---
-
-	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/845940/Brickfest/){ target="\_blank" .md-button .md-button--store }
-
 - [![Brain Freeze](https://steamcdn-a.akamaihd.net/steam/apps/3088010/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3088010/Brain_Freeze/){ target="\_blank" }
 
 	---
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3088010/Brain_Freeze/){ target="\_blank" .md-button .md-button--store }
 
+- [![Brickfest](https://steamcdn-a.akamaihd.net/steam/apps/845940/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/845940/Brickfest/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/845940/Brickfest/){ target="\_blank" .md-button .md-button--store }
+
 - [![Brotato](https://steamcdn-a.akamaihd.net/steam/apps/1942280/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1942280/Brotato/){ target="\_blank" }
 
 	---
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1942280/Brotato/){ target="\_blank" .md-button .md-button--store }
+
+- [![Bryce Tiles](https://steamcdn-a.akamaihd.net/steam/apps/2144990/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2144990/Bryce_Tiles/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2144990/Bryce_Tiles/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](http://www.brilliancegames.com/){ target="\_blank" .md-button .md-button--store }
 
 - [![Buckshot Roulette](https://steamcdn-a.akamaihd.net/steam/apps/2835570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2835570/Buckshot_Roulette/){ target="\_blank" }
 
