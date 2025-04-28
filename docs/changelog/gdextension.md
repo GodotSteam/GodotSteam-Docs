@@ -8,6 +8,15 @@ A history of all changes to [the ***gdextension*** branch.](https://github.com/G
 
 ---
 
+## Version 4.15
+
+- Added: missing functions `checkFileSignature`, `getConnectedUniverse()` and `getIPv6ConnectivityState` to Utils class
+- Changed: added default of true to  `setVRHeadsetStreamingEnabled()`
+- Fixed: embedding callbacks not working correctly
+- Fixed: incorrect argument defaults for `steamInitEx`
+- Fixed: `check_file_signature` variant now int instead of string
+- Removed: `storeStats()` from deconstructor as it should be storing them automatically
+
 ## Version 4.14
 
 - Added: new functions and enums to SteamRemotePlay

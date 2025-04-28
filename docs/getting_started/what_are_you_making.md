@@ -44,12 +44,12 @@ The standard GodotSteam version will be what you want if you are just making a s
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.14</span>
+			<span class="value">4.15</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.14){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/GodotSteam/releases/tag/v4.15){ target="\_blank" }
 
 	[:octicons-arrow-right-24: Download GDExtension](https://godotengine.org/asset-library/asset/2445){ target="\_blank" }
 
@@ -120,12 +120,12 @@ As we mentioned earlier, you can also use [ExpressoBits' SteamMultiplayerPeer GD
 			<span class="sep">[</span>
 			<span class="title">:simple-godotengine:{ .steam title="GodotSteam MultiplayerPeer" }</span>
 			<span class="sep">|</span>
-			<span class="value">4.14</span>
+			<span class="value">4.15</span>
 			<span class="sep">]</span>
 		</span>
 	</span>
 
-	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/MultiPlayerPeer/releases/tag/v4.14-mp){ target="\_blank" }
+	[:octicons-arrow-right-24: Download Pre-Compiled Bundle](https://github.com/GodotSteam/MultiPlayerPeer/releases/tag/v4.15-mp){ target="\_blank" }
 
 - :simple-godotengine:{ .lg .middle } __ExpressoBits SteamMultiplayerPeer__
 

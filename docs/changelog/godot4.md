@@ -8,6 +8,14 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ---
 
+## Version 4.15
+
+- Added: missing functions `checkFileSignature`, `getConnectedUniverse()` and `getIPv6ConnectivityState` to Utils class
+- Changed: added default of true to  `setVRHeadsetStreamingEnabled()`
+- Fixed: embedding callbacks not working correctly
+- Fixed: `check_file_signature` variant now int instead of string
+- Removed: `storeStats()` from deconstructor as it should be storing them automatically
+
 ## Version 4.14
 
 - Added: new functions and enums to SteamRemotePlay
