@@ -10,7 +10,7 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ## Version 4.15
 
-- Added: missing functions `checkFileSignature`, `getConnectedUniverse()` and `getIPv6ConnectivityState` to Utils class
+- Added: missing functions `checkFileSignature()`, `getConnectedUniverse()` and `getIPv6ConnectivityState()` to Utils class
 - Changed: added default of true to  `setVRHeadsetStreamingEnabled()`
 - Fixed: embedding callbacks not working correctly
 - Fixed: `check_file_signature` variant now int instead of string

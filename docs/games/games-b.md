@@ -112,6 +112,10 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2144990/Bryce_Tiles/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](http://www.brilliancegames.com/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@brilliance){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/brilliance.bsky.social){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-instagram: ](https://www.instagram.com/brilliancegames){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-threads: ](https://www.threads.com/@brilliancegames){ target="\_blank" .md-button .md-button--store }
 
 - [![Buckshot Roulette](https://steamcdn-a.akamaihd.net/steam/apps/2835570/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2835570/Buckshot_Roulette/){ target="\_blank" }
 

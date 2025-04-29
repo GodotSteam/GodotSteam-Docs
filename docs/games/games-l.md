@@ -29,6 +29,14 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2339040/Landnama/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://sonderland.games/){ target="\_blank" .md-button .md-button--store }
 
+- [![Last Hit Titan](https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3523390/a8f0aafde13c3b01984c61dc343d7e050895da21/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3523390/Last_Hit_Titan/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3523390/Last_Hit_Titan/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.gg/HAZhZWaMbE){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/sumsys.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 - [![Left Stranded](https://steamcdn-a.akamaihd.net/steam/apps/1936750/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1936750/Left_Stranded/){ target="\_blank" }
 
 	---
@@ -101,7 +109,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1824080/LUL_inc/){ target="\_blank" .md-button .md-button--store }
 
-- [![Luminatory](https://steamcdn-a.akamaihd.net/steam/apps/1824080/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3385260/Luminatory/){ target="\_blank" }
+- [![Luminatory](https://steamcdn-a.akamaihd.net/steam/apps/3385260/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3385260/Luminatory/){ target="\_blank" }
 
 	---
 
