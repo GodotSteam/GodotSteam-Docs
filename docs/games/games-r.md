@@ -14,6 +14,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" class="grid cards" markdown>
 
+- [![Rage Click](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3498130/43f16f9673d8b25d235dca8b94136eabda57f237/header.jpg?t=1745983479){ loading=lazy align=left }](https://store.steampowered.com/app/3498130/Rage_Click/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3498130/Rage_Click/){ target="\_blank" .md-button .md-button--store }
+
 - [![RAM: Random Access Mayhem](https://steamcdn-a.akamaihd.net/steam/apps/2256450/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2256450/RAM_Random_Access_Mayhem/
 ){ target="\_blank" }
 

@@ -145,6 +145,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/publisher/donniegamestudio){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-youtube: ](https://www.youtube.com/donniegamestudio){ target="\_blank" .md-button .md-button--store }
 
+- [![Sokoku](https://steamcdn-a.akamaihd.net/steam/apps/3397880/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3397880/Sokoku/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3397880/Sokoku/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://www.carllacan.com/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://carllacan.itch.io/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/carllacan.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 - [![Somnipathy](https://steamcdn-a.akamaihd.net/steam/apps/2069260/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2069260/Somnipathy/){ target="\_blank" }
 
 	---

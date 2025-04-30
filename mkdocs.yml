@@ -192,7 +192,7 @@ extra:
       link: https://mastodon.gamedev.place/@godotsteam
     - icon: fontawesome/brands/bluesky
       link: https://bsky.app/profile/godotsteam.com
-    - icon: fontawesome/solid/paper-plane
+    - icon: material/email
       link: mailto:hello@godotsteam.com
     - icon: simple/peertube
       link: https://makertube.net/c/making_____with_godotsteam/videos

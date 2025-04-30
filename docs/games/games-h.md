@@ -80,6 +80,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-firefox-browser: ](https://elektri.ca){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-facebook: ](https://www.facebook.com/elektricanada){ target="\_blank" .md-button .md-button--store }
 
+- [![Hexis](https://steamcdn-a.akamaihd.net/steam/apps/2764350/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2764350/Hexis/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2764350/Hexis/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://www.carllacan.com/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://carllacan.itch.io/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/carllacan.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 - [![Hibernation Day](https://steamcdn-a.akamaihd.net/steam/apps/2331870/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2331870/Hibernation_Day/){ target="\_blank" }
 
 	---
