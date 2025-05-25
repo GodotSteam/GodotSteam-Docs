@@ -25,9 +25,9 @@ Here is a list of all our amazing current and past donors who have financially c
 - Justo Delgado
 - Kat Hirsch
 - LucasBBX
+- LunNova
 - [Mauricio Castillo](https://bsky.app/profile/maurimo.dev){ target="\_blank" }
 - Michael Macha
-- Perroboc
 - [PurpleMossCollectors](http://purplemosscollectors.com/){ target="\_blank" }
 - [René Habermann](https://bippinbits.com/){ target="\_blank" }
 - [RPG in a Box](https://rpginabox.com/){ target="\_blank" }
@@ -84,6 +84,7 @@ Here is a list of all our amazing current and past donors who have financially c
 - MinmoTech
 - MudbuG
 - Nicholas Orlowski
+- Perroboc
 - pixelriot
 - Ranoller
 - Ricardo Sernaglia
