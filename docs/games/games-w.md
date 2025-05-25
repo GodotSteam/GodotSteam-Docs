@@ -76,6 +76,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-discord: ](https://discord.gg/vYdYSX4GJy){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://torcado.com){ target="\_blank" .md-button .md-button--store }
 
+- [![Witches' Hand](https://steamcdn-a.akamaihd.net/steam/apps/3300300/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3300300/Witches_Hand/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3300300/Witches_Hand/){ target="\_blank" .md-button .md-button--store }
+
 - [![Wizard's Way Out](https://steamcdn-a.akamaihd.net/steam/apps/2341410/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2341410/Wizards_Way_Out/){ target="\_blank" }
 
 	---

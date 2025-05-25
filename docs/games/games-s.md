@@ -233,6 +233,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3197230/The_SS_Destiny_Disaster/){ target="\_blank" .md-button .md-button--store }
 
+- [![Standard Procedures](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3585490/a63787a32c610952479ff146b6a514b4cf9e17c3/header.jpg?t=1747261613){ loading=lazy align=left }](https://store.steampowered.com/app/3585490/Standard_Procedures/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3585490/Standard_Procedures/){ target="\_blank" .md-button .md-button--store }
+
 - [![Starveil](https://steamcdn-a.akamaihd.net/steam/apps/2357590/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2357590/Starveil/){ target="\_blank" }
 
 	---
@@ -254,6 +260,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-itch-io: ](https://goofy-gourd-studios.itch.io/storms-harvest){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-instagram: ](https://www.instagram.com/goofygourdstudios/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-discord: ](https://discord.gg/A2xuuTEaUA){ target="\_blank" .md-button .md-button--store }
+
+- [![Street Dog Legend](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3757980/2db00d85a603c27c7d86df00adfe23a1b4e63ad8/header.jpg?t=1747927778){ loading=lazy align=left }](https://store.steampowered.com/app/3757980/Street_Dog_Legend/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3757980/Street_Dog_Legend/){ target="\_blank" .md-button .md-button--store }
 
 - [![Subcube](https://steamcdn-a.akamaihd.net/steam/apps/873830/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/873830/Subcube/){ target="\_blank" }
 
