@@ -181,6 +181,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-instagram: ](https://www.instagram.com/specfreqgame/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-youtube: ](https://www.youtube.com/@specfreq){ target="\_blank" .md-button .md-button--store }
 
+- [![Spectral Synergy](https://steamcdn-a.akamaihd.net/steam/apps/2680060/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2680060/Spectral_Synergy/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2680060/Spectral_Synergy/){ target="\_blank" .md-button .md-button--store }
+
 - [![The Spectral Web: Hitodama](https://steamcdn-a.akamaihd.net/steam/apps/2547400/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2547400/The_Spectral_Web_Hitodama/){ target="\_blank" }
 
 	---
