@@ -47,6 +47,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2149560/Unforgettable_Voyage/){ target="\_blank" .md-button .md-button--store }
 
+- [![Unknot](https://steamcdn-a.akamaihd.net/steam/apps/3544020/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3544020/Unknot/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3544020/Unknot/){ target="\_blank" .md-button .md-button--store }
+
 - [![Unloop](https://steamcdn-a.akamaihd.net/steam/apps/2328140/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2328140/Unloop/){ target="\_blank" }
 
 	---

@@ -28,6 +28,7 @@ Here is a list of all our amazing current and past donors who have financially c
 - LunNova
 - [Mauricio Castillo](https://bsky.app/profile/maurimo.dev){ target="\_blank" }
 - Michael Macha
+- MinatoTW
 - [PurpleMossCollectors](http://purplemosscollectors.com/){ target="\_blank" }
 - [René Habermann](https://bippinbits.com/){ target="\_blank" }
 - [RPG in a Box](https://rpginabox.com/){ target="\_blank" }

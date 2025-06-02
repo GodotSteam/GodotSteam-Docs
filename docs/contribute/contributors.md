@@ -59,6 +59,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-file-document-edit: Jordan Rushing
 - :material-code-tags: Jupither
 - :material-file-document-edit: karmaral
+- :material-code-tags: kilian-diener
 - :material-file-document-edit: Kliiyu
 - :material-code-tags: kongo555
 - :material-code-tags: Kryx-Ikyr
