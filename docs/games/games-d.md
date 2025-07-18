@@ -57,6 +57,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2894130/Depths_Of_Deception/){ target="\_blank" .md-button .md-button--store }
 
+- [![Derpy Dino](https://steamcdn-a.akamaihd.net/steam/apps/2387100/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2387100/Derpy_Dino/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2387100/Derpy_Dino/){ target="\_blank" .md-button .md-button--store }
+
 - [![Devastating Fog](https://steamcdn-a.akamaihd.net/steam/apps/2764650/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2764650/Devastating_Fog/){ target="\_blank" }
 
 	---
@@ -145,6 +151,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCPMZ3EC82Bb3dzmyJF20H1Q/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://kar.games){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-discord: ](https://discord.gg/6QjkSMTPbZ){ target="\_blank" .md-button .md-button--store }
+
+- [![Dungeon Drops](https://steamcdn-a.akamaihd.net/steam/apps/3625870/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3625870/Dungeon_Drops/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3625870/Dungeon_Drops/){ target="\_blank" .md-button .md-button--store }
 
 - [![Dungeons & Degenerate Gamblers](https://steamcdn-a.akamaihd.net/steam/apps/2400510/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2400510/Dungeons__Degenerate_Gamblers/){ target="\_blank" }
 

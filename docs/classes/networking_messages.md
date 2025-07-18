@@ -8,6 +8,13 @@ icon: material/message
 
 Networking API intended to make it easy to port non-connection-oriented code to take advantage of P2P connectivity and [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay){ target="\_blank" }. These are part of the newer networking classes; not to be confused with the [older, now-deprecated Networking class](networking.md).
 
+[Networking Sockets](networking_sockets.md) is connection-oriented (like TCP), meaning you need to listen and connect, and then you send messages using a connection handle. Networking Messages, on the other hand, is more like UDP, in that you can just send messages to arbitrary peers at any time. The underlying connections are established implicitly.
+
+Under the hood Networking Messages works on top of the [Networking Sockets](networking_sockets.md) code, so you get the same routing and messaging efficiency. The difference is mainly in your responsibility to explicitly establish a connection and the type of feedback you get about the state of the connection. Both interfaces can do "P2P" communications, both support both unreliable and reliable messages, fragmentation and reassembly, and both can be used to take advantage of [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay){ target="\_blank" } to talk to dedicated servers.
+
+The primary purpose of this interface is to be "like UDP", so that UDP-based code can be ported easily to take advantage of relayed connections. If you find yourself needing more low level information or control, or to be able to better handle failure, then you probably need to use [Networking Sockets](networking_sockets.md) directly. Also, note that if your main goal is to obtain a connection between two peers without concerning yourself with assigning roles of "client" and "server", you may find the symmetric connection mode of [Networking Sockets](networking_sockets.md) useful.
+(See [NETWORKING_CONFIG_SYMMETRIC_CONNECT]().)
+
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"
 
 {==
@@ -199,8 +206,8 @@ Networking API intended to make it easy to port non-connection-oriented code to 
 
 ### NetworkingConnectionEnd
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 CONNECTION_END_INVALID | 0
 CONNECTION_END_APP_MIN | 1000
 CONNECTION_END_MAX | 1999

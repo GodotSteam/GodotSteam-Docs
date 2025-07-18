@@ -19,62 +19,109 @@ This is a restricted interface that can only be used by previously approved apps
 ### getAppListBuildId
 
 !!! function "getAppListBuildId( ```uint32_t``` app_id )"
+    | Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | app_id | uint32_t | The app ID to get data for. |
+
     Get a given app ID's build. 
 
-    **Returns:** int
+    !!! returns "Returns: int"
+
+    ---
+    [ :material-tag-remove: Removed GodotSteam 4.6](../changelog/godot4.md/#version-46){ .md-button .md-button--changes target="_blank" }
+    [ :material-tag-remove: Removed GodotSteam 3.23](../changelog/godot3.md/#version-323){ .md-button .md-button--changes target="_blank" }
 
 ### getAppListInstallDir
 
 !!! function "getAppListInstallDir( ```uint32_t``` app_id, ```int``` name_max )"
+    | Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | app_id | uint32_t | The app ID to get data for. |
+    | name_max | int | The maximum number of characters for the name. |
+
     Get a given app ID's install directory.
 
-    **Returns:** string
+    !!! returns "Returns: string"
+
+    ---
+    [ :material-tag-remove: Removed GodotSteam 4.6](../changelog/godot4.md/#version-46){ .md-button .md-button--changes target="_blank" }
+    [ :material-tag-remove: Removed GodotSteam 3.23](../changelog/godot3.md/#version-323){ .md-button .md-button--changes target="_blank" }
 
 ### getAppName
 
 !!! function "getAppName( ```uint32_t``` app_id, ```int``` name_max )"
+    | Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | app_id | uint32_t | The app ID to get data for. |
+    | name_max | int | The maximum number of characters for the name. |
+
     Get a given app ID's name. 
 
-    **Returns:** string
+    !!! returns "Returns: string"
+
+    ---
+    [ :material-tag-remove: Removed GodotSteam 4.6](../changelog/godot4.md/#version-46){ .md-button .md-button--changes target="_blank" }
+    [ :material-tag-remove: Removed GodotSteam 3.23](../changelog/godot3.md/#version-323){ .md-button .md-button--changes target="_blank" }
 
 ### getInstalledApps
 
-!!! function "getInstalledApps( ```uint32``` max_app_ids )"
+!!! function "getInstalledApps( ```uint32_t``` max_app_ids )"
+    | Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | max_app_ids | uint32_t | List of app IDs. |
+
     Get a list of app IDs for installed apps for this player. 
 
-    **Return:** array
+    !!! returns "Returns: array"
+        Contains a list of (int) app IDs.
 
-    Contains a list of (int) app IDs.
+    ---
+    [ :material-tag-remove: Removed GodotSteam 4.6](../changelog/godot4.md/#version-46){ .md-button .md-button--changes target="_blank" }
+    [ :material-tag-remove: Removed GodotSteam 3.23](../changelog/godot3.md/#version-323){ .md-button .md-button--changes target="_blank" }
 
 ### getNumInstalledApps
 
-!!! function "getNumInstalledApps()"
+!!! function "getNumInstalledApps( )"
     Get the number of installed apps for this player. 
 
-    **Return:** int
+    !!! returns "Returns: int"
+
+    ---
+    [ :material-tag-remove: Removed GodotSteam 4.6](../changelog/godot4.md/#version-46){ .md-button .md-button--changes target="_blank" }
+    [ :material-tag-remove: Removed GodotSteam 3.23](../changelog/godot3.md/#version-323){ .md-button .md-button--changes target="_blank" }
 
 {==
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function or enabled them in ``Project Settings`` to receive them.
 
 ### app_installed
 
 !!! function "app_installed"
 	Sent when a new app is installed.
-	
-	**Returns:**
 
-	* app_id (uint32_t)
-	* install_folder_index (uint32_t)
+	!!! returns "Returns"
+        | Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| app_id | uint32_t | -
+        | install_folder_index | uint32_t | -
+
+    ---
+    [ :material-tag-remove: Removed GodotSteam 4.6](../changelog/godot4.md/#version-46){ .md-button .md-button--changes target="_blank" }
+    [ :material-tag-remove: Removed GodotSteam 3.23](../changelog/godot3.md/#version-323){ .md-button .md-button--changes target="_blank" }
 
 ### app_uninstalled
 
 !!! function "app_uninstalled"
 	Sent when an app is uninstalled.
 
-	**Returns:**
-	
-	* app_id (uint32_t)
-	* install_folder_index (uint32_t)
+	!!! returns "Returns"
+        | Key | Type | Notes |
+        | --- | ---- | ----- |
+        | app_id | uint32_t | -
+        | install_folder_index | uint32_t | -
+
+    ---
+    [ :material-tag-remove: Removed GodotSteam 4.6](../changelog/godot4.md/#version-46){ .md-button .md-button--changes target="_blank" }
+    [ :material-tag-remove: Removed GodotSteam 3.23](../changelog/godot3.md/#version-323){ .md-button .md-button--changes target="_blank" }

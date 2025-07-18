@@ -14,6 +14,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" class="grid cards" markdown>
 
+- [![Neon Striker](https://steamcdn-a.akamaihd.net/steam/apps/3592710/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3592710/Neon_Striker/ ){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3592710/Neon_Striker/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-steam: ](https://www.youtube.com/@Zenophantasia){ target="\_blank" .md-button .md-button--store }
+
 - [![Nightfall Hacker](https://steamcdn-a.akamaihd.net/steam/apps/1204080/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1204080/Nightfall_Hacker/){ target="\_blank" }
 
 	---

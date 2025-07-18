@@ -19,6 +19,9 @@ A quick, requested tutorial is auto-matchmaking lobbies. While this example does
 		* [joinLobby()](../classes/matchmaking.md#joinlobby)
 		* [requestLobbyList()](../classes/matchmaking.md#requestlobbylist)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## Set Up
 ==}

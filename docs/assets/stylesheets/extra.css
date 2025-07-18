@@ -12,6 +12,9 @@ html {
 	--md-admonition-icon--compile: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 232V334.1l31-31c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-72 72c-9.4 9.4-24.6 9.4-33.9 0l-72-72c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l31 31V232c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg>');
 	--md-admonition-icon--guide: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>');
 	--md-admonition-icon--function: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>');
+	--md-admonition-icon--argument: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20.41%2C3C21.8%2C5.71%2022.35%2C8.84%2022%2C12C21.8%2C15.16%2020.7%2C18.29%2018.83%2C21L17.3%2C20C18.91%2C17.57%2019.85%2C14.8%2020%2C12C20.34%2C9.2%2019.89%2C6.43%2018.7%2C4L20.41%2C3M5.17%2C3L6.7%2C4C5.09%2C6.43%204.15%2C9.2%204%2C12C3.66%2C14.8%204.12%2C17.57%205.3%2C20L3.61%2C21C2.21%2C18.29%201.65%2C15.17%202%2C12C2.2%2C8.84%203.3%2C5.71%205.17%2C3M12.08%2C10.68L14.4%2C7.45H16.93L13.15%2C12.45L15.35%2C17.37H13.09L11.71%2C14L9.28%2C17.33H6.76L10.66%2C12.21L8.53%2C7.45H10.8L12.08%2C10.68Z%22%20%2F%3E%3C%2Fsvg%3E');
+	--md-admonition-icon--returns: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%2C7V11H5.83L9.41%2C7.41L8%2C6L2%2C12L8%2C18L9.41%2C16.58L5.83%2C13H21V7H19Z%22%20%2F%3E%3C%2Fsvg%3E');
+	--md-admonition-icon--trigger: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M4%2C6V4H4.1C12.9%2C4%2020%2C11.1%2020%2C19.9V20H18V19.9C18%2C12.2%2011.8%2C6%204%2C6M4%2C10V8A12%2C12%200%200%2C1%2016%2C20H14A10%2C10%200%200%2C0%204%2C10M4%2C14V12A8%2C8%200%200%2C1%2012%2C20H10A6%2C6%200%200%2C0%204%2C14M4%2C16A4%2C4%200%200%2C1%208%2C20H4V16Z%22%20%2F%3E%3C%2Fsvg%3E');
 	--md-primary-bg-color--light:hsla(0,0%,100%,.7);
 	--md-accent-fg-color:#478CBF;
 	--md-accent-fg-color--transparent:rgba(82,108,254,.1);
@@ -112,6 +115,15 @@ h3 {
 .md-typeset blockquote {
 	 color: #bfbfbf;
 }
+.md-typeset__table {
+  width: 100%;
+}
+.md-typeset__table th {
+	background-color: #272727;
+}
+.md-typeset__table table:not([class]) {
+  display: table
+}
 .md-typeset blockquote svg {
 	color: #ffffff;
 	margin-right: 0.5em;
@@ -148,6 +160,33 @@ h3 {
 }
 .admonition.function {
 	text-align: left !important;
+}
+
+.admonition.function table {
+	border-radius: 5px !important;
+	border-color: none;
+  border: none !important;
+  color: #ffffff;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.admonition.function table th,
+.admonition.function table td {
+	border-top: 0px !important;
+}
+.admonition.function table th {
+  background-color: #272727;
+	padding: .4rem .8rem;
+}
+.admonition.function table th .twemoji {
+	margin-right: 0.4em;
+}
+table td a:hover {
+	color: #272727 !important;
+}
+.md-typeset .admonition.function code {
+  background-color: #394c59;
+  margin: 0 5px;
 }
 .md-typeset .warning > .admonition-title::before,
 .md-typeset .info > .admonition-title:before,
@@ -316,7 +355,7 @@ div#games h2 {
 	width: 90%
 }
 .md-typeset table:not([class]) {
-	background-color: #282828;
+	background-color: #394c59;
 	border:.05rem solid #424242;
 	border-radius:.1rem;
 	font-size:.64rem;
@@ -413,9 +452,13 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	color:var(--md-footer-fg-color);
 	text-decoration: none !important;
 }
-.md-typeset .md-button--store {
-	padding: .625em 0em .625em 1em !important;
+.md-typeset .md-button--changes {
+	float: right;
+	margin-left: 13px;
+	margin-bottom: 13px;
 }
+.md-typeset .md-button--changes,
+.md-typeset .md-button--doc_classes,
 .md-typeset .md-button--primary,
 .md-typeset .md-button--resource,
 .md-typeset .md-button--resource-small,
@@ -425,6 +468,8 @@ html .md-footer-meta.md-typeset a:is(:focus, :hover) {
 	color: #fff;
 	text-decoration: none;
 }
+.md-typeset .md-button--changes:hover,
+.md-typeset .md-button--doc_classes:hover,
 .md-typeset .md-button--primary:hover,
 .md-typeset .md-button--resource:hover,
 .md-typeset .md-button--resource-small:hover,
@@ -1151,7 +1196,10 @@ div.start-grid div.admonition a {
 .md-typeset .admonition.compile,
 .md-typeset .admonition.guide,
 .md-typeset .admonition.function,
+.md-typeset .admonition.function .info,
+.md-typeset .admonition.returns,
 .md-typeset .admonition.signal,
+.md-typeset .admonition.trigger,
 .md-typeset details.godotsteam,
 .md-typeset details.steam,
 .md-typeset details.contributors1,
@@ -1162,7 +1210,10 @@ div.start-grid div.admonition a {
 .md-typeset details.compile,
 .md-typeset details.guide,
 .md-typeset details.function,
-.md-typeset details.signal {
+.md-typeset details.function .info,
+.md-typeset details.returns,
+.md-typeset details.signal,
+.md-typeset details.trigger {
   background-color: #394c59;
   border-color: none;
   border: none;
@@ -1226,6 +1277,7 @@ div.start-grid div.admonition a {
 .md-typeset .compile > .admonition-title,
 .md-typeset .guide > .admonition-title,
 .md-typeset .function > .admonition-title,
+.md-typeset .function .info > .admonition-title,
 .md-typeset .signal > .admonition-title,
 .md-typeset .godotsteam > summary,
 .md-typeset .steam > summary,
@@ -1237,8 +1289,18 @@ div.start-grid div.admonition a {
 .md-typeset .compile > summary,
 .md-typeset .guide > summary
 .md-typeset .function > summary,
+.md-typeset .function .info > summary,
 .md-typeset .signal > summary {
   background-color: #478cbf !important;
+}
+.md-typeset .returns,
+.md-typeset .trigger {
+	margin-top: 2em !important;
+}
+.md-typeset .returns > .admonition-title,
+.md-typeset .trigger > .admonition-title,
+.md-typeset .function .info > .admonition-title {
+	background-color: #272727 !important;;
 }
 .md-typeset .godotsteam > .admonition-title::before,
 .md-typeset .godotsteam > summary::before {
@@ -1259,6 +1321,25 @@ div.start-grid div.admonition a {
   background-color: #ffffff;
   -webkit-mask-image: var(--md-admonition-icon--function);
 		  mask-image: var(--md-admonition-icon--function);
+}
+.md-typeset .returns > .admonition-title::before,
+.md-typeset .returns > summary::before {
+	background-color: #ffffff;
+  -webkit-mask-image: var(--md-admonition-icon--returns);
+		  mask-image: var(--md-admonition-icon--returns);
+}
+.md-typeset .returns table {
+	box-shadow: none;
+}
+.md-typeset .returns table thead {
+	display: none;
+}
+
+.md-typeset .trigger > .admonition-title::before,
+.md-typeset .trigger > summary::before {
+	background-color: #ffffff;
+  -webkit-mask-image: var(--md-admonition-icon--trigger);
+		  mask-image: var(--md-admonition-icon--trigger);
 }
 .md-typeset .contributors1 > .admonition-title::before,
 .md-typeset .contributors1 > summary::before {
@@ -1302,11 +1383,17 @@ div.start-grid div.admonition a {
   -webkit-mask-image: var(--md-admonition-icon--guide);
 		  mask-image: var(--md-admonition-icon--guide);
 }
+.md-typeset .md-button--changes,
+.md-typeset .md-button--doc_classes {
+  padding: .3em .8em .2em .8em !important;
+}
 .md-typeset .md-button--store {
   padding: .3em .2em .2em .8em !important;
 }
+.md-typeset .md-button--changes,
+.md-typeset .md-button--doc_classes,
 .md-typeset figure.game .md-button--store {
-	font-size: 1.3em;
+	font-size: 1em;
 }
 a span.twemoji,
 .grid.contrib_list span.twemoji {

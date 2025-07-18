@@ -132,8 +132,8 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 ### AudioPlaybackStatus
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 AUDIO_PLAYBACK_UNDEFINED | 0
 AUDIO_PLAYBACK_PLAYING | 1
 AUDIO_PLAYBACK_PAUSED | 2

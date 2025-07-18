@@ -19,7 +19,22 @@ icon: material/home
 
     **Returns:** String
 
-    **Note:** This is a GodotSteam specific function.
+    **Note:** This is a GodotSteam-specific function.
+
+    ---
+    [ :material-tag-plus: Added GodotSteam 4.11](../changelog/godot4.md/#version-411){ .md-button .md-button--changes target="_blank" }
+
+### get_leaderboard_entries
+
+!!! function "get_leaderboard_entries( )"
+    Returns the current list of internally stored leaderboard entries.
+
+    **Returns:** array
+
+    **Note:** This is a GodotSteam-specific function.
+
+    ---
+    [ :material-tag-plus: Added GodotSteam 4.11](../changelog/godot4.md/#version-411){ .md-button .md-button--changes target="_blank" }
 
 ### getSteamID32
 
@@ -28,7 +43,7 @@ icon: material/home
 
     **Returns:** uint32_t
 
-    **Note:** This is a GodotSteam specific function.
+    **Note:** This is a GodotSteam-specific function.
 
 ### get_steam_init_result
 
@@ -47,7 +62,7 @@ icon: material/home
     * 2 / "Cannot connect to Steam, client probably isn't running"
     * 3 / "Steam client appears to be out of date"
 
-    **Note:** This is a GodotSteam specific function.
+    **Note:** This is a GodotSteam-specific function.
 
 ### isAnonAccount
 
@@ -133,7 +148,7 @@ icon: material/home
     If this returns **true** then it starts the Steam client if required and launches your game again through it, and you should quit your process as soon as possible. If it returns **false**, then your game was launched by the Steam client and no action needs to be taken.
 
     ------
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_RestartAppIfNecessary){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_RestartAppIfNecessary){ .md-button .md-button--doc_classes target="_blank" }
 
 ### run_callbacks
 
@@ -143,6 +158,18 @@ icon: material/home
     Alternatively, you can check **Embed Callbacks** in the **Project Settings > Steam > Initialization** panel and this will automatically set for you.
 
     **Returns:** void
+
+### set_leaderboard_details_max
+
+!!! function "set_leaderboard_details_max( ```int``` new_leaderboard_details_max )"
+    Set function for leaderboard_details_max property; which is the maximum number of details to return for leaderboard entries.
+
+    This can only go as high as k_cLeaderboardDetailsMax / 256.
+
+    **Note:** This is a GodotSteam-specific function.
+
+    ---
+    [ :material-tag-plus: Added GodotSteam 4.11](../changelog/godot4.md/#version-411){ .md-button .md-button--changes target="_blank" }
 
 ### steamInit
 
@@ -156,7 +183,7 @@ icon: material/home
     **Note:** This function **does not** contain the second or third argument in **GDNative** but does contain the first, deprecated argument for retrieving statistics and achievements.
 
     ------
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_Init){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_Init){ .md-button .md-button--doc_classes target="_blank" }
 
 ### steamInitEx
 
@@ -188,14 +215,38 @@ icon: material/home
 
     **Returns:** nothing
 
+
+#define ACCOUNT_ID_INVALID k_uAccountIdInvalid
+#define API_CALL_INVALID k_uAPICallInvalid
+#define APP_ID_INVALID k_uAppIdInvalid
+#define AUTH_TICKET_INVALID k_HAuthTicketInvalid
+#define DEPOT_ID_INVALID k_uDepotIdInvalid
+#define GAME_EXTRA_INFO_MAX k_cchGameExtraInfoMax
+#define INVALID_BREAKPAD_HANDLE 0 //deprecated?
+#define QUERY_PORT_ERROR 0xFFFE //deprecated?
+#define QUERY_PORT_NOT_INITIALIZED 0xFFFF //deprecated?
+#define STEAM_ACCOUNT_ID_MASK k_unSteamAccountIDMask
+#define STEAM_ACCOUNT_INSTANCE_MASK k_unSteamAccountInstanceMask
+#define STEAM_BUFFER_SIZE 255 //deprecated?
+#define STEAM_ID_NIL k_steamIDNil
+#define STEAM_ID_OUT_OF_DATE_GAME_SERVER k_steamIDOutofDateGS
+#define STEAM_ID_LAN_MODE_GAME_SERVER k_steamIDLanModeGS
+#define STEAM_ID_NOT_INIT_YET_GAME_SERVER k_steamIDNotInitYetGS
+#define STEAM_ID_NON_GAME_SERVER k_steamIDNonSteamGS
+#define STEAM_LARGE_BUFFER_SIZE 8160 //deprecated?
+#define STEAM_MAX_ERROR_MESSAGE 1024
+#define STEAM_USER_CONSOLE_INSTANCE 2 //deprecated?
+#define STEAM_USER_DESKTOP_INSTANCE k_unSteamUserDefaultInstance
+#define STEAM_USER_WEB_INSTANCE 4 //deprecated?
+
 {==
 ## :material-numeric: Enums
 ==}
 
 ### AccountType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 ACCOUNT_TYPE_INVALID | 0
 ACCOUNT_TYPE_INDIVIDUAL | 1
 ACCOUNT_TYPE_MULTISEAT | 2
@@ -211,8 +262,8 @@ ACCOUNT_TYPE_MAX | 11
 
 ### AppOwnershipFlags
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 APP_OWNERSHIP_FLAGS_NONE | 0x0000
 APP_OWNERSHIP_FLAGS_OWNS_LICENSE | 0x0001
 APP_OWNERSHIP_FLAGS_FREE_LICENSE | 0x0002
@@ -236,8 +287,8 @@ APP_OWNERSHIP_FLAGS_SITE_LICENSE | 0x40000
 
 ### AppReleaseState
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 APP_RELEASE_STATE_UNKNOWN | 0
 APP_RELEASE_STATE_UNAVAILABLE | 1
 APP_RELEASE_STATE_PRERELEASE | 2
@@ -246,8 +297,8 @@ APP_RELEASE_STATE_RELEASED | 4
 
 ### AppType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 APP_TYPE_INVALID | 0x000
 APP_TYPE_GAME | 0x001
 APP_TYPE_APPLICATION | 0x002
@@ -269,8 +320,8 @@ APP_TYPE_DEPOT_ONLY | 0X80000000
 
 ### AuthSessionResponse
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 AUTH_SESSION_RESPONSE_OK | 0
 AUTH_SESSION_RESPONSE_USER_NOT_CONNECTED_TO_STEAM | 1
 AUTH_SESSION_RESPONSE_NO_LICENSE_OR_EXPIRED | 2
@@ -284,8 +335,8 @@ AUTH_SESSION_RESPONSE_PUBLISHER_ISSUED_BAN | 9
 
 ### BeginAuthSessionResult
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 BEGIN_AUTH_SESSION_RESULT_OK | 0
 BEGIN_AUTH_SESSION_RESULT_INVALID_TICKET | 1
 BEGIN_AUTH_SESSION_RESULT_DUPLICATE_REQUEST | 2
@@ -293,10 +344,23 @@ BEGIN_AUTH_SESSION_RESULT_INVALID_VERSION | 3
 BEGIN_AUTH_SESSION_RESULT_GAME_MISMATCH | 4
 BEGIN_AUTH_SESSION_RESULT_EXPIRED_TICKET | 5
 
+### BetaBranchFlags
+
+Found in steamclientpublic.h
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+BETA_BRANCH_NONE | k_EBetaBranch_None | 0 | - 
+BETA_BRANCH_DEFAULT | k_EBetaBranch_Default | 1 | This is the default branch ("public").
+BETA_BRANCH_AVAILABLE | k_EBetaBranch_Available | 2 | This branch can be selected (available).
+BETA_BRANCH_PRIVATE | k_EBetaBranch_Private | 4 | This is a private branch (password protected).
+BETA_BRANCH_SELECTED | k_EBetaBranch_Selected | 8 | This is the currently selected branch (active).
+BETA_BRANCH_INSTALLED | k_EBetaBranch_Installed | 16 | This is the currently installed branch (mounted).
+
 ### BroadcastUploadResult
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 BROADCAST_UPLOAD_RESULT_NONE | 0
 BROADCAST_UPLOAD_RESULT_OK | 1
 BROADCAST_UPLOAD_RESULT_INIT_FAILED | 2
@@ -314,8 +378,8 @@ BROADCAST_UPLOAD_RESULT_TRANSCODE_BEHIND | 13
 
 ### ChatEntryType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 CHAT_ENTRY_TYPE_INVALID | 0
 CHAT_ENTRY_TYPE_CHAT_MSG | 1
 CHAT_ENTRY_TYPE_TYPING | 2
@@ -331,8 +395,8 @@ CHAT_ENTRY_TYPE_LINK_BLOCKED | 14
 
 ### ChatRoomEnterResponse
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 CHAT_ROOM_ENTER_RESPONSE_SUCCESS | 1
 CHAT_ROOM_ENTER_RESPONSE_DOESNT_EXIST | 2
 CHAT_ROOM_ENTER_RESPONSE_NOT_ALLOWED | 3
@@ -347,8 +411,8 @@ CHAT_ROOM_ENTER_RESPONSE_YOU_BLOCKED_MEMBER | 11
 
 ### ChatSteamIDInstanceFlags
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 CHAT_ACCOUNT_INSTANCE_MASK | 0X00000FFF
 CHAT_INSTANCE_FLAG_CLAN | ((k_unSteamAccountInstanceMask + 1) >> 1)
 CHAT_INSTANCE_FLAG_LOBBY | ((k_unSteamAccountInstanceMask + 1) >> 2)
@@ -356,8 +420,8 @@ CHAT_INSTANCE_FLAG_MMS_LOBBY | ((k_unSteamAccountInstanceMask + 1) >> 3)
 
 ### DenyReason
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 DENY_INVALID | 0
 DENY_INVALID_VERSION | 1
 DENY_GENERIC | 2
@@ -375,19 +439,68 @@ DENY_STEAM_RESPONSE_TIMED_OUT | 13
 DENY_STEAM_VALIDATION_STALLED | 14
 DENY_STEAM_OWNER_LEFT_GUEST_USER | 15
 
+### DurationControlProgress
+Found in steamclientpublic.h
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+DURATION_CONTROL_PROGRESS_FULL | 0
+DURATION_CONTROL_PROGRESS_HALF | 1
+DURATION_CONTROL_PROGRESS_NONE | 2
+
+### DurationControlOnlineState {
+Found in steamclientpublic.h
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+DURATION_CONTROL_ONLINE_STATE_INVALID | 0
+DURATION_CONTROL_ONLINE_STATE_OFFLINE | 1
+DURATION_CONTROL_ONLINE_STATE_ONLINE | 2
+DURATION_CONTROL_ONLINE_STATE_ONLINE_HIGH_PRIORITY | 3
+
+### DurationControlNotification
+Found in steamclientpublic.h
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+DURATION_CONTROL_NOTIFICATION_NONE | 0
+DURATION_CONTROL_NOTIFICATION_1_HOUR | 1
+DURATION_CONTROL_NOTIFICATION_3_HOURS | 3
+DURATION_CONTROL_NOTIFICATION_HALF_PROGRESS | 3
+DURATION_CONTROL_NOTIFICATION_NO_PROGRESS | 4
+
+
 ### GameIDType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 GAME_TYPE_APP | 0
 GAME_TYPE_GAME_MOD | 1
 GAME_TYPE_SHORTCUT | 2
 GAME_TYPE_P2P | 3
 
+### IPv6ConnectivityProtocol
+Found in steamclientpublic.h
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+IPV6_CONNECTIVITY_PROTOCOL_INVALID | 0
+IPV6_CONNECTIVITY_PROTOCOL_HTTP | 1
+IPV6_CONNECTIVITY_PROTOCOL_UDP | 2
+
+### IPv6ConnectivityState
+Found in steamclientpublic.h
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+IPV6_CONNECTIVITY_STATE_UNKNOWN | 0
+IPV6_CONNECTIVITY_STATE_GOOD | 1
+IPV6_CONNECTIVITY_STATE_BAD | 2
+
 ### LaunchOptionType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 LAUNCH_OPTION_TYPE_NONE | 0
 LAUNCH_OPTION_TYPE_DEFAULT | 1
 LAUNCH_OPTION_TYPE_SAFE_MODE | 2
@@ -406,10 +519,33 @@ LAUNCH_OPTION_TYPE_OPEN_VR_OVERLAY | 14
 LAUNCH_OPTION_TYPE_OS_VR | 15
 LAUNCH_OPTION_TYPE_DIALOG | 1000
 
+### MarketNotAllowedReasonFlags
+Found in steamclientpublic.h
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+MARKET_NOT_ALLOWED_REASON_NONE = 0
+MARKET_NOT_ALLOWED_REASON_TEMPORARY_FAILURE = (1 << 0)
+MARKET_NOT_ALLOWED_REASON_ACCOUNT_DISABLED = (1 << 1)
+MARKET_NOT_ALLOWED_REASON_ACCOUNT_LOCKED_DOWN = (1 << 2)
+MARKET_NOT_ALLOWED_REASON_ACCOUNT_LIMITED = (1 << 3)
+MARKET_NOT_ALLOWED_REASON_TRADE_BANNED = (1 << 4)
+MARKET_NOT_ALLOWED_REASON_ACCOUNT_NOT_TRUSTED = (1 << 5)
+MARKET_NOT_ALLOWED_REASON_STEAM_GUARD_NOT_ENABLED = (1 << 6)
+MARKET_NOT_ALLOWED_REASON_STEAM_GAURD_ONLY_RECENTLY_ENABLED = (1 << 7)
+MARKET_NOT_ALLOWED_REASON_RECENT_PASSWORD_RESET = (1 << 8)
+MARKET_NOT_ALLOWED_REASON_NEW_PAYMENT_METHOD = (1 << 9)
+MARKET_NOT_ALLOWED_REASON_INVALID_COOKIE = (1 << 10)
+MARKET_NOT_ALLOWED_REASON_USING_NEW_DEVICE = (1 << 11)
+MARKET_NOT_ALLOWED_REASON_RECENT_SELF_REFUND = (1 << 12)
+MARKET_NOT_ALLOWED_REASON_NEW_PAYMENT_METHOD_CANNOT_BE_VERIFIED = (1 << 13)
+MARKET_NOT_ALLOWED_REASON_NO_RECENT_PURCHASES = (1 << 14)
+MARKET_NOT_ALLOWED_REASON_ACCEPTED_WALLET_GIFT = (1 << 15)
+
 ### NotificationPosition
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 POSITION_TOP_LEFT | 0
 POSITION_TOP_RIGHT | 1
 POSITION_BOTTOM_LEFT | 2
@@ -417,8 +553,8 @@ POSITION_BOTTOM_RIGHT | 3
 
 ### Result
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 RESULT_OK | 1
 RESULT_FAIL | 2
 RESULT_NO_CONNECTION | 3
@@ -529,8 +665,8 @@ RESULT_TOO_MANY_PENDING | 108
 
 ### SteamAPIInitResult
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 STEAM_API_INIT_RESULT_OK | 0
 STEAM_API_INIT_RESULT_FAILED_GENERIC | 1
 STEAM_API_INIT_RESULT_NO_STEAM_CLIENT | 2
@@ -538,8 +674,8 @@ STEAM_API_INIT_RESULT_VERSION_MISMATCH | 3
 
 ### Universe
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 UNIVERSE_INVALID | 0
 UNIVERSE_PUBLIC | 1
 UNIVERSE_BETA | 2
@@ -549,16 +685,16 @@ UNIVERSE_MAX | 5
 
 ### UserHasLicenseForAppResult
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 USER_HAS_LICENSE_RESULT_HAS_LICENSE | 0
 USER_HAS_LICENSE_RESULT_DOES_NOT_HAVE_LICENSE | 1
 USER_HAS_LICENSE_RESULT_NO_AUTH | 2
 
 ### VoiceResult
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 VOICE_RESULT_OK | 0
 VOICE_RESULT_NOT_INITIALIZED | 1
 VOICE_RESULT_NOT_RECORDING | 2
@@ -569,8 +705,8 @@ VOICE_RESULT_RESTRICTED | 6
 
 ### VRHMDType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 VR_HMD_TYPE_NONE | -1
 VR_HMD_TYPE_UNKNOWN | 0
 VR_HMD_TYPE_HTC_DEV | 1

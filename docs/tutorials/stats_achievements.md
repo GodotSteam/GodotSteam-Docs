@@ -20,6 +20,9 @@ At some point you may want to save statistics to Steam's database and / or use t
 		* [setStatInt()](../classes/user_stats.md#setstatint)
 		* [storeStats()](../classes/user_stats.md#storestats)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## :material-file-document-check: Preparations
 ==}

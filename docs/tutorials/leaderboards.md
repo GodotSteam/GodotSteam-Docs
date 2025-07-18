@@ -19,6 +19,9 @@ This tutorial will cover setting up leaderboards for your games. I will add more
 		* [downloadLeaderboardEntries()](../classes/user_stats.md#downloadleaderboardentries)
 		* [downloadLeaderboardEntriesForUsers()](../classes/user_stats.md#downloadleaderboardentriesforusers)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## Set Up
 ==}
@@ -72,6 +75,33 @@ var leaderboard_handles: Dictionary = {
 ```
 
 This way you can call whatever handle you need when updating leaderboards quickly. Otherwise you have to query each leaderboard again with `findLeaderboard()` then wait for the callback then upload the new score. If you aren't updating leaderboards frequently or that many of them, then using the internally stored handle will probably work fine.
+
+### Getting Leaderboards In A Loop
+
+Some users have wanted to pull all leaderboard handles from the get-go.  While it is possible, it definitely feels like it wasn't intended to work that way.  However, these bits of code should help grab all the leaderboard handles.  This example relies on having your handles stored in a dictionary with the API name as the key as shown above.
+
+```gdscript
+func get_handles_in_loop() -> void:
+	for this_leaderboard in leaderboard_handles.keys():
+		Steam.findLeaderboard(this_leaderboard)
+		await Steam.leaderboard_find_result
+
+
+func _on_leaderboard_find_result(this_handle: int, was_found: int) -> void:
+	if was_found != 1:
+		print("Leaderboard could not be found: %s" % was_found)
+		return
+
+	var api_name: String = Steam.getLeaderboardName(this_handle)
+	print("Leaderboard %s handle was found: %s" % [api_name, this_handle])
+
+	leaderboard_handles[api_name] = this_handle
+
+```
+
+Originally, I had a timer for the **await** line `await get_tree().create_timer(0.5).timeout` which also worked pretty good.  I did find that if you set the timeout to 0.25, it was too fast and some of the leaderboards would not be found.  0.5 was a sweet-spot that felt instant and reliably worked during testing.
+
+Big thanks to **TriMay** for the bit about getting the leaderboard name in the callback so we can assign the handle to the right leaderboard in our dictionary.
 
 {==
 ## Uploading Scores

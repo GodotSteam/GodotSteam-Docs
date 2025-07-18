@@ -19,6 +19,9 @@ This quick tutorial will cover to how get achievement icons from Steam's servers
 		* [getImageRGBA()](../classes/utils.md#getimagergba)
 		* [getImageSize()](../classes/utils.md#getimagesize)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## :material-file-document-check: Prerequisites
 ==}

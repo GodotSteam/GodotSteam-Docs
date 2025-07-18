@@ -8,6 +8,12 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ---
 
+## Version 4.16
+
+- Added: missing User function `getMarketEligibility()` and related call result `market_eligibility_response`
+- Changed: `MarketNotAllowedReasonFlags` enums corrected to bitwise
+
+
 ## Version 4.15
 
 - Added: missing functions `checkFileSignature()`, `getConnectedUniverse()` and `getIPv6ConnectivityState()` to Utils class

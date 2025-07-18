@@ -6,7 +6,7 @@ icon: material/invoice-list
 
 # Inventory
 
-Steam Inventory query and manipulation API. See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inventory){ target="\_blank" } for more information.
+Steam Inventory query and manipulation API. See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inventory){ target="\_blank" } for more information.
 
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"
 
@@ -603,8 +603,8 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 ### SteamItemFlags
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 STEAM_ITEM_NO_TRADE | (1<<0)
 STEAM_ITEM_REMOVED | (1<<8)
 STEAM_ITEM_CONSUMED | (1<<9)

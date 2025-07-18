@@ -48,6 +48,15 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2966560/Metal_Toy_Excavator/){ target="\_blank" .md-button .md-button--store }
 
+- [![Minerva Labyrinth](https://steamcdn-a.akamaihd.net/steam/apps/3520970/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3520970/Minerva_Labyrinth/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3520970/Minerva_Labyrinth/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-itch-io: ](https://midnightspiregames.itch.io/minerva-labyrinth){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-mastodon: ](https://mastodon.gamedev.place/@midnightspire){ target="\_blank" .md-button .md-button--store }
+
+
 - [![Mini Sports](https://steamcdn-a.akamaihd.net/steam/apps/2335250/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2335250/Mini_Sports/){ target="\_blank" }
 
 	---
@@ -96,5 +105,11 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1641020/my_brother_lives_in_a_canyon/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://mybrotherlivesinacanyon.com){ target="\_blank" .md-button .md-button--store }
+
+- [![My Fishing Desktop](https://steamcdn-a.akamaihd.net/steam/apps/3778670/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3778670/My_Fishing_Desktop/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3778670/My_Fishing_Desktop/){ target="\_blank" .md-button .md-button--store }
 
 </div>

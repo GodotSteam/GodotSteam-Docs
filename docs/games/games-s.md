@@ -124,6 +124,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2330090/SKIP/){ target="\_blank" .md-button .md-button--store }
 
+- [![SkullX: Aibohphobia](https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3660320/f8d9efe7382509ca45baaeeaa49b0b745c168949/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3660320/SkullX_Aibohphobia/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3660320/SkullX_Aibohphobia/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-youtube: ](https://www.youtube.com/@SkullxTheGame){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://skullxgame.com){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.com/invite/QVAjYBVE6F){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-tiktok: ](https://www.tiktok.com/@skullx_thegame){ target="\_blank" .md-button .md-button--store }
+
 - [![SkyDribble](https://steamcdn-a.akamaihd.net/steam/apps/2462380/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2462380/SkyDribble/){ target="\_blank" }
 
 	---
@@ -159,6 +169,16 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	---
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2069260/Somnipathy/){ target="\_blank" .md-button .md-button--store }
+
+- [![Soulblaze](https://steamcdn-a.akamaihd.net/steam/apps/3505230/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3505230/Soulblaze/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3505230/Soulblaze/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/swordandquill.itch.io){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://swordandquill.itch.io/soulblaze){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-presskit: ](https://impress.games/press-kit/swordandquill/soulblaze){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-twitch: ](https://www.twitch.tv/swordandquill){ target="\_blank" .md-button .md-button--store }
 
 - [![Space Miner - Idle Adventures](https://steamcdn-a.akamaihd.net/steam/apps/2679860/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2679860/Space_Miner__Idle_Adventures/){ target="\_blank" }
 
@@ -239,11 +259,20 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3197230/The_SS_Destiny_Disaster/){ target="\_blank" .md-button .md-button--store }
 
-- [![Standard Procedures](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3585490/a63787a32c610952479ff146b6a514b4cf9e17c3/header.jpg?t=1747261613){ loading=lazy align=left }](https://store.steampowered.com/app/3585490/Standard_Procedures/){ target="\_blank" }
+- [![Standard Procedures](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3585490/a63787a32c610952479ff146b6a514b4cf9e17c3/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3585490/Standard_Procedures/){ target="\_blank" }
 
 	---
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3585490/Standard_Procedures/){ target="\_blank" .md-button .md-button--store }
+
+- [![Starfly Scouts](https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3740780/2539d1a771d02b40f3a67eec3d128c9347cea043/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3740780/Starfly_Scouts/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3740780/Starfly_Scouts/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.gg/9sbuYerB5K){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://starflyscouts.com/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/starflyscouts.bsky.social){ target="\_blank" .md-button .md-button--store }
 
 - [![Starveil](https://steamcdn-a.akamaihd.net/steam/apps/2357590/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2357590/Starveil/){ target="\_blank" }
 

@@ -195,4 +195,10 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-firefox-browser: ](https://cropandclaw.com/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://dinoleaf.com/){ target="\_blank" .md-button .md-button--store }
 
+- [![Crown Gambit](https://steamcdn-a.akamaihd.net/steam/apps/2447980/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2447980/Crown_Gambit/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2447980/Crown_Gambit/){ target="\_blank" .md-button .md-button--store }
+
 </div>

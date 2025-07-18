@@ -15,8 +15,11 @@ Here is a list of all our amazing current and past donors who have financially c
 <div class="grid cards contrib_list" markdown>
 
 - Aaronrmm
+- [AdriaandeJongh](https://adriaan.games)
+- Cajtarth
 - [carllacan](https://carllacan.com)
 - Dreamfarer
+- [Hamsandviches](https://logan.zone){ target="\_blank" }
 - HephepTeam
 - InvoxiPlayGames
 - Jammin-ben
@@ -27,16 +30,19 @@ Here is a list of all our amazing current and past donors who have financially c
 - LucasBBX
 - LunNova
 - [Mauricio Castillo](https://bsky.app/profile/maurimo.dev){ target="\_blank" }
+- Menacing
 - Michael Macha
 - MinatoTW
+- [nazihfares](https://nazihfares.com){ target="\_blank" }
 - [PurpleMossCollectors](http://purplemosscollectors.com/){ target="\_blank" }
+- [Rankith](https://rankith.itch.io/unnamed-space-idle-prototype){ target="\_blank" }
 - [René Habermann](https://bippinbits.com/){ target="\_blank" }
 - [RPG in a Box](https://rpginabox.com/){ target="\_blank" }
 - SaffronStreams
+- Tim Krief
 - Thorsten Schleinzer
 - VestedGrammar
 - xaviervx
-- WAFFO
 - zikes
 - And two secret sponsors
 
@@ -95,6 +101,7 @@ Here is a list of all our amazing current and past donors who have financially c
 - Siddhant Chereddy
 - Simone Mändl
 - TrampolineTales
+- WAFFO
 - Wonderful Days Studio
 - Zee Weasel
 - Zeo Löwenhielm

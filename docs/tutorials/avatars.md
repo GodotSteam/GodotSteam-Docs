@@ -16,6 +16,9 @@ You may want to get the current player's avatar, or someone else's, and display 
 		* [getPlayerAvatar](../classes/friends.md#getplayeravatar)
 		* [requestUserInformation](../classes/friends.md/#requestuserinformation)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## :octicons-image-24: Request the Avatar
 ==}

@@ -26,6 +26,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-youtube: 'Godot 4 Steam Multiplayer' by Gwizz](https://www.youtube.com/watch?v=TPJbqA5OAmY&t=309s){ .md-button .md-button--resource target="\_blank" }
 
+[ :simple-youtube: 'Proximity Voice Chat in Godot using Steam Lobbies' by Rembot Games](https://www.youtube.com/watch?v=D4i9you1_IE){ .md-button .md-button--resource target="\_blank" }
+
 {==
 ## Godot Networking + Steam
 ==}
@@ -33,6 +35,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 [ :simple-github: 'GodotSteamHL' by JDare ](https://github.com/JDare/GodotSteamHL){ .md-button .md-button--resource target="\_blank" }
 
 [ :simple-github: 'SteamMultiplayer GDExtension' by ScriptsEngineer ](https://github.com/expressobits/steam-multiplayer-peer){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-github: 'SteamMultiplayerPeer Sharp' by craethke ](https://github.com/craethke/steam-multiplayer-peer-csharp){ .md-button .md-button--resource target="\_blank" }
 
 {==
 ## Text Tutorials
@@ -67,6 +71,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 ==}
 
 [ :simple-steam: 'GodotSteamSync' by Radome Studio ](https://github.com/Radome-Studio/GodotSteamSync){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-steam: 'Godot Multiplayer Voice Chat Template' by Vyntrix ]{https://store-beta.godotengine.org/asset/vyntrix/multiplayer-voice-chat-template}{ .md-button .md-button--resource target="\_blank" }
 
 {==
 ## Steam-related Godot Tools

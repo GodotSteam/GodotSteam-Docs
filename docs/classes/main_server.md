@@ -12,19 +12,93 @@ icon: material/server-network
 ## :material-function-variant: Functions
 ==}
 
-### isServerSecure
+### get_godotsteam_version
 
-!!! function "isServerSecure()"
-	No official notes, but should be checking if the server is secured.
+!!! function "get_godotsteam_version( )"
+	Get the GodotSteam Server version you are currently using.
 
-	**Returns:** bool
+	!!! returns "Returns: string"
 
-### getServerSteamID
+### get_inventory_handle
 
-!!! function "getServerSteamID()"
+!!! function "get_inventory_handle( )"
+	Gets the current, internally-stored inventory handle.
+
+	!!! returns "Returns: int32"
+
+### get_inventory_update_handle
+
+!!! function "get_inventory_update_handle( )"
+	Gets the current, internally-stored inventory update handle.
+
+	!!! returns "Returns: uint64_t"
+
+### getSteamID
+
+!!! function "getSteamID( )"
 	Gets the server's Steam ID.
 
-	**Returns:** uint64_t
+	!!! returns "Returns: uint64_t"
+
+### isAnonAccount
+
+!!! function "isAnonAccount( `uint64_t` steam_id )"
+	Is this Steam Id an anonymous account?
+
+	!!! returns "Returns: bool"
+
+### isAnonUserAccount
+
+!!! function "isAnonUserAccount( `uint64_t` steam_id )"
+	Is this Steam ID an anonymous user account?
+
+	!!! returns "Returns: bool"
+
+### isChatAccount
+
+!!! function "isChatAccount( `uint64_t` steam_id )"
+	Is this Steam ID a chat account?
+
+	!!! returns "Returns: bool"
+
+### isClanAccount
+
+!!! function "isClanAccount( `uint64_t` steam_id )"
+	Is this Steam ID a clan / group account?
+
+	!!! returns "Returns: bool"
+
+### isConsoleUserAccount
+
+!!! function "isConsoleUserAccount( `uint64_t` steam_id )"
+	Is this Steam ID a console user account?
+
+	!!! returns "Returns: bool"
+
+### isIndividualAccount
+
+!!! function "isIndividualAccount( `uint64_t` steam_id )"
+	Is this Steam ID an individual account?
+
+	!!! returns "Returns: bool"
+
+### isLobby
+
+!!! function "isLobby( `uint64_t` steam_id )"
+	Is this Steam ID a lobby?
+
+	!!! returns "Returns: bool"
+
+### isServerSecure
+
+!!! function "isServerSecure( )"
+	Checking if the server is secured or not.
+
+	!!! returns "Returns: bool"
+
+### run_callbacks
+
+!!! function "run_callbacks( )"
 
 ### serverInit
 
@@ -33,38 +107,112 @@ icon: material/server-network
 
 	After calling this function, you should set any additional server parameters, and then logOnAnonymous() or logOn().
 
-	**Returns:** bool
+	This function is included for compatibility with older SDK.  You can use it if you don't care about decent error handling
+
+	!!! returns "Returns: bool"
+
+    ---
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Init){ .md-button .md-button--store target="_blank" }
 
 ### serverInitEx
 
 !!! function "serverInitEx( ```string``` ip, ```uint16``` game_port, ```uint16``` query_port, ```int``` server_mode, ```string``` version_number )"
 	Initialize SteamGameServer client and interface objects, and set server properties which may not be changed.
 
-	After calling this function, you should set any additional server parameters, and then logOnAnonymous() or logOn().
+	After calling this function, you should set any additional server parameters and then [logOnAnonymous](#logonanonymous) or [logOn](#logon).
+
+	Things to consider:
+
+	* **ip** will usually be zero.  If you are on a machine with multiple IP addresses, you can pass a non-zero value here and the relevant sockets will be bound to that IP.  This can be used to ensure that the IP you desire is the one used in the server browser
+	* **game_port** is the port that clients will connect to for gameplay.  You will usually open up your own socket bound to this port.
+	* **query_port** is the port that will manage server browser related duties and info pings from clients.  If you pass [QUERY_PORT_SHARED](#constants) for **query_port**, then it will use "GameSocketShare" mode, which means that the game is responsible for sending and receiving UDP packets for the master  server updater.  See [handleIncomingPacket](game_server.md#handleincomingpacket) and [getNextOutgoingPacket](game_server.md#getnextoutgoingpacket).
+	* **version_number** should be in the form x.x.x.x, and is used by the master server to detect when the server is out of date.  Only servers with the latest version will be listed.
 
 	On success STEAM_API_INIT_RESULT_OK is returned.  Otherwise, if error_message is non-NULL, it will receive a non-localized message that explains the reason for the failure.
 
-	**Returns:** dictionary
+	!!! returns "Returns: dictionary"
+		Contains the following keys:
 
-	* status (int)
-    * verbal (string) 
-    
-    You will receive one of these results:
-    
-    * 0 / "Steamworks active"
-    * 1 / "Failed (generic)"
-    * 2 / "Cannot connect to Steam, client probably isn't running"
-    * 3 / "Steam client appears to be out of date"
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+		| status | [SteamAPIInitResult enum](#steamapiinitresult) | Result of the initialization.
+    	| verbal | string | A non-localized message that explains the reason for the failure.
 
 ### serverReleaseCurrentThreadMemory
 
 !!! function "serverReleaseCurrentThreadMemory()"
-	Frees all API-related memory associated with the calling thread. This memory is released automatically by RunCallbacks so single-threaded servers do not need to call this.
+	Frees all API-related memory associated with the calling thread.
+
+	This memory is released automatically by [run_callbacks](#run_callbacks) so single-threaded servers do not need to call this.
+
+	!!! returns "Returns: void"
+
+    ---
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_ReleaseCurrentThreadMemory){ .md-button .md-button--store target="_blank" }
 
 ### serverShutdown
 
 !!! function "serverShutdown()"
 	Shut down the server connection to Steam.
+
+	!!! returns "Returns: void"
+
+    ---
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Shutdown){ .md-button .md-button--store target="_blank" }
+
+### set_inventory_handle
+
+!!! function "set_inventory_handle( `int32` new_inventory_handle )"
+	Set the current, internally-stored inventory handle.
+
+	!!! returns "Returns: void"
+
+### set_inventory_update_handle
+
+!!! function "set_inventory_update_handle( `uint64_t` new_inventory_update_handle )"
+	Set the current, internally-stored inventory update handle.
+
+	!!! returns "Returns: void"
+
+{==
+## :material-infinity: Constants
+==}
+
+Name | SDK Name | Value | Notes
+---- | -------- | ----- | -----
+ACCOUNT_ID_INVALID | k_uAccountIdInvalid | 0 | An invalid account ID.
+API_CALL_INVALID | k_uAPICallInvalid | 0x0 | An invalid Steam API Call handle.
+APP_ID_INVALID | k_uAppIdInvalid | 0x0 | An invalid app ID.
+AUTH_TICKET_INVALID | k_HAuthTicketInvalid | An invalid user authentication ticket.
+DEPOT_ID_INVALID | k_uDepotIdInvalid | 0x0 | An invalid depot ID.
+GAME_EXTRA_INFO_MAX | k_cchGameExtraInfoMax | 64 | The maximum size (in UTF-8 bytes, including the null terminator) of the **extra_info** parameter of trackAppUsageEvent (since been deprecated).
+INVALID_BREAKPAD_HANDLE | BREAKPAD_INVALID_HANDLE | (BREAKPAD_HANDLE)0 | -
+MAX_GAME_SERVER_GAME_DATA | k_cbMaxGameServerGameData | 2048 | Max size of the GameServer game data.
+MAX_GAME_SERVER_GAME_DESCRIPTION | k_cbMaxGameServerGameDescription | 64 | Max size of the GameServer game description.
+MAX_GAME_SERVER_GAME_DIR | k_cbMaxGameServerGameDir | 32 | Max size of the GameServer game directory.
+MAX_GAME_SERVER_MAP_NAME | k_cbMaxGameServerMapName | 32 | Max size of the GameServer map name.
+MAX_GAME_SERVER_NAME | k_cbMaxGameServerName | 64 | Max size of the GameServer name.
+MAX_GAME_SERVER_TAGS | k_cbMaxGameServerTags | 128 | Max size of the GameServer tags.
+MAX_STEAM_DATAGRAM_GAME_COORDINATOR_SERVER_LOGIN_APP_DATA | k_cbMaxSteamDatagramGameCoordinatorServerLoginAppData | 2048 | -
+MAX_STEAM_DATAGRAM_GAME_COORDINATOR_SERVER_LOGIN_SERIALIZED | k_cbMaxSteamDatagramGameCoordinatorServerLoginSerialized | 4096 | -
+PARTY_BEACON_ID_INVALID k_ulPartyBeaconIdInvalid | 0 | An invalid party beacon ID.
+QUERY_PORT_ERROR | QUERY_PORT_ERROR | 0xFFFE | We were unable to get the query port for this server.
+QUERY_PORT_NOT_INITIALIZED | QUERY_PORT_NOT_INITIALIZED | 0xFFFF | We haven't asked the GameServer for this query port's actual value yet.
+QUERY_PORT_SHARED | STEAMGAMESERVER_QUERY_PORT_SHARED | 0xffff | Pass to [serverInit](#serverinit) to indicate that the same UDP port will be used for game traffic UDP queries for server browser pings and LAN discovery.  In this case, Steam will not open up a socket to handle server browser queries, and you must use [handleIncomingPacket](#handleincomingpacket) and [getNextOutgoingPacket](#getnextoutgoingpacket) to handle packets related to server discovery on your socket.
+STEAM_ACCOUNT_ID_MASK | k_unSteamAccountIDMask | 0xFFFFFFFF | Used in CSteamID to mask out the AccountID_t.
+STEAM_ACCOUNT_INSTANCE_MASK | k_unSteamAccountInstanceMask | 0x000FFFFF | Used in CSteamID to mask out the account instance.
+STEAM_BUFFER_SIZE | - | 255 | Custom for GodotSteam.
+STEAM_DATAGRAM_MAX_SERIALIZED_TICKET k_cbSteamDatagramMaxSerializedTicket | 512 | -
+STEAM_ID_NIL | k_steamIDNil | CSteamID() | Generic invalid CSteamID.
+STEAM_ID_OUT_OF_DATE_GAME_SERVER | k_steamIDOutofDateGS | CSteamID() | This Steam ID comes from a user game connection to an out of date GS that hasnt implemented the protocol to provide its Steam ID.
+STEAM_ID_LAN_MODE_GAME_SERVER | k_steamIDLanModeGS | CSteamID() | This Steam ID comes from a user game connection to an sv_lan GameServer.
+STEAM_ID_NOT_INIT_YET_GAME_SERVER | k_steamIDNotInitYetGS | CSteamID() | This Steam ID can come from a user game connection to a GameServer that has just booted but hasnt yet even initialized its steam3 component and started logging on.
+STEAM_ID_NON_GAME_SERVER | k_steamIDNonSteamGS | CSteamID() | This Steam ID can come from a user game connection to a GameServer that isn't using the steam authentication system but still wants to support the "Join Game" option in the friends list.
+STEAM_LARGE_BUFFER_SIZE | - | 8160 | Custom for GodotSteam.
+STEAM_MAX_ERROR_MESSAGE | k_cchMaxSteamErrMsg | 1024 | Maximum size of Steam error messages.
+STEAM_USER_CONSOLE_INSTANCE | k_unSteamUserConsoleInstance | 2 | Used by CSteamID to identify users logged in from a console.
+STEAM_USER_DEFAULT_INSTANCE | k_unSteamUserDefaultInstance | 1 | Used by CSteamID to identify users logged in from the desktop client.
+STEAM_USER_WEB_INSTANCE | k_unSteamUserWebInstance | 4 | Used by CSteamID to identify users logged in from the web.
 
 {==
 ## :material-numeric: Enums
@@ -72,8 +220,8 @@ icon: material/server-network
 
 ### AccountType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 ACCOUNT_TYPE_INVALID | 0
 ACCOUNT_TYPE_INDIVIDUAL | 1
 ACCOUNT_TYPE_MULTISEAT | 2
@@ -89,8 +237,8 @@ ACCOUNT_TYPE_MAX | 11
 
 ### AuthSessionResponse
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 AUTH_SESSION_RESPONSE_OK | 0
 AUTH_SESSION_RESPONSE_USER_NOT_CONNECTED_TO_STEAM | 1
 AUTH_SESSION_RESPONSE_NO_LICENSE_OR_EXPIRED | 2
@@ -104,8 +252,8 @@ AUTH_SESSION_RESPONSE_PUBLISHER_ISSUED_BAN | 9
 
 ### BeginAuthSessionResult
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 BEGIN_AUTH_SESSION_RESULT_OK | 0
 BEGIN_AUTH_SESSION_RESULT_INVALID_TICKET | 1
 BEGIN_AUTH_SESSION_RESULT_DUPLICATE_REQUEST | 2
@@ -115,8 +263,8 @@ BEGIN_AUTH_SESSION_RESULT_EXPIRED_TICKET | 5
 
 ### DenyReason
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 DENY_INVALID | 0
 DENY_INVALID_VERSION | 1
 DENY_GENERIC | 2
@@ -136,8 +284,8 @@ DENY_STEAM_OWNER_LEFT_GUEST_USER | 15
 
 ### GameIDType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 GAME_TYPE_APP | 0
 GAME_TYPE_GAME_MOD | 1
 GAME_TYPE_SHORTCUT | 2
@@ -145,8 +293,8 @@ GAME_TYPE_P2P | 3
 
 ### Result
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 RESULT_OK | 1
 RESULT_FAIL | 2
 RESULT_NO_CONNECTION | 3
@@ -257,17 +405,17 @@ RESULT_TOO_MANY_PENDING | 108
 
 ### ServerMode
 
-Enumerator | Value
----------- | -----
-SERVER_MODE_INVALID | 0
-SERVER_MODE_NO_AUTHENTICATION | 1
-SERVER_MODE_AUTHENTICATION | 2
-SERVER_MODE_AUTHENTICATION_AND_SECURE | 3
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+SERVER_MODE_INVALID | eServerModeInvalid | 0 | Do not use.
+SERVER_MODE_NO_AUTHENTICATION | eServerModeNoAuthentication | 1 | Don't authenticate user logins and don't list on the server list.
+SERVER_MODE_AUTHENTICATION | eServerModeAuthentication | 2 | Authenticate users, list on the server list, and don't run VAC on clients that connect.
+SERVER_MODE_AUTHENTICATION_AND_SECURE | eServerModeAuthenticationAndSecure | 3 | Authenticate users, list on the server list, and VAC protect clients,
 
 ### SteamAPIInitResult
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 STEAM_API_INIT_RESULT_OK | 0
 STEAM_API_INIT_RESULT_FAILED_GENERIC | 1
 STEAM_API_INIT_RESULT_NO_STEAM_CLIENT | 2
@@ -275,8 +423,8 @@ STEAM_API_INIT_RESULT_VERSION_MISMATCH | 3
 
 ### Universe
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 UNIVERSE_INVALID | 0
 UNIVERSE_PUBLIC | 1
 UNIVERSE_BETA | 2

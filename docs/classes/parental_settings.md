@@ -6,6 +6,8 @@ icon: material/eye-settings-outline
 
 # Parental Settings
 
+Interface to Steam parental settings (Family View).  These functions are not documented in Valve's online documentation nor are they really explained in the Steamworks SDK files.
+
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
 {==
@@ -14,58 +16,75 @@ icon: material/eye-settings-outline
 
 ### isAppBlocked
 
-!!! function "isAppBlocked( ```uint32``` app_id )"
+!!! function "isAppBlocked( ```uint32_t``` app_id )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | app_id | uint32_t | The app ID for the application to check for. |
+
 	Check if the given app is blocked by parental settings.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
 
 ### isAppInBlockList
 
-!!! function "isAppInBlockList( ```uint32``` app_id )"
+!!! function "isAppInBlockList( ```uint32_t``` app_id )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | app_id | uint32_t | The app ID for the application to check for. |
+
 	Check if this app is in the block list.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
 
 ### isFeatureBlocked
 
-!!! function "isFeatureBlocked( ```int``` feature )"
+!!! function "isFeatureBlocked( ```ParentalFeature``` feature )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | feature | [ParentalFeature enum](#parentalfeature) | The feature to check for. |
+
 	Check if the given feature is blocked by parental settings.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
 
 ### isFeatureInBlockList
 
-!!! function "isFeatureInBlockList( ```int``` feature )"
+!!! function "isFeatureInBlockList( ```ParentalFeature``` feature )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | feature | [ParentalFeature enum](#parentalfeature) | The feature to check for. |
+
 	Check if the given feature is in the block list.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
 
 ### isParentalLockEnabled
 
-!!! function "isParentalLockEnabled()"
+!!! function "isParentalLockEnabled( )"
 	Check if the parental lock is enabled.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
 
 ### isParentalLockLocked
 
-!!! function "isParentalLockLocked()"
+!!! function "isParentalLockLocked( )"
 	Check if the parental lock is actually locked.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
 
 {==
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### parental_setting_changed
 
 !!! function "parental_setting_changed"
 	Callback for querying UGC.
-	
-	**Returns:** nothing
+
+	!!! returns "Returns"
+		Nothing.
 
 {==
 ## :material-numeric: Enums
@@ -73,21 +92,22 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 ### ParentalFeature
 
-Enumerator | Value
----------- | -----
-FEATURE_INVALID | 0
-FEATURE_STORE | 1
-FEATURE_COMMUNITY | 2
-FEATURE_PROFILE | 3
-FEATURE_FRIENDS | 4
-FEATURE_NEWS | 5
-FEATURE_TRADING | 6
-FEATURE_SETTINGS | 7
-FEATURE_CONSOLE | 8
-FEATURE_BROWSER | 9
-FEATURE_PARENTAL_SETUP | 10
-FEATURE_LIBRARY | 11
-FEATURE_TEST | 12
-FEATURE_SITE_LICENSE | 13
-FEATURE_KIOSK_MODE | 14
-FEATURE_MAX | 
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+FEATURE_INVALID | k_EFeatureInvalid | 0 | -
+FEATURE_STORE | k_EFeatureStore | 1 | -
+FEATURE_COMMUNITY | k_EFeatureCommunity | 2 | -
+FEATURE_PROFILE | k_EFeatureProfile | 3 | -
+FEATURE_FRIENDS | k_EFeatureFriends | 4 | -
+FEATURE_NEWS | k_EFeatureNews | 5 | -
+FEATURE_TRADING | k_EFeatureTrading | 6 | -
+FEATURE_SETTINGS | k_EFeatureSettings | 7 | -
+FEATURE_CONSOLE | k_EFeatureConsole | 8 | -
+FEATURE_BROWSER | k_EFeatureBrowser | 9 | -
+FEATURE_PARENTAL_SETUP | k_EFeatureParentalSetup | 10 | -
+FEATURE_LIBRARY | k_EFeatureLibrary | 11 | -
+FEATURE_TEST | k_EFeatureTest | 12 | -
+FEATURE_SITE_LICENSE | k_EFeatureSiteLicense | 13 | -
+FEATURE_KIOSK_MODE | k_EFeatureKioskMode_Deprecated | 14 | -
+FEATURE_BLOCK_ALWAYS | k_EFeatureBlockAlways | 15 | -
+FEATURE_MAX | k_EFeatureMax | - | -

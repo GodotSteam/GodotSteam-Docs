@@ -18,6 +18,9 @@ In this tutorial we will talk about authenticating users with Steam. Networking 
 		* [endAuthSession()](../classes/user.md#endauthsession)
 		* [getAuthSessionTicket()](../classes/user.md#getauthsessionticket)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## Setting Up Signals
 ==}

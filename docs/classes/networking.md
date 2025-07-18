@@ -6,10 +6,10 @@ icon: material/network
 
 # Networking
 
-Networking functions for making connections and sending data between clients, traversing NATs when possible. See the [Steam Networking](https://partner.steamgames.com/doc/features/multiplayer/networking){ target="\_blank" } overview for more information.
+Networking functions for making connections and sending data between clients, traversing NATs when possible. See the [Steam Networking](https://partner.steamgames.com/doc/features/multiplayer/networking){ target="\_blank" } overview for more information.
 
 !!! warning "This API Is Deprecated"
-	It may be removed in a future Steamworks SDK release but should continue to work. Valve suggest using [Networking Sockets](networking_sockets.md) or [Networking Messages](networking_messages.md) instead. 
+	It may be removed in a future Steamworks SDK release but should continue to work. Valve suggest using [Networking Sockets](networking_sockets.md) or [Networking Messages](networking_messages.md) instead. 
 
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"
 
@@ -26,7 +26,7 @@ Networking functions for making connections and sending data between clients, tr
 
 	**Returns:** bool
 
-	- **true** upon success; **false** only if `steam_id_remote` is invalid.
+	- **true** upon success; **false** only if `steam_id_remote` is invalid.
 
 	**Note:** This call should only be made in response to a [p2p_session_request](#p2p_session_request) callback.
 
@@ -58,7 +58,7 @@ Networking functions for making connections and sending data between clients, tr
 
 	**Returns:** bool
 
-	- **true** if the channel was successfully closed; otherwise, **false** if there was no active session or channel with the user.
+	- **true** if the channel was successfully closed; otherwise, **false** if there was no active session or channel with the user.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#CloseP2PChannelWithUser){ .md-button .md-button--store target="_blank" }
@@ -72,7 +72,7 @@ Networking functions for making connections and sending data between clients, tr
 
 	**Returns:** bool
 
-	- **true** if the session was successfully closed; otherwise, **false** if no connection was open with `steam_id_remote`.
+	- **true** if the session was successfully closed; otherwise, **false** if no connection was open with `steam_id_remote`.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#CloseP2PSessionWithUser){ .md-button .md-button--store target="_blank" }

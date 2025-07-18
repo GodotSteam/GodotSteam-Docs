@@ -6,7 +6,7 @@ icon: material/controller
 
 # Input
 
-Steam Input API is a flexible action-based API that supports all major controller types - Xbox, PlayStation, Nintendo Switch Pro, and Steam Controllers. See the [Steam Input](https://partner.steamgames.com/doc/features/steam_controller){ target="\_blank" } documentation for more information.
+Steam Input API is a flexible action-based API that supports all major controller types - Xbox, PlayStation, Nintendo Switch Pro, and Steam Controllers. See the [Steam Input](https://partner.steamgames.com/doc/features/steam_controller){ target="\_blank" } documentation for more information.
 
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
@@ -490,8 +490,8 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 
 ### InputActionOrigin
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 INPUT_ACTION_ORIGIN_NONE | 0
 INPUT_ACTION_ORIGIN_A | 1
 INPUT_ACTION_ORIGIN_B | 2
@@ -903,8 +903,8 @@ INPUT_ACTION_ORIGIN_MAXIMUMPOSSIBLEVALUE | 32767
 
 ### SteamInputType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 INPUT_TYPE_UNKNOWN | 0
 INPUT_TYPE_STEAM_CONTROLLER | 1
 INPUT_TYPE_XBOX360_CONTROLLER | 2
@@ -925,8 +925,8 @@ INPUT_TYPE_MAXIMUM_POSSIBLE_VALUE | 255
 
 ### ConfigurationEnableType
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 INPUT_CONFIGURATION_ENABLE_TYPE_NONE | 0x0000
 INPUT_CONFIGURATION_ENABLE_TYPE_PLAYSTATION | 0x0001
 INPUT_CONFIGURATION_ENABLE_TYPE_XBOX | 0x0002
@@ -935,8 +935,8 @@ INPUT_CONFIGURATION_ENABLE_TYPE_SWITCH | 0x0008
 
 ### GlyphSize
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 INPUT_GLYPH_SIZE_SMALL | 0
 INPUT_GLYPH_SIZE_MEDIUM | 1
 INPUT_GLYPH_SIZE_LARGE | 2
@@ -944,8 +944,8 @@ INPUT_GLYPH_SIZE_COUNT | 3
 
 ### GlyphStyle
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 INPUT_GLYPH_STYLE_KNOCKOUT | 0x0
 INPUT_GLYPH_STYLE_LIGHT | 0x1
 INPUT_GLYPH_STYLE_DARK | 0x2
@@ -954,8 +954,8 @@ INPUT_GLYPH_STYLE_SOLID_ABXY | 0x20
 
 ### SCEPadTriggerEffectMode
 
-Enumerator | Value
----------- | -----
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 PAD_TRIGGER_EFFECT_MODE_OFF | 0
 PAD_TRIGGER_EFFECT_MODE_FEEDBACK | 1
 PAD_TRIGGER_EFFECT_MODE_WEAPON | 2

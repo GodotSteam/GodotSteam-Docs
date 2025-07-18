@@ -17,6 +17,9 @@ This short tutorial is all about rich presence for your game; specifically the g
 	* [Friends class](../classes/friends.md)
 		* [setRichPresence()](../classes/friends.md#setrichpresence)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## :material-file-document-check: Preparations
 ==}
