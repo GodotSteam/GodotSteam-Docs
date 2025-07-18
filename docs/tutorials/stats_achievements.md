@@ -144,13 +144,13 @@ func load_steam_achievements() -> void:
 		var steam_achievement: Dictionary = Steam.getAchievement(this_achievement)
 
 		# The set_achievement function is below in the Setting Achievements section
-		if not this_achievement['ret']:
+		if not steam_achievement['ret']:
 			print("Steam does not have this achievement, defaulting to local value: achieve%s" % this_achievement)
-			break
+			continue
 
 		if achievements[this_achievement] == steam_achievement['achieved']:
 			print("Steam achievements match local file, skipping: %s" % this_achievement)
-			break
+			continue
 
 		set_achievement(this_achievement)
 
