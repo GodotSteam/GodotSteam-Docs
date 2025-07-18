@@ -6,7 +6,9 @@ icon: material/music-box-multiple
 
 # Music Remote
 
-Allows direct interaction with the Steam Music player. These functions only work with soundtracks you purchased or own on Steam.
+Allows direct interaction with the Steam Music player. These functions only work with soundtracks you purchased or own on Steam. [See features / music_player for more information.](https://partner.steamgames.com/doc/features/music_player){ target="\_blank" }
+
+This class has absolutely no notes in either the SDK nor Valve's online documentation; everything here is assumed.
 
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" }"
 
@@ -16,325 +18,443 @@ Allows direct interaction with the Steam Music player. These functions only work
 
 ### activationSuccess
 
-!!! function "activationSuccess( ```bool``` value )"
-	If remote access was successfully activated.
+!!! function "activationSuccess( `bool` activate )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | activate | bool | -
 
-	**Returns:** bool
+	Was the Music Remote activation successful?  It is unclear what **activate** actually refers to though or if this is setting the activation as successful.
+
+	!!! returns "Returns: bool"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#BActivationSuccess){ .md-button .md-button--store target="_blank" }
 
 ### isCurrentMusicRemote
 
-!!! function "isCurrentMusicRemote()"
+!!! function "isCurrentMusicRemote( )"
 	Is a remote music client / host connected?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Return true if Music Remote is currently active; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#BIsCurrentMusicRemote){ .md-button .md-button--store target="_blank" }
 
 ### currentEntryDidChange
 
-!!! function "currentEntryDidChange()"
+!!! function "currentEntryDidChange( )"
 	Did the currenty music entry just change?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the current music entry did change; otherwise, false if not.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#CurrentEntryDidChange){ .md-button .md-button--store target="_blank" }
 
 ### currentEntryIsAvailable
 
-!!! function "currentEntryIsAvailable( ```bool``` available )"
+!!! function "currentEntryIsAvailable( `bool` available )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | available | bool | Whether or not the current entry is available.
+
 	Is the current music entry available?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the current music entry is available; otherwise, false if not.
  
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#CurrentEntryIsAvailable){ .md-button .md-button--store target="_blank" }
 
 ### currentEntryWillChange
 
-!!! function "currentEntryWillChange()"
+!!! function "currentEntryWillChange( )"
 	Will the current music entry change?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the current music entry will change; otherwise, false if not.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#CurrentEntryWillChange){ .md-button .md-button--store target="_blank" }
 
 ### deregisterSteamMusicRemote
 
-!!! function "deregisterSteamMusicRemote()"
+!!! function "deregisterSteamMusicRemote( )"
 	Disconnect from remote music client / host.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if Steam Music Remote was deregistered; otherwise, false if not.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#DeregisterSteamMusicRemote){ .md-button .md-button--store target="_blank" }
 
 ### enableLooped
 
-!!! function "enableLooped( ```bool``` value )"
-	Enable track loop on client.
+!!! function "enableLooped( `bool` enable_loop )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | enable_loop | bool | Whether or not to enable track looping.
 
-	**Returns:** bool
+    Enable track looping.
+
+	!!! returns "Returns: bool"
+		Returns true if track looping was enabled; otherwise, false if not.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnableLooped){ .md-button .md-button--store target="_blank" }
 
 ### enablePlaylists
 
-!!! function "enablePlaylists( ```bool``` value )"
+!!! function "enablePlaylists( `bool` enable_playlists )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | enable_playlists | bool | Whether or not to enable playlists.
+
 	Enable playlists on client.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if playlists were enabled; otherwise, false if not.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnablePlaylists){ .md-button .md-button--store target="_blank" }
 
 ### enablePlayNext
 
-!!! function "enablePlayNext( ```bool``` value )"
-	Play the next track on client.
+!!! function "enablePlayNext( `bool` enable_next )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | enable_next | bool | Whether or not to enable play next.
 
-	**Returns:** bool
+	Enable the play next command?
+
+	!!! returns "Returns: bool"
+		Returns true if play next is enabled; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnablePlayNext){ .md-button .md-button--store target="_blank" }
 
 ### enablePlayPrevious
 
-!!! function "enablePlayPrevious( ```bool``` value )"
+!!! function "enablePlayPrevious( `bool` enable_previous )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | enable_previous | bool | Whether or not to enable play previous.
+
 	Play previous track on client.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if play previous is enabled; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnablePlayPrevious){ .md-button .md-button--store target="_blank" }
 
 ### enableQueue
 
-!!! function "enableQueue( ```bool``` value )"
+!!! function "enableQueue( `bool` enable_queue )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | enable_queue | bool | Whether or not to enable the queue.
+
 	Enable the music queue on the client.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the queue is enabled; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnableQueue){ .md-button .md-button--store target="_blank" }
 
 ### enableShuffled
 
-!!! function "enableShuffled( ```bool``` value )"
+!!! function "enableShuffled( `bool` enable_shuffle )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | enable_shuffle | bool | Whether or not to enable shuffle.
+
 	Enable shuffle on the client.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if shuffle is enabled; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnableShuffled){ .md-button .md-button--store target="_blank" }
 
 ### playlistDidChange
 
-!!! function "playlistDidChange()"
+!!! function "playlistDidChange( )"
 	Has the playlist changed?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the playlist changed; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#PlaylistDidChange){ .md-button .md-button--store target="_blank" }
 
 ### playlistWillChange
 
-!!! function "playlistWillChange()"
+!!! function "playlistWillChange( )"
 	Will the playlist change?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the playlist will change; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#PlaylistWillChange){ .md-button .md-button--store target="_blank" }
 
 ### queueDidChange
 
-!!! function "queueDidChange()"
+!!! function "queueDidChange( )"
 	Did the song queue change?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the queue did change; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#QueueDidChange){ .md-button .md-button--store target="_blank" }
 
 ### queueWillChange
 
-!!! function "queueWillChange()"
+!!! function "queueWillChange( )"
 	Will the song queue change?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the queue will change; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#QueueWillChange){ .md-button .md-button--store target="_blank" }
 
 ### registerSteamMusicRemote
 
-!!! function "registerSteamMusicRemote( ```string``` name )"
+!!! function "registerSteamMusicRemote( `string` name )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | name | string | THe name of this Music Remote session?
+
 	Connect to a music remote client / host?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the Music Remote session was registered successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#RegisterSteamMusicRemote){ .md-button .md-button--store target="_blank" }
 
 ### resetPlaylistEntries
 
-!!! function "resetPlaylistEntries()"
+!!! function "resetPlaylistEntries( )"
 	Reset the playlist entries.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the playlist entries were reset; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#ResetPlaylistEntries){ .md-button .md-button--store target="_blank" }
 
 ### resetQueueEntries
 
-!!! function "resetQueueEntries()"
+!!! function "resetQueueEntries( )"
 	Reset the song queue entries.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the queue entries were reset; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#ResetQueueEntries){ .md-button .md-button--store target="_blank" }
 
 ### setCurrentPlaylistEntry
 
-!!! function "setCurrentPlaylistEntry( ```int``` id )"
+!!! function "setCurrentPlaylistEntry( `int` id )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | id | int | The current playlist entry to set.
+
 	Set a new current playlist.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the playlist entry was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetCurrentPlaylistEntry){ .md-button .md-button--store target="_blank" }
 
 ### setCurrentQueueEntry
 
-!!! function "setCurrentQueueEntry( ```int``` id )"
+!!! function "setCurrentQueueEntry( `int` id )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | id | int | The current queue entry to set.
+
 	Set a new current song queue.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the queue entry was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetCurrentQueueEntry){ .md-button .md-button--store target="_blank" }
 
 ### setDisplayName
 
-!!! function "setDisplayName( ```string``` name )"
+!!! function "setDisplayName( `string` name )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | name | string | The display name to set.
+
 	Set a new display name.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the display name was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetDisplayName){ .md-button .md-button--store target="_blank" }
 
 ### setPlaylistEntry
 
-!!! function "setPlaylistEntry( ```int``` id, ```int``` position, ```string``` entryText )"
+!!! function "setPlaylistEntry( `int` id, `int` position, `string` entry_text )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | id | int | The ID of the entry to set.
+    | position | int | The position in the playlist to set it to.
+    | entry_text | string | The name of the entry.
+
 	Set a new playlist entry.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the playlist entry was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetPlaylistEntry){ .md-button .md-button--store target="_blank" }
 
 ### setPNGIcon64x64
 
-!!! function "setPNGIcon64x64( ```PoolByteArray``` icon )"
+!!! function "setPNGIcon64x64( `PackedByteArray` icon )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | icon | PackedByteArray | The icon data to set.
+
 	Set a PNG icon for a song? A playlist?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the icon was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetPNGIcon_64x64){ .md-button .md-button--store target="_blank" }
 
 ### setQueueEntry
 
-!!! function "setQueueEntry( ```int``` id, ```int``` position, ```string``` entryText )"
+!!! function "setQueueEntry( `int` id, `int` position, `string` entry_text )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | id | int | The ID of the entry to set.
+    | position | int | The position in the queue to set it to.
+    | entry_text | string | The name of the entry.
+
 	Set a new queue entry.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the queue entry was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetQueueEntry){ .md-button .md-button--store target="_blank" }
 
 ### updateCurrentEntryCoverArt
 
-!!! function "updateCurrentEntryCoverArt( ```PoolByteArray``` art )"
+!!! function "updateCurrentEntryCoverArt( `PackedByteArray` art )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | art | PackedByteArray | The icon data to set.
+
 	Update the current song entry's cover art.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the current entry's cover art was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateCurrentEntryCoverArt){ .md-button .md-button--store target="_blank" }
 
 ### updateCurrentEntryElapsedSeconds
 
-!!! function "updateCurrentEntryElapsedSeconds( ```int``` value )"
+!!! function "updateCurrentEntryElapsedSeconds( `int` seconds )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | seconds | int | The amount of elapsed seconds to set.
+
 	Update the current seconds that have elapsed for an entry.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the elapsed seconds were set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateCurrentEntryElapsedSeconds){ .md-button .md-button--store target="_blank" }
 
 ### updateCurrentEntryText
 
-!!! function "updateCurrentEntryText( ```string``` text )"
+!!! function "updateCurrentEntryText( `string` text )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | text | string | The text to set for the current entry.
+
 	Update the current song entry's text?
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the current entry's text was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateCurrentEntryText){ .md-button .md-button--store target="_blank" }
 
 ### updateLooped
 
-!!! function "updateLooped( ```bool``` value )"
+!!! function "updateLooped( `bool` looped )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | looped | bool | Whether or not to update the looped status?
+
 	Update looped or not.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the looped status was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateLooped){ .md-button .md-button--store target="_blank" }
 
 ### updatePlaybackStatus
 
-!!! function "updatePlaybackStatus( ```int``` status )"
-	Update the current playback status:
+!!! function "updatePlaybackStatus( `AudioPlaybackStatus` status )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | status | [AudioPlaybackStatus enum](music.md#audioplaybackstatus) | The current playback status to set.
 
-	* 0 - undefined
-	* 1 - playing
-	* 2 - paused
-	* 3 - idle.
+	Update the current playback status.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the playback status was set successfully; otherwise, false.
  
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdatePlaybackStatus){ .md-button .md-button--store target="_blank" }
 
 ### updateShuffled
 
-!!! function "updateShuffled( ```bool``` value )"
+!!! function "updateShuffled( `bool` shuffle )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | shuffle | bool | Whether or not to update shuffle?
+
 	Update whether to shuffle or not.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if shuffled was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateShuffled){ .md-button .md-button--store target="_blank" }
 
 ### updateVolume
 
-!!! function "updateVolume( ```float``` value )"
+!!! function "updateVolume( `float` volume )"
+	| Argument | Type | Notes |
+    | -------- | ---- | ----- |
+    | volume | float | The updated volume level to set.
+
 	Volume is between 0.0 and 1.0.
 
-	**Returns:** bool
+	!!! returns "Returns: bool"
+		Returns true if the volume was set successfully; otherwise, false.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateVolume){ .md-button .md-button--store target="_blank" }
@@ -343,33 +463,36 @@ Allows direct interaction with the Steam Music player. These functions only work
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
 
 ### music_player_remote_to_front
 
 !!! function "music_player_remote_to_front"
 	There are no notes in the Steamworks documentation.
 
-	**Returns:** nothing
-	
+	!!! returns "Returns"
+		Nothing.
+
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerRemoteToFront_t){ .md-button .md-button--store target="_blank" }
 
 ### music_player_remote_will_activate
 !!! function "music_player_remote_will_activate"
-	There are no notes in the Steamworks documentation.
+	Signals when the Music Remote session will activate.
 
-	**Returns:** nothing
-	
+	!!! returns "Returns"
+		Nothing.
+
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerRemoteWillActivate_t){ .md-button .md-button--store target="_blank" }
 	
 ### music_player_remote_will_deactivate
 
 !!! function "music_player_remote_will_deactivate"
-	There are no notes in the Steamworks documentation.
+	Signals when the Music Remote session will deactivate.
 
-	**Returns:** nothing
+	!!! returns "Returns"
+		Nothing.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerRemoteWillDeactivate_t){ .md-button .md-button--store target="_blank" }
@@ -377,11 +500,12 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_player_selects_playlist_entry
 
 !!! function "music_player_selects_playlist_entry"
-	There are no notes in the Steamworks documentation.
+	Signals when a playlist entry has been selected.
 
-	**Returns:**
-
-	* entry (int)
+	!!! returns "Returns"
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+        | entry | int | The entry that was selected.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerSelectsPlaylistEntry_t){ .md-button .md-button--store target="_blank" }
@@ -389,11 +513,12 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_player_selects_queue_entry
 
 !!! function "music_player_selects_queue_entry"
-	There are no notes in the Steamworks documentation.
+	Signals when a queue entry has been selected.
 
-	**Returns:**
-
-	*entry (int)
+	!!! returns "Returns"
+        | Key | Type | Notes |
+        | --- | ---- | ----- |
+        | entry | int | The entry that was selected.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerSelectsQueueEntry_t){ .md-button .md-button--store target="_blank" }
@@ -401,11 +526,12 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_player_wants_looped
 
 !!! function "music_player_wants_looped"
-	There are no notes in the Steamworks documentation.
+	Signals when the remote session wants a track looped.
 
-	**Returns:**
-	
-	* looped (bool)
+	!!! returns "Returns"
+        | Key | Type | Notes |
+        | --- | ---- | ----- |
+		| looped | bool | Whether or not the remote session selected looped.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsLooped_t){ .md-button .md-button--store target="_blank" }
@@ -413,9 +539,10 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_player_wants_pause
 
 !!! function "music_player_wants_pause"
-	There are no notes in the Steamworks documentation.
+	Signals when the remote session wants music paused.
 
-	**Returns:** nothing
+	!!! returns "Returns"
+		Nothing.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPause_t){ .md-button .md-button--store target="_blank" }
@@ -423,19 +550,21 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_player_wants_play
 
 !!! function "music_player_wants_play"
-	There are no notes in the Steamworks documentation.
+	Signals when the remote session wants music played.
 
-	**Returns:** nothing
-	
+	!!! returns "Returns"
+		Nothing.
+
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlay_t){ .md-button .md-button--store target="_blank" }
 
 ### music_player_wants_play_next
 
 !!! function "music_player_wants_play_next"
-	There are no notes in the Steamworks documentation.
+	Signals when the remote session wants the next entry played.
 
-	**Returns:** nothing
+	!!! returns "Returns"
+		Nothing.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlayNext_t){ .md-button .md-button--store target="_blank" }
@@ -443,9 +572,10 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_player_wants_play_previous
 
 !!! function "music_player_wants_play_previous"
-	There are no notes in the Steamworks documentation.
+	Signals when the remote session wants the previous entry played.
 
-	**Returns:** nothing
+	!!! returns "Returns"
+		Nothing.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlay_t){ .md-button .md-button--store target="_blank" }
@@ -453,23 +583,25 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_player_wants_playing_repeat_status
 
 !!! function "music_player_wants_playing_repeat_status"
-	There are no notes in the Steamworks documentation.
+	Signals when the remote session has a playing repeat status update.
 
-	**Returns:**
-
-	* status (int)
+	!!! returns "Returns"
+        | Key | Type | Notes |
+        | --- | ---- | ----- |
+        | status | int | -
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlayNext_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlayingRepeatStatus_t){ .md-button .md-button--store target="_blank" }
 
 ### music_player_wants_shuffled
 
 !!! function "music_player_wants_shuffled"
-	There are no notes in the Steamworks documentation.
+	Signals when the Steam music interface wants to change shuffled status.
 
-	**Returns:**
-
-	* shuffled (bool)
+	!!! returns "Returns"
+        | Key | Type | Notes |
+        | --- | ---- | ----- |
+		| shuffled | bool | Whether it is shuffled or not.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsShuffled_t){ .md-button .md-button--store target="_blank" }
@@ -477,11 +609,12 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_player_wants_volume
 
 !!! function "music_player_wants_volume"
-	There are no notes in the Steamworks documentation.
+	Signals the Steam music interface has a new volume.
 
-	**Returns:**
-	
-	* volume (float)
+	!!! returns "Returns"
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+		| new_volume | float | The new volume level; between 0.0 and 1.0.
 	
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsVolume_t){ .md-button .md-button--store target="_blank" }
@@ -489,9 +622,19 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### music_player_will_quit
 
 !!! function "music_player_will_quit"
-	There are no notes in the Steamworks documentation.
+	Signals that the Steam music interface will now quit.
 
-	**Returns:** nothing
+	!!! returns "Returns"
+		Nothing.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWillQuit_t){ .md-button .md-button--store target="_blank" }
+
+{==
+## :material-infinity: Constants
+==}
+
+Name | SDK Name | Value | Details
+---- | -------- | ----- | -------
+MUSIC_NAME_MAX_LENGTH | k_SteamMusicNameMaxLength | 255 | -
+MUSIC_PNG_MAX_LENGTH | k_SteamMusicPNGMaxLength | 65535 | -

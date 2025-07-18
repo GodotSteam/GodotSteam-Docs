@@ -31,6 +31,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: ConnorBP
 - :material-code-tags: craftablescience
 - :material-file-document-edit: dannroda
+- :material-file-document-edit: DanielSnd
 - :material-file-document-edit: DaveThornton
 - :material-file-document-edit: Deozaan
 - :material-file-document-edit: dglwilkins
