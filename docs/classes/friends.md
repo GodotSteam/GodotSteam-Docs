@@ -16,7 +16,7 @@ Interface to both friends list data and general information about users as well 
 
 ### activateGameOverlay
 
-!!! function "activateGameOverlay( ```string``` type )"
+!!! function "activateGameOverlay( `string` type )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | type | string | The dialog to open. |
@@ -40,7 +40,7 @@ Interface to both friends list data and general information about users as well 
 
 ### activateGameOverlayInviteDialog
 
-!!! function "activateGameOverlayInviteDialog( ```uint64_t``` steam_id )"
+!!! function "activateGameOverlayInviteDialog( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the lobby that selected users will be invited to. |
@@ -54,7 +54,7 @@ Interface to both friends list data and general information about users as well 
 
 ### activateGameOverlayInviteDialogConnectString
 
-!!! function "activateGameOverlayInviteDialogConnectString( ```string``` connect_string )"
+!!! function "activateGameOverlayInviteDialogConnectString( `string` connect_string )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | connect_string | string | The connection string for your game or lobby. |
@@ -65,7 +65,7 @@ Interface to both friends list data and general information about users as well 
 
 ### activateGameOverlayRemotePlayTogetherInviteDialog
 
-!!! function "activateGameOverlayRemotePlayTogetherInviteDialog( ```uint64_t``` lobby_id )"
+!!! function "activateGameOverlayRemotePlayTogetherInviteDialog( `uint64_t` lobby_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | lobby_id | uint64_t | The lobby for the Remote Play invite. |
@@ -81,7 +81,7 @@ Interface to both friends list data and general information about users as well 
 
 ### activateGameOverlayToStore
 
-!!! function "activateGameOverlayToStore( ```uint32_t``` app_id = 0 )"
+!!! function "activateGameOverlayToStore( `uint32_t` app_id = 0 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to show the store page of. |
@@ -95,7 +95,7 @@ Interface to both friends list data and general information about users as well 
 
 ### activateGameOverlayToUser
 
-!!! function "activateGameOverlayToUser( ```string``` type, ```uint64_t``` steam_id )"
+!!! function "activateGameOverlayToUser( `string` type, `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | type | string | The dialog to open. |
@@ -120,7 +120,7 @@ Interface to both friends list data and general information about users as well 
 
 ### activateGameOverlayToWebPage
 
-!!! function "activateGameOverlayToWebPage( ```string``` url, ```OverlayToWebPageMode``` webpage_mode = OVERLAY_TO_WEB_PAGE_MODE_DEFAULT)"
+!!! function "activateGameOverlayToWebPage( `string` url, `OverlayToWebPageMode` webpage_mode = OVERLAY_TO_WEB_PAGE_MODE_DEFAULT)"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | url | string | The webpage to open. |
@@ -145,7 +145,7 @@ Interface to both friends list data and general information about users as well 
 
 ### closeClanChatWindowInSteam
 
-!!! function "closeClanChatWindowInSteam( ```uint64_t``` chat_id )"
+!!! function "closeClanChatWindowInSteam( `uint64_t` chat_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the Steam group chat room to close. |
@@ -160,7 +160,7 @@ Interface to both friends list data and general information about users as well 
 
 ### downloadClanActivityCounts
 
-!!! function "downloadClanActivityCounts( ```PackedInt64Array``` clan_id_array )"
+!!! function "downloadClanActivityCounts( `PackedInt64Array` clan_id_array )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id_array | PackedInt64Array | A list of steam groups to get the updated data for. |
@@ -177,7 +177,7 @@ Interface to both friends list data and general information about users as well 
 
 ### enumerateFollowingList
 
-!!! function "enumerateFollowingList( ```uint32_t``` start_index )"
+!!! function "enumerateFollowingList( `uint32_t` start_index )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | start_index | uint32_t | The index to start receiving followers from. This should be 0 on the initial call. |
@@ -197,7 +197,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getChatMemberByIndex
 
-!!! function "getChatMemberByIndex( ```uint64_t``` clan_id, ```int``` user )"
+!!! function "getChatMemberByIndex( `uint64_t` clan_id, `int` user )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | This MUST be the same source used in the previous call to [getClanChatMemberCount](#getclanchatmembercount). |
@@ -214,7 +214,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getClanActivityCounts
 
-!!! function "getClanActivityCounts( ```uint64_t``` clan_id )"
+!!! function "getClanActivityCounts( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the activity of. |
@@ -238,7 +238,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getClanByIndex
 
-!!! function "getClanByIndex( ```int``` clan_index )"
+!!! function "getClanByIndex( `int` clan_index )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_index | int | An index between 0 and [getClanCount](#getclancount). |
@@ -255,7 +255,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getClanChatMemberCount
 
-!!! function "getClanChatMemberCount( ```uint64_t``` clan_id )"
+!!! function "getClanChatMemberCount( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the chat count of. |
@@ -283,7 +283,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getClanName
 
-!!! function "getClanName( ```uint64_t``` clan_id )"
+!!! function "getClanName( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the name of. |
@@ -298,7 +298,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getClanOfficerByIndex
 
-!!! function "getClanOfficerByIndex( ```uint64_t``` clan_id, ```int``` officer_index )"
+!!! function "getClanOfficerByIndex( `uint64_t` clan_id, `int` officer_index )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | This must be the same steam group used in the previous call to [getClanOfficerCount](#getclanofficercount). |
@@ -316,7 +316,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getClanOfficerCount
 
-!!! function "getClanOfficerCount( ```uint64_t``` clan_id )"
+!!! function "getClanOfficerCount( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the officer count of. |
@@ -333,7 +333,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getClanOwner
 
-!!! function "getClanOwner( ```uint64_t``` clan_id )"
+!!! function "getClanOwner( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group to get the owner for. |
@@ -348,7 +348,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getClanTag
 
-!!! function "getClanTag( ```uint64_t``` clan_id )"
+!!! function "getClanTag( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the tag of. |
@@ -363,7 +363,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getCoplayFriend
 
-!!! function "getCoplayFriend( ```int``` friend_index )"
+!!! function "getCoplayFriend( `int` friend_index )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
 	| friend_index | int | An index between 0 and [getCoplayFriendCount](#getcoplayfriendcount). |
@@ -389,7 +389,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFollowerCount
 
-!!! function "getFollowerCount( ```uint64_t``` steam_id )"
+!!! function "getFollowerCount( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user to get the follower count for. |
@@ -406,7 +406,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendByIndex
 
-!!! function "getFriendByIndex( ```int``` friend_number, ```FriendFlags``` friend_flags )"
+!!! function "getFriendByIndex( `int` friend_number, `FriendFlags` friend_flags )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_number | int | An index between 0 and [getFriendCount](#getfriendcount).
@@ -426,7 +426,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendCoplayGame
 
-!!! function "getFriendCoplayGame( ```uint64_t``` friend_id )"
+!!! function "getFriendCoplayGame( `uint64_t` friend_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the user on the recently-played-with list to get the game played. |
@@ -442,7 +442,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendCoplayTime
 
-!!! function "getFriendCoplayTime( ```uint64_t``` friend_id )"
+!!! function "getFriendCoplayTime( `uint64_t` friend_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the user on the recently-played-with list to get the timestamp for. |
@@ -457,7 +457,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendCount
 
-!!! function "getFriendCount( ```FriendFlags``` friend_flags = FRIEND_FLAG_ALL )"
+!!! function "getFriendCount( `FriendFlags` friend_flags = FRIEND_FLAG_ALL )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_flags | [FriendFlags enum](#friendflags) | A combined union (binary "or") of one or more [FriendFlags](#friendflags). Defaults to [FRIEND_FLAG_ALL](#friendflags).
@@ -474,7 +474,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendCountFromSource
 
-!!! function "getFriendCountFromSource( ```uint64_t``` source_id )"
+!!! function "getFriendCountFromSource( `uint64_t` source_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | source_id | uint64_t | The Steam group, chat room, lobby or game server to get the user count of. |
@@ -493,7 +493,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendFromSourceByIndex
 
-!!! function "getFriendFromSourceByIndex( ```uint64_t``` source_id, ```int``` friend_number )"
+!!! function "getFriendFromSourceByIndex( `uint64_t` source_id, `int` friend_number )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | source_id | uint64_t | This **must** be the same source used in the previous call to [getFriendCountFromSource](#getfriendcountfromsource). |
@@ -511,7 +511,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendGamePlayed
 
-!!! function "getFriendGamePlayed( ```uint64_t``` steam_id )"
+!!! function "getFriendGamePlayed( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
@@ -536,7 +536,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendMessage
 
-!!! function "getFriendMessage( ```uint64_t``` friend_id, ```int``` message )"
+!!! function "getFriendMessage( `uint64_t` friend_id, `int` message )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the friend that sent this message. |
@@ -559,7 +559,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendPersonaName
 
-!!! function "getFriendPersonaName( ```uint64_t``` steam_id )"
+!!! function "getFriendPersonaName( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
@@ -576,7 +576,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendPersonaNameHistory
 
-!!! function "getFriendPersonaNameHistory( ```uint64_t``` steam_id, ```int``` name_history )"
+!!! function "getFriendPersonaNameHistory( `uint64_t` steam_id, `int` name_history )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
@@ -592,7 +592,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendPersonaState
 
-!!! function "getFriendPersonaState( ```uint64_t``` steam_id )"
+!!! function "getFriendPersonaState( `uint64_t` steam_id )"
 	Gets the current status of the specified user. This will only be known to the current user if the other user is in their friends list, on the same game server, in a chat room or lobby, or in a small Steam group with the local user. To get the state of the current user use [getPersonaState](#getpersonastate).
 
 	!!! returns "Returns: int / [PersonaState enum](#personastate)"
@@ -603,7 +603,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendRelationship
 
-!!! function "getFriendRelationship( ```uint64_t``` steam_id )"
+!!! function "getFriendRelationship( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
@@ -618,7 +618,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendRichPresence
 
-!!! function "getFriendRichPresence( ```uint64_t``` friend_id, ```string``` key )"
+!!! function "getFriendRichPresence( `uint64_t` friend_id, `string` key )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The friend to get the Rich Presence value for. |
@@ -634,7 +634,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendRichPresenceKeyCount
 
-!!! function "getFriendRichPresenceKeyCount( ```uint64_t``` friend_id )"
+!!! function "getFriendRichPresenceKeyCount( `uint64_t` friend_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the user to get the Rich Presence key count of. |
@@ -649,7 +649,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendRichPresenceKeyByIndex
 
-!!! function "getFriendRichPresenceKeyByIndex( ```uint64_t``` friend_id, ```int``` key_index )"
+!!! function "getFriendRichPresenceKeyByIndex( `uint64_t` friend_id, `int` key_index )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t |This should be the same user provided to the previous call to [getFriendRichPresenceKeyCount](#getfriendrichpresencekeycount). |
@@ -676,7 +676,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendsGroupIDByIndex
 
-!!! function "```int16``` getFriendsGroupIDByIndex( ```int16``` friend_group )"
+!!! function "`int16` getFriendsGroupIDByIndex( `int16` friend_group )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_group | int16 | An index between 0 and [getFriendsGroupCount](#getfriendsgroupcount). |
@@ -693,7 +693,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendsGroupMembersCount
 
-!!! function "getFriendsGroupMembersCount( ```int16``` friend_group )"
+!!! function "getFriendsGroupMembersCount( `int16` friend_group )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_group | int16 | The friends group ID to get the number of friends in. |
@@ -708,7 +708,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendsGroupMembersList
 
-!!! function "```array``` getFriendsGroupMembersList( ```int16``` friend_group, ```int``` member_count )"
+!!! function "`array` getFriendsGroupMembersList( `int16` friend_group, `int` member_count )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_group | int16 | The friends group ID to get the members list of. |
@@ -730,7 +730,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendsGroupName
 
-!!! function "getFriendsGroupName( ```int16``` friend_group )"
+!!! function "getFriendsGroupName( `int16` friend_group )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_group | int16 | The friends group ID to get the name of. |
@@ -745,7 +745,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getFriendSteamLevel
 
-!!! function "getFriendSteamLevel( ```uint64_t``` steam_id )"
+!!! function "getFriendSteamLevel( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
@@ -762,7 +762,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getLargeFriendAvatar
 
-!!! function "getLargeFriendAvatar( ```uint64_t``` steam_id )"
+!!! function "getLargeFriendAvatar( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam user to get the avatar for. |
@@ -788,7 +788,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getMediumFriendAvatar
 
-!!! function "getMediumFriendAvatar( ```uint64_t``` steam_id )"
+!!! function "getMediumFriendAvatar( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam user to get the avatar for. |
@@ -843,7 +843,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getPlayerAvatar
 
-!!! function "getPlayerAvatar( ```int``` size = 2, ```uint64_t``` steam_id = 0 )"
+!!! function "getPlayerAvatar( `int` size = 2, `uint64_t` steam_id = 0 )"
 	Get a player's avatar. This is the preferred method of getting avatars as it shortcuts the various avatar functions in Steamworks to reduce the number of steps required.
 
 	Size can be passed as the [AvatarSizes enum](#avatarsizes) or an integer:
@@ -864,7 +864,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getPlayerNickname
 
-!!! function "getPlayerNickname( ```uint64_t``` steam_id )"
+!!! function "getPlayerNickname( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
@@ -879,7 +879,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getProfileItemPropertyString
 
-!!! function "getProfileItemPropertyString( ```uint64_t``` steam_id, ```CommunityProfileItemType``` item_type, ```CommunityProfileItemProperty``` item_property )"
+!!! function "getProfileItemPropertyString( `uint64_t` steam_id, `CommunityProfileItemType` item_type, `CommunityProfileItemProperty` item_property )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user that you had already retrieved equipped items for. |
@@ -895,7 +895,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getProfileItemPropertyInt
 
-!!! function "getProfileItemPropertyInt( ```uint64_t``` steam_id, ```CommunityProfileItemType``` item_type, ```CommunityProfileItemProperty``` item_property )"
+!!! function "getProfileItemPropertyInt( `uint64_t` steam_id, `CommunityProfileItemType` item_type, `CommunityProfileItemProperty` item_property )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user that you had already retrieved equipped items for. |
@@ -935,7 +935,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getSmallFriendAvatar
 
-!!! function "getSmallFriendAvatar( ```uint64_t``` steam_id )"
+!!! function "getSmallFriendAvatar( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam user to get the avatar for. |
@@ -1009,7 +1009,7 @@ Interface to both friends list data and general information about users as well 
 
 ### getUserSteamGroups
 
-!!! function "```array``` getUserSteamGroups( )"
+!!! function "`array` getUserSteamGroups( )"
 	Get list of user's Steam groups; a mix of different Steamworks API group functions.
 
 	!!! returns "Returns: array"
@@ -1026,7 +1026,7 @@ Interface to both friends list data and general information about users as well 
 
 ### hasEquippedProfileItem
 
-!!! function "hasEquippedProfileItem( ```uint64_t``` steam_id, ```CommunityProfileItemType``` item_type )"
+!!! function "hasEquippedProfileItem( `uint64_t` steam_id, `CommunityProfileItemType` item_type )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user that you had already retrieved equipped items for. |
@@ -1044,7 +1044,7 @@ Interface to both friends list data and general information about users as well 
 
 ### hasFriend
 
-!!! function "hasFriend( ```uint64_t``` steam_id, ```FriendFlags``` friend_flags )"
+!!! function "hasFriend( `uint64_t` steam_id, `FriendFlags` friend_flags )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
@@ -1058,7 +1058,7 @@ Interface to both friends list data and general information about users as well 
 
 ### inviteUserToGame
 
-!!! function "inviteUserToGame( ```uint64_t``` friend_id, ```string``` connect_string )"
+!!! function "inviteUserToGame( `uint64_t` friend_id, `string` connect_string )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the friend to invite. |
@@ -1081,7 +1081,7 @@ Interface to both friends list data and general information about users as well 
 
 ### isClanChatAdmin
 
-!!! function "isClanChatAdmin( ```uint64_t``` chat_id, ```uint64_t``` steam_id )"
+!!! function "isClanChatAdmin( `uint64_t` chat_id, `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the Steam group chat room. |
@@ -1101,7 +1101,7 @@ Interface to both friends list data and general information about users as well 
 
 ### isClanPublic
 
-!!! function "isClanPublic( ```uint64_t``` clan_id )"
+!!! function "isClanPublic( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group. |
@@ -1116,7 +1116,7 @@ Interface to both friends list data and general information about users as well 
 
 ### isClanOfficialGameGroup
 
-!!! function "isClanOfficialGameGroup( ```uint64_t``` clan_id )"
+!!! function "isClanOfficialGameGroup( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group. |
@@ -1131,7 +1131,7 @@ Interface to both friends list data and general information about users as well 
 
 ### isClanChatWindowOpenInSteam
 
-!!! function "isClanChatWindowOpenInSteam( ```uint64_t``` chat_id )"
+!!! function "isClanChatWindowOpenInSteam( `uint64_t` chat_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the Steam group chat room to check. |
@@ -1146,7 +1146,7 @@ Interface to both friends list data and general information about users as well 
 
 ### isFollowing
 
-!!! function "isFollowing( ```uint64_t``` steam_id )"
+!!! function "isFollowing( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check if we are following. |
@@ -1163,7 +1163,7 @@ Interface to both friends list data and general information about users as well 
 
 ### isUserInSource
 
-!!! function "isUserInSource( ```uint64_t``` steam_id, ```uint64_t``` source_id )"
+!!! function "isUserInSource( `uint64_t` steam_id, `uint64_t` source_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user to check if they are in the source. |
@@ -1179,7 +1179,7 @@ Interface to both friends list data and general information about users as well 
 
 ### joinClanChatRoom
 
-!!! function "joinClanChatRoom( ```uint64_t``` clan_id )"
+!!! function "joinClanChatRoom( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group to join. |
@@ -1201,7 +1201,7 @@ Interface to both friends list data and general information about users as well 
 
 ### leaveClanChatRoom
 
-!!! function "leaveClanChatRoom( ```uint64_t``` clan_id )"
+!!! function "leaveClanChatRoom( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group to leave. |
@@ -1219,7 +1219,7 @@ Interface to both friends list data and general information about users as well 
 
 ### openClanChatWindowInSteam
 
-!!! function "openClanChatWindowInSteam( ```uint64_t``` chat_id )"
+!!! function "openClanChatWindowInSteam( `uint64_t` chat_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the Steam group chat room to open. |
@@ -1238,7 +1238,7 @@ Interface to both friends list data and general information about users as well 
 
 ### registerProtocolInOverlayBrowser
 
-!!! function "registerProtocolInOverlayBrowser( ```string``` protocol )"
+!!! function "registerProtocolInOverlayBrowser( `string` protocol )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | protocol | string | The navigations to block. |
@@ -1252,7 +1252,7 @@ Interface to both friends list data and general information about users as well 
 
 ### replyToFriendMessage
 
-!!! function "replyToFriendMessage( ```uint64_t``` steam_id, ```string``` message )"
+!!! function "replyToFriendMessage( `uint64_t` steam_id, `string` message )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the friend to send the message to. |
@@ -1268,7 +1268,7 @@ Interface to both friends list data and general information about users as well 
 
 ### requestClanOfficerList
 
-!!! function "requestClanOfficerList( ```uint64_t``` clan_id )"
+!!! function "requestClanOfficerList( `uint64_t` clan_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the officers list for. |
@@ -1285,7 +1285,7 @@ Interface to both friends list data and general information about users as well 
 
 ### requestEquippedProfileItems
 
-!!! function "requestEquippedProfileItems( ```uint64_t``` steam_id )"
+!!! function "requestEquippedProfileItems( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user that you want to retrieve equipped items for. |
@@ -1302,7 +1302,7 @@ Interface to both friends list data and general information about users as well 
 
 ### requestFriendRichPresence
 
-!!! function "requestFriendRichPresence( ```uint64_t``` friend_id )"
+!!! function "requestFriendRichPresence( `uint64_t` friend_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the user to request the rich presence of. |
@@ -1319,7 +1319,7 @@ Interface to both friends list data and general information about users as well 
 
 ### requestUserInformation
 
-!!! function "requestUserInformation( ```uint64_t``` steam_id, ```bool``` require_name_only )"
+!!! function "requestUserInformation( `uint64_t` steam_id, `bool` require_name_only )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user to request the information of. |
@@ -1342,7 +1342,7 @@ Interface to both friends list data and general information about users as well 
 
 ### sendClanChatMessage
 
-!!! function "sendClanChatMessage( ```uint64_t``` chat_id, ```string``` text )"
+!!! function "sendClanChatMessage( `uint64_t` chat_id, `string` text )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the group chat to send the message to. |
@@ -1364,7 +1364,7 @@ Interface to both friends list data and general information about users as well 
 
 ### setInGameVoiceSpeaking
 
-!!! function "setInGameVoiceSpeaking( ```uint64_t``` steam_id, ```bool``` speaking )"
+!!! function "setInGameVoiceSpeaking( `uint64_t` steam_id, `bool` speaking )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | User to set voice speaking for; allegedly unused. |
@@ -1381,7 +1381,7 @@ Interface to both friends list data and general information about users as well 
 
 ### setListenForFriendsMessages
 
-!!! function "setListenForFriendsMessages( ```bool``` intercept_enabled )"
+!!! function "setListenForFriendsMessages( `bool` intercept_enabled )"
 	Listens for Steam friends chat messages. You can then show these chats inline in the game. For example with a Blizzard style chat message system or the chat system in Dota 2.
 
 	After enabling this you will receive [connected_friend_chat_message](#connected_friend_chat_message) callbacks when ever the user receives a chat message. You can get the actual message data from this callback with [getFriendMessage](#getfriendmessage). You can send messages with [replyToFriendMessage](#replytofriendmessage).
@@ -1397,7 +1397,7 @@ Interface to both friends list data and general information about users as well 
 
 ### setPersonaName
 
-!!! function "setPersonaName( ```string``` name )"
+!!! function "setPersonaName( `string` name )"
 	Sets the current user's persona name, stores it on the server and publishes the changes to all friends who are online. Changes take place locally immediately, and a [persona_state_change](#persona_state_change) callback is posted, presuming success. If the name change fails to happen on the server, then an additional [persona_state_change](#persona_state_change) callback will be posted to change the name back, in addition to the final result available in the call result.
 
 	!!! returns "Returns: void"
@@ -1411,7 +1411,7 @@ Interface to both friends list data and general information about users as well 
 
 ### setPlayedWith
 
-!!! function "setPlayedWith( ```uint64_t``` steam_id )"
+!!! function "setPlayedWith( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The other user that we have played with. |
@@ -1427,7 +1427,7 @@ Interface to both friends list data and general information about users as well 
 
 ### setRichPresence
 
-!!! function "setRichPresence( ```string``` key, ```string``` value )"
+!!! function "setRichPresence( `string` key, `string` value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The rich presence 'key' to set. This can not be longer than specified in MAX_RICH_PRESENCE_KEY_LENGTH (64). |

@@ -16,7 +16,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### checkPingDataUpToDate
 
-!!! function "checkPingDataUpToDate( ```float``` max_age_in_seconds )"
+!!! function "checkPingDataUpToDate( `float` max_age_in_seconds )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | max_age_in_seconds | float | The maximum age the ping data can be.
@@ -34,7 +34,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### convertPingLocationToString
 
-!!! function "convertPingLocationToString( ```PoolByteArray``` location )"
+!!! function "convertPingLocationToString( `PoolByteArray` location )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | location | PoolByteArray | The ping location data to convert. |
@@ -48,7 +48,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### estimatePingTimeBetweenTwoLocations
 
-!!! function "estimatePingTimeBetweenTwoLocations( ```PoolByteArray``` location1, ```PoolByteArray``` location2 )"
+!!! function "estimatePingTimeBetweenTwoLocations( `PoolByteArray` location1, `PoolByteArray` location2 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | location1 | PoolByteArray | The ping location data to check against.
@@ -67,7 +67,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### estimatePingTimeFromLocalHost
 
-!!! function "estimatePingTimeFromLocalHost( ```PoolByteArray``` location )"
+!!! function "estimatePingTimeFromLocalHost( `PoolByteArray` location )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | location | PoolByteArray | The ping location data to check against. |
@@ -82,7 +82,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### getConfigValue
 
-!!! function "getConfigValue( ```NetworkingConfigValue``` config_value, ```NetworkingConfigScope``` scope_type, ```uint32_t``` connection_handle )"
+!!! function "getConfigValue( `NetworkingConfigValue` config_value, `NetworkingConfigScope` scope_type, `uint32_t` connection_handle )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | config_value | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to fetch. |
@@ -114,7 +114,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### getConfigValueInfo
 
-!!! function "getConfigValueInfo( ```NetworkingConfigValue``` config_value )"
+!!! function "getConfigValueInfo( `NetworkingConfigValue` config_value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | config_value | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to fetch. |
@@ -136,7 +136,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### getDirectPingToPOP
 
-!!! function "getDirectPingToPOP( ```uint32_t``` pop_id )"
+!!! function "getDirectPingToPOP( `uint32_t` pop_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | pop_id | uint32_t | Identifier used for a network location point of presence. |
@@ -187,7 +187,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### getPingToDataCenter
 
-!!! function "	getPingToDataCenter( ```uint32``` pop_id )"
+!!! function "	getPingToDataCenter( `uint32` pop_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | pop_id | uint32_t | Identifier used for a network location point of presence. |
@@ -262,7 +262,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### parsePingLocationString
 
-!!! function "parsePingLocationString( ```string``` location_string )"
+!!! function "parsePingLocationString( `string` location_string )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | location_string | string | The location string to be parsed back into a location object. |
@@ -281,7 +281,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### setConnectionConfigValueFloat
 
-!!! function "	setConnectionConfigValueFloat( ```uint32_t``` connection_handle, ```NetworkingConfigValue``` config, ```float``` value )"
+!!! function "	setConnectionConfigValueFloat( `uint32_t` connection_handle, `NetworkingConfigValue` config, `float` value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The connection to set configuration values for. |
@@ -297,7 +297,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### setConnectionConfigValueInt32
 
-!!! function "setConnectionConfigValueInt32( ```uint32_t``` connection_handle, ```NetworkingConfigValue``` config, ```int32``` value )"
+!!! function "setConnectionConfigValueInt32( `uint32_t` connection_handle, `NetworkingConfigValue` config, `int32` value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The connection to set configuration values for. |
@@ -313,7 +313,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### setConnectionConfigValueString
 
-!!! function "setConnectionConfigValueString( ```uint32_t``` connection_handle, ```NetworkingConfigValue``` config, ```string``` value )"
+!!! function "setConnectionConfigValueString( `uint32_t` connection_handle, `NetworkingConfigValue` config, `string` value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The connection to set configuration values for. |
@@ -329,7 +329,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### setGlobalConfigValueFloat
 
-!!! function "setGlobalConfigValueFloat( ```NetworkingConfigValue``` config, ```float``` value )"
+!!! function "setGlobalConfigValueFloat( `NetworkingConfigValue` config, `float` value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | config | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to set. |
@@ -344,7 +344,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### setGlobalConfigValueInt32
 
-!!! function "setGlobalConfigValueInt32( ```NetworkingConfigValue``` config, ```int32``` value )"
+!!! function "setGlobalConfigValueInt32( `NetworkingConfigValue` config, `int32` value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | config | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to set. |
@@ -359,7 +359,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 ### setGlobalConfigValueString
 
-!!! function "setGlobalConfigValueString( ```NetworkingConfigValue``` config, ```string``` value )"
+!!! function "setGlobalConfigValueString( `NetworkingConfigValue` config, `string` value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | config | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to set. |
@@ -415,7 +415,7 @@ NETWORKING_SEND_AUTORESTART_BROKEN_SESSION | k_nSteamNetworkingSend_AutoRestartB
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
 
 ### relay_network_status
 

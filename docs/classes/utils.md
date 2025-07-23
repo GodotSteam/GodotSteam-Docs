@@ -16,7 +16,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### checkFileSignature
 
-!!! function "checkFileSignature( ```string``` filename )"
+!!! function "checkFileSignature( `string` filename )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| filename | string | Name of the file you want to check the signature on. |
@@ -48,7 +48,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### filterText
 
-!!! function "filterText( ```TextFilteringContext``` context, ```uint64_t``` steam_id, ```string``` message )"
+!!! function "filterText( `TextFilteringContext` context, `uint64_t` steam_id, `string` message )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| context | [TextFilteringContext enum](#textfilteringcontext) | The type of content in the input string. |
@@ -109,7 +109,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### getImageRGBA
 
-!!! function "getImageRGBA( ```int``` image_handle )"
+!!! function "getImageRGBA( `int` image_handle )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| image_handle | int | The handle of the image that will be obtained; usually retrieved from an avatar function. |
@@ -133,7 +133,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### getImageSize
 
-!!! function "getImageSize( ```int``` image_handle )"
+!!! function "getImageSize( `int` image_handle )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| image_handle | int | The handle of the image that will be obtained; usually retrieved from an avatar function. |
@@ -179,7 +179,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### getIPv6ConnectivityState
 
-!!! function "getIPv6ConnectivityState( ```IPv6ConnectivityProtocol``` protocol )"
+!!! function "getIPv6ConnectivityState( `IPv6ConnectivityProtocol` protocol )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| protocol | [IPv6ConnectivityProtocol enum](main.md#ipv6connectivityprotocol) | The IPv6 protocol you are getting the state for; typically HTTP or UDP. |
@@ -281,7 +281,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 ### isSteamChinaLauncher
 
 !!! function "isSteamChinaLauncher( )"
-	Returns whether the current launcher is a Steam China launcher. You can cause the client to behave as the Steam China launcher by adding ```-dev -steamchina``` to the command line when running Steam.
+	Returns whether the current launcher is a Steam China launcher. You can cause the client to behave as the Steam China launcher by adding `-dev -steamchina` to the command line when running Steam.
 
 	!!! returns "Returns: bool"
 
@@ -349,7 +349,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### setGameLauncherMode
 
-!!! function "setGameLauncherMode( ```bool``` mode )"
+!!! function "setGameLauncherMode( `bool` mode )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| mode | bool | Whether a launcher is active or not. |
@@ -363,7 +363,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### setOverlayNotificationInset
 
-!!! function "setOverlayNotificationInset( ```int``` horizontal, ```int``` vertical )"
+!!! function "setOverlayNotificationInset( `int` horizontal, `int` vertical )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| horizontal | int | The horizontal (left-right) distance in pixels from the corner. |
@@ -382,7 +382,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### setOverlayNotificationPosition
 
-!!! function "setOverlayNotificationPosition( ```NotificationPosition``` position )"
+!!! function "setOverlayNotificationPosition( `NotificationPosition` position )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| position | [NotificationPosition enum](main.md#notificationposition) | The corner the notification displays from. |
@@ -400,7 +400,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### setVRHeadsetStreamingEnabled
 
-!!! function "setVRHeadsetStreamingEnabled( ```bool``` enabled = true )"
+!!! function "setVRHeadsetStreamingEnabled( `bool` enabled = true )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| enabled | bool | Turns VR HMD Streaming on (true) or off (false); defaults to true. |
@@ -418,7 +418,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### showFloatingGamepadTextInput
 
-!!! function "showFloatingGamepadTextInput( ```FloatingGamepadTextInputMode``` input_mode, ```int``` text_field_x_position, ```int``` text_field_y_position, ```int``` text_field_width, ```int``` text_field_height )"
+!!! function "showFloatingGamepadTextInput( `FloatingGamepadTextInputMode` input_mode, `int` text_field_x_position, `int` text_field_y_position, `int` text_field_width, `int` text_field_height )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| input_mode | [FloatingGamepadTextInputMode enum](#floatinggamepadtextinputmode) | Selects the keyboard type to use. |
@@ -439,7 +439,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 ### showGamepadTextInput
 
-!!! function "showGamepadTextInput( ```GamepadTextInputMode``` input_mode, ```GamepadTextInputLineMode``` line_input_mode, ```string``` description, ```uint32_t``` max_text, ```string``` preset_text )"
+!!! function "showGamepadTextInput( `GamepadTextInputMode` input_mode, `GamepadTextInputLineMode` line_input_mode, `string` description, `uint32_t` max_text, `string` preset_text )"
 	| :material-variable: Argument | Type | Notes |
 	| -------- | ---- | ----- |
 	| input_mode | [GamepadTextInputMode enum](#gamepadtextinputmode) | Selects the input mode to use, either Normal or Password (hidden text). |

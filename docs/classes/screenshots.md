@@ -16,7 +16,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 
 ### addScreenshotToLibrary
 
-!!! function "addScreenshotToLibrary( ```string``` filename, ```string``` thumbnail_filename, ```int``` width, ```int``` height )"
+!!! function "addScreenshotToLibrary( `string` filename, `string` thumbnail_filename, `int` width, `int` height )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | filename | string | The absolute file path to the JPG, PNG, or TGA screenshot. |
@@ -41,7 +41,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 
 ### addVRScreenshotToLibrary
 
-!!! function "addVRScreenshotToLibrary( ```VRScreenshotType``` type, ```string``` filename, ```string``` vr_filename )"
+!!! function "addVRScreenshotToLibrary( `VRScreenshotType` type, `string` filename, `string` vr_filename )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | type | [VRScreenshotType enum](#vrscreenshottype) | The type of VR screenshot that this is. |
@@ -61,7 +61,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 
 ### hookScreenshots
 
-!!! function "hookScreenshots( ```bool``` hook )"
+!!! function "hookScreenshots( `bool` hook )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | hook | bool | Enable (true) or disable (false) hooking? |
@@ -92,7 +92,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 
 ### setLocation
 
-!!! function "setLocation( ```uint32_t``` screenshot, ```string``` location )"
+!!! function "setLocation( `uint32_t` screenshot, `string` location )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | screenshot | uint32_t | The handle to the screenshot to tag. |
@@ -110,7 +110,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 
 ### tagPublishedFile
 
-!!! function "tagPublishedFile( ```uint32_t``` screenshot, ```uint64_t``` file_id )"
+!!! function "tagPublishedFile( `uint32_t` screenshot, `uint64_t` file_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | screenshot | uint32_t | The handle to the screenshot to tag. |
@@ -131,7 +131,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 
 ### tagUser
 
-!!! function "tagUser( ```uint32_t``` screenshot, ```uint64_t``` steam_id )"
+!!! function "tagUser( `uint32_t` screenshot, `uint64_t` steam_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | screenshot | uint32_t | The handle to the screenshot to tag. |
@@ -162,7 +162,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 
 ### writeScreenshot
 
-!!! function "writeScreenshot( ```PoolByteArray``` rgb, ```int``` width, ```int``` height )"
+!!! function "writeScreenshot( `PoolByteArray` rgb, `int` width, `int` height )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | rgb | PoolByteArray | The buffer containing the raw RGB data from the screenshot. |

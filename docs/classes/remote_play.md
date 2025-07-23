@@ -16,7 +16,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### createMouseCursor
 
-!!! function "createMouseCursor( ```int``` width, ```int``` height, ```int``` hot_x, ```int``` hot_y, ```int``` pitch )"
+!!! function "createMouseCursor( `int` width, `int` height, `int` hot_x, `int` hot_y, `int` pitch )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | width | int | The width of the cursor, in pixels. |
@@ -64,7 +64,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### getInput
 
-!!! function "getInput( ```uint32_t``` max_events )"
+!!! function "getInput( `uint32_t` max_events )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | max_events | uint32_t | The maximum number of events to read. |
@@ -79,7 +79,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### getSessionClientFormFactor
 
-!!! function "getSessionClientFormFactor( ```uint32_t``` session_id )"
+!!! function "getSessionClientFormFactor( `uint32_t` session_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session ID to get information about. |
@@ -94,7 +94,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### getSessionClientName
 
-!!! function "getSessionClientName( ```uint32_t``` session_id )"
+!!! function "getSessionClientName( `uint32_t` session_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session ID to get information about. |
@@ -109,7 +109,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### getSessionClientResolution
 
-!!! function "getSessionClientResolution( ```uint32_t``` session_id )"
+!!! function "getSessionClientResolution( `uint32_t` session_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session ID to get information about. |
@@ -141,7 +141,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### getSessionID
 
-!!! function "getSessionID( ```uint32_t``` index )"
+!!! function "getSessionID( `uint32_t` index )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | index | uint32_t | The index of the specified session. |
@@ -156,7 +156,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### getSessionSteamID
 
-!!! function "getSessionSteamID( ```uint32``` session_id )"
+!!! function "getSessionSteamID( `uint32` session_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session ID to get information about. |
@@ -171,7 +171,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### sendRemotePlayTogetherInvite
 
-!!! function "sendRemotePlayTogetherInvite( ```uint64_t``` friend_id )"
+!!! function "sendRemotePlayTogetherInvite( `uint64_t` friend_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the friend you'd like to invite. |
@@ -186,7 +186,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### setMouseCursor
 
-!!! function "setMouseCursor( ```uint32_t``` session_id, ```uint32_t``` cursor_id )"
+!!! function "setMouseCursor( `uint32_t` session_id, `uint32_t` cursor_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session to affect. |
@@ -201,7 +201,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### setMousePosition
 
-!!! function "setMousePosition( ```uint32_t``` session_id, ```float``` normalized_x, ```float``` normalized_y )"
+!!! function "setMousePosition( `uint32_t` session_id, `float` normalized_x, `float` normalized_y )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session to affect. |
@@ -217,7 +217,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 ### setMouseVisibility
 
-!!! function "setMouseVisibility( ```uint32_t``` session_id, ```bool``` visible )"
+!!! function "setMouseVisibility( `uint32_t` session_id, `bool` visible )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session to affect. |

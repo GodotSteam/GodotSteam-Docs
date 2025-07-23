@@ -18,7 +18,7 @@ This is a restricted interface that can only be used by previously approved apps
 
 ### getAppListBuildId
 
-!!! function "getAppListBuildId( ```uint32_t``` app_id )"
+!!! function "getAppListBuildId( `uint32_t` app_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to get data for. |
@@ -33,7 +33,7 @@ This is a restricted interface that can only be used by previously approved apps
 
 ### getAppListInstallDir
 
-!!! function "getAppListInstallDir( ```uint32_t``` app_id, ```int``` name_max )"
+!!! function "getAppListInstallDir( `uint32_t` app_id, `int` name_max )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to get data for. |
@@ -49,7 +49,7 @@ This is a restricted interface that can only be used by previously approved apps
 
 ### getAppName
 
-!!! function "getAppName( ```uint32_t``` app_id, ```int``` name_max )"
+!!! function "getAppName( `uint32_t` app_id, `int` name_max )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to get data for. |
@@ -65,7 +65,7 @@ This is a restricted interface that can only be used by previously approved apps
 
 ### getInstalledApps
 
-!!! function "getInstalledApps( ```uint32_t``` max_app_ids )"
+!!! function "getInstalledApps( `uint32_t` max_app_ids )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | max_app_ids | uint32_t | List of app IDs. |
@@ -94,7 +94,7 @@ This is a restricted interface that can only be used by previously approved apps
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function or enabled them in ``Project Settings`` to receive them.
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function or enabled them in ``Project Settings`` to receive them.
 
 ### app_installed
 

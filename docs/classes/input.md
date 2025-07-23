@@ -16,7 +16,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### activateActionSet
 
-!!! function "activateActionSet( ```uint64_t``` input_handle, ```uint64_t``` action_set_handle )"
+!!! function "activateActionSet( `uint64_t` input_handle, `uint64_t` action_set_handle )"
 	Reconfigure the controller to use the specified action set (i.e. "Menu", "Walk", or "Drive").
 
 	This is cheap, and can be safely called repeatedly. It's often easier to repeatedly call it in your state loops, instead of trying to place it in all of your state transitions.
@@ -28,7 +28,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### activateActionSetLayer
 
-!!! function "activateActionSetLayer( ```uint64_t``` input_handle, ```uint64_t``` action_set_layer_handle )"
+!!! function "activateActionSetLayer( `uint64_t` input_handle, `uint64_t` action_set_layer_handle )"
 	Reconfigure the controller to use the specified action set layer.
 
 	See the [Action Set Layers](https://partner.steamgames.com/doc/features/steam_controller/action_set_layers){ target="_blank" } article for full details and an in-depth practical example.
@@ -40,7 +40,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### deactivateActionSetLayer
 
-!!! function "deactivateActionSetLayer( ```uint64_t``` input_handle, ```uint64_t``` action_set_handle )"
+!!! function "deactivateActionSetLayer( `uint64_t` input_handle, `uint64_t` action_set_handle )"
 	Reconfigure the controller to stop using the specified action set.
 
 	**Returns:** void
@@ -51,7 +51,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### deactivateAllActionSetLayers
 
-!!! function "deactivateAllActionSetLayers( ```uint64_t``` input_handle )"
+!!! function "deactivateAllActionSetLayers( `uint64_t` input_handle )"
 	Reconfigure the controller to stop using all action set layers.
 
 	**Returns:** void
@@ -61,7 +61,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getActiveActionSetLayers
 
-!!! function "getActiveActionSetLayers( ```uint64_t``` input_handle)"
+!!! function "getActiveActionSetLayers( `uint64_t` input_handle)"
 	Fill an array with all of the currently active action set layers for a specified controller handle.
 
 	**Returns:** array
@@ -73,7 +73,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getActionSetHandle
 
-!!! function "getActionSetHandle( ```string``` action_set_name )"
+!!! function "getActionSetHandle( `string` action_set_name )"
 	Fill an array with all of the currently active action set layers for a specified controller handle.
 
 	**Returns:** uint64_t
@@ -83,7 +83,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### getActionOriginFromXboxOrigin
 
-!!! function "getActionOriginFromXboxOrigin( ```uint64_t``` input_handle, ```int``` origin )"
+!!! function "getActionOriginFromXboxOrigin( `uint64_t` input_handle, `int` origin )"
 	Get an action origin that you can use in your glyph look up table or passed into [getGlyphForActionOrigin](#getglyphforactionorigin) or [getStringForActionOrigin](#getstringforactionorigin).
 
 	**Returns:** int
@@ -93,7 +93,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getAnalogActionData
 
-!!! function "getAnalogActionData( ```uint64_t``` input_handle, ```uint64_t``` analog_action_handle )"
+!!! function "getAnalogActionData( `uint64_t` input_handle, `uint64_t` analog_action_handle )"
 	Gets the current state of the supplied analog game action.
 
 	**Returns:** dictionary 
@@ -110,7 +110,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getAnalogActionHandle
 
-!!! function "getAnalogActionHandle( ```string``` action_name )"
+!!! function "getAnalogActionHandle( `string` action_name )"
 	Get the handle of the specified analog action.
 
 	**Returns:** uint64_t
@@ -122,7 +122,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getAnalogActionOrigins
 
-!!! function "getAnalogActionOrigins( ```uint64_t``` input_handle, ```uint64_t``` action_set_handle, ```uint64_t``` analog_action_handle )"
+!!! function "getAnalogActionOrigins( `uint64_t` input_handle, `uint64_t` action_set_handle, `uint64_t` analog_action_handle )"
 	Get the origin(s) for an analog action within an action set by filling the return array with handles. Use this to display the appropriate on-screen prompt for the action.
 
 	**Returns:** array
@@ -146,7 +146,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getControllerForGamepadIndex
 
-!!! function "getControllerForGamepadIndex( ```int``` index )"
+!!! function "getControllerForGamepadIndex( `int` index )"
 	Returns the associated controller handle for the specified emulated gamepad. Can be used with [getInputTypeForHandle](#getinputtypeforhandle) to determine the type of controller using Steam Input Gamepad Emulation.
 
 	**Returns:** uint64_t
@@ -156,7 +156,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### getCurrentActionSet
 
-!!! function "getCurrentActionSet( ```uint64_t``` input_handle )"
+!!! function "getCurrentActionSet( `uint64_t` input_handle )"
 	Get the currently active action set for the specified controller.
 
 	**Returns:** uint64_t
@@ -166,7 +166,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getDeviceBindingRevision
 
-!!! function "getDeviceBindingRevision( ```uint64_t``` input_handle )"
+!!! function "getDeviceBindingRevision( `uint64_t` input_handle )"
 	Get's the major and minor device binding revisions for Steam Input API configurations. Minor revisions are for small changes such as adding a new option action or updating localization in the configuration. When updating a Minor revision only one new configuration needs to be update with the "Use Action Block" flag set. Major revisions are to be used when changing the number of action sets or otherwise reworking configurations to the degree that older configurations are no longer usable. When a user's binding disagree's with the major revision of the current official configuration Steam will forcibly update the user to the new configuration. New configurations will need to be made for every controller when updating the Major revision.
 
 	**Returns:** array
@@ -181,7 +181,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getDigitalActionData
 
-!!! function "getDigitalActionData( ```uint64_t``` input_handle, ```uint64_t``` digital_action_handle )"
+!!! function "getDigitalActionData( `uint64_t` input_handle, `uint64_t` digital_action_handle )"
 	Returns the current state of the supplied digital game action.
 
 	**Returns:** dictionary 
@@ -194,7 +194,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getDigitalActionHandle
 
-!!! function "getDigitalActionHandle( ```string``` action_name )"
+!!! function "getDigitalActionHandle( `string` action_name )"
 	Get the handle of the specified digital action.
 
 	**Returns:** uint64_t
@@ -207,7 +207,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### getDigitalActionOrigins
 
-!!! function "getDigitalActionOrigins( ```uint64_t``` input_handle, ```uint64_t``` action_set_handle, ```uint64_t``` digital_action_handle )"
+!!! function "getDigitalActionOrigins( `uint64_t` input_handle, `uint64_t` action_set_handle, `uint64_t` digital_action_handle )"
 
 	Get the origin(s) for a digital action within an action set by filling return array with input handles. Use this to display the appropriate on-screen prompt for the action.
 
@@ -220,7 +220,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getGamepadIndexForController
 
-!!! function "getGamepadIndexForController( ```uint64_t``` input_handle )"
+!!! function "getGamepadIndexForController( `uint64_t` input_handle )"
 	Returns the associated gamepad index for the specified controller, if emulating a gamepad.
 
 	**Returns:** int
@@ -230,7 +230,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getGlyphForActionOrigin
 
-!!! function "getGlyphForActionOrigin( ```int``` origin )"
+!!! function "getGlyphForActionOrigin( `int` origin )"
 	Get a local path to art for on-screen glyph for a particular origin.
 
 	**Returns:** string.
@@ -240,7 +240,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getInputTypeForHandle
 
-!!! function "getInputTypeForHandle( ```uint64_t``` input_handle )"
+!!! function "getInputTypeForHandle( `uint64_t` input_handle )"
 	Returns the input type (device model) for the specified controller. This tells you if a given controller is a Steam controller, Xbox 360 controller, PS4 controller, etc.
 
 	**Returns:** string.
@@ -252,7 +252,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### getMotionData
 
-!!! function "getMotionData( ```uint64_t``` input_handle )"
+!!! function "getMotionData( `uint64_t` input_handle )"
 	Returns raw motion data for the specified controller.
 
 	**Returns:** dictionary 
@@ -273,7 +273,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### getRemotePlaySessionID
 
-!!! function "getRemotePlaySessionID( ```uint64_t``` input_handle )"
+!!! function "getRemotePlaySessionID( `uint64_t` input_handle )"
 	Get the Steam Remote Play session ID associated with a device, or 0 if there is no session associated with it. See isteamremoteplay.h for more information on Steam Remote Play sessions.
 
 	**Returns:** int
@@ -292,7 +292,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getStringforActionOrigin
 
-!!! function "getStringforActionOrigin( ```int``` origin )"
+!!! function "getStringforActionOrigin( `int` origin )"
 	Returns a localized string (from Steam's language setting) for the specified origin.
 
 	**Returns:** string.
@@ -302,7 +302,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### inputInit
 
-!!! function "inputInit( ```bool``` explicitly_call_runframe )"
+!!! function "inputInit( `bool` explicitly_call_runframe )"
 	[inputInit](#inputinit) and [inputShutdown](#inputshutdown) must be called when starting/ending use of this interface.
 
 	If **explicitly_call_runframe** is called then you will need to manually call [runFrame](#runframe) each frame, otherwise Steam Input will updated when [run_callbacks](main.md#run_callbacks) is called.
@@ -334,7 +334,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### setDualSenseTriggerEffect
 
-!!! function "setDualSenseTriggerEffect( ```uint64_t``` input_handle, ```int``` parameter_index, ```int``` trigger_mask, ```int``` effect_mode, ```int``` position, ```int``` amplitude, ```int``` frequency )"
+!!! function "setDualSenseTriggerEffect( `uint64_t` input_handle, `int` parameter_index, `int` trigger_mask, `int` effect_mode, `int` position, `int` amplitude, `int` frequency )"
 	Set the trigger effect for a DualSense controller.
 
 	**Returns:** void
@@ -345,7 +345,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### setLEDColor
 
-!!! function "setLEDColor( ```uint64_t``` input_handle, ```int``` color_r, ```int``` color_g, ```int``` color_b, ```int``` flags )"
+!!! function "setLEDColor( `uint64_t` input_handle, `int` color_r, `int` color_g, `int` color_b, `int` flags )"
 	Set the controller LED color on supported controllers.
 
 	**Returns:** void
@@ -357,7 +357,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### showBindingPanel
 
-!!! function "showBindingPanel( ```uint64_t``` input_handle )"
+!!! function "showBindingPanel( `uint64_t` input_handle )"
 	Invokes the Steam overlay and brings up the binding screen.
 
 	**Returns:** bool
@@ -367,7 +367,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### stopAnalogActionMomentum
 
-!!! function "stopAnalogActionMomentum( ```uint64_t``` input_handle, ```uint64_t``` action )"
+!!! function "stopAnalogActionMomentum( `uint64_t` input_handle, `uint64_t` action )"
 	Stops the momentum of an analog action (where applicable, ie a touchpad w/ virtual trackball settings).
 
 	**Returns:** void
@@ -379,7 +379,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### translateActionOrigin
 
-!!! function "translateActionOrigin( ```int``` destination_input, ```int``` source_origin )"
+!!! function "translateActionOrigin( `int` destination_input, `int` source_origin )"
 	Get the equivalent origin for a given controller type or the closest controller type that existed in the SDK you built into your game if **destination_input**is 0. This action origin can be used in your glyph look up table or passed into [getGlyphForActionOrigin](#getglyphforactionorigin) or [getStringForActionOrigin](#getstringforactionorigin).
 
 	**Returns:** int
@@ -389,7 +389,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### triggerHapticPulse
 
-!!! function "triggerHapticPulse( ```uint64_t``` input_handle, ```int``` target_pad, ```int``` duration )"
+!!! function "triggerHapticPulse( `uint64_t` input_handle, `int` target_pad, `int` duration )"
 	Triggers a (low-level) haptic pulse on supported controllers.
 
 	Currently only the VSC supports haptic pulses. This API call will be ignored for all other controller models. The typical max value of an unsigned short is 65535, which means the longest haptic pulse you can trigger with this method has a duration of 0.065535 seconds (ie, less than 1/10th of a second). This function should be thought of as a low-level primitive meant to be repeatedly used in higher-level user functions to generate more sophisticated behavior.
@@ -401,7 +401,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
  
 ### triggerRepeatedHapticPulse
 
-!!! function "triggerRepeatedHapticPulse( ```uint64_t``` input_handle, ```int``` target_pad, ```int``` duration, ```int``` offset, ```int``` repeat, ```int``` flags )"
+!!! function "triggerRepeatedHapticPulse( `uint64_t` input_handle, `int` target_pad, `int` duration, `int` offset, `int` repeat, `int` flags )"
 	Triggers a repeated haptic pulse on supported controllers.
 
 	**Returns:** void
@@ -413,7 +413,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### triggerVibration
 
-!!! function "triggerVibration( ```uint64_t``` input_handle, ```uint16_t``` left_speed, ```uint16_t``` right_speed )"
+!!! function "triggerVibration( `uint64_t` input_handle, `uint16_t` left_speed, `uint16_t` right_speed )"
 	Trigger a vibration event on supported controllers.
 
 	**Returns:** void
@@ -425,7 +425,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### triggerVibrationExtended
 
-!!! function "triggerVibrationExtended( ```uint64_t``` input_handle, ```uint16_t``` left_speed, ```uint16_t``` right_speed, ```uint16_t``` left_trigger_speed, ```uint16_t``` right_trigger_speed )"
+!!! function "triggerVibrationExtended( `uint64_t` input_handle, `uint16_t` left_speed, `uint16_t` right_speed, `uint16_t` left_trigger_speed, `uint16_t` right_trigger_speed )"
 	Trigger a vibration event on supported controllers including Xbox trigger impulse rumble - Steam will translate these commands into haptic pulses for Steam Controllers.
 
     ---
@@ -435,7 +435,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
 
 ### input_configuration_loaded
 

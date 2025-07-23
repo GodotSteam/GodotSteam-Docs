@@ -16,7 +16,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### cancelQuery
 
-!!! function "cancelQuery( ```uint64_t``` server_list_request = 0 )"
+!!! function "cancelQuery( `uint64_t` server_list_request = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
@@ -35,7 +35,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### cancelServerQuery
 
-!!! function "cancelServerQuery( ```int``` server_query )"
+!!! function "cancelServerQuery( `int` server_query )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server_query | int | The server query to cancel.
@@ -52,7 +52,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### getServerCount
 
-!!! function "getServerCount( ```uint64_t``` server_list_request = 0 )"
+!!! function "getServerCount( `uint64_t` server_list_request = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
@@ -69,7 +69,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### getServerDetails
 
-!!! function "getServerDetails( ```int``` server, ```uint64_t``` server_list_request = 0 )"
+!!! function "getServerDetails( `int` server, `uint64_t` server_list_request = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server | int | The index of the server to get the details of, from 0 to [getServerCount](#getservercount). |
@@ -104,7 +104,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### isRefreshing
 
-!!! function "isRefreshing( ```uint64_t``` server_list_request = 0 )"
+!!! function "isRefreshing( `uint64_t` server_list_request = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
@@ -121,7 +121,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### pingServer
 
-!!! function "pingServer( ```string``` ip, ```uint16``` port )"
+!!! function "pingServer( `string` ip, `uint16` port )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | ip | string | The IP of the game server you are querying in host order. |
@@ -137,7 +137,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### playerDetails
 
-!!! function "playerDetails( ```string``` ip, ```uint16``` port )"
+!!! function "playerDetails( `string` ip, `uint16` port )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | ip | string | The IP of the game server you are querying in host order. |
@@ -153,7 +153,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### refreshQuery
 
-!!! function "refreshQuery( ```uint64_t``` server_list_request = 0 )"
+!!! function "refreshQuery( `uint64_t` server_list_request = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
@@ -172,7 +172,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### refreshServer
 
-!!! function "refreshServer( ```int``` server, ```uint64_t``` server_list_request = 0 )"
+!!! function "refreshServer( `int` server, `uint64_t` server_list_request = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server | int | The index of the server to get the details of, from 0 to [getServerCount](#getservercount). |
@@ -192,7 +192,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### releaseRequest
 
-!!! function "releaseRequest( ```uint64_t``` server_list_request = 0 )"
+!!! function "releaseRequest( `uint64_t` server_list_request = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The asynchronous server list request object to release. Defaults to 0. |
@@ -209,7 +209,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### requestFavoritesServerList
 
-!!! function "requestFavoritesServerList( ```uint32_t``` app_id, ```array``` filters )"
+!!! function "requestFavoritesServerList( `uint32_t` app_id, `array` filters )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
@@ -227,7 +227,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### requestFriendsServerList
 
-!!! function "requestFriendsServerList( ```uint32_t``` app_id, ```array``` filters )"
+!!! function "requestFriendsServerList( `uint32_t` app_id, `array` filters )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
@@ -245,7 +245,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### requestHistoryServerList
 
-!!! function "requestHistoryServerList( ```uint32_t``` app_id, ```array``` filters )"
+!!! function "requestHistoryServerList( `uint32_t` app_id, `array` filters )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
@@ -263,7 +263,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### requestInternetServerList
 
-!!! function "requestInternetServerList( ```uint32_t``` app_id, ```array``` filters )"
+!!! function "requestInternetServerList( `uint32_t` app_id, `array` filters )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
@@ -284,7 +284,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### requestLANServerList
 
-!!! function "requestLANServerList( ```uint32_t``` app_id )"
+!!! function "requestLANServerList( `uint32_t` app_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
@@ -301,7 +301,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### requestSpectatorServerList
 
-!!! function "requestSpectatorServerList( ```uint32_t``` app_id, ```array``` filters )"
+!!! function "requestSpectatorServerList( `uint32_t` app_id, `array` filters )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
@@ -319,7 +319,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 
 ### serverRules
 
-!!! function "serverRules( ```string``` ip, ```uint16``` port )"
+!!! function "serverRules( `string` ip, `uint16` port )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | ip | string | The IP of the game server you are querying in host order. |
@@ -337,7 +337,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
 
 ### ping_server_failed_to_respond
 

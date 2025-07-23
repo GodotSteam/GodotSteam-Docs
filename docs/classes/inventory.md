@@ -16,7 +16,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### addPromoItem
 
-!!! function "addPromoItem( ```uint32``` item )"
+!!! function "addPromoItem( `uint32` item )"
 	Grant a specific one-time promotional item to the current user.
 
 	This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. This can be useful if your game has custom UI for showing a specific promo item to the user otherwise if you want to grant multiple promotional items then use [addPromoItems](#addpromoitems) or [grantPromoItems](#grantpromoitems).
@@ -32,7 +32,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### addPromoItems
 
-!!! function "addPromoItems( ```PoolIntArray``` items )"
+!!! function "addPromoItems( `PoolIntArray` items )"
 	Grant a specific one-time promotional item to the current user.
 
 	This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. If you want to grant a single promotional item then use [addPromoItems](#addpromoitems). If you want to grant all possible promo items then use [grantPromoItems](#grantpromoitems).
@@ -48,7 +48,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### checkResultSteamID
 
-!!! function "checkResultSteamID( ```uint64_t``` steam_id_expected, ```int32``` this_inventory_handle = 0 )"
+!!! function "checkResultSteamID( `uint64_t` steam_id_expected, `int32` this_inventory_handle = 0 )"
 	Checks whether an inventory result handle belongs to the specified Steam ID.
 	This is important when using [deserializeResult](#deserializeresult), to verify that a remote player is not pretending to have a different user's inventory.
 
@@ -61,7 +61,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### consumeItem
 
-!!! function "consumeItem( ```uint64_t``` item_consume, ```uint32``` quantity )"	
+!!! function "consumeItem( `uint64_t` item_consume, `uint32` quantity )"	
 	Consumes items from a user's inventory. If the quantity of the given item goes to zero, it is permanently removed.
 
 	Once an item is removed it cannot be recovered. This is not for the faint of heart - if your game implements item removal at all, a high-friction UI confirmation process is highly recommended.
@@ -77,7 +77,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### deserializeResult
 
-!!! function "deserializeResult( ```PoolIntArray``` buffer )"
+!!! function "deserializeResult( `PoolIntArray` buffer )"
 	Deserializes a result set and verifies the signature bytes.
 
 	This call has a potential soft-failure mode where the handle status is set to 27. [getResultItems](#getresultitems) will still succeed in this mode. The "expired" result could indicate that the data may be out of date - not just due to timed expiration (one hour), but also because one of the items in the result set may have been traded or consumed since the result set was generated. You could compare the timestamp from [getResultTimestamp](#getresulttimestamp) to [getServerRealTime](utils.md#getserverrealtime) to determine how old the data is. You could simply ignore the "expired" result code and continue as normal, or you could request the player with expired data to send an updated result set.
@@ -93,7 +93,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### destroyResult
 
-!!! function "destroyResult( ```int32``` this_inventory_handle = 0 )"
+!!! function "destroyResult( `int32` this_inventory_handle = 0 )"
 	Destroys a result handle and frees all associated memory.
 
 	**Returns:** void
@@ -105,7 +105,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### exchangeItems
 
-!!! function "exchangeItems( ```PoolIntArray``` output_items, ```PoolIntArray``` output_quantity, ```PoolIntArray``` input_items, ```PoolIntArray``` input_quantity )"
+!!! function "exchangeItems( `PoolIntArray` output_items, `PoolIntArray` output_quantity, `PoolIntArray` input_items, `PoolIntArray` input_quantity )"
 	Grant one item in exchange for a set of other items.
 
 	This can be used to implement crafting recipes or transmutations, or items which unpack themselves into other items (e.g., a chest).
@@ -127,7 +127,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### generateItems
 
-!!! function "generateItems( ```PoolIntArray``` items, ```PoolIntArray``` quantity )"
+!!! function "generateItems( `PoolIntArray` items, `PoolIntArray` quantity )"
 	Grants specific items to the current user, for developers only.
 
 	This API is only intended for prototyping - it is only usable by Steam accounts that belong to the publisher group for your game.
@@ -163,7 +163,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### getItemDefinitionProperty
 
-!!! function "getItemDefinitionProperty( ```uint32``` definition, ```string``` name )"
+!!! function "getItemDefinitionProperty( `uint32` definition, `string` name )"
 	Gets a string property from the specified item definition. Gets a property value for a specific item definition.
 
 	Note that some properties (for example, "name") may be localized and will depend on the current Steam language settings (see [getCurrentGameLanguage</strong>). Property names are always ASCII alphanumeric and underscores.
@@ -184,7 +184,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### getItemsByID
 
-!!! function "getItemsByID( ```PoolIntArray``` id_array )"
+!!! function "getItemsByID( `PoolIntArray` id_array )"
 	Gets the state of a subset of the current user's inventory.
 
 	The subset is specified by an array of item instance IDs.
@@ -202,7 +202,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### getItemPrice
 
-!!! function "getItemPrice( ```uint32``` definition )"
+!!! function "getItemPrice( `uint32` definition )"
 	After a successful call to [requestPrices](#requestprices), you can call this method to get the pricing for a specific item definition.
 
 	**Returns:** dictionary
@@ -237,7 +237,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### getResultItemProperty
 
-!!! function "getResultItemProperty( ```uint32``` index, ```string``` name, ```int32``` this_inventory_handle )"
+!!! function "getResultItemProperty( `uint32` index, `string` name, `int32` this_inventory_handle )"
 	Gets the dynamic properties from an item in an inventory result set.
 
 	Property names are always composed of ASCII letters, numbers, and/or underscores.
@@ -253,7 +253,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### getResultItems
 
-!!! function "getResultItems( ```int32``` this_inventory_handle )"
+!!! function "getResultItems( `int32` this_inventory_handle )"
 	Get the items associated with an inventory result handle.
 
 	**Returns:** array
@@ -276,7 +276,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### getResultStatus
 
-!!! function "getResultStatus( ```int32``` this_inventory_handle )"
+!!! function "getResultStatus( `int32` this_inventory_handle )"
 	Find out the status of an asynchronous inventory result handle.
 	This is a polling equivalent to registering a callback function for [inventory_result_ready](#inventory_result_ready).
 
@@ -289,7 +289,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### getResultTimestamp
 
-!!! function "getResultTimestamp( ```int32``` this_inventory_handle )"
+!!! function "getResultTimestamp( `int32` this_inventory_handle )"
 	Gets the server time at which the result was generated.
 
 	You can compare this value against [getServerRealTime](utils.md#getserverrealtime) to determine the age of the result.
@@ -335,7 +335,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### requestEligiblePromoItemDefinitionsIDs
 
-!!! function "requestEligiblePromoItemDefinitionsIDs( ```uint64_t``` steam_id )"
+!!! function "requestEligiblePromoItemDefinitionsIDs( `uint64_t` steam_id )"
 	Request the list of "eligible" promo items that can be manually granted to the given user.
 
 	These are promo items of type "manual" that won't be granted automatically. An example usage of this is an item that becomes available every week.
@@ -361,7 +361,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### serializeResult
 
-!!! function "serializeResult( ```int32``` this_inventory_handle )"
+!!! function "serializeResult( `int32` this_inventory_handle )"
 	Serialized result sets contain a short signature which can't be forged or replayed across different game sessions.
 
 	A result set can be serialized on the local client, transmitted to other players via your game networking, and deserialized by the remote players. This is a secure way of preventing hackers from lying about posessing rare/high-value items. Serializes a result set with signature bytes to an output buffer. The size of a serialized result depends on the number items which are being serialized. When securely transmitting items to other players, it is recommended to use [getItemsByID](#getitemsbyid) first to create a minimal result set.
@@ -377,7 +377,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### startPurchase
 
-!!! function "startPurchase( ```PoolIntArray``` items, ```PoolIntArray``` quantity )"
+!!! function "startPurchase( `PoolIntArray` items, `PoolIntArray` quantity )"
 	Starts the purchase process for the user, given a "shopping cart" of item definitions that the user would like to buy. The user will be prompted in the Steam Overlay to complete the purchase in their local currency, funding their Steam Wallet if necessary, etc.
 
 	If the purchase process was started successfully, then **order_id** and **transaction_id** will be valid in the [inventory_start_purchase_result](#inventory_start_purchase_result) call result.
@@ -395,7 +395,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### transferItemQuantity
 
-!!! function "transferItemQuantity( ```uint64_t``` item_id, ```uint32``` quantity, ```uint64_t``` item_destination, ```bool``` split )"
+!!! function "transferItemQuantity( `uint64_t` item_id, `uint32` quantity, `uint64_t` item_destination, `bool` split )"
 	Transfer items between stacks within a user's inventory.
 
 	This can be used to stack, split, and moving items. The source and destination items must have the same itemdef id. To move items onto a destination stack specify the source, the quantity to move, and the destination item id. To split an existing stack, pass -1 into **item_destination**. A new item stack will be generated with the requested quantity.
@@ -411,7 +411,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### triggerItemDrop
 
-!!! function "triggerItemDrop( ```uint32``` definition )"
+!!! function "triggerItemDrop( `uint32` definition )"
 	Trigger an item drop if the user has played a long enough period of time.
 
 	This period can be customized in two places:
@@ -455,7 +455,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### removeProperty
 
-!!! function "removeProperty( ```uint64_t``` item_id, ```string``` name, ```int32``` this_inventory_update_handle )"
+!!! function "removeProperty( `uint64_t` item_id, `string` name, `int32` this_inventory_update_handle )"
 	Removes a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item.
 
 	**Returns:** bool
@@ -467,7 +467,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### setPropertyString
 
-!!! function "setPropertyString( ```uint64_t``` item_id, ```string``` name, ```string``` value, ```int32``` this_inventory_update_handle )"
+!!! function "setPropertyString( `uint64_t` item_id, `string` name, `string` value, `int32` this_inventory_update_handle )"
 	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item. Supported value types are strings.
 
 	**Returns:** bool
@@ -479,7 +479,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### setPropertyBool
 
-!!! function "setPropertyBool( ```uint64_t``` item_id, ```string``` name, ```bool``` value, ```int32``` this_inventory_update_handle )"
+!!! function "setPropertyBool( `uint64_t` item_id, `string` name, `bool` value, `int32` this_inventory_update_handle )"
 	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item. Supported value types are boolean.
 
 	**Returns:** bool
@@ -491,7 +491,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### setPropertyInt
 
-!!! function "setPropertyInt( ```uint64_t``` item_id, ```string``` name, ```uint64_t``` value, ```int32``` this_inventory_update_handle )"
+!!! function "setPropertyInt( `uint64_t` item_id, `string` name, `uint64_t` value, `int32` this_inventory_update_handle )"
 	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item. Supported value types are 64 bit integers.
 
 	**Returns:** bool
@@ -503,7 +503,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 ### setPropertyFloat
 
-!!! function "setPropertyFloat( ```uint64_t``` item_id, ```string``` name, ```float``` value, ```int32``` this_inventory_update_handle )"
+!!! function "setPropertyFloat( `uint64_t` item_id, `string` name, `float` value, `int32` this_inventory_update_handle )"
 	Sets a [dynamic property](https://partner.steamgames.com/doc/features/inventory/dynamicproperties){ target="\_blank" } for the given item. Supported value types are 32 bit floats.
 
 	**Returns:** bool
@@ -517,7 +517,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
 
 ### inventory_definition_update
 

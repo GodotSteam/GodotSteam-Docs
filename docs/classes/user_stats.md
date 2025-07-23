@@ -16,7 +16,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### attachLeaderboardUGC
 
-!!! function "attachLeaderboardUGC( ```uint64_t``` ugc_handle, ```uint64_t``` this_leaderboard = 0 )"
+!!! function "attachLeaderboardUGC( `uint64_t` ugc_handle, `uint64_t` this_leaderboard = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | ugc_handle | uint64_t | Handle to a piece of user generated content that was shared using [fileShare.](remote_storage.md#fileshare) |
@@ -42,7 +42,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### clearAchievement
 
-!!! function "clearAchievement( ```string``` achievement_name )"
+!!! function "clearAchievement( `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to reset; uses the name set in the Steamworks back-end. |
@@ -64,7 +64,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### downloadLeaderboardEntries
 
-!!! function "downloadLeaderboardEntries( ```int``` start, ```int``` end, ```LeaderboardDataRequest``` type = LEADERBOARD_DATA_REQUEST_GLOBAL, ```uint64_t``` this_leaderboard = 0 )"
+!!! function "downloadLeaderboardEntries( `int` start, `int` end, `LeaderboardDataRequest` type = LEADERBOARD_DATA_REQUEST_GLOBAL, `uint64_t` this_leaderboard = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | start | int | The index to start downloading entries relative to LeaderboardDataRequest. |
@@ -93,7 +93,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### downloadLeaderboardEntriesForUsers
 
-!!! function "downloadLeaderboardEntriesForUsers( ```array``` users_id, ```uint64_t``` this_leaderboard = 0 )"
+!!! function "downloadLeaderboardEntriesForUsers( `array` users_id, `uint64_t` this_leaderboard = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | users_id | array | An array of Steam IDs to get the leaderboard entries for. |
@@ -119,7 +119,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### findLeaderboard
 
-!!! function "findLeaderboard( ```string``` leaderboard_name )"
+!!! function "findLeaderboard( `string` leaderboard_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | leaderboard_name | string | The name of the leaderboard to find. Must not be longer than LEADERBOARD_NAME_MAX / 128. |
@@ -138,7 +138,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### findOrCreateLeaderboard
 
-!!! function "findOrCreateLeaderboard( ```string``` leaderboard_name, ```LeaderboardSortMethod``` sort_method, ```LeaderboardDisplayType``` display_type )"
+!!! function "findOrCreateLeaderboard( `string` leaderboard_name, `LeaderboardSortMethod` sort_method, `LeaderboardDisplayType` display_type )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | leaderboard_name | string | The name of the leaderboard to find or create. Must not be longer than LEADERBOARD_NAME_MAX / 128. |
@@ -163,7 +163,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getAchievement
 
-!!! function "getAchievement( ```string``` achievement_name )"
+!!! function "getAchievement( `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to obtain the status of; uses the name set in the Steamworks back-end. |
@@ -183,7 +183,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getAchievementAchievedPercent
 
-!!! function "getAchievementAchievedPercent( ```string``` achievement_name )"
+!!! function "getAchievementAchievedPercent( `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to obtain the status of; uses the name set in the Steamworks back-end. |
@@ -205,7 +205,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getAchievementAndUnlockTime
 
-!!! function "getAchievementAndUnlockTime( ```string``` achievement_name )"
+!!! function "getAchievementAndUnlockTime( `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to obtain the status of; uses the name set in the Steamworks back-end. |
@@ -230,7 +230,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getAchievementDisplayAttribute
 
-!!! function "getAchievementDisplayAttribute( ```string``` achievement_name, ```string``` key )"
+!!! function "getAchievementDisplayAttribute( `string` achievement_name, `string` key )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to obtain the attribute of; uses the name set in the Steamworks back-end. |
@@ -257,7 +257,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getAchievementIcon
 
-!!! function "getAchievementIcon( ```string``` achievement_name )"
+!!! function "getAchievementIcon( `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to obtain the icon of; uses the name set in the Steamworks back-end. |
@@ -280,7 +280,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getAchievementName
 
-!!! function "getAchievementName( ```uint32_t``` achievement_index )"
+!!! function "getAchievementName( `uint32_t` achievement_index )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_index | uint32_t | Index of the achievement. |
@@ -298,7 +298,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getAchievementProgressLimitsFloat
 
-!!! function "getAchievementProgressLimitsFloat( ```string``` achievement_name )"
+!!! function "getAchievementProgressLimitsFloat( `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to obtain the progress limits of; uses the name set in the Steamworks back-end. |
@@ -315,7 +315,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getAchievementProgressLimitsInt
 
-!!! function "getAchievementProgressLimitsInt( ```string``` achievement_name )"
+!!! function "getAchievementProgressLimitsInt( `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to obtain the progress limits of; uses the name set in the Steamworks back-end. |
@@ -332,7 +332,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getGlobalStatFloat
 
-!!! function "getGlobalStatFloat( ```string``` stat_name )"
+!!! function "getGlobalStatFloat( `string` stat_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | stat_name | string | The statistic you want to obtain the global value of; uses the name set in the Steamworks back-end. |
@@ -348,7 +348,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getGlobalStatInt
 
-!!! function "getGlobalStatInt( ```string``` stat_name )"
+!!! function "getGlobalStatInt( `string` stat_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | stat_name | string | The statistic you want to obtain the global value of; uses the name set in the Steamworks back-end. |
@@ -364,7 +364,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getGlobalStatFloatHistory
 
-!!! function "getGlobalStatFloatHistory( ```string``` stat_name )"
+!!! function "getGlobalStatFloatHistory( `string` stat_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | stat_name | string | The statistic you want to obtain the global history of; uses the name set in the Steamworks back-end. |
@@ -378,7 +378,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getGlobalStatIntHistory
 
-!!! function "getGlobalStatIntHistory( ```string``` stat_name )"
+!!! function "getGlobalStatIntHistory( `string` stat_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | stat_name | string | The statistic you want to obtain the global history of; uses the name set in the Steamworks back-end. |
@@ -392,7 +392,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getLeaderboardDisplayType
 
-!!! function "getLeaderboardDisplayType( ```uint64_t``` leaderboard_handle = 0 )"
+!!! function "getLeaderboardDisplayType( `uint64_t` leaderboard_handle = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | leaderboard_handle | uint64_t | A leaderboard handle obtained from [findLeaderboard](#findleaderboard) or [findOrCreateLeaderboard](#findorcreateleaderboard). Defaults to 0. |
@@ -422,7 +422,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getLeaderboardEntryCount
 
-!!! function "getLeaderboardEntryCount( ```uint64_t``` this_leaderboard = 0 )"
+!!! function "getLeaderboardEntryCount( `uint64_t` this_leaderboard = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | this_leaderboard | uint64_t | A leaderboard handle obtained from [findLeaderboard](#findleaderboard) or [findOrCreateLeaderboard](#findorcreateleaderboard). Defaults to 0. |
@@ -440,7 +440,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getLeaderboardName
 
-!!! function "getLeaderboardName( ```uint64_t``` this_leaderboard = 0 )"
+!!! function "getLeaderboardName( `uint64_t` this_leaderboard = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | this_leaderboard | uint64_t | A leaderboard handle obtained from [findLeaderboard](#findleaderboard) or [findOrCreateLeaderboard](#findorcreateleaderboard). Defaults to 0. |
@@ -455,7 +455,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getLeaderboardSortMethod
 
-!!! function "getLeaderboardSortMethod( ```uint64_t``` this_leaderboard = 0 )"
+!!! function "getLeaderboardSortMethod( `uint64_t` this_leaderboard = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | this_leaderboard | uint64_t | A leaderboard handle obtained from [findLeaderboard](#findleaderboard) or [findOrCreateLeaderboard](#findorcreateleaderboard). Defaults to 0. |
@@ -491,7 +491,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getNextMostAchievedAchievementInfo
 
-!!! function "getNextMostAchievedAchievementInfo( ```int``` iterator )"
+!!! function "getNextMostAchievedAchievementInfo( `int` iterator )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | iterator | int | The index for getting achievement information. |
@@ -542,7 +542,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getStatFloat
 
-!!! function "getStatFloat( ```string``` stat_name )"
+!!! function "getStatFloat( `string` stat_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | stat_name | string | The statistic you want to obtain the value of; uses the name set in the Steamworks back-end. |
@@ -561,7 +561,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getStatInt
 
-!!! function "getStatInt( ```string``` stat_name )"
+!!! function "getStatInt( `string` stat_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | stat_name | string | The statistic you want to obtain the value of; uses the name set in the Steamworks back-end. |
@@ -580,7 +580,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getUserAchievement
 
-!!! function "getUserAchievement( ```uint64_t``` steam_id, ```string``` achievement_name )"
+!!! function "getUserAchievement( `uint64_t` steam_id, `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user you want to get the achievement for. |
@@ -605,7 +605,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getUserAchievementAndUnlockTime
 
-!!! function "getUserAchievementAndUnlockTime( ```uint64_t``` steam_id, ```string``` achievement_name )"
+!!! function "getUserAchievementAndUnlockTime( `uint64_t` steam_id, `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user you want to get the achievement for. |
@@ -632,7 +632,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getUserStatFloat
 
-!!! function "getUserStatFloat( ```uint64_t``` steam_id, ```string``` stat_name )"
+!!! function "getUserStatFloat( `uint64_t` steam_id, `string` stat_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user you want to get the statistic for. |
@@ -653,7 +653,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getUserStatInt
 
-!!! function "getUserStatInt( ```uint64_t``` steam_id, ```string``` stat_name )"
+!!! function "getUserStatInt( `uint64_t` steam_id, `string` stat_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user you want to get the statistic for. |
@@ -674,7 +674,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### indicateAchievementProgress
 
-!!! function "indicateAchievementProgress( ```string``` achievement_name, ```int``` current_progress, ```int``` max_progress )"
+!!! function "indicateAchievementProgress( `string` achievement_name, `int` current_progress, `int` max_progress )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to show the progress of; uses the name set in the Steamworks back-end. |
@@ -737,7 +737,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### requestGlobalStats
 
-!!! function "requestGlobalStats( ```int``` history_days )"
+!!! function "requestGlobalStats( `int` history_days )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | history_days | int | How many days of day-by-day history to retrieve in addition to the overall totals. The limit is 60. |
@@ -758,7 +758,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### requestUserStats
 
-!!! function "requestUserStats( ```uint64_t``` steam_id )"
+!!! function "requestUserStats( `uint64_t` steam_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user you want to get statistics and achievements for. |
@@ -781,7 +781,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### resetAllStats
 
-!!! function "resetAllStats( ```bool``` achievements_too = true )"
+!!! function "resetAllStats( `bool` achievements_too = true )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievements_too | bool | Whether this will reset the user's achievements also. Defaults to true.
@@ -797,7 +797,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### setAchievement
 
-!!! function "setAchievement( ```string``` achievement_name )"
+!!! function "setAchievement( `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to unlock; uses the name set in the Steamworks back-end. |
@@ -817,7 +817,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### setLeaderboardDetailsMax
 
-!!! function "setLeaderboardDetailsMax( ```int``` max )"
+!!! function "setLeaderboardDetailsMax( `int` max )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | max | int | The maximum number of details to return. |
@@ -836,7 +836,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### setStatFloat
 
-!!! function "setStatFloat( ```string``` stat_name, ```float``` value )"
+!!! function "setStatFloat( `string` stat_name, `float` value )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | stat_name | string | The statistic you want to set the value for; uses the name set in the Steamworks back-end. |
@@ -859,7 +859,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### setStatInt
 
-!!! function "setStatInt( ```string``` name, ```int32``` value )"
+!!! function "setStatInt( `string` name, `int32` value )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | stat_name | string | The statistic you want to set the value for; uses the name set in the Steamworks back-end. |
@@ -891,7 +891,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	If you have stats or achievements that you have saved locally but haven't uploaded with this function when your application process ends then this function will automatically be called.
 
-	You can find additional debug information written to the ```%steam_install%\logs\stats_log.txt``` file.
+	You can find additional debug information written to the `%steam_install%\logs\stats_log.txt` file.
 
 	!!! returns "Returns: bool"
 		Returns true upon success; otherwise, false if the current game does not have stats associated with it in the Steamworks partner backend or those stats are not published.
@@ -905,7 +905,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### updateAvgRateStat
 
-!!! function "updateAvgRateStat( ```string``` stat_name, ```float``` this_session, ```double``` session_length )"
+!!! function "updateAvgRateStat( `string` stat_name, `float` this_session, `double` session_length )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | stat_name | string | The statistic you want to set the value for; uses the name set in the Steamworks back-end. |
@@ -933,7 +933,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### uploadLeaderboardScore
 
-!!! function "uploadLeaderboardScore( ```int32``` score, ```bool``` keep_best = false, ```PackedInt32Array``` details = [], ```uint64_t``` this_leaderboard = 0 )"
+!!! function "uploadLeaderboardScore( `int32` score, `bool` keep_best = false, `PackedInt32Array` details = [], `uint64_t` this_leaderboard = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | score | int32 | Do you want to force the score to change or keep the previous score if it was better? |

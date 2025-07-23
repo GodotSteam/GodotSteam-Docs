@@ -44,7 +44,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileDelete
 
-!!! function "fileDelete( ```string``` file )"
+!!! function "fileDelete( `string` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file that will be deleted. |
@@ -63,7 +63,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileExists
 
-!!! function "fileExists( ```string``` file )"
+!!! function "fileExists( `string` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file. |
@@ -78,7 +78,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileForget
 
-!!! function "fileForget( ```string``` file )"
+!!! function "fileForget( `string` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file that will be forgotten. |
@@ -101,7 +101,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### filePersisted
 
-!!! function "filePersisted( ```string``` file )"
+!!! function "filePersisted( `string` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file. |
@@ -116,7 +116,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileRead
 
-!!! function "fileRead( ```string``` file, ```uint32_t``` data_to_read )"
+!!! function "fileRead( `string` file, `uint32_t` data_to_read )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file to read from. |
@@ -139,7 +139,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileReadAsync
 
-!!! function "fileReadAsync( ```string``` file, ```uint32_t``` offset, ```uint32_t``` data_to_read )"
+!!! function "fileReadAsync( `string` file, `uint32_t` offset, `uint32_t` data_to_read )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file to read from. |
@@ -158,7 +158,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileShare
 
-!!! function "fileShare( ```string``` file )"
+!!! function "fileShare( `string` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file to read from. |
@@ -175,7 +175,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileWrite
 
-!!! function "fileWrite( ```string``` file, ```PoolByteArray``` data, ```int32``` size = 0 )"
+!!! function "fileWrite( `string` file, `PoolByteArray` data, `int32` size = 0 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file to write to. |
@@ -201,7 +201,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileWriteAsync
 
-!!! function "fileWriteAsync( ```string``` file, ```PoolByteArray``` data, ```int32``` size = 0 )"
+!!! function "fileWriteAsync( `string` file, `PoolByteArray` data, `int32` size = 0 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file to write to. |
@@ -228,7 +228,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileWriteStreamCancel
 
-!!! function "fileWriteStreamCancel( ```uint64_t``` write_handle )"
+!!! function "fileWriteStreamCancel( `uint64_t` write_handle )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | write_handle | uint64_t | The file write stream to cancel. |
@@ -244,7 +244,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileWriteStreamClose
 
-!!! function "fileWriteStreamClose( ```uint64_t``` write_handle )"
+!!! function "fileWriteStreamClose( `uint64_t` write_handle )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | write_handle | uint64_t | The file write stream to close. |
@@ -261,7 +261,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileWriteStreamOpen
 
-!!! function "fileWriteStreamOpen( ```string``` file )"
+!!! function "fileWriteStreamOpen( `string` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file to write to. |
@@ -281,7 +281,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileWriteStreamWriteChunk
 
-!!! function "fileWriteStreamWriteChunk( ```uint64_t``` write_handle, ```PoolByteArray``` data )"
+!!! function "fileWriteStreamWriteChunk( `uint64_t` write_handle, `PoolByteArray` data )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | write_handle | uint64_t | The file write stream to write to. |
@@ -311,7 +311,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### getCachedUGCHandle
 
-!!! function "getCachedUGCHandle( ```int32``` content )"
+!!! function "getCachedUGCHandle( `int32` content )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | content | int32 | The cached content to get he handle for. |
@@ -338,7 +338,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### getFileNameAndSize
 
-!!! function "getFileNameAndSize( ```int``` file )"
+!!! function "getFileNameAndSize( `int` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | int | The index of the file, this should be between 0 and [getFileCount](#getfilecount).
@@ -360,7 +360,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### getFileSize
 
-!!! function "getFileSize( ```string``` file )"
+!!! function "getFileSize( `string` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file. |
@@ -375,7 +375,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### getFileTimestamp
 
-!!! function "getFileTimestamp( ```string``` file )"
+!!! function "getFileTimestamp( `string` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file. |
@@ -390,7 +390,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### getLocalFileChange
 
-!!! function "getLocalFileChange( ```int``` file )"
+!!! function "getLocalFileChange( `int` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | int | Zero-based index of the change. |
@@ -450,7 +450,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### getSyncPlatforms
 
-!!! function "getSyncPlatforms( ```string``` file )"
+!!! function "getSyncPlatforms( `string` file )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file. |
@@ -465,7 +465,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### getUGCDetails
 
-!!! function "getUGCDetails( ```uint64_t``` content )"
+!!! function "getUGCDetails( `uint64_t` content )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | content | uint64_t | The UGC content handle. |
@@ -488,7 +488,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### getUGCDownloadProgress
 
-!!! function "getUGCDownloadProgress( ```uint64_t``` content )"
+!!! function "getUGCDownloadProgress( `uint64_t` content )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | content | uint64_t | The UGC content handle. |
@@ -537,7 +537,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### setCloudEnabledForApp
 
-!!! function "setCloudEnabledForApp( ```bool``` enabled )"
+!!! function "setCloudEnabledForApp( `bool` enabled )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | enabled | bool | Enable (true) or disable (false) the Steam Cloud for this application? |
@@ -553,7 +553,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### setSyncPlatforms
 
-!!! function "setSyncPlatforms( ```string``` file, ```RemoteStoragePlatform``` platform )"
+!!! function "setSyncPlatforms( `string` file, `RemoteStoragePlatform` platform )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file. |
@@ -573,7 +573,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### ugcDownload
 
-!!! function "ugcDownload( ```uint64_t``` content, ```uint32_t``` priority )"
+!!! function "ugcDownload( `uint64_t` content, `uint32_t` priority )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | content | uint64_t | The UGC content handle. |
@@ -593,7 +593,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### ugcDownloadToLocation
 
-!!! function "ugcDownloadToLocation( ```uint64_t``` content, ```string``` location, ```uint32_t``` priority )"
+!!! function "ugcDownloadToLocation( `uint64_t` content, `string` location, `uint32_t` priority )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | content | uint64_t | The UGC content handle. |
@@ -612,7 +612,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### ugcRead
 
-!!! function "ugcRead( ```uint64_t``` content, ```int32``` data_size, ```uint32_t``` offset, ```UGCReadAction``` action )"
+!!! function "ugcRead( `uint64_t` content, `int32` data_size, `uint32_t` offset, `UGCReadAction` action )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | content | uint64_t | The UGC content handle. |

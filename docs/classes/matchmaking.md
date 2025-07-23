@@ -16,7 +16,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### addFavoriteGame
 
-!!! function "addFavoriteGame( ```string``` ip, ```uint16``` port, ```uint16``` queryPort, ```uint32_t``` flags, ```uint32_t``` lastPlayed )"
+!!! function "addFavoriteGame( `string` ip, `uint16` port, `uint16` queryPort, `uint32_t` flags, `uint32_t` lastPlayed )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | ip | string | The IP address of the server in host order, i.e 127.0.0.1. |
@@ -35,7 +35,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### addRequestLobbyListDistanceFilter
 
-!!! function "addRequestLobbyListDistanceFilter( ```int``` distance_filter )"
+!!! function "addRequestLobbyListDistanceFilter( `int` distance_filter )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | distance_filter | int | Specifies the maximum distance. |
@@ -52,7 +52,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### addRequestLobbyListFilterSlotsAvailable
 
-!!! function "addRequestLobbyListFilterSlotsAvailable( ```int``` slots_available )"
+!!! function "addRequestLobbyListFilterSlotsAvailable( `int` slots_available )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | slots_available | int | The number of open slots that must be open. |
@@ -67,7 +67,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### addRequestLobbyListNearValueFilter
 
-!!! function "addRequestLobbyListNearValueFilter( ```string``` key_to_match, ```int``` value_to_be_close_to )"
+!!! function "addRequestLobbyListNearValueFilter( `string` key_to_match, `int` value_to_be_close_to )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | key_to_match | string | The filter key name to match. This can not be longer than [MAX_LOBBY_KEY_LENGTH](#constants). |
@@ -85,7 +85,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### addRequestLobbyListNumericalFilter
 
-!!! function "addRequestLobbyListNumericalFilter( ```string``` key_to_match, ```int``` value_to_match, ```int``` comparison_type )"
+!!! function "addRequestLobbyListNumericalFilter( `string` key_to_match, `int` value_to_match, `int` comparison_type )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | key_to_match | string | The filter key name to match. This can not be longer than [MAX_LOBBY_KEY_LENGTH](#constants). |
@@ -102,7 +102,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### addRequestLobbyListResultCountFilter
 
-!!! function "addRequestLobbyListResultCountFilter( ```int``` max_results )"
+!!! function "addRequestLobbyListResultCountFilter( `int` max_results )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | max_results | int | The maximum number of lobbies to return. |
@@ -117,7 +117,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### addRequestLobbyListStringFilter
 
-!!! function "addRequestLobbyListStringFilter( ```string``` key_to_match, ```string``` value_to_match, ```int``` comparison_type )"
+!!! function "addRequestLobbyListStringFilter( `string` key_to_match, `string` value_to_match, `int` comparison_type )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | key_to_match | string | The filter key name to match. This can not be longer than [MAX_LOBBY_KEY_LENGTH](#constants). |
@@ -134,7 +134,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### createLobby
 
-!!! function "createLobby( ```LobbyType``` lobby_type, ```int``` max_members )"
+!!! function "createLobby( `LobbyType` lobby_type, `int` max_members )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | lobby_type | [LobbyType enum](#lobbytype) | The type and visibility of this lobby. This can be changed later via [setLobbyType](#setlobbytype). |
@@ -161,7 +161,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### deleteLobbyData
 
-!!! function "deleteLobbyData( ```uint64_t``` steam_lobby_id, ```string``` key )"
+!!! function "deleteLobbyData( `uint64_t` steam_lobby_id, `string` key )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to delete the metadata for. |
@@ -181,7 +181,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### getAllLobbyData
 
-!!! function "getAllLobbyData( ```uint64_t``` steam_lobby_id )"
+!!! function "getAllLobbyData( `uint64_t` steam_lobby_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to get all metadata for. |
@@ -224,7 +224,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### getLobbyData
 
-!!! function "getLobbyData( ```uint64_t``` steam_lobby_id, ```string``` key )"
+!!! function "getLobbyData( `uint64_t` steam_lobby_id, `string` key )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to get the metadata from. |
@@ -242,7 +242,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### getLobbyGameServer
 
-!!! function "getLobbyGameServer( ```uint64_t``` steam_lobby_id )"
+!!! function "getLobbyGameServer( `uint64_t` steam_lobby_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to get the game server information from. |
@@ -262,7 +262,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### getLobbyMemberByIndex
 
-!!! function "getLobbyMemberByIndex( ```uint64_t``` steam_lobby_id, ```int``` member )"
+!!! function "getLobbyMemberByIndex( `uint64_t` steam_lobby_id, `int` member )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | This **must** be the same lobby used in the previous call to [getNumLobbyMembers](#getnumlobbymembers). |
@@ -279,7 +279,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### getLobbyMemberData
 
-!!! function "getLobbyMemberData( ```uint64_t``` steam_lobby_id, ```uint64_t``` steam_user_id, ```string``` key )"
+!!! function "getLobbyMemberData( `uint64_t` steam_lobby_id, `uint64_t` steam_user_id, `string` key )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby that the other player is in. |
@@ -302,7 +302,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### getLobbyMemberLimit
 
-!!! function "getLobbyMemberLimit( ```uint64_t``` steam_lobby_id )"
+!!! function "getLobbyMemberLimit( `uint64_t` steam_lobby_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to get the member limit of. |
@@ -317,7 +317,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### getLobbyOwner
 
-!!! function "getLobbyOwner( ```uint64_t``` steam_lobby_id )"
+!!! function "getLobbyOwner( `uint64_t` steam_lobby_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to get the owner of. |
@@ -334,7 +334,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### getNumLobbyMembers
 
-!!! function "getNumLobbyMembers( ```uint64_t``` steam_lobby_id )"
+!!! function "getNumLobbyMembers( `uint64_t` steam_lobby_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to get the number of members of. |
@@ -351,7 +351,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### inviteUserToLobby
 
-!!! function "inviteUserToLobby( ```uint64_t``` steam_lobby_id, ```uint64_t``` steam_id_invitee )"
+!!! function "inviteUserToLobby( `uint64_t` steam_lobby_id, `uint64_t` steam_id_invitee )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to invite the user to. |
@@ -375,7 +375,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### joinLobby
 
-!!! function "joinLobby( ```uint64_t``` steam_lobby_id )"
+!!! function "joinLobby( `uint64_t` steam_lobby_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to join. |
@@ -396,7 +396,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### leaveLobby
 
-!!! function "leaveLobby( ```uint64_t``` steam_lobby_id )"
+!!! function "leaveLobby( `uint64_t` steam_lobby_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to leave. |
@@ -414,7 +414,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### removeFavoriteGame
 
-!!! function "removeFavoriteGame( ```uint32_t``` app_id, ```string``` ip, ```uint16``` port, ```uint16``` query_port, ```uint32_t``` flags )"
+!!! function "removeFavoriteGame( `uint32_t` app_id, `string` ip, `uint16` port, `uint16` query_port, `uint32_t` flags )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID of the game. |
@@ -433,7 +433,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### requestLobbyData
 
-!!! function "requestLobbyData( ```uint64_t``` steam_lobby_id )"
+!!! function "requestLobbyData( `uint64_t` steam_lobby_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to refresh the metadata of. |
@@ -480,7 +480,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### sendLobbyChatMsg
 
-!!! function "sendLobbyChatMsg( ```uint64_t``` steam_lobby_id, ```string``` message_body )"
+!!! function "sendLobbyChatMsg( `uint64_t` steam_lobby_id, `string` message_body )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to send the chat message to. |
@@ -508,7 +508,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### setLobbyData
 
-!!! function "setLobbyData( ```uint64_t``` steam_lobby_id, ```string``` key, ```string``` value )"
+!!! function "setLobbyData( `uint64_t` steam_lobby_id, `string` key, `string` value )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to set the metadata for. |
@@ -531,7 +531,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### setLobbyGameServer
 
-!!! function "setLobbyGameServer( ```uint64_t``` steam_lobby_id, ```string``` server_ip, ```uint16``` server_port, ```uint64_t``` steam_id_game_server )"
+!!! function "setLobbyGameServer( `uint64_t` steam_lobby_id, `string` server_ip, `uint16` server_port, `uint64_t` steam_id_game_server )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to set the game server information for. |
@@ -558,7 +558,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### setLobbyJoinable
 
-!!! function "setLobbyJoinable( ```uint64_t``` steam_lobby_id, ```bool``` joinable )"
+!!! function "setLobbyJoinable( `uint64_t` steam_lobby_id, `bool` joinable )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby. |
@@ -578,7 +578,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### setLobbyMemberData
 
-!!! function "setLobbyMemberData( ```uint64_t``` steam_lobby_id, ```string``` key, ```string``` value )"
+!!! function "setLobbyMemberData( `uint64_t` steam_lobby_id, `string` key, `string` value )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to set our metadata in. |
@@ -602,7 +602,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### setLobbyMemberLimit
 
-!!! function "setLobbyMemberLimit( ```uint64_t``` steam_lobby_id, ```int``` max_members )"
+!!! function "setLobbyMemberLimit( `uint64_t` steam_lobby_id, `int` max_members )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to set the member limit for. |
@@ -622,7 +622,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### setLobbyOwner
 
-!!! function "setLobbyOwner( ```uint64_t``` steam_lobby_id, ```uint64_t``` steam_id_new_owner )"
+!!! function "setLobbyOwner( `uint64_t` steam_lobby_id, `uint64_t` steam_id_new_owner )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby where the owner change will take place. |
@@ -647,7 +647,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 
 ### setLobbyType
 
-!!! function "setLobbyType( ```uint64_t``` steam_lobby_id, ```LobbyType``` lobby_type )"
+!!! function "setLobbyType( `uint64_t` steam_lobby_id, `LobbyType` lobby_type )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_lobby_id | uint64_t | The Steam ID of the lobby to set the type of. |
@@ -669,7 +669,7 @@ Functions for clients to access matchmaking services, favorite servers, and to o
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
 
 ### favorites_list_accounts_updated
 

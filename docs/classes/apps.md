@@ -27,7 +27,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### getAppInstallDir
 
-!!! function "getAppInstallDir( ```uint32_t``` app_id )"
+!!! function "getAppInstallDir( `uint32_t` app_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to get the install directory for. |
@@ -155,7 +155,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### getDLCDownloadProgress
 
-!!! function "getDLCDownloadProgress( ```uint32_t``` dlc_id )"
+!!! function "getDLCDownloadProgress( `uint32_t` dlc_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | dlc_id | uint32_t | The App ID of the DLC to monitor. |
@@ -176,7 +176,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### getEarliestPurchaseUnixTime
 
-!!! function "getEarliestPurchaseUnixTime( ```uint32_t``` app_id )"
+!!! function "getEarliestPurchaseUnixTime( `uint32_t` app_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The App ID to get the purchase time for. |
@@ -190,7 +190,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### getFileDetails
 
-!!! function "getFileDetails( ```string``` filename )"
+!!! function "getFileDetails( `string` filename )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | filename | string | The absolute path and name to the file. |
@@ -207,7 +207,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### getInstalledDepots
 
-!!! function "getInstalledDepots( ```uint32_t``` app_id )"
+!!! function "getInstalledDepots( `uint32_t` app_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to list the depots for. |
@@ -223,7 +223,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### getLaunchCommandLine
 
 !!! function "getLaunchCommandLine( )"
-    Gets the command line if the game was launched via Steam URL, e.g. ```steam://run/<appid>//<command line>/```. This method is preferable to launching with a command line via the operating system, which can be a security risk. In order for rich presence joins to go through this and not be placed on the OS command line, you must enable "Use launch command line" from the Installation > General page on your app.
+    Gets the command line if the game was launched via Steam URL, e.g. `steam://run/<appid>//<command line>/`. This method is preferable to launching with a command line via the operating system, which can be a security risk. In order for rich presence joins to go through this and not be placed on the OS command line, you must enable "Use launch command line" from the Installation > General page on your app.
 
     If game was already running and launched again, the [new_launch_url_parameters](#new_launch_url_parameters) callback will be fired.
 
@@ -234,12 +234,12 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### getLaunchQueryParam
 
-!!! function "getLaunchQueryParam( ```string``` key )"
+!!! function "getLaunchQueryParam( `string` key )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The launch key to test for. Ex: param1 |
 
-    Returns the associated launch param if the game is run via ```steam://run/<appid>//?param1=value1&param2=value2&param3=value3``` etc.
+    Returns the associated launch param if the game is run via `steam://run/<appid>//?param1=value1&param2=value2&param3=value3` etc.
 
     Parameter names starting with the character '@' are reserved for internal use and will always return an empty string.  Parameter names starting with an underscore '_' are reserved for Steam features; they can be queried by the game but it is advised that you not use param names beginning with an underscore for your own features.
 
@@ -272,7 +272,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### installDLC
 
-!!! function "installDLC( ```uint32_t``` dlc_id )"
+!!! function "installDLC( `uint32_t` dlc_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | dlc_id | uint32_t | The DLC you want to install. |
@@ -290,7 +290,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### isAppInstalled
 
-!!! function "isAppInstalled( ```uint32_t``` app_id )"
+!!! function "isAppInstalled( `uint32_t` app_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The App ID of the application to check. |
@@ -321,7 +321,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### isDLCInstalled
 
-!!! function "isDLCInstalled( ```uint32_t``` dlc_id )"
+!!! function "isDLCInstalled( `uint32_t` dlc_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | dlc_id | uint32_t | The DLC ID to check. |
@@ -364,7 +364,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### isSubscribedApp
 
-!!! function "isSubscribedApp( ```uint32_t``` app_id )"
+!!! function "isSubscribedApp( `uint32_t` app_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to check. |
@@ -433,7 +433,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### markContentCorrupt
 
-!!! function "markContentCorrupt( ```bool``` missing_files_only )"
+!!! function "markContentCorrupt( `bool` missing_files_only )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | missing_files_only | bool | Only scan for missing files, don't verify the checksum of each file. |
@@ -449,7 +449,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### setActiveBeta
 
-!!! function "setActiveBeta( ```string``` beta_name )"
+!!! function "setActiveBeta( `string` beta_name )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | beta_name | string | Beta name the game wants to switch to. |
@@ -463,7 +463,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### setDLCContext
 
-!!! function "setDLCContext( ```uint32_t``` app_id )"
+!!! function "setDLCContext( `uint32_t` app_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The DLC app ID to track. |
@@ -474,7 +474,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 
 ### uninstallDLC
 
-!!! function "uninstallDLC( ```uint32_t``` dlc_id )"
+!!! function "uninstallDLC( `uint32_t` dlc_id )"
     | Argument | Type | Notes |
     | -------- | ---- | ----- |
     | dlc_id | uint32_t | The DLC you want to uninstall. |
@@ -490,7 +490,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function or enabled them in ``Project Settings`` to receive them.
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function or enabled them in ``Project Settings`` to receive them.
 
 ### dlc_installed
 
@@ -524,7 +524,7 @@ These callbacks require you to run ```Steam.run_callbacks()``` in your ```_proce
 ### new_launch_url_parameters
 
 !!! function "new_launch_url_parameters"
-    Triggered after the user executes a steam url with command line or query parameters such as ```steam://run/(app_id)//?param1=value1;param2=value2;param3=value3;``` while the game is already running. The new params can be queried with [getLaunchCommandLine](#getlaunchcommandline) and [getLaunchQueryParam](#getlaunchqueryparam).
+    Triggered after the user executes a steam url with command line or query parameters such as `steam://run/(app_id)//?param1=value1;param2=value2;param3=value3;` while the game is already running. The new params can be queried with [getLaunchCommandLine](#getlaunchcommandline) and [getLaunchQueryParam](#getlaunchqueryparam).
 
     !!! returns "Returns"
 		 Nothing.

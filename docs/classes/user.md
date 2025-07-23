@@ -16,7 +16,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### advertiseGame
 
-!!! function "advertiseGame( ```string``` server_ip = "", ```uint16``` port = 0 )"
+!!! function "advertiseGame( `string` server_ip = "", `uint16` port = 0 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server_ip | string | The IP of the game server in host order, i.e 127.0.0.1 == 0x7f000001. Defaults to empty string. |
@@ -38,7 +38,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### beginAuthSession
 
-!!! function "beginAuthSession( ```PoolByteArray / PackedByteArray``` auth_ticket, ```int``` ticket_size, ```uint64_t``` steam_id )"
+!!! function "beginAuthSession( `PoolByteArray / PackedByteArray` auth_ticket, `int` ticket_size, `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | auth_ticket | PackedByteArray | The auth ticket to validate. |
@@ -61,7 +61,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### cancelAuthTicket
 
-!!! function "cancelAuthTicket( ```uint32_t``` auth_ticket )"
+!!! function "cancelAuthTicket( `uint32_t` auth_ticket )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | auth_ticket | uint32_t | The active auth ticket to cancel. |
@@ -78,7 +78,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### decompressVoice
 
-!!! function "decompressVoice( ```PoolByteArray / PackedByteArray``` voice, ```uint32_t``` sample_rate, ```uint32_t``` buffer_size_override = 20480 )"
+!!! function "decompressVoice( `PoolByteArray / PackedByteArray` voice, `uint32_t` sample_rate, `uint32_t` buffer_size_override = 20480 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | voice_data | PackedByteArray | 
@@ -107,7 +107,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### endAuthSession
 
-!!! function "endAuthSession( ```uint64_t``` steam_id )"
+!!! function "endAuthSession( `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the entity to end the active auth session with. |
@@ -121,7 +121,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### getAuthSessionTicket
 
-!!! function "getAuthSessionTicket( ```uint64_t``` remote_steam_id = 0 )"
+!!! function "getAuthSessionTicket( `uint64_t` remote_steam_id = 0 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID of the remote system that will authenticate the ticket. Defaults to 0. |
@@ -154,7 +154,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### getAuthTicketForWebApi
 
-!!! function "getAuthTicketForWebApi( ```string``` service_identity = "" )"
+!!! function "getAuthTicketForWebApi( `string` service_identity = "" )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | service_identity | string | The identity of the remote service that will authenticate the ticket. The service should provide a string identifier; pass an empty string if none was provided. Defaults to empty string. |
@@ -223,15 +223,15 @@ Functions for accessing and manipulating Steam user information. This is also wh
 		| buffer | PoolByteArray / PackedByteArray | The encrypted app ticket is copied into this buffer.
 		| size | uint32_t | The size of the ticket buffer; unnecessary.
 
-		!!! info "Notes"
-			If you call this without calling [requestEncryptedAppTicket](#requestencryptedappticket), the call may succeed but you will likely get a stale ticket.
+	!!! info "Notes"
+		If you call this without calling [requestEncryptedAppTicket](#requestencryptedappticket), the call may succeed but you will likely get a stale ticket.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#GetEncryptedAppTicket){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getGameBadgeLevel
 
-!!! function "getGameBadgeLevel( ```int``` series, ```bool``` foil )"
+!!! function "getGameBadgeLevel( `int` series, `bool` foil )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | series | int | If you only have one set of cards, the series will be 1. |
@@ -285,7 +285,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### getVoice
 
-!!! function "getVoice( ```uint32_t``` buffer_size_override = 0 )"
+!!! function "getVoice( `uint32_t` buffer_size_override = 0 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | buffer_size_override | uint32_t | The base buffer size, if it this is 0 then GodotSteam will internally call [getAvailableVoice](#getavailablevoice) to resize the buffer. Defaults to 0. |
@@ -336,7 +336,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### initiateGameConnection
 
-!!! function "initiateGameConnection( ```uint64_t``` server_id, ```uint32_t``` server_ip, ```uint16``` server_port, ```bool``` secure )"
+!!! function "initiateGameConnection( `uint64_t` server_id, `uint32_t` server_ip, `uint16` server_port, `bool` secure )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server_id | uint64_t | The Steam ID of the game server, received from the game server by the client. |
@@ -439,7 +439,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### requestEncryptedAppTicket
 
-!!! function "requestEncryptedAppTicket( ```string``` secret )"
+!!! function "requestEncryptedAppTicket( `string` secret )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | secret | string | The data which will be encrypted into the ticket. |
@@ -462,7 +462,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### requestStoreAuthURL
 
-!!! function "requestStoreAuthURL( ```string``` redirect_url )"
+!!! function "requestStoreAuthURL( `string` redirect_url )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | redirect_url | string | The URL the store check-out page redirects to. |
@@ -486,7 +486,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### setDurationControlOnlineState
 
-!!! function "setDurationControlOnlineState( ```DurationControlOnlineState``` new_state )"
+!!! function "setDurationControlOnlineState( `DurationControlOnlineState` new_state )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | new_state | [DurationControlOnlineState enum](main.md#durationcontrolonlinestate) | The new state for the duration controls. |
@@ -526,7 +526,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### terminateGameConnection
 
-!!! function "terminateGameConnection( ```string``` server_ip, ```uint16``` server_port )"
+!!! function "terminateGameConnection( `string` server_ip, `uint16` server_port )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | server_ip | string | The IP address of the server to disconnect from.
@@ -546,7 +546,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### userHasLicenseForApp
 
-!!! function "userHasLicenseForApp( ```uint64_t``` steam_id, ```uint32_t``` app_id )"
+!!! function "userHasLicenseForApp( `uint64_t` steam_id, `uint32_t` app_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user that sent the auth ticket. |
@@ -625,7 +625,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 ### game_web_callback
 
 !!! function "game_web_callback"
-	Sent to your game in response to a ```steam://gamewebcallback/``` command from a user clicking a link in the Steam overlay browser. You can use this to add support for external site signups where you want to pop back into the browser after some web page signup sequence, and optionally get back some detail about that.
+	Sent to your game in response to a `steam://gamewebcallback/` command from a user clicking a link in the Steam overlay browser. You can use this to add support for external site signups where you want to pop back into the browser after some web page signup sequence, and optionally get back some detail about that.
 
 	!!! returns "Returns"
 		| Key | Type | Notes |

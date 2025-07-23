@@ -16,7 +16,7 @@ Provides functions to interface with the Steam video and broadcasting platforms.
 
 ### getOPFSettings
 
-!!! function "getOPFSettings( ```uint32_t``` app_id )"
+!!! function "getOPFSettings( `uint32_t` app_id )"
     | :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The video app ID to get the OPF details of. |
@@ -35,7 +35,7 @@ Provides functions to interface with the Steam video and broadcasting platforms.
 
 ### getOPFStringForApp
 
-!!! function "getOPFStringForApp( ```uint32_t``` app_id )"
+!!! function "getOPFStringForApp( `uint32_t` app_id )"
     | :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The video app ID to get the OPF string for. |
@@ -53,7 +53,7 @@ Provides functions to interface with the Steam video and broadcasting platforms.
 
 ### getVideoURL
 
-!!! function "getVideoURL( ```uint32_t``` app_id )"
+!!! function "getVideoURL( `uint32_t` app_id )"
     | :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The video app ID to receive the video stream for. |

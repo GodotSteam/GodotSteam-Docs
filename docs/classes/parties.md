@@ -28,7 +28,7 @@ The client side of this operation, seeing and following beacons, can also be man
 
 ### cancelReservation
 
-!!! function "cancelReservation( ```uint64_t``` beacon_id, ```uint64_t``` steam_id )"
+!!! function "cancelReservation( `uint64_t` beacon_id, `uint64_t` steam_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | beacon_id | uint64_t | Beacon ID for the beacon created by your process. |
@@ -39,11 +39,10 @@ The client side of this operation, seeing and following beacons, can also be man
 	**Note:** The user may already be in-flight to your game, so it's possible they will still connect and try to join your party.
 
 	!!! returns "Returns: void"
-		No notes.
 
 ### changeNumOpenSlots
 
-!!! function "changeNumOpenSlots( ```uint64_t``` beacon_id, ```uint32_t``` open_slots )"
+!!! function "changeNumOpenSlots( `uint64_t` beacon_id, `uint32_t` open_slots )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | beacon_id | uint64_t | Beacon ID for the beacon created by your process. |
@@ -54,7 +53,6 @@ The client side of this operation, seeing and following beacons, can also be man
     For example, if you created a beacon with five slots, and Steam sent you two [reservation_notification](#reservation_notification) callbacks, and then a third user joined directly, you would want to call [changeNumOpenSlots](#changenumopenslots) with a value of 2 for open_slots. That value represents the total number of new users that you would like Steam to send to your party.
 
 	!!! returns "Returns: void"
-		No notes.
 
 	!!! trigger "Triggers"
 		[change_num_open_slots](#change_num_open_slots) call result
@@ -64,7 +62,7 @@ The client side of this operation, seeing and following beacons, can also be man
 
 ### createBeacon
 
-!!! function "createBeacon( ```uint32_t``` open_slots, ```uint64_t``` location_id, ```PartyBeaconLocationType``` type, ```string``` connect_string, ```string``` metadata )"
+!!! function "createBeacon( `uint32_t` open_slots, `uint64_t` location_id, `PartyBeaconLocationType` type, `string` connect_string, `string` metadata )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | open_slots | uint32_t | 	Number of reservation slots to create for the beacon. Normally, this is the size of your desired party minus one (for the current user). |
@@ -78,7 +76,6 @@ The client side of this operation, seeing and following beacons, can also be man
 	If users join your party through other matchmaking, adjust the number of remaining open slots using [changeNumOpenSlots](#changenumopenslots).
 
 	!!! returns "Returns: void"
-		No notes.
 
 	!!! trigger "Triggers"
 		[create_beacon](#create_beacon) call result
@@ -88,7 +85,7 @@ The client side of this operation, seeing and following beacons, can also be man
 
 ### destroyBeacon
 
-!!! function "destroyBeacon( ```uint6_t``` beacon_id )"
+!!! function "destroyBeacon( `uint6_t` beacon_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | beacon_id | uint64_t | Beacon ID to be destroyed. |
@@ -96,14 +93,13 @@ The client side of this operation, seeing and following beacons, can also be man
     Call this method to destroy the Steam party beacon. This will immediately cause Steam to stop showing the beacon in the target location. Note that any users currently in-flight may still arrive at your party expecting to join.
 
 	!!! returns "Returns: bool"
-		No notes.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteamparties#DestroyBeacon){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getAvailableBeaconLocations
 
-!!! function "getAvailableBeaconLocations( ```uint32_t``` max_locations )"
+!!! function "getAvailableBeaconLocations( `uint32_t` max_locations )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | max_locations | uint32_t | The maximum number of entries to put into the above list. Should be less than or equal to the result from [getNumAvailableBeaconLocations](#getnumavailablebeaconlocations); higher values will be capped at the returned result. |
@@ -125,7 +121,7 @@ The client side of this operation, seeing and following beacons, can also be man
 
 ### getBeaconByIndex
 
-!!! function "getBeaconByIndex( ```uint32_t``` index )"
+!!! function "getBeaconByIndex( `uint32_t` index )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | index | uint32_t | Index of Beacon. |
@@ -140,7 +136,7 @@ The client side of this operation, seeing and following beacons, can also be man
 
 ### getBeaconDetails
 
-!!! function "getBeaconDetails( ```uint64_t``` beacon_id )"
+!!! function "getBeaconDetails( `uint64_t` beacon_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | beacon_id | uint64_t | Beacon ID to query. |
@@ -163,7 +159,7 @@ The client side of this operation, seeing and following beacons, can also be man
 
 ### getBeaconLocationData
 
-!!! function "getBeaconLocationData( ```uint64_t``` location_id, ```PartyBeaconLocationType``` location_type, ```PartyBeaconLocationData``` location_data )"
+!!! function "getBeaconLocationData( `uint64_t` location_id, `PartyBeaconLocationType` location_type, `PartyBeaconLocationData` location_data )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | location_id | uint64_t | Opaque identifier of this location. This is usually returned by [getAvailableBeaconLocations](#getavailablebeaconlocations). |
@@ -173,7 +169,6 @@ The client side of this operation, seeing and following beacons, can also be man
 	Query general metadata for the given beacon location. For instance the Name, or the URL for an icon if the location type supports icons (for example, the icon for a Steam Chat Room Group).
 	
 	!!! returns "Returns: string"
-		No notes.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteamparties#GetBeaconLocationData){ .md-button .md-button--doc_classes target="_blank" }
@@ -184,7 +179,6 @@ The client side of this operation, seeing and following beacons, can also be man
 	Get the number of active party beacons created by other users for your game, that are visible to the current user.
 
 	!!! returns "Returns: uint32_t"
-		No notes.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteamparties#GetNumActiveBeacons){ .md-button .md-button--doc_classes target="_blank" }
@@ -199,7 +193,7 @@ The client side of this operation, seeing and following beacons, can also be man
 
 ### joinParty
 
-!!! function "joinParty( ```uint64_t``` beacon_id )"
+!!! function "joinParty( `uint64_t` beacon_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | beacon_id | uint64_t | Beacon ID for the party you wish to join. |
@@ -207,7 +201,6 @@ The client side of this operation, seeing and following beacons, can also be man
     When the user indicates they wish to join the party advertised by a given beacon, call this method. On success, Steam will reserve a slot for this user in the party and return the necessary "join game" string to use to complete the connection.
 
 	!!! returns "Returns: void"
-		No notes.
 
 	!!! trigger "Triggers"
 		[join_party](#join_party) call result
@@ -217,7 +210,7 @@ The client side of this operation, seeing and following beacons, can also be man
 
 ### onReservationCompleted
 
-!!! function "onReservationCompleted( ```uint64_t``` beacon_id, ```uint64_t``` steam_id )"
+!!! function "onReservationCompleted( `uint64_t` beacon_id, `uint64_t` steam_id )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
     | beacon_id | uint64_t | Beacon ID for the beacon created by your process. |
@@ -226,7 +219,6 @@ The client side of this operation, seeing and following beacons, can also be man
     When a user follows your beacon, Steam will reserve one of the open party slots for them, and send your game a [reservation_notification](#reservation_notification) callback. When that user joins your party, call [onReservationCompleted](#onreservationcompleted) to notify Steam that the user has joined successfully.
 
 	!!! returns "Returns: void"
-		No notes.
 
 	!!! trigger "Triggers"
 		[reservation_notification](#reservation_notification) callback

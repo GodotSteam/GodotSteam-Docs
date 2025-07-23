@@ -23,7 +23,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### addGameSearchParams
 
-!!! function "addGameSearchParams( ```string``` key, ```string``` value )"
+!!! function "addGameSearchParams( `string` key, `string` value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The key to search for. |
@@ -49,7 +49,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### endGame
 
-!!! function "endGame( ```uint64_t``` game_id )"
+!!! function "endGame( `uint64_t` game_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | game_id | uint64_t | The ID of the game to end. |
@@ -67,7 +67,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### hostConfirmGameStart
 
-!!! function "hostConfirmGameStart( ```uint64_t``` game_id )"
+!!! function "hostConfirmGameStart( `uint64_t` game_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | game_id | uint64_t | The ID of the game to start. |
@@ -78,7 +78,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### requestPlayersForGame
 
-!!! function "requestPlayersForGame( ```int``` player_min, ```int``` player_max, ```int``` max_team_size )"
+!!! function "requestPlayersForGame( `int` player_min, `int` player_max, `int` max_team_size )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | player_min | int | The minimum number of players to request. |
@@ -93,7 +93,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### retrieveConnectionDetails
 
-!!! function "retrieveConnectionDetails( ```uint64_t``` host_id )"
+!!! function "retrieveConnectionDetails( `uint64_t` host_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | host_id | uint64_t | The Steam ID of the host. |
@@ -112,7 +112,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### searchForGameSolo
 
-!!! function "searchForGameSolo( ```int``` player_min, ```int``` player_max)"
+!!! function "searchForGameSolo( `int` player_min, `int` player_max)"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | player_min | int | The minimum number of player slots open. |
@@ -124,7 +124,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### searchForGameWithLobby
 
-!!! function "searchForGameWithLobby( ```uint64_t``` lobby_id, ```int``` player_min, ```int``` player_max)"
+!!! function "searchForGameWithLobby( `uint64_t` lobby_id, `int` player_min, `int` player_max)"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | lobby_id | uint64_t | The ID of the lobby the player is in. |
@@ -137,7 +137,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### setConnectionDetails
 
-!!! function "setConnectionDetails( ```string``` connection_details )"
+!!! function "setConnectionDetails( `string` connection_details )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | connection_details | string | A connection string with connection details, similar to lobby joins. |
@@ -148,7 +148,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### setGameHostParams
 
-!!! function "setGameHostParams( ```string``` key, ```string``` value )"
+!!! function "setGameHostParams( `string` key, `string` value )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The key to set for the game. |
@@ -160,7 +160,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 ### submitPlayerResult
 
-!!! function "submitPlayerResult( ```uint64_t``` game_id, ```uint64_t``` player_id, ```int``` player_result )"
+!!! function "submitPlayerResult( `uint64_t` game_id, `uint64_t` player_id, `int` player_result )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | game_id | uint64_t | The ID For the game session. |
@@ -175,7 +175,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run ```Steam.run_callbacks()``` in your ```_process()``` function to receive them.
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
 
 ### end_game_result
 

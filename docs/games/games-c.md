@@ -185,6 +185,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2326000/Courier_A_Cyberpunk_Adventure/){ target="\_blank" .md-button .md-button--store }
 
+- [![Cozy Crunch](https://steamcdn-a.akamaihd.net/steam/apps/3721660/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3721660/Cozy_Crunch/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3721660/Cozy_Crunch/){ target="\_blank" .md-button .md-button--store }
+
 - [![Crop and Claw](https://steamcdn-a.akamaihd.net/steam/apps/2760970/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2760970/Crop_and_Claw/){ target="\_blank" }
 
 	---
