@@ -171,7 +171,7 @@ Steam.storeStats()
 If you don't call **storeStats()** the achievement pop-up won't trigger but the achievement should be recorded. However, you will still have to call **storeStats()** at some point to upload them. I generally make a generic function to house this process then call it when needed:
 
 ```gdscript
-func set_achievement(thiss_achievement: String) -> void:
+func set_achievement(this_achievement: String) -> void:
 	if not achievements.has(this_achievement):
 		print("This achievement does not exist locally: %s" % this_achievement)
 		return
