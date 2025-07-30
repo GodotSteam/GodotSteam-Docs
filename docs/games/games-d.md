@@ -51,7 +51,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3002650/Death_by_Deduction/){ target="\_blank" .md-button .md-button--store }
 
-- [![Delve](https://steamcdn-a.akamaihd.net/steam/apps/486390/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/486390/Death_by_Deduction/){ target="\_blank" }
+- [![Delve](https://steamcdn-a.akamaihd.net/steam/apps/486390/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/486390/Delve/){ target="\_blank" }
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/486390/Delve/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-itch-io: ](https://salmonmoose.itch.io/delve){ target="\_blank" .md-button .md-button--store }
