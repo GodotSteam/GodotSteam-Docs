@@ -149,11 +149,11 @@ func load_steam_achievements() -> void:
 		# The set_achievement function is below in the Setting Achievements section
 		if not this_achievement['ret']:
 			print("Steam does not have this achievement, defaulting to local value: achieve%s" % this_achievement)
-			break
+			continue
 
 		if achievements[this_achievement] == steam_achievement['achieved']:
 			print("Steam achievements match local file, skipping: %s" % this_achievement)
-			break
+			continue
 
 		set_achievement(this_achievement)
 
@@ -174,7 +174,7 @@ Steam.storeStats()
 If you don't call **storeStats()** the achievement pop-up won't trigger but the achievement should be recorded. However, you will still have to call **storeStats()** at some point to upload them. I generally make a generic function to house this process then call it when needed:
 
 ```gdscript
-func set_achievement(thiss_achievement: String) -> void:
+func set_achievement(this_achievement: String) -> void:
 	if not achievements.has(this_achievement):
 		print("This achievement does not exist locally: %s" % this_achievement)
 		return
@@ -225,6 +225,10 @@ func set_statistic(this_stat: String, new_value: int = 0) -> void:
 ```
 
 When that last **storeStats()** is called the stats will update on Steam's servers.
+
+### Careful With
+
+If your stat is configured as "increment only", setting the value to a new and lower value will cause you to get a **false** response when setting.
 
 {==
 ## :material-content-save-settings: Additional Resources

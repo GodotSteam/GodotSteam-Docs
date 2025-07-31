@@ -115,6 +115,9 @@ Steam.uploadLeaderboardScore( score, keep_best, details, handle )
 
 The first argument is, obviously, the score. The second is if you want the score to update regardless of whether it is better than the current score for the user. The third are details which must be integers; they essentially can be anything but [here is what Valve says about it.](https://partner.steamgames.com/doc/api/ISteamUserStats#UploadLeaderboardScore){ target="\_blank" }  The fourth is the leaderboard handle we are updating. You do not have to pass the handle though, if you want to use the internally stored one.
 
+!!! info "Notes"
+	If you want the score to be something like milliseconds, as one community member did, you will want to multiply that value by 1000 and submit it as an int.
+
 Once you pass a score to Steam, you should receive a callback from `leaderboard_score_uploaded`. This will trigger our `_on_leaderboard_score_uploaded()` function:
 
 ```gdscript

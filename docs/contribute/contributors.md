@@ -71,9 +71,11 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: marcelofg55
 - :material-code-tags: MartinAppDev
 - :material-code-tags: mashumafi
+- :material-file-document-edit: mcgillij
 - :material-code-tags: MichaelBelousov
 - :material-code-tags: Michael Janeway
 - :material-code-tags: :material-file-document-edit: mikix
+- :material-code-tags: Minositu
 - :material-file-document-edit: mkckr0
 - :material-file-document-edit: mynameiswhm
 - :material-file-document-edit: NathanLion
@@ -88,6 +90,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: raulsntos
 - :material-file-document-edit: rebane2001
 - :material-code-tags: rsomers1998
+- :material-file-document-edit: salmonmoose
 - :material-code-tags: :material-file-document-edit: SapphireMH
 - :material-code-tags: :material-file-document-edit: sepTN
 - :material-code-tags: shuriken1812

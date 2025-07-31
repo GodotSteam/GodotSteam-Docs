@@ -265,6 +265,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3585490/Standard_Procedures/){ target="\_blank" .md-button .md-button--store }
 
+- [![Star Tracer](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3730930/852ae867df881f2af3e63238cc1491c231bd1c1e/header.jpg?t=1753732832){ loading=lazy align=left }](https://store.steampowered.com/app/3730930/Star_Tracer/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3730930/Star_Tracer/){ target="\_blank" .md-button .md-button--store }
+
 - [![Starfly Scouts](https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3740780/2539d1a771d02b40f3a67eec3d128c9347cea043/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3740780/Starfly_Scouts/){ target="\_blank" }
 
 	---

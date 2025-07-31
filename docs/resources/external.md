@@ -72,7 +72,9 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-steam: 'GodotSteamSync' by Radome Studio ](https://github.com/Radome-Studio/GodotSteamSync){ .md-button .md-button--resource target="\_blank" }
 
-[ :simple-steam: 'Godot Multiplayer Voice Chat Template' by Vyntrix ]{https://store-beta.godotengine.org/asset/vyntrix/multiplayer-voice-chat-template}{ .md-button .md-button--resource target="\_blank" }
+[ :simple-steam: 'Godot Multiplayer Voice Chat Template' by Vyntrix ](https://store-beta.godotengine.org/asset/vyntrix/multiplayer-voice-chat-template){ .md-button .md-button--resource target="\_blank" }
+
+[ :simple-steam: 'GodotSteamWrapper' by salmonmoose ](https://github.com/salmonmoose/GodotSteamWrapper){ .md-button .md-button--resource target="\_blank" }
 
 {==
 ## Steam-related Godot Tools
