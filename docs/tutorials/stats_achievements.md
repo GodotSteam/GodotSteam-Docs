@@ -13,7 +13,6 @@ At some point you may want to save statistics to Steam's database and / or use t
 
 ??? guide "Relevant GodotSteam classes and functions"
 	* [User Stats class](../classes/user_stats.md)
-		* [requestCurrentStats()](../classes/user_stats.md#requestcurrentstats)
 		* [getAchievement()](../classes/user_stats.md#getachievement)
 		* [setAchievement()](../classes/user_stats.md#setachievement)
 		* [setStatFloat()](../classes/user_stats.md#setstatfloat)
