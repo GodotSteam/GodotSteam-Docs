@@ -114,7 +114,7 @@ These callbacks require you to [setup one of the three callback methods to recei
     !!! returns "Returns"
         | Key | Type | Notes |
         | --- | ---- | ----- |
-		| result | (int / [BroadcastUploadResult](main.md/#broadcastuploadresult)) | The reason why the broadcast has stopped.
+		| result | [BroadcastUploadResult](main.md/#broadcastuploadresult) | The reason why the broadcast has stopped.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamVideo#BroadcastUploadStop_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -128,7 +128,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
     	| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | app_id | uint32_t | The app ID of the video that we got the details of.
 
 	---
@@ -142,7 +142,7 @@ These callbacks require you to [setup one of the three callback methods to recei
     !!! returns "Returns"
         | Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation. May be [RESULT_INVALID_PARAM](main.md#result) if the app ID provided is not a video app ID or if the user does not own a license for it.
+        | result | [Result enum](main.md#result) | The result of the operation. May be [RESULT_INVALID_PARAM](main.md#result) if the app ID provided is not a video app ID or if the user does not own a license for it.
         | app_id | uint32_t | The App ID provided in the original call to [getVideoURL](#getvideourl).
         | url | string | If the call was successful this contains the URL to the [MPEG-DASH Standard schema](http://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP){ target="\_blank" } formatted xml document which can be used to stream the content.
 

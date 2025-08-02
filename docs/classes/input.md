@@ -88,7 +88,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### enableActionEventCallbacks
 
 !!! function "enableActionEventCallbacks( )"
-	Enable SteamInputActionEvent_t callbacks. Directly calls your callback function for lower latency than standard Steam callbacks. Supports one callback at a time. This is called within either [runFrame](#runframe) or by [run_callbacks](#run_callbacks).
+	Enable SteamInputActionEvent_t callbacks. Directly calls your callback function for lower latency than standard Steam callbacks. Supports one callback at a time. This is called within either [runFrame](#runframe) or by [run_callbacks](main.md#run_callbacks).
 
 	!!! returns "Returns: void"
 
@@ -132,7 +132,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
     Get the equivalent [InputActionOrigin](#inputactionorigin) for a given XBox controller origin this can be chained with [getGlyphForActionOrigin](#getglyphforactionorigin) to provide future proof glyphs for non-Steam Input API action games. This only translates the buttons directly and doesn't take into account any remapping a user has made in their configuration.
 
-	!!! returns "Returns: InputActionOrigin enum"
+	!!! returns "Returns: [InputActionOrigin enum](#inputactionorigin)"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetActionOriginFromXboxOrigin){ .md-button .md-button--store target="_blank" }
@@ -349,18 +349,18 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getGlyphForXboxOrigin
 
-!!! function "getGlyphForXboxOrigin( `XboxOrigin` origin )
+!!! function "getGlyphForXboxOrigin( `XboxOrigin` origin )"
 	Get a local path to art for on-screen glyph for a particular XBox controller origin.
 
 	!!! returns "Returns: string"
 
 ### getGlyphPNGForActionOrigin
 
-!!! function "getGlyphPNGForActionOrigin( `InputActionOrigin` origin, `InputGlyphSize` size, `uint32_t` flags )
+!!! function "getGlyphPNGForActionOrigin( `InputActionOrigin` origin, `InputGlyphSize` size, `uint32_t` flags )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | origin | [InputActionOrigin enum](#inputactionorigin) | 
-    | size | [InputGlyphSize enum](#inputglyphsize) | 
+    | origin | [InputActionOrigin enum](#inputactionorigin) | The button glyph to get.
+    | size | [InputGlyphSize enum](#inputglyphsize) | The size of the glyph.
     | flags | flags | No specifications; may be [InputGlyphStyle enum.](#inputglyphstyle)
 
     Get a local path to a PNG file for the provided origin's glyph.
@@ -369,10 +369,10 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getGlyphSVGForActionOrigin
 
-!!! function "getGlyphSVGForActionOrigin( `InputActionOrigin` origin, `uint32_t` flags )
+!!! function "getGlyphSVGForActionOrigin( `InputActionOrigin` origin, `uint32_t` flags )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | origin | [InputActionOrigin enum](#inputactionorigin) | 
+    | origin | [InputActionOrigin enum](#inputactionorigin) | The button SVG glyph to get.
     | flags | uint32_t | No specifications; may be [InputGlyphStyle enum.](#inputglyphstyle)
 
     Get a local path to a SVG file for the provided origin's glyph.
@@ -390,7 +390,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 	This tells you if a given controller is a Steam controller, Xbox 360 controller, PS4 controller, etc. XBox Series controllers are called XBox One.
 
-	!!! returns "Returns: InputType enum"
+	!!! returns "Returns: [InputType enum](#inputtype)"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetInputTypeForHandle){ .md-button .md-button--store target="_blank" }
@@ -440,9 +440,9 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getSessionInputConfigurationSettings
 
 !!! function "getSessionInputConfigurationSettings( )"
-	Get a bitmask of the Steam Input Configuration types opted in for the current session. Returns InputConfigurationEnableType values.
+	Get a bitmask of the Steam Input Configuration types opted in for the current session.
 
-	!!! returns "Returns: InputConfigurationEnableType enum"
+	!!! returns "Returns: [InputConfigurationEnableType enum](#inputconfigurationenabletype)"
 
 	!!! info "Notes"
         User can override the settings from the Steamworks Partner site so the returned values may not exactly match your default configuration.
@@ -463,7 +463,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getStringForAnalogActionName
 
-!!! function "String getStringForAnalogActionName(uint64_t action_handle);
+!!! function "getStringForAnalogActionName( `uint64_t` action_handle )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | action_handle | uint64_t | The action handle to get the name for.
@@ -474,7 +474,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getStringForDigitalActionName
 
-!!! function "String getStringForDigitalActionName(uint64_t action_handle);
+!!! function "getStringForDigitalActionName( `uint64_t` action_handle )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | action_handle | uint64_t | The action handle to get the name for.
@@ -485,7 +485,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### getStringForXboxOrigin
 
-!!! function "String getStringForXboxOrigin( `XboxOrigin` origin )
+!!! function "String getStringForXboxOrigin( `XboxOrigin` origin )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | origin | [XboxOrigin enum](#xboxorigin) | -
@@ -562,7 +562,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 ### setInputActionManifestFilePath
 
-!!! func "setInputActionManifestFilePath( `string` manifest_path )"
+!!! function "setInputActionManifestFilePath( `string` manifest_path )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | manifest_path | string | The absolute path to the Input Action Manifest.
@@ -634,7 +634,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
     Get the equivalent origin for a given controller type or the closest controller type that existed in the SDK you built into your game if **destination_input**is 0. This action origin can be used in your glyph look up table or passed into [getGlyphForActionOrigin](#getglyphforactionorigin) or [getStringForActionOrigin](#getstringforactionorigin).
 
-	!!! returns "Returns: InputActionOrigin enum"
+	!!! returns "Returns: [InputActionOrigin enum](#inputactionorigin)"
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TranslateActionOrigin){ .md-button .md-button--store target="_blank" }
@@ -684,7 +684,9 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerRepeatedHapticPulse){ .md-button .md-button--store target="_blank" }
 
-void triggerSimpleHapticEvent( `uint64_t` input_handle, `ControllerHapticLocation` haptic_location, `uint8_t` intensity, `string` gain_db, `uint8_t` other_intensity, `string` other_gain_db )
+### triggerSimpleHapticEvent
+
+!!! function "triggerSimpleHapticEvent( `uint64_t` input_handle, `ControllerHapticLocation` haptic_location, `uint8_t` intensity, `string` gain_db, `uint8_t` other_intensity, `string` other_gain_db )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect.
@@ -739,7 +741,7 @@ void triggerSimpleHapticEvent( `uint64_t` input_handle, `ControllerHapticLocatio
 
 ### waitForData
 
-!!! function "waitForData( `bool` wait_forever, `uint32_t` timeout )
+!!! function "waitForData( `bool` wait_forever, `uint32_t` timeout )"
 	Waits on an IPC event from Steam sent when there is new data to be fetched from the data drop. Returns true when data was received before the timeout expires. Useful for games with a dedicated input thread.
 
 	!!! returns "Returns: bool"
@@ -748,7 +750,7 @@ void triggerSimpleHapticEvent( `uint64_t` input_handle, `ControllerHapticLocatio
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### input_configuration_loaded
 
@@ -1313,12 +1315,16 @@ INPUT_GLYPH_STYLE_SOLID_ABXY | ESteamInputGlyphStyle_SolidABXY | 0x20 | Modifier
 ### InputLEDFlag
 These values are passed into SetLEDColor.
 
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 INPUT_LED_FLAG_SET_COLOR | k_ESteamInputLEDFlag_SetColor | 0 | -
 INPUT_LED_FLAG_RESTORE_USER_DEFAULT | k_ESteamInputLEDFlag_RestoreUserDefault | 1 | Restore the LED color to the user's preference setting as set in the controller personalization menu. This also happens automatically on exit of your game.
 
 ### InputSourceMode
 The virtual input mode imposed by the configurator upon a controller source. For instance, the configurator can make an analog joystick behave like a Dpad with four digital inputs; the EControllerSource would be k_EInputSource_Joystick and the InputSourceMode would be INPUT_SOURCE_MODE_DPAD. The mode also changes the input data received by any associated actions.
 
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 INPUT_SOURCE_MODE_NONE | k_EInputSourceMode_None | 0 | No input mode.
 INPUT_SOURCE_MODE_DPAD | k_EInputSourceMode_Dpad | 1 | A digital pad: four digital directional buttons fused together in a cross pattern, such that only one button from each axis can be pressed at any given time.
 INPUT_SOURCE_MODE_BUTTONS | k_EInputSourceMode_Buttons | 2 | -
@@ -1373,6 +1379,9 @@ PAD_TRIGGER_EFFECT_MODE_SLOPE_FEEDBACK | SCE_PAD_TRIGGER_EFFECT_MODE_SLOPE_FEEDB
 PAD_TRIGGER_EFFECT_MODE_MULTIPLE_POSITION_VIBRATION | SCE_PAD_TRIGGER_EFFECT_MODE_MULTIPLE_POSITION_VIBRATION | 6 | -
 
 ### XboxOrigin
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 XBOX_ORIGIN_A | k_EXboxOrigin_A | 0 | -
 XBOX_ORIGIN_B | k_EXboxOrigin_B | 1 | -
 XBOX_ORIGIN_X | k_EXboxOrigin_X | 2 | -

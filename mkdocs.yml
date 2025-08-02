@@ -82,6 +82,7 @@ nav:
       - Remote Play: 'classes/remote_play.md'
       - Remote Storage: 'classes/remote_storage.md'
       - Screenshots: 'classes/screenshots.md'
+      - SteamPacketPeer: 'classes/steam_packet_peer.md'
       - Timeline: 'classes/timeline.md'
       - UGC: 'classes/ugc.md'
       - User: 'classes/user.md'

@@ -279,7 +279,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * The request has already been sent.
 
     !!! trigger "Triggers"
-        * [http_request_completed](#http_request_completed)
+        [http_request_completed](#http_request_completed) callback
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SendHTTPRequest){ .md-button .md-button--store target="_blank" }
@@ -527,7 +527,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### http_request_completed
 
@@ -555,8 +555,7 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
         | Key | Type | Notes |
         | --- | ---- | ----- |
     	| request_handle | uint32_t | Handle value for the request that has received data.
-        | context_value | uint64_t | Context value that the user defined on the request that this callback is associated with, 0 if
-no context value was set.
+        | context_value | uint64_t | Context value that the user defined on the request that this callback is associated with, 0 if no context value was set.
         | offset | uint32_t | Offset to provide to [getHTTPStreamingResponseBodyData](#gethttpstreamingresponsebodydata) to get this chunk of data.
         | bytes_received | uint32_t | Size in bytes to provide to [getHTTPStreamingResponseBodyData](#gethttpstreamingresponsebodydata) to get this chunk of data.
 

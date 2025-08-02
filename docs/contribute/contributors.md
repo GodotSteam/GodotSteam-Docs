@@ -53,6 +53,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: IlyaStuurFedorov
 - :material-code-tags: ismailgamedev
 - :material-code-tags: jacobcoughenour
+- :material-file-document-edit: jasperbel
 - :material-code-tags: JDare
 - :material-code-tags: jeremybeier
 - :material-file-document-edit: JimmyJohn1026

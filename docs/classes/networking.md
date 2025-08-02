@@ -111,7 +111,7 @@ Networking functions for making connections and sending data between clients, tr
         | --- | ---- | ----- |
 		| connection_active | bool | Do we have an active open connection with the user (true) or not (false)?
 		| connecting | bool | Are we currently trying to establish a connection with the user (true) or not (false)?
-		| session_error | uint8 | Last error recorded on the socket. This returns a [P2PSessionError enum](#p2psessionerror).
+		| session_error | [P2PSessionError enum](#p2psessionerror) | Last error recorded on the socket.
 		| using_relay | bool | Is this connection going through a Steam relay server (true) or not (false)?
 		| bytes_queued_for_send | int32 | The number of bytes queued up to be sent to the user.
 		| packets_queued_for_send | int32 | The number of packets queued up to be sent to the user.
@@ -183,7 +183,7 @@ Networking functions for making connections and sending data between clients, tr
 		* There are too many bytes queued up to be sent.
 
 	!!! trigger "Triggers"
-		* [p2p_session_request](#p2p_session_request) callback
+		[p2p_session_request](#p2p_session_request) callback
 
 	!!! info "Notes"
 		Returning true does not mean successfully received, if we can't get through to the user after a timeout of 20 seconds, then an error will be posted via the [p2p_session_connect_fail](#p2p_session_connect_fail) callback.
@@ -195,7 +195,7 @@ Networking functions for making connections and sending data between clients, tr
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### p2p_session_connect_fail
 
@@ -245,7 +245,7 @@ P2P_SESSION_ERROR_NONE | k_EP2PSessionErrorNone | 0 | There was no error.
 P2P_SESSION_ERROR_NOT_RUNNING_APP | k_EP2PSessionErrorNotRunningApp_DELETED | 1 | The target user is not running the same game.
 P2P_SESSION_ERROR_NO_RIGHTS_TO_APP | k_EP2PSessionErrorNoRightsToApp | 2 | The local user doesn't own the app that is running.
 P2P_SESSION_ERROR_DESTINATION_NOT_LOGGED_ON | k_EP2PSessionErrorDestinationNotLoggedIn_DELETED | 3 | Target user isn't connected to Steam.
-P2P_SESSION_ERROR_TIMEOUT | k_EP2PSessionErrorTimeout | 4 | The connection timed out because the target user didn't respond, perhaps they aren't calling [acceptP2PSessionWithUser](#acceptP2PSessionWithUser). Corporate firewalls can also block this (NAT traversal is not firewall traversal), make sure that UDP ports 3478, 4379, and 4380 are open in an outbound direction.
+P2P_SESSION_ERROR_TIMEOUT | k_EP2PSessionErrorTimeout | 4 | The connection timed out because the target user didn't respond, perhaps they aren't calling [acceptP2PSessionWithUser](#acceptp2psessionwithuser). Corporate firewalls can also block this (NAT traversal is not firewall traversal), make sure that UDP ports 3478, 4379, and 4380 are open in an outbound direction.
 P2P_SESSION_ERROR_MAX | k_EP2PSessionErrorMax | 5 | Unused.
 
 ### SNetSocketConnectionType

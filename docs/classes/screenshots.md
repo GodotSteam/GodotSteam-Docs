@@ -154,8 +154,8 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
     !!! returns "Returns: void"
 
     !!! trigger "Triggers"
-		[screenshot_ready](#screenshot_ready) callback
-        [screenshot_requested](#screenshot_requested) callback
+		* [screenshot_ready](#screenshot_ready) callback
+        * [screenshot_requested](#screenshot_requested) callback
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamScreenshots#TriggerScreenshot){ .md-button .md-button--doc_classes target="_blank" }
@@ -195,7 +195,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| Key | Type | Notes |
         | --- | ---- | ----- |
     	| handle | uint32_t | The screenshot handle that has been written.
-    	| result | uint32_t / [Result enum](main.md#result) | The result of the operation. Possible values are: [RESULT_OK](main.md#result) if the screenshot was successfully added to the user's library. [RESULT_FAIL](main.md#result) if the screenshot could not be loaded or parsed. [RESULT_OF_FAILURE](main.md#result) if screenshot could not be saved to disk.
+    	| result | [Result enum](main.md#result) | The result of the operation. Possible values are: [RESULT_OK](main.md#result) if the screenshot was successfully added to the user's library. [RESULT_FAIL](main.md#result) if the screenshot could not be loaded or parsed. [RESULT_OF_FAILURE](main.md#result) if screenshot could not be saved to disk.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamScreenshots#ScreenshotReady_t){ .md-button .md-button--doc_classes target="_blank" }

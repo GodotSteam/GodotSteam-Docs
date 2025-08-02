@@ -117,7 +117,7 @@ Functions to control music playback in the Steam client. This gives games the op
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### music_playback_status_has_changed
 

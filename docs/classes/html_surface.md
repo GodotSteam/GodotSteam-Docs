@@ -602,7 +602,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### html_browser_ready
 

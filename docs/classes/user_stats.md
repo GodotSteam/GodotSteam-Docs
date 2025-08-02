@@ -57,7 +57,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 		Returns true upon success if the specific achievement API name exists in the App Admin on the Steamworks website and changes are published; otherwise, false.
 
 	!!! info "Notes"
-		If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#ClearAchievement){ .md-button .md-button--doc_classes target="_blank" }
@@ -166,7 +166,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 !!! function "getAchievement( `string` achievement_name )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
-    | achievement_name | string | The achievement you want to obtain the status of; uses the name set in the Steamworks back-end. |
+    | achievement_name | string | The achievement you want to obtain the status of; uses the name set in the Steamworks back-end.
 
     Gets the unlock status of the Achievement.
 
@@ -305,7 +305,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     For achievements that have related progress stats, use this to query what the bounds of that progress are. You may want this info to selectively call [indicateAchievementProgress](#indicateachievementprogress) when appropriate milestones of progress have been made, to show a progress notification to the user.
 
-	!!! returns "Returns: dictionary
+	!!! returns "Returns: dictionary"
 		Contains the following keys:
 
 		| Key | Type | Notes |
@@ -322,7 +322,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     For achievements that have related progress stats, use this to query what the bounds of that progress are. You may want this info to selectively call [indicateAchievementProgress](#indicateachievementprogress) when appropriate milestones of progress have been made, to show a progress notification to the user.
 
-	!!! returns "Returns: dictionary
+	!!! returns "Returns: dictionary"
 		Contains the following keys:
 
 		| Key | Type | Notes |
@@ -371,7 +371,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     Gets the daily history for an aggregated stat.
 
-	!!! returns "Returns: PackedFloat64Array (4.x) / PoolRealArray (3.x)"
+	!!! returns "Returns: PackedFloat64Array"
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetGlobalStatHistory){ .md-button .md-button--doc_classes target="_blank" }
@@ -385,7 +385,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     Gets the daily history for an aggregated stat.
 
-	!!! returns "Returns: PackedInt64Array (4.x) / PoolIntArray (3.x)"
+	!!! returns "Returns: PackedInt64Array"
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetGlobalStatHistory){ .md-button .md-button--doc_classes target="_blank" }	
@@ -401,7 +401,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	Get the display type of a leaderboard handle.
 
-	!!! returns "Returns: int / [LeaderboardDisplayType enum](#leaderboarddisplaytype)"
+	!!! returns "Returns: [LeaderboardDisplayType enum](#leaderboarddisplaytype)"
 		This will return [LEADERBOARD_DISPLAY_TYPE_NONE / 0](#leaderboarddisplaytype) if the leaderboard handle is invalid.
 
     ---
@@ -464,7 +464,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	Get the sort order of a leaderboard handle. If no thisLeaderboard handle is passed, then the function will use the last stored internal handle.
 
-	!!! returns "Returns: int / [LeaderboardSortMethod enum](#leaderboardsortmethod)"
+	!!! returns "Returns: [LeaderboardSortMethod enum](#leaderboardsortmethod)"
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetLeaderboardSortMethod){ .md-button .md-button--doc_classes target="_blank" }
@@ -481,7 +481,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-		| iterator | int | Returns -1 if[requestGlobalAchievementPercentages](#requestglobalachievementpercentages) has not been called or if there are no global achievement percentages for this app ID. If the call lis successful, it is an iterator which should be used with [getNextMostAchievedAchievementInfo](#getnextmostachievedachievementinfo).
+		| iterator | int | Returns -1 if [requestGlobalAchievementPercentages](#requestglobalachievementpercentages) has not been called or if there are no global achievement percentages for this app ID. If the call lis successful, it is an iterator which should be used with [getNextMostAchievedAchievementInfo](#getnextmostachievedachievementinfo).
 		| name | string | The API name of the achievement.
 		| percent | float | The percentage of people that have unlocked this achievement from 0 to 100.
 		| achieved | bool | Whether the current user has unlocked this achievement.
@@ -505,7 +505,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-		| iterator | int | Returns -1 if[requestGlobalAchievementPercentages](#requestglobalachievementpercentages) has not been called or if there are no global achievement percentages for this app ID. If the call lis successful, it is an iterator which should be used with subsequent calls to this function.
+		| iterator | int | Returns -1 if [requestGlobalAchievementPercentages](#requestglobalachievementpercentages) has not been called or if there are no global achievement percentages for this app ID. If the call lis successful, it is an iterator which should be used with subsequent calls to this function.
 		| name | string | The API name of the achievement.
 		| percent | float | The percentage of people that have unlocked this achievement from 0 to 100.
 		| achieved | bool | Whether the current user has unlocked this achievement.
@@ -554,7 +554,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 	!!! returns "Returns: float"
 
 	!!! info "Notes"
-		If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetStat){ .md-button .md-button--doc_classes target="_blank" }
@@ -572,7 +572,8 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	!!! returns "Returns: int"
 
-	**Notes:** If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+	!!! info "Notes"
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetStat){ .md-button .md-button--doc_classes target="_blank" }
@@ -646,7 +647,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 		Returns the float value upon success; otherwise, it may return 0.0 if the specified stat does not exist in the App Admin on the Steamworks site or the changes are not published.
 
 	!!! info "Notes"
-		If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetUserStat){ .md-button .md-button--doc_classes target="_blank" }
@@ -667,7 +668,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 		Returns the integer value upon success; otherwise, it may return 0 if the specified stat does not exist in the App Admin on the Steamworks site or the changes are not published.
 
 	!!! info "Notes"
-		If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetUserStat){ .md-button .md-button--doc_classes target="_blank" }
@@ -728,7 +729,8 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 	!!! trigger "Triggers"
 		[global_achievement_percentages_ready](#global_achievement_percentages_ready) callback
 
-	!!! info "Notes" If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+	!!! info "Notes"
+	If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
 	This function may not respond with actual data until the game is released on Steam.
 
@@ -751,7 +753,8 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 	!!! trigger "Triggers"
 		[global_stats_received](#global_stats_received) callback
 
-	**Notes:** If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+	!!! info "Notes"
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#RequestGlobalStats){ .md-button .md-button--doc_classes target="_blank" }
@@ -810,7 +813,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 		Returns true upon success; otherwise, false if the specified achievement API name does not exist in the App Admin on the Steamworks site or the changes are not published.
 
 	!!! info "Notes"
-		If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#SetAchievement){ .md-button .md-button--doc_classes target="_blank" }
@@ -852,7 +855,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 		Returns true upon success; otherwise, false if the specified stat does not exist in the App Admin on the Steamworks site or the changes are not published.
 
 	!!! info "Notes"
-		If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#SetStat){ .md-button .md-button--doc_classes target="_blank" }
@@ -875,7 +878,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 		Returns true upon success; otherwise, false if the specified stat does not exist in the App Admin on the Steamworks site or the changes are not published.
 
 	!!! info "Notes"
-		If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#SetStat){ .md-button .md-button--doc_classes target="_blank" }
@@ -926,7 +929,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 		* The stat is not set as AVGRATE in the Setamworks partner backend.
 
 	!!! info "Notes"
-		If using earlier than SDK 1.60, you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
+		If using earlier than SDK 1.60 (GodotSteam 3.26 / 4.9), you must have called [requestCurrentStats](#requestcurrentstats) and it needs to return successfully via its callback prior to calling this!
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#UpdateAvgRateStat){ .md-button .md-button--doc_classes target="_blank" }
@@ -961,7 +964,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
+These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function or enabled them in ``Project Settings`` to receive them.
 
 ### current_stats_received
 

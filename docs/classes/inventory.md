@@ -170,7 +170,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 
 	Any items that can be granted **must** have an exchange attribute in their itemdef. The exchange attribute specifies a set of recipes that are valid exchanges for this item. Exchange recipes are evaluated atomically by the Inventory Service; if the supplied components do not match the recipe, or do not contain sufficient quantity, the exchange will fail.
 
-	Will allow the item to be exchanged for either one #101 and one #102, five #103s or three #104s and three #105s. See the [Steam Inventory Schema](https://partner.steamgames.com/doc/features/inventory/schema){ .md-button .md-button--store target="_blank" } documentation for more details.
+	Will allow the item to be exchanged for either one #101 and one #102, five #103s or three #104s and three #105s. See the [Steam Inventory Schema](https://partner.steamgames.com/doc/features/inventory/schema){ target="\_blank" } documentation for more details.
 
 	!!! returns "Returns: int32"
 		This function returns an inventory handle indicating success; otherwise, it returns 0 when called from SteamGameServer or when **output_quantity** is not set to 1. Exchanges that do not match a recipe, or do not provide the required amounts, will fail.
@@ -458,7 +458,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		This call will always return true.
 
 	!!! trigger "Triggers"
-		* [inventory_definition_update](#inventory_definition_update) callback
+		[inventory_definition_update](#inventory_definition_update) callback
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#LoadItemDefinitions){ .md-button .md-button--store target="_blank" }
@@ -496,7 +496,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 	!!! returns "Returns: void"
 
 	!!! trigger "Triggers"
-		* [inventory_eligible_promo_item](#inventory_eligible_promo_item) callback
+		[inventory_eligible_promo_item](#inventory_eligible_promo_item) callback
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#RequestEligiblePromoItemDefinitionsIDs){ .md-button .md-button--store target="_blank" }
@@ -511,7 +511,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 	!!! returns "Returns: void"
 
 	!!! trigger "Triggers"
-		* [inventory_request_prices_result](#inventory_request_prices_result) callback
+		[inventory_request_prices_result](#inventory_request_prices_result) callback
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#RequestPrices){ .md-button .md-button--store target="_blank" }
@@ -638,7 +638,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 	!!! returns "Returns: void"
 
 	!!! trigger "Triggers"
-		* [inventory_start_purchase_result](#inventory_start_purchase_result) callback
+		[inventory_start_purchase_result](#inventory_start_purchase_result) callback
 
 	!!! info "Notes"
 		You must call [destroyResult](#destroyresult) on the inventory result for when you are done with it.
@@ -737,7 +737,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### inventory_definition_update
 

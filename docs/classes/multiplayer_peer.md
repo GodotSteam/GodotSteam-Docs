@@ -14,17 +14,15 @@ icon: material/account-multiple
 
 ### add_peer
 
-!!! add_peer( `uint64_t` steam_id, `int` virtual_port )
+!!! function "add_peer( `uint64_t` steam_id, `int` virtual_port = 0 )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the player to add as a peer.
-    | virtual_port | int | Specifies how clients can connect to this socket.
+    | virtual_port | int | Expected to be 0; only helpful if you want to have multiple connections between two users. Defaults to 0.
 
     Creates a connection with a new peer.  Runs [connectP2P](networking_sockets.md#connectp2p) under the hood.
 
-    !!! returns "Returns: Error enum"
-		This is the [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" } in Godot's @GlobalScope.
-
+    !!! returns "Returns: [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" }"
 		Returns OK upon success; otherwise, ERR_CANT_CREATE if the underlying P2P connection fails.
 
 ### connect_to_lobby
@@ -40,18 +38,16 @@ icon: material/account-multiple
 
     Finally it connects to the rest of the members of the lobby, calling [add_peer](#add_peer) for each.
 
-	!!! returns "Returns: Error enum"
-		This is the [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" } in Godot's @GlobalScope.
-
+	!!! returns "Returns: [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" }"
 		Returns OK upon success; otherwise, [ERR_ALREADY_IN_USE](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error) if **connection_status** is not [CONNECTION_DISCONNECTED](https://docs.godotengine.org/en/stable/classes/class_multiplayerpeer.html#enum-multiplayerpeer-connectionstatus){ target="\_blank" }.
 
 ### create_client
 
-!!! function "create_client( `uint64_t` steam_id, `int` virtual_port )"
+!!! function "create_client( `uint64_t` steam_id, `int` virtual_port = 0 )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the host we're connecting to.
-    | virtual_port | int | Specifies how clients can connect to this socket.
+    | virtual_port | int | Expected to be 0; only helpful if you want to have multiple connections between two users. Defaults to 0.
 
     On success, this sets **server** to false and **unique_id** to a newly generated unique ID.
 
@@ -61,17 +57,15 @@ icon: material/account-multiple
 
     Finally it sets **set_refuse_new_connections** to false and **connection_status** to CONNECTION_CONNECTING.
 
-	!!! returns "Returns: Error enum"
-		This is the [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" } in Godot's @GlobalScope.
-
+	!!! returns "Returns: [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" }"
 		Returns OK upon success; otherwise, ERR_ALREADY_IN_USE if **connection_status** is not CONNECTION_DISCONNECTED.
 
 ### create_host
 
-!!! function "create_host( `int` virtual_port )"
+!!! function "create_host( `int` virtual_port = 0 )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | virtual_port | int | Specifies how clients can connect to this socket.
+    | virtual_port | int | Expected to be 0; only helpful if you want to have multiple connections between two users. Defaults to 0.
 
 	On success, this sets **server** to true and **unique_id** to 1.
 
@@ -79,9 +73,7 @@ icon: material/account-multiple
 
     Finally it sets **set_refuse_new_connections** to false and **connection_status** to CONNECTION_CONNECTED.
 
-	!!! returns "Returns: Error enum"
-		This is the [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" } in Godot's @GlobalScope.
-
+	!!! returns "Returns: [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" }"
 		Returns OK upon success; otherwise, ERR_ALREADY_IN_USE if **connection_status** is not CONNECTION_DISCONNECTED.
 
 ### get_debug_level
@@ -152,9 +144,7 @@ icon: material/account-multiple
 
     It then calls [create_host](#create_host) and [add_peer](#add_peer) for all lobby members.
 
-	!!! returns "Returns: Error enum"
-		This is the [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" } in Godot's @GlobalScope.
-
+	!!! returns "Returns: [Error enum](https://docs.godotengine.org/en/stable/classes/class_@globalscope.html#enum-globalscope-error){ target="\_blank" }"
 		Returns OK upon success; otherwise, ERR_ALREADY_IN_USE if **connection_status** is not CONNECTION_DISCONNECTED.
 
 ### set_debug_level
@@ -164,7 +154,7 @@ icon: material/account-multiple
     | -------- | ---- | ----- |
     | debug_level | [DebugLevel enum](#debuglevel) | The debug level to set.
 
-    Sets the *debug_level** property internally.
+    Sets the **debug_level** property internally.
 
     !!! returns "Returns: void"
 
@@ -173,7 +163,7 @@ icon: material/account-multiple
 !!! function "set_no_delay( `bool` no_delay )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | no_delay | bool | Whether or not to use [k_nSteamNetworkingSend_NoDelay](networking_utils.md#constants) flag.
+    | no_delay | bool | Whether or not to use [NETWORKING_SEND_NO_DELAY](networking_utils.md#constants) flag.
 
     Sets the **no_delay** property internally.
 
@@ -184,7 +174,7 @@ icon: material/account-multiple
 !!! function "set_no_nagle( `bool` no_nagle )"
 	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | no_nagle | bool | Whether or not to use [k_nSteamNetworkingSend_NoNagle](networking_utils.md#constants) flag.
+    | no_nagle | bool | Whether or not to use [NETWORKING_SEND_NO_NAGLE](networking_utils.md#constants) flag.
 
     Sets the **no_nagle** property internally.
 

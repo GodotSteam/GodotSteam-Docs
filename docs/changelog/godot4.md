@@ -10,9 +10,59 @@ A history of all changes to [the ***godot4*** branch.](https://github.com/GodotS
 
 ## Version 4.16
 
+- Added: missing Friends function `activateGameOverlayRemotePlayTogetherInviteDialog()` and `getNumChatsWithUnreadPriorityMessages()`
 - Added: missing User function `getMarketEligibility()` and related call result `market_eligibility_response`
+- Added: missing UGC functions `setAllowLegacyUpload()`, `removeAllItemKeyValueTags()`
+- Added: missing Networking Sockets function `setConnectionUserData()`
+- Added: missing Networking Utils functions `setDebugOutputFunction()`, `getIPv4FakeIPType()`, `getRealIdentityForFakeIP()`, `setGlobalCallbackSteamNetConnectionStatusChanged()`, `setGlobalCallbackSteamNetAuthenticationStatusChanged()`, `setGlobalCallbackSteamRelayNetworkStatusChanged()`, `setGlobalCallbackFakeIPResult()`, `setGlobalCallbackMessagesSessionRequest()`, `setGlobalCallbackMessagesSessionFailed()`, `iterateGenericEditableConfigValues()`
+- Added: missing Remote Storage call results `published_file_subscribed`, `published_file_unsubscribed`
+- Added: missing Remote Play callback `remote_play_guest_invite`
+- Added: Steam ID constants for game servers
+- Added: some missing constants
+- Added: default values to `getQueryUGCContentDdescriptors()` and `getUserContentDescriptorPreferences()` for **max_entries** as there are only five values currently
+- Added: missing `releaseCurrentThreadMemory()` function
+- Changed: included file ID in returned callback `item_updated`
+- Changed: included next cursor in returned callback `ugc_query_completed`
 - Changed: `MarketNotAllowedReasonFlags` enums corrected to bitwise
-
+- Changed: added missing result response to `steam_server_disconnected` callback
+- Changed: minor swaps from integers to enums where needed
+- Changed: corrected STEAM_PARTY_BEACON_LOCATION_DATA to STEAM_PARTY_BEACON_LOCATION_DATA_INVALID
+- Changed: some argument or variable names for clarity
+- Changed: `advertiseGame()` now has defaults to clear game advertisement is nothing is passed
+- Changed: `connected_clan_chat_message` and `connected_friend_chat_message` to no longer send dictionaries
+- Changed: `getLeaderboardDisplayType()` now returns the direct enum value instead of a dictionary
+- Changed: `getLeaderboardSortMethod()` now returns the direct enum value instead of a dictionary
+- Changed: `getMostAchievedAchievementInfo()` and `getNextMostAchievedAchievementInfo()` first key to iterator from rank to be more clear
+- Changed: `global_achievement_percentages_ready` now returns the enum / int instead of string for result
+- Changed: `global_stats_received` now returns the enum / int instead of string for result
+- Changed: `leaderboard_ugc_set` now returns the enum /int instead of string for result
+- Changed: `getAppInstallDir()` now just returns the string location of the app
+- Changed: `getSyncPlatforms()` now returns the direct enum value instead of a dictionary
+- Changed: `enumerate_following_list` callback to better fit the actual Steam callback
+- Changed: `request_clan_officer_list` callback now returns bool instead of message for success
+- Changed: `retrieveConnectionDetails()` now returns a dictionary instead of the connection details string
+- Changed: **base_prices** to **base_price** in `getItemsWithPrices()`
+- Fixed: added missing "app_ids" hint to `get_app_dependencies_result` callback
+- Fixed: published file ID not being uint64_t in some Remote Storage signals
+- Fixed: various types
+- Fixed: using direct values instead of constants when the names could not be found
+- Fixed: missing store_flag argument for `activateGameOverlayToStore()`
+- Fixed: `downloadClanActivity()` now takes multiple clans are intended
+- Fixed: constant name from LEADERBOARD_DETAIL_MAX to LEADERBOARD_DETAILS_MAX
+- Fixed: `setOverlayNotificationPosition()` not using given argument
+- Fixed: set limit to `requestGlobalStats()`, values over 60 defaults to 60 now
+- Fixed: some incorrect variable names
+- Fixed: `getAchievementProgressLimitsInt()` and `getAchievementProgressLimitsFloat()` using wrong variable name and removing unncessary name key from returned dictionary
+- Fixed: incorrect spelling in enum name
+- Removed: `getClanChatMessage()` as it can only be used in response to `connected_clan_chat_message` which it is called in anyway
+- Removed: `getFriendMessage()` as it can only be used in response to `connected_friend_chat_message` which it is called in anyway
+- Removed: `getAvailableVoice()` as it did nothing useful; was already incorporated into related functions
+- Removed: **branch_size** key from returned dictionary in **getSupportedGameVersionData()** as it was misleading and useless
+- Removed: **sender_user_data** key from returned dictionaries in `receiveMessageOnChannel()`
+- Removed: temporarily removed `setDualSenseTriggerEffect()` until it can be overhauled
+- Removed: **buffer** from returned dictionary in `getConfigValue()` as it was just the size
+- Removed: unnecessary keys in certain Networking Socket functions where messages are received or sent
+- Removed: `createHostedDedicatedServerListenSocket()` as it should only be in the GodotSteam Server version
 
 ## Version 4.15
 

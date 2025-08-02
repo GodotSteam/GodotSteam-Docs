@@ -281,6 +281,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 	Use this to start a game phase. Game phases allow the user to navigate their background recordings and clips. Exactly what a game phase means will vary game to game, but the game phase should be a section of gameplay that is usually between 10 minutes and a few hours in length, and should be the main way a user would think to divide up the game. These are presented to the user in a UI that shows the date the game was played, with one row per game slice. Game phases should be used to mark sections of gameplay that the user might be interested in watching.
 
 	Examples could include:
+
 	* A single match in a multiplayer PvP game
 	* A chapter of a story-based singleplayer game
 	* A single run in a roguelike

@@ -175,7 +175,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileWrite
 
-!!! function "fileWrite( `string` file, `PoolByteArray` data, `int32` size = 0 )"
+!!! function "fileWrite( `string` file, `PackedByteArray` data, `int32` size = 0 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file to write to. |
@@ -201,11 +201,11 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileWriteAsync
 
-!!! function "fileWriteAsync( `string` file, `PoolByteArray` data, `int32` size = 0 )"
+!!! function "fileWriteAsync( `string` file, `PackedByteArray` data, `int32` size = 0 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | file | string | The name of the file to write to. |
-    | data | PoolByteArray | The bytes to write to the file. |
+    | data | PackedByteArray | The bytes to write to the file. |
     | size | int32 | The number of bytes to write to the file. Typically the total size of **data**. Defaults to 0. |
 
     Creates a new file and asynchronously writes the raw byte data to the Steam Cloud, and then closes the file. If the target file already exists, it is overwritten.
@@ -281,11 +281,11 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
 ### fileWriteStreamWriteChunk
 
-!!! function "fileWriteStreamWriteChunk( `uint64_t` write_handle, `PoolByteArray` data )"
+!!! function "fileWriteStreamWriteChunk( `uint64_t` write_handle, `PackedByteArray` data )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | write_handle | uint64_t | The file write stream to write to. |
-    | data | PoolByteArray | The data to write to the stream. |
+    | data | PackedByteArray | The data to write to the stream. |
 
     Writes a blob of data to the file write stream.
 
@@ -353,7 +353,8 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
     	| name | string | The name of the file at the specified index, if it exists. Returns an empty string if the file doesn't exist.
     	| size | int32_t | Returns the file size in bytes.
 
-	!!! info "Notes"  You must call [getFileCount](#getfilecount) first to get the number of files.
+	!!! info "Notes"
+        You must call [getFileCount](#getfilecount) first to get the number of files.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#GetFileNameAndSize){ .md-button .md-button--doc_classes target="_blank" }
@@ -408,7 +409,7 @@ Filenames are case-insensitive, and will be converted to lowercase automatically
 
         | Key | Type | Notes |
         | --- | ---- | ----- |
-    	| file | string | 
+    	| file | string | The name of the file that was changed.
     	| change_type | [LocalFileChange enum](#localfilechange) | What happened to this file.
     	| path_type | [FilePathType enum](#filepathtype) | Type of path to the file returned.
 
@@ -643,7 +644,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-    	| result | int / [Result enum](main.md#result) | The result of the operation.
+    	| result | [Result enum](main.md#result) | The result of the operation.
         | download_data | dictionary | The details of the UGC download.
 
         **download_data** contains the following keys:
@@ -667,8 +668,8 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-    	| handle | uint64_t | Call handle of the async read which was made, must be passed to [fileReadAsyncComplete](#filereadasynccomplete) to get the data.
-    	| result | int / [Result enum](main.md#result) | The result of the operation. If the local read was successful this will be [RESULT_OK](main.md#constants), you can then call [fileReadAsyncComplete](#filereadasynccomplete) to get the data.
+    	| handle | uint64_t | Call handle of the async read which was made.
+    	| result | [Result enum](main.md#result) | The result of the operation. If the local read was successful this will be [RESULT_OK](main.md#constants).
     	| offset | iunt32 | Offset into the file this read was at.
     	| read | uint32 | Amount of bytes read; will be the less than or equal to the amount requested.
     	| complete | bool | Whether or not the file has finished being read.
@@ -684,7 +685,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-    	| result | int / [Result enum](main.md#result) | The result of the operation.
+    	| result | [Result enum](main.md#result) | The result of the operation.
     	| handle | uint64_t | The handle that can be shared with users and features.
     	| name | string | The name of the file that was shared.
 
@@ -699,7 +700,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-    	| result | int / [Result enum](main.md#result) | The result of the operation. If the local write was successful then this will be [RESULT_OK](main.md#result); any other value likely indicates that the filename is invalid or the available quota would have been exceeded by the requested write. Any attempt to write files that exceed this size will return [RESULT_INVALID_PARAM](main.md#result). Writing files to the cloud is limited to 100MiB.
+    	| result | [Result enum](main.md#result) | The result of the operation. If the local write was successful then this will be [RESULT_OK](main.md#result); any other value likely indicates that the filename is invalid or the available quota would have been exceeded by the requested write. Any attempt to write files that exceed this size will return [RESULT_INVALID_PARAM](main.md#result). Writing files to the cloud is limited to 100MiB.
 
     ------
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamRemoteStorage#RemoteStorageFileWriteAsyncComplete_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -754,7 +755,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-    	| result | int / [Result enum](main.md#result) | The result of the operation.
+    	| result | [Result enum](main.md#result) | The result of the operation.
     	| file_id | uint64_t | The workshop item that the user subscribed to.
 
     ------
@@ -768,7 +769,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The workshop item that the user unsubscribed to.
 
     ------
@@ -797,6 +798,22 @@ UGC_HANDLE_INVALID | k_UGCHandleInvalid | 0xffffffffffffffffull | An invalid UGC
 {==
 ## :material-numeric: Enums
 ==}
+
+### FilePathType
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+FILE_PATH_TYPE_INVALID | k_ERemoteStorageFilePathType_Invalid | 0 | -
+FILE_PATH_TYPE_ABSOLUTE | k_ERemoteStorageFilePathType_Absolute | 1 | The file is directly accessed by the game and this is the full path.
+FILE_PATH_TYPE_API_FILENAME | k_ERemoteStorageFilePathType_APIFilename | 2 | The file is accessed via the Remote Storage API and this is the filename.
+
+### LocalFileChange
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+LOCAL_FILE_CHANGE_INVALID | k_ERemoteStorageLocalFileChange_Invalid | 0 | -
+LOCAL_FILE_CHANGE_FILE_UPDATED | k_ERemoteStorageLocalFileChange_FileUpdated | 1 | The file was updated from another device.
+LOCAL_FILE_CHANGE_FILE_DELETED | k_ERemoteStorageLocalFileChange_FileDeleted | 2 | The file was deleted by another device.
 
 ### RemoteStoragePlatform
 
@@ -887,19 +904,3 @@ WORKSHOP_VOTE_UNVOTED | k_EWorkshopVoteUnvoted | 0 | -
 WORKSHOP_VOTE_FOR | k_EWorkshopVoteFor | 1 | -
 WORKSHOP_VOTE_AGAINST | k_EWorkshopVoteAgainst | 2 | -
 WORKSHOP_VOTE_LATER | k_EWorkshopVoteLater | 3 | -
-
-### LocalFileChange
-
-Enumerator | SDK Name | Value | Notes
----------- | -------- | ----- | -----
-LOCAL_FILE_CHANGE_INVALID | k_ERemoteStorageLocalFileChange_Invalid | 0 | -
-LOCAL_FILE_CHANGE_FILE_UPDATED | k_ERemoteStorageLocalFileChange_FileUpdated | 1 | The file was updated from another device.
-LOCAL_FILE_CHANGE_FILE_DELETED | k_ERemoteStorageLocalFileChange_FileDeleted | 2 | The file was deleted by another device.
-
-### FilePathType
-
-Enumerator | SDK Name | Value | Notes
----------- | -------- | ----- | -----
-FILE_PATH_TYPE_INVALID | k_ERemoteStorageFilePathType_Invalid | 0 | -
-FILE_PATH_TYPE_ABSOLUTE | k_ERemoteStorageFilePathType_Absolute | 1 | The file is directly accessed by the game and this is the full path.
-FILE_PATH_TYPE_API_FILENAME | k_ERemoteStorageFilePathType_APIFilename | 2 | The file is accessed via the Remote Storage API and this is the filename.

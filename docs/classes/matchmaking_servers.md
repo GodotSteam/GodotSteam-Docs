@@ -17,7 +17,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### cancelQuery
 
 !!! function "cancelQuery( `uint64_t` server_list_request = 0 )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
 
@@ -28,7 +28,6 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 	You can pass a **server_list_request** handle or, if you do not, it will use the last internally stored one.
 
 	!!! returns "Returns: void"
-		No notes.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#CancelQuery){ .md-button .md-button--doc_classes target="_blank" }
@@ -36,7 +35,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### cancelServerQuery
 
 !!! function "cancelServerQuery( `int` server_query )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server_query | int | The server query to cancel.
 
@@ -45,7 +44,6 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 	The calls that create this type of query are: [pingServer](#pingserver), [playerDetails](#playerdetails), and [serverRules](#serverrules). You should call this to cancel any in-progress requests before destructing a callback object that may have been passed to one of the above calls to avoid crashing when callbacks occur.
 
 	!!! returns "Returns: void"
-		No notes.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#CancelServerQuery){ .md-button .md-button--doc_classes target="_blank" }
@@ -53,7 +51,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### getServerCount
 
 !!! function "getServerCount( `uint64_t` server_list_request = 0 )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
 
@@ -70,7 +68,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### getServerDetails
 
 !!! function "getServerDetails( `int` server, `uint64_t` server_list_request = 0 )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server | int | The index of the server to get the details of, from 0 to [getServerCount](#getservercount). |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
@@ -84,20 +82,22 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 	!!! returns "Returns: dictionary"
 		Contains the following keys:
 
-		* ping (int)
-		* success_response (bool)
-		* no_refresh (bool)
-		* game_dir (string)
-		* map (string)
-		* description (string)
-		* app_id (uint32_t)
-		* players (int)
-		* max_players (int)
-		* bot_players (int)
-		* password (bool)
-		* secure (bool)
-		* last_played (uint32_t)
-		* server_version (int)	
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| ping | int | Current ping time in milliseconds.
+		| success_response | bool | Server has responded successfully in the past.
+		| no_refresh | bool | Server is marked as not responding and should no longer be refreshed.
+		| game_dir | string | Current game directory.
+		| map | string | Current map.
+		| description | string | Game description.
+		| app_id | uint32_t | Steam App ID of this server.
+		| players | int | Total number of players currently on the server; includes bots.
+		| max_players | int | Maximum players that can join this server.Number of bots (i.e simulated players) on this server.
+		| bot_players | int | Number of bots; ie.simulated players) on this server.
+		| password | bool | True if this server needs a password to join.
+		| secure | bool | Is this server protected by VAC.
+		| last_played | uint32_t | Time (in unix time) when this server was last played on (for favorite/history servers).
+		| server_version | int | Server version as reported to Steam.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMatchmakingServers#GetServerDetails){ .md-button .md-button--doc_classes target="_blank" }
@@ -105,7 +105,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### isRefreshing
 
 !!! function "isRefreshing( `uint64_t` server_list_request = 0 )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
 
@@ -122,7 +122,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### pingServer
 
 !!! function "pingServer( `string` ip, `uint16` port )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip | string | The IP of the game server you are querying in host order. |
     | port | uint16 | The port of the game server you are querying, in host order. |
@@ -138,7 +138,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### playerDetails
 
 !!! function "playerDetails( `string` ip, `uint16` port )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip | string | The IP of the game server you are querying in host order. |
     | port | uint16 | The port of the game server you are querying, in host order. |
@@ -154,7 +154,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### refreshQuery
 
 !!! function "refreshQuery( `uint64_t` server_list_request = 0 )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
 
@@ -173,7 +173,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### refreshServer
 
 !!! function "refreshServer( `int` server, `uint64_t` server_list_request = 0 )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server | int | The index of the server to get the details of, from 0 to [getServerCount](#getservercount). |
     | server_list_request | uint64_t | The handle to the server list request. Defaults to 0. |
@@ -193,7 +193,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### releaseRequest
 
 !!! function "releaseRequest( `uint64_t` server_list_request = 0 )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server_list_request | uint64_t | The asynchronous server list request object to release. Defaults to 0. |
 
@@ -210,7 +210,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### requestFavoritesServerList
 
 !!! function "requestFavoritesServerList( `uint32_t` app_id, `array` filters )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
     | filters | array | An array of filters to only retrieve servers the user cares about. |
@@ -228,7 +228,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### requestFriendsServerList
 
 !!! function "requestFriendsServerList( `uint32_t` app_id, `array` filters )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
     | filters | array | An array of filters to only retrieve servers the user cares about. |
@@ -246,7 +246,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### requestHistoryServerList
 
 !!! function "requestHistoryServerList( `uint32_t` app_id, `array` filters )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
     | filters | array | An array of filters to only retrieve servers the user cares about. |
@@ -264,7 +264,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### requestInternetServerList
 
 !!! function "requestInternetServerList( `uint32_t` app_id, `array` filters )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
     | filters | array | An array of filters to only retrieve servers the user cares about. |
@@ -285,7 +285,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### requestLANServerList
 
 !!! function "requestLANServerList( `uint32_t` app_id )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
 
@@ -302,7 +302,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### requestSpectatorServerList
 
 !!! function "requestSpectatorServerList( `uint32_t` app_id, `array` filters )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to get the server list of. |
     | filters | array | An array of filters to only retrieve servers the user cares about. |
@@ -320,12 +320,12 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ### serverRules
 
 !!! function "serverRules( `string` ip, `uint16` port )"
-	| :material-variable: Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip | string | The IP of the game server you are querying in host order. |
     | port | uint16 | The port of the game server you are querying, in host order. |
 
-	Queries an individual game server directly via IP/Port to request the list of rules that the server is running. [(See setKeyValue to set the rules on the server side.)](https://partner.steamgames.com/doc/api/ISteamGameServer#SetKeyValue){ target="\_blank" }
+	Queries an individual game server directly via IP/Port to request the list of rules that the server is running. [See setKeyValue to set the rules on the server side.](https://partner.steamgames.com/doc/api/ISteamGameServer#SetKeyValue){ target="\_blank" }
 
 	!!! returns "Returns: int"
 		Handle to the outstanding server query.
@@ -337,7 +337,7 @@ Functions which provide access to the game server browser. See [Game Servers](ht
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### ping_server_failed_to_respond
 
@@ -353,29 +353,33 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 	The server has responded to a ping request.
 
 	!!! returns "Returns"
-		* server_details (dictionary)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| server_details | dictionary | Data about the server.
 
-		Contains the following keys:
+		**server_details** contains the following keys:
 
-		* name (string)
-		* connection_address (string)
-		* query_address (string)
-		* ping (int)
-		* success_response (bool)
-		* no_refresh (bool)
-		* game_dir (string)
-		* map (string)
-		* description (string)
-		* app_id (int)
-		* players (int)
-		* max_players (int)
-		* bot_players (int)
-		* password (bool)
-		* secure (bool)
-		* last_played (int)
-		* server_version (int)
-		* game_tags (string)
-		* steam_id (uint64_t)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| name | string | Game server name.
+		| connection_address | string | IP / connection port for this server.
+		| query_address | string | IP / query port for this server.
+		| ping | int | Current ping time in milliseconds.
+		| success_response | bool | Server has responded successfully in the past.
+		| no_refresh | bool | Server is marked as not responding and should no longer be refreshed.
+		| game_dir | string | Current game directory.
+		| map | string | Current map.
+		| description | string | Game description.
+		| app_id | uint32_t | Steam App ID of this server.
+		| players | int | Total number of players currently on the server; includes bots.
+		| max_players | int | Maximum players that can join this server.Number of bots (i.e simulated players) on this server.
+		| bot_players | int | Number of bots; ie.simulated players) on this server.
+		| password | bool | True if this server needs a password to join.
+		| secure | bool | Is this server protected by VAC.
+		| last_played | uint32_t | Time (in unix time) when this server was last played on (for favorite/history servers).
+		| server_version | int | Server version as reported to Steam.
+		| game_tags | string | The tags this server exposes.
+		| steam_id | uint64_t | The Steam ID of the game server; invalid if it doesn't have one.  Old server or not connected to Steam.
 
 ### player_details_failed_to_respond
 
@@ -391,9 +395,11 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 	The server has responded to a player details request.
 
 	!!! returns "Returns"
-		* name (string)
-		* score (int)
-		* time_played (float)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| name | string | The name of the player added.
+		| score | int | The score this player had.
+		| time_played | float | The amount of time played.
 
 ### player_details_refresh_complete
 
@@ -409,8 +415,10 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 	A server list request has completed.
 
 	!!! returns "Returns"
-		* request_handle (uint64_t)
-		* response (int / [MatchMakingServerResponse enum](#matchmakingserverresponse))
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| request_handle | uint64_t | The handle for the request.
+		| response | [MatchMakingServerResponse enum](#matchmakingserverresponse) | The server response result.
 
 ### request_server_list_server_failed_to_respond
 
@@ -418,8 +426,10 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 	A server failed to respond to a list request.
 
 	!!! returns "Returns"
-		* request_handle (uint64_t)
-		* server (int)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| request_handle | uint64_t | The handle for the request.
+		| server | int | The handle for the server.
 
 ### request_server_list_server_responded
 
@@ -427,8 +437,10 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 	A server has responded to a list request.
 
 	!!! returns "Returns"
-		* request_handle (uint64_t)
-		* server (int)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| request_handle | uint64_t | The handle for the request.
+		| server | int | The handle for the server.
 
 ### server_rules_failed_to_respond
 
@@ -452,8 +464,10 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 	The server responded with a rules request.
 
 	!!! returns "Returns"
-		* rule (string)
-		* value (string)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| rule | string | The name of the rule.
+		| value | string | The value of that rule.
 
 {==
 ## :material-infinity: Constants

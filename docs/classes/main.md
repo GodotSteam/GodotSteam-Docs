@@ -118,8 +118,14 @@ icon: material/home
     ---
     [ :material-tag-plus: Added GodotSteam 4.11](../changelog/godot4.md/#version-411){ .md-button .md-button--changes target="_blank" }
 
-    uint64_t get_server_list_request() const { return (uint64)server_list_request; }
-    Dictionary get_steam_init_result() { return init_result; }
+### get_server_list_request
+
+!!! function "get_server_list_request( )"
+
+    !!! returns "Returns: uint64_t"
+
+    !!! info "Notes"
+        This is a GodotSteam-specific function.
 
 ### getSteamID32
 
@@ -145,7 +151,7 @@ icon: material/home
 
         | Key | Type | Notes |
         | --- | ---- | ----- |
-        | status | [SteamAPIInitResult enum] (#steamapiinitresult)| The status code of the initialization attempt.
+        | status | [SteamAPIInitResult enum](#steamapiinitresult)| The status code of the initialization attempt.
         | verbal | string | The error message if initialization fails.
 
     !!! info "Notes"
@@ -252,7 +258,7 @@ icon: material/home
     | --- | ---- | ----- |
     | app_id | uint32_t | The app ID to restart from Steam.
 
-    Checks if your executable was launched through Steam and relaunches it through Steam if it wasn't. See [Valve's docs initialization and shutdown for additionanl information.](https://partner.steamgames.com/doc/sdk/api#initialization_and_shutdown){ target="\_blank"} For something more relevant to GodotSteam, [check out our initialization docs.](../tutorials/initialization.md)
+    Checks if your executable was launched through Steam and relaunches it through Steam if it wasn't. See [Valve's docs initialization and shutdown for additionanl information.](https://partner.steamgames.com/doc/sdk/api#initialization_and_shutdown){ target="\_blank"} For something more relevant to GodotSteam, [check out our initialization docs.](../tutorials/initializing.md)
 
     !!! returns "Returns: bool"
         If this returns true then it starts the Steam client if required and launches your game again through it, and you should quit your process as soon as possible. This effectively runs `steam://run/<AppId>` so it may not relaunch the exact executable that called it, as it will always relaunch from the version installed in your Steam library folder.
@@ -273,7 +279,7 @@ icon: material/home
 
 ### set_browser_handle
 
-!!! function "set_browser_handle( `uint32_t` new_browser_handle )
+!!! function "set_browser_handle( `uint32_t` new_browser_handle )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_browser_handle | uint32_t | The browser handle to set.
@@ -287,7 +293,7 @@ icon: material/home
 
 ### set_current_app_id
 
-!!! function "set_current_app_id( `uint32_t` new_current_app_id )
+!!! function "set_current_app_id( `uint32_t` new_current_app_id )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_current_app_id | uint32_t | The app ID to set.
@@ -301,7 +307,7 @@ icon: material/home
 
 ### set_current_clan_id
 
-!!! function "set_current_clan_id( `uint64_t` new_current_clan_id )
+!!! function "set_current_clan_id( `uint64_t` new_current_clan_id )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_current_clan_id | uint64_t | The clan ID to set.
@@ -315,7 +321,7 @@ icon: material/home
 
 ### set_current_steam_id
 
-!!! function "set_current_steam_id( `uint64_t` new_current_steam_id )
+!!! function "set_current_steam_id( `uint64_t` new_current_steam_id )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_current_steam_id | uint64_t | The Steam ID to set.
@@ -329,7 +335,7 @@ icon: material/home
 
 ### set_inventory_handle
 
-!!! function "set_inventory_handle( `int32` new_inventory_handle )
+!!! function "set_inventory_handle( `int32` new_inventory_handle )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_inventory_handle | int32 | The inventory handle to set.
@@ -343,7 +349,7 @@ icon: material/home
 
 ### set_inventory_update_handle
 
-!!! function "set_inventory_update_handle( `uint64_t` new_inventory_update_handle )
+!!! function "set_inventory_update_handle( `uint64_t` new_inventory_update_handle )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_inventory_update_handle | uint64_t | The inventory update handle to set.
@@ -374,7 +380,7 @@ icon: material/home
 
 ### set_leaderboard_entries
 
-!!! function "set_leaderboard_entries( `Array` new_leaderboard_entries )
+!!! function "set_leaderboard_entries( `Array` new_leaderboard_entries )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_leaderboard_entries | Array | An array of leaderboard entries.
@@ -388,7 +394,7 @@ icon: material/home
 
 ### set_leaderboard_handle
 
-!!! function "set_leaderboard_handle( `uint64_t` new_leaderboard_handle )
+!!! function "set_leaderboard_handle( `uint64_t` new_leaderboard_handle )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_leaderboard_handle | uint64_t | The leaderboard handle to set.
@@ -402,7 +408,7 @@ icon: material/home
 
 ### set_server_list_request
 
-!!! function "set_server_list_request( `uint64_t` new_server_list_request )
+!!! function "set_server_list_request( `uint64_t` new_server_list_request )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_server_list_request | uint64_t | The server list request handle to set.
@@ -432,7 +438,7 @@ icon: material/home
 ### steamInitEx
 
 !!! function "steamInitEx( `uint32_t` app_id, `bool` embed_callbacks )"
-    Initialize the Steamworks SDK. On success **STEAM_API_INIT_RESULT_OK** is returned. Otherwise, if **error_message** is non-NULL, it will receive a non-localized message that explains the reason for the failure.
+    Initialize the Steamworks SDK. On success **STEAM_API_INIT_RESULT_OK** is returned. Otherwise, if **verbal** is non-NULL, it will receive a non-localized message that explains the reason for the failure.
 
     You can pass your **app ID** to the _first argument_ and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.  You can pass **true** to the _second argument_ to have GodotSteam connect and use **run_callbacks** internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.  Lastly, if you set the **app_id** and/or check **Embed Callbacks** in the **Project Settings > Steam > Initialization**, these will automatically set for you and you can just call **steamInitEx()** with no arguments filled out.
 
@@ -457,6 +463,22 @@ icon: material/home
     !!! returns "Returns: void"
 
 {==
+## :material-variable: Properties
+==}
+
+Name | Variant | Set | Get
+---- | ------- | --- | ---
+current_app_id | uint32_t | [set_current_app_id](#set_current_app_id) | [get_current_app_id](#get_current_app_id)
+current_browser_handle | uint32_t | [set_browser_handle](#set_browser_handle) | [get_browser_handle](#get_browser_handle)
+current_clan_id | uint64_t | [set_current_clan_id](#set_current_clan_id) | [get_current_clan_id](#get_current_clan_id)
+current_steam_id | uint64_t | [set_current_steam_id](#set_current_steam_id) | [get_current_steam_id](#set_current_steam_id)
+inventory_handle | int32 | [set_inventory_handle](#set_inventory_handle) | [get_inventory_handle](#get_inventory_handle)
+inventory_update_handle | uint64_t | [set_inventory_update_handle](#set_inventory_update_handle) | [get_inventory_update_handle](#get_inventory_update_handle)
+leaderboard_details_max | int | [set_leaderboard_details_max](#set_leaderboard_details_max) | [get_leaderboard_details_max](#get_leaderboard_details_max)
+leaderboard_entries_array | Array | [set_leaderboard_entries](#set_leaderboard_entries) | [get_leaderboard_entries](#get_leaderboard_entries)
+leaderboard_handle | uint64_t | [set_leaderboard_handle](#set_leaderboard_handle) | [get_leaderboard_handle](#get_leaderboard_handle)
+
+{==
 ## :material-infinity: Constants
 ==}
 
@@ -468,16 +490,15 @@ APP_ID_INVALID | k_uAppIdInvalid | 0x0 | An invalid app ID.
 AUTH_TICKET_INVALID | k_HAuthTicketInvalid | An invalid user authentication ticket.
 DEPOT_ID_INVALID | k_uDepotIdInvalid | 0x0 | An invalid depot ID.
 GAME_EXTRA_INFO_MAX | k_cchGameExtraInfoMax | 64 | The maximum size (in UTF-8 bytes, including the null terminator) of the **extra_info** parameter of trackAppUsageEvent (since been deprecated).
-INVALID_BREAKPAD_HANDLE | BREAKPAD_INVALID_HANDLE | (BREAKPAD_HANDLE)0 | -
 MAX_STEAM_DATAGRAM_GAME_COORDINATOR_SERVER_LOGIN_APP_DATA | k_cbMaxSteamDatagramGameCoordinatorServerLoginAppData | 2048 | -
 MAX_STEAM_DATAGRAM_GAME_COORDINATOR_SERVER_LOGIN_SERIALIZED | k_cbMaxSteamDatagramGameCoordinatorServerLoginSerialized | 4096 | -
-PARTY_BEACON_ID_INVALID k_ulPartyBeaconIdInvalid | 0 | An invalid party beacon ID.
-QUERY_PORT_ERROR | QUERY_PORT_ERROR | 0xFFFE | We were unable to get the query port for this server.
-QUERY_PORT_NOT_INITIALIZED | QUERY_PORT_NOT_INITIALIZED | 0xFFFF | We haven't asked the GameServer for this query port's actual value yet.
+PARTY_BEACON_ID_INVALID | k_ulPartyBeaconIdInvalid | 0 | An invalid party beacon ID.
+QUERY_PORT_ERROR | k_usFriendGameInfoQueryPort_Error | 0xFFFE | We were unable to get the query port for this server.
+QUERY_PORT_NOT_INITIALIZED | k_usFriendGameInfoQueryPort_NotInitialized | 0xFFFF | We haven't asked the GameServer for this query port's actual value yet.
 STEAM_ACCOUNT_ID_MASK | k_unSteamAccountIDMask | 0xFFFFFFFF | Used in CSteamID to mask out the AccountID_t.
 STEAM_ACCOUNT_INSTANCE_MASK | k_unSteamAccountInstanceMask | 0x000FFFFF | Used in CSteamID to mask out the account instance.
 STEAM_BUFFER_SIZE | - | 255 | Custom for GodotSteam.
-STEAM_DATAGRAM_MAX_SERIALIZED_TICKET k_cbSteamDatagramMaxSerializedTicket | 512 | -
+STEAM_DATAGRAM_MAX_SERIALIZED_TICKET | k_cbSteamDatagramMaxSerializedTicket | 512 | -
 STEAM_ID_NIL | k_steamIDNil | CSteamID() | Generic invalid CSteamID.
 STEAM_ID_OUT_OF_DATE_GAME_SERVER | k_steamIDOutofDateGS | CSteamID() | This Steam ID comes from a user game connection to an out of date GS that hasnt implemented the protocol to provide its Steam ID.
 STEAM_ID_LAN_MODE_GAME_SERVER | k_steamIDLanModeGS | CSteamID() | This Steam ID comes from a user game connection to an sv_lan GameServer.
@@ -695,6 +716,13 @@ GAME_TYPE_APP | k_EGameIDTypeApp | 0 | -
 GAME_TYPE_GAME_MOD | k_EGameIDTypeGameMod | 1 | -
 GAME_TYPE_SHORTCUT | k_EGameIDTypeShortcut | 2 | -
 GAME_TYPE_P2P | k_EGameIDTypeP2P | 3 | -
+
+### IPType
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+IP_TYPE_IPV4 | k_ESteamIPTypeIPv4 | 0 | -
+IP_TYPE_IPV6 |k_ESteamIPTypeIPv6 | 1 | -
 
 ### IPv6ConnectivityProtocol
 Found in steamclientpublic.h

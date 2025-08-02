@@ -19,67 +19,67 @@ These functions are not listed in the official Steamworks SDK documentation but 
 !!! function "acceptGame( )"
     After receiving [search_for_game_result](#search_for_game_result), accept or decline the game. Multiple [search_for_game_result](#search_for_game_result) will follow as players accept game until the host starts or cancels the game.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### addGameSearchParams
 
 !!! function "addGameSearchParams( `string` key, `string` value )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The key to search for. |
     | value | string | The values to search for. |
 
 	A keyname and a list of comma separated values: one of which is must be found in order for the match to qualify; fails if a search is currently in progress.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### cancelRequestPlayersForGame
 
 !!! function "cancelRequestPlayersForGame( )"
 	Cancel request and leave the pool of game hosts looking for players. If a set of players has already been sent to host, all players will receive **SearchForGameHostFailedToConfirm_t**. However, **SearchForGameHostFailedToConfirm_t** does not seem to exist anywhere in the SDK.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### declineGame
 
 !!! function "declineGame( )"
 	After receiving [search_for_game_result](#search_for_game_result), accept or decline the game. Multiple [search_for_game_result](#search_for_game_result) will follow as players accept game until the host starts or cancels the game.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### endGame
 
 !!! function "endGame( `uint64_t` game_id )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | game_id | uint64_t | The ID of the game to end. |
 
     Ends the game. No further [submitPlayerResult](#submitplayerresult) for **game_id** will be accepted.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### endGameSearch
 
 !!! function "endGameSearch( )"
 	Leaves queue if still waiting.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### hostConfirmGameStart
 
 !!! function "hostConfirmGameStart( `uint64_t` game_id )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | game_id | uint64_t | The ID of the game to start. |
 
     Accept the player list and release connection details to players. Players will only be given connection details and host steamid when this is called. Allows host to accept after all players confirm, some confirm, or none confirm. The decision is entirely up to the host.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### requestPlayersForGame
 
 !!! function "requestPlayersForGame( `int` player_min, `int` player_max, `int` max_team_size )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | player_min | int | The minimum number of players to request. |
     | player_max | int | The maximum number of players to request. |
@@ -89,12 +89,12 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 	[request_players_for_game_result](#request_players_for_game_result) callback will be sent when the search has started. Multple [request_players_for_game_result](#request_players_for_game_result) callbacks will follow when players are found.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### retrieveConnectionDetails
 
 !!! function "retrieveConnectionDetails( `uint64_t` host_id )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | host_id | uint64_t | The Steam ID of the host. |
 
@@ -113,19 +113,19 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### searchForGameSolo
 
 !!! function "searchForGameSolo( `int` player_min, `int` player_max)"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | player_min | int | The minimum number of player slots open. |
     | player_max | int | The maximum number of player slots open. |
 
 	User enter the queue and await a [search_for_game_progress](#search_for_game_progress) callback. fails if another search is currently in progress. Periodic callbacks will be sent as queue time estimates change.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### searchForGameWithLobby
 
 !!! function "searchForGameWithLobby( `uint64_t` lobby_id, `int` player_min, `int` player_max)"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | lobby_id | uint64_t | The ID of the lobby the player is in. |
     | player_min | int | The minimum number of player slots open. |
@@ -133,35 +133,35 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 	All players in lobby enter the queue and await a [search_for_game_progress](#search_for_game_progress) callback. Fails if another search is currently in progress. If not the owner of the lobby or search already in progress this call fails. Periodic callbacks will be sent as queue time estimates change.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### setConnectionDetails
 
 !!! function "setConnectionDetails( `string` connection_details )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_details | string | A connection string with connection details, similar to lobby joins. |
 
 	Set connection details for players once game is found so they can connect to this server.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### setGameHostParams
 
 !!! function "setGameHostParams( `string` key, `string` value )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The key to set for the game. |
     | value | string | The list of values to set for the game. |
 
     A keyname and a list of comma separated values: all the values you allow.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 ### submitPlayerResult
 
 !!! function "submitPlayerResult( `uint64_t` game_id, `uint64_t` player_id, `int` player_result )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | game_id | uint64_t | The ID For the game session. |
     | player_id | uint64_t | The Steam ID for the player whom we are submitting results for. |
@@ -169,13 +169,13 @@ These functions are not listed in the official Steamworks SDK documentation but 
 
 	Submit a result for one player; does not end the game. **game_id** continues to describe this game.
 
-	!!! returns "Returns: int / [GameSearchErrorCode enum](#gamesearcherrorcode)"
+	!!! returns "Returns: [GameSearchErrorCode enum](#gamesearcherrorcode)"
 
 {==
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### end_game_result
 
@@ -203,7 +203,7 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 ### request_players_for_game_progress
 
 !!! function "request_players_for_game_progress"
-	Callback from [requestPlayersForGame](#requestplayersforgame) when the matchmaking service has started or ended search; callback will also follow a call from [cancelRequestPlayersForGame](#cancelrequestplayersforgame) - search_in_progress will be false.
+	Callback from [requestPlayersForGame](#requestplayersforgame) when the matchmaking service has started or ended search; callback will also follow a call from [cancelRequestPlayersForGame](#cancelrequestplayersforgame) - **search_in_progress** will be false.
 
 	!!! returns "Returns"
 		| Key | Type | Notes |

@@ -90,7 +90,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 !!! function "getConnectedUniverse( )"
 	Gets the uinverse the current client is connected to.  Supposed to be for Valve's use only.
 
-	!!! returns "Returns: int / [Universe enum](main.md#universe)"
+	!!! returns "Returns: [Universe enum](main.md#universe)"
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUtils#GetConnectedUniverse){ .md-button .md-button--doc_classes target="_blank" }
@@ -186,7 +186,7 @@ Interface which provides access to a range of miscellaneous utility functions.
 
 	Return what we believe your current ipv6 connectivity to "the internet" is on the specified protocol. This **does not** tell you if the Steam client is currently connected to Steam via IPv6.
 
-	!!! returns "Returns: int / [IPv6ConnectivityState enum](main.md#ipv6connectivitystate)"
+	!!! returns "Returns: [IPv6ConnectivityState enum](main.md#ipv6connectivitystate)"
 
 	---
 	[ :material-tag-plus: Added GodotSteam 4.15](../changelog/godot4.md/#version-415){ .md-button .md-button--changes target="_blank" }
@@ -525,7 +525,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-		| submitted | bool | Returns true if the user entered and accepted text; call [getEnteredGamepadTextInput](#getenteredgamepadtextinput) to receive the text. Otherwise, false if the input was canceled.
+		| submitted | bool | Returns true if the user entered and accepted text. Otherwise, false if the input was canceled.
 		| text | string | Contains the text that was submitted.
 		| app_id | uint32_t | The app ID for the game this text was submitted for.
 

@@ -188,7 +188,7 @@ icon: material/server-network
 
     Initialize SteamGameServer client and interface objects, and set server properties which may not be changed.
 
-	After calling this function, you should set any additional server parameters and then [logOnAnonymous](#logonanonymous) or [logOn](#logon).
+	After calling this function, you should set any additional server parameters and then [logOnAnonymous](game_server.md#logonanonymous) or [logOn](game_server.md#logon).
 
 	On success STEAM_API_INIT_RESULT_OK is returned.  Otherwise, if error_message is non-NULL, it will receive a non-localized message that explains the reason for the failure.
 
@@ -222,7 +222,7 @@ icon: material/server-network
 
 ### set_inventory_handle
 
-!!! function "set_inventory_handle( `int32` new_inventory_handle )
+!!! function "set_inventory_handle( `int32` new_inventory_handle )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_inventory_handle | int32 | The inventory handle to set.
@@ -236,7 +236,7 @@ icon: material/server-network
 
 ### set_inventory_update_handle
 
-!!! function "set_inventory_update_handle( `uint64_t` new_inventory_update_handle )
+!!! function "set_inventory_update_handle( `uint64_t` new_inventory_update_handle )"
     | Key | Type | Notes |
     | --- | ---- | ----- |
     | new_inventory_update_handle | uint64_t | The inventory update handle to set.
@@ -260,7 +260,6 @@ APP_ID_INVALID | k_uAppIdInvalid | 0x0 | An invalid app ID.
 AUTH_TICKET_INVALID | k_HAuthTicketInvalid | An invalid user authentication ticket.
 DEPOT_ID_INVALID | k_uDepotIdInvalid | 0x0 | An invalid depot ID.
 GAME_EXTRA_INFO_MAX | k_cchGameExtraInfoMax | 64 | The maximum size (in UTF-8 bytes, including the null terminator) of the **extra_info** parameter of trackAppUsageEvent (since been deprecated).
-INVALID_BREAKPAD_HANDLE | BREAKPAD_INVALID_HANDLE | (BREAKPAD_HANDLE)0 | -
 MAX_GAME_SERVER_GAME_DATA | k_cbMaxGameServerGameData | 2048 | Max size of the GameServer game data.
 MAX_GAME_SERVER_GAME_DESCRIPTION | k_cbMaxGameServerGameDescription | 64 | Max size of the GameServer game description.
 MAX_GAME_SERVER_GAME_DIR | k_cbMaxGameServerGameDir | 32 | Max size of the GameServer game directory.
@@ -269,14 +268,14 @@ MAX_GAME_SERVER_NAME | k_cbMaxGameServerName | 64 | Max size of the GameServer n
 MAX_GAME_SERVER_TAGS | k_cbMaxGameServerTags | 128 | Max size of the GameServer tags.
 MAX_STEAM_DATAGRAM_GAME_COORDINATOR_SERVER_LOGIN_APP_DATA | k_cbMaxSteamDatagramGameCoordinatorServerLoginAppData | 2048 | -
 MAX_STEAM_DATAGRAM_GAME_COORDINATOR_SERVER_LOGIN_SERIALIZED | k_cbMaxSteamDatagramGameCoordinatorServerLoginSerialized | 4096 | -
-PARTY_BEACON_ID_INVALID k_ulPartyBeaconIdInvalid | 0 | An invalid party beacon ID.
-QUERY_PORT_ERROR | QUERY_PORT_ERROR | 0xFFFE | We were unable to get the query port for this server.
-QUERY_PORT_NOT_INITIALIZED | QUERY_PORT_NOT_INITIALIZED | 0xFFFF | We haven't asked the GameServer for this query port's actual value yet.
-QUERY_PORT_SHARED | STEAMGAMESERVER_QUERY_PORT_SHARED | 0xffff | Pass to [serverInit](#serverinit) to indicate that the same UDP port will be used for game traffic UDP queries for server browser pings and LAN discovery.  In this case, Steam will not open up a socket to handle server browser queries, and you must use [handleIncomingPacket](#handleincomingpacket) and [getNextOutgoingPacket](#getnextoutgoingpacket) to handle packets related to server discovery on your socket.
+PARTY_BEACON_ID_INVALID | k_ulPartyBeaconIdInvalid | 0 | An invalid party beacon ID.
+QUERY_PORT_ERROR | k_usFriendGameInfoQueryPort_Error | 0xFFFE | We were unable to get the query port for this server.
+QUERY_PORT_NOT_INITIALIZED | k_usFriendGameInfoQueryPort_NotInitialized | 0xFFFF | We haven't asked the GameServer for this query port's actual value yet.
+QUERY_PORT_SHARED | STEAMGAMESERVER_QUERY_PORT_SHARED | 0xffff | Pass to [serverInit](#serverinit) to indicate that the same UDP port will be used for game traffic UDP queries for server browser pings and LAN discovery.  In this case, Steam will not open up a socket to handle server browser queries, and you must use [handleIncomingPacket](game_server.md#handleincomingpacket) and [getNextOutgoingPacket](game_server.md#getnextoutgoingpacket) to handle packets related to server discovery on your socket.
 STEAM_ACCOUNT_ID_MASK | k_unSteamAccountIDMask | 0xFFFFFFFF | Used in CSteamID to mask out the AccountID_t.
 STEAM_ACCOUNT_INSTANCE_MASK | k_unSteamAccountInstanceMask | 0x000FFFFF | Used in CSteamID to mask out the account instance.
 STEAM_BUFFER_SIZE | - | 255 | Custom for GodotSteam.
-STEAM_DATAGRAM_MAX_SERIALIZED_TICKET k_cbSteamDatagramMaxSerializedTicket | 512 | -
+STEAM_DATAGRAM_MAX_SERIALIZED_TICKET | k_cbSteamDatagramMaxSerializedTicket | 512 | -
 STEAM_ID_NIL | k_steamIDNil | CSteamID() | Generic invalid CSteamID.
 STEAM_ID_OUT_OF_DATE_GAME_SERVER | k_steamIDOutofDateGS | CSteamID() | This Steam ID comes from a user game connection to an out of date GS that hasnt implemented the protocol to provide its Steam ID.
 STEAM_ID_LAN_MODE_GAME_SERVER | k_steamIDLanModeGS | CSteamID() | This Steam ID comes from a user game connection to an sv_lan GameServer.
@@ -370,6 +369,13 @@ GAME_TYPE_APP | k_EGameIDTypeApp | 0 | -
 GAME_TYPE_GAME_MOD | k_EGameIDTypeGameMod | 1 | -
 GAME_TYPE_SHORTCUT | k_EGameIDTypeShortcut | 2 | -
 GAME_TYPE_P2P | k_EGameIDTypeP2P | 3 | -
+
+### IPType
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+IP_TYPE_IPV4 | k_ESteamIPTypeIPv4 | 0 | -
+IP_TYPE_IPV6 |k_ESteamIPTypeIPv6 | 1 | -
 
 ### Result
 General result codes. Found in steamclientpublic.h
@@ -537,3 +543,12 @@ UNIVERSE_BETA | k_EUniverseBeta | 2 | -
 UNIVERSE_INTERNAL | k_EUniverseInternal | 3 | -
 UNIVERSE_DEV | k_EUniverseDev | 4 | -
 UNIVERSE_MAX | k_EUniverseMax | 5 | -
+
+### UserHasLicenseForAppResult
+Results from [userHasLicenseForApp](user.md#userhaslicenseforapp). Found in steamclientpublic.h
+
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
+USER_HAS_LICENSE_RESULT_HAS_LICENSE | k_EUserHasLicenseResultHasLicense | 0 | User has a license for specified app.
+USER_HAS_LICENSE_RESULT_DOES_NOT_HAVE_LICENSE | k_EUserHasLicenseResultDoesNotHaveLicense | 1 | User does not have a license for the specified app.
+USER_HAS_LICENSE_RESULT_NO_AUTH | k_EUserHasLicenseResultNoAuth | 2 | User has not been authenticated.

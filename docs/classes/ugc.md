@@ -37,12 +37,12 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 !!! function "addContentDescriptor( `uint64_t` update_handle, `int` descriptor_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
-    | update_handle | uint64_t | The workshop item update handle to customize. |
-    | descriptor_id | [UGCContentDescriptorID enum](#ugccontentdescriptorid) | The required app / dlc for this file. |
+    | update_handle | uint64_t | The workshop item update handle to customize.
+    | descriptor_id | [UGCContentDescriptorID enum](#ugccontentdescriptorid) | The required app / dlc for this file.
 
-   Sets the given **descriptor_id** on the item.
+    Sets the given **descriptor_id** on the item.
 
-	!!! returns "Returns: bool"
+    !!! returns "Returns: bool"
 
 ### addDependency
 
@@ -322,7 +322,6 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 	To query all the UGC for your app you can use [createQueryAllUGCRequest](#createqueryallugcrequest) instead.
 
 	!!! returns "Returns: uint64_t"
-        !!! returns "Returns: uint64_t"
         Returns a new UGC query handle upon success and [UGC_QUERY_HANDLE_INVALID](#constants) in the following situations:
 
         * Either **creator_id** or **consumer_id** is not set to the currently running app.
@@ -431,16 +430,16 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 
 	If [ITEM_STATE_LEGACY_ITEM](#itemstate) (2) is set then folder contains the path to the legacy file itself, not a folder.
 
-	!!! returns "Returns: dictionary
+	!!! returns "Returns: dictionary"
     	Contains the following keys:
 
         | Key | Type | Notes |
         | --- | ---- | ----- |
-    	* ret | bool | Returns true if the workshop item is already installed. False if the **folder_size** is 0, the workshop item has no content, or the  workshop item is not installed.
-    	* size | int | Returns the size of the workshop item in bytes.
-    	* folder | string | Returns the absolute path to the folder containing the content by copying it.
-    	* folder_size | uint32_t | The size of **folder** in bytes.
-    	* timestamp | uint32_t | Returns the time when the workshop item was last updated.
+    	| ret | bool | Returns true if the workshop item is already installed. False if the **folder_size** is 0, the workshop item has no content, or the  workshop item is not installed.
+    	| size | int | Returns the size of the workshop item in bytes.
+    	| folder | string | Returns the absolute path to the folder containing the content by copying it.
+    	| folder_size | uint32_t | The size of **folder** in bytes.
+    	| timestamp | uint32_t | Returns the time when the workshop item was last updated.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#GetItemInstallInfo){ .md-button .md-button--doc_classes target="_blank" }
@@ -465,11 +464,11 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 !!! function "getItemUpdateProgress( `uint64_t` update_handle )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
-    | update_handle | uint64_t | The update handle to get the progress for. |
+    | update_handle | uint64_t | The update handle to get the progress for.
 
 	Gets the progress of an item update.
 
-	!!! returns "Returns: dictionary
+	!!! returns "Returns: dictionary"
     	Contains the following keys:
 
         | Key | Type | Notes |
@@ -479,7 +478,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
     	| total | uint64_t | Returns the total number of bytes that will be uploaded.
 
     !!! info "Notes"
-    	You may notice that data comes back in ***processed*** and ***total*** in status 2; unsure if this is a bug or intended.
+    	You may notice that data comes back in **processed** and **total** in status 2; unsure if this is a bug or intended.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#GetItemUpdateProgress){ .md-button .md-button--doc_classes target="_blank" }
@@ -544,7 +543,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
     	| preview | uint32_t | The index of the additional preview to get the details of.
     	| url_or_video | string | Returns a URL or Video ID by copying it into this string.
     	| filename | string | Returns the original file name.
-    	| type | int / [ItemPreviewType](#itempreviewtype) | The type of preview that was returned.
+    	| type | [ItemPreviewType](#itempreviewtype) | The type of preview that was returned.
 
 	!!! info "Notes"
         This must only be called with the handle obtained from a successful [ugc_query_completed](#ugc_query_completed) call result.
@@ -629,8 +628,8 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 
 	Before calling this you should call [getQueryUGCNumKeyValueTags](#getqueryugcnumkeyvaluetags) to get number of tags.
 
-	!!! returns "Returns: dictionary
-	   Contains the following keys:
+	!!! returns "Returns: dictionary"
+        Contains the following keys:
 
         | Key | Type | Notes |
         | --- | ---- | ----- |
@@ -756,8 +755,8 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 !!! function "getQueryUGCResult( `uint64_t` query_handle, `uint32_t` index )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
-    | query_handle | uint64_t | The UGC query handle to customize. |
-    | index | uint32_t | The index of the item to get the details of. |
+    | query_handle | uint64_t | The UGC query handle to customize.
+    | index | uint32_t | The index of the item to get the details of.
 
     Retrieve the details of an individual workshop item after receiving a querying UGC call result.
 
@@ -766,7 +765,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 
         | Key | Type | Notes |
         | --- | ---- | ----- |
-    	| result | int / [Result enum](#result) | The result of the operation.
+    	| result | [Result enum](main.md#result) | The result of the operation.
     	| file_id | uint64_t | The globally unique item handle to this piece of UGC.
     	| file_type | uint64_t | The type of the item.
     	| creator_app_id | uint32_t | App ID of the app that created this item.
@@ -1350,7 +1349,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
-    | visibility | [RemoteStoragePublishedFileVisibility enum](remote_storage.md#remotestoragepublishedfilevisibility) | 
+    | visibility | [RemoteStoragePublishedFileVisibility enum](remote_storage.md#remotestoragepublishedfilevisibility) | The visibility to set.
 
     Sets the visibility of an item.
 
@@ -1669,7 +1668,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 
     Set the time range this item was created.  Both dates should be in Unix time.
 
-	**Return:** bool"    
+	!!! returns "Returns: bool"    
 
 ### setTimeUpdatedDateRange
 
@@ -1682,7 +1681,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 
     Set the time range this item was updated.
 
-	**Return:** bool"
+	!!! returns "Returns: bool"
 
 ### setUserItemVote
 
@@ -1912,7 +1911,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
         | Key | Type | Notes |
         | --- | ---- | ----- |
-    	| result | int / [Result enum](main.md#result) | The result of the operation.
+    	| result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The parent workshop item that the dependency was added to.
         | app_id | uint32_t | The app or dlc ID.
 
@@ -1927,7 +1926,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The parent workshop item that the dependency was added to.
         | child_id | uint32_t | The child workshop item which was added as a dependency to the parent item.
 
@@ -1942,7 +1941,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The workshop item to get app dependencies for.
         | app_ids | PackedInt32Array | Number of app dependencies in **app_dependencies**.
         | app_dependencies | uint32_t | Array of app dependencies.
@@ -1959,7 +1958,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The workshop item to get the vote status.
         | vote_up | bool | Has the user voted the item up?
         | vote_down | bool | Has the user voted the item down?
@@ -1976,7 +1975,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The new item's unique ID.
         | accept_tos | bool | Does the user need to accept the Steam Workshop legal agreement (true) or not (false)? See the [Workshop Legal Agreement for more information](https://partner.steamgames.com/doc/features/workshop/implementation#Legal){ target="\_blank" }.
 
@@ -2009,7 +2008,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The workshop item which was being deleted.
 
     ---
@@ -2023,7 +2022,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The workshop item that has finished downloading.
         | app_id | uint32_t | The app ID associated with this workshop item.
 
@@ -2055,7 +2054,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | need_to_accept_tos | bool | Does the user need to accept the Steam Workshop legal agreement? See the [Workshop Legal Agreement for more information](https://partner.steamgames.com/doc/features/workshop/implementation#Legal){ target="\_blank" }.
         | file_id | int | The published file ID for the item that was updated.
 
@@ -2084,7 +2083,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The parent workshop item that the dependency was removed from.
         | app_id | uint32_t | The app or dlc ID.
 
@@ -2099,7 +2098,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- | 
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The parent workshop item that the dependency was removed from.
         | child_id | uint64_t | The child workshop item which was removed as a dependency from the parent item.
 
@@ -2114,7 +2113,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The workshop item that the user voted on.
         | vote_up | bool | Was the vote up (true) or down (false)?
 
@@ -2129,7 +2128,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#StartPlaytimeTrackingResult_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -2142,7 +2141,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUGC#StopPlaytimeTrackingResult_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -2156,7 +2155,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| Key | Type | Notes |
         | --- | ---- | ----- |
         | handle | uint64_t | The UGC query handle associated with this call result.
-    	| result | int / [Result enum](main.md#result) | The result of the operation.
+    	| result | [Result enum](main.md#result) | The result of the operation.
     	| results_returned | uint32_t | The number of items returned in this result set.
     	| total_matching | uint32_t | The total number of items that matched the query in the database.
     	| cached | bool | Indicates whether this data was retrieved from the local on-disk cache.
@@ -2173,7 +2172,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | file_id | uint64_t | The item which was added or removed.
         | was_add_request | bool | Was it added (true) or removed (false) from the user's favorites?
 
@@ -2201,7 +2200,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The result of the operation.
+        | result | [Result enum](main.md#result) | The result of the operation.
         | app_id | uint32_t | The related app ID.
         | eula_data | dictionary | Contains the EULA data.
 

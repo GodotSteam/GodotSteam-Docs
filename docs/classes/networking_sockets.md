@@ -28,28 +28,28 @@ Networking API similar to Berkeley sockets, but for games:
 ### acceptConnection
 
 !!! function "acceptConnection( `uint32_t` connection_handle )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The incoming connection handle.
 
 	Accept an incoming connection that has been received on a listen socket.
 
-	When a connection attempt is received (perhaps after a few basic handshake packets have been exchanged to prevent trivial spoofing), a connection interface object is created in the [CONNECTION_STATE_CONNECTING](#networkingconnectionstate) state and a [network_connection_status_changed](#network_connection_status_changed) is posted. At this point, your application **must** either accept or close the connection. (It may not ignore it.) Accepting the connection will transition it either into the connected state, or the finding route state, depending on the connection type.
+	When a connection attempt is received (perhaps after a few basic handshake packets have been exchanged to prevent trivial spoofing), a connection interface object is created in the [CONNECTION_STATE_CONNECTING](networking_utils.md#networkingconnectionstate) state and a [network_connection_status_changed](#network_connection_status_changed) is posted. At this point, your application **must** either accept or close the connection. (It may not ignore it.) Accepting the connection will transition it either into the connected state, or the finding route state, depending on the connection type.
 
 	You should take action within a second or two, because accepting the connection is what actually sends the reply notifying the client that they are connected. If you delay taking action, from the client's perspective it is the same as the network being unresponsive, and the client may timeout the connection attempt. In other words, the client cannot distinguish between a delay caused by network problems and a delay caused by the application.
 
 	This means that if your application goes for more than a few seconds without processing callbacks (for example, while loading a map), then there is a chance that a client may attempt to connect in that interval and fail due to timeout.
 
-	If the application does not respond to the connection attempt in a timely manner, and we stop receiving communication from the client, the connection attempt will be timed out locally, transitioning the connection to the [CONNECTION_STATE_PROBLEM_DETECTED_LOCALLY](#networkingconnectionstate) state. The client may also close the connection before it is accepted, and a transition to the [CONNECTION_STATE_CLOSED_BY_PEER](#networkingconnectionstate) is also possible depending the exact sequence of events.
+	If the application does not respond to the connection attempt in a timely manner, and we stop receiving communication from the client, the connection attempt will be timed out locally, transitioning the connection to the [CONNECTION_STATE_PROBLEM_DETECTED_LOCALLY](networking_utils.md#networkingconnectionstate) state. The client may also close the connection before it is accepted, and a transition to the [CONNECTION_STATE_CLOSED_BY_PEER](networking_utils.md#networkingconnectionstate) is also possible depending the exact sequence of events.
 
-	!!! returns "Returns: Result enum"
+	!!! returns "Returns: [Result enum](main.md#result)"
 
 ### beginAsyncRequestFakeIP
 
 !!! function "beginAsyncRequestFakeIP( `int` num_ports )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | num_ports | int | The number of ports to reserve. |
+    | num_ports | int | The number of ports to reserve.
 
 	Begin asynchronous process of allocating a fake IPv4 address that other peers can use to contact us via P2P. IP addresses returned by this function are globally unique for a given appid.
 
@@ -67,11 +67,11 @@ Networking API similar to Berkeley sockets, but for games:
 
 	To communicate using an ad-hoc sendto/recv from (UDP-style) API, use [createFakeUDPPort](#createfakeudpport).
 
-	!!! returns "Returns: bool
+	!!! trigger "Triggers"
+		[fake_ip_result](#fake_ip_result) callback
 
-	_False_ if a request was already in progress, _true_ if a new request was started.
-
-	**Triggers:** [fake_ip_result](#fake_ip_result) callback
+	!!! returns "Returns: bool"
+		Returns true if a new request was started; otherwise, false if a request was already in progress.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#AcceptConnection){ .md-button .md-button--doc_classes target="_blank" }
@@ -79,7 +79,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### closeConnection
 
 !!! function "closeConnection( `uint32_t` connection_handle, `int` reason, `string` debug_message, `bool` linger )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to close.
     | reason | int | An application defined code.
@@ -104,9 +104,9 @@ Networking API similar to Berkeley sockets, but for games:
 ### closeListenSocket
 
 !!! function "closeListenSocket( `uint32_t` socket )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | socket | uint32_t | The listen socket to close. |
+    | socket | uint32_t | The listen socket to close.
 
     Destroy a listen socket. All the connections that were accepted on the listen socket are closed ungracefully.
 
@@ -115,6 +115,13 @@ Networking API similar to Berkeley sockets, but for games:
 ### configureConnectionLanes
 
 !!! function "configureConnectionLanes( `uint32_t` connection, `uint32_t` lanes, `Array` priorities, `Array` weights )"
+	| Parameter | Type | Notes |
+    | -------- | ---- | ----- |
+    | connection | uint32_t | The network connection handle to configure.
+    | lanes | uint32_t | The number of lanes we are configuring.
+    | priorities | Array | An array of lane priorities.
+    | weights | Array | An array of lane weights.
+
 	Configure multiple outbound messages streams ("lanes") on a connection, and control head-of-line blocking between them. Messages within a given lane are always sent in the order they are queued, but messages from different lanes may be sent out of order. Each lane has its own message number sequence. The first message sent on each lane will be assigned the number 1.
 
 	Each lane has a "priority". Lower priority lanes will only be processed when all higher-priority lanes are empty. The magnitudes of the priority values are not relevant, only their sort order. Higher numeric values take priority over lower numeric values.
@@ -123,7 +130,7 @@ Networking API similar to Berkeley sockets, but for games:
 
 	Example: 3 lanes, with priorities [ 0, 10, 10 ] and weights [ (NA), 20, 5 ].  Messages sent on the first will always be sent first, before messages in the other two lanes.  Its weight value is irrelevant, since there are no other lanes with priority = 0.  The other two lanes will share bandwidth, with the second and third lanes sharing bandwidth using a ratio of approximately 4:1. The weights [ NA, 4, 1 ] would be equivalent.
 
-	!!! returns "Returns: Result enum"
+	!!! returns "Returns: [Result enum](main.md#result)"
 		Returns [RESULT_OK](main.md#result) on success; otherwise, one of these possible failures:
 
 		* [RESULT_NO_CONNECTION](main.md#result) - Bad **connection**.
@@ -147,7 +154,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### connectByIPAddress
 
 !!! function "connectByIPAddress( `string` ip_address_with_port, `dictionary` config_options )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip_address_with_port | string | The IP address, with the port, to connect to.
     | config_options | dictionary | A collection of optional, initial config options.
@@ -162,7 +169,7 @@ Networking API similar to Berkeley sockets, but for games:
 
 	If you need to set any initial config options, pass them here.  Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* [NetworkingConfigValue](networking_utils.md#networkingconfigvalue) (int / enum)
 	* config value (int or string)
 
 	Example:
@@ -185,11 +192,11 @@ Networking API similar to Berkeley sockets, but for games:
 ### connectP2P
 
 !!! function "connectP2P( `uint64_t` remote_steam_id, `int` virtual_port, `dictionary` config_options )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | remote_steam_id | uint64_t | The Steam ID of the user to connect to. |
-    | virtual_port | int | The port to connect through. |
-    | config_options | dictionary | A collection of optional, initial config options. |
+    | remote_steam_id | uint64_t | The Steam ID of the user to connect to.
+    | virtual_port | int | The port to connect through.
+    | config_options | dictionary | A collection of optional, initial config options.
 
     Begin connecting to a server that is identified using a platform-specific identifier. This uses the default rendezvous service, which depends on the platform and library configuration. (E.g. on Steam, it goes through the steam backend.) The traffic is relayed over the Steam Datagram Relay network.
 
@@ -199,7 +206,7 @@ Networking API similar to Berkeley sockets, but for games:
 
 	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* [NetworkingConfigValue](networking_utils.md#networkingconfigvalue) (int / enum)
 	* config value (int or string)
 
 	Example:
@@ -222,17 +229,17 @@ Networking API similar to Berkeley sockets, but for games:
 ### connectToHostedDedicatedServer
 
 !!! function "connectToHostedDedicatedServer( `uint64_t` remote_steam_id, `int` virtual_port, `dictionary` config_options )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | remote_steam_id | uint64_t | The Steam ID of the user to connect to. |
-    | virtual_port | int | The port to connect through. |
-    | config_options | dictionary | A collection of optional, initial config options. |
+    | remote_steam_id | uint64_t | The Steam ID of the user to connect to.
+    | virtual_port | int | The port to connect through.
+    | config_options | dictionary | A collection of optional, initial config options.
 
-    Client call to connect to a server hosted in a Valve data center, on the specified virtual port. You must have placed a ticket for this server into the cache, or else this connect attempt will fail!
+    Client call to connect to a server hosted in a Valve data center, on the specified virtual port.  You must have placed a ticket for this server into the cache, or else this connect attempt will fail!
 
 	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* [NetworkingConfigValue](networking_utils.md#networkingconfigvalue) (int / enum)
 	* config value (int or string)
 
 	Example:
@@ -247,7 +254,7 @@ Networking API similar to Berkeley sockets, but for games:
 	Alternately you can pass an empty dictionary.
 
 	!!! returns "Returns: uint32_t"
-		Returns a network connection handle.
+		Returns a networking connection handle on success; otherwise, [NETWORKING_CONNECTION_INVALID](main.md#constants).
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#ConnectToHostedDedicatedServer){ .md-button .md-button--doc_classes target="_blank" }
@@ -255,9 +262,9 @@ Networking API similar to Berkeley sockets, but for games:
 ### createFakeUDPPort
 
 !!! function "createFakeUDPPort( `int` fake_server_port)"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | fake_server_port | int | The index of the port allocated by [beginAsyncRequestFakeIP](#beginasyncrequestfakeip). |
+    | fake_server_port | int | The index of the port allocated by [beginAsyncRequestFakeIP](#beginasyncrequestfakeip).
 
     Get an interface that can be used like a UDP port to send/receive datagrams to a FakeIP address. This is intended to make it easy to port existing UDP-based code to take advantage of SDR.
 
@@ -265,23 +272,25 @@ Networking API similar to Berkeley sockets, but for games:
 
 	To create a "client" port (e.g. the equivalent of an ephemeral UDP port) pass -1. In this case, a distinct object will be returned for each call. When the peer receives packets sent from this interface, the peer will assign a FakeIP from its own locally-controlled namespace.
 
-	!!! returns "Returns: void
+	!!! returns "Returns: void"
 
 ### createHostedDedicatedServerListenSocket
 
 !!! function "createHostedDedicatedServerListenSocket( `int` virtual_port, `dictionary` config_options )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | virtual_port | int | The port to connect through. |
-    | config_options | dictionary | A collection of optional, initial config options. |
+    | virtual_port | int | The port to connect through.
+    | config_options | dictionary | A collection of optional, initial config options.
 
     Create a listen socket on the specified virtual port. The physical UDP port to use will be determined by the SDR_LISTEN_PORT environment variable. If a UDP port is not configured, this call will fail.
+
+    This call **must** be made through the GodotSteam Server version.
 
 	This function should be used when you are using the ticket generator library to issue your own tickets. Clients connecting to the server on this virtual port will need a ticket, and they must connect using [connectToHostedDedicatedServer](#connecttohosteddedicatedserver).
 
 	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* [NetworkingConfigValue](networking_utils.md#networkingconfigvalue) (int / enum)
 	* config value (int or string)
 
 	Example:
@@ -294,7 +303,8 @@ Networking API similar to Berkeley sockets, but for games:
 
 	Alternately you can pass an empty dictionary.
 
-	!!! returns "Returns: uint32_t 
+	!!! returns "Returns: uint32_t"
+		Returns a networking listen socket.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#CreateHostedDedicatedServerListenSocket){ .md-button .md-button--doc_classes target="_blank" }
@@ -302,7 +312,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### createListenSocketIP
 
 !!! function "createListenSocketIP( `string` ip_address, `dictionary` config_options )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip_address | string | The IP address of the listen socket to create.
     | config_options | dictionary | A collection of optional, initial config options.
@@ -317,7 +327,7 @@ Networking API similar to Berkeley sockets, but for games:
 
 	If you need to set any initial config options, pass them here.  Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* [NetworkingConfigValue](networking_utils.md#networkingconfigvalue) (int / enum)
 	* config value (int or string)
 
 	Example:
@@ -342,7 +352,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### createListenSocketP2P
 
 !!! function "createListenSocketP2P( `int` virtual_port, `dictionary` config_options )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | virtual_port | int | The port to connect through.
     | config_options | dictionary | A collection of optional, initial config options.
@@ -357,7 +367,7 @@ Networking API similar to Berkeley sockets, but for games:
 
 	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* [NetworkingConfigValue](networking_utils.md#networkingconfigvalue) (int / enum)
 	* config value (int or string)
 
 	Example:
@@ -380,10 +390,10 @@ Networking API similar to Berkeley sockets, but for games:
 ### createListenSocketP2PFakeIP
 
 !!! function "createListenSocketP2PFakeIP( `int` fake_port, `dictionary` config_options )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | fake_port | int | The index of the fake port requested by [beginAsyncRequestFakeIP](#beginasyncrequestfakeip). |
-    | config_options | dictionary | A collection of optional, initial config options. |
+    | fake_port | int | The index of the fake port requested by [beginAsyncRequestFakeIP](#beginasyncrequestfakeip).
+    | config_options | dictionary | A collection of optional, initial config options.
 
     Create a listen socket that will listen for P2P connections sent to our FakeIP. A peer can initiate connections to this listen socket by calling [connectByIPAddress](#connectbyipaddress).
 
@@ -391,7 +401,7 @@ Networking API similar to Berkeley sockets, but for games:
 
 	Pass your **config_options** as dictionary containing the following key/value pairs:
 
-	* [NetworkingConfigValue](#networkingconfigvalue) (int / enum)
+	* [NetworkingConfigValue](networking_utils.md#networkingconfigvalue) (int / enum)
 	* config value (int or string)
 
 	Example:
@@ -405,7 +415,8 @@ Networking API similar to Berkeley sockets, but for games:
 
 	Alternately you can pass an empty dictionary.
 
-	!!! returns "Returns: uint32_t 
+	!!! returns "Returns: uint32_t"
+		Returns a listen socket handle upon success; otherwise, [LISTEN_SOCKET_INVALID](networking_utils.md#constants).
 
 ### createPollGroup
 
@@ -423,7 +434,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### createSocketPair
 
 !!! function "createSocketPair( `bool` loopback, `uint64_t` remote_steam_id1, `uint64_t` remote_steam_id2 )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | loopback | bool | Whether or not to send packets through the local network loopback device on ephemeral ports.
     | remote_steam_id1 | uint64_t | The Steam ID of the entity to pair.
@@ -452,7 +463,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### destroyPollGroup
 
 !!! function "destroyPollGroup( `uint32_t` poll_group )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | poll_group | uint32_t | The poll group to destroy.
 
@@ -469,7 +480,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### flushMessagesOnConnection
 
 !!! function "flushMessagesOnConnection( `uint32_t` connection_handle )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to flush messages for.
 
@@ -477,14 +488,13 @@ Networking API similar to Berkeley sockets, but for games:
 
 	If Nagle is enabled (it's on by default) then when calling [sendMessageToConnection](#sendmessagetoconnection) the message will be buffered, up to the Nagle time before being sent, to merge small messages into the same packet.  [See NETWORKING_CONFIG_NAGLE_TIME](networking_utils.md#networkingconfigvalue).
 
-	!!! returns "Returns: Result enum"
+	!!! returns "Returns: [Result enum](main.md#result)"
+		Possible failures:
 
-	Possible failures:
-
-	* [RESULT_INVALID_PARAM](main.md#result) - Invalid connection handle.
-	* [RESULT_INVALID_STATE](main.md#result) - Connection is in an invalid state.
-	* [RESULT_NO_CONNECTION](main.md#result) - Connection has ended.
-	* [RESULT_IGNORED](main.md#result) - We weren't yet connected, so this operation has no effect.
+		* [RESULT_INVALID_PARAM](main.md#result) - Invalid connection handle.
+		* [RESULT_INVALID_STATE](main.md#result) - Connection is in an invalid state.
+		* [RESULT_NO_CONNECTION](main.md#result) - Connection has ended.
+		* [RESULT_IGNORED](main.md#result) - We weren't yet connected, so this operation has no effect.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#FlushMessagesOnConnection){ .md-button .md-button--doc_classes target="_blank" }
@@ -496,7 +506,7 @@ Networking API similar to Berkeley sockets, but for games:
 
 	We pass NULL internally to only get the high-level status.
 
-	!!! returns "Returns: NetworkingAvailability enum"
+	!!! returns "Returns: [NetworkingAvailability enum](networking_utils.md#networkingavailability)"
 
 ### getCertificateRequest
 
@@ -505,18 +515,18 @@ Networking API similar to Berkeley sockets, but for games:
 
 	Get blob that describes a certificate request. You can send this to your game coordinator. Pass this blob to your game coordinator and call SteamDatagram_CreateCert.
 
-	!!! returns "Returns: dictionary
+	!!! returns "Returns: dictionary"
+		Contains the following keys:
 
-	Contains the following keys:
-
-	* certificate (int)
-	* cert_size (int)
-	* error_message (string)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+		| certificate | PackedByteArray | The certificate data.
+		| error_message | string | Any error message that was passed back.
 
 ### getConnectionInfo
 
 !!! function "getConnectionInfo( `uint32_t` connection_handle )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to get information for.
 
@@ -525,6 +535,8 @@ Networking API similar to Berkeley sockets, but for games:
 	!!! returns "Returns: dictionary"
 		Contains the following keys:
 
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
 		| identity | uint64_t | Who is on the other end?  Depending on the connection type and phase of the connection, we might not know.
 		| user_data | uint64_t | Arbitrary user data set by the local application code.
 		| listen_socket | uint32_t | Handle to listen socket this was connected on, or [LISTEN_SOCKET_INVALID](networking_utils.md#constants) if we initiated the connection.
@@ -543,9 +555,9 @@ Networking API similar to Berkeley sockets, but for games:
 ### getConnectionName
 
 !!! function "getConnectionName( `int` connection_handle )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | connection_handle | uint32_t | The network connection to flush messages for. |
+    | connection_handle | uint32_t | The network connection to flush messages for.
 
 	Fetch connection name into your buffer.
 
@@ -558,7 +570,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getConnectionRealTimeStatus
 
 !!! function "GetConnectionRealTimeStatus( `uint32_t` connection_handle, `int` lanes, `bool` get_status )" 
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to flush messages for.
     | lanes | int | The number of lanes to get connection information on.
@@ -597,6 +609,7 @@ Networking API similar to Berkeley sockets, but for games:
 		| queue_time | uint64_t | If you queued a message right now, approximately how long would that message wait in the queue before we actually started putting its data on the wire in a packet?
 
 		**lanes_status** array contains dictionaries which each contain the following keys:
+
 		| Key | Type | Notes |
         | --- | ---- | ----- |
 		| pending_unreliable | int | Counters for this particular lane.
@@ -616,7 +629,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getConnectionUserData
 
 !!! function "getConnectionUserData( `uint32_t` connection_handle )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to get user data for.
 
@@ -631,7 +644,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getDetailedConnectionStatus
 
 !!! function "getDetailedConnectionStatus( `uint32_t` connection_handle )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to get detailed connection data for.
 
@@ -651,53 +664,30 @@ Networking API similar to Berkeley sockets, but for games:
 ### getFakeIP
 
 !!! function "getFakeIP( `int` first_port )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | first_port | int | Must always be 0. |
+    | first_port | int | Must always be 0.
 
     Return info about the FakeIP and port(s) that we have been assigned, if any.
 
 	**first_port** is currently reserved and must be zero. Make sure and check **result**.
 
-	!!! returns "Returns: dictionary
+	!!! returns "Returns: dictionary"
+		Contains the following keys:
 
-	Contains the following keys:
-
-	* result (int)
-	* identity_type (int)
-	* ip (string)
-	* ports (uint16)
-
-### getGameCoordinatorServerLogin
-
-!!! function "getGameCoordinatorServerLogin( )"
-	Generate an authentication blob that can be used to securely login with your backend, using SteamDatagram_ParseHostedServerLogin. (See steamdatagram_gamecoordinator.h)
-
-	**Currently not enabled.**
-
-	!!! returns "Returns: int
-
-	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#GetGameCoordinatorServerLogin){ .md-button .md-button--doc_classes target="_blank" }	
-
-### getHostedDedicatedServerAddress
-
-!!! function "getHostedDedicatedServerAddress( )"
-	Return info about the hosted server. This contains the PoPID of the server, and opaque routing information that can be used by the relays to send traffic to your server.
-
-	**Currently not enabled.**
-
-	!!! returns "Returns: int
-
-	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#GetHostedDedicatedServerAddress){ .md-button .md-button--doc_classes target="_blank" }
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+		| result | [Result enum](main.md#result) | -
+		| identity_type | int | Local identity of the Networking Sockets object that made this request and is assigned the IP.  This is needed in the callback in the case where there are multiple Networking Sockets objects; eg. one for the user, and another for the local gameserver.
+		| ip | string | Fake IPv4 IP address that we have been assigned.  This IP address is not exclusively ours.  Steam tries to avoid sharing IP addresses, but this may not always be possible.  The IP address may be currently in use by another host, but with different port(s).  The exact same IP:port address may have been used previously.  Steam tries to avoid reusing ports until they have not been in use for some time, but this may not always be possible.
+		| ports | uint16 | Port number(s) assigned to us.  Only the first entries will contain nonzero values.  Entries corresponding to ports beyond what was allocated for you will be zero.  At the time of this writing, the maximum number of ports you may request is 4.
 
 ### getHostedDedicatedServerPOPId
 
 !!! function "getHostedDedicatedServerPOPId( )"
-	Returns 0 if SDR_LISTEN_PORT is not set. Otherwise, returns the data center the server is running in. This will be k_SteamDatagramPOPID_dev in non-production envirionment.
+	Returns 0 if SDR_LISTEN_PORT is not set. Otherwise, returns the data center the server is running in. This will be [DATAGRAM_POP_ID_DEV](#constants) in non-production envirionment.
 
-	!!! returns "Returns: uint32_t
+	!!! returns "Returns: uint32_t"
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#GetHostedDedicatedServerPOPID){ .md-button .md-button--doc_classes target="_blank" }
@@ -715,12 +705,12 @@ Networking API similar to Berkeley sockets, but for games:
 ### getListenSocketAddress
 
 !!! function "getListenSocketAddress( `uint32_t` socket, `bool` with_port )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | socket | uint32_t | The listen socket to get the IP address from.
     | with_port | bool | Whether or not to return the port as well.
 
-	Returns local IP and port that a listen socket created using [CreateListenSocketIP](#createlistensocketip) is bound to. The `with_port` argument defaults to true.
+	Returns local IP and port that a listen socket created using [CreateListenSocketIP](#createlistensocketip) is bound to. The `with_port` Parameter defaults to true.
 
 	!!! returns "Returns: string"
 
@@ -735,18 +725,20 @@ Networking API similar to Berkeley sockets, but for games:
 !!! function "getIdentity( )"
 	Get the identity assigned to this interface.
 
-	E.g. on Steam, this is the user's Steam ID, or for the gameserver interface, the Steam ID assigned to the gameserver. Returns false and sets the result to an invalid identity if we don't know our identity yet. (E.g. GameServer has not logged in. On Steam, the user will know their SteamID even if they are not signed into Steam.)
+	On Steam this is the user's Steam ID; or for the gameserver interface, the Steam ID assigned to the gameserver. Returns false and sets the result to an invalid identity if we don't know our identity yet. (E.g. GameServer has not logged in. On Steam, the user will know their SteamID even if they are not signed into Steam.)
 
 	!!! returns "Returns: string"
 
-	**Notes:** Was removed in GodotSteam 3.25 / 4.8.
+	---
+	[ :material-tag-remove: Removed GodotSteam 4.8](../changelog/godot4.md/#version-48){ .md-button .md-button--changes target="_blank" }
+	[ :material-tag-remove: Removed GodotSteam 3.25](../changelog/godot3.md/#version-325){ .md-button .md-button--changes target="_blank" }
 
 ### getRemoteFakeIPForConnection
 
 !!! function "getRemoteFakeIPForConnection( `uint32_t` connection_handle )" 
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
-    | connection_handle | uint32_t | The network connection to get detailed connection data for. |
+    | connection_handle | uint32_t | The network connection to get detailed connection data for.
 
     If the connection was initiated using the "FakeIP" system, then we we can get an IP address for the remote host. If the remote host had a global FakeIP at the time the connection was established, this function will return that global IP.
 
@@ -754,14 +746,20 @@ Networking API similar to Berkeley sockets, but for games:
 
 	This should also add the returning struct to your **ip_addresses** vector as **fake_ip_address**.
 
-	!!! returns "Returns: dictionary
+	!!! returns "Returns: dictionary"
+		Contains the following keys:
 
-	Contains the following keys:
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+		| result | [Result enum](main.md#result) | -
+		| ip_address | string | IPv6 is always used; IPv4 is represented using "IPv4-mapped" addresses.
+		| port | uint16 | Host byte order.
+		| ip_type | [NetworkingFakeIPType enum](networking_utils.md#networkingfakeiptype) |  This never returns [FAKE_IP_TYPE_INVALID](networking_utils.md#networkingfakeiptype).
 
-	* result (int)
-	* ip_address (string)
-	* port (uint16)
-	* ip_type (int)
+		On failure, **result** may be:
+	
+		* [RESULT_INVALID_PARAM](main.md#result) - Invalid connection handle.
+		* [RESULT_IP_NOT_FOUND](main.md#result) - This connection wasn't made using FakeIP system.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#GetIdentity){ .md-button .md-button--doc_classes target="_blank" }		
@@ -777,7 +775,7 @@ Networking API similar to Berkeley sockets, but for games:
 
 	You can use [getAuthenticationStatus](#getauthenticationstatus) or listen for [network_authentication_status](#network_authentication_status) to monitor the status.
 
-	!!! returns "Returns: NetworkingAvailability enum"
+	!!! returns "Returns: [NetworkingAvailability enum](networking_utils.md#networkingavailability)"
 		Returns the current value that would be returned from [getAuthenticationStatus](#getauthenticationstatus).
 
 	---
@@ -786,7 +784,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### receiveMessagesOnConnection
 
 !!! function "receiveMessagesOnConnection( `uint32_t` connection_handle, `int` max_messages )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to get messages for.
     | max_messages | int | The maximum amount of messages to retrieve.
@@ -811,7 +809,7 @@ Networking API similar to Berkeley sockets, but for games:
 		| message_number | uint64_t | Message number assigned by the sender. Note that if multiple lanes are used, each lane has its own message numbers, which are assigned sequentially, so messages from different lanes will share the same numbers.
 		| flags | int | Bitmask of k_nSteamNetworkingSend_xxx flags, only the [NETWORKING_SEND_RELIABLE](networking_utils.md#constants) bit is valid.
 
-		**receiver_user_data** is *usually* the same as calling [getConnection](#getconnection) and then fetching the user data associated with that connection, but for the following subtle differences:
+		**receiver_user_data** is *usually* the same as calling [getConnectionUserData](#getconnectionuserdata) and then fetching the user data associated with that connection, but for the following subtle differences:
 
 		* This user data will match the connection's user data at the time is captured at the time the message is returned by the API.  If you subsequently change the userdata on the connection, this won't be updated.
 		* This is an inline call, so it's *much* faster.
@@ -823,7 +821,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### receiveMessagesOnPollGroup
 
 !!! function "receiveMessagesOnPollGroup( `uint32_t` poll_group, `int` max_messages )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | poll_group | uint32_t | The poll group to get messages for. |
     | max_messages | int | The maximum amount of messages to retrieve. |
@@ -854,27 +852,28 @@ Networking API similar to Berkeley sockets, but for games:
 ### resetIdentity
 
 !!! function "resetIdentity( `uint64_t` remote_steam_id )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID to reset the identity. |
 
 	Reset the identity associated with this instance. Any open connections are closed. Any previous certificates, etc are discarded.
 
-	**Note:** This function is not actually supported on Steam!  It is included for use on other platforms where the active user can sign out and a new user can sign in.
+	!!! returns "Returns: void"
 
-	!!! returns "Returns: void
+	!!! info "Notes"
+		This function is not actually supported on Steam!  It is included for use on other platforms where the active user can sign out and a new user can sign in.
 
 ### runNetworkingCallbacks
 
 !!! function "runNetworkingCallbacks( )"
 	Invoke all callback functions queued for this interface. You don't need to call this if you are using Steam's callback dispatch mechanism [run_callbacks](main.md#run_callbacks).
 
-	!!! returns "Returns: void
+	!!! returns "Returns: void"
 
 ### sendMessages
 
 !!! function "sendMessages( `Array` messages, `uint32_t` connection_handle, `int` flags )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | messages | Array | An array of message data to send.
     | connection_handle | uint32_t | The network connection to send messages to.
@@ -884,22 +883,18 @@ Networking API similar to Berkeley sockets, but for games:
 
 	The library will take ownership of the message structures.  They may be modified or become invalid at any time, so you must not read them after passing them to this function.
 
-	!!! returns "Returns: array""
+	!!! returns "Returns: array"
 
 	The array contains the **message number** that was assigned to the message if sending was successful.  If sending failed, then a negative [Result value](main.md#result) is placed into the array.  For example, the array will hold
-	RESULT_INVALID_STATE / -k_EResultInvalidState if the connection was in an invalid state.
+	[RESULT_INVALID_STATE](main.md#result) if the connection was in an invalid state.
 
 	Possible failure codes include:
 
-	* [RESULT_INVALID_PARAM](main.md#result) / k_EResultInvalidParam
-		- invalid connection handle, or the individual message is too big; more than MAX_STEAM_PACKET_SIZE / k_cbMaxSteamNetworkingSocketsMessageSizeSend or 512 * 1024.
-	* [RESULT_INVALID_STATE](main.md#result) / k_EResultInvalidState
-		- Connection is in an invalid state
-	* [RESULT_NO_CONNECTION](main.md#result) / k_EResultNoConnection
-		- Connection has ended
-	* [RESULT_IGNORED](main.md#result) / k_EResultIgnored
-		- You used k_nSteamNetworkingSend_NoDelay, and the message was dropped because we were not ready to send it.
-	* [RESULT_LIMIT_EXCEEDED](main.md#result) / k_EResultLimitExceeded
+	* [RESULT_INVALID_PARAM](main.md#result) - invalid connection handle, or the individual message is too big; more than [MAX_STEAM_PACKET_SIZE](#constants) or 512 * 1024.
+	* [RESULT_INVALID_STATE](main.md#result) - Connection is in an invalid state.
+	* [RESULT_NO_CONNECTION](main.md#result) - Connection has ended.
+	* [RESULT_IGNORED](main.md#result) - You used [NETWORKING_SEND_NO_DELAY](networking_utils.md#constants) and the message was dropped because we were not ready to send it.
+	* [RESULT_LIMIT_EXCEEDED](main.md#result)
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#SendMessages){ .md-button .md-button--doc_classes target="_blank" }
@@ -907,7 +902,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### sendMessageToConnection
 
 !!! function "sendMessageToConnection( `uint32_t` connection_handle, `PackedByteArray` data, `int` flags )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to send messages to.
     | data | PackedByteArray | The message to send.
@@ -915,7 +910,7 @@ Networking API similar to Berkeley sockets, but for games:
 
     Send a message to the remote host on the specified connection.
 
-    **flags** determines the delivery guarantees that will be provided, when data should be buffered, etc; like [NETWORKING_SEND_UNRELIABLE](networking_utils.md#constants)
+    **flags** determines the delivery guarantees that will be provided, when data should be buffered, etc; like [NETWORKING_SEND_UNRELIABLE](networking_utils.md#constants).
 
 	Note that the semantics we use for messages are not precisely the same as the semantics of a standard "stream" socket. (SOCK_STREAM) For an ordinary stream socket, the boundaries between chunks are not considered relevant, and the sizes of the chunks of data written will not necessarily match up to the sizes of the chunks that are returned by the reads on the other end.  The remote host might read a partial chunk or chunks might be coalesced.  For the message semantics used here, however, the sizes **will** match.  Each send call will match a successful read call on the remote host one-for-one.
 
@@ -938,10 +933,23 @@ Networking API similar to Berkeley sockets, but for games:
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets#SendMessageToConnection){ .md-button .md-button--doc_classes target="_blank" }
 
+### setCertificate
+
+!!! function "setCertificate( `PackedByteArray` certificate )"
+	Set the certificate.  The certificate blob should be the output of SteamDatagram_CreateCert.
+
+	!!! returns "Returns: dictionary"
+		Contains the following keys:
+
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+        | response | bool | Whether the certificate was set or not.
+        | error | string | If it was not set, this is the relevant error message.
+
 ### setConnectionName
 
 !!! function "setConnectionName( `uint32_t` peer, `string` name )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to name.
     | name | string | The name to apply to this network connection.
@@ -956,7 +964,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### setConnectionPollGroup
 
 !!! function "setConnectionPollGroup( `uint32_t` connection_handle, `uint32_t` poll_group )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to assign to the poll group.
     | poll_group | uint32_t | The poll group to add the connection to.
@@ -976,7 +984,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### setConnectionUserData
 
 !!! function "setConnectionUserData( `uint32_t` connection_handle, `int64_t` user_data )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to assign to the poll group.
     | user_data | int64_t | -
@@ -987,7 +995,7 @@ Networking API similar to Berkeley sockets, but for games:
 	* The SteamNetworkingmessage_t structure.
 	* The SteamNetConnectionInfo_t structure, which is a member of [network_connection_status_changed](#network_connection_status_changed) but see warning below.
 
-	Do you need to set this atomically when the connection is created? [See 'Connection User Data'](networking_utils.md#connection_user_data).
+	Do you need to set this atomically when the connection is created? [See 'Connection User Data'](networking_utils.md#connection-user-data).
 
 	**Warning**: Be **very careful** when using the value provided in callbacks structs.  Callbacks are queued, and the value that you will receive in your callback is the userdata that was effective at the time the callback was queued.  There are subtle race conditions that can happen if you don't understand this!
 
@@ -1000,7 +1008,7 @@ Networking API similar to Berkeley sockets, but for games:
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### fake_ip_result
 

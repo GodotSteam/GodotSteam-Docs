@@ -19,8 +19,8 @@ Functions for accessing and manipulating Steam user information. This is also wh
 !!! function "advertiseGame( `string` server_ip = "", `uint16` port = 0 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
-    | server_ip | string | The IP of the game server in host order, i.e 127.0.0.1 == 0x7f000001. Defaults to empty string. |
-    | port | uint16 | The connection port of the game server, in host order. Defaults to 0. |
+    | server_ip | string | The IP of the game server in host order, i.e 127.0.0.1 == 0x7f000001. Defaults to empty string.
+    | port | uint16 | The connection port of the game server, in host order. Defaults to 0.
 
 	Set the rich presence data for an unsecured game server that the user is playing on. This allows friends to be able to view the game info and join your game.
 
@@ -28,7 +28,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 	If either or both defaults are left, calling this function will clear the game advertisement.
 
-	!!! return "Returns: void"
+	!!! returns "Returns: void"
 
 	!!! info "Notes"
 		This is a legacy function.
@@ -38,7 +38,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### beginAuthSession
 
-!!! function "beginAuthSession( `PoolByteArray / PackedByteArray` auth_ticket, `int` ticket_size, `uint64_t` steam_id )"
+!!! function "beginAuthSession( `PackedByteArray` auth_ticket, `int` ticket_size, `uint64_t` steam_id )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | auth_ticket | PackedByteArray | The auth ticket to validate. |
@@ -51,7 +51,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 	Beginning an auth session also registers for these callbacks if the entity goes offline or cancels the ticket.
 
-	!!! returns "Returns: int / [BeginAuthSessionResult enum](main.md#beginauthsessionresult)"
+	!!! returns "Returns: [BeginAuthSessionResult enum](main.md#beginauthsessionresult)"
 
 	!!! trigger "Triggers"
 		[validate_auth_ticket_response](#validate_auth_ticket_response) callback
@@ -78,7 +78,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 ### decompressVoice
 
-!!! function "decompressVoice( `PoolByteArray / PackedByteArray` voice, `uint32_t` sample_rate, `uint32_t` buffer_size_override = 20480 )"
+!!! function "decompressVoice( `PackedByteArray` voice, `uint32_t` sample_rate, `uint32_t` buffer_size_override = 20480 )"
 	| Argument | Type | Notes |
     | -------- | ---- | ----- |
     | voice_data | PackedByteArray | 
@@ -100,7 +100,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
         | --- | ---- | ----- |
 		| result | [VoiceResult enum](main.md#voiceresult) | The result of the call.
 		| size | uint32_t | The size of the buffer passed into **uncompressed**.
-		| uncompressed | PoolByteArray / PackedByteArray | The buffer where the raw audio data will be returned. This can then be passed to your audio subsystems for playback.
+		| uncompressed | PackedByteArray | The buffer where the raw audio data will be returned. This can then be passed to your audio subsystems for playback.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#DecompressVoice){ .md-button .md-button--doc_classes target="_blank" }
@@ -140,7 +140,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 		| Key | Type | Notes |
         | --- | ---- | ----- |
 		| id | uint32_t | A handle to the auth ticket. When you're done interacting with the entity you must call [cancelAuthTicket](#cancelauthticket) on the handle.
-		| buffer | PoolByteArray / PackedByteArray | 
+		| buffer | PackedByteArray | 
 		| size | uint32_t | The length of the ticket; unnecessary really.
 
 	!!! trigger "Triggers"
@@ -353,7 +353,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-		| auth_blob | PoolByteArray / PackedByteArray | The server's authentication token.
+		| auth_blob | PackedByteArray | The server's authentication token.
 		| server_id | uint64_t | The Steam ID of the game server, received from the game server by the client.
 		| server_ip | uint32_t | The IP address of the game server in host order.
 		| server_port | uint16 | The connection port of the game server, in host order.
@@ -556,7 +556,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 
 	This can only be called after sending the users auth ticket to [beginAuthSession](#beginauthsession).
 
-	!!! returns "Returns: int / [UserHasLicenseForAppResult enum](main.md#userhaslicenseforappresult)"
+	!!! returns "Returns: [UserHasLicenseForAppResult enum](main.md#userhaslicenseforappresult)"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#UserHasLicenseForApp){ .md-button .md-button--doc_classes target="_blank" }
@@ -592,7 +592,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-		| result | int / [Result enum](main.md#result) | The result of the call; always [RESULT_OK](main.md#result) for asynchronous timer-based notifications.
+		| result | [Result enum](main.md#result) | The result of the call; always [RESULT_OK](main.md#result) for asynchronous timer-based notifications.
 		| duration | dictionary | Details about the duration control.
 
 		The **duration** dictionary contains the following keys:
@@ -603,7 +603,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| applicable | bool | Is duration control applicable to user and game combination?
 		| seconds_last_5hrs | int32 | Playtime in trailing 5 hour window plus current session, in seconds.
 		| progress | int | Description of whether the game should exit.
-		| notification | int | Notification to show, if any; always [DURATION_CONTROL_NOTIFICATION_NONE](main.md#durationcontrol) for API calls.
+		| notification | int | Notification to show, if any; always [DURATION_CONTROL_NOTIFICATION_NONE](main.md#durationcontrolnotification) for API calls.
 		| notification_verbal | string | The human-readable string version of **notification**.
 
 	---
@@ -617,7 +617,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-		| result | int / [Result enum](main.md#result) | Was the call successful?  May be [RESULT_DUPLICATE_REQUEST](main.md#result) if there is already a pending call or [RESULT_LIMIT_EXCEEDED](main.md#result) as this call is subject to a 60-second rate limit.
+		| result | [Result enum](main.md#result) | Was the call successful?  May be [RESULT_DUPLICATE_REQUEST](main.md#result) if there is already a pending call or [RESULT_LIMIT_EXCEEDED](main.md#result) as this call is subject to a 60-second rate limit.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#EncryptedAppTicketResponse_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -644,7 +644,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| Key | Type | Notes |
         | --- | ---- | ----- |
 		| auth_ticket | uint32_t | The handle to the ticket that was created.
-		| result | int / [Result enum](main.md#result) | The result of the operation.
+		| result | [Result enum](main.md#result) | The result of the operation.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#GetAuthSessionTicketResponse_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -658,7 +658,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| Key | Type | Notes |
         | --- | ---- | ----- |
 		| auth_ticket | uint32_t | The handle to the ticket that was created.
-		| result | int / [Result enum](main.md#result) | The result of the operation.
+		| result | [Result enum](main.md#result) | The result of the operation.
 		| ticket_size | int | The length of the ticket that was created.
 		| ticket_buffer | uint8 | The ticket that was created.
 
@@ -698,7 +698,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| Key | Type | Notes |
         | --- | ---- | ----- |
         | is_allowed | bool | Whther or not the user is allowed to use Market features.
-		| disallow_reason | int / [MarketNotAllowedReasonFlags enum](main.md#marketnotallowedreasonflags) | The reason why the user is disallowed, if disallowed.
+		| disallow_reason | [MarketNotAllowedReasonFlags enum](main.md#marketnotallowedreasonflags) | The reason why the user is disallowed, if disallowed.
 		| allowed_at_time | int | The Unix time for when the user is allowed to use Market features.
 		| steam_guard_required_days | int | The number of days any user is required to have had Steam Guard before they can use the market.
 		| new_device_cooldown | int | The number of days after initial device authorization a user must wait before using the market on that device.
@@ -729,7 +729,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int /  [Result enum](main.md#result) | The reason why the connection failed.
+        | result | [Result enum](main.md#result) | The reason why the connection failed.
 		| retrying | bool | Is the Steam client still trying to connect to the server?
 
 	---
@@ -754,7 +754,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-        | result | int / [Result enum](main.md#result) | The reason we were disconnected from Steam.
+        | result | [Result enum](main.md#result) | The reason we were disconnected from Steam.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#SteamServersDisconnected_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -783,7 +783,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| Key | Type | Notes |
         | --- | ---- | ----- |
         | auth_id | uint64_t | The Steam ID of the entity that provided the auth ticket.
-		| response | uint32_t / [AuthSessionResponse enum](main.md#authsessionresponse) | The result of the validation.
+		| response | [AuthSessionResponse enum](main.md#authsessionresponse) | The result of the validation.
 		| owner_id | uint64_t | The Steam ID that owns the game, this will be different from **auth_id** if the game is being accessed via Steam Family Sharing. 
 
 		See [EAuthSessionResponse](https://partner.steamgames.com/doc/api/steam_api#EAuthSessionResponse){ target="_blank" } for more details about possible responses.

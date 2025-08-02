@@ -106,15 +106,13 @@ The client side of this operation, seeing and following beacons, can also be man
 
     Get the list of locations in which you can post a party beacon.
 
-	!!! returns "Returns: array"
-		Contains a list of:
+	!!! returns "Returns: array of dictionaries"
+		Each containing the following keys:
 
-		* beacon_data (dictionary)
-
-		Containing the following keys:
-
-		* type (int)
-		* location_id (uint64_t)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| type | [BeaconLocationType enum](#steampartybeaconlocationtype) | The beacon location type.
+		| location_id | uint64_t | The ID for this location.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteamparties#GetAvailableBeaconLocations){ .md-button .md-button--doc_classes target="_blank" }
@@ -148,11 +146,13 @@ The client side of this operation, seeing and following beacons, can also be man
 	!!! returns "Returns: dictionary"
 		Contains the following keys:
 
-		* beacon_id (uint64_t)
-		* owner_id (uint64_t)
-		* type (int)
-		* location_id (uint64_t)
-		* metadata (string)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| beacon_id | uint64_t | Beacon ID to query.
+		| owner_id | uint64_t | Creator of the beacon.
+		| type | [PartyBeaconLocationType enum](#steampartybeaconlocationtype) | Location the beacon has been posted.
+		| location_id | uint64_t | Opaque identifier of this location.
+		| metadata | string | Any additional metadata the game has set on this beacon; eg. game mode.
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteamparties#GetBeaconDetails){ .md-button .md-button--doc_classes target="_blank" }
@@ -260,7 +260,9 @@ These callbacks require you to [setup one of the three callback methods to recei
 	Call result for [changeNumOpenSlots](#changenumopenslots).
 
 	!!! returns "Returns"
-		* result (int)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| result | [Result enum](main.md#result) | The result of the attempt to change the number of open slots
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteamparties#ChangeNumOpenSlotsCallback_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -271,8 +273,10 @@ These callbacks require you to [setup one of the three callback methods to recei
 	This callback is used as a call response for [createBeacon](#createbeacon). If successful, your beacon has been posted in the desired location and you may start receiving [reservation_notification](#reservation_notification) callbacks for users following the beacon.
 
 	!!! returns "Returns"
-		* result (int)
-		* beacon_id (uint64_t)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| result | [Result enum](main.md#result) | The result of the attempt to create a beacon.
+		| beacon_id | uint64_t | Beacon ID of the newly created beacon.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteamparties#CreateBeaconCallback_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -283,10 +287,12 @@ These callbacks require you to [setup one of the three callback methods to recei
 	This callback is used as a call response for [joinParty](#joinparty). On success, you will have reserved a slot in the beacon-owner's party, and should use connect_string to connect to their game and complete the process.
 
 	!!! returns "Returns"
-		* result (int)
-		* beacon_id (uint64_t)
-		* steam_id (uint64_t)
-		* connect_string (string)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| result | [Result enum](main.md#result) | The result of the attempt to join the party.
+		| beacon_id | uint64_t | Beacon ID used in the attempt.
+		| steam_id | uint64_t | Creator of the beacon used in the attempt.
+		| connect_string | string | If successful, a "join game" string for your game to use to complete the process of joining the desired party.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteamparties#JoinPartyCallback_t){ .md-button .md-button--doc_classes target="_blank" }
@@ -297,8 +303,10 @@ These callbacks require you to [setup one of the three callback methods to recei
 	After creating a beacon, when a user "follows" that beacon Steam will send you this callback to know that you should be prepared for the user to join your game. When they do join, be sure to call [onReservationCompleted](#onreservationcompleted) to let Steam know.
 
 	!!! returns "Returns"
-		* beacon_id (uint64_t)
-		* steam_id (uint64_t)
+		| Key | Type | Notes |
+        | --- | ---- | ----- |
+    	| beacon_id | uint64_t | Beacon ID of your beacon.
+		| steam_id | uint64_t | Steam ID of the user following your beacon.
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteamparties#ReservationNotificationCallback_t){ .md-button .md-button--doc_classes target="_blank" }

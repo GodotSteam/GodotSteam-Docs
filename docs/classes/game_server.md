@@ -15,7 +15,7 @@ icon: material/server-network
 ### associateWithClan
 
 !!! function "associateWithClan( `uint64_t` clan_id )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the group you want to be associated with.
 
@@ -32,7 +32,7 @@ icon: material/server-network
 ### beginAuthSession
 
 !!! function "beginAuthSession( `PackedByteArray` auth_ticket, `uint64_t` steam_id )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | auth_ticket | PackedByteArray | The auth ticket to validate.
     | steam_id | uint64_t | The entity's Steam ID that sent this ticket.
@@ -43,7 +43,7 @@ icon: material/server-network
 
 	When the multiplayer session terminates you must call [endAuthSession](#endauthsession).
 
-	!!! returns "Returns: [BeginAuthSessionResult enum](#beginauthsessionresult)"
+	!!! returns "Returns: [BeginAuthSessionResult enum](main_server.md#beginauthsessionresult)"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#BeginAuthSession){ .md-button .md-button--store target="_blank" }
@@ -51,7 +51,7 @@ icon: material/server-network
 ### cancelAuthTicket
 
 !!! function "cancelAuthTicket( `uint32_t` auth_ticket )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | auth_ticket_handle | uint32_t | The active auth ticket to cancel.
 
@@ -75,7 +75,7 @@ icon: material/server-network
 ### computeNewPlayerCompatibility
 
 !!! function "computeNewPlayerCompatibility( `uint64_t` steam_id )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the player that is attempting to join.
 
@@ -103,7 +103,7 @@ icon: material/server-network
 ### endAuthSession
 
 !!! function "endAuthSession( `uint64_t` steam_id )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The entity to end the active auth session with.
 
@@ -182,7 +182,7 @@ icon: material/server-network
 
 ### getSteamID
 
-!!! function "getSteamID()"
+!!! function "getSteamID( )"
 	Gets the Steam ID of the game server.
 
 	!!! returns "Returns: uint64_t"
@@ -192,8 +192,14 @@ icon: material/server-network
 
 ### handleIncomingPacket
 
-!!! function "handleIncomingPacket( `int` packet, `string` ip, `int` port )"
-	Handles a Steam master server packet when in GameSocketShare mode. When in GameSocketShare mode, instead of ISteamGameServer creating its own socket to talk to the master server on, it lets the game use its socket to forward messages back and forth. This prevents us from requiring server ops to open up yet another port in their firewalls.
+!!! function "handleIncomingPacket( `int` packet, `string` ip, `uint16` port )"
+	| Parameter | Type | Notes |
+    | -------- | ---- | ----- |
+    | packet | int | The packet handle.
+    | ip | string | The IP address that this packet was sent to in host order, i.e 127.0.0.1.
+    | port | uint16 | The port that this packet was sent through, in host order.
+
+    Handles a Steam master server packet when in GameSocketShare mode. When in GameSocketShare mode, instead of ISteamGameServer creating its own socket to talk to the master server on, it lets the game use its socket to forward messages back and forth. This prevents us from requiring server ops to open up yet another port in their firewalls.
 
 	This should be called whenever a packet that starts with 0xFFFFFFFF comes in. That means it's for us. The IP and port parameters are used when you've elected to multiplex the game server's UDP socket rather than having the master server updater use its own sockets.
 
@@ -239,7 +245,7 @@ icon: material/server-network
 ### logOn
 
 !!! function "logOn( `string` token )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | token | string | -
 
@@ -275,8 +281,8 @@ icon: material/server-network
 
 ### requestUserGroupStatus
 
-!!! function "requestUserGroupStatus( `uint64_t` steam_id, `int` group_id )"
-	| Argument | Type | Notes |
+!!! function "requestUserGroupStatus( `uint64_t` steam_id, `uint64_t` group_id )"
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user to check the group status of.
     | group_id | uint64_t | The group to check.
@@ -306,7 +312,7 @@ icon: material/server-network
 ### setAdvertiseServerActive
 
 !!! function "setAdvertiseServerActive( `bool` active )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | active | bool | Whether to set as active or not.
 
@@ -325,7 +331,7 @@ icon: material/server-network
 ### setBotPlayerCount
 
 !!! function "setBotPlayerCount( `int` bots )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | bots | int | The number of bot / AI players currently playing on the server.
 
@@ -339,7 +345,7 @@ icon: material/server-network
 ### setDedicatedServer
 
 !!! function "setDedicatedServer( `bool` dedicated )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | dedicated | bool | Is this a dedicated server (true) or a listen server (false)?
 
@@ -357,7 +363,7 @@ icon: material/server-network
 
 
 !!! function "setGameData( `string` data )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | data | string | The new "gamedata" value to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_GAME_DATA (2048)](main_server.md#constants).
 
@@ -373,7 +379,7 @@ icon: material/server-network
 ### setGameDescription
 
 !!! function "setGameDescription( `string` description )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | description | string | The description of your game. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_GAME_DESCRIPTION (64)](main_server.md#constants).
 
@@ -392,7 +398,7 @@ icon: material/server-network
 ### setGameTags
 
 !!! function "setGameTags( `string` tags )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | tags | string | The new "gametags" value to set. Must not be NULL or an empty string (""). This can not be longer than [MAX_GAME_SERVER_TAGS (128)](main_server.md#constants).
 
@@ -408,7 +414,7 @@ icon: material/server-network
 ### setKeyValue
 
 !!! function "setKeyValue( `string` key, `string` value )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The key being set.
     | value | string | The value set for this key.
@@ -423,7 +429,7 @@ icon: material/server-network
 ### setMapName
 
 !!! function "setMapName( `string` map )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | map | string | The new map name to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_MAP_NAME (32)](main_server.md#constants).
 
@@ -437,7 +443,7 @@ icon: material/server-network
 ### setMaxPlayerCount
 
 !!! function "setMaxPlayerCount( `int` players_max )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | players_max | int | The new maximum number of players allowed on this server.
 
@@ -451,7 +457,7 @@ icon: material/server-network
 ### setModDir
 
 !!! function "setModDir( `string` mod_directory )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | mod_directory | string | The game directory to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_GAME_DIR (32)](main_server.md#constants).
 
@@ -468,7 +474,7 @@ icon: material/server-network
 ### setPasswordProtected
 
 !!! function "setPasswordProtected( `bool` password_protected )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | password_protected | bool | Enable (true) or disable (false) password protection.
 
@@ -482,7 +488,7 @@ icon: material/server-network
 ### setProduct
 
 !!! function "setProduct( `string` product )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | product | string | The unique identifier for your game. Must not be an empty string.
 
@@ -501,7 +507,7 @@ icon: material/server-network
 ### setRegion
 
 !!! function "setRegion( `string` region )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | region | string | - 
 
@@ -515,13 +521,13 @@ icon: material/server-network
 ### setServerName
 
 !!! function "setServerName( `string` name )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | name | string | The new server name to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_NAME (64)](main_server.md#constants).
 
 	Sets the name of server as it will appear in the server browser.
 
-	!!! returns "Returns: void
+	!!! returns "Returns: void"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetServerName){ .md-button .md-button--store target="_blank" }
@@ -529,7 +535,7 @@ icon: material/server-network
 ### setSpectatorPort
 
 !!! function "setSpectatorPort( `int` port )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | port | int | The port for spectators to join.
 
@@ -547,7 +553,7 @@ icon: material/server-network
 ### setSpectatorServerName
 
 !!! function "setSpectatorServerName( `string` name )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | name | string | The spectator server name to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_MAP_NAME](main_server.md#constants).
 
@@ -561,7 +567,7 @@ icon: material/server-network
 ### updateUserData
 
 !!! function "updateUserData( `uint64_t` steam_id, `string` player_name, `uint32_t` score )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user.
     | player_name | string | The name of the user.
@@ -575,19 +581,19 @@ icon: material/server-network
 ### userHasLicenseForApp
 
 !!! function "userHasLicenseForApp( `uint64_t` steam_id, `uint32_t` app_id )"
-	| Argument | Type | Notes |
+	| Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user that sent the auth ticket.
     | app_id | uint32_t | The DLC app ID to check if the user owns it.
 
 	Checks if the user owns a specific piece of Downloadable Content (DLC). This can only be called after sending the users auth ticket to [beginAuthSession.](#beginauthsession)
 
-	!!! returns "Returns: [UserHasLicenseForAppResult enum](#userhaslicenseforappresult)"
+	!!! returns "Returns: [UserHasLicenseForAppResult enum](main_server.md#userhaslicenseforappresult)"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#UserHasLicenseForApp){ .md-button .md-button--store target="_blank" }
 
-### wasRestartRequested()
+### wasRestartRequested
 
 !!! function "wasRestartRequested( )"
 	Checks if the master server has alerted us that we are out of date and has requested a restart. This reverts back to false after calling this function. Only returns true once per request.
@@ -601,7 +607,7 @@ icon: material/server-network
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### associate_clan
 
@@ -620,8 +626,6 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 
 !!! function "client_approved"
 	Client has been approved to connect to this game server.
-
-	Emits signal in response to function sendUserConnectAndAuthenticate (currently missing from Server).
 
 	!!! returns "Returns"
 		| Key | Type | Notes |

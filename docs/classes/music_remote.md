@@ -463,7 +463,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### music_player_remote_to_front
 

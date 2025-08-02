@@ -129,8 +129,8 @@ Miscellaneous networking utilities for checking the local networking environment
 		| Key | Type | Notes |
         | --- | ---- | ----- |
         | name | string | The name of the value.
-		| type | [NetworkingConfigDataType enum](#networkingconfigdatatype) | 
-		| scope | [NetworkingConfigScope enum](#networkingconfigscope) | 
+		| type | [NetworkingConfigDataType enum](#networkingconfigdatatype) | The data type for this value.
+		| scope | [NetworkingConfigScope enum](#networkingconfigscope) | The config scope type for this value.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingUtils#GetConfigValueInfo){ .md-button .md-button--doc_classes target="_blank" }
@@ -158,7 +158,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 	Get the FakeIP type for the given IPv4 address.
 
-	!!! returns "Returns: NetworkingFakeIPType enum"
+	!!! returns "Returns: [NetworkingFakeIPType enum](#networkingfakeiptype)"
 
 ### getLocalPingLocation
 
@@ -271,7 +271,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 	[relay_network_status](#relay_network_status) is also a callback. It will be triggered on both the user and gameserver interfaces any time the status changes, or ping measurement starts or stops.
 
-	!!! returns "Returns: NetworkingAvailability enum"
+	!!! returns "Returns: [NetworkingAvailability enum](#networkingavailability)"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingUtils#GetRelayNetworkStatus){ .md-button .md-button--doc_classes target="_blank" }
@@ -311,7 +311,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
 	The **enumerate_dev_vars** argument can be used to include "dev" vars.  These are vars that are recommended to only be editable in "debug" or "dev" mode and typically should not be shown in a retail environment where a malicious local user might use this to cheat.
 
-	!!! returns "Returns: NetworkingConfigValue enum"
+	!!! returns "Returns: [NetworkingConfigValue enum](#networkingconfigvalue)"
 
 ### parsePingLocationString
 
@@ -452,9 +452,9 @@ Miscellaneous networking utilities for checking the local networking environment
 
     Set a configuration value.
 
-	!!! returns "Returns: bool
+	!!! returns "Returns: bool"
 
-   ---
+	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingUtils#shortcuts){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setGlobalConfigValueInt32
@@ -467,7 +467,7 @@ Miscellaneous networking utilities for checking the local networking environment
 
     Set a configuration value.
 
-	!!! returns "Returns: bool
+	!!! returns "Returns: bool"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingUtils#shortcuts){ .md-button .md-button--doc_classes target="_blank" }
@@ -491,7 +491,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ## :material-signal: Signals
 ==}
 
-These callbacks require you to run `Steam.run_callbacks()` in your `_process()` function to receive them.
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### relay_network_status
 
@@ -513,6 +513,7 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 {==
 ## :material-infinity: Constants
 ==}
+
 Found in steamnetworkingtypes.h.
 
 Name | SDK Name | Value | Details
@@ -610,17 +611,17 @@ NETWORKING_CONFIG_SEND_BUFFER_SIZE | k_ESteamNetworkingConfig_SendBufferSize | 9
 NETWORKING_CONFIG_SEND_RATE_MIN | k_ESteamNetworkingConfig_SendRateMin | 10 | Minimum send rate clamp, in bytes/sec. At the time of this writing this option should always be set to the same value, to manually configure a specific send rate.  The default value is 256K.  Eventually we hope to have the library estimate the bandwidth of the channel and set the send rate to that estimated bandwidth and this value will only set limits on that send rate.
 NETWORKING_CONFIG_SEND_RATE_MAX | k_ESteamNetworkingConfig_SendRateMax | 11 | Maximum send rate clamp, in bytes/sec. At the time of this writing this option should always be set to the same value, to manually configure a specific send rate.  The default value is 256K.  Eventually we hope to have the library estimate the bandwidth of the channel and set the send rate to that estimated bandwidth and this value will only set limits on that send rate.
 NETWORKING_CONFIG_NAGLE_TIME | k_ESteamNetworkingConfig_NagleTime | 12 | Nagle time, in microseconds. When a "sendMessage" function is called, if the outgoing message is less than the size of the MTU, it will be queued for a delay equal to the Nagle timer value.  This is to ensure that if the application sends several small messages rapidly, they are coalesced into a single packet. See historical RFC 896. Value is in microseconds. Default is 5000us (5ms).
-NETWORKING_CONFIG_LOG_LEVEL_ACK_RTT | k_ESteamNetworkingConfig_LogLevel_AckRTT | 13 | RTT calculations for inline pings and replies. [See 'Log Levels' section below](#log_levels).
-NETWORKING_CONFIG_LOG_LEVEL_PACKET_DECODE | k_ESteamNetworkingConfig_LogLevel_PacketDecode | 14 | Log SNP packets send / receive. [See 'Log Levels' section below](#log_levels).
-NETWORKING_CONFIG_LOG_LEVEL_MESSAGE | k_ESteamNetworkingConfig_LogLevel_Message | 15 | Log each message send / receive. [See 'Log Levels' section below](#log_levels).
-NETWORKING_CONFIG_LOG_LEVEL_PACKET_GAPS | k_ESteamNetworkingConfig_LogLevel_PacketGaps | 16 | Dropped packets. [See 'Log Levels' section below](#log_levels).
-NETWORKING_CONFIG_LOG_LEVEL_P2P_RENDEZVOUS | k_ESteamNetworkingConfig_LogLevel_P2PRendezvous | 17 | P2P rendezvous messages. [See 'Log Levels' section below](#log_levels).
-NETWORKING_CONFIG_LOG_LEVEL_SRD_RELAY_PINGS | k_ESteamNetworkingConfig_LogLevel_SDRRelayPings | 18 | Ping relays. [See 'Log Levels' section below](#log_levels).
+NETWORKING_CONFIG_LOG_LEVEL_ACK_RTT | k_ESteamNetworkingConfig_LogLevel_AckRTT | 13 | RTT calculations for inline pings and replies. [See 'Log Levels' section below](#log-levels).
+NETWORKING_CONFIG_LOG_LEVEL_PACKET_DECODE | k_ESteamNetworkingConfig_LogLevel_PacketDecode | 14 | Log SNP packets send / receive. [See 'Log Levels' section below](#log-levels).
+NETWORKING_CONFIG_LOG_LEVEL_MESSAGE | k_ESteamNetworkingConfig_LogLevel_Message | 15 | Log each message send / receive. [See 'Log Levels' section below](#log-levels).
+NETWORKING_CONFIG_LOG_LEVEL_PACKET_GAPS | k_ESteamNetworkingConfig_LogLevel_PacketGaps | 16 | Dropped packets. [See 'Log Levels' section below](#log-levels).
+NETWORKING_CONFIG_LOG_LEVEL_P2P_RENDEZVOUS | k_ESteamNetworkingConfig_LogLevel_P2PRendezvous | 17 | P2P rendezvous messages. [See 'Log Levels' section below](#log-levels).
+NETWORKING_CONFIG_LOG_LEVEL_SRD_RELAY_PINGS | k_ESteamNetworkingConfig_LogLevel_SDRRelayPings | 18 | Ping relays. [See 'Log Levels' section below](#log-levels).
 NETWORKING_CONFIG_SDR_CLIENT_CONSEC_PING_TIMEOUT_FAIL_INITIAL | k_ESteamNetworkingConfig_SDRClient_ConsecutitivePingTimeoutsFailInitial | 19 | If the first N pings to a port all fail, mark that port as unavailable for a while, and try a different one.  Some ISPs and routers may drop the first packet, so setting this to 1 may greatly disrupt communications.
 NETWORKING_CONFIG_SDR_CLIENT_CONSEC_PING_TIMEOUT_FAIL | k_ESteamNetworkingConfig_SDRClient_ConsecutitivePingTimeoutsFail | 20 | If N consecutive pings to a port fail, after having received successful communication, mark that port as unavailable for a while, and try a different one.
 NETWORKING_CONFIG_SDR_CLIENT_MIN_PINGS_BEFORE_PING_ACCURATE | k_ESteamNetworkingConfig_SDRClient_MinPingsBeforePingAccurate | 21 | Minimum number of lifetime pings we need to send, before we think our estimate is solid.  The first ping to each cluster is very often delayed because of NAT, routers not having the best route, etc.  Until we've sent a sufficient number of pings, our estimate is often inaccurate.  Keep pinging until we get this many pings.
 NETWORKING_CONFIG_SDR_CLIENT_SINGLE_SOCKET | k_ESteamNetworkingConfig_SDRClient_SingleSocket | 22 | Set all steam datagram traffic to originate from the same local port. By default, we open up a new UDP socket (on a different local port) for each relay.  This is slightly less optimal, but it works around some routers that don't implement NAT properly.  If you have intermittent problems talking to relays that might be NAT related, try toggling this flag.
-NETWORKING_CONFIG_IP_ALLOW_WITHOUT_AUTH | k_ESteamNetworkingConfig_IP_AllowWithoutAuth | 23 | [Read 'IP Allow' below](#ip_allow).
+NETWORKING_CONFIG_IP_ALLOW_WITHOUT_AUTH | k_ESteamNetworkingConfig_IP_AllowWithoutAuth | 23 | [Read 'IP Allow' below](#ip-allow).
 NETWORKING_CONFIG_TIMEOUT_INITIAL | k_ESteamNetworkingConfig_TimeoutInitial | 24 | [connection int32] Timeout value (in ms) to use when first connecting.
 NETWORKING_CONFIG_TIMEOUT_CONNECTED | k_ESteamNetworkingConfig_TimeoutConnected | 25 | [connection int32] Timeout value (in ms) to use after connection is established.
 NETWORKING_CONFIG_FAKE_PACKET_DUP_SEND | k_ESteamNetworkingConfig_FakePacketDup_Send | 26 | Globally duplicate some percentage of packets.
@@ -633,28 +634,28 @@ NETWORKING_CONFIG_MTU_PACKET_SIZE | k_ESteamNetworkingConfig_MTU_PacketSize | 32
 NETWORKING_CONFIG_MTU_DATA_SIZE | k_ESteamNetworkingConfig_MTU_DataSize | 33 | Read only.  Maximum message size you can send that will not fragment, based on NETWORKING_CONFIG_MTU_PACKET_SIZE.
 NETWORKING_CONFIG_UNENCRYPTED | k_ESteamNetworkingConfig_Unencrypted | 34 | Allow unencrypted and unauthenticated communication. 0 is not allowed; the default.  1 is allowed, but prefer encrypted. 2 is allowed and preferred. 3 is required; fail the connection if the peer requires encryption. This is a dev configuration value, since its purpose is to disable encryption. You should not let users modify it in production.  But note that it requires the peer to also modify their value in order for encryption to be disabled.
 NETWORKING_CONFIG_SDR_CLIENT_FAKE_CLUSTER_PING | k_ESteamNetworkingConfig_SDRClient_FakeClusterPing | 36 | Force ping times to clusters to be the specified values.  A comma separated list of cluster = millisecond values; eg. "sto=32,iad=100".  This is a dev configuration value, you probably should not let users modify it in production.
-NETWORKING_CONFIG_SYMMETRIC_CONNECT | k_ESteamNetworkingConfig_SymmetricConnect | 37 | [Read 'Symmetric Connect' below](#symmetric_connect).
+NETWORKING_CONFIG_SYMMETRIC_CONNECT | k_ESteamNetworkingConfig_SymmetricConnect | 37 | [Read 'Symmetric Connect' below](#symmetric-connect).
 NETWORKING_CONFIG_LOCAL_VIRTUAL_PORT | k_ESteamNetworkingConfig_LocalVirtualPort | 38 | For connection types that use "virtual ports", this can be used to assign a local virtual port.  For incoming connections, this will always be the virtual port of the listen socket (or the port requested by the remote host if custom signaling is used and the connection is accepted), and cannot be changed.  For connections initiated locally, the local virtual port will default to the same as the requested remote virtual port, if you do not specify a different option when creating the connection.  The local port is only relevant for symmetric connections, when determining if two connections "match."  In this case, if you need the local and remote port to differ, you can set this value.  You can also read back this value on listen sockets. This value should not be read or written in any other context.
 NETWORKING_CONFIG_DUAL_WIFI_ENABLE | k_ESteamNetworkingConfig_DualWifi_Enable | 39 | Enable Dual wifi band support for this connection: 0 = no, 1 = yes, 2 = simulate it for debugging, even if dual wifi not available.
-NETWORKING_CONFIG_CONNECTION_USER_DATA | k_ESteamNetworkingConfig_ConnectionUserData | 40 | Get / set userdata as a configuration option. [Read 'Connection User Data' below](#connection_user_data).
+NETWORKING_CONFIG_CONNECTION_USER_DATA | k_ESteamNetworkingConfig_ConnectionUserData | 40 | Get / set userdata as a configuration option. [Read 'Connection User Data' below](#connection-user-data).
 NETWORKING_CONFIG_PACKET_TRACE_MAX_BYTES | k_ESteamNetworkingConfig_PacketTraceMaxBytes | 41 | Trace every UDP packet; similar to Wireshark or tcpdump.  Value is max number of bytes to dump. -1 disables tracing. 0 only traces the info but no actual data bytes.
-NETWORKING_CONFIG_FAKE_RATE_LIMIT_SEND_RATE | k_ESteamNetworkingConfig_FakeRateLimit_Send_Rate | 42 | [Read 'Fake Rate Limit' below](#fake_rate_limit).
-NETWORKING_CONFIG_FAKE_RATE_LIMIT_SEND_BURST | k_ESteamNetworkingConfig_FakeRateLimit_Send_Burst | 43 | [Read 'Fake Rate Limit' below](#fake_rate_limit).
-NETWORKING_CONFIG_FAKE_RATE_LIMIT_RECV_RATE | k_ESteamNetworkingConfig_FakeRateLimit_Recv_Rate | 44 | [Read 'Fake Rate Limit' below](#fake_rate_limit).
-NETWORKING_CONFIG_FAKE_RATE_LIMIT_RECV_BURST | k_ESteamNetworkingConfig_FakeRateLimit_Recv_Burst | 45 | [Read 'Fake Rate Limit' below](#fake_rate_limit).
+NETWORKING_CONFIG_FAKE_RATE_LIMIT_SEND_RATE | k_ESteamNetworkingConfig_FakeRateLimit_Send_Rate | 42 | [Read 'Fake Rate Limit' below](#fake-rate-limit).
+NETWORKING_CONFIG_FAKE_RATE_LIMIT_SEND_BURST | k_ESteamNetworkingConfig_FakeRateLimit_Send_Burst | 43 | [Read 'Fake Rate Limit' below](#fake-rate-limit).
+NETWORKING_CONFIG_FAKE_RATE_LIMIT_RECV_RATE | k_ESteamNetworkingConfig_FakeRateLimit_Recv_Rate | 44 | [Read 'Fake Rate Limit' below](#fake-rate-limit).
+NETWORKING_CONFIG_FAKE_RATE_LIMIT_RECV_BURST | k_ESteamNetworkingConfig_FakeRateLimit_Recv_Burst | 45 | [Read 'Fake Rate Limit' below](#fake-rate-limit).
 NETWORKING_CONFIG_ENABLE_DIAGNOSTICS_UI | k_ESteamNetworkingConfig_EnableDiagnosticsUI | 46 | True to enable diagnostics reporting through generic platform UI.  Only available on Steam.
 NETWORKING_CONFIG_RECV_BUFFER_SIZE | k_ESteamNetworkingConfig_RecvBufferSize | 47 | [connection int32] Upper limit on total size (in bytes) of received messages that will be buffered waiting to be processed by the application.  If this limit is exceeded, packets will be dropped.  This is to protect us from a malicious peer flooding us with messages faster than we can process them. This must be bigger than NETWORKING_CONFIG_RECV_MAX_MESSAGE_SIZE.
 NETWORKING_CONFIG_RECV_BUFFER_MESSAGES | k_ESteamNetworkingConfig_RecvBufferMessages | 48 | [connection int32] Upper limit on the number of received messages that will that will be buffered waiting to be processed by the application.  If this limit is exceeded, packets will be dropped.  This is to protect us from a malicious peer flooding us with messages faster than we can pull them off the wire.
 NETWORKING_CONFIG_RECV_MAX_MESSAGE_SIZE | k_ESteamNetworkingConfig_RecvMaxMessageSize | 49 | [connection int32] Maximum message size that we are willing to receive. If a client attempts to send us a message larger than this, the connection will be immediately closed. Default is 512k (524288 bytes). Note that the peer needs to be able to send a message this big.  See [MAX_STEAM_PACKET_SIZE](networking_sockets.md#constants).
 NETWORKING_CONFIG_RECV_MAX_SEGMENTS_PER_PACKET | k_ESteamNetworkingConfig_RecvMaxSegmentsPerPacket | 50 | Max number of message segments that can be received in a single UDP packet.  While decoding a packet, if the number of segments exceeds this, we will abort further packet processing. The default is effectively unlimited. If you know that you very rarely send small packets, you can protect yourself from malicious senders by lowering this number. In particular, if you are NOT using the reliability layer and are only using Networking Sockets for datagram transport, setting this to a very low number may be beneficial. (We recommend a value of 2.)  Make sure your sender disables Nagle!
-NETWORKING_CONFIG_OUT_OF_ORDER_CORRECTION_WINDOW_MICROSECONDS | k_ESteamNetworkingConfig_OutOfOrderCorrectionWindowMicroseconds | 51 | Timeout used for out-of-order correction; [read 'Out of Order Correction' below](#out_of_order_correction).
+NETWORKING_CONFIG_OUT_OF_ORDER_CORRECTION_WINDOW_MICROSECONDS | k_ESteamNetworkingConfig_OutOfOrderCorrectionWindowMicroseconds | 51 | Timeout used for out-of-order correction; [read 'Out of Order Correction' below](#out-of-order-correction).
 NETWORKING_CONFIG_IP_LOCAL_HOST_ALLOW_WITHOUT_AUTH | k_ESteamNetworkingConfig_IPLocalHost_AllowWithoutAuth | 52 | The same as NETWORKING_CONFIG_IP_ALLOW_WITHOUT_AUTH, but will only apply for connections to / from localhost addresses. Whichever value is larger (more permissive) will be used.
-NETWORKING_CONFIG_FAKE_PACKET_JITTER_SEND_AVG | k_ESteamNetworkingConfig_FakePacketJitter_Send_Avg | 53 | [Read 'Fake Packet Jitter' below](#fake_packet_jitter).
-NETWORKING_CONFIG_FAKE_PACKET_JITTER_SEND_MAX | k_ESteamNetworkingConfig_FakePacketJitter_Send_Max | 54 | [Read 'Fake Packet Jitter' below](#fake_packet_jitter).
-NETWORKING_CONFIG_FAKE_PACKET_JITTER_SEND_PCT | k_ESteamNetworkingConfig_FakePacketJitter_Send_Pct | 55 | [Read 'Fake Packet Jitter' below](#fake_packet_jitter).
-NETWORKING_CONFIG_FAKE_PACKET_JITTER_RECV_AVG | k_ESteamNetworkingConfig_FakePacketJitter_Recv_Avg | 56 | [Read 'Fake Packet Jitter' below](#fake_packet_jitter).
-NETWORKING_CONFIG_FAKE_PACKET_JITTER_RECV_MAX | k_ESteamNetworkingConfig_FakePacketJitter_Recv_Max | 57 | [Read 'Fake Packet Jitter' below](#fake_packet_jitter).
-NETWORKING_CONFIG_FAKE_PACKET_JITTER_RECV_PCT | k_ESteamNetworkingConfig_FakePacketJitter_Recv_Pct | 58 | [Read 'Fake Packet Jitter' below](#fake_packet_jitter).
+NETWORKING_CONFIG_FAKE_PACKET_JITTER_SEND_AVG | k_ESteamNetworkingConfig_FakePacketJitter_Send_Avg | 53 | [Read 'Fake Packet Jitter' below](#fake-packet-jitter).
+NETWORKING_CONFIG_FAKE_PACKET_JITTER_SEND_MAX | k_ESteamNetworkingConfig_FakePacketJitter_Send_Max | 54 | [Read 'Fake Packet Jitter' below](#fake-packet-jitter).
+NETWORKING_CONFIG_FAKE_PACKET_JITTER_SEND_PCT | k_ESteamNetworkingConfig_FakePacketJitter_Send_Pct | 55 | [Read 'Fake Packet Jitter' below](#fake-packet-jitter).
+NETWORKING_CONFIG_FAKE_PACKET_JITTER_RECV_AVG | k_ESteamNetworkingConfig_FakePacketJitter_Recv_Avg | 56 | [Read 'Fake Packet Jitter' below](#fake-packet-jitter).
+NETWORKING_CONFIG_FAKE_PACKET_JITTER_RECV_MAX | k_ESteamNetworkingConfig_FakePacketJitter_Recv_Max | 57 | [Read 'Fake Packet Jitter' below](#fake-packet-jitter).
+NETWORKING_CONFIG_FAKE_PACKET_JITTER_RECV_PCT | k_ESteamNetworkingConfig_FakePacketJitter_Recv_Pct | 58 | [Read 'Fake Packet Jitter' below](#fake-packet-jitter).
 NETWORKING_CONFIG_SEND_TIME_SINCE_PREVIOUS_PACKET | k_ESteamNetworkingConfig_SendTimeSincePreviousPacket | 59 | Send of time-since-previous-packet values in each UDP packet.  This add a small amount of packet overhead but allows for detailed jitter measurements to be made by the receiver. 0 disables the sending, 1 enables sending, and -1 is the default.  Use the default for the connection type.  For plain UDP connections this is disabled and for relayed connections it is enabled.  Note that relays always send the value.
 NETWORKING_CONFIG_SDR_CLIENT_LIMIT_PING_PROBES_TO_NEAREST_N | k_ESteamNetworkingConfig_SDRClient_LimitPingProbesToNearestN | 60 | When probing the SteamDatagram network, we limit exploration to the closest N POPs, based on our current best approximated ping to that POP.
 NETWORKING_CONFIG_P2P_STUN_SERVER_LIST | k_ESteamNetworkingConfig_P2P_STUN_ServerList | 103 | Comma-separated list of STUN servers that can be used for NAT piercing.  If you set this to an empty string, NAT piercing will not be attempted.  Also if "public" candidates are not allowed for P2P_Transport_ICE_Enable, then this is ignored.
@@ -665,12 +666,12 @@ NETWORKING_CONFIG_P2P_TURN_SERVER_LIST | k_ESteamNetworkingConfig_P2P_TURN_Serve
 NETWORKING_CONFIG_P2P_TURN_USER_LIST | k_ESteamNetworkingConfig_P2P_TURN_UserList | 108 | When selecting P2P transport, add various penalties to the scores for selected transports. Route selection scores are on a scale of milliseconds.  The score begins with the route ping time and is then adjusted.
 NETWORKING_CONFIG_P2P_TURN_PASS_LIST | k_ESteamNetworkingConfig_P2P_TURN_PassList | 109 | When selecting P2P transport, add various penalties to the scores for selected transports. Route selection scores are on a scale of milliseconds.  The score begins with the route ping time and is then adjusted.
 NETWORKING_CONFIG_P2P_TRANSPORT_ICE_IMPLEMENTATION | k_ESteamNetworkingConfig_P2P_Transport_ICE_Implementation | 110 | When selecting P2P transport, add various penalties to the scores for selected transports. Route selection scores are on a scale of milliseconds.  The score begins with the route ping time and is then adjusted.
-NETWORKING_CONFIG_CALLBACK_CONNECTION_STATUS_CHANGED | k_ESteamNetworkingConfig_Callback_ConnectionStatusChanged | 201 | Callback that will be invoked when the state of a connection changes. [Read 'Network Config Callbacks' below](#network_config_callbacks).
-NETWORKING_CONFIG_CALLBACK_AUTH_STATUS_CHANGED | k_ESteamNetworkingConfig_Callback_AuthStatusChanged | 202 | Callback that will be invoked when our auth state changes.  If you use this, install the callback before creating any connections or listen sockets, and don't change it. See [setGlobalCallbackSteamNetAuthenticationStatusChanged](#setglobalcallbacksteamnetauthenticationstatuschanged). [Read 'Network Config Callbacks' below](#network_config_callbacks).
-NETWORKING_CONFIG_CALLBACK_RELAY_NETWORK_STATUS_CHANGED | k_ESteamNetworkingConfig_Callback_RelayNetworkStatusChanged | 203 | Callback that will be invoked when our auth state changes.  If you use this, install the callback before creating any connections or listen sockets, and don't change it. See [setGlobalCallbackSteamRelayNetworkStatusChanged](#setglobalcallbacksteamrelaynetworkstatuschanged). [Read 'Network Config Callbacks' below](#network_config_callbacks).
-NETWORKING_CONFIG_CALLBACK_MESSAGE_SESSION_REQUEST | k_ESteamNetworkingConfig_Callback_MessagesSessionRequest | 204 | Callback that will be invoked when a peer wants to initiate a [network_messages_session_request](networking_messages.md#network_messages_session_request). See [setGlobalCallbackMessagesSessionRequest](#setglobalcallbackmessagessessionrequest). [Read 'Network Config Callbacks' below](#network_config_callbacks).
-NETWORKING_CONFIG_CALLBACK_MESSAGES_SESSION_FAILED | k_ESteamNetworkingConfig_Callback_MessagesSessionFailed | 205 | Callback that will be invoked when a session you have initiated, accepted either fails to connect, or loses connection in some unexpected way. See [setGlobalCallbackMessagesSessionFailed](#setglobalcallbackmessagessessionfailed). [Read 'Network Config Callbacks' below](#network_config_callbacks).
-NETWORKING_CONFIG_CALLBACK_CREATE_CONNECTION_SIGNALING | k_ESteamNetworkingConfig_Callback_CreateConnectionSignaling | 206 | Callback that will be invoked when we need to create a signaling object for a connection initiated locally. See [connectP2P](networking_sockets.md#connectp2p). [Read 'Network Config Callbacks' below](#network_config_callbacks).
+NETWORKING_CONFIG_CALLBACK_CONNECTION_STATUS_CHANGED | k_ESteamNetworkingConfig_Callback_ConnectionStatusChanged | 201 | Callback that will be invoked when the state of a connection changes. [Read 'Network Config Callbacks' below](#network-config-callbacks).
+NETWORKING_CONFIG_CALLBACK_AUTH_STATUS_CHANGED | k_ESteamNetworkingConfig_Callback_AuthStatusChanged | 202 | Callback that will be invoked when our auth state changes.  If you use this, install the callback before creating any connections or listen sockets, and don't change it. See [setGlobalCallbackSteamNetAuthenticationStatusChanged](#setglobalcallbacksteamnetauthenticationstatuschanged). [Read 'Network Config Callbacks' below](#network-config-callbacks).
+NETWORKING_CONFIG_CALLBACK_RELAY_NETWORK_STATUS_CHANGED | k_ESteamNetworkingConfig_Callback_RelayNetworkStatusChanged | 203 | Callback that will be invoked when our auth state changes.  If you use this, install the callback before creating any connections or listen sockets, and don't change it. See [setGlobalCallbackSteamRelayNetworkStatusChanged](#setglobalcallbacksteamrelaynetworkstatuschanged). [Read 'Network Config Callbacks' below](#network-config-callbacks).
+NETWORKING_CONFIG_CALLBACK_MESSAGE_SESSION_REQUEST | k_ESteamNetworkingConfig_Callback_MessagesSessionRequest | 204 | Callback that will be invoked when a peer wants to initiate a [network_messages_session_request](networking_messages.md#network_messages_session_request). See [setGlobalCallbackMessagesSessionRequest](#setglobalcallbackmessagessessionrequest). [Read 'Network Config Callbacks' below](#network-config-callbacks).
+NETWORKING_CONFIG_CALLBACK_MESSAGES_SESSION_FAILED | k_ESteamNetworkingConfig_Callback_MessagesSessionFailed | 205 | Callback that will be invoked when a session you have initiated, accepted either fails to connect, or loses connection in some unexpected way. See [setGlobalCallbackMessagesSessionFailed](#setglobalcallbackmessagessessionfailed). [Read 'Network Config Callbacks' below](#network-config-callbacks).
+NETWORKING_CONFIG_CALLBACK_CREATE_CONNECTION_SIGNALING | k_ESteamNetworkingConfig_Callback_CreateConnectionSignaling | 206 | Callback that will be invoked when we need to create a signaling object for a connection initiated locally. See [connectP2P](networking_sockets.md#connectp2p). [Read 'Network Config Callbacks' below](#network-config-callbacks).
 NETWORKING_CONFIG_CALLBACK_FAKE_IP_RESULT | k_ESteamNetworkingConfig_Callback_FakeIPResult | 207 | Callback that's invoked when a FakeIP allocation finishes. See [beginAsyncRequestFakeIP](networking_sockets.md#beginasyncrequestfakeip) and / or [setGlobalCallbackFakeIPResult](#setglobalcallbackfakeipresult).
 NETWORKING_CONFIG_ECN | k_ESteamNetworkingConfig_ECN | 999 | Experimental.  Set the ECN header field on all outbound UDP packets: -1 is the default and means "don't set anything". 0 to 3 is set that value. Even though 0 is the default UDP ECN value, a 0 here means "explicitly set a 0.
 NETWORKING_CONFIG_VALUE_FORCE32BIT | k_ESteamNetworkingConfigValue__Force32Bit | 0x7fffffff | -
@@ -686,7 +687,7 @@ For incoming connections, multiple state transitions may happen and callbacks be
 However, once a connection is created, the effective value is then bound to the connection. Unlike other connection options, if you change it again at a higher level, the new value will not be inherited by connections. Using the userdata field in callback structs is not advised because of tricky race conditions. Instead, you might try one of these methods:
 
 * Use a separate map with the connection_handle as the key.
-* Fetch the userdata from the connection in your callback using [getConnectionUserData](#getconnectionuserdata), to ensure you have the current value.
+* Fetch the userdata from the connection in your callback using [getConnectionUserData](networking_sockets.md#getconnectionuserdata), to ensure you have the current value.
 
 #### Fake Packet Jitter
 
@@ -739,7 +740,7 @@ This is used when we see a small gap in the sequence number on a packet flow.  F
 
 The default value is 1000 microseconds.  Note that the Windows scheduler does not have microsecond precision.
 
-Set the value to 0 to disable out of order correction at the packet layer. In many cases we are still effectively able to correct the situation because reassembly of message fragments is tolerant of fragments packets arriving out of order.  Also, when messages are decoded and inserted into the queue for the app to receive them, we will correct out of order messages that have not been dequeued by the app yet.  However, when out-of-order packets are corrected at the packet layer, they will not reduce the connection quality measure; eg. [getConnectionRealTimeStatus](networking_sockets.md#getconnectionrealtimestatus) **local_quality** key in the returned **connection_status** dictionary or [getSessionConnectionInfo](networking_sockets.md#getsessionconnectioninfo) **local_quality** in the **connection_info** dictionary.
+Set the value to 0 to disable out of order correction at the packet layer. In many cases we are still effectively able to correct the situation because reassembly of message fragments is tolerant of fragments packets arriving out of order.  Also, when messages are decoded and inserted into the queue for the app to receive them, we will correct out of order messages that have not been dequeued by the app yet.  However, when out-of-order packets are corrected at the packet layer, they will not reduce the connection quality measure; eg. [getConnectionRealTimeStatus](networking_sockets.md#getconnectionrealtimestatus) **local_quality** key in the returned **connection_status** dictionary.
 
 #### Symmetric Connect
 
@@ -772,10 +773,13 @@ When using the feature, you should set it in the following situations on applica
 Setting the flag on listen socket and accepted connections will enable the API to automatically deal with duplicate incoming connections, even if the local host has not made any outbound requests.  In general, such duplicate requests from a peer are ignored internally and will not be visible to the application code.  The previous connection must be closed or resolved first.
 
 ### NetworkingConnectionEnd
+
 Enumerate various causes of connection termination.  These are designed to work similar to HTTP error codes: the numeric range gives you a rough classification as to the source of the problem. Found in steamnetworkingtypes.h
 
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 CONNECTION_END_INVALID | k_ESteamNetConnectionEnd_Invalid | 0 | Invalid/sentinel value.
-CONNECTION_END_APP_MIN | k_ESteamNetConnectionEnd_App_Min | 1000 | Application codes.  These are the values you will pass to [CloseConnection](#closeconnection). You can use these codes if you want to plumb through application-specific reason codes. If you don't need this facility, feel free to always pass CONNECTION_END_APP_GENERIC. The distinction between "normal" and "exceptional" termination is one you may use if you find useful, but it's not necessary for you to do so. The only place where we distinguish between normal and exceptional is in connection analytics. If a significant proportion of connections terminates in an exceptional manner, this can trigger an alert. 1xxx: Application ended the connection in a "usual" manner. E.g.: user intentionally disconnected from the server, gameplay ended normally, etc.
+CONNECTION_END_APP_MIN | k_ESteamNetConnectionEnd_App_Min | 1000 | Application codes.  These are the values you will pass to [closeConnection](networking_sockets.md#closeconnection). You can use these codes if you want to plumb through application-specific reason codes. If you don't need this facility, feel free to always pass CONNECTION_END_APP_GENERIC. The distinction between "normal" and "exceptional" termination is one you may use if you find useful, but it's not necessary for you to do so. The only place where we distinguish between normal and exceptional is in connection analytics. If a significant proportion of connections terminates in an exceptional manner, this can trigger an alert. 1xxx: Application ended the connection in a "usual" manner; eg. user intentionally disconnected from the server, gameplay ended normally, etc.
 CONNECTION_END_APP_GENERIC | k_ESteamNetConnectionEnd_App_Generic | k_ESteamNetConnectionEnd_App_Min | Use codes in this range for "normal" disconnection
 CONNECTION_END_APP_MAX | k_ESteamNetConnectionEnd_App_Max | 1999 | -
 CONNECTION_END_APP_EXCEPTION_MIN | k_ESteamNetConnectionEnd_AppException_Min | 2000 | 2xxx: Application ended the connection in some sort of exceptional or unusual manner that might indicate a bug or configuration issue.
@@ -783,9 +787,7 @@ CONNECTION_END_APP_EXCEPTION_GENERIC | k_ESteamNetConnectionEnd_AppException_Gen
 CONNECTION_END_APP_EXCEPTION_MAX | k_ESteamNetConnectionEnd_AppException_Max | 2999 | -
 CONNECTION_END_LOCAL_MIN | k_ESteamNetConnectionEnd_Local_Min | 3000 | 3xxx: Connection failed or ended because of problem with the local host or their connection to the Internet.
 CONNECTION_END_LOCAL_OFFLINE_MODE | k_ESteamNetConnectionEnd_Local_OfflineMode | 3001 | 3xxx: Connection failed or ended because of problem with the local host or their connection to the Internet.
-CONNECTION_END_LOCAL_MANY_RELAY_CONNECTIVITY | k_ESteamNetConnectionEnd_Local_ManyRelayConnectivity | 3002 | We're having trouble contacting many (perhaps all) relays. Since it's unlikely that they all went offline at once, the best explanation is that we have a problem on our end.  Note that we don't bother distinguishing between "many" and "all", because in practice, it takes time to detect a connection problem, and by the time the connection has timed out, we might not have been able to actively probe all of the relay clusters, even if we were able to contact them at one time.  So this code just means that:
- * We don't have any recent successful communication with any relay.
- * We have evidence of recent failures to communicate with multiple relays.
+CONNECTION_END_LOCAL_MANY_RELAY_CONNECTIVITY | k_ESteamNetConnectionEnd_Local_ManyRelayConnectivity | 3002 | We're having trouble contacting many (perhaps all) relays. Since it's unlikely that they all went offline at once, the best explanation is that we have a problem on our end.  Note that we don't bother distinguishing between "many" and "all", because in practice, it takes time to detect a connection problem, and by the time the connection has timed out, we might not have been able to actively probe all of the relay clusters, even if we were able to contact them at one time.  So this code just means that: we don't have any recent successful communication with any relay and/or we have evidence of recent failures to communicate with multiple relays.
 CONNECTION_END_LOCAL_HOSTED_SERVER_PRIMARY_RELAY | k_ESteamNetConnectionEnd_Local_HostedServerPrimaryRelay | 3003 | A hosted server is having trouble talking to the relay that the client was using, so the problem is most likely on our end.
 CONNECTION_END_LOCAL_NETWORK_CONFIG | k_ESteamNetConnectionEnd_Local_NetworkConfig | 3004 | We're not able to get the SDR network config.  This is *almost* always a local issue, since the network config comes from the CDN, which is pretty darn reliable.
 CONNECTION_END_LOCAL_RIGHTS | k_ESteamNetConnectionEnd_Local_Rights | 3005 | Steam rejected our request because we don't have rights to do this.
@@ -813,8 +815,10 @@ CONNECTION_END_FORCE32BIT | k_ESteamNetConnectionEnd__Force32Bit | 0x7fffffff | 
 ### NetworkingConnectionState
 High level connection status. Found in steamnetworkingtypes.h
 
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 CONNECTION_STATE_NONE | k_ESteamNetworkingConnectionState_None | 0 | Dummy value used to indicate an error condition in the API. Specified connection doesn't exist or has already been closed.
-CONNECTION_STATE_CONNECTING | k_ESteamNetworkingConnectionState_Connecting | 1 | We are trying to establish whether peers can talk to each other, whether they WANT to talk to each other, perform basic auth, and exchange crypt keys. For connections on the "client" side (initiated locally): We're in the process of trying to establish a connection. Depending on the connection type, we might not know who they are. Note that it is not possible to tell if we are waiting on the network to complete handshake packets, or for the application layer to accept the connection. For connections on the "server" side (accepted through listen socket): We have completed some basic handshake and the client has presented some proof of identity.  The connection is ready to be accepted using [acceptConnection](#acceptconnection). In either case, any unreliable packets sent now are almost certain to be dropped.  Attempts to receive packets are guaranteed to fail. You may send messages if the send mode allows for them to be queued. but if you close the connection before the connection is actually established, any queued messages will be discarded immediately. (We will not attempt to flush the queue and confirm delivery to the remote host, which ordinarily happens when a connection is closed.)
+CONNECTION_STATE_CONNECTING | k_ESteamNetworkingConnectionState_Connecting | 1 | We are trying to establish whether peers can talk to each other, whether they WANT to talk to each other, perform basic auth, and exchange crypt keys. For connections on the "client" side (initiated locally): We're in the process of trying to establish a connection. Depending on the connection type, we might not know who they are. Note that it is not possible to tell if we are waiting on the network to complete handshake packets, or for the application layer to accept the connection. For connections on the "server" side (accepted through listen socket): We have completed some basic handshake and the client has presented some proof of identity.  The connection is ready to be accepted using [acceptConnection](networking_sockets.md#acceptconnection). In either case, any unreliable packets sent now are almost certain to be dropped.  Attempts to receive packets are guaranteed to fail. You may send messages if the send mode allows for them to be queued. but if you close the connection before the connection is actually established, any queued messages will be discarded immediately. (We will not attempt to flush the queue and confirm delivery to the remote host, which ordinarily happens when a connection is closed.)
 CONNECTION_STATE_FINDING_ROUTE | k_ESteamNetworkingConnectionState_FindingRoute | 2 | Some connection types use a back channel or trusted 3rd party for earliest communication.  If the server accepts the connection, then these connections switch into the rendezvous state.  During this state, we still have not yet established an end-to-end route (through the relay network), and so if you send any messages unreliable, they are going to be discarded.
 CONNECTION_STATE_CONNECTED | k_ESteamNetworkingConnectionState_Connected | 3 | We've received communications from our peer (and we know who they are) and are all good.  If you close the connection now, we will make our best effort to flush out any reliable sent data that has not been acknowledged by the peer.  (But note that this happens from within the application process, so unlike a TCP connection, you are not totally handing it off to the operating system to deal with it.)
 CONNECTION_STATE_CLOSED_BY_PEER | k_ESteamNetworkingConnectionState_ClosedByPeer | 4 | Connection has been closed by our peer, but not closed locally. The connection still exists from an API perspective.  You must close the handle to free up resources.  If there are any messages in the inbound queue, you may retrieve them.  Otherwise, nothing may be done with the connection except to close it. This stats is similar to CLOSE_WAIT in the TCP state machine.
@@ -827,6 +831,8 @@ CONNECTION_STATE_FORCE_32BIT | k_ESteamNetworkingConnectionState__Force32Bit | 0
 ### NetworkingFakeIPType
 "Fake IPs" are assigned to hosts, to make it easier to interface with older code that assumed all hosts will have an IPv4 address. No enum values are given in the SDK. Found in steamnetworkingtypes.h
 
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 FAKE_IP_TYPE_INVALID | k_ESteamNetworkingFakeIPType_Invalid | - | Error, argument was not even an IP address, etc.
 FAKE_IP_TYPE_NOT_FAKE | k_ESteamNetworkingFakeIPType_NotFake | - | Argument was a valid IP, but was not from the reserved "fake" range.
 FAKE_IP_TYPE_GLOBAL_IPV4 | k_ESteamNetworkingFakeIPType_GlobalIPv4 | - | Globally unique (for a given app) IPv4 address.  Address space managed by Steam.
@@ -834,9 +840,10 @@ FAKE_IP_TYPE_LOCAL_IPV4 | k_ESteamNetworkingFakeIPType_LocalIPv4 | - | Locally u
 FAKE_IP_TYPE_FORCE32BIT | k_ESteamNetworkingFakeIPType__Force32Bit | 0x7fffffff | -
 
 ### NetworkingGetConfigValueResult 
-
 Found in steamnetworkingtypes.h
 
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 NETWORKING_GET_CONFIG_VALUE_BAD_VALUE | k_ESteamNetworkingGetConfigValue_BadValue | -1 | No such configuration value.
 NETWORKING_GET_CONFIG_VALUE_BAD_SCOPE_OBJ | k_ESteamNetworkingGetConfigValue_BadScopeObj | -2 | Bad connection handle, etc.
 NETWORKING_GET_CONFIG_VALUE_BUFFER_TOO_SMALL | k_ESteamNetworkingGetConfigValue_BufferTooSmall | -3 | Couldn't fit the result in your buffer.
@@ -847,6 +854,8 @@ NETWORKING_GET_CONFIG_VALUE_FORCE_32BIT | k_ESteamNetworkingGetConfigValueResult
 ### NetworkingIdentityType
 Describing network hosts. Different methods of describing the identity of a network host.  Found in steamnetworkingtypes.h
 
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 IDENTITY_TYPE_INVALID | k_ESteamNetworkingIdentityType_Invalid | 0 | Dummy/empty/invalid. Please note that if we parse a string that we don't recognize but that appears reasonable, we will NOT use this type.  Instead we'll use IDENTITY_TYPE_UNKNOWN_TYPE.
 IDENTITY_TYPE_IP_ADDRESS | k_ESteamNetworkingIdentityType_IPAddress | 1 | Use their IP address (and port) as their "identity". These types of identities are always unauthenticated. They are useful for porting plain sockets code, and other situations where you don't care about authentication.  In this case, the local identity will be "localhost", and the remote address will be their network address. We use the same type for either IPv4 or IPv6, and the address is always store as IPv6.  We use IPv4 mapped addresses to handle IPv4.
 IDENTITY_TYPE_GENERIC_STRING | k_ESteamNetworkingIdentityType_GenericString | 2 | Generic string/binary blobs.  It's up to your app to interpret this. This library can tell you if the remote host presented a certificate signed by somebody you have chosen to trust, with this identity on it. It's up to you to ultimately decide what this identity means.
@@ -860,6 +869,8 @@ IDENTITY_TYPE_FORCE_32BIT | k_ESteamNetworkingIdentityType__Force32bit | 0x7ffff
 ### NetworkingSocketsDebugOutputType
 Detail level for diagnostic output callback.  Found in steamnetworkingtypes.h
 
+Enumerator | SDK Name | Value | Notes
+---------- | -------- | ----- | -----
 NETWORKING_SOCKET_DEBUG_OUTPUT_TYPE_NONE | k_ESteamNetworkingSocketsDebugOutputType_None | 0 | -
 NETWORKING_SOCKET_DEBUG_OUTPUT_TYPE_BUG | k_ESteamNetworkingSocketsDebugOutputType_Bug | 1 | You used the API incorrectly, or an internal error happened.
 NETWORKING_SOCKET_DEBUG_OUTPUT_TYPE_ERROR | k_ESteamNetworkingSocketsDebugOutputType_Error | 2 | Run-time error condition that isn't the result of a bug; eg. we are offline, cannot bind a port, etc.

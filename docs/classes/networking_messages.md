@@ -12,7 +12,7 @@ Networking API intended to make it easy to port non-connection-oriented code to 
 
 Under the hood Networking Messages works on top of the [Networking Sockets](networking_sockets.md) code, so you get the same routing and messaging efficiency. The difference is mainly in your responsibility to explicitly establish a connection and the type of feedback you get about the state of the connection. Both interfaces can do "P2P" communications, both support both unreliable and reliable messages, fragmentation and reassembly, and both can be used to take advantage of [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay){ target="\_blank" } to talk to dedicated servers.
 
-The primary purpose of this interface is to be "like UDP", so that UDP-based code can be ported easily to take advantage of relayed connections. If you find yourself needing more low level information or control, or to be able to better handle failure, then you probably need to use [Networking Sockets](networking_sockets.md) directly. Also, note that if your main goal is to obtain a connection between two peers without concerning yourself with assigning roles of "client" and "server", you may find the symmetric connection mode of [Networking Sockets](networking_sockets.md) useful. See [NETWORKING_CONFIG_SYMMETRIC_CONNECT](#networkingconfigvalue).
+The primary purpose of this interface is to be "like UDP", so that UDP-based code can be ported easily to take advantage of relayed connections. If you find yourself needing more low level information or control, or to be able to better handle failure, then you probably need to use [Networking Sockets](networking_sockets.md) directly. Also, note that if your main goal is to obtain a connection between two peers without concerning yourself with assigning roles of "client" and "server", you may find the symmetric connection mode of [Networking Sockets](networking_sockets.md) useful. See [NETWORKING_CONFIG_SYMMETRIC_CONNECT](networking_utils.md#networkingconfigvalue).
 
 !!! info "Only available in the main [GodotSteam branches](https://github.com/GodotSteam/GodotSteam){ target="\_blank" } and [GodotSteam Server branches](https://github.com/GodotSteam/GodotSteam-Server){ target="\_blank" }"
 
@@ -183,7 +183,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 		* [RESULT_OK](main.md#result) on success.
 		* [RESULT_NO_CONNECTION](main.md#result) if the session has failed or was closed by the peer and [NETWORKING_SEND_AUTORESTART_BROKEN_SESSION](main.md#constants) was not specified. You can use [getSessionConnectionInfo](#getsessionconnectioninfo) to get the details.) In order to acknowledge the broken session and start a new one, you must call [closeSessionWithUser](#closesessionwithuser) or you may repeat the call with NETWORKING_SEND_AUTORESTART_BROKEN_SESSION](main.md#constants). See NETWORKING_SEND_AUTORESTART_BROKEN_SESSION](main.md#constants) for more details.
 		* [RESULT_NO_CONNECTION](main.md#result) will be returned if the session has failed or was closed by the peer and NETWORKING_SEND_AUTORESTART_BROKEN_SESSION](main.md#constants) is not used. You can use [getSessionConnectionInfo](#getsessionconnectioninfo) to get the details. In order to acknowledge the broken session and start a new one, you must call [closeSessionWithUser](#closesessionwithuser).
-		* See [sendMessageToConnection](#sendmessagetoconnection) for more possible return values.
+		* See [sendMessageToConnection](networking_sockets.md#sendmessagetoconnection) for more possible return values.
 
 	---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SendMessageToUser){ .md-button .md-button--store target="_blank" }
@@ -191,6 +191,8 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 {==
 ## :material-signal: Signals
 ==}
+
+These callbacks require you to [setup one of the three callback methods to receive them.](https://godotsteam.com/tutorials/initializing/#callbacks)
 
 ### network_messages_session_request
 
