@@ -188,6 +188,23 @@
      margin-top: 0;
      margin-left: -2em;
 }
+#sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+#sponsors span {
+  flex: 20%;
+  max-width: 20%;
+  text-align: center !important;
+  padding: 0 4px;
+}
+
+#sponsors img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
  .row > * {
      padding: 0 0 0 2em;
 }
@@ -963,6 +980,12 @@
          padding-top: 4em;
     }
 }
+@media screen and (max-width: 800px) {
+  #sponsors span {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
  @media screen and (max-width: 736px) {
      .row {
          display: flex;
@@ -1147,6 +1170,12 @@
      .row.gtr-200.gtr-uniform > * {
          padding-top: 4em;
     }
+}
+@media screen and (max-width: 600px) {
+  #sponsors span {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
  @media screen and (max-width: 480px) {
      .row {
