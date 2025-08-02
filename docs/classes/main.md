@@ -130,7 +130,7 @@ icon: material/home
 ### getSteamID32
 
 !!! function "getSteamID32( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The SteamID64 to convert.
 
@@ -160,7 +160,7 @@ icon: material/home
 ### isAnonAccount
 
 !!! function "isAnonAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -171,7 +171,7 @@ icon: material/home
 ### isAnonUserAccount
 
 !!! function "isAnonUserAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -182,7 +182,7 @@ icon: material/home
 ### isChatAccount
 
 !!! function "isChatAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -193,7 +193,7 @@ icon: material/home
 ### isClanAccount
 
 !!! function "isClanAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -204,7 +204,7 @@ icon: material/home
 ### isConsoleUserAccount
 
 !!! function "isConsoleUserAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -215,7 +215,7 @@ icon: material/home
 ### isIndividualAccount
 
 !!! function "isIndividualAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -226,7 +226,7 @@ icon: material/home
 ### isLobby
 
 !!! function "isLobby( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -254,7 +254,7 @@ icon: material/home
 ### restartAppIfNecessary
 
 !!! function "restartAppIfNecessary( `uint32_t` app_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | app_id | uint32_t | The app ID to restart from Steam.
 
@@ -280,7 +280,7 @@ icon: material/home
 ### set_browser_handle
 
 !!! function "set_browser_handle( `uint32_t` new_browser_handle )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_browser_handle | uint32_t | The browser handle to set.
 
@@ -294,7 +294,7 @@ icon: material/home
 ### set_current_app_id
 
 !!! function "set_current_app_id( `uint32_t` new_current_app_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_current_app_id | uint32_t | The app ID to set.
 
@@ -308,7 +308,7 @@ icon: material/home
 ### set_current_clan_id
 
 !!! function "set_current_clan_id( `uint64_t` new_current_clan_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_current_clan_id | uint64_t | The clan ID to set.
 
@@ -322,7 +322,7 @@ icon: material/home
 ### set_current_steam_id
 
 !!! function "set_current_steam_id( `uint64_t` new_current_steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_current_steam_id | uint64_t | The Steam ID to set.
 
@@ -336,7 +336,7 @@ icon: material/home
 ### set_inventory_handle
 
 !!! function "set_inventory_handle( `int32` new_inventory_handle )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_inventory_handle | int32 | The inventory handle to set.
 
@@ -350,7 +350,7 @@ icon: material/home
 ### set_inventory_update_handle
 
 !!! function "set_inventory_update_handle( `uint64_t` new_inventory_update_handle )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_inventory_update_handle | uint64_t | The inventory update handle to set.
 
@@ -364,7 +364,7 @@ icon: material/home
 ### set_leaderboard_details_max
 
 !!! function "set_leaderboard_details_max( `int` new_leaderboard_details_max )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_leaderboard_details_max | int | The maximum number of leaderboard details to fetch.
 
@@ -381,7 +381,7 @@ icon: material/home
 ### set_leaderboard_entries
 
 !!! function "set_leaderboard_entries( `Array` new_leaderboard_entries )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_leaderboard_entries | Array | An array of leaderboard entries.
 
@@ -395,7 +395,7 @@ icon: material/home
 ### set_leaderboard_handle
 
 !!! function "set_leaderboard_handle( `uint64_t` new_leaderboard_handle )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_leaderboard_handle | uint64_t | The leaderboard handle to set.
 
@@ -409,7 +409,7 @@ icon: material/home
 ### set_server_list_request
 
 !!! function "set_server_list_request( `uint64_t` new_server_list_request )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_server_list_request | uint64_t | The server list request handle to set.
 
@@ -422,7 +422,12 @@ icon: material/home
 
 ### steamInit
 
-!!! function "steamInit( `uint32_t` app_id, `bool` embed_callbacks )"
+!!! function "steamInit( `uint32_t` app_id = 0, `bool` embed_callbacks = false )"
+    | :material-variable: Parameter | Type | Notes |
+    | --- | ---- | ----- |
+    | app_id | uint32_t | The app ID for the game we are initializing.  Defaults to 0.
+    | embed_callbacks | bool | Whether or not to call [run_callbacks](#run_callbacks) interally.  Defaults to false.
+
     Initialize the SDK, without worrying about the cause of failure.
 
     You can pass your **app ID** to the _first argument_ and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.  You can pass **true** to the _second argument_ to have GodotSteam connect and use **run_callbacks** internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.  Lastly, if you set the **app_id** and/or check **Embed Callbacks** in the **Project Settings > Steam > Initialization**, these will automatically set for you and you can just call **steamInitEx()** with no arguments filled out.
@@ -437,7 +442,12 @@ icon: material/home
 
 ### steamInitEx
 
-!!! function "steamInitEx( `uint32_t` app_id, `bool` embed_callbacks )"
+!!! function "steamInitEx( `uint32_t` app_id = 0, `bool` embed_callbacks = false )"
+    | :material-variable: Parameter | Type | Notes |
+    | --- | ---- | ----- |
+    | app_id | uint32_t | The app ID for the game we are initializing.  Defaults to 0.
+    | embed_callbacks | bool | Whether or not to call [run_callbacks](#run_callbacks) interally.  Defaults to false.
+
     Initialize the Steamworks SDK. On success **STEAM_API_INIT_RESULT_OK** is returned. Otherwise, if **verbal** is non-NULL, it will receive a non-localized message that explains the reason for the failure.
 
     You can pass your **app ID** to the _first argument_ and GodotSteam will set the OS environment for you so you do not have to do this manually anymore. If nothing is passed, it will not be set.  You can pass **true** to the _second argument_ to have GodotSteam connect and use **run_callbacks** internally so you do not have to do this manually anymore. If nothing is passed, it will not run callbacks internally.  Lastly, if you set the **app_id** and/or check **Embed Callbacks** in the **Project Settings > Steam > Initialization**, these will automatically set for you and you can just call **steamInitEx()** with no arguments filled out.

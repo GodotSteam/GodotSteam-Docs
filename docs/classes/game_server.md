@@ -15,7 +15,7 @@ icon: material/server-network
 ### associateWithClan
 
 !!! function "associateWithClan( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the group you want to be associated with.
 
@@ -32,7 +32,7 @@ icon: material/server-network
 ### beginAuthSession
 
 !!! function "beginAuthSession( `PackedByteArray` auth_ticket, `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | auth_ticket | PackedByteArray | The auth ticket to validate.
     | steam_id | uint64_t | The entity's Steam ID that sent this ticket.
@@ -51,7 +51,7 @@ icon: material/server-network
 ### cancelAuthTicket
 
 !!! function "cancelAuthTicket( `uint32_t` auth_ticket )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | auth_ticket_handle | uint32_t | The active auth ticket to cancel.
 
@@ -75,7 +75,7 @@ icon: material/server-network
 ### computeNewPlayerCompatibility
 
 !!! function "computeNewPlayerCompatibility( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the player that is attempting to join.
 
@@ -103,7 +103,7 @@ icon: material/server-network
 ### endAuthSession
 
 !!! function "endAuthSession( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The entity to end the active auth session with.
 
@@ -193,7 +193,7 @@ icon: material/server-network
 ### handleIncomingPacket
 
 !!! function "handleIncomingPacket( `int` packet, `string` ip, `uint16` port )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | packet | int | The packet handle.
     | ip | string | The IP address that this packet was sent to in host order, i.e 127.0.0.1.
@@ -245,7 +245,7 @@ icon: material/server-network
 ### logOn
 
 !!! function "logOn( `string` token )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | token | string | -
 
@@ -282,7 +282,7 @@ icon: material/server-network
 ### requestUserGroupStatus
 
 !!! function "requestUserGroupStatus( `uint64_t` steam_id, `uint64_t` group_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user to check the group status of.
     | group_id | uint64_t | The group to check.
@@ -312,7 +312,7 @@ icon: material/server-network
 ### setAdvertiseServerActive
 
 !!! function "setAdvertiseServerActive( `bool` active )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | active | bool | Whether to set as active or not.
 
@@ -331,7 +331,7 @@ icon: material/server-network
 ### setBotPlayerCount
 
 !!! function "setBotPlayerCount( `int` bots )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | bots | int | The number of bot / AI players currently playing on the server.
 
@@ -345,7 +345,7 @@ icon: material/server-network
 ### setDedicatedServer
 
 !!! function "setDedicatedServer( `bool` dedicated )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | dedicated | bool | Is this a dedicated server (true) or a listen server (false)?
 
@@ -363,7 +363,7 @@ icon: material/server-network
 
 
 !!! function "setGameData( `string` data )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | data | string | The new "gamedata" value to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_GAME_DATA (2048)](main_server.md#constants).
 
@@ -379,7 +379,7 @@ icon: material/server-network
 ### setGameDescription
 
 !!! function "setGameDescription( `string` description )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | description | string | The description of your game. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_GAME_DESCRIPTION (64)](main_server.md#constants).
 
@@ -398,7 +398,7 @@ icon: material/server-network
 ### setGameTags
 
 !!! function "setGameTags( `string` tags )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | tags | string | The new "gametags" value to set. Must not be NULL or an empty string (""). This can not be longer than [MAX_GAME_SERVER_TAGS (128)](main_server.md#constants).
 
@@ -414,7 +414,7 @@ icon: material/server-network
 ### setKeyValue
 
 !!! function "setKeyValue( `string` key, `string` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The key being set.
     | value | string | The value set for this key.
@@ -429,7 +429,7 @@ icon: material/server-network
 ### setMapName
 
 !!! function "setMapName( `string` map )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | map | string | The new map name to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_MAP_NAME (32)](main_server.md#constants).
 
@@ -443,7 +443,7 @@ icon: material/server-network
 ### setMaxPlayerCount
 
 !!! function "setMaxPlayerCount( `int` players_max )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | players_max | int | The new maximum number of players allowed on this server.
 
@@ -457,7 +457,7 @@ icon: material/server-network
 ### setModDir
 
 !!! function "setModDir( `string` mod_directory )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | mod_directory | string | The game directory to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_GAME_DIR (32)](main_server.md#constants).
 
@@ -474,7 +474,7 @@ icon: material/server-network
 ### setPasswordProtected
 
 !!! function "setPasswordProtected( `bool` password_protected )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | password_protected | bool | Enable (true) or disable (false) password protection.
 
@@ -488,7 +488,7 @@ icon: material/server-network
 ### setProduct
 
 !!! function "setProduct( `string` product )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | product | string | The unique identifier for your game. Must not be an empty string.
 
@@ -507,7 +507,7 @@ icon: material/server-network
 ### setRegion
 
 !!! function "setRegion( `string` region )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | region | string | - 
 
@@ -521,7 +521,7 @@ icon: material/server-network
 ### setServerName
 
 !!! function "setServerName( `string` name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | name | string | The new server name to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_NAME (64)](main_server.md#constants).
 
@@ -535,7 +535,7 @@ icon: material/server-network
 ### setSpectatorPort
 
 !!! function "setSpectatorPort( `int` port )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | port | int | The port for spectators to join.
 
@@ -553,7 +553,7 @@ icon: material/server-network
 ### setSpectatorServerName
 
 !!! function "setSpectatorServerName( `string` name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | name | string | The spectator server name to set. Must not be an empty string. This can not be longer than [MAX_GAME_SERVER_MAP_NAME](main_server.md#constants).
 
@@ -567,7 +567,7 @@ icon: material/server-network
 ### updateUserData
 
 !!! function "updateUserData( `uint64_t` steam_id, `string` player_name, `uint32_t` score )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user.
     | player_name | string | The name of the user.
@@ -581,7 +581,7 @@ icon: material/server-network
 ### userHasLicenseForApp
 
 !!! function "userHasLicenseForApp( `uint64_t` steam_id, `uint32_t` app_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user that sent the auth ticket.
     | app_id | uint32_t | The DLC app ID to check if the user owns it.

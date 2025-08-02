@@ -17,7 +17,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 ### addScreenshotToLibrary
 
 !!! function "addScreenshotToLibrary( `string` filename, `string` thumbnail_filename, `int` width, `int` height )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | filename | string | The absolute file path to the JPG, PNG, or TGA screenshot. |
     | thumbnail_filename | string | The absolute file path to an optional thumbnail image. This must be 200px wide, as described by [SCREENSHOT_THUMB_WIDTH](#constants) and the same aspect ratio. Pass NULL if there is no thumbnail, one will be created automatically. |
@@ -42,7 +42,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 ### addVRScreenshotToLibrary
 
 !!! function "addVRScreenshotToLibrary( `VRScreenshotType` type, `string` filename, `string` vr_filename )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | type | [VRScreenshotType enum](#vrscreenshottype) | The type of VR screenshot that this is. |
     | filename | string | The absolute file path to a 2D JPG, PNG, or TGA version of the screenshot for the library view. |
@@ -62,7 +62,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 ### hookScreenshots
 
 !!! function "hookScreenshots( `bool` hook )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | hook | bool | Enable (true) or disable (false) hooking? |
 
@@ -93,7 +93,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 ### setLocation
 
 !!! function "setLocation( `uint32_t` screenshot, `string` location )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | screenshot | uint32_t | The handle to the screenshot to tag. |
     | location | string | The location in the game where this screenshot was taken. This can not be longer than [UFS_TAG_VALUE_MAX](#constants). |
@@ -111,7 +111,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 ### tagPublishedFile
 
 !!! function "tagPublishedFile( `uint32_t` screenshot, `uint64_t` file_id )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | screenshot | uint32_t | The handle to the screenshot to tag. |
     | file_id | uint64_t | The workshop item ID that is in the screenshot. |
@@ -132,7 +132,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 ### tagUser
 
 !!! function "tagUser( `uint32_t` screenshot, `uint64_t` steam_id )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | screenshot | uint32_t | The handle to the screenshot to tag. |
     | steam_id | uint64_t | The Steam ID of a user that is in the screenshot. |
@@ -163,7 +163,7 @@ Functions for adding screenshots to the user's screenshot library. See [Steam Sc
 ### writeScreenshot
 
 !!! function "writeScreenshot( `PoolByteArray` rgb, `int` width, `int` height )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | rgb | PoolByteArray | The buffer containing the raw RGB data from the screenshot. |
     | width | int | The width of the screenshot in pixels. |

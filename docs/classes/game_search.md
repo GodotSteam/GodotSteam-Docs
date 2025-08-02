@@ -24,7 +24,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### addGameSearchParams
 
 !!! function "addGameSearchParams( `string` key, `string` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The key to search for. |
     | value | string | The values to search for. |
@@ -50,7 +50,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### endGame
 
 !!! function "endGame( `uint64_t` game_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | game_id | uint64_t | The ID of the game to end. |
 
@@ -68,7 +68,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### hostConfirmGameStart
 
 !!! function "hostConfirmGameStart( `uint64_t` game_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | game_id | uint64_t | The ID of the game to start. |
 
@@ -79,7 +79,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### requestPlayersForGame
 
 !!! function "requestPlayersForGame( `int` player_min, `int` player_max, `int` max_team_size )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | player_min | int | The minimum number of players to request. |
     | player_max | int | The maximum number of players to request. |
@@ -94,7 +94,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### retrieveConnectionDetails
 
 !!! function "retrieveConnectionDetails( `uint64_t` host_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | host_id | uint64_t | The Steam ID of the host. |
 
@@ -113,7 +113,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### searchForGameSolo
 
 !!! function "searchForGameSolo( `int` player_min, `int` player_max)"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | player_min | int | The minimum number of player slots open. |
     | player_max | int | The maximum number of player slots open. |
@@ -125,7 +125,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### searchForGameWithLobby
 
 !!! function "searchForGameWithLobby( `uint64_t` lobby_id, `int` player_min, `int` player_max)"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | lobby_id | uint64_t | The ID of the lobby the player is in. |
     | player_min | int | The minimum number of player slots open. |
@@ -138,7 +138,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### setConnectionDetails
 
 !!! function "setConnectionDetails( `string` connection_details )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_details | string | A connection string with connection details, similar to lobby joins. |
 
@@ -149,7 +149,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### setGameHostParams
 
 !!! function "setGameHostParams( `string` key, `string` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The key to set for the game. |
     | value | string | The list of values to set for the game. |
@@ -161,7 +161,7 @@ These functions are not listed in the official Steamworks SDK documentation but 
 ### submitPlayerResult
 
 !!! function "submitPlayerResult( `uint64_t` game_id, `uint64_t` player_id, `int` player_result )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | game_id | uint64_t | The ID For the game session. |
     | player_id | uint64_t | The Steam ID for the player whom we are submitting results for. |

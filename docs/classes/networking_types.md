@@ -23,7 +23,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### addIdentity
 
 !!! function "addIdentity( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The name to give this newly created identity.
 
@@ -36,7 +36,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### addIPAddress
 
 !!! function "addIPAddress( `string` refrence_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The name to give this newly created IP address struct.
 
@@ -47,7 +47,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### clearIPAddress
 
 !!! function "clearIPAddress( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The IP address to clear.
 
@@ -58,7 +58,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### clearIdentity
 
 !!! function "clearIdentity( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to clear.
 
@@ -69,7 +69,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### getGenericBytes
 
 !!! function "getGenericBytes( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get set bytes data for.
 
@@ -80,7 +80,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### getGenericString
 
 !!! function "getGenericString( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get set string data for.
 
@@ -105,7 +105,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### getIdentityIPAddr
 
 !!! function "getIdentityIPAddr( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get the set IP address for.
 
@@ -116,7 +116,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### getIdentitySteamID
 
 !!! function "getIdentitySteamID( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get the set Steam ID for.
 
@@ -127,7 +127,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### getIdentitySteamID64
 
 !!! function "getIdentitySteamID64( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get the set Steam ID64 for. |
 
@@ -152,7 +152,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### getIPv4
 
 !!! function "getIPv4( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get the set IPv4 for.
 
@@ -163,7 +163,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### getPSNID
 
 !!! function "getPSNID( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get the set Playstation Network ID for.
 
@@ -174,7 +174,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### getStadiaID
 
 !!! function "getStadiaID( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get the set Stadia ID for.
 
@@ -185,7 +185,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### getXboxPairwiseID
 
 !!! function "getXboxPairwiseID( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get the set XBox Pairwise ID for.
 
@@ -196,7 +196,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### isAddressLocalHost
 
 !!! function "isAddressLocalHost( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to check.
 
@@ -207,7 +207,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### isIdentityInvalid
 
 !!! function "isIdentityInvalid( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to check.
 
@@ -218,7 +218,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### isIdentityLocalHost
 
 !!! function "isIdentityLocalHost( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to check.
 
@@ -229,7 +229,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### isIPv4
 
 !!! function "isIPv4( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to check.
 
@@ -240,7 +240,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### isIPv6AllZeros
 
 !!! function "isIPv6AllZeros( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to check.
 
@@ -251,7 +251,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### parseIPAddressString
 
 !!! function "parseIPAddressString( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The IP address struct to parse.
 
@@ -262,7 +262,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### parseIdentityString
 
 !!! function "parseIdentityString( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to parse.
 
@@ -273,7 +273,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setGenericBytes
 
 !!! function "setGenericBytes( `string` reference_name, `uint8` data )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | data | uint8 | The generic byte data to set.
@@ -285,7 +285,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setIdentityIPAddr
 
 !!! function "setIdentityIPAddr( `string` reference_name, `string` ip_address_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | ip_address_name | string | The IP address to set.
@@ -297,7 +297,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setIdentityLocalHost
 
 !!! function "setIdentityLocalHost( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
 
@@ -308,7 +308,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setIdentitySteamID
 
 !!! function "setIdentitySteamID( `string` reference_name, `uint32_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | steam_id | uint32_t | The Steam ID32 to set.
@@ -320,7 +320,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setIdentitySteamID64
 
 !!! function "setIdentitySteamID64( `string` reference_name, `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | steam_id | uint64_t | The Steam ID64 to set.
@@ -332,7 +332,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setGenericString
 
 !!! function "setGenericString( `string` reference_name, `string` this_string )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | this_string | string | The generic string data to set.
@@ -344,7 +344,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setPSNID
 
 !!! function "setPSNID( `string` reference_name, `uint64_t` psn_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | psn_id | uint64_t | The Playstation Network ID to set.
@@ -356,7 +356,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setStadiaID
 
 !!! function "setStadiaID( `string` reference_name, `uint64_t` stadia_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | stadia_id | uint64_t | The Stadia ID to set.
@@ -368,7 +368,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setXboxPairwiseID
 
 !!! function "setXboxPairwiseID( `string` reference_name, `string` xbox_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | xbox_id | uint64_t | The XBox Pairwise ID to set.
@@ -380,7 +380,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### toIdentityString
 
 !!! function "toIdentityString( `string` reference_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to get the string for.
 
@@ -391,7 +391,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### toIPAddressString
 
 !!! function "toIPAddressString( `string` reference_name, `bool` with_port )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The IP address to get the string for.
     | with_port | bool | Whether or not to get the port as well.
@@ -403,7 +403,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setIPv4
 
 !!! function "setIPv4( `string` reference_name, `uint32` ip, `uint16` port )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | ip | uint32 | The IPv4 address to set.
@@ -416,7 +416,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setIPv6
 
 !!! function "setIPv6( `string` reference_name, `uint8` ipv6, `uint16` port )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | ipv6 | uint8 | The IPv6 address to set.
@@ -429,7 +429,7 @@ For more information on using Networking Types for [Networking Messages](network
 ### setIPv6LocalHost
 
 !!! function "setIPv6LocalHost( `string` reference_name, `uint16` port )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | reference_name | string | The identity to update.
     | port | uint16 | The port to set.

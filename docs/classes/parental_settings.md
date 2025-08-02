@@ -17,7 +17,7 @@ Interface to Steam parental settings (Family View).  These functions are not doc
 ### isAppBlocked
 
 !!! function "isAppBlocked( `uint32_t` app_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID for the application to check for. |
 
@@ -28,7 +28,7 @@ Interface to Steam parental settings (Family View).  These functions are not doc
 ### isAppInBlockList
 
 !!! function "isAppInBlockList( `uint32_t` app_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID for the application to check for. |
 
@@ -39,7 +39,7 @@ Interface to Steam parental settings (Family View).  These functions are not doc
 ### isFeatureBlocked
 
 !!! function "isFeatureBlocked( `ParentalFeature` feature )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | feature | [ParentalFeature enum](#parentalfeature) | The feature to check for. |
 
@@ -50,7 +50,7 @@ Interface to Steam parental settings (Family View).  These functions are not doc
 ### isFeatureInBlockList
 
 !!! function "isFeatureInBlockList( `ParentalFeature` feature )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | feature | [ParentalFeature enum](#parentalfeature) | The feature to check for. |
 

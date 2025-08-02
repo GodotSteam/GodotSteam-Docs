@@ -17,7 +17,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### activateActionSet
 
 !!! function "activateActionSet( `uint64_t` input_handle, `uint64_t` action_set_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to activate an action set for.
     | action_set_handle | uint64_t | The handle of the action set you want to activate.
@@ -34,7 +34,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### activateActionSetLayer
 
 !!! function "activateActionSetLayer( `uint64_t` input_handle, `uint64_t` action_set_layer_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to activate an action set layer for.
     | action_set_layer_handle | uint64_t | The handle of the action set layer you want to activate.
@@ -51,7 +51,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### deactivateActionSetLayer
 
 !!! function "deactivateActionSetLayer( `uint64_t` input_handle, `uint64_t` action_set_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to deactivate an action set layer for.
     | action_set_layer_handle | uint64_t | The handle of the action set layer you want to deactivate.
@@ -67,7 +67,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### deactivateAllActionSetLayers
 
 !!! function "deactivateAllActionSetLayers( `uint64_t` input_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to deactivate all action set layers for.
 
@@ -95,7 +95,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getActiveActionSetLayers
 
 !!! function "getActiveActionSetLayers( `uint64_t` input_handle)"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to get active action set layers for.
 
@@ -110,7 +110,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getActionSetHandle
 
 !!! function "getActionSetHandle( `string` action_set_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | action_set_name | string | The string identifier of an action set defined in the game's VDF file.
 
@@ -125,7 +125,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getActionOriginFromXboxOrigin
 
 !!! function "getActionOriginFromXboxOrigin( `uint64_t` input_handle, `XboxOrigin` origin )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect. You can use [getControllerForGamepadIndex](#getcontrollerforgamepadindex) to get this handle.
     | origin | [XboxOrigin enum](#xboxorigin) | This is the button you want to get the image for.
@@ -140,7 +140,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getAnalogActionData
 
 !!! function "getAnalogActionData( `uint64_t` input_handle, `uint64_t` analog_action_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to query.
     | analog_action_handle | uint64_t | The handle of the analog action you want to query.
@@ -163,7 +163,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getAnalogActionHandle
 
 !!! function "getAnalogActionHandle( `string` action_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | action_name | string | The string identifier of the analog action defined in the game's VDF fi
 
@@ -181,7 +181,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getAnalogActionOrigins
 
 !!! function "getAnalogActionOrigins( `uint64_t` input_handle, `uint64_t` action_set_handle, `uint64_t` analog_action_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle |uint64_t | The handle of the controller you want to query.
     | action_set_handle | uint64_t | The handle of the action set you want to query.
@@ -211,7 +211,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getControllerForGamepadIndex
 
 !!! function "getControllerForGamepadIndex( `int` index )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | index | int | The index of the emulated gamepad you want to get a controller handle for.
 
@@ -226,7 +226,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getCurrentActionSet
 
 !!! function "getCurrentActionSet( `uint64_t` input_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to query.
 
@@ -241,7 +241,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getDeviceBindingRevision
 
 !!! function "getDeviceBindingRevision( `uint64_t` input_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to query.
 
@@ -263,7 +263,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getDigitalActionData
 
 !!! function "getDigitalActionData( `uint64_t` input_handle, `uint64_t` digital_action_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to query.
     | digital_action_handle | uint64_t | The handle of the digital action you want to query.
@@ -284,7 +284,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getDigitalActionHandle
 
 !!! function "getDigitalActionHandle( `string` action_name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | action_name | string | The string identifier of the digital action defined in the game's VDF file.
 
@@ -303,7 +303,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getDigitalActionOrigins
 
 !!! function "getDigitalActionOrigins( `uint64_t` input_handle, `uint64_t` action_set_handle, `uint64_t` digital_action_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to query.
     | action_set_handle | uint64_t | The handle of the action set you want to query.
@@ -322,7 +322,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getGamepadIndexForController
 
 !!! function "getGamepadIndexForController( `uint64_t` input_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to get a gamepad index for.
 
@@ -336,7 +336,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getGlyphForActionOrigin
 
 !!! function "getGlyphForActionOrigin( `InputActionOrigin` origin )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | origin | [InputActionOrigin enum](#inputactionorigin) | The origin to get the glyph for.
 
@@ -357,7 +357,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getGlyphPNGForActionOrigin
 
 !!! function "getGlyphPNGForActionOrigin( `InputActionOrigin` origin, `InputGlyphSize` size, `uint32_t` flags )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | origin | [InputActionOrigin enum](#inputactionorigin) | The button glyph to get.
     | size | [InputGlyphSize enum](#inputglyphsize) | The size of the glyph.
@@ -370,7 +370,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getGlyphSVGForActionOrigin
 
 !!! function "getGlyphSVGForActionOrigin( `InputActionOrigin` origin, `uint32_t` flags )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | origin | [InputActionOrigin enum](#inputactionorigin) | The button SVG glyph to get.
     | flags | uint32_t | No specifications; may be [InputGlyphStyle enum.](#inputglyphstyle)
@@ -382,7 +382,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getInputTypeForHandle
 
 !!! function "getInputTypeForHandle( `uint64_t` input_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller whose input type (device model) you want to query
 
@@ -398,7 +398,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getMotionData
 
 !!! function "getMotionData( `uint64_t` input_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to get motion data for.
 
@@ -426,7 +426,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getRemotePlaySessionID
 
 !!! function "getRemotePlaySessionID( `uint64_t` input_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to query.
 
@@ -450,7 +450,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getStringforActionOrigin
 
 !!! function "getStringforActionOrigin( `InputActionOrigin` origin )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | origin | [InputActionOrigin enum](#inputactionorigin) | The origin to get the string name for.
 
@@ -464,7 +464,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getStringForAnalogActionName
 
 !!! function "getStringForAnalogActionName( `uint64_t` action_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | action_handle | uint64_t | The action handle to get the name for.
 
@@ -475,7 +475,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getStringForDigitalActionName
 
 !!! function "getStringForDigitalActionName( `uint64_t` action_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | action_handle | uint64_t | The action handle to get the name for.
 
@@ -486,7 +486,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### getStringForXboxOrigin
 
 !!! function "String getStringForXboxOrigin( `XboxOrigin` origin )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | origin | [XboxOrigin enum](#xboxorigin) | -
 
@@ -497,7 +497,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### inputInit
 
 !!! function "inputInit( `bool` explicitly_call_runframe )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | explicitly_call_runframe | bool | If false then you will need to manually call [runFrame}(#runframe).
 
@@ -542,7 +542,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### setDualSenseTriggerEffect
 
 !!! function "setDualSenseTriggerEffect( `uint64_t` input_handle, `int` parameter_index, `int` trigger_mask, `SCEPadTriggerEffectMode` effect_mode, `int` position, `int` amplitude, `int` frequency )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect.
     | parameter_index | int | -
@@ -563,7 +563,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### setInputActionManifestFilePath
 
 !!! function "setInputActionManifestFilePath( `string` manifest_path )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | manifest_path | string | The absolute path to the Input Action Manifest.
 
@@ -574,7 +574,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### setLEDColor
 
 !!! function "setLEDColor( `uint64_t` input_handle, `int` color_r, `int` color_g, `int` color_b, `int` flags )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect.
     | color_r | int | The red component of the color to set (0-255).
@@ -595,7 +595,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### showBindingPanel
 
 !!! function "showBindingPanel( `uint64_t` input_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller you want to bring up the binding screen for.
 
@@ -610,7 +610,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### stopAnalogActionMomentum
 
 !!! function "stopAnalogActionMomentum( `uint64_t` input_handle, `uint64_t` action )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect.
     | action | uint64_t | The analog action to stop momentum for.
@@ -627,7 +627,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### translateActionOrigin
 
 !!! function "translateActionOrigin( `InputType` destination_input, `InputActionOrigin` source_origin )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | destination_input | [InputType enum](#inputtype) | The controller type you want to translate to. Steam will pick the closest type from your SDK version if [INPUT_TYPE_UNKNOWN](#inputtype) is used.
     | source_origin | [InputActionOrigin enum](#inputactionorigin) | This is the button you want to translate.
@@ -642,7 +642,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### triggerHapticPulse
 
 !!! function "triggerHapticPulse( `uint64_t` input_handle, `int` target_pad, `int` duration )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect.
     | target_pad | [ControllerPad enum](#controllerpad) | Which haptic touchpad to affect.
@@ -664,7 +664,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### triggerRepeatedHapticPulse
 
 !!! function "triggerRepeatedHapticPulse( `uint64_t` input_handle, `ControllerPad` target_pad, `int` duration, `int` offset, `int` repeat, `int` flags )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect.
     | target_pad | [ControllerPad enum](#controllerpad) | Which haptic touchpad to affect.
@@ -687,7 +687,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### triggerSimpleHapticEvent
 
 !!! function "triggerSimpleHapticEvent( `uint64_t` input_handle, `ControllerHapticLocation` haptic_location, `uint8_t` intensity, `string` gain_db, `uint8_t` other_intensity, `string` other_gain_db )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect.
     | haptic_location | [ControllerHapticLocation enum](#controllerhapticlocation) | -
@@ -703,7 +703,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### triggerVibration
 
 !!! function "triggerVibration( `uint64_t` input_handle, `uint16_t` left_speed, `uint16_t` right_speed )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect.
     | left_speed | uint16_t | The intensity value for the left rumble motor.
@@ -722,7 +722,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 ### triggerVibrationExtended
 
 !!! function "triggerVibrationExtended( `uint64_t` input_handle, `uint16_t` left_speed, `uint16_t` right_speed, `uint16_t` left_trigger_speed, `uint16_t` right_trigger_speed )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | input_handle | uint64_t | The handle of the controller to affect.
     | left_speed | uint16_t | The intensity value for the left rumble motor.

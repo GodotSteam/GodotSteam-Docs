@@ -15,7 +15,7 @@ icon: material/package-variant
 ### disconnect_peer
 
 !!! function "disconnect_peer( `bool` force )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | force | bool | Whether or not to force the disconnection.
 

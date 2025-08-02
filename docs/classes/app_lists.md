@@ -19,7 +19,7 @@ This is a restricted interface that can only be used by previously approved apps
 ### getAppListBuildId
 
 !!! function "getAppListBuildId( `uint32_t` app_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to get data for. |
 
@@ -34,7 +34,7 @@ This is a restricted interface that can only be used by previously approved apps
 ### getAppListInstallDir
 
 !!! function "getAppListInstallDir( `uint32_t` app_id, `int` name_max )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to get data for. |
     | name_max | int | The maximum number of characters for the name. |
@@ -50,7 +50,7 @@ This is a restricted interface that can only be used by previously approved apps
 ### getAppName
 
 !!! function "getAppName( `uint32_t` app_id, `int` name_max )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to get data for. |
     | name_max | int | The maximum number of characters for the name. |
@@ -66,7 +66,7 @@ This is a restricted interface that can only be used by previously approved apps
 ### getInstalledApps
 
 !!! function "getInstalledApps( `uint32_t` max_app_ids )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | max_app_ids | uint32_t | List of app IDs. |
 

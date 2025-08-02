@@ -17,7 +17,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### checkPingDataUpToDate
 
 !!! function "checkPingDataUpToDate( `float` max_age_in_seconds )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | max_age_in_seconds | float | The maximum age the ping data can be.
 
@@ -36,7 +36,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### convertPingLocationToString
 
 !!! function "convertPingLocationToString( `PackedByteArray` location )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | location | PackedByteArray | The ping location data to convert. |
 
@@ -50,7 +50,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### estimatePingTimeBetweenTwoLocations
 
 !!! function "estimatePingTimeBetweenTwoLocations( `PackedByteArray` location1, `PackedByteArray` location2 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | location1 | PackedByteArray | The ping location data to check against.
     | location2 | PackedByteArray | The ping location data to check against.
@@ -72,7 +72,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### estimatePingTimeFromLocalHost
 
 !!! function "estimatePingTimeFromLocalHost( `PackedByteArray` location )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | location | PackedByteArray | The ping location data to check against.
 
@@ -88,7 +88,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### getConfigValue
 
 !!! function "getConfigValue( `NetworkingConfigValue` config_value, `NetworkingConfigScope` scope_type, `uint32_t` connection_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | config_value | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to fetch.
     | scope_type | [NetworkingConfigScope enum](#networkingconfigscope) | Query setting on what type of object.
@@ -115,7 +115,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### getConfigValueInfo
 
 !!! function "getConfigValueInfo( `NetworkingConfigValue` config_value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | config_value | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to fetch.
 
@@ -138,7 +138,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### getDirectPingToPOP
 
 !!! function "getDirectPingToPOP( `uint32_t` pop_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | pop_id | uint32_t | Identifier used for a network location point of presence.
 
@@ -152,7 +152,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### getIPv4FakeIPType
 
 !!! function "getIPv4FakeIPType( `string` &ipv4 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ipv4 | string | The IP address to get the type of.
 
@@ -201,7 +201,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### getPingToDataCenter
 
 !!! function "	getPingToDataCenter( `uint32_t` pop_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | pop_id | uint32_t | Identifier used for a network location point of presence.
 
@@ -242,7 +242,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### getRealIdentityForFakeIP
 
 !!! function "getRealIdentityForFakeIP( `string` fake_ip )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | fake_ip | string | The fake IP address to get the real identity for.
 
@@ -294,7 +294,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### isFakeIPv4
 
 !!! function "isFakeIPv4( `string` ip_address )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip_address | string | The IP address to check.
 
@@ -316,7 +316,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### parsePingLocationString
 
 !!! function "parsePingLocationString( `string` location_string )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | location_string | string | The location string to be parsed back into a location object. |
 
@@ -336,7 +336,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### setConnectionConfigValueFloat
 
 !!! function "	setConnectionConfigValueFloat( `uint32_t` connection_handle, `NetworkingConfigValue` config, `float` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The connection to set configuration values for.
     | config | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to set.
@@ -352,7 +352,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### setConnectionConfigValueInt32
 
 !!! function "setConnectionConfigValueInt32( `uint32_t` connection_handle, `NetworkingConfigValue` config, `int32` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The connection to set configuration values for.
     | config | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to set.
@@ -368,7 +368,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### setConnectionConfigValueString
 
 !!! function "setConnectionConfigValueString( `uint32_t` connection_handle, `NetworkingConfigValue` config, `string` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The connection to set configuration values for.
     | config | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to set.
@@ -384,7 +384,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### setDebugOutputFunction
 
 !!!function "setDebugOutputFunction( `NetworkingSocketsDebugOutputType` detail_level )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | detail_level | NetworkingSocketsDebugOutputType | The type of debug message output requested.
 
@@ -445,7 +445,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### setGlobalConfigValueFloat
 
 !!! function "setGlobalConfigValueFloat( `NetworkingConfigValue` config, `float` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | config | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to set.
     | value | float | The actual value to set.
@@ -460,7 +460,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### setGlobalConfigValueInt32
 
 !!! function "setGlobalConfigValueInt32( `NetworkingConfigValue` config, `int32` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | config | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to set.
     | value | int32 | The actual value to set.
@@ -475,7 +475,7 @@ Miscellaneous networking utilities for checking the local networking environment
 ### setGlobalConfigValueString
 
 !!! function "setGlobalConfigValueString( `NetworkingConfigValue` config, `string` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | config | [NetworkingConfigValue enum](#networkingconfigvalue) | Which value to set.
     | value | string | The actual value to set.

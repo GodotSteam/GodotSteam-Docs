@@ -17,7 +17,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addAppDependency
 
 !!! function "addAppDependency( `uint64_t` published_file_id, `uint32_t` app_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to add a dependency to. |
     | app_id | uint32_t | The required app / dlc for this file. |
@@ -35,7 +35,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addContentDescriptor
 
 !!! function "addContentDescriptor( `uint64_t` update_handle, `int` descriptor_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize.
     | descriptor_id | [UGCContentDescriptorID enum](#ugccontentdescriptorid) | The required app / dlc for this file.
@@ -47,7 +47,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addDependency
 
 !!! function "addDependency( `uint64_t` published_file_id, `uint64_t` child_published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to add a dependency to. |
     | child_published_file_id | uint64_t | The item dependency to add to the parent. |
@@ -65,7 +65,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addExcludedTag
 
 !!! function "addExcludedTag( `uint64_t` query_handle, `string` tag_name )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | tag_name | string | The tag to exclude from a pending UGC query. |
@@ -84,7 +84,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addItemKeyValueTag
 
 !!! function "addItemKeyValueTag( `uint64_t` update_handle, `string` key, `string` value )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | key | string | The key to set on the item. |
@@ -106,7 +106,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addItemPreviewFile
 
 !!! function "addItemPreviewFile( `uint64_t` update_handle, `string` preview_file, `int` type )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | preview_file | string | Absolute path to the local image. |
@@ -130,7 +130,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addItemPreviewVideo
 
 !!! function "addItemPreviewVideo( `update_handle` query_handle, `string` video_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | video_id | string | The YouTube video ID to add. (e.g. "jHgZh4GV9G0") |
@@ -149,7 +149,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addItemToFavorites
 
 !!! function "addItemToFavorites( `uint32_t` app_id, `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID that this item belongs to. |
     | published_file_id | uint64_t | The workshop item to add to the user's favorites list. |
@@ -167,7 +167,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addRequiredKeyValueTag
 
 !!! function "addRequiredKeyValueTag( `uint64_t` query_handle, `string` key, `string` value )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | key | string | The key-value key that must be attached to the UGC to receive it. |
@@ -187,7 +187,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addRequiredTag
 
 !!! function "addRequiredTag( `uint64_t` query_handle, `string` tag_name )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | tag_name | string | The tag must be attached to the UGC to receive it. |
@@ -206,7 +206,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### addRequiredTagGroup
 
 !!! function "addRequiredTagGroup( `uint64_t` query_handle, `array` tag_array )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | tag_array | array | A set of tags where at least one of the tags must attach to the UGC. |
@@ -225,7 +225,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### createItem
 
 !!! function "createItem( `uint32_t` app_id, `int` file_type )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID that will be using this item. |
     | file_type | [WorkshopFileType enum](remote_storage.md#workshopfiletype) | The type of UGC to create. |
@@ -243,7 +243,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### createQueryAllUGCRequest
 
 !!! function "createQueryAllUGCRequest( `UGCQuery` query_type, `UGCMatchingUGCType` matching_type, `uint32_t` creator_id, `uint32_t` consumer_id, `int` page )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_type | [UGCQuery enum](#ugcquery) | Used to specify the sorting and filtering for this call. |
     | matching_type | [UGCMatchingUGCType enum](#ugcmatchingugctype) | Used to specify the type of UGC queried for. |
@@ -277,7 +277,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### createQueryUGCDetailsRequest
 
 !!! function "createQueryUGCDetailsRequest( `array` published_file_id_array )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id_array | array | 
 
@@ -305,7 +305,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### createQueryUserUGCRequest
 
 !!! function "createQueryUserUGCRequest( `uint64_t` steam_id, `int` list_type, `int` matching_ugc_type, `int` sort_order, `uint32_t` creator_id, `uint32_t` consumer_id, `int` page )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to query the UGC for. |
     | list_type | [UserUGCList enum](#userugclist) | Used to specify the type of list to get. If the currently logged in user is different than the user specified in **steam_id**, then some options are not allowed. |
@@ -343,7 +343,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### deleteItem
 
 !!! function "deleteItem( `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The item to delete. |
 
@@ -360,7 +360,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### downloadItem
 
 !!! function "downloadItem( `uint64_t` published_file_id, `bool` high_priority )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The item to download. |
     | high_priority | bool | Start the download in high priority mode, pausing any existing in-progress Steam downloads and immediately begin downloading this workshop item. |
@@ -382,7 +382,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getAppDependencies
 
 !!! function "getAppDependencies( `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to get app dependencies for. |
 
@@ -399,7 +399,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getItemDownloadInfo
 
 !!! function "getItemDownloadInfo( `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to get the download info for. |
 
@@ -420,7 +420,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getItemInstallInfo
 
 !!! function "getItemInstallInfo( `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to get the install info for. |
 
@@ -447,7 +447,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getItemState
 
 !!! function "getItemState( `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to get the state for. |
 
@@ -462,7 +462,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getItemUpdateProgress
 
 !!! function "getItemUpdateProgress( `uint64_t` update_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The update handle to get the progress for.
 
@@ -486,7 +486,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getNumSubscribedItems
 
 !!! function "getNumSubscribedItems( `bool` include_locally_disabled = false )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | include_locally_disabled | bool | Whether to include locally disabled items in the return value or not. Defaults to false. |
 
@@ -501,7 +501,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getNumSupportedGameVersions
 
 !!! function "getNumSupportedGameVersions( `uint64_t` query_handle, `uint32_t` index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item from the query. |
@@ -520,7 +520,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCAdditionalPreview
 
 !!! function "getQueryUGCAdditionalPreview( `uint64_t` query_handle, `uint32_t` index, `uint32_t` preview_index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -554,7 +554,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCChildren
 
 !!! function "getQueryUGCChildren( `uint64_t` query_handle, `uint32_t` index, `int32_t` child_count )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -584,7 +584,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCContentDescriptors
 
 !!! function "getQueryUGCContentDescriptors( `uint64_t` query_handle, `uint32_t` index, `uint32_t` max_entries = 5 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -616,7 +616,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCKeyValueTag
 
 !!! function "getQueryUGCKeyValueTag( `uint64_t` query_handle, `uint32_t` index, `uint32_t` key_value_tag_index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -649,7 +649,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCMetadata
 
 !!! function "getQueryUGCMetadata( `uint64_t` query_handle, `uint32_t` index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -669,7 +669,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCNumAdditionalPreviews
 
 !!! function "getQueryUGCNumAdditionalPreviews( `uint64_t` query_handle, `uint32_t` index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -690,7 +690,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCNumKeyValueTags
 
 !!! function "getQueryUGCNumKeyValueTags( `uint64_t` query_handle, `uint32_t` index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -711,7 +711,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCNumTags
 
 !!! function "getQueryUGCNumTags( `uint64_t` query_handle, `uint32_t` index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -732,7 +732,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCPreviewURL
 
 !!! function "getQueryUGCPreviewURL( `uint64_t` query_handle, `uint32_t` index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -753,7 +753,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCResult
 
 !!! function "getQueryUGCResult( `uint64_t` query_handle, `uint32_t` index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize.
     | index | uint32_t | The index of the item to get the details of.
@@ -802,7 +802,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCStatistic
 
 !!! function "getQueryUGCStatistic( `uint64_t` query_handle, `uint32_t` index, `ItemStatistic` stat_type )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -830,7 +830,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCTag
 
 !!! function "getQueryUGCTag( `uint64_t` query_handle, `uint32_t` index, `uint32_t` tag_index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -851,7 +851,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getQueryUGCTagDisplayName
 
 !!! function "getQueryUGCTagDisplayName( `uint64_t` query_handle, `uint32_t` index, `uint32_t` tag_index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -872,7 +872,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getSubscribedItems
 
 !!! function "getSubscribedItems( `bool` include_locally_disabled = false )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | include_locally_disabled | bool | Whether to include locally disabled items in the return value or not. Defaults to false. |
 
@@ -887,7 +887,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getSupportedGameVersionData
 
 !!! function "getSupportedGameVersionData( `uint64_t` query_handle, `uint32_t` index, `uint32_t` version_index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | index | uint32_t | The index of the item to get the details of. |
@@ -922,7 +922,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getUserContentDescriptorPreferences
 
 !!! function "getUserContentDescriptorPreferences( `uint32_t` max_entries = 5 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | max_entries | uint32_t | The maximum number of content descriptor preferences sent back. Defaults to 5. |
 
@@ -934,7 +934,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### getUserItemVote
 
 !!! function "getUserItemVote( `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to get the user vote for. |
 
@@ -951,7 +951,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### initWorkshopForGameServer
 
 !!! function "initWorkshopForGameServer( `uint32_t` workshop_depot_id, `string` folder )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | workshop_depot_id | uint32_t | The depot ID of the game server. |
     | folder | string | The absolute path to store the workshop content. |
@@ -969,7 +969,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### releaseQueryUGCRequest
 
 !!! function "releaseQueryUGCRequest( `uint64_t` query_handle )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
 
@@ -984,7 +984,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### removeAllItemKeyValueTags
 
 !!! function "removeAllItemKeyValueTags( `uint64_t` update_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The update handle to remove all the key-value tags on. |
 
@@ -998,7 +998,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### removeAppDependency
 
 !!! function "removeAppDependency( `uint64_t` published_file_id, `uint32_t` app_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to get the user vote for. |
     | app_id | uint32_t | The app ID dependency that will be removed for this item. |
@@ -1016,7 +1016,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### removeContentDescriptor
 
 !!! function "removeContentDescriptor( `uint64_t` update_handle, `UGCContentDescriptorID` descriptor_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The update handle to remove the content descript for. |
     | descriptor_id | [UGCContentDescriptorID enum](#ugccontentdescriptorid) | The descriptor to be removed for this item. |
@@ -1031,7 +1031,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### removeDependency
 
 !!! function "removeDependency( `uint64_t` published_file_id, `uint64_t` child_published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to remove the dependency from. |
     | child_published_file_id | uint64_t | The dependency to remove from the parent. |
@@ -1049,7 +1049,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### removeItemFromFavorites
 
 !!! function "removeItemFromFavorites( `uint32_t` app_id, `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID that this item belongs to. |
     | published_file_id | uint64_t | The workshop item to remove from the user's favorites list. |
@@ -1067,7 +1067,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### removeItemKeyValueTags
 
 !!! function "removeItemKeyValueTags( `uint64_t` update_handle, `string` key )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The update handle to remove the key-value tags for. |
     | key | string | The key to remove from the item. |
@@ -1088,7 +1088,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### removeItemPreview
 
 !!! function "removeItemPreview( `uint64_t` update_handle, `uint32_t` index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The update handle to remove the item preview from. |
     | index | uint32_t | The index of the preview to be removed. |
@@ -1103,7 +1103,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### sendQueryUGCRequest
 
 !!! function "sendQueryUGCRequest( `uint64_t` query_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query request handle to send. |
 
@@ -1124,7 +1124,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setAdminQuery
 
 !!! function "setAdminQuery( `uint64_t` query_handle, `bool` admin_query )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | admin_query | bool | Whether or not to return hidden items. |
@@ -1139,7 +1139,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setAllowCachedResponse
 
 !!! function "setAllowCachedResponse( `uint64_t` query_handle, `uint32_t` max_age_seconds )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | max_age | uint32_t | The maximum amount of time that an item can be returned without a cache invalidation. |
@@ -1158,7 +1158,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setAllowLegacyUpload
 
 !!! function "setAllowLegacyUpload( `uint64_t` update_handle, `bool` allow_legacy_upload )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | allow_legacy_upload | bool | Whether to allow legacy upload or not. |
@@ -1173,7 +1173,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setCloudFileNameFilter
 
 !!! function "setCloudFileNameFilter( `uint64_t` query_handle, `string` match_cloud_filename )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | match_cloud_filename | string | The filename to match. |
@@ -1194,7 +1194,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemContent
 
 !!! function "setItemContent( `uint64_t` update_handle, `string` content_folder )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | content_folder | string | The absolute path to a local folder containing the content for the item. |
@@ -1215,7 +1215,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemDescription
 
 !!! function "setItemDescription( `uint64_t` update_handle, `string` description )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | description | string | The new description of the item. |
@@ -1238,7 +1238,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemMetadata
 
 !!! function "setItemMetadata( `uint64_t` update_handle, `string` metadata )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | metadata | string | The new metadata for this item. |
@@ -1259,7 +1259,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemPreview
 
 !!! function "setItemPreview( `uint64_t` update_handle, `string` preview_file )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | preview_file | string | The absolute path to a local preview image file for the item. |
@@ -1278,7 +1278,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemTags
 
 !!! function "setItemTags( `uint64_t` update_handle, `array` tag_array, `bool` allow_admin_tags = false )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | tag_array | array | The list of tags to set on this item. | 
@@ -1300,7 +1300,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemTitle
 
 !!! function "setItemTitle( `uint64_t` update_handle, `string` title )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | title | string | The new title of the item. |
@@ -1323,7 +1323,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemUpdateLanguage
 
 !!! function "setItemUpdateLanguage( `uint64_t` update_handle, `string` language )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | language | string | The language of the title and description that will be set in this update. |
@@ -1346,7 +1346,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemVisibility
 
 !!! function "setItemVisibility( `uint64_t` update_handle, `RemoteStoragePublishedFileVisibility` visibility )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | visibility | [RemoteStoragePublishedFileVisibility enum](remote_storage.md#remotestoragepublishedfilevisibility) | The visibility to set.
@@ -1365,7 +1365,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setItemsDisabledLocally
 
 !!! function "setItemsDisabledLocally( `PackedInt64Array` published_file_ids, `bool` disabled_locally )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | disabled_locally | bool | Whether the items should be disabled locally or not |
@@ -1380,7 +1380,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setLanguage
 
 !!! function "setLanguage( `uint64_t` query_handle, `string` language )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | language | string | The language to return. |
@@ -1403,7 +1403,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setMatchAnyTag
 
 !!! function "setMatchAnyTag( `uint64_t` query_handle, `bool` match_any_tag )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | match_any_tag | bool | Should the item just need to have one required tag (true), or all of them? (false) |
@@ -1424,7 +1424,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setRankedByTrendDays
 
 !!! function "setRankedByTrendDays( `uint64_t` query_handle, `uint32_t` days )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | days | uint32_t | Sets the number of days to rank items over. Valid values are 1-365 inclusive. |
@@ -1451,7 +1451,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setRequiredGameVersions
 
 !!! function "setRequiredGameVersions( `uint64_t` query_handle, `String` game_branch_min, `String` game_branch_max )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | game_branch_min | string | The minimum game branch version. |
@@ -1467,7 +1467,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setReturnAdditionalPreviews
 
 !!! function "setReturnAdditionalPreviews( `uint64_t` query_handle, `bool` return_additional_previews )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | return_additional_previews | bool | Return the additional previews for the items? |
@@ -1486,7 +1486,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setReturnChildren
 
 !!! function "setReturnChildren( `uint64_t` query_handle, `bool` return_children )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | return_children | bool | Return the IDs of children of the items? |
@@ -1505,7 +1505,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setReturnKeyValueTags
 
 !!! function "setReturnKeyValueTags( `uint64_t` query_handle, `bool` return_key_value_tags )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | return_key_value_tags | bool | Return any key-value tags for the items? |
@@ -1524,7 +1524,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setReturnLongDescription
 
 !!! function "setReturnLongDescription( `uint64_t` query_handle, `bool` return_long_description )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | return_long_description | bool | Return the long description for the items? |
@@ -1545,7 +1545,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setReturnMetadata
 
 !!! function "setReturnMetadata( `uint64_t` query_handle, `bool` return_metadata )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | return_metadata | bool | Return the metadata for the items? |
@@ -1564,7 +1564,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setReturnOnlyIDs
 
 !!! function "setReturnOnlyIDs( `uint64_t` query_handle, `bool` return_only_ids )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | return_only_ids | bool | Return only the IDs of items? |
@@ -1585,7 +1585,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setReturnPlaytimeStats
 
 !!! function "setReturnPlaytimeStats( `uint64_t` query_handle, `uint32_t` days )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | days | uint32_t | The number of days worth of playtime stats to return. |
@@ -1604,7 +1604,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setReturnTotalOnly
 
 !!! function "setReturnTotalOnly( `uint64_t` query_handle, `bool` return_total_only )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | return_total_only | bool | Only return the total number of items? |
@@ -1625,7 +1625,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setSearchText
 
 !!! function "setSearchText( `uint64_t` query_handle, `string` search_text )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | query_handle | uint64_t | The UGC query handle to customize. |
     | search_text | string | The text to be searched for. |
@@ -1646,7 +1646,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setSubscriptionsLoadOrder
 
 !!! function "setSubscriptionsLoadOrder( `PackedInt64Array` published_file_ids )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_ids | PackedInt64Array | Array of of file IDs in the order they should be loaded. |
 
@@ -1660,7 +1660,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setTimeCreatedDateRange
 
 !!! function "setTimeCreatedDateRange( `uint64_t` update_handle, `uint32_t` start, `uint32_t` end )"
-	   | Argument | Type | Notes |
+	   | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | start | uint32_t | The Unix time creation start date. |
@@ -1673,7 +1673,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setTimeUpdatedDateRange
 
 !!! function "setTimeUpdatedDateRange( `uint64_t` update_handle, `uint32_t` start, `uint32_t` end )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | start | uint32_t | The Unix time updated start date. |
@@ -1686,7 +1686,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### setUserItemVote
 
 !!! function "setUserItemVote( `uint64_t` published_file_id, `bool` vote_up )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item ID to vote on. |
     | vote_up | bool | Vote up (true) or down (false)? |
@@ -1715,7 +1715,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### startItemUpdate
 
 !!! function "startItemUpdate( `uint32_t` app_id, `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID that will be using this item. |
     | published_file_id | uint64_t | The item to update. |
@@ -1733,7 +1733,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### startPlaytimeTracking
 
 !!! function "startPlaytimeTracking( `array` published_file_ids )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_ids | array |  The array of workshop items you want to start tracking. Maximum of 100 items. |
 
@@ -1752,7 +1752,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### stopPlaytimeTracking
 
 !!! function "stopPlaytimeTracking( `array` published_file_ids )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_ids | array |  The array of workshop items you want to stop tracking. Maximum of 100 items. |
 
@@ -1786,7 +1786,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### submitItemUpdate
 
 !!! function "submitItemUpdate( `uint64_t` update_handle, `string` change_note )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | change_note | string | A brief description of the changes made. This is optional and can be left blank. Defaults to empty string. |
@@ -1806,7 +1806,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### subscribeItem
 
 !!! function "subscribeItem( `uint64_t` published_file_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to subscribe to. |
 
@@ -1823,7 +1823,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### suspendDownloads
 
 !!! function "suspendDownloads( `bool` suspend )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | suspend | bool | Suspend (true) or Resume (false) workshop downloads? |
 
@@ -1839,7 +1839,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### unsubscribeItem
 
 !!! function "unsubscribeItem( `uint64_t` published_file_id )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | published_file_id | uint64_t | The workshop item to unsubscribe from. |
 
@@ -1856,7 +1856,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### updateItemPreviewFile
 
 !!! function "updateItemPreviewFile( `uint64_t` update_handle, `uint32_t` index, `string` preview_file )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | index | uint32_t | The index of the preview file from 0 to [getQueryUGCNumAdditionalPreviews](#getqueryugcnumadditionalpreviews). |
@@ -1880,7 +1880,7 @@ Functions to create, consume, and interact with the [Steam Workshop](https://par
 ### updateItemPreviewVideo
 
 !!! function "updateItemPreviewVideo( `uint64_t` update_handle, `uint32_t` index, `string` video_id )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | update_handle | uint64_t | The workshop item update handle to customize. |
     | index | uint32_t | The index of the preview file from 0 to [getQueryUGCNumAdditionalPreviews](#getqueryugcnumadditionalpreviews). |

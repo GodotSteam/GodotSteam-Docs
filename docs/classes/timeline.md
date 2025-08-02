@@ -17,7 +17,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### addGamePhaseTag
 
 !!! function "addGamePhaseTag( `string` tag_name, `string` tag_icon, `string` tag_group, `uint32_t` priority )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | tag_name | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage).
     | tag_icon | string | The name of the icon to show when the tag is shown in the UI. This can be one of the icons uploaded through the Steamworks partner site for your title, or one of the provided icons that start with steam_. [The Steam Timelines overview includes a list of available icons.](https://partner.steamgames.com/doc/features/timeline#icons){ target="_blank" } |
@@ -36,7 +36,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### addInstantaneousTimelineEvent
 
 !!! function "addInstantaneousTimelineEvent( `string` title, `string` description, `string` icon, `uint32_t` icon_priority, `float` start_offset_seconds, `TimelineEventClipPriority` possible_clip = TIMELINE_EVENT_CLIP_PRIORITY_NONE )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | title | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |
     | description | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |
@@ -65,7 +65,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### addRangeTimelineEvent
 
 !!! function "addRangeTimelineEvent( `string` title, `string` description, `string` icon, `uint32_t` icon_priority, `float` start_offset_seconds, `float` duration, `TimelineEventClipPriority` possible_clip = TIMELINE_EVENT_CLIP_PRIORITY_NONE )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | title | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |
     | description | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |
@@ -96,7 +96,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### clearTimelineTooltip
 
 !!! function "clearTimelineTooltip( `float` time_delta )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | time_delta | float | The time offset in seconds to apply to this state change. Negative times indicate an event that happened in the past. |
 
@@ -110,7 +110,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### doesEventRecordingExist
 
 !!! function "doesEventRecordingExist( `uint64_t` timeline_event_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | timeline_event_handle | uint64_t | Handle of the event to check for recordings. |
 
@@ -127,7 +127,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### doesGamePhaseRecordingExist
 
 !!! function "doesGamePhaseRecordingExist( `string` phase_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | phase_id | string | A game-provided persistent ID for a game phase. |
 
@@ -154,7 +154,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### endRangeTimelineEvent
 
 !!! function "endRangeTimelineEvent( `uint64_t` this_event, `float` end_offset_seconds )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | timeline_event_handle | uint64_t | Handle of the event to end. |
     | end_offset_seconds | float | The time offset in seconds to apply to the end of the event. Negative times indicate an event that happened in the past. |
@@ -169,7 +169,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### openOverlayToGamePhase
 
 !!! function "openOverlayToGamePhase( `string` phase_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | phase_id | string | A game-provided persistent ID for a game phase. |
 
@@ -183,7 +183,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### openOverlayToTimelineEvent
 
 !!! function "openOverlayToTimelineEvent( `uint64_t` timeline_event_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | timeline_event_handle | uint64_t | Handle of the event to end. |
 
@@ -197,7 +197,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### removeTimelineEvent
 
 !!! function "removeTimelineEvent( `uint64_t` timeline_event_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | timeline_event_handle | uint64_t | Handle of the event to end. |
 
@@ -211,7 +211,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### setGamePhaseAttribute
 
 !!! function "setGamePhaseAttribute( `string` attribute_group, `string` attribute_value, `uint32_t` priority )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | attribute_group | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |
     | attribute_value | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |
@@ -229,7 +229,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### setGamePhaseID
 
 !!! function "setGamePhaseID( `string` phase_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | phase_id | string | A game-provided persistent ID for a game phase. |
 
@@ -243,7 +243,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### setTimelineGameMode
 
 !!! function "setTimelineGameMode( `TimelineGameMode` mode )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | mode | [TimelineGameMode enum](#timelinegamemode) | The mode that the game is in. |
 
@@ -257,7 +257,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### setTimelineTooltip
 
 !!! function "setTimelineTooltip( `string` description, `float` time_delta )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | description | string | A localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |
     | time_delta | float | The time offset in seconds to apply to this state change. Negative times indicate an event that happened in the past. |
@@ -296,7 +296,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### startRangeTimelineEvent
 
 !!! function "startRangeTimelineEvent( `string` title, `string` description, `string` icon, `uint32_t` priority, `float` start_offset_seconds, `TimelineEventClipPriority` possible_clip = TIMELINE_EVENT_CLIP_PRIORITY_NONE )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | title | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |
     | description | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |
@@ -320,7 +320,7 @@ Functions that allow the game to add events to the timeline that is displayed al
 ### updateRangeTimelineEvent
 
 !!! function "updateRangeTimelineEvent( `uint64_t` this_event, `string` title, `string` description, `string` icon, `uint32_t` priority, `TimelineEventClipPriority` possible_clip = TIMELINE_EVENT_CLIP_PRIORITY_NONE )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | timeline_event_handle | uint64_t | Handle of the event to check for recordings. |
     | title | string | Title-provided localized string in the language returned by [getSteamUILanguage](utils.md#getsteamuilanguage). |

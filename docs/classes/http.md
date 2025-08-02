@@ -17,7 +17,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### createCookieContainer
 
 !!! function "createCookieContainer( `bool` allow_responses_to_modify )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | allow_responses_to_modify | bool | Set whether the server can set cookies in this container.
 
@@ -36,7 +36,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### createHTTPRequest
 
 !!! function "createHTTPRequest( `HTTPMethod` request_method, `string` absolute_url )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_method | [HTTPMethod enum](#httpmethod) | The type of request to make with this request.
     | absolute_url | string | The url to request. Must start with "http://" or "https://".
@@ -54,7 +54,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### deferHTTPRequest
 
 !!! function "deferHTTPRequest( `uint32_t` request_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to defer.
 
@@ -69,7 +69,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### getHTTPDownloadProgressPct
 
 !!! function "getHTTPDownloadProgressPct( `uint32_t` request_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to get the download percentage for.
 
@@ -84,7 +84,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### getHTTPRequestWasTimedOut
 
 !!! function "getHTTPRequestWasTimedOut( `int` request_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to check the failure reason for.
 
@@ -102,7 +102,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### getHTTPResponseBodyData
 
 !!! function "getHTTPResponseBodyData( `uint32_t` request_handle, `uint32_t` buffer_size )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to get the response body data for.
     | buffer_size | uint32_t | This should be the size of returned PackedByteArray in bytes.
@@ -127,7 +127,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### getHTTPResponseBodySize
 
 !!! function "getHTTPResponseBodySize( `uint32_t` request_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to get the response body size for.
 
@@ -145,7 +145,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### getHTTPResponseHeaderSize
 
 !!! function "getHTTPResponseHeaderSize( `uint32_t` request_handle, `string` header_name )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to check for the response header name.
     | header_name | string | The header name to check.
@@ -168,7 +168,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### getHTTPResponseHeaderValue
 
 !!! function "getHTTPResponseHeaderValue( `uint32_t` request_handle, `string` header_name, `uint32_t` buffer_size )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to get the response header value for.
     | header_name | string | The header name to get the header value for.
@@ -192,7 +192,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### getHTTPStreamingResponseBodyData
 
 !!! function "getHTTPStreamingResponseBodyData( `uint32_t` request_handle, `uint32_t` offset, `uint32_t` buffer_size )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t |   The request handle to get the response body data for.
     | offset | uint32_t | This must be the offset provided by [http_request_data_received](#http_request_data_received).
@@ -217,7 +217,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### prioritizeHTTPRequest
 
 !!! function "prioritizeHTTPRequest( `uint32_t` request_handle )"		
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to prioritize.
 
@@ -232,7 +232,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### releaseCookieContainer
 
 !!! function "releaseCookieContainer( `uint32_t` cookie_handle )"
-    | Argument | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | cookie_handle | uint32_t | The cookie container handle to release.
 
@@ -247,7 +247,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### releaseHTTPRequest
 
 !!! function "releaseHTTPRequest( `uint32_t` request_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to release.
 
@@ -262,7 +262,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### sendHTTPRequest
 
 !!! function "sendHTTPRequest( `uint32_t` request_handle )"		
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to send.
 
@@ -287,7 +287,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### sendHTTPRequestAndStreamResponse
 
 !!! function "sendHTTPRequestAndStreamResponse( `uint32_t` request_handle )"		
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to send.
 
@@ -316,7 +316,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPCookie
 
 !!! function "setHTTPCookie( `uint32_t` cookie_handle, `string` host, `string` url, `string` cookie_name )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | cookie_handle | uint32_t | The cookie container to set the the cookie in.
     | host | string | The host to set this cookie for.
@@ -334,7 +334,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPRequestAbsoluteTimeoutMS
 
 !!! function "setHTTPRequestAbsoluteTimeoutMS( `uint32_t` request_handle, `uint32_t` milliseconds )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to set the timeout on.
     | milliseconds | uint32_t | The length of the timeout period in milliseconds.
@@ -355,7 +355,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPRequestContextValue
 
 !!! function "setHTTPRequestContextValue( `uint32_t` request_handle, `uint64_t` context_value )"	
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to set the context value on.
     | context_value | uint64_t | The context value to set.
@@ -378,7 +378,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPRequestCookieContainer
 
 !!! function "setHTTPRequestCookieContainer( `uint32_t` request_handle, `uint32_t` cookie_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to associate the cookie container with.
     | cookie_handle | uint32_t | The cookie container handle to associate with the request handle.
@@ -397,7 +397,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPRequestGetOrPostParameter
 
 !!! function "setHTTPRequestGetOrPostParameter( `uint32_t` request_handle, `string` name, `string` value )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to set the parameter on.
     | param_name | string | Parameter name field.
@@ -422,7 +422,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPRequestHeaderValue
 
 !!! function "setHTTPRequestHeaderValue( `uint32_t` request_handle, `string` header_name, `string` header_value )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to set the header value for.
     | header_name | string | The header name field.
@@ -448,7 +448,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPRequestNetworkActivityTimeout
 
 !!! function "setHTTPRequestNetworkActivityTimeout( `uint32_t` request_handle, `uint32_t` timeout_seconds )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to set the timeout on.
     | timeout_seconds | uint32_t | The length of the timeout period in seconds.
@@ -469,7 +469,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPRequestRawPostBody
 
 !!! function "setHTTPRequestRawPostBody( `uint32_t` request_handle, `string` content_type, `string` body )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to set the post body on.
     | content_type | string | Sets the value of the calls "content-type" http header.
@@ -492,7 +492,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPRequestRequiresVerifiedCertificate
 
 !!! function "setHTTPRequestRequiresVerifiedCertificate( `uint32_t` request_handle, `bool` require_verified_certificate )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to set whether the request requires a verified certificate.
     | require_verified_certificate | bool | Require verified certificates?
@@ -508,7 +508,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 ### setHTTPRequestUserAgentInfo
 
 !!! function "setHTTPRequestUserAgentInfo( `uint32_t` request_handle, `string` user_agent_info )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | request_handle | uint32_t | The request handle to set the user agent info for.
     | user_agent_info | string | The string to append to the end of the user agent.

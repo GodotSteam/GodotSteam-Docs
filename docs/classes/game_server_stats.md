@@ -17,7 +17,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### clearUserAchievement
 
 !!! function "clearUserAchievement( `uint64_t` steam_id, `string` name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to clear the achievement for.
     | name | string | The API name of the achievement to reset.
@@ -35,7 +35,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### getUserAchievement
 
 !!! function "getUserAchievement( `uint64_t` steam_id, `string` name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to get the achievement for.
     | name | string | The API name of the achievement.
@@ -58,7 +58,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### getUserStatFloat
 
 !!! function "getUserStatFloat( `uint64_t` steam_id, `string` name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to get the stat for.
     | name | string | The API name of the stat.
@@ -73,7 +73,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### getUserStatInt
 
 !!! function "getUserStatInt( `uint64_t` steam_id, `string` name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to get the stat for.
     | name | string | The API name of the stat.
@@ -88,7 +88,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### requestUserStats
 
 !!! function "requestUserStats( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to request the stats for.
 
@@ -105,7 +105,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### setUserAchievement
 
 !!! function "setUserAchievement( `uint64_t` steam_id, `string` name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to unlock the achievement for.
     | name | string | The API name of the achievement to unlock.
@@ -128,7 +128,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### setUserStatFloat
 
 !!! function "setUserStatFloat( `uint64_t` steam_id, `string` name, `float` stat )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to set the stat on.
     | name | string | The API name of the stat.
@@ -153,7 +153,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### setUserStatInt
 
 !!! function "setUserStatInt( `uint64_t` steam_id, `string` name, `int` stat )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to set the stat on.
     | name | string | The API name of the stat.
@@ -178,7 +178,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### storeUserStats
 
 !!! function "storeUserStats( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to store the stats of.
 
@@ -197,7 +197,7 @@ Functions to allow game servers to set stats and achievements on players.
 ### updateUserAvgRateStat
 
 !!! function "updateUserAvgRateStat( `uint64_t` steam_id, `string` name, `float` this_session, `double` session_length )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to update the AVGRATE stat for.
     | name | string | The API name of the stat.

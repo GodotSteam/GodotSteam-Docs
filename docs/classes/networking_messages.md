@@ -23,7 +23,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 ### acceptSessionWithUser
 
 !!! function "acceptSessionWithUser( ```uint64_t``` remote_steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID of the user to accept a Messages session with.
 
@@ -40,7 +40,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 ### closeChannelWithUser
 
 !!! function "closeChannelWithUser( ```uint64_t``` remote_steam_id, ```int``` channel )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID of the user to close the channel with.
     | channel | int | The channel to close.
@@ -55,7 +55,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 ### closeSessionWithUser
 
 !!! function "closeSessionWithUser( ```uint64_t``` remote_steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_staem_id | uint64_t | The Steam ID of the user to close the session with.
 
@@ -71,7 +71,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 ### getSessionConnectionInfo
 
 !!! function "getSessionConnectionInfo```uint64_t``` remote_steam_id, ```bool``` get_connection, ```bool``` get_status )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID of the user to get connection info for.
     | get_connection | bool | Get the connection information.
@@ -130,7 +130,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 ### receiveMessagesOnChannel
 
 !!! function "receiveMessagesOnChannel( ```int``` channel, ```int``` max_messages )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | channel | int | The channel to receive messages on.
     | max_messages | int | The maximum number of messages to receive.
@@ -158,7 +158,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 ### sendMessageToUser
 
 !!! function "sendMessageToUser( ```uint64_t``` remote_steam_id, ```PackedByteArray``` data, ```int``` flags, ```int``` channel )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID of the user you want to send the message to.
     | data | PackedByteArray | The packet data to send.

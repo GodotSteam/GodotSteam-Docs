@@ -17,7 +17,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### createMouseCursor
 
 !!! function "createMouseCursor( `int` width, `int` height, `int` hot_x, `int` hot_y, `int` pitch )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | width | int | The width of the cursor, in pixels. |
     | height | int | The height of the cursor, in pixels. |
@@ -65,7 +65,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### getInput
 
 !!! function "getInput( `uint32_t` max_events )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | max_events | uint32_t | The maximum number of events to read. |
 
@@ -80,7 +80,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### getSessionClientFormFactor
 
 !!! function "getSessionClientFormFactor( `uint32_t` session_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session ID to get information about. |
 
@@ -95,7 +95,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### getSessionClientName
 
 !!! function "getSessionClientName( `uint32_t` session_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session ID to get information about. |
 
@@ -110,7 +110,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### getSessionClientResolution
 
 !!! function "getSessionClientResolution( `uint32_t` session_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session ID to get information about. |
 
@@ -142,7 +142,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### getSessionID
 
 !!! function "getSessionID( `uint32_t` index )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | index | uint32_t | The index of the specified session. |
 
@@ -157,7 +157,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### getSessionSteamID
 
 !!! function "getSessionSteamID( `uint32` session_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session ID to get information about. |
 
@@ -172,7 +172,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### sendRemotePlayTogetherInvite
 
 !!! function "sendRemotePlayTogetherInvite( `uint64_t` friend_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the friend you'd like to invite. |
 
@@ -187,7 +187,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### setMouseCursor
 
 !!! function "setMouseCursor( `uint32_t` session_id, `uint32_t` cursor_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session to affect. |
     | cursor_id | uint32_t | The normalized X position of the mouse cursor. |
@@ -202,7 +202,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### setMousePosition
 
 !!! function "setMousePosition( `uint32_t` session_id, `float` normalized_x, `float` normalized_y )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session to affect. |
     | normalized_x | float | The normalized X position of the mouse cursor. |
@@ -218,7 +218,7 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 ### setMouseVisibility
 
 !!! function "setMouseVisibility( `uint32_t` session_id, `bool` visible )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | session_id | uint32_t | The session to affect. |
     | visible | bool | True to show the mouse cursor, false to hide it. |

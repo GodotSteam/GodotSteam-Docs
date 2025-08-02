@@ -17,7 +17,7 @@ Interface to both friends list data and general information about users as well 
 ### activateGameOverlay
 
 !!! function "activateGameOverlay( `string` type )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | type | string | The dialog to open. |
 
@@ -41,7 +41,7 @@ Interface to both friends list data and general information about users as well 
 ### activateGameOverlayInviteDialog
 
 !!! function "activateGameOverlayInviteDialog( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the lobby that selected users will be invited to. |
 
@@ -55,7 +55,7 @@ Interface to both friends list data and general information about users as well 
 ### activateGameOverlayInviteDialogConnectString
 
 !!! function "activateGameOverlayInviteDialogConnectString( `string` connect_string )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connect_string | string | The connection string for your game or lobby. |
 
@@ -66,7 +66,7 @@ Interface to both friends list data and general information about users as well 
 ### activateGameOverlayRemotePlayTogetherInviteDialog
 
 !!! function "activateGameOverlayRemotePlayTogetherInviteDialog( `uint64_t` lobby_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | lobby_id | uint64_t | The lobby for the Remote Play invite. |
 
@@ -82,7 +82,7 @@ Interface to both friends list data and general information about users as well 
 ### activateGameOverlayToStore
 
 !!! function "activateGameOverlayToStore( `uint32_t` app_id = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to show the store page of. |
 
@@ -96,7 +96,7 @@ Interface to both friends list data and general information about users as well 
 ### activateGameOverlayToUser
 
 !!! function "activateGameOverlayToUser( `string` type, `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | type | string | The dialog to open. |
 	| steam_id | uint64_t | The Steam ID of the context to open this dialog to. |
@@ -121,7 +121,7 @@ Interface to both friends list data and general information about users as well 
 ### activateGameOverlayToWebPage
 
 !!! function "activateGameOverlayToWebPage( `string` url, `OverlayToWebPageMode` webpage_mode = OVERLAY_TO_WEB_PAGE_MODE_DEFAULT)"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | url | string | The webpage to open. |
 	|webpage_mode | [OverlayToWebPageMode enum](#overlaytowebpagemode) | Mode for the web page. Defaults to OVERLAY_TO_WEB_PAGE_MODE_DEFAULT |
@@ -146,7 +146,7 @@ Interface to both friends list data and general information about users as well 
 ### closeClanChatWindowInSteam
 
 !!! function "closeClanChatWindowInSteam( `uint64_t` chat_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the Steam group chat room to close. |
 
@@ -161,7 +161,7 @@ Interface to both friends list data and general information about users as well 
 ### downloadClanActivityCounts
 
 !!! function "downloadClanActivityCounts( `PackedInt64Array` clan_id_array )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id_array | PackedInt64Array | A list of steam groups to get the updated data for. |
 
@@ -178,7 +178,7 @@ Interface to both friends list data and general information about users as well 
 ### enumerateFollowingList
 
 !!! function "enumerateFollowingList( `uint32_t` start_index )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | start_index | uint32_t | The index to start receiving followers from. This should be 0 on the initial call. |
 
@@ -198,7 +198,7 @@ Interface to both friends list data and general information about users as well 
 ### getChatMemberByIndex
 
 !!! function "getChatMemberByIndex( `uint64_t` clan_id, `int` user )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | This MUST be the same source used in the previous call to [getClanChatMemberCount](#getclanchatmembercount). |
 
@@ -215,7 +215,7 @@ Interface to both friends list data and general information about users as well 
 ### getClanActivityCounts
 
 !!! function "getClanActivityCounts( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the activity of. |
 
@@ -239,7 +239,7 @@ Interface to both friends list data and general information about users as well 
 ### getClanByIndex
 
 !!! function "getClanByIndex( `int` clan_index )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_index | int | An index between 0 and [getClanCount](#getclancount). |
 
@@ -256,7 +256,7 @@ Interface to both friends list data and general information about users as well 
 ### getClanChatMemberCount
 
 !!! function "getClanChatMemberCount( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the chat count of. |
 
@@ -284,7 +284,7 @@ Interface to both friends list data and general information about users as well 
 ### getClanName
 
 !!! function "getClanName( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the name of. |
 
@@ -299,7 +299,7 @@ Interface to both friends list data and general information about users as well 
 ### getClanOfficerByIndex
 
 !!! function "getClanOfficerByIndex( `uint64_t` clan_id, `int` officer_index )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | This must be the same steam group used in the previous call to [getClanOfficerCount](#getclanofficercount). |
     | officer_index | int | An index between 0 and [getClanOfficerCount](#getclanofficercount). |
@@ -317,7 +317,7 @@ Interface to both friends list data and general information about users as well 
 ### getClanOfficerCount
 
 !!! function "getClanOfficerCount( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the officer count of. |
 
@@ -334,7 +334,7 @@ Interface to both friends list data and general information about users as well 
 ### getClanOwner
 
 !!! function "getClanOwner( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group to get the owner for. |
 
@@ -349,7 +349,7 @@ Interface to both friends list data and general information about users as well 
 ### getClanTag
 
 !!! function "getClanTag( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the tag of. |
 
@@ -364,7 +364,7 @@ Interface to both friends list data and general information about users as well 
 ### getCoplayFriend
 
 !!! function "getCoplayFriend( `int` friend_index )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
 	| friend_index | int | An index between 0 and [getCoplayFriendCount](#getcoplayfriendcount). |
 
@@ -390,7 +390,7 @@ Interface to both friends list data and general information about users as well 
 ### getFollowerCount
 
 !!! function "getFollowerCount( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user to get the follower count for. |
 
@@ -407,7 +407,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendByIndex
 
 !!! function "getFriendByIndex( `int` friend_number, `FriendFlags` friend_flags )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_number | int | An index between 0 and [getFriendCount](#getfriendcount).
     | friend_flags | [FriendFlags enum](#friendflags) | A combined union (binary "or") of one or more [FriendFlags](#friendflags). This must be the same value as used in the previous call to [getFriendCount](#getfriendcount).
@@ -427,7 +427,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendCoplayGame
 
 !!! function "getFriendCoplayGame( `uint64_t` friend_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the user on the recently-played-with list to get the game played. |
 
@@ -443,7 +443,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendCoplayTime
 
 !!! function "getFriendCoplayTime( `uint64_t` friend_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the user on the recently-played-with list to get the timestamp for. |
 
@@ -458,7 +458,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendCount
 
 !!! function "getFriendCount( `FriendFlags` friend_flags = FRIEND_FLAG_ALL )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_flags | [FriendFlags enum](#friendflags) | A combined union (binary "or") of one or more [FriendFlags](#friendflags). Defaults to [FRIEND_FLAG_ALL](#friendflags).
 
@@ -475,7 +475,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendCountFromSource
 
 !!! function "getFriendCountFromSource( `uint64_t` source_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | source_id | uint64_t | The Steam group, chat room, lobby or game server to get the user count of. |
 
@@ -494,7 +494,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendFromSourceByIndex
 
 !!! function "getFriendFromSourceByIndex( `uint64_t` source_id, `int` friend_number )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | source_id | uint64_t | This **must** be the same source used in the previous call to [getFriendCountFromSource](#getfriendcountfromsource). |
     | friend_index | int | An index between 0 and [getFriendCountFromSource](#getfriendcountfromsource). |
@@ -512,7 +512,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendGamePlayed
 
 !!! function "getFriendGamePlayed( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
 
@@ -537,7 +537,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendMessage
 
 !!! function "getFriendMessage( `uint64_t` friend_id, `int` message )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the friend that sent this message. |
     | message | int | The index of the message. This should be the **message_index** field of [connected_friend_chat_message](#connected_friend_chat_message). |
@@ -560,7 +560,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendPersonaName
 
 !!! function "getFriendPersonaName( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
 
@@ -577,7 +577,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendPersonaNameHistory
 
 !!! function "getFriendPersonaNameHistory( `uint64_t` steam_id, `int` name_history )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
     | name_history | int | The index of the history to receive. 0 is their current persona name, 1 is their most recent before they changed it, etc. |
@@ -593,7 +593,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendPersonaState
 
 !!! function "getFriendPersonaState( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to get the state of. |
 
@@ -608,7 +608,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendRelationship
 
 !!! function "getFriendRelationship( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
 
@@ -623,7 +623,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendRichPresence
 
 !!! function "getFriendRichPresence( `uint64_t` friend_id, `string` key )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The friend to get the Rich Presence value for. |
     | key | string | The Rich Presence key to request. |
@@ -639,7 +639,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendRichPresenceKeyCount
 
 !!! function "getFriendRichPresenceKeyCount( `uint64_t` friend_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the user to get the Rich Presence key count of. |
 
@@ -654,7 +654,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendRichPresenceKeyByIndex
 
 !!! function "getFriendRichPresenceKeyByIndex( `uint64_t` friend_id, `int` key_index )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t |This should be the same user provided to the previous call to [getFriendRichPresenceKeyCount](#getfriendrichpresencekeycount). |
     | key_index | int | An index between 0 and [getFriendRichPresenceKeyCount](#getfriendrichpresencekeycount). |
@@ -681,7 +681,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendsGroupIDByIndex
 
 !!! function "`int16` getFriendsGroupIDByIndex( `int16` friend_group )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_group | int16 | An index between 0 and [getFriendsGroupCount](#getfriendsgroupcount). |
 
@@ -698,7 +698,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendsGroupMembersCount
 
 !!! function "getFriendsGroupMembersCount( `int16` friend_group )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_group | int16 | The friends group ID to get the number of friends in. |
 
@@ -713,7 +713,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendsGroupMembersList
 
 !!! function "`array` getFriendsGroupMembersList( `int16` friend_group, `int` member_count )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_group | int16 | The friends group ID to get the members list of. |
     | member_count | int | This should be the value returned by [getFriendsGroupMembersCount](#getfriendsgroupmemberscount). |
@@ -735,7 +735,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendsGroupName
 
 !!! function "getFriendsGroupName( `int16` friend_group )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_group | int16 | The friends group ID to get the name of. |
 
@@ -750,7 +750,7 @@ Interface to both friends list data and general information about users as well 
 ### getFriendSteamLevel
 
 !!! function "getFriendSteamLevel( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
 
@@ -767,7 +767,7 @@ Interface to both friends list data and general information about users as well 
 ### getLargeFriendAvatar
 
 !!! function "getLargeFriendAvatar( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam user to get the avatar for. |
 
@@ -793,7 +793,7 @@ Interface to both friends list data and general information about users as well 
 ### getMediumFriendAvatar
 
 !!! function "getMediumFriendAvatar( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam user to get the avatar for. |
 
@@ -869,7 +869,7 @@ Interface to both friends list data and general information about users as well 
 ### getPlayerNickname
 
 !!! function "getPlayerNickname( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
 
@@ -884,7 +884,7 @@ Interface to both friends list data and general information about users as well 
 ### getProfileItemPropertyString
 
 !!! function "getProfileItemPropertyString( `uint64_t` steam_id, `CommunityProfileItemType` item_type, `CommunityProfileItemProperty` item_property )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user that you had already retrieved equipped items for. |
     | item_type | [CommunityProfileItemType enum](#communityprofileitemtype) | Type of item you are retrieving the property for. |
@@ -900,7 +900,7 @@ Interface to both friends list data and general information about users as well 
 ### getProfileItemPropertyInt
 
 !!! function "getProfileItemPropertyInt( `uint64_t` steam_id, `CommunityProfileItemType` item_type, `CommunityProfileItemProperty` item_property )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user that you had already retrieved equipped items for. |
     | item_type | [CommunityProfileItemType enum](#communityprofileitemtype) | Type of item you are retrieving the property for. |
@@ -940,7 +940,7 @@ Interface to both friends list data and general information about users as well 
 ### getSmallFriendAvatar
 
 !!! function "getSmallFriendAvatar( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam user to get the avatar for. |
 
@@ -1037,7 +1037,7 @@ Interface to both friends list data and general information about users as well 
 ### hasEquippedProfileItem
 
 !!! function "hasEquippedProfileItem( `uint64_t` steam_id, `CommunityProfileItemType` item_type )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user that you had already retrieved equipped items for. |
     | item_type | [CommunityProfileItemType enum](#communityprofileitemtype) | Type of item you want to see is equipped or not. |
@@ -1055,7 +1055,7 @@ Interface to both friends list data and general information about users as well 
 ### hasFriend
 
 !!! function "hasFriend( `uint64_t` steam_id, `FriendFlags` friend_flags )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the other user. |
     | friend_flags | [FriendFlags enum](#friendflags) | A combined union (binary "or") of one or more [FriendFlags](#friendflags).
@@ -1069,7 +1069,7 @@ Interface to both friends list data and general information about users as well 
 ### inviteUserToGame
 
 !!! function "inviteUserToGame( `uint64_t` friend_id, `string` connect_string )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the friend to invite. |
     | connect_string | string | A string that lets the friend know how to join the game (I.E. the game server IP). This can not be longer than specified in [MAX_RICH_PRESENCE_VALUE_LENTH](#constants) (256). |
@@ -1092,7 +1092,7 @@ Interface to both friends list data and general information about users as well 
 ### isClanChatAdmin
 
 !!! function "isClanChatAdmin( `uint64_t` chat_id, `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the Steam group chat room. |
     | steam_id | uint64_t | The Steam ID of the user to check the admin status of. |
@@ -1112,7 +1112,7 @@ Interface to both friends list data and general information about users as well 
 ### isClanPublic
 
 !!! function "isClanPublic( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group. |
 
@@ -1127,7 +1127,7 @@ Interface to both friends list data and general information about users as well 
 ### isClanOfficialGameGroup
 
 !!! function "isClanOfficialGameGroup( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group. |
 
@@ -1142,7 +1142,7 @@ Interface to both friends list data and general information about users as well 
 ### isClanChatWindowOpenInSteam
 
 !!! function "isClanChatWindowOpenInSteam( `uint64_t` chat_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the Steam group chat room to check. |
 
@@ -1157,7 +1157,7 @@ Interface to both friends list data and general information about users as well 
 ### isFollowing
 
 !!! function "isFollowing( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check if we are following. |
 
@@ -1174,7 +1174,7 @@ Interface to both friends list data and general information about users as well 
 ### isUserInSource
 
 !!! function "isUserInSource( `uint64_t` steam_id, `uint64_t` source_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user to check if they are in the source. |
     | source_id | uint64_t | The source to check for the user. |
@@ -1190,7 +1190,7 @@ Interface to both friends list data and general information about users as well 
 ### joinClanChatRoom
 
 !!! function "joinClanChatRoom( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group to join. |
 
@@ -1212,7 +1212,7 @@ Interface to both friends list data and general information about users as well 
 ### leaveClanChatRoom
 
 !!! function "leaveClanChatRoom( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam ID of the Steam group to leave. |
 
@@ -1230,7 +1230,7 @@ Interface to both friends list data and general information about users as well 
 ### openClanChatWindowInSteam
 
 !!! function "openClanChatWindowInSteam( `uint64_t` chat_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the Steam group chat room to open. |
 
@@ -1249,7 +1249,7 @@ Interface to both friends list data and general information about users as well 
 ### registerProtocolInOverlayBrowser
 
 !!! function "registerProtocolInOverlayBrowser( `string` protocol )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | protocol | string | The navigations to block. |
 
@@ -1263,7 +1263,7 @@ Interface to both friends list data and general information about users as well 
 ### replyToFriendMessage
 
 !!! function "replyToFriendMessage( `uint64_t` steam_id, `string` message )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the friend to send the message to. |
     | message | string | The UTF-8 formatted message to send. |
@@ -1279,7 +1279,7 @@ Interface to both friends list data and general information about users as well 
 ### requestClanOfficerList
 
 !!! function "requestClanOfficerList( `uint64_t` clan_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | clan_id | uint64_t | The Steam group to get the officers list for. |
 
@@ -1296,7 +1296,7 @@ Interface to both friends list data and general information about users as well 
 ### requestEquippedProfileItems
 
 !!! function "requestEquippedProfileItems( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user that you want to retrieve equipped items for. |
 
@@ -1313,7 +1313,7 @@ Interface to both friends list data and general information about users as well 
 ### requestFriendRichPresence
 
 !!! function "requestFriendRichPresence( `uint64_t` friend_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | friend_id | uint64_t | The Steam ID of the user to request the rich presence of. |
 
@@ -1330,7 +1330,7 @@ Interface to both friends list data and general information about users as well 
 ### requestUserInformation
 
 !!! function "requestUserInformation( `uint64_t` steam_id, `bool` require_name_only )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The user to request the information of. |
     | require_name_only | bool | Retrieve the Persona name only (true)? Or both the name and the avatar (false)? |
@@ -1353,7 +1353,7 @@ Interface to both friends list data and general information about users as well 
 ### sendClanChatMessage
 
 !!! function "sendClanChatMessage( `uint64_t` chat_id, `string` text )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | chat_id | uint64_t | The Steam ID of the group chat to send the message to. |
     | text | string | The UTF-8 formatted message to send. This can be up to 2048 characters long. |
@@ -1375,7 +1375,7 @@ Interface to both friends list data and general information about users as well 
 ### setInGameVoiceSpeaking
 
 !!! function "setInGameVoiceSpeaking( `uint64_t` steam_id, `bool` speaking )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | User to set voice speaking for; allegedly unused. |
     | speaking | bool | Did the user start speaking in game (true) or stopped speaking in game (false)? |
@@ -1422,7 +1422,7 @@ Interface to both friends list data and general information about users as well 
 ### setPlayedWith
 
 !!! function "setPlayedWith( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The other user that we have played with. |
 
@@ -1438,7 +1438,7 @@ Interface to both friends list data and general information about users as well 
 ### setRichPresence
 
 !!! function "setRichPresence( `string` key, `string` value )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The rich presence 'key' to set. This can not be longer than specified in MAX_RICH_PRESENCE_KEY_LENGTH (64). |
     | value | string | The rich presence 'value' to associate with pchKey. This can not be longer than specified in MAX_RICH_PRESENCE_VALUE_LENTH (256). If this is set to an empty string ("") then the key is removed if it's set. |

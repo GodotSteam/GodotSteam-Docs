@@ -17,7 +17,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### addPromoItem
 
 !!! function "addPromoItem( `uint32_t` item )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | item | uint32_t | The ItemDef to grant the player.
 
@@ -43,7 +43,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### addPromoItems
 
 !!! function "addPromoItems( `PackedInt64Array` items )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | items | PackedInt64Array | The list of items to grant the user.
 
@@ -69,7 +69,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### checkResultSteamID
 
 !!! function "checkResultSteamID( `uint64_t` steam_id_expected, `int32` this_inventory_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id_expected | uint64_t | The Steam ID to verify.
     | this_inventory_handle | int32 | The inventory result handle to check the Steam ID on. Defaults to 0.
@@ -89,7 +89,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### consumeItem
 
 !!! function "consumeItem( `uint64_t` item_consume, `uint32_t` quantity )"	
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | item_consume | uint64_t | The item instance id to consume.
     | quantity | uint32_t | The number of items in that stack to consume.
@@ -112,7 +112,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### deserializeResult
 
 !!! function "deserializeResult( `PackedByteArray` buffer )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | buffer | PackedByteArray | The buffer to deserialize.
 
@@ -138,7 +138,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### destroyResult
 
 !!! function "destroyResult( `int32` this_inventory_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | this_inventory_handle | int32 | The inventory result handle to destroy. Defaults to 0.
 
@@ -155,7 +155,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### exchangeItems
 
 !!! function "exchangeItems( `PackedInt64Array` output_items, `PackedInt32Array` output_quantity, `PackedInt64Array` input_items, `PackedInt32Array` input_quantity )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | output_items | PackedInt64Array | The list of items that will be created by this call. Currently can only be 1 item.
     | output_quantity | PackedInt32Array | The quantity of each item in **output_items** to create. Currently can only be 1 item and it must be set to 1.
@@ -186,7 +186,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### generateItems
 
 !!! function "generateItems( `PackedInt64Array` items, `PackedInt32Array` quantity )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | items | PackedInt64Array | The list of items to grant the user.
     | quantity | PackedInt32Array | The quantity of each item in **items** to grant.
@@ -228,7 +228,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### getItemDefinitionProperty
 
 !!! function "getItemDefinitionProperty( `uint32_t` definition, `string` name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | definition | uint32_t | The item definition to get the properties for.
     | name | string | The property name to get the value for. If you pass in NULL then pchValueBuffer will contain a comma-separated list of all the available names.
@@ -255,7 +255,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### getItemsByID
 
 !!! function "getItemsByID( `PackedInt64Array` id_array )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | id_array | PackedInt64Array | A list of the item instance ids to update the state of.
 
@@ -279,7 +279,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### getItemPrice
 
 !!! function "getItemPrice( `uint32_t` definition )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | definition | uint32_t | The item definition id to retrieve the price for.
 
@@ -322,7 +322,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### getResultItemProperty
 
 !!! function "getResultItemProperty( `uint32_t` index, `string` name, `int32` this_inventory_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | index | uint32_t | The index of the returned array in [getResultItems](#getresultitems).
     | name | string | The property name to get the value for. If you pass an empty string then this will return a comma-separated list of all the available names.
@@ -348,7 +348,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### getResultItems
 
 !!! function "getResultItems( `int32` this_inventory_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | this_inventory_handle | int32 | The inventory result handle to get the items for. Defaults to 0.
 
@@ -379,7 +379,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### getResultStatus
 
 !!! function "getResultStatus( `int32` this_inventory_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | this_inventory_handle | int32 | The inventory result handle to get the status for. Defaults to 0.
 
@@ -406,7 +406,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### getResultTimestamp
 
 !!! function "getResultTimestamp( `int32` this_inventory_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | this_inventory_handle | int32 | The inventory result handle to get the timestamp for. Defaults to 0.
 
@@ -466,7 +466,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### removeProperty
 
 !!! function "removeProperty( `uint64_t` item_id, `string` name, `int32` this_inventory_update_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | item_id | uint64_t | ID of the item being modified.
     | name | string | The dynamic property being removed.
@@ -485,7 +485,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### requestEligiblePromoItemDefinitionsIDs
 
 !!! function "requestEligiblePromoItemDefinitionsIDs( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user to request the eligible promo items for.
 
@@ -519,7 +519,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### serializeResult
 
 !!! function "serializeResult( `int32` this_inventory_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | this_inventory_handle | int32 | The inventory result handle to serialize. Defaults to 0.
 
@@ -544,7 +544,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### setPropertyBool
 
 !!! function "setPropertyBool( `uint64_t` item_id, `string` name, `bool` value, `int32` this_inventory_update_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | item_id | uint64_t | ID of the item being modified.
     | name | string | The dynamic property being added or updated.
@@ -564,7 +564,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### setPropertyFloat
 
 !!! function "setPropertyFloat( `uint64_t` item_id, `string` name, `float` value, `int32` this_inventory_update_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | item_id | uint64_t | ID of the item being modified.
     | name | string | The dynamic property being added or updated.
@@ -584,7 +584,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### setPropertyInt
 
 !!! function "setPropertyInt( `uint64_t` item_id, `string` name, `uint64_t` value, `int32` this_inventory_update_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | item_id | uint64_t | ID of the item being modified.
     | name | string | The dynamic property being added or updated.
@@ -604,7 +604,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### setPropertyString
 
 !!! function "setPropertyString( `uint64_t` item_id, `string` name, `string` value, `int32` this_inventory_update_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | item_id | uint64_t | ID of the item being modified.
     | name | string | The dynamic property being added or updated.
@@ -624,7 +624,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### startPurchase
 
 !!! function "startPurchase( `PackedInt64Array` items, `PackedInt32Array` quantity )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | items | PackedInt64Array | The array of item definition ids that the user wants to purchase.
     | quantity | PackedInt32Array | The array of quantities of each item definition that the user wants to purchase.
@@ -664,7 +664,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### submitUpdateProperties
 
 !!! function "submitUpdateProperties( uint64_t this_inventory_update_handle = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | this_inventory_update_handle | uint64_t | The update handle corresponding to the transaction request, returned from [startUpdateProperties](#startupdateproperties).
 
@@ -683,7 +683,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### transferItemQuantity
 
 !!! function "transferItemQuantity( `uint64_t` item_id, `uint32_t` quantity, `uint64_t` item_destination, `bool` split )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | item_id | uint64_t | The source item to transfer.
     | quantity | uint32_t | The quantity of the item that will be transfered from **item_id** to **item_destination**.
@@ -710,7 +710,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 ### triggerItemDrop
 
 !!! function "triggerItemDrop( `uint32_t` definition )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | definition | uint32_t | This must refer to an itemdefid of the type "playtimegenerator". See the [inventory schema for more details](https://partner.steamgames.com/doc/features/inventory/schema){ target="\_blank" }.
 

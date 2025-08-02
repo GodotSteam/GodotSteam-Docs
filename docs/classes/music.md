@@ -102,7 +102,7 @@ Functions to control music playback in the Steam client. This gives games the op
 ### musicSetVolume
 
 !!! function "musicSetVolume( `float` value )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | value | float | The volume percentage to set from 0.0 to 1.0.
 

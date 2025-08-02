@@ -20,7 +20,7 @@ Networking functions for making connections and sending data between clients, tr
 ### acceptP2PSessionWithUser
 
 !!! function "acceptP2PSessionWithUser( `uint64_t` steam_id_remote )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id_remote | uint64_t | The Steam ID of the user that sent the initial packet to us.
 
@@ -42,7 +42,7 @@ Networking functions for making connections and sending data between clients, tr
 ### allowP2PPacketRelay
 
 !!! function "allowP2PPacketRelay( `bool` allow )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | allow | bool | Whether or not to allow the Steam server relay.
 
@@ -61,7 +61,7 @@ Networking functions for making connections and sending data between clients, tr
 ### closeP2PChannelWithUser
 
 !!! function "closeP2PChannelWithUser( `uint64_t` steam_id_remote, `int` channel )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id_remote | uint64_t | The Steam ID of the user to close the connection with.
     | channel | int | The channel to close.
@@ -79,7 +79,7 @@ Networking functions for making connections and sending data between clients, tr
 ### closeP2PSessionWithUser
 
 !!! function "closeP2PSessionWithUser( `uint64_t` steam_id_remote )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id_remote | uint64_t | The Steam ID of the user to close the connection with.
 
@@ -96,7 +96,7 @@ Networking functions for making connections and sending data between clients, tr
 ### getP2PSessionState
 
 !!! function "getP2PSessionState( `uint64_t` steam_id_remote )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id_remote | uint64_t | The user to get the active session state information of.
 
@@ -124,7 +124,7 @@ Networking functions for making connections and sending data between clients, tr
 ### getAvailableP2PPacketSize
 
 !!! function "getAvailableP2PPacketSize( `int` channel = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | channel | int | The channel to check if a packet is available in. Defaults to 0.
 
@@ -135,7 +135,7 @@ Networking functions for making connections and sending data between clients, tr
 ### readP2PPacket
 
 !!! function "readP2PPacket( `uint32_t` packet, `int` channel )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | packet_size | uint32_t | The size of the packet from [getAvailableP2PPacketSize](#getavailablep2ppacketsize).
     | channel | int | The channel the packet was sent over.
@@ -160,7 +160,7 @@ Networking functions for making connections and sending data between clients, tr
 ### sendP2PPacket
 
 !!! function "sendP2PPacket( `uint64_t` steam_id_remote, `PackedByteArray` data, `P2PSend` send_type, `int` channel )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id_remote | uint64_t | The target user to send the packet to.
     | data | PackedByteArray | The raw byte array for the packet data to send. The maximum size of this packet is defined by **send_type**.

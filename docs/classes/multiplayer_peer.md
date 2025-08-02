@@ -15,7 +15,7 @@ icon: material/account-multiple
 ### add_peer
 
 !!! function "add_peer( `uint64_t` steam_id, `int` virtual_port = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the player to add as a peer.
     | virtual_port | int | Expected to be 0; only helpful if you want to have multiple connections between two users. Defaults to 0.
@@ -28,7 +28,7 @@ icon: material/account-multiple
 ### connect_to_lobby
 
 !!! function "connect_to_lobby( `uint64_t` lobby_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | lobby_id | uint64_t | The Steam lobby ID to connect to.
 
@@ -44,7 +44,7 @@ icon: material/account-multiple
 ### create_client
 
 !!! function "create_client( `uint64_t` steam_id, `int` virtual_port = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the host we're connecting to.
     | virtual_port | int | Expected to be 0; only helpful if you want to have multiple connections between two users. Defaults to 0.
@@ -63,7 +63,7 @@ icon: material/account-multiple
 ### create_host
 
 !!! function "create_host( `int` virtual_port = 0 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | virtual_port | int | Expected to be 0; only helpful if you want to have multiple connections between two users. Defaults to 0.
 
@@ -100,7 +100,7 @@ icon: material/account-multiple
 ### get_peer
 
 !!! function "get_peer( `int` peer_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | peer_id | int | The ID of the packet peer to retrieve.
 
@@ -110,7 +110,7 @@ icon: material/account-multiple
 ### get_peer_id_for_steam_id
 
 !!! function "get_peer_id_for_steam_id( `uint64_t` steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to get the peer ID from.
 
@@ -122,7 +122,7 @@ icon: material/account-multiple
 ### get_steam_id_for_peer_id
 
 !!! function "get_steam_id_for_peer_id( `int` peer_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | peer_id | int | The peer ID to get the Steam ID from.
 
@@ -134,7 +134,7 @@ icon: material/account-multiple
 ### host_with_lobby
 
 !!! function "host_with_lobby( `uint64_t` lobby_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | lobby_id | uint64_t | The lobby ID we are hosting.
 
@@ -150,7 +150,7 @@ icon: material/account-multiple
 ### set_debug_level
 
 !!! function "set_debug_level( `DebugLevel` debug_level )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | debug_level | [DebugLevel enum](#debuglevel) | The debug level to set.
 
@@ -161,7 +161,7 @@ icon: material/account-multiple
 ### set_no_delay
 
 !!! function "set_no_delay( `bool` no_delay )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | no_delay | bool | Whether or not to use [NETWORKING_SEND_NO_DELAY](networking_utils.md#constants) flag.
 
@@ -172,7 +172,7 @@ icon: material/account-multiple
 ### set_no_nagle
 
 !!! function "set_no_nagle( `bool` no_nagle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | no_nagle | bool | Whether or not to use [NETWORKING_SEND_NO_NAGLE](networking_utils.md#constants) flag.
 

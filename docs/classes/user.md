@@ -17,7 +17,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### advertiseGame
 
 !!! function "advertiseGame( `string` server_ip = "", `uint16` port = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server_ip | string | The IP of the game server in host order, i.e 127.0.0.1 == 0x7f000001. Defaults to empty string.
     | port | uint16 | The connection port of the game server, in host order. Defaults to 0.
@@ -39,7 +39,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### beginAuthSession
 
 !!! function "beginAuthSession( `PackedByteArray` auth_ticket, `int` ticket_size, `uint64_t` steam_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | auth_ticket | PackedByteArray | The auth ticket to validate. |
     | ticket_size | int | The size in bytes of the auth_ticket. This must be the 'size' key form the dictionary provided by the call that created this ticket. |
@@ -62,7 +62,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### cancelAuthTicket
 
 !!! function "cancelAuthTicket( `uint32_t` auth_ticket )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | auth_ticket | uint32_t | The active auth ticket to cancel. |
 
@@ -79,7 +79,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### decompressVoice
 
 !!! function "decompressVoice( `PackedByteArray` voice, `uint32_t` sample_rate, `uint32_t` buffer_size_override = 20480 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | voice_data | PackedByteArray | 
     | sampe_rate | uint32_t | The sample rate that will be returned. This can be from 11025 to 48000, you should either use the rate that works best for your audio playback system, which likely takes the users audio hardware into account, or you can use [getVoiceOptimalSampleRate](#getvoiceoptimalsamplerate) to get the native sample rate of the Steam voice decoder. |
@@ -108,7 +108,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### endAuthSession
 
 !!! function "endAuthSession( `uint64_t` steam_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the entity to end the active auth session with. |
 
@@ -122,7 +122,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### getAuthSessionTicket
 
 !!! function "getAuthSessionTicket( `uint64_t` remote_steam_id = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID of the remote system that will authenticate the ticket. Defaults to 0. |
 
@@ -155,7 +155,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### getAuthTicketForWebApi
 
 !!! function "getAuthTicketForWebApi( `string` service_identity = "" )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | service_identity | string | The identity of the remote service that will authenticate the ticket. The service should provide a string identifier; pass an empty string if none was provided. Defaults to empty string. |
 
@@ -232,7 +232,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### getGameBadgeLevel
 
 !!! function "getGameBadgeLevel( `int` series, `bool` foil )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | series | int | If you only have one set of cards, the series will be 1. |
     | foil | bool | Check if they have received the foil badge. |
@@ -286,7 +286,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### getVoice
 
 !!! function "getVoice( `uint32_t` buffer_size_override = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | buffer_size_override | uint32_t | The base buffer size, if it this is 0 then GodotSteam will internally call [getAvailableVoice](#getavailablevoice) to resize the buffer. Defaults to 0. |
 
@@ -337,7 +337,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### initiateGameConnection
 
 !!! function "initiateGameConnection( `uint64_t` server_id, `uint32_t` server_ip, `uint16` server_port, `bool` secure )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server_id | uint64_t | The Steam ID of the game server, received from the game server by the client. |
     | server_ip | uint32_t | The IP address of the game server in host order. |
@@ -440,7 +440,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### requestEncryptedAppTicket
 
 !!! function "requestEncryptedAppTicket( `string` secret )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | secret | string | The data which will be encrypted into the ticket. |
 
@@ -463,7 +463,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### requestStoreAuthURL
 
 !!! function "requestStoreAuthURL( `string` redirect_url )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | redirect_url | string | The URL the store check-out page redirects to. |
 
@@ -487,7 +487,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### setDurationControlOnlineState
 
 !!! function "setDurationControlOnlineState( `DurationControlOnlineState` new_state )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | new_state | [DurationControlOnlineState enum](main.md#durationcontrolonlinestate) | The new state for the duration controls. |
 
@@ -527,7 +527,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### terminateGameConnection
 
 !!! function "terminateGameConnection( `string` server_ip, `uint16` server_port )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | server_ip | string | The IP address of the server to disconnect from.
     | server_port | uint16 | The port of the server to disconnect from.
@@ -547,7 +547,7 @@ Functions for accessing and manipulating Steam user information. This is also wh
 ### userHasLicenseForApp
 
 !!! function "userHasLicenseForApp( `uint64_t` steam_id, `uint32_t` app_id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID of the user that sent the auth ticket. |
     | app_id | uint32_t | The DLC App ID to check if the user owns it. |

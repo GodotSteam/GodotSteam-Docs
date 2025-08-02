@@ -28,7 +28,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### acceptConnection
 
 !!! function "acceptConnection( `uint32_t` connection_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The incoming connection handle.
 
@@ -47,7 +47,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### beginAsyncRequestFakeIP
 
 !!! function "beginAsyncRequestFakeIP( `int` num_ports )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | num_ports | int | The number of ports to reserve.
 
@@ -79,7 +79,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### closeConnection
 
 !!! function "closeConnection( `uint32_t` connection_handle, `int` reason, `string` debug_message, `bool` linger )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to close.
     | reason | int | An application defined code.
@@ -104,7 +104,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### closeListenSocket
 
 !!! function "closeListenSocket( `uint32_t` socket )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | socket | uint32_t | The listen socket to close.
 
@@ -115,7 +115,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### configureConnectionLanes
 
 !!! function "configureConnectionLanes( `uint32_t` connection, `uint32_t` lanes, `Array` priorities, `Array` weights )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection | uint32_t | The network connection handle to configure.
     | lanes | uint32_t | The number of lanes we are configuring.
@@ -154,7 +154,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### connectByIPAddress
 
 !!! function "connectByIPAddress( `string` ip_address_with_port, `dictionary` config_options )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip_address_with_port | string | The IP address, with the port, to connect to.
     | config_options | dictionary | A collection of optional, initial config options.
@@ -192,7 +192,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### connectP2P
 
 !!! function "connectP2P( `uint64_t` remote_steam_id, `int` virtual_port, `dictionary` config_options )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID of the user to connect to.
     | virtual_port | int | The port to connect through.
@@ -229,7 +229,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### connectToHostedDedicatedServer
 
 !!! function "connectToHostedDedicatedServer( `uint64_t` remote_steam_id, `int` virtual_port, `dictionary` config_options )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID of the user to connect to.
     | virtual_port | int | The port to connect through.
@@ -262,7 +262,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### createFakeUDPPort
 
 !!! function "createFakeUDPPort( `int` fake_server_port)"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | fake_server_port | int | The index of the port allocated by [beginAsyncRequestFakeIP](#beginasyncrequestfakeip).
 
@@ -277,7 +277,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### createHostedDedicatedServerListenSocket
 
 !!! function "createHostedDedicatedServerListenSocket( `int` virtual_port, `dictionary` config_options )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | virtual_port | int | The port to connect through.
     | config_options | dictionary | A collection of optional, initial config options.
@@ -312,7 +312,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### createListenSocketIP
 
 !!! function "createListenSocketIP( `string` ip_address, `dictionary` config_options )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip_address | string | The IP address of the listen socket to create.
     | config_options | dictionary | A collection of optional, initial config options.
@@ -352,7 +352,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### createListenSocketP2P
 
 !!! function "createListenSocketP2P( `int` virtual_port, `dictionary` config_options )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | virtual_port | int | The port to connect through.
     | config_options | dictionary | A collection of optional, initial config options.
@@ -390,7 +390,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### createListenSocketP2PFakeIP
 
 !!! function "createListenSocketP2PFakeIP( `int` fake_port, `dictionary` config_options )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | fake_port | int | The index of the fake port requested by [beginAsyncRequestFakeIP](#beginasyncrequestfakeip).
     | config_options | dictionary | A collection of optional, initial config options.
@@ -434,7 +434,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### createSocketPair
 
 !!! function "createSocketPair( `bool` loopback, `uint64_t` remote_steam_id1, `uint64_t` remote_steam_id2 )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | loopback | bool | Whether or not to send packets through the local network loopback device on ephemeral ports.
     | remote_steam_id1 | uint64_t | The Steam ID of the entity to pair.
@@ -463,7 +463,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### destroyPollGroup
 
 !!! function "destroyPollGroup( `uint32_t` poll_group )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | poll_group | uint32_t | The poll group to destroy.
 
@@ -480,7 +480,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### flushMessagesOnConnection
 
 !!! function "flushMessagesOnConnection( `uint32_t` connection_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to flush messages for.
 
@@ -526,7 +526,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getConnectionInfo
 
 !!! function "getConnectionInfo( `uint32_t` connection_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to get information for.
 
@@ -555,7 +555,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getConnectionName
 
 !!! function "getConnectionName( `int` connection_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to flush messages for.
 
@@ -570,7 +570,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getConnectionRealTimeStatus
 
 !!! function "GetConnectionRealTimeStatus( `uint32_t` connection_handle, `int` lanes, `bool` get_status )" 
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to flush messages for.
     | lanes | int | The number of lanes to get connection information on.
@@ -629,7 +629,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getConnectionUserData
 
 !!! function "getConnectionUserData( `uint32_t` connection_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to get user data for.
 
@@ -644,7 +644,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getDetailedConnectionStatus
 
 !!! function "getDetailedConnectionStatus( `uint32_t` connection_handle )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to get detailed connection data for.
 
@@ -664,7 +664,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getFakeIP
 
 !!! function "getFakeIP( `int` first_port )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | first_port | int | Must always be 0.
 
@@ -705,7 +705,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getListenSocketAddress
 
 !!! function "getListenSocketAddress( `uint32_t` socket, `bool` with_port )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | socket | uint32_t | The listen socket to get the IP address from.
     | with_port | bool | Whether or not to return the port as well.
@@ -736,7 +736,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### getRemoteFakeIPForConnection
 
 !!! function "getRemoteFakeIPForConnection( `uint32_t` connection_handle )" 
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to get detailed connection data for.
 
@@ -784,7 +784,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### receiveMessagesOnConnection
 
 !!! function "receiveMessagesOnConnection( `uint32_t` connection_handle, `int` max_messages )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to get messages for.
     | max_messages | int | The maximum amount of messages to retrieve.
@@ -821,7 +821,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### receiveMessagesOnPollGroup
 
 !!! function "receiveMessagesOnPollGroup( `uint32_t` poll_group, `int` max_messages )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | poll_group | uint32_t | The poll group to get messages for. |
     | max_messages | int | The maximum amount of messages to retrieve. |
@@ -852,7 +852,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### resetIdentity
 
 !!! function "resetIdentity( `uint64_t` remote_steam_id )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | remote_steam_id | uint64_t | The Steam ID to reset the identity. |
 
@@ -873,7 +873,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### sendMessages
 
 !!! function "sendMessages( `Array` messages, `uint32_t` connection_handle, `int` flags )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | messages | Array | An array of message data to send.
     | connection_handle | uint32_t | The network connection to send messages to.
@@ -902,7 +902,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### sendMessageToConnection
 
 !!! function "sendMessageToConnection( `uint32_t` connection_handle, `PackedByteArray` data, `int` flags )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to send messages to.
     | data | PackedByteArray | The message to send.
@@ -949,7 +949,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### setConnectionName
 
 !!! function "setConnectionName( `uint32_t` peer, `string` name )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to name.
     | name | string | The name to apply to this network connection.
@@ -964,7 +964,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### setConnectionPollGroup
 
 !!! function "setConnectionPollGroup( `uint32_t` connection_handle, `uint32_t` poll_group )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to assign to the poll group.
     | poll_group | uint32_t | The poll group to add the connection to.
@@ -984,7 +984,7 @@ Networking API similar to Berkeley sockets, but for games:
 ### setConnectionUserData
 
 !!! function "setConnectionUserData( `uint32_t` connection_handle, `int64_t` user_data )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | connection_handle | uint32_t | The network connection to assign to the poll group.
     | user_data | int64_t | -

@@ -49,7 +49,7 @@ icon: material/server-network
 ### getSteamID32
 
 !!! function "getSteamID32( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The SteamID64 to convert.
 
@@ -63,7 +63,7 @@ icon: material/server-network
 ### isAnonAccount
 
 !!! function "isAnonAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -74,7 +74,7 @@ icon: material/server-network
 ### isAnonUserAccount
 
 !!! function "isAnonUserAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -85,7 +85,7 @@ icon: material/server-network
 ### isChatAccount
 
 !!! function "isChatAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -96,7 +96,7 @@ icon: material/server-network
 ### isClanAccount
 
 !!! function "isClanAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -107,7 +107,7 @@ icon: material/server-network
 ### isConsoleUserAccount
 
 !!! function "isConsoleUserAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -118,7 +118,7 @@ icon: material/server-network
 ### isIndividualAccount
 
 !!! function "isIndividualAccount( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -129,7 +129,7 @@ icon: material/server-network
 ### isLobby
 
 !!! function "isLobby( `uint64_t` steam_id )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | steam_id | uint64_t | The Steam ID to check.
 
@@ -156,7 +156,7 @@ icon: material/server-network
 ### serverInit
 
 !!! function "serverInit( ```string``` ip, ```uint16_t``` game_port, ```uint16_t``` query_port, ```int``` server_mode, ```string``` version_number )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip | string | Will usually be zero. If you are on a machine with multiple IP addresses, you can pass a non-zero value here and the relevant sockets will be bound to that IP.  This can be used to ensure that the IP you desire is the one used in the server browser.
     | game_port | uint16_t | The port that clients will connect to for gameplay.  You will usually open up your own socket bound to this port.
@@ -178,7 +178,7 @@ icon: material/server-network
 ### serverInitEx
 
 !!! function "serverInitEx( ```string``` ip, ```uint16_t``` game_port, ```uint16_t``` query_port, ```int``` server_mode, ```string``` version_number )"
-	| Parameter | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | ip | string | Will usually be zero. If you are on a machine with multiple IP addresses, you can pass a non-zero value here and the relevant sockets will be bound to that IP.  This can be used to ensure that the IP you desire is the one used in the server browser.
     | game_port | uint16_t | The port that clients will connect to for gameplay.  You will usually open up your own socket bound to this port.
@@ -195,7 +195,7 @@ icon: material/server-network
 	!!! returns "Returns: dictionary"
 		Contains the following keys:
 
-		| Key | Type | Notes |
+		| :material-variable: Parameter | Type | Notes |
         | --- | ---- | ----- |
 		| status | [SteamAPIInitResult enum](#steamapiinitresult) | Result of the initialization.
     	| verbal | string | A non-localized message that explains the reason for the failure.
@@ -223,7 +223,7 @@ icon: material/server-network
 ### set_inventory_handle
 
 !!! function "set_inventory_handle( `int32` new_inventory_handle )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_inventory_handle | int32 | The inventory handle to set.
 
@@ -237,7 +237,7 @@ icon: material/server-network
 ### set_inventory_update_handle
 
 !!! function "set_inventory_update_handle( `uint64_t` new_inventory_update_handle )"
-    | Key | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | --- | ---- | ----- |
     | new_inventory_update_handle | uint64_t | The inventory update handle to set.
 

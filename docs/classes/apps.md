@@ -28,7 +28,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### getAppInstallDir
 
 !!! function "getAppInstallDir( `uint32_t` app_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to get the install directory for. |
 
@@ -135,7 +135,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### getDLCDataByIndex
 
 !!! function "getDLCDataByIndex( `uint32_t` this_dlc_index )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | this_dlc_index | uint32_t | Index of the DLC to get between 0 and [getDLCCount](#getdlccount). |
 
@@ -156,7 +156,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### getDLCDownloadProgress
 
 !!! function "getDLCDownloadProgress( `uint32_t` dlc_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | dlc_id | uint32_t | The App ID of the DLC to monitor. |
 
@@ -177,7 +177,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### getEarliestPurchaseUnixTime
 
 !!! function "getEarliestPurchaseUnixTime( `uint32_t` app_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The App ID to get the purchase time for. |
 
@@ -191,7 +191,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### getFileDetails
 
 !!! function "getFileDetails( `string` filename )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | filename | string | The absolute path and name to the file. |
 
@@ -208,7 +208,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### getInstalledDepots
 
 !!! function "getInstalledDepots( `uint32_t` app_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app to list the depots for. |
 
@@ -235,7 +235,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### getLaunchQueryParam
 
 !!! function "getLaunchQueryParam( `string` key )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The launch key to test for. Ex: param1 |
 
@@ -273,7 +273,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### installDLC
 
 !!! function "installDLC( `uint32_t` dlc_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | dlc_id | uint32_t | The DLC you want to install. |
 
@@ -291,7 +291,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### isAppInstalled
 
 !!! function "isAppInstalled( `uint32_t` app_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The App ID of the application to check. |
 
@@ -322,7 +322,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### isDLCInstalled
 
 !!! function "isDLCInstalled( `uint32_t` dlc_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | dlc_id | uint32_t | The DLC ID to check. |
 
@@ -365,7 +365,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### isSubscribedApp
 
 !!! function "isSubscribedApp( `uint32_t` app_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The app ID to check. |
 
@@ -434,7 +434,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### markContentCorrupt
 
 !!! function "markContentCorrupt( `bool` missing_files_only )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | missing_files_only | bool | Only scan for missing files, don't verify the checksum of each file. |
 
@@ -450,7 +450,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### setActiveBeta
 
 !!! function "setActiveBeta( `string` beta_name )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | beta_name | string | Beta name the game wants to switch to. |
 
@@ -464,7 +464,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### setDLCContext
 
 !!! function "setDLCContext( `uint32_t` app_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | app_id | uint32_t | The DLC app ID to track. |
 
@@ -475,7 +475,7 @@ Exposes a wide range of information and actions for applications and [Downloadab
 ### uninstallDLC
 
 !!! function "uninstallDLC( `uint32_t` dlc_id )"
-    | Parameter | Type | Notes |
+    | :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | dlc_id | uint32_t | The DLC you want to uninstall. |
 

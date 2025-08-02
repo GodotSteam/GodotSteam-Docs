@@ -20,7 +20,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### addHeader
 
 !!! function "addHeader( `string` key, `string` value, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | key | string | The header name to add.
     | value | string | The header value to associate with the key.
@@ -36,7 +36,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### allowStartRequest
 
 !!! function "allowStartRequest( `bool` allowed, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | allowed | bool | Allow or deny the navigation to the current start request.
     | browser_handle | uint32_t | The handle of the surface that is navigating.
@@ -54,7 +54,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### copyToClipboard
 
 !!! function "copyToClipboard( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The handle of the surface to copy the text from.
 
@@ -68,7 +68,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### createBrowser
 
 !!! function "createBrowser( `string` user_agent = "", `string` user_css = "" )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | user_agent | string | Appends the string to the general user agent string of the browser, allowing you to detect your client on webservers. Use "" if you do not require this functionality.
     | user_css | string | This allows you to set a CSS style to every page displayed by this browser. Use "" if you do not require this functionality.
@@ -92,7 +92,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### executeJavascript
 
 !!! function "executeJavascript( `string` script, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | script | string | The javascript script to run.
     | browser_handle | uint32_t | The handle of the surface that is navigating.
@@ -107,7 +107,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### find
 
 !!! function "find( `string` search, `bool` currently_in_find, `bool` reverse, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | search | string | The string to search for.
     | currently_in_find | bool | Set this to true on subsequent calls to cycle through to the next matching string.
@@ -127,7 +127,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### getLinkAtPosition
 
 !!! function "getLinkAtPosition( `int` x, `int` y, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | x | int | The X (width) position in pixels within the surface. (0, 0) is the top left corner.
     | y | int | The Y (height) position in pixels within the surface. (0, 0) is the top left corner.
@@ -146,7 +146,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### goBack
 
 !!! function "goBack( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The handle of the surface to navigate back on
 
@@ -160,7 +160,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### goForward
 
 !!! function "goForward( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The handle of the surface to navigate forward on.
 
@@ -197,7 +197,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### jsDialogResponse
 
 !!! function "jsDialogResponse( `bool` result, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | result | bool | Set this to true to simulate pressing the "OK" button, otherwise false for "Cancel".
     | browser_handle | uint32_t | The handle of the surface that is spawning a dialog.
@@ -215,7 +215,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### keyChar
 
 !!! function "keyChar( `uint32_t` unicode_char, `HTMLKeyModifiers` key_modifiers, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | unicode_char | uint32_t | The unicode character point for this keypress; and potentially multiple characters per press.
     | key_modifiers | [HTMLKeyModifiers enum](#htmlkeymodifiers) | This should be set to a bitmask of the modifier keys that the user is currently pressing.
@@ -231,7 +231,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### keyDown
 
 !!! function "keyDown( `uint32_t` native_key_code, `HTMLKeyModifiers` key_modifiers, `uint32_t` browser_handle = 0, `bool` is_system_key = false )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | native_key_code | uint32_t | This is the virtual keycode value from the OS.
     | key_modifiers | [HTMLKeyModifiers enum](#htmlkeymodifiers) | This should be set to a bitmask of the modifier keys that the user is currently pressing.
@@ -248,7 +248,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### keyUp
 
 !!! function "keyUp( `uint32_t` native_key_code, `HTMLKeyModifiers` key_modifiers, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | native_key_code | uint32_t | This is the virtual keycode value from the OS.
     | key_modifiers | [HTMLKeyModifiers enum](#htmlkeymodifiers) | This should be set to a bitmask of the modifier keys that the user is currently pressing.
@@ -264,7 +264,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### loadURL
 
 !!! function "loadURL( `string` url, `string` post_data, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | url | string | The URL to load.
     | post_data | string | Optionally send a POST request with this data, set this to NULL to not send any data.
@@ -285,7 +285,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### mouseDoubleClick
 
 !!! function "mouseDoubleClick( `HTMLMouseButton` mouse_button, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | mouse_button | [HTMLMouseButton enum](#htmlmousebutton) | The mouse button which was double clicked.
     | browser_handle | uint32_t | The handle of the surface to send the interaction to.
@@ -300,7 +300,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### mouseDown
 
 !!! function "mouseDown( `HTMLMouseButton` mouse_button, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | mouse_button | [HTMLMouseButton enum](#htmlmousebutton) | The mouse button which was pressed.
     | browser_handle | uint32_t | The handle of the surface to send the interaction to.
@@ -315,7 +315,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### mouseMove
 
 !!! function "mouseMove( `int` x, `int` y, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | x | int | X (width) coordinate in pixels relative to the position of the HTML surface. (0, 0) is the top left.
     | y | int | Y (height) coordinate in pixels relative to the position of the HTML surface. (0, 0) is the top left.
@@ -331,7 +331,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### mouseUp
 
 !!! function "mouseUp( `HTMLMHouseButton` mouse_button, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | mouse_button | [HTMLMouseButton enum](#htmlmousebutton) | The mouse button which was released.
     | browser_handle | uint32_t | The handle of the surface to send the interaction to.
@@ -346,7 +346,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### mouseWheel
 
 !!! function "mouseWheel( `int32` delta, `uint32_t` browser_handle = 0)"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | delta | int32 | The number of pixels to scroll.
     | browser_handle | uint32_t | The handle of the surface to send the interaction to.
@@ -361,7 +361,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### openDeveloperTools
 
 !!! function "openDeveloperTools( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The handle of the surface to open the developer tools for.
 
@@ -372,7 +372,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### pasteFromClipboard
 
 !!! function "pasteFromClipboard( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The handle of the surface to paste into.
 
@@ -386,7 +386,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### reload
 
 !!! function "reload( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The handle of the surface to reload.
 
@@ -402,7 +402,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### removeBrowser
 
 !!! function "removeBrowser( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The browser handle to release.
 
@@ -418,7 +418,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### setBackgroundMode
 
 !!! function "setBackgroundMode( `bool` background_mode, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | background_mode | bool | Toggle background mode on or off.
     | browser_handle | uint32_t | The handle of the surface set background mode on.
@@ -435,7 +435,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### setCookie
 
 !!! function "setCookie( `string` hostname, `string` key, `string` value, `string` path, `uint32_t` expires, `bool` secure, `bool` http_only )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | hostname | string | The hostname of the server to set the cookie for. ('Host' attribute).
     | key | string | The cookie name to set.
@@ -455,7 +455,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### setDPIScalingFactor
 
 !!! function "setDPIScalingFactor( `float` dpi_scaling, `uint32_t` browser_handle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | dpi_scaling | float | The scaling factor to set.
     | browser_handle | uint32_t | The handle of the surface set the DPI scaling factor for.
@@ -469,7 +469,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### setHorizontalScroll
 
 !!! function "setHorizontalScroll( `uint32_t` absolute_pixel_scroll, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | absolute_pixel_scroll | uint32_t | The absolute pixel position to scroll to. 0 is the left and [html_horizontal_scroll](#html_horizontal_scroll) **scroll_max** is the right side.
     | browser_handle | uint32_t | The handle of the surface to set the horizontal scroll position.
@@ -487,7 +487,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### setKeyFocus
 
 !!! function "setKeyFocus( `bool` has_key_focus, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | has_key_focus | bool | Turn key focus on or off?
     | browser_handle | uint32_t | The handle of the surface to set key focus on.
@@ -502,7 +502,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### setPageScaleFactor
 
 !!! function "setPageScaleFactor( `float` zoom, `int` point_x, `int` point_y, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | zoom | float | The amount to zoom, this can range from 1 (100% and the default) to 2 (200%).
     | point_x | int | The X point in pixels to zoom around. Use 0 if you don't care.
@@ -521,7 +521,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### setSize
 
 !!! function "setSize( `uint32_t` width, `uint32_t` height, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | width | uint32_t | The width of the surface in pixels.
     | height | uint32_t | The height of the surface in pixels.
@@ -539,7 +539,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### setVerticalScroll
 
 !!! function "setVerticalScroll( `uint32_t` absolute_pixel_scroll, `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | absolute_pixel_scroll | uint32_t | The absolute pixel position to scroll to. 0 is the top and [html_vertical_scroll](#html_vertical_scroll) **scroll_max** is the bottom
     | browser_handle | uint32_t | The handle of the surface to set the vertical scroll position.
@@ -557,7 +557,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### stopFind
 
 !!! function "stopFind( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The handle of the surface to stop the find results.
 
@@ -571,7 +571,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### stopLoad
 
 !!! function "stopLoad( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The handle of the surface to stop loading.
 
@@ -587,7 +587,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 ### viewSource
 
 !!! function "viewSource( `uint32_t` browser_handle = 0 )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | browser_handle | uint32_t | The handle of the surface to view its current pages source.
 

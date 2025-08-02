@@ -19,7 +19,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### activationSuccess
 
 !!! function "activationSuccess( `bool` activate )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | activate | bool | -
 
@@ -55,7 +55,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### currentEntryIsAvailable
 
 !!! function "currentEntryIsAvailable( `bool` available )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | available | bool | Whether or not the current entry is available.
 
@@ -92,7 +92,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### enableLooped
 
 !!! function "enableLooped( `bool` enable_loop )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | enable_loop | bool | Whether or not to enable track looping.
 
@@ -107,7 +107,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### enablePlaylists
 
 !!! function "enablePlaylists( `bool` enable_playlists )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | enable_playlists | bool | Whether or not to enable playlists.
 
@@ -122,7 +122,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### enablePlayNext
 
 !!! function "enablePlayNext( `bool` enable_next )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | enable_next | bool | Whether or not to enable play next.
 
@@ -137,7 +137,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### enablePlayPrevious
 
 !!! function "enablePlayPrevious( `bool` enable_previous )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | enable_previous | bool | Whether or not to enable play previous.
 
@@ -152,7 +152,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### enableQueue
 
 !!! function "enableQueue( `bool` enable_queue )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | enable_queue | bool | Whether or not to enable the queue.
 
@@ -167,7 +167,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### enableShuffled
 
 !!! function "enableShuffled( `bool` enable_shuffle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | enable_shuffle | bool | Whether or not to enable shuffle.
 
@@ -226,7 +226,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### registerSteamMusicRemote
 
 !!! function "registerSteamMusicRemote( `string` name )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | name | string | THe name of this Music Remote session?
 
@@ -263,7 +263,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### setCurrentPlaylistEntry
 
 !!! function "setCurrentPlaylistEntry( `int` id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | id | int | The current playlist entry to set.
 
@@ -278,7 +278,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### setCurrentQueueEntry
 
 !!! function "setCurrentQueueEntry( `int` id )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | id | int | The current queue entry to set.
 
@@ -293,7 +293,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### setDisplayName
 
 !!! function "setDisplayName( `string` name )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | name | string | The display name to set.
 
@@ -308,7 +308,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### setPlaylistEntry
 
 !!! function "setPlaylistEntry( `int` id, `int` position, `string` entry_text )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | id | int | The ID of the entry to set.
     | position | int | The position in the playlist to set it to.
@@ -325,7 +325,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### setPNGIcon64x64
 
 !!! function "setPNGIcon64x64( `PackedByteArray` icon )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | icon | PackedByteArray | The icon data to set.
 
@@ -340,7 +340,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### setQueueEntry
 
 !!! function "setQueueEntry( `int` id, `int` position, `string` entry_text )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | id | int | The ID of the entry to set.
     | position | int | The position in the queue to set it to.
@@ -357,7 +357,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### updateCurrentEntryCoverArt
 
 !!! function "updateCurrentEntryCoverArt( `PackedByteArray` art )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | art | PackedByteArray | The icon data to set.
 
@@ -372,7 +372,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### updateCurrentEntryElapsedSeconds
 
 !!! function "updateCurrentEntryElapsedSeconds( `int` seconds )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | seconds | int | The amount of elapsed seconds to set.
 
@@ -387,7 +387,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### updateCurrentEntryText
 
 !!! function "updateCurrentEntryText( `string` text )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | text | string | The text to set for the current entry.
 
@@ -402,7 +402,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### updateLooped
 
 !!! function "updateLooped( `bool` looped )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | looped | bool | Whether or not to update the looped status?
 
@@ -417,7 +417,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### updatePlaybackStatus
 
 !!! function "updatePlaybackStatus( `AudioPlaybackStatus` status )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | status | [AudioPlaybackStatus enum](music.md#audioplaybackstatus) | The current playback status to set.
 
@@ -432,7 +432,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### updateShuffled
 
 !!! function "updateShuffled( `bool` shuffle )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | shuffle | bool | Whether or not to update shuffle?
 
@@ -447,7 +447,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 ### updateVolume
 
 !!! function "updateVolume( `float` volume )"
-	| Argument | Type | Notes |
+	| :material-variable: Parameter | Type | Notes |
     | -------- | ---- | ----- |
     | volume | float | The updated volume level to set.
 
