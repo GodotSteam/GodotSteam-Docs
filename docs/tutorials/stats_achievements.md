@@ -13,7 +13,6 @@ At some point you may want to save statistics to Steam's database and / or use t
 
 ??? guide "Relevant GodotSteam classes and functions"
 	* [User Stats class](../classes/user_stats.md)
-		* [requestCurrentStats()](../classes/user_stats.md#requestcurrentstats)
 		* [getAchievement()](../classes/user_stats.md#getachievement)
 		* [setAchievement()](../classes/user_stats.md#setachievement)
 		* [setStatFloat()](../classes/user_stats.md#setstatfloat)
@@ -147,7 +146,7 @@ func load_steam_achievements() -> void:
 		var steam_achievement: Dictionary = Steam.getAchievement(this_achievement)
 
 		# The set_achievement function is below in the Setting Achievements section
-		if not this_achievement['ret']:
+		if not steam_achievement['ret']:
 			print("Steam does not have this achievement, defaulting to local value: achieve%s" % this_achievement)
 			continue
 

@@ -51,7 +51,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	This is primarily only ever used for testing.
 
-	This call only modifies Steam's in-memory state so it is quite cheap. To send the unlock status to the server and to trigger the Steam overlay notification you must call [storeStats](#storestats).
+  This call only modifies Steam's in-memory state so it is quite cheap. To send the unlock status to the server and to trigger the Steam overlay notification you must call [storeStats](#storestats).
 
 	!!! returns "Returns: bool"
 		Returns true upon success if the specific achievement API name exists in the App Admin on the Steamworks website and changes are published; otherwise, false.
@@ -549,7 +549,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     Gets the current value of the a stat for the current user.
 
-	To receive stats for other users use [getUserStatFloat](#getuserstatfloat).
+  	To receive stats for other users use [getUserStatFloat](#getuserstatfloat).
 
 	!!! returns "Returns: float"
 
@@ -568,7 +568,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     Gets the current value of the a stat for the current user.
 
-	To receive stats for other users use [getUserStatInt](#getuserstatint).
+  	To receive stats for other users use [getUserStatInt](#getuserstatint).
 
 	!!! returns "Returns: int"
 
@@ -717,7 +717,8 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#RequestCurrentStats){ .md-button .md-button--doc_classes target="_blank" }
-	[ :material-tag-remove: Removed GodotSteam 4.12](../changelog/godot4.md/#version-412){ .md-button .md-button--changes target="_blank" }
+  	[ :material-tag-remove: Removed GodotSteam 4.12](../changelog/godot4.md/#version-412){ .md-button .md-button--changes target="_blank" }
+    [ :material-tag-remove: Removed GodotSteam 3.28](../changelog/godot3.md/#version-328){ .md-button .md-button--changes target="_blank" }
 
 ### requestGlobalAchievementPercentages
 
@@ -768,11 +769,11 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     Asynchronously downloads stats and achievements for the specified user from the server.
 
-	These stats are not automatically updated; you'll need to call this function again to refresh any data that may have change.
+  	These stats are not automatically updated; you'll need to call this function again to refresh any data that may have change.
 
-	To keep from using too much memory, an least recently used cache (LRU) is maintained and other user's stats will occasionally be unloaded. When this happens a [user_stats_unloaded](#user_stats_unloaded) callback is sent. After receiving this callback the user's stats will be unavailable until this function is called again.
+	  To keep from using too much memory, an least recently used cache (LRU) is maintained and other user's stats will occasionally be unloaded. When this happens a [user_stats_unloaded](#user_stats_unloaded) callback is sent. After receiving this callback the user's stats will be unavailable until this function is called again.
 
-	The equivalent function for the local user is [requestCurrentStats](#requestcurrentstats).
+  	The equivalent function for the local user is [requestCurrentStats](#requestcurrentstats); however, that has been removed since GodotSteam 4.12 / 3.28.
 
 	!!! returns "Returns: void"
 
@@ -791,7 +792,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     Resets the current users stats and, optionally achievements.
 
-	This automatically calls [storeStats](#storestats) to persist the changes to the server. This should typically only be used for testing purposes during development. Ensure that you sync up your stats with the new default values provided by Steam after calling this by calling [requestCurrentStats](#requestcurrentstats).
+	This automatically calls [storeStats](#storestats) to persist the changes to the server. This should typically only be used for testing purposes during development.
 
 	!!! returns "Returns: bool"
 
@@ -805,9 +806,9 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
     | -------- | ---- | ----- |
     | achievement_name | string | The achievement you want to unlock; uses the name set in the Steamworks back-end. |
 
-	Unlocks an achievement.
+  	Unlocks an achievement.
 
-	You can unlock an achievement multiple times so you don't need to worry about only setting achievements that aren't already set. This call only modifies Steam's in-memory state so it is quite cheap. To send the unlock status to the server and to trigger the Steam overlay notification you must call [storeStats](#storestats).
+  	You can unlock an achievement multiple times so you don't need to worry about only setting achievements that aren't already set. This call only modifies Steam's in-memory state so it is quite cheap. To send the unlock status to the server and to trigger the Steam overlay notification you must call [storeStats](#storestats).
 
 	!!! returns "Returns: bool"
 		Returns true upon success; otherwise, false if the specified achievement API name does not exist in the App Admin on the Steamworks site or the changes are not published.
@@ -847,9 +848,9 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     Sets / updates the float value of a given stat for the current user.
 
-	This call only modifies Steam's in-memory state and is very cheap. Doing so allows Steam to persist the changes even in the event of a game crash or unexpected shutdown. To submit the stats to the server you must call [storeStats](#storestats).
+    This call only modifies Steam's in-memory state and is very cheap. Doing so allows Steam to persist the changes even in the event of a game crash or unexpected shutdown. To submit the stats to the server you must call [storeStats](#storestats).
 
-	If this is returning false and everything appears correct, then check to ensure that your changes in the App Admin panel of the Steamworks website are published.
+  	If this is returning false and everything appears correct, then check to ensure that your changes in the App Admin panel of the Steamworks website are published.
 
 	!!! returns "Returns: bool"
 		Returns true upon success; otherwise, false if the specified stat does not exist in the App Admin on the Steamworks site or the changes are not published.
@@ -870,9 +871,9 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     Sets / updates the integer value of a given stat for the current user.
 
-	This call only modifies Steam's in-memory state and is very cheap. Doing so allows Steam to persist the changes even in the event of a game crash or unexpected shutdown. To submit the stats to the server you must call [storeStats](#storestats).
+    This call only modifies Steam's in-memory state and is very cheap. Doing so allows Steam to persist the changes even in the event of a game crash or unexpected shutdown. To submit the stats to the server you must call [storeStats](#storestats).
 
-	If this is returning false and everything appears correct, then check to ensure that your changes in the App Admin panel of the Steamworks website are published.
+  	If this is returning false and everything appears correct, then check to ensure that your changes in the App Admin panel of the Steamworks website are published.
 
 	!!! returns "Returns: bool"
 		Returns true upon success; otherwise, false if the specified stat does not exist in the App Admin on the Steamworks site or the changes are not published.
@@ -917,7 +918,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
     Updates an AVGRATE stat with new values.
 
-	This call only modifies Steam's in-memory state and is very cheap. Doing so allows Steam to persist the changes even in the event of a game crash or unexpected shutdown. To submit the stats to the server you must call [storeStats](#storestats).
+  	This call only modifies Steam's in-memory state and is very cheap. Doing so allows Steam to persist the changes even in the event of a game crash or unexpected shutdown. To submit the stats to the server you must call [storeStats](#storestats).
 
 	If this is returning false and everything appears correct, then check to ensure that your changes in the App Admin panel of the Steamworks website are published.
 
@@ -971,6 +972,8 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 !!! function "current_stats_received"
 	Called when the latest stats and achievements for the local user have been received from the server; in response to function [requestCurrentStats](#requestcurrentstats).
 
+  As of SDK 1.61, this no longer exists as everything is synced at game boot.
+
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
@@ -980,6 +983,8 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 
 	---
 	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#UserStatsReceived_t){ .md-button .md-button--doc_classes target="_blank" }
+  [ :material-tag-remove: Removed GodotSteam 4.12](../changelog/godot4.md/#version-412){ .md-button .md-button--changes target="\_blank" }
+  [ :material-tag-remove: Removed GodotSteam 3.28](../changelog/godot3.md/#version-328){ .md-button .md-button--changes target="\_blank" }
 
 ### global_achievement_percentages_ready
 

@@ -49,9 +49,9 @@ First we will set up a bunch of variables that will get used later on.
 	var current_sample_rate: int = 48000
 	var has_loopback: bool = false
 	var local_playback: AudioStreamGeneratorPlayback = null
-	var local_voice_buffer: PoolByteArray = PackedByteArray()
+	var local_voice_buffer: PackedByteArray = PackedByteArray()
 	var network_playback: AudioStreamGeneratorPlayback = null
-	var network_voice_buffer: PoolByteArray = PackedByteArray()
+	var network_voice_buffer: PackedByteArray = PackedByteArray()
 	var packet_read_limit: int = 5
 	```
 
