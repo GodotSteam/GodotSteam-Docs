@@ -36,6 +36,9 @@ I'd also like to suggest you [check out the Additional Resources section of this
 	* [Friends class](../classes/friends.md)
 		* [getFriendPersonaName()](../classes/friends.md#getfriendpersonaname)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## Set Up
 ==}

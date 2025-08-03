@@ -22,6 +22,9 @@ In case you want to Steam's Voice functionality in your game, we might as well c
 		* [startVoiceRecording()](../classes/user.md#startvoicerecording)
 		* [stopVoiceRecording()](../classes/user.md#stopvoicerecording)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## :material-file-document-check: Preparations
 ==}

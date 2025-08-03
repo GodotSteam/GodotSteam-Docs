@@ -123,6 +123,22 @@ On the next screen, you should then be able to add the autogrant:
 
 ![](../assets/images/tutorials-common_issues-steam-autogrant.png)
 
+### Steam Installs Wrong Depot
+
+An incredibly rare bug where Steam will install the wrong depot for some reason. When this does happen it is usually Steam installing the Windows depot instead of the Linux depot on a Linux machine with a game that does indeed have a Linux depot.  It may be a Proton issue though.
+
+To fix this:
+
+* Go into the game's properties (right-click in Library)
+* Go to Compatibility
+* Select "Force to use of a specific Steam Play compatibility tool"
+* Run the game / app (you can probably skip this)
+* Restart Steam
+* Go back into the game's properties and turn off "Force the use of..."
+* The client should now install the correct files
+
+
+
 {==
 ## Steam Inputs
 ==}

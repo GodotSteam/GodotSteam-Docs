@@ -36,6 +36,9 @@ A hot topic that comes up: Workshop / UGC. There are a lot of moving parts and w
     * [User class](../classes/user.md)
         * [getSteamID()](../classes/user.md#getsteamid)
 
+!!! warning "Note"
+    You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## :material-file-document-check: Preparations
 ==}
@@ -102,7 +105,7 @@ func get_published_items(p_page : int = 1, p_only_ids : bool = false) -> void:
     var user_id : int = steam.getSteamID()
     var list    : int = steam.USER_UGC_LIST_PUBLISHED
     var type    : int = steam.WORKSHOP_FILE_TYPE_COMMUNITY
-    var sort    : int = steam.USERUGCLISTSORTORDER_CREATIONORDERDESC
+    var sort    : int = steam.USER_UGC_LIST_SORT_ORDER_CREATION_ORDER_DESC
 
     _query_handler = steam.createQueryUserUGCRequest(user_id,
                                                      list,

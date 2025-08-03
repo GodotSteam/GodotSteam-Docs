@@ -61,6 +61,19 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2083630/Ailin_Traps_and_Treasures/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://www.forgottendreamgames.com/){ target="\_blank" .md-button .md-button--store }
 
+- [![Airsoft Pew Pew](https://steamcdn-a.akamaihd.net/steam/apps/2478900/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2478900/hislittlecuzins_Airsoft_Pew_Pew/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2478900/hislittlecuzins_Airsoft_Pew_Pew/){ target="\_blank" .md-button .md-button--store }
+
+- [![Alix](https://steamcdn-a.akamaihd.net/steam/apps/3245530/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3245530/Alix/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3245530/Alix/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://bsky.app/profile/oxeron.com){ target="\_blank" .md-button .md-button--store }
+
 - [![All Fridges are Psychotic](https://steamcdn-a.akamaihd.net/steam/apps/2929590/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2929590/All_Fridges_are_Psychotic){ target="\_blank" }
 
 	---

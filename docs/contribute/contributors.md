@@ -31,6 +31,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: ConnorBP
 - :material-code-tags: craftablescience
 - :material-file-document-edit: dannroda
+- :material-file-document-edit: DanielSnd
 - :material-file-document-edit: DaveThornton
 - :material-file-document-edit: Deozaan
 - :material-file-document-edit: dglwilkins
@@ -52,6 +53,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: IlyaStuurFedorov
 - :material-code-tags: ismailgamedev
 - :material-code-tags: jacobcoughenour
+- :material-file-document-edit: jasperbel
 - :material-code-tags: JDare
 - :material-code-tags: jeremybeier
 - :material-file-document-edit: JimmyJohn1026
@@ -66,14 +68,18 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: hungFI
 - :material-file-document-edit: larsvanhilten
 - :material-code-tags: Lunatix89
+- :material-code-tags: m1zukash1
 - :material-code-tags: marcelofg55
 - :material-code-tags: MartinAppDev
 - :material-code-tags: mashumafi
+- :material-file-document-edit: mcgillij
 - :material-code-tags: MichaelBelousov
 - :material-code-tags: Michael Janeway
 - :material-code-tags: :material-file-document-edit: mikix
+- :material-code-tags: Minositu
 - :material-file-document-edit: mkckr0
 - :material-file-document-edit: mynameiswhm
+- :material-file-document-edit: NathanLion
 - :material-code-tags: obscurelyme
 - [:material-code-tags: Oleksii Zaremskyi](https://savelife.in.ua/){ target="\_blank" }
 - :material-file-document-edit: P-Kelley
@@ -85,6 +91,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: raulsntos
 - :material-file-document-edit: rebane2001
 - :material-code-tags: rsomers1998
+- :material-file-document-edit: salmonmoose
 - :material-code-tags: :material-file-document-edit: SapphireMH
 - :material-code-tags: :material-file-document-edit: sepTN
 - :material-code-tags: shuriken1812
@@ -95,6 +102,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-file-document-edit: swagmaster0
 - [:material-code-tags: Tamper2](https://honkofheroes.com/){ target="\_blank" }
 - :material-code-tags: TCROC
+- :material-code-tags: timenoe
 - :material-file-document-edit: Toi Lanh
 - :material-code-tags: :material-file-document-edit: TriMay
 - :material-code-tags: troykinsella
@@ -102,7 +110,7 @@ Here is a list of all the great contributors, both those who have provided code 
 - :material-code-tags: vaartis
 - :material-file-document-edit: WAFFO
 - :material-code-tags: wpbirney
-- :material-code-tags: VictorienXP
+- :material-code-tags: [VickyFrenzy](https://vickyfrenzy.net/){ target="\_blank" }
 - :material-code-tags: yeonghoey
 - :material-code-tags: ynot01
 - :material-file-document-edit: Yolwoocle

@@ -93,7 +93,6 @@ Before sending things over to Steam, we need to gather up all our files.  For th
 - On Windows, use the **steam_api.dll** for 32-bit or **steam_api64.dll** for 64-bit.
 
 !!! warning "Notes"
-	
 	If you are using a **steam_appid.txt** for setting your game's app ID instead of passing it to the initialization function or setting it as an environment variable, you will not want to include it with your upload files. This file is ***only*** used for running your game ***outside of the Steam client*** so that it knows which game you are playing. When running ***through the Steam client***, Steam is aware of what game you are playing, thus it is not necessary. Valve recommends that you do not ship this file with your game, as [it can potentially cause issues](https://partner.steamgames.com/doc/api/steam_api#SteamAPI_RestartAppIfNecessary){ target="\_blank" }.
 
 	Also, if you are shipping on Mac, there are a few extra steps you may want to check out. Instead of repeating it here, you can [read more about the process in the Mac Exporting tutorial](mac_export.md).
@@ -298,6 +297,16 @@ From here we then go to **SteamPipe** again but this time select the **Builds** 
 Pressing **Preview Changes** will let you set any internal notes and then set your build as active.  You used to have to publish these changes on a separate page but now they should become live once you do this.
 
 Afterwards, you should be able to install your game through the Steam client or, if your game is already on Steam, you should shortly see an update available notification on the Downloads page.  And that's that for exporting and shipping!
+
+{==
+## :material-checkbox-marked: Approval Process
+==}
+
+Usually the approval process will take a few days and is generally performed by a third-party company in Redmond, Washington that is contracted by Valve.  This being said, the process should be more or less uniform for each game that comes through.  They are pretty thorough and will check every feature you have listed on the Steam store page.  While this does not have to be the final version of your game, it should be in a playable state and have all mentioned features active.
+
+One thing to watch for, as mentioned by a community member, is rejection due to external links in your game.  In this case, non-game apps that have donation links.  If you do have such links, they advise creating a donation hub page and dropping the links to know plaforms like Patreon and Kofi there then link that in your app.
+
+Valve's contractors had rejected builds that had direct links to Patreon for people to donate even though the app was free and was just sharing the donation information.
 
 {==
 ## :material-content-save-settings: Additional Resources

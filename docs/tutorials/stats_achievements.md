@@ -19,6 +19,9 @@ At some point you may want to save statistics to Steam's database and / or use t
 		* [setStatInt()](../classes/user_stats.md#setstatint)
 		* [storeStats()](../classes/user_stats.md#storestats)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## :material-file-document-check: Preparations
 ==}
@@ -221,6 +224,10 @@ func set_statistic(this_stat: String, new_value: int = 0) -> void:
 ```
 
 When that last **storeStats()** is called the stats will update on Steam's servers.
+
+### Careful With
+
+If your stat is configured as "increment only", setting the value to a new and lower value will cause you to get a **false** response when setting.
 
 {==
 ## :material-content-save-settings: Additional Resources

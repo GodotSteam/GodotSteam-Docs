@@ -21,6 +21,9 @@ In this quick tutorial we will cover how to get a dictionary of any lobbies belo
 	* [Utils class](../classes/utils.md)
 		* [getAppID](../classes/utils.md#getappid)
 
+!!! warning "Note"
+	You may want to [double-check our Initialization tutorial](initializing.md) to set up initialization and callbacks functionality if you haven't done so already.
+
 {==
 ## Functions Explained
 ==}

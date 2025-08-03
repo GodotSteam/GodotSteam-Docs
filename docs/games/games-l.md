@@ -42,7 +42,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	---
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1936750/Left_Stranded/){ target="\_blank" .md-button .md-button--store }
-	[ :fontawesome-brands-discord: ](https://discord.gg/5eQynQRGUK){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.gg/sjhwu9WTp9){ target="\_blank" .md-button .md-button--store }
 
 - [![Lefties' Righteous Arcade Empourium](https://steamcdn-a.akamaihd.net/steam/apps/2733260/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2733260/Lefties_Righteous_Arcade_Emporium//){ target="\_blank" }
 
@@ -102,6 +102,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	---
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1404850/Luck_be_a_Landlord/){ target="\_blank" .md-button .md-button--store }
+
+- [![Lucifer's Grand Adventure](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3712250/cd48b6acbecec67babf41fc044dfb14984d0e58d/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3712250/Lucifers_Grand_Adventure/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3712250/Lucifers_Grand_Adventure/){ target="\_blank" .md-button .md-button--store }
 
 - [![LUL Inc.](https://steamcdn-a.akamaihd.net/steam/apps/1824080/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/1824080/LUL_inc/){ target="\_blank" }
 
