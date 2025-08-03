@@ -196,11 +196,9 @@
 #sponsors span {
   flex: 20%;
   max-width: 20%;
-  text-align: center !important;
   padding: 0 4px;
 }
-
-#sponsors img {
+#sponsors span img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -795,6 +793,13 @@
          padding-top: 4em;
     }
 }
+@media screen and (max-width: 800px) {
+  #sponsors span {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
  @media screen and (max-width: 840px) {
      .row {
          display: flex;
@@ -979,12 +984,6 @@
      .row.gtr-200.gtr-uniform > * {
          padding-top: 4em;
     }
-}
-@media screen and (max-width: 800px) {
-  #sponsors span {
-    flex: 50%;
-    max-width: 50%;
-  }
 }
  @media screen and (max-width: 736px) {
      .row {
