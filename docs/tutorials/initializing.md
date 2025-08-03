@@ -181,6 +181,8 @@ You can set **embed callbacks** in the **Project Settings** under **Steam > Init
 
 Much like passing it to the initialization functions, this will run callbacks internally through process.
 
+However, currently if you set this to **true** and have **auto-initialization** set to **true**, it will crash the editor.  This will be fixed in GodotSteam 4.16 / 3.30 though.
+
 ### Method 2: Pass It To Initialization
 
 You can pass true as the second argument to either initialization function and have GodotSteam check for callbacks internally.
