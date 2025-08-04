@@ -81,7 +81,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-youtube: ](https://www.youtube.com/channel/UCLVtRF-WIwnUnuRoLXD6vOQ/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://www.littleneuron.net/){ target="\_blank" .md-button .md-button--store }
 
-- [![Robot Anomaly](https://steamcdn-a.akamaihd.net/steam/apps/3583330/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3583330/Robot_Anomaly/){ target="\_blank" }
+- [![Robot Anomaly](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3583330/8ca9514d8d5cbc3360c0d9f92af152870e293db9/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3583330/Robot_Anomaly/){ target="\_blank" }
 
 	---
 

@@ -14,7 +14,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 <div id="games" class="grid cards" markdown>
 
-- [![Neon Striker](https://steamcdn-a.akamaihd.net/steam/apps/3592710/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3592710/Neon_Striker/ ){ target="\_blank" }
+- [![Neon Striker](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3592710/c1237904c048569316b6e72d8cbc1dc6513c1d27/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3592710/Neon_Striker/ ){ target="\_blank" }
 
 	---
 

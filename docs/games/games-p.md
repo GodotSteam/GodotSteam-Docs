@@ -72,7 +72,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@fractilegames){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/fractilegames.bsky.social){ target="\_blank" .md-button .md-button--store }
 
-- [![Pinballers](https://steamcdn-a.akamaihd.net/steam/apps/3768430/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3768430/Pinballers/){ target="\_blank" }
+- [![Pinballers](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768430/44d83e0cc2c83abb52beb244469f66f4f3100562/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3768430/Pinballers/){ target="\_blank" }
 
 	---
 

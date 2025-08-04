@@ -29,7 +29,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/1103100/1000_days_to_escape/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox: ](http://lmnsqz.games/){ target="\_blank" .md-button .md-button--store }
 
-- 	[![2 Bows 1 Arrow](https://steamcdn-a.akamaihd.net/steam/apps/3825740/header.jpg){ loading=lazy }](https://store.steampowered.com/app/3825740/2_Bows_1_Arrow/){ target="\_blank" }
+- 	[![2 Bows 1 Arrow](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3825740/c121497d18bfe1446f1c0bc0db3f91cd58823869/header.jpg){ loading=lazy }](https://store.steampowered.com/app/3825740/2_Bows_1_Arrow/){ target="\_blank" }
 
 	---
 

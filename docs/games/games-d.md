@@ -168,7 +168,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-firefox-browser: ](https://kar.games){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-discord: ](https://discord.gg/6QjkSMTPbZ){ target="\_blank" .md-button .md-button--store }
 
-- [![Dungeon Drops](https://steamcdn-a.akamaihd.net/steam/apps/3625870/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3625870/Dungeon_Drops/){ target="\_blank" }
+- [![Dungeon Drops](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3625870/8d827410604f891cecba071a207b3e02e2aaaee2/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3625870/Dungeon_Drops/){ target="\_blank" }
 
 	---
 

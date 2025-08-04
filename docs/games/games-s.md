@@ -177,7 +177,7 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3505230/Soulblaze/){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/swordandquill.itch.io){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-itch-io: ](https://swordandquill.itch.io/soulblaze){ target="\_blank" .md-button .md-button--store }
-	[ :fontawesome-brands-presskit: ](https://impress.games/press-kit/swordandquill/soulblaze){ target="\_blank" .md-button .md-button--store }
+	[ :material-message-processing-outline: ](https://impress.games/press-kit/swordandquill/soulblaze){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-twitch: ](https://www.twitch.tv/swordandquill){ target="\_blank" .md-button .md-button--store }
 
 - [![Space Miner - Idle Adventures](https://steamcdn-a.akamaihd.net/steam/apps/2679860/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2679860/Space_Miner__Idle_Adventures/){ target="\_blank" }
