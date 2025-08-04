@@ -53,8 +53,8 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	---
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3520970/Minerva_Labyrinth/){ target="\_blank" .md-button .md-button--store }
-	[ :fontawesome-itch-io: ](https://midnightspiregames.itch.io/minerva-labyrinth){ target="\_blank" .md-button .md-button--store }
-	[ :fontawesome-mastodon: ](https://mastodon.gamedev.place/@midnightspire){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-itch-io: ](https://midnightspiregames.itch.io/minerva-labyrinth){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-mastodon: ](https://mastodon.gamedev.place/@midnightspire){ target="\_blank" .md-button .md-button--store }
 
 
 - [![Mini Sports](https://steamcdn-a.akamaihd.net/steam/apps/2335250/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2335250/Mini_Sports/){ target="\_blank" }
