@@ -86,6 +86,8 @@ We have quite a few tutorials and many more in the works but the more the merrie
 
 [ :simple-steam: 'Godot4 - Deploy To SteamOS' by taw.moe](https://github.com/LauraWebdev/Godot4-DeployToSteamOS){ .md-button .md-button--resource target="\_blank" }
 
+[ :simple-steam: 'Steam Store Assets Creator' by Miziziziz](https://github.com/Miziziziz/SteamStoreAssetsCreator){ .md-button .md-button--resource target="\_blank" }
+
 {==
 ## C-Sharp Tools
 ==}
