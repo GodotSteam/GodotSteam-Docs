@@ -44,4 +44,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2368940/Jurl/){ target="\_blank" .md-button .md-button--store }
 
+- [![Just Keep Looting](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3532030/97f17533cb949f612cfa400f36570658c7ea1903/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3532030/Just_Keep_Looting/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3532030/Just_Keep_Looting/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-discord: ](https://discord.gg/ZBb75dR4K5){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-bluesky: ](https://bsky.app/profile/duckforge.bsky.social){ target="\_blank" .md-button .md-button--store }
+
 </div>
