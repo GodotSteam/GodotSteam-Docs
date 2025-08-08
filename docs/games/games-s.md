@@ -259,6 +259,12 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3197230/The_SS_Destiny_Disaster/){ target="\_blank" .md-button .md-button--store }
 
+- [![Stackflow](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3908810/2f8beed25a2fe0c610af3229418a048999b1e64d/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3908810/Stackflow/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3908810/Stackflow/){ target="\_blank" .md-button .md-button--store }
+
 - [![Standard Procedures](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3585490/a63787a32c610952479ff146b6a514b4cf9e17c3/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3585490/Standard_Procedures/){ target="\_blank" }
 
 	---
