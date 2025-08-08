@@ -37,7 +37,7 @@ Networking functions for making connections and sending data between clients, tr
 		This call should only be made in response to a [p2p_session_request](#p2p_session_request) callback.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#AcceptP2PSessionWithUser){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#AcceptP2PSessionWithUser){ .md-button .md-button--doc_classes target="_blank" }
 
 ### allowP2PPacketRelay
 
@@ -56,7 +56,7 @@ Networking functions for making connections and sending data between clients, tr
 		This function always returns true.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#AllowP2PPacketRelay){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#AllowP2PPacketRelay){ .md-button .md-button--doc_classes target="_blank" }
 
 ### closeP2PChannelWithUser
 
@@ -74,7 +74,7 @@ Networking functions for making connections and sending data between clients, tr
 		Returns true if the channel was successfully closed; otherwise, false if there was no active session or channel with the user.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#CloseP2PChannelWithUser){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#CloseP2PChannelWithUser){ .md-button .md-button--doc_classes target="_blank" }
 
 ### closeP2PSessionWithUser
 
@@ -91,7 +91,7 @@ Networking functions for making connections and sending data between clients, tr
 		Returns true if the session was successfully closed; otherwise, false if no connection was open with **steam_id_remote**.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#CloseP2PSessionWithUser){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#CloseP2PSessionWithUser){ .md-button .md-button--doc_classes target="_blank" }
  
 ### getP2PSessionState
 
@@ -119,7 +119,7 @@ Networking functions for making connections and sending data between clients, tr
 		| remote_port | uint16 | The port of remote host if set. Could be a Steam relay server. This only exists for compatibility with older authentication API's.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#GetP2PSessionState){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#GetP2PSessionState){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getAvailableP2PPacketSize
 
@@ -155,7 +155,7 @@ Networking functions for making connections and sending data between clients, tr
 		| steam_id_remote | uint64_t | The Steam ID of the user that sent this packet.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#ReadP2PPacket){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#ReadP2PPacket){ .md-button .md-button--doc_classes target="_blank" }
 
 ### sendP2PPacket
 
@@ -189,7 +189,7 @@ Networking functions for making connections and sending data between clients, tr
 		Returning true does not mean successfully received, if we can't get through to the user after a timeout of 20 seconds, then an error will be posted via the [p2p_session_connect_fail](#p2p_session_connect_fail) callback.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#SendP2PPacket){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#SendP2PPacket){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-signal: Signals
@@ -209,7 +209,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| session_error | uint8_t | Indicates the reason why we're having trouble. Actually a [P2PSessionError](#p2psessionerror).
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#P2PSessionConnectFail_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#P2PSessionConnectFail_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### p2p_session_request
 
@@ -222,7 +222,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | steam_id_remote | uint64_t | The user who wants to start a P2P session with us.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#P2PSessionRequest_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworking#P2PSessionRequest_t){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-numeric: Enums

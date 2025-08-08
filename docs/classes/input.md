@@ -29,7 +29,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#ActivateActionSet){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#ActivateActionSet){ .md-button .md-button--doc_classes target="_blank" }
 
 ### activateActionSetLayer
 
@@ -46,7 +46,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
  
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#ActivateActionSetLayer){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#ActivateActionSetLayer){ .md-button .md-button--doc_classes target="_blank" }
 
 ### deactivateActionSetLayer
 
@@ -61,7 +61,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#DeactivateActionSetLayer){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#DeactivateActionSetLayer){ .md-button .md-button--doc_classes target="_blank" }
 
  
 ### deactivateAllActionSetLayers
@@ -76,7 +76,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#DeactivateAllActionSetLayers){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#DeactivateAllActionSetLayers){ .md-button .md-button--doc_classes target="_blank" }
 
 ### enableDeviceCallbacks
 
@@ -105,7 +105,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		Contains a list of input action set handles (uint64_t).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetActiveActionSetLayers){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetActiveActionSetLayers){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getActionSetHandle
 
@@ -120,7 +120,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		The handle of the specified action set.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetActionSetHandle){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetActionSetHandle){ .md-button .md-button--doc_classes target="_blank" }
  
 ### getActionOriginFromXboxOrigin
 
@@ -135,7 +135,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: [InputActionOrigin enum](#inputactionorigin)"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetActionOriginFromXboxOrigin){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetActionOriginFromXboxOrigin){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getAnalogActionData
 
@@ -158,7 +158,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		| active | bool | Whether or not this action is currently available to be bound in the active action set. If it is not available, OR does not belong to the active action set, this will be false.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetAnalogActionData){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetAnalogActionData){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getAnalogActionHandle
 
@@ -176,7 +176,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		This function does not take an action set handle parameter. That means that each action in your VDF file must have a unique string identifier. In other words, if you use an action called "up" in two different action sets, this function will only ever return one of them and the other will be ignored.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetAnalogActionHandle){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetAnalogActionHandle){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getAnalogActionOrigins
 
@@ -195,7 +195,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		The [InputActionOrigin enum](#inputactionorigin) will get extended as support for new controller controllers gets added to the Steam client and will exceed the values from this header, please check bounds if you are using a look up table.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetAnalogActionOrigins){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetAnalogActionOrigins){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getConnectedControllers
 
@@ -206,7 +206,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		Contains a list of controller handles (uint64_t).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetConnectedControllers){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetConnectedControllers){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getControllerForGamepadIndex
 
@@ -221,7 +221,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		Returns a Steam Input handle.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetControllerForGamepadIndex){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetControllerForGamepadIndex){ .md-button .md-button--doc_classes target="_blank" }
  
 ### getCurrentActionSet
 
@@ -236,7 +236,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		The handle of the action set activated for the specified controller.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetCurrentActionSet){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetCurrentActionSet){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getDeviceBindingRevision
 
@@ -258,7 +258,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		| minor | int | Minor binding revision.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetDeviceBindingRevision){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetDeviceBindingRevision){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getDigitalActionData
 
@@ -279,7 +279,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		| active | bool | Whether or not this action is currently available to be bound in the active action set.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetDigitalActionData){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetDigitalActionData){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getDigitalActionHandle
 
@@ -297,7 +297,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		This function does not take an action set handle parameter. That means that each action in your VDF file must have a unique string identifier. In other words, if you use an action called "up" in two different action sets, this function will only ever return one of them and the other will be ignored.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetDigitalActionHandle){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetDigitalActionHandle){ .md-button .md-button--doc_classes target="_blank" }
 	
  
 ### getDigitalActionOrigins
@@ -317,7 +317,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		The [InputActionOrigin enum](#inputactionorigin) will get extended as support for new controller controllers gets added to the Steam client and will exceed the values from this header, please check bounds if you are using a look up table.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetDigitalActionOrigins){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetDigitalActionOrigins){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getGamepadIndexForController
 
@@ -331,7 +331,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: int"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetGamepadIndexForController){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetGamepadIndexForController){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getGlyphForActionOrigin
 
@@ -345,7 +345,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: string"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetGlyphForActionOrigin){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetGlyphForActionOrigin){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getGlyphForXboxOrigin
 
@@ -393,7 +393,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: [InputType enum](#inputtype)"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetInputTypeForHandle){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetInputTypeForHandle){ .md-button .md-button--doc_classes target="_blank" }
  
 ### getMotionData
 
@@ -421,7 +421,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		| rot_vel_z | float | Angular velocity, z axis.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetMotionData){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetMotionData){ .md-button .md-button--doc_classes target="_blank" }
  
 ### getRemotePlaySessionID
 
@@ -435,7 +435,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: uint32_t"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetRemotePlaySessionID){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetRemotePlaySessionID){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getSessionInputConfigurationSettings
 
@@ -459,7 +459,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: string"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetStringForActionOrigin){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#GetStringForActionOrigin){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getStringForAnalogActionName
 
@@ -508,7 +508,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: bool"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#Init){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#Init){ .md-button .md-button--doc_classes target="_blank" }
 
 ### inputShutdown
 
@@ -518,7 +518,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: bool"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#Shutdown){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#Shutdown){ .md-button .md-button--doc_classes target="_blank" }
 
 ### newDataAvailable
 
@@ -537,7 +537,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#RunFrame){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#RunFrame){ .md-button .md-button--doc_classes target="_blank" }
  
 ### setDualSenseTriggerEffect
 
@@ -557,7 +557,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#SetDualSenseTriggerEffect){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#SetDualSenseTriggerEffect){ .md-button .md-button--doc_classes target="_blank" }
     [ :material-tag-remove: Removed GodotSteam 4.16](../changelog/godot4.md/#version-416){ .md-button .md-button--changes target="_blank" }
 
 ### setInputActionManifestFilePath
@@ -590,7 +590,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		The Steam Controller does not support any color but white, and will interpret the RGB values as a greyscale value affecting the brightness of the Steam button LED. The DualShock 4 responds to full color information and uses the values to set the color and brightness of the lightbar.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#SetLEDColor){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#SetLEDColor){ .md-button .md-button--doc_classes target="_blank" }
  
 ### showBindingPanel
 
@@ -605,7 +605,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		Returns true for success; false if overlay is disabled / unavailable. If the player is using Big Picture Mode the configuration will open in the overlay. In desktop mode a pop-up window version of Big Picture will be created and open the configuration.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#ShowBindingPanel){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#ShowBindingPanel){ .md-button .md-button--doc_classes target="_blank" }
 
 ### stopAnalogActionMomentum
 
@@ -622,7 +622,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#StopAnalogActionMomentum){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#StopAnalogActionMomentum){ .md-button .md-button--doc_classes target="_blank" }
 
 ### translateActionOrigin
 
@@ -637,7 +637,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: [InputActionOrigin enum](#inputactionorigin)"
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TranslateActionOrigin){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TranslateActionOrigin){ .md-button .md-button--doc_classes target="_blank" }
 
 ### triggerHapticPulse
 
@@ -659,7 +659,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerHapticPulse){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerHapticPulse){ .md-button .md-button--doc_classes target="_blank" }
  
 ### triggerRepeatedHapticPulse
 
@@ -682,7 +682,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerRepeatedHapticPulse){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerRepeatedHapticPulse){ .md-button .md-button--doc_classes target="_blank" }
 
 ### triggerSimpleHapticEvent
 
@@ -717,7 +717,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 		This API call will be ignored for incompatible controller models. This generates the traditional "rumble" vibration effect. The Steam Controller will emulate traditional rumble using its haptics.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerVibration){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerVibration){ .md-button .md-button--doc_classes target="_blank" }
 
 ### triggerVibrationExtended
 
@@ -737,7 +737,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerVibrationExtended){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/isteaminput#TriggerVibrationExtended){ .md-button .md-button--doc_classes target="_blank" }
 
 ### waitForData
 

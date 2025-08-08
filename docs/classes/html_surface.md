@@ -31,7 +31,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#AddHeader){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#AddHeader){ .md-button .md-button--doc_classes target="_blank" }
 
 ### allowStartRequest
 
@@ -49,7 +49,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 		You **must** call this in response to a [html_start_request](#html_start_request) callback.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#AllowStartRequest){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#AllowStartRequest){ .md-button .md-button--doc_classes target="_blank" }
 
 ### copyToClipboard
 
@@ -63,7 +63,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#CopyToClipboard){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#CopyToClipboard){ .md-button .md-button--doc_classes target="_blank" }
 
 ### createBrowser
 
@@ -87,7 +87,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 		You **must** call [removeBrowser](#removebrowser) when you are done using this browser to free up the resources associated with it. Failing to do so will result in a memory leak.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#CreateBrowser){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#CreateBrowser){ .md-button .md-button--doc_classes target="_blank" }
 
 ### executeJavascript
 
@@ -102,7 +102,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#ExecuteJavascript){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#ExecuteJavascript){ .md-button .md-button--doc_classes target="_blank" }
 
 ### find
 
@@ -122,7 +122,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 		[html_search_results](#html_search_results) callback.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#Find){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#Find){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getLinkAtPosition
 
@@ -141,7 +141,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 		[html_link_at_position](#html_link_at_position) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#GetLinkAtPosition){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#GetLinkAtPosition){ .md-button .md-button--doc_classes target="_blank" }
 
 ### goBack
 
@@ -155,7 +155,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#GoBack){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#GoBack){ .md-button .md-button--doc_classes target="_blank" }
 
 ### goForward
 
@@ -169,7 +169,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#GoForward){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#GoForward){ .md-button .md-button--doc_classes target="_blank" }
 
 ### htmlInit
 
@@ -182,7 +182,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 		Returns true if the API was successfully initialized; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#Init){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#Init){ .md-button .md-button--doc_classes target="_blank" }
 
 ### htmlShutdown
 
@@ -192,7 +192,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: bool"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#Shutdown){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#Shutdown){ .md-button .md-button--doc_classes target="_blank" }
 
 ### jsDialogResponse
 
@@ -210,7 +210,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 		You **must** call this in response to [html_js_alert](#html_js_alert) and [html_js_confirm](#html_js_confirm) callbacks.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#JSDialogResponse){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#JSDialogResponse){ .md-button .md-button--doc_classes target="_blank" }
 
 ### keyChar
 
@@ -226,7 +226,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#KeyChar){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#KeyChar){ .md-button .md-button--doc_classes target="_blank" }
 
 ### keyDown
 
@@ -243,7 +243,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#KeyDown){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#KeyDown){ .md-button .md-button--doc_classes target="_blank" }
 
 ### keyUp
 
@@ -259,7 +259,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#KeyUp){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#KeyUp){ .md-button .md-button--doc_classes target="_blank" }
 
 ### loadURL
 
@@ -280,7 +280,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 		[html_start_request](#html_start_request) callback.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#LoadURL){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#LoadURL){ .md-button .md-button--doc_classes target="_blank" }
 
 ### mouseDoubleClick
 
@@ -295,7 +295,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseDoubleClick){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseDoubleClick){ .md-button .md-button--doc_classes target="_blank" }
 
 ### mouseDown
 
@@ -310,7 +310,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseDown){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseDown){ .md-button .md-button--doc_classes target="_blank" }
 
 ### mouseMove
 
@@ -326,7 +326,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseMove){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseMove){ .md-button .md-button--doc_classes target="_blank" }
 
 ### mouseUp
 
@@ -341,7 +341,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseUp){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseUp){ .md-button .md-button--doc_classes target="_blank" }
 
 ### mouseWheel
 
@@ -356,7 +356,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseWheel){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#MouseWheel){ .md-button .md-button--doc_classes target="_blank" }
 
 ### openDeveloperTools
 
@@ -381,7 +381,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#PasteFromClipboard){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#PasteFromClipboard){ .md-button .md-button--doc_classes target="_blank" }
 
 ### reload
 
@@ -397,7 +397,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#Reload){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#Reload){ .md-button .md-button--doc_classes target="_blank" }
 
 ### removeBrowser
 
@@ -413,7 +413,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#RemoveBrowser){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#RemoveBrowser){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setBackgroundMode
 
@@ -430,7 +430,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetBackgroundMode){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetBackgroundMode){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setCookie
 
@@ -450,7 +450,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetCookie){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetCookie){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setDPIScalingFactor
 
@@ -482,7 +482,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 		[html_horizontal_scroll](#html_horizontal_scroll) callback.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetHorizontalScroll){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetHorizontalScroll){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setKeyFocus
 
@@ -497,7 +497,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetKeyFocus){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetKeyFocus){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setPageScaleFactor
 
@@ -516,7 +516,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetPageScaleFactor){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetPageScaleFactor){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setSize
 
@@ -534,7 +534,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetSize){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetSize){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setVerticalScroll
 
@@ -552,7 +552,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 		[html_vertical_scroll](#html_vertical_scroll) callback.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetVerticalScroll){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#SetVerticalScroll){ .md-button .md-button--doc_classes target="_blank" }
 
 ### stopFind
 
@@ -566,7 +566,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#StopFind){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#StopFind){ .md-button .md-button--doc_classes target="_blank" }
 
 ### stopLoad
 
@@ -582,7 +582,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#StopLoad){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#StopLoad){ .md-button .md-button--doc_classes target="_blank" }
 
 ### viewSource
 
@@ -596,7 +596,7 @@ Interface for rendering and interacting with HTML pages. You can use this interf
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#ViewSource){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#ViewSource){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-signal: Signals
@@ -615,7 +615,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| browser_handle | uint32_t | This is the handle to the browser that was just created, which you can use with future calls.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_BrowserReady_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_BrowserReady_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_browser_restarted
 
@@ -641,7 +641,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| go_forward | bool | Returns whether you can navigate forward.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_CanGoBackAndForward_t){ .md-button .md-button--store target="_blank" }		
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_CanGoBackAndForward_t){ .md-button .md-button--doc_classes target="_blank" }		
 
 ### html_changed_title
 
@@ -655,7 +655,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| title | string | The new title of the page.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_ChangedTitle_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_ChangedTitle_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_close_browser
 
@@ -668,7 +668,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| browser_handle | uint32_t | The handle of the surface that this callback is for.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_CloseBrowser_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_CloseBrowser_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_file_open_dialog
 
@@ -683,7 +683,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| initial_file | string | The filename that the page wants you to set by default. It may be expecting a file with that name or that was the file the user previously uploaded.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_FileOpenDialog_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_FileOpenDialog_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_finished_request
 
@@ -698,7 +698,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| title | string | The title of the page that got loaded.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_FinishedRequest_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_FinishedRequest_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_hide_tooltip
 
@@ -711,7 +711,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| browser_handle | uint32_t | The handle of the surface that this callback is for.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_HideToolTip_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_HideToolTip_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_horizontal_scroll
 
@@ -729,13 +729,13 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| Key | Type | Notes |
         | --- | ---- | ----- |
 		| scroll_max | uint32_t | The maximum amount you can scroll horizontally.
-		* scroll_current | uint32_t | The current horizontal scroll position.
-		* page_scale | float | The current page scale.
-		* visible | bool | Whether the horizontal scrollbar is visible.
-		* page_size | uint32_t | The total width of the page in pixels.
+		| scroll_current | uint32_t | The current horizontal scroll position.
+		| page_scale | float | The current page scale.
+		| visible | bool | Whether the horizontal scrollbar is visible.
+		| page_size | uint32_t | The total width of the page in pixels.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_HorizontalScroll_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_HorizontalScroll_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_js_alert
 
@@ -749,7 +749,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| message | string | The message associated with the dialog.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_JSAlert_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_JSAlert_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_js_confirm
 
@@ -763,7 +763,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| message | string | The message associated with the dialog.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_JSConfirm_t){ .md-button .md-button--store target="_blank" }	
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_JSConfirm_t){ .md-button .md-button--doc_classes target="_blank" }	
 
 ### html_link_at_position
 
@@ -787,7 +787,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| live_link | bool | -
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_LinkAtPosition_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_LinkAtPosition_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_needs_paint
 
@@ -817,7 +817,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| page_serial | uint32_t | Incremented on each new page load, you can use this to reject draws while navigating to new pages.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_NeedsPaint_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_NeedsPaint_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_new_window
 
@@ -844,7 +844,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| new_handle | uint32_t | The handle of the new window surface.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_NewWindow_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_NewWindow_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_open_link_in_new_tab
 
@@ -858,7 +858,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| url | string | The URL that the browser wants to load.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_OpenLinkInNewTab_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_OpenLinkInNewTab_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_search_results
 
@@ -873,7 +873,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| current_match | uint32_t | The ordinal of the current match relative to **results**.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_SearchResults_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_SearchResults_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_set_cursor
 
@@ -887,7 +887,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| mouse_cursor | uint32_t | The [HTMLMouseCursor enum](#htmlmousecursor) to display.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_SetCursor_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_SetCursor_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_show_tooltip
 
@@ -901,7 +901,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| message | string | The text of the tooltip that wants to be displayed.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_ShowToolTip_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_ShowToolTip_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_start_request
 
@@ -918,7 +918,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| redirect | bool | True if this was a HTTP / HTML redirect from the last load request.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_StartRequest_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_StartRequest_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_status_text
 
@@ -932,7 +932,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| message | string | The text of the status message to display.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_StatusText_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_StatusText_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_update_tooltip
 
@@ -946,7 +946,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| message | string | The new text of the tooltip.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_UpdateToolTip_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_UpdateToolTip_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_url_changed
 
@@ -970,7 +970,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| new_navigation | bool | This is true if the page has changed rather than just a call to the browser history API.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_URLChanged_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_URLChanged_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### html_vertical_scroll
 
@@ -994,7 +994,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| page_size | uint32_t | The total height of the page in pixels.
 
 		---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_VerticalScroll_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTMLSurface#HTML_VerticalScroll_t){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-infinity: Constants

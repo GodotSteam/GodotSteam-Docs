@@ -173,7 +173,7 @@ icon: material/server-network
 	!!! returns "Returns: bool"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Init){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Init){ .md-button .md-button--doc_classes target="_blank" }
 
 ### serverInitEx
 
@@ -218,7 +218,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Shutdown){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Shutdown){ .md-button .md-button--doc_classes target="_blank" }
 
 ### set_inventory_handle
 

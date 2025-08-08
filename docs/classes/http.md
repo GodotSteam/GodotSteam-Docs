@@ -31,7 +31,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         Returns a new cookie container handle to be used with future calls to SteamHTTP functions.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#CreateCookieContainer){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#CreateCookieContainer){ .md-button .md-button--doc_classes target="_blank" }
 
 ### createHTTPRequest
 
@@ -49,7 +49,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         Returns a new request handle to be used with future calls to Steam HTTP functions. Returns [HTTPREQUEST_INVALID_HANDLE](#constants) if **absolute_url** is empty.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#CreateHTTPRequest){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#CreateHTTPRequest){ .md-button .md-button--doc_classes target="_blank" }
 
 ### deferHTTPRequest
 
@@ -64,7 +64,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 		Returns true if the request has been successfully defered. Otherwise false if **request_handle** is an invalid handle or if the request has not been sent yet.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#DeferHTTPRequest){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#DeferHTTPRequest){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getHTTPDownloadProgressPct
 
@@ -79,7 +79,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         May be 0.0 if the **request_handle** is invalid.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPDownloadProgressPct){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPDownloadProgressPct){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getHTTPRequestWasTimedOut
 
@@ -97,7 +97,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * The request has not been sent or has not completed.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPRequestWasTimedOut){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPRequestWasTimedOut){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getHTTPResponseBodyData
 
@@ -122,7 +122,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * **buffer_size** is not the same as what was provided by [getHTTPResponseBodySize](#gethttpresponsebodysize).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPResponseBodyData){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPResponseBodyData){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getHTTPResponseBodySize
 
@@ -140,7 +140,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * The request has not been sent or has not completed.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPResponseBodySize){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPResponseBodySize){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getHTTPResponseHeaderSize
 
@@ -163,7 +163,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * The header name is not present in the response.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPResponseHeaderSize){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPResponseHeaderSize){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getHTTPResponseHeaderValue
 
@@ -187,7 +187,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * **buffer_size** was not big enough.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPResponseHeaderValue){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPResponseHeaderValue){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getHTTPStreamingResponseBodyData
 
@@ -212,7 +212,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * **buffer_size** is not the same size that was provided by [http_request_data_received](#http_request_data_received).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPStreamingResponseBodyData){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#GetHTTPStreamingResponseBodyData){ .md-button .md-button--doc_classes target="_blank" }
 
 ### prioritizeHTTPRequest
 
@@ -227,7 +227,7 @@ A small and easy to use HTTP client to send and receive data from the web.
 		Returns true if the request has been successfully prioritized; otherwise, false if **request_handle** is an invalid handle or if the request has not been sent yet.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#PrioritizeHTTPRequest){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#PrioritizeHTTPRequest){ .md-button .md-button--doc_classes target="_blank" }
 
 ### releaseCookieContainer
 
@@ -242,7 +242,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         Returns true if the handle has been freed; otherwise, false if the handle was invalid.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#ReleaseCookieContainer){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#ReleaseCookieContainer){ .md-button .md-button--doc_classes target="_blank" }
 
 ### releaseHTTPRequest
 
@@ -257,7 +257,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         Returns true if the the handle was released successfully; otherwise, false only if the handle is invalid.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#ReleaseHTTPRequest){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#ReleaseHTTPRequest){ .md-button .md-button--doc_classes target="_blank" }
 
 ### sendHTTPRequest
 
@@ -282,7 +282,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         [http_request_completed](#http_request_completed) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SendHTTPRequest){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SendHTTPRequest){ .md-button .md-button--doc_classes target="_blank" }
 
 ### sendHTTPRequestAndStreamResponse
 
@@ -311,7 +311,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * [http_request_completed](#http_request_completed) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SendHTTPRequestAndStreamResponse){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SendHTTPRequestAndStreamResponse){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPCookie
 
@@ -329,7 +329,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         Returns true if the cookie was set successfully; Otherwise, false if the request handle was invalid or if there was a security issue parsing the cookie.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetCookie){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetCookie){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPRequestAbsoluteTimeoutMS
 
@@ -350,7 +350,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * The request has already been sent.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestAbsoluteTimeoutMS){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestAbsoluteTimeoutMS){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPRequestContextValue
 
@@ -373,7 +373,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * The request has already been sent.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestContextValue){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestContextValue){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPRequestCookieContainer
 
@@ -392,7 +392,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * **cookie_handle** was invalid.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestCookieContainer){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestCookieContainer){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPRequestGetOrPostParameter
 
@@ -417,7 +417,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * If the request method is [HTTP_METHOD_POST](#httpmethod) and a POST body has already been set with [setHTTPRequestRawPostBody](#sethttprequestrawpostbody).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestGetOrPostParameter){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestGetOrPostParameter){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPRequestHeaderValue
 
@@ -443,7 +443,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * **header_name** or **header_value** are empty.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestHeaderValue){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestHeaderValue){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPRequestNetworkActivityTimeout
 
@@ -464,7 +464,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * The request has already been sent.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestNetworkActivityTimeout){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestNetworkActivityTimeout){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPRequestRawPostBody
 
@@ -487,7 +487,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         * A POST body has already been set for this request either via this function or with [setHTTPRequestGetOrPostParameter](#sethttprequestgetorpostparameter).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestRawPostBody){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestRawPostBody){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPRequestRequiresVerifiedCertificate
 
@@ -503,7 +503,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         Returns true upon success; otherwise, false if the request handle is invalid.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestRequiresVerifiedCertificate){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestRequiresVerifiedCertificate){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setHTTPRequestUserAgentInfo
 
@@ -521,7 +521,7 @@ A small and easy to use HTTP client to send and receive data from the web.
         Returns true upon success indicating that the user agent has been updated; otherwise, false if the request handle is invalid.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestUserAgentInfo){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#SetHTTPRequestUserAgentInfo){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-signal: Signals
@@ -544,7 +544,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | body_size | uint32_t | The size of the request body in bytes. This is the same as [getHTTPResponseBodySize](#gethttpresponsebodysize).
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#HTTPRequestCompleted_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#HTTPRequestCompleted_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### http_request_data_received
 
@@ -560,7 +560,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | bytes_received | uint32_t | Size in bytes to provide to [getHTTPStreamingResponseBodyData](#gethttpstreamingresponsebodydata) to get this chunk of data.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#HTTPRequestDataReceived_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#HTTPRequestDataReceived_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### http_request_headers_received
 
@@ -574,7 +574,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | context_value | uint64_t | Context value that the user defined on the request that this callback is associated with, 0 if no context value was set.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#HTTPRequestHeadersReceived_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamHTTP#HTTPRequestHeadersReceived_t){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-infinity: Constants

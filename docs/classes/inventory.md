@@ -38,7 +38,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result when you are done with it.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#AddPromoItem){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#AddPromoItem){ .md-button .md-button--doc_classes target="_blank" }
 
 ### addPromoItems
 
@@ -64,7 +64,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result when you are done with it.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#AddPromoItems){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#AddPromoItems){ .md-button .md-button--doc_classes target="_blank" }
 
 ### checkResultSteamID
 
@@ -84,7 +84,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally-stored ID.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#CheckResultSteamID){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#CheckResultSteamID){ .md-button .md-button--doc_classes target="_blank" }
 
 ### consumeItem
 
@@ -107,7 +107,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result when you are done with it.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#ConsumeItem){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#ConsumeItem){ .md-button .md-button--doc_classes target="_blank" }
 
 ### deserializeResult
 
@@ -133,7 +133,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result when you are done with it.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#DeserializeResult){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#DeserializeResult){ .md-button .md-button--doc_classes target="_blank" }
 
 ### destroyResult
 
@@ -150,7 +150,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally-stored ID.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#DestroyResult){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#DestroyResult){ .md-button .md-button--doc_classes target="_blank" }
 
 ### exchangeItems
 
@@ -181,7 +181,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result when you are done with it.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#ExchangeItems){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#ExchangeItems){ .md-button .md-button--doc_classes target="_blank" }
 
 ### generateItems
 
@@ -204,7 +204,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result when you are done with it.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GenerateItems){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GenerateItems){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getAllItems
 
@@ -222,7 +222,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result when you are done with it.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetAllItems){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetAllItems){ .md-button .md-button--doc_classes target="_blank" }
 		
 
 ### getItemDefinitionProperty
@@ -250,7 +250,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
     	| success | bool | This returns true upon success; otherwise, false indicating that the item definitions have not been loaded from the server, no item definitions exist for the current application, or the property name was not found in the item definition.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemDefinitionProperty){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemDefinitionProperty){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getItemsByID
 
@@ -274,7 +274,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result when you are done with it.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemsByID){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemsByID){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getItemPrice
 
@@ -294,7 +294,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		| base_price | uint64_t | The base price rendered in the user's local currency.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemPrice){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemPrice){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getItemsWithPrices
 
@@ -317,7 +317,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		| base_price | uint64_t | The base price rendered in the user's local currency.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemsWithPrices){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetItemsWithPrices){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getResultItemProperty
 
@@ -343,7 +343,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally-stored ID.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetResultItemProperty){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetResultItemProperty){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getResultItems
 
@@ -374,7 +374,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally-stored ID.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetResultItems){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetResultItems){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getResultStatus
 
@@ -401,7 +401,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally-stored ID.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetResultStatus){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetResultStatus){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getResultTimestamp
 
@@ -421,7 +421,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally-stored ID.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetResultTimestamp){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GetResultTimestamp){ .md-button .md-button--doc_classes target="_blank" }
 
 ### grantPromoItems
 
@@ -445,7 +445,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result when you are done with it.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GrantPromoItems){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#GrantPromoItems){ .md-button .md-button--doc_classes target="_blank" }
 
 ### loadItemDefinitions
 
@@ -461,7 +461,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		[inventory_definition_update](#inventory_definition_update) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#LoadItemDefinitions){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#LoadItemDefinitions){ .md-button .md-button--doc_classes target="_blank" }
 
 ### removeProperty
 
@@ -480,7 +480,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_update_handle** is omitted, GodotSteam will use the internally-stored ID. This is different from **this_inventory_handle** and is stored separately.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#RemoveProperty){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#RemoveProperty){ .md-button .md-button--doc_classes target="_blank" }
 
 ### requestEligiblePromoItemDefinitionsIDs
 
@@ -499,7 +499,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		[inventory_eligible_promo_item](#inventory_eligible_promo_item) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#RequestEligiblePromoItemDefinitionsIDs){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#RequestEligiblePromoItemDefinitionsIDs){ .md-button .md-button--doc_classes target="_blank" }
 
 ### requestPrices
 
@@ -514,7 +514,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		[inventory_request_prices_result](#inventory_request_prices_result) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#RequestPrices){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#RequestPrices){ .md-button .md-button--doc_classes target="_blank" }
 
 ### serializeResult
 
@@ -539,7 +539,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_handle** is omitted, GodotSteam will use the internally-stored ID.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SerializeResult){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SerializeResult){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setPropertyBool
 
@@ -559,7 +559,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_update_handle** is omitted, GodotSteam will use the internally-stored ID. This is different from **this_inventory_handle** and is stored separately.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SetProperty){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SetProperty){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setPropertyFloat
 
@@ -579,7 +579,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_update_handle** is omitted, GodotSteam will use the internally-stored ID. Also note this different from **this_inventory_handle** and is stored separately.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SetProperty){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SetProperty){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setPropertyInt
 
@@ -599,7 +599,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_update_handle** is omitted, GodotSteam will use the internally-stored ID. This is different from **this_inventory_handle** and is stored separately.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SetProperty){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SetProperty){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setPropertyString
 
@@ -619,7 +619,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		If the argument **this_inventory_update_handle** is omitted, GodotSteam will use the internally-stored ID. This is different from **this_inventory_handle** and is stored separately.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SetProperty){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SetProperty){ .md-button .md-button--doc_classes target="_blank" }
 
 ### startPurchase
 
@@ -646,7 +646,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		Testing while in development, testing [startPurchase](#startpurchase) before your app is released, all transactions made by members of the development / publishing team will be made through the sandbox micro-transaction API internally. This means you will not be charged for the purchases made before the app is released if you are part of the Steamworks publisher.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#StartPurchase){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#StartPurchase){ .md-button .md-button--doc_classes target="_blank" }
 
 ### startUpdateProperties
 
@@ -659,7 +659,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		It will overwrite any previously stored inventory update handle.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#StartUpdateProperties){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#StartUpdateProperties){ .md-button .md-button--doc_classes target="_blank" }
 
 ### submitUpdateProperties
 
@@ -678,7 +678,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		You must call [destroyResult](#destroyresult) on the provided inventory result for when you are done with it.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SubmitUpdateProperties){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SubmitUpdateProperties){ .md-button .md-button--doc_classes target="_blank" }
 
 ### transferItemQuantity
 
@@ -705,7 +705,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		Tradability / marketability restrictions are copied along with transferred items. The destination stack receives the latest tradability / marketability date of any item in its composition.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#TransferItemQuantity){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#TransferItemQuantity){ .md-button .md-button--doc_classes target="_blank" }
 
 ### triggerItemDrop
 
@@ -731,7 +731,7 @@ Steam Inventory query and manipulation API. See [Steam Inventory Service](https:
 		It will overwrite any previously stored inventory handle.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#TriggerItemDrop){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#TriggerItemDrop){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-signal: Signals
@@ -750,7 +750,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | definitions | array | A list of item definintions that were updated.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryDefinitionUpdate_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryDefinitionUpdate_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### inventory_eligible_promo_item
 
@@ -765,7 +765,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| definitions | array | The list of eligible item definition IDs.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryEligiblePromoItemDefIDs_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryEligiblePromoItemDefIDs_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### inventory_full_update
 
@@ -778,7 +778,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| inventory_handle | int32 | A new inventory result handle.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryFullUpdate_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryFullUpdate_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### inventory_request_prices_result
 
@@ -792,7 +792,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| currency | string | The string representing the [user's local currency code](https://partner.steamgames.com/doc/store/pricing/currencies){ target="\_blank" }.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryRequestPricesResult_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryRequestPricesResult_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### inventory_result_ready
 
@@ -806,7 +806,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| inventory_handle | int32 | The inventory result which is now ready.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryResultReady_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryResultReady_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### inventory_start_purchase_result
 
@@ -821,7 +821,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| transaction_id | uint64_t | The auto-generated transaction id for the initiated purchase.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryStartPurchaseResult_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryStartPurchaseResult_t){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-infinity: Constants

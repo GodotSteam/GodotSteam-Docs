@@ -27,7 +27,7 @@ icon: material/server-network
 		[associate_clan](#associate_clan) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#AssociateWithClan){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#AssociateWithClan){ .md-button .md-button--doc_classes target="_blank" }
 
 ### beginAuthSession
 
@@ -46,7 +46,7 @@ icon: material/server-network
 	!!! returns "Returns: [BeginAuthSessionResult enum](main_server.md#beginauthsessionresult)"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#BeginAuthSession){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#BeginAuthSession){ .md-button .md-button--doc_classes target="_blank" }
 
 ### cancelAuthTicket
 
@@ -60,7 +60,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#CancelAuthTicket){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#CancelAuthTicket){ .md-button .md-button--doc_classes target="_blank" }
 
 ### clearAllKeyValues
 
@@ -70,7 +70,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
  
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#ClearAllKeyValues){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#ClearAllKeyValues){ .md-button .md-button--doc_classes target="_blank" }
 
 ### computeNewPlayerCompatibility
 
@@ -87,7 +87,7 @@ icon: material/server-network
  		[player_compat](#player_compat) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#ComputeNewPlayerCompatibility){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#ComputeNewPlayerCompatibility){ .md-button .md-button--doc_classes target="_blank" }
 
 ### createUnauthenticatedUserConnection
 
@@ -112,7 +112,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
  
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#EndAuthSession){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#EndAuthSession){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getAuthSessionTicket
 
@@ -138,7 +138,7 @@ icon: material/server-network
 		 [get_auth_session_ticket_response](user.md#get_auth_session_ticket_response) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GetAuthSessionTicket){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GetAuthSessionTicket){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getNextOutgoingPacket
 
@@ -161,7 +161,7 @@ icon: material/server-network
 		This should only ever be called **after** calling [handleIncomingPacket](#handleincomingpacket) for any packets that came in that frame.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GetNextOutgoingPacket){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GetNextOutgoingPacket){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getPublicIP
 
@@ -178,7 +178,7 @@ icon: material/server-network
 		| type | [IPType enum](main_server.md#iptype) | The type of IP address returned.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GetPublicIP){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GetPublicIP){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getSteamID
 
@@ -188,7 +188,7 @@ icon: material/server-network
 	!!! returns "Returns: uint64_t"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GetSteamID){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GetSteamID){ .md-button .md-button--doc_classes target="_blank" }
 
 ### handleIncomingPacket
 
@@ -214,7 +214,7 @@ icon: material/server-network
 		| data | PackedByteArray | The data from the incoming packet.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#HandleIncomingPacket){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#HandleIncomingPacket){ .md-button .md-button--doc_classes target="_blank" }
 
 ### loggedOn
 
@@ -225,7 +225,7 @@ icon: material/server-network
 		Returns true if the game server is logged on; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#BLoggedOn){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#BLoggedOn){ .md-button .md-button--doc_classes target="_blank" }
 
 ### logOff
 
@@ -240,7 +240,7 @@ icon: material/server-network
 		* [server_disconnected](#server_disconnected) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#LogOff){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#LogOff){ .md-button .md-button--doc_classes target="_blank" }
 
 ### logOn
 
@@ -259,7 +259,7 @@ icon: material/server-network
 		* [server_disconnected](#server_disconnected) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#LogOn){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#LogOn){ .md-button .md-button--doc_classes target="_blank" }
 
 ### logOnAnonymous
 
@@ -277,7 +277,7 @@ icon: material/server-network
 		In previous versions of the SDK, this was automatically called within serverInit, but this is no longer the case.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#LogOnAnonymous){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#LogOnAnonymous){ .md-button .md-button--doc_classes target="_blank" }
 
 ### requestUserGroupStatus
 
@@ -296,7 +296,7 @@ icon: material/server-network
 		 [client_group_status](#client_group_status) callback
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#RequestUserGroupStatus){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#RequestUserGroupStatus){ .md-button .md-button--doc_classes target="_blank" }
 
 ### secure
 
@@ -307,7 +307,7 @@ icon: material/server-network
 		Returns true if the game server secure; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#BSecure){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#BSecure){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setAdvertiseServerActive
 
@@ -326,7 +326,7 @@ icon: material/server-network
 		This function used to be named **EnableHeartbeats**, so if you are wondering where that function went, it's right here.  It does the same thing as before, the old name was just confusing.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#EnableHeartbeats){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#EnableHeartbeats){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setBotPlayerCount
 
@@ -340,7 +340,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetBotPlayerCount){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetBotPlayerCount){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setDedicatedServer
 
@@ -357,7 +357,7 @@ icon: material/server-network
 		This only be set before calling [logOn](#logon) or [logOnAnonymous](#logonanonymous).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetDedicatedServer){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetDedicatedServer){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setGameData
 
@@ -374,7 +374,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetGameData){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetGameData){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setGameDescription
 
@@ -393,7 +393,7 @@ icon: material/server-network
 		This is required for all game servers and can only be set before calling [logOn](#logon) or [logOnAnonymous](#logonanonymous).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetGameDescription){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetGameDescription){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setGameTags
 
@@ -409,7 +409,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetGameTags){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetGameTags){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setKeyValue
 
@@ -424,7 +424,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetKeyValue){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetKeyValue){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setMapName
 
@@ -438,7 +438,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetMapName){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetMapName){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setMaxPlayerCount
 
@@ -452,7 +452,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetMaxPlayerCount){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetMaxPlayerCount){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setModDir
 
@@ -469,7 +469,7 @@ icon: material/server-network
 		This is required for all game servers and can only be set before calling [logOn](#logon) or [logOnAnonymous](#logonanonymous).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetModDir){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetModDir){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setPasswordProtected
 
@@ -483,7 +483,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetPasswordProtected){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetPasswordProtected){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setProduct
 
@@ -502,7 +502,7 @@ icon: material/server-network
 		This is required for all game servers and can only be set before calling [logOn](#logon) or [logOnAnonymous](#logonanonymous).
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetProduct){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetProduct){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setRegion
 
@@ -516,7 +516,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetRegion){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetRegion){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setServerName
 
@@ -530,7 +530,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetServerName){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetServerName){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setSpectatorPort
 
@@ -548,7 +548,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetSpectatorPort){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetSpectatorPort){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setSpectatorServerName
 
@@ -562,7 +562,7 @@ icon: material/server-network
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetSpectatorServerName){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#SetSpectatorServerName){ .md-button .md-button--doc_classes target="_blank" }
 
 ### updateUserData
 
@@ -591,7 +591,7 @@ icon: material/server-network
 	!!! returns "Returns: [UserHasLicenseForAppResult enum](main_server.md#userhaslicenseforappresult)"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#UserHasLicenseForApp){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#UserHasLicenseForApp){ .md-button .md-button--doc_classes target="_blank" }
 
 ### wasRestartRequested
 
@@ -601,7 +601,7 @@ icon: material/server-network
 	!!! returns "Returns: bool"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#WasRestartRequested){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#WasRestartRequested){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-signal: Signals
@@ -620,7 +620,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| result | [Result enum](main_server.md#result) | Result of the call.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#AssociateWithClanResult_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#AssociateWithClanResult_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### client_approved
 
@@ -634,7 +634,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| owner_id | uint64_t | Steam ID of original owner for game license.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSClientApprove_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSClientApprove_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### client_denied
 
@@ -651,7 +651,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| optional_message | string | An optional text message explaining the deny reason. Typically unused except for logging.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSClientDeny_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSClientDeny_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### client_group_status
 
@@ -667,7 +667,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| officer | bool | Is the user an officer in the group (true) or not (false)? This will never be true if **member** is false.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSClientGroupStatus_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSClientGroupStatus_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### client_kick
 
@@ -681,7 +681,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| reason | [DenyReason enum](main_server.md#denyreason) | The reason the player is being kicked.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSClientKick_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSClientKick_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### gamplay_stats
 
@@ -711,7 +711,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| steam_id | uint64_t | The Steam ID of the specified player.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#ComputeNewPlayerCompatibilityResult_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#ComputeNewPlayerCompatibilityResult_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### policy_response
 
@@ -724,7 +724,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | secure | uint8 | Secure is true if the game server should display itself as secure to users; otherwise, false.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSPolicyResponse_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServer#GSPolicyResponse_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### server_connect_failure
 
@@ -740,7 +740,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| retrying | bool | Is the Steam client still trying to connect to the server?
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#SteamServerConnectFailure_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#SteamServerConnectFailure_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### server_connected
 
@@ -753,7 +753,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		Nothing.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#SteamServersConnected_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#SteamServersConnected_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### server_disconnected
 
@@ -768,4 +768,4 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| result | [Result enum](main_server.md#result) | The reason we were disconnected from Steam.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#SteamServersDisconnected_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUser#SteamServersDisconnected_t){ .md-button .md-button--doc_classes target="_blank" }

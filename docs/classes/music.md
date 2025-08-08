@@ -22,7 +22,7 @@ Functions to control music playback in the Steam client. This gives games the op
 	!!! returns "Returns: [AudioPlaybackStatus enum](#audioplaybackstatus)"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#GetPlaybackStatus){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#GetPlaybackStatus){ .md-button .md-button--doc_classes target="_blank" }
 
 ### musicIsEnabled
 
@@ -33,7 +33,7 @@ Functions to control music playback in the Steam client. This gives games the op
 		Returns true if it is enabled; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#BIsEnabled){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#BIsEnabled){ .md-button .md-button--doc_classes target="_blank" }
 
 ### musicIsPlaying
 
@@ -46,7 +46,7 @@ Functions to control music playback in the Steam client. This gives games the op
 		Returns true if a song is currently playing, paused, or queued up to play; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#BIsPlaying){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#BIsPlaying){ .md-button .md-button--doc_classes target="_blank" }
 
 ### musicGetVolume
 
@@ -57,7 +57,7 @@ Functions to control music playback in the Steam client. This gives games the op
 		The volume is returned as a percentage between 0.0 and 1.0.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#GetVolume){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#GetVolume){ .md-button .md-button--doc_classes target="_blank" }
 
 ### musicPause
 
@@ -67,7 +67,7 @@ Functions to control music playback in the Steam client. This gives games the op
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#Pause){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#Pause){ .md-button .md-button--doc_classes target="_blank" }
 
 ### musicPlay
 
@@ -77,7 +77,7 @@ Functions to control music playback in the Steam client. This gives games the op
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#Play){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#Play){ .md-button .md-button--doc_classes target="_blank" }
 
 ### musicPlayNext
 
@@ -87,7 +87,7 @@ Functions to control music playback in the Steam client. This gives games the op
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#PlayNext){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#PlayNext){ .md-button .md-button--doc_classes target="_blank" }
 
 ### musicPlayPrev
 
@@ -97,7 +97,7 @@ Functions to control music playback in the Steam client. This gives games the op
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#PlayPrevious){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#PlayPrevious){ .md-button .md-button--doc_classes target="_blank" }
 
 ### musicSetVolume
 
@@ -111,7 +111,7 @@ Functions to control music playback in the Steam client. This gives games the op
 	!!! returns "Returns: void"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#SetVolume){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusic#SetVolume){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-signal: Signals

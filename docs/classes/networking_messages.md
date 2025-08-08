@@ -35,7 +35,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 		Returns true if there is an existing active session, even if it is not pending; otherwise, false if there is no session with the user pending or otherwise.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#AcceptSessionWithUser){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#AcceptSessionWithUser){ .md-button .md-button--doc_classes target="_blank" }
 
 ### closeChannelWithUser
 
@@ -50,7 +50,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 	!!! returns "Returns: bool"
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#CloseChannelWithUser){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#CloseChannelWithUser){ .md-button .md-button--doc_classes target="_blank" }
 
 ### closeSessionWithUser
 
@@ -66,7 +66,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 	!!! returns "Returns: bool"
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#CloseSessionWithUser){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#CloseSessionWithUser){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getSessionConnectionInfo
 
@@ -125,7 +125,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 		| queue_time | uint64_t | If you queued a message right now, approximately how long would that message wait in the queue before we actually started putting its data on the wire in a packet?
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#GetSessionConnectionInfo){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#GetSessionConnectionInfo){ .md-button .md-button--doc_classes target="_blank" }
 
 ### receiveMessagesOnChannel
 
@@ -153,7 +153,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 		| flags | int | Bitmask of [NETWORKING_SEND_](main.md#constants) flags; only the [NETWORKING_SEND_RELIABLE](main.md#constants) bit is valid.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#ReceiveMessagesOnChannel){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#ReceiveMessagesOnChannel){ .md-button .md-button--doc_classes target="_blank" }
 
 ### sendMessageToUser
 
@@ -186,7 +186,7 @@ The primary purpose of this interface is to be "like UDP", so that UDP-based cod
 		* See [sendMessageToConnection](networking_sockets.md#sendmessagetoconnection) for more possible return values.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SendMessageToUser){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SendMessageToUser){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-signal: Signals
@@ -205,7 +205,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| remote_steam_id | uint64_t | User who wants to talk to us.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SteamNetworkingMessagesSessionRequest_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SteamNetworkingMessagesSessionRequest_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### network_messages_session_failed
 
@@ -225,4 +225,4 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| debug_message | string | Human-readable but non-localized explanation for connection termination or problem.  This is intended for debugging / diagnostic purposes only, not to display to users.  It might have some details specific to the issue.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SteamNetworkingMessagesSessionFailed_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SteamNetworkingMessagesSessionFailed_t){ .md-button .md-button--doc_classes target="_blank" }

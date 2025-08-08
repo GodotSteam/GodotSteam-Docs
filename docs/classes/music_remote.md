@@ -28,7 +28,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 	!!! returns "Returns: bool"
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#BActivationSuccess){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#BActivationSuccess){ .md-button .md-button--doc_classes target="_blank" }
 
 ### isCurrentMusicRemote
 
@@ -39,7 +39,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Return true if Music Remote is currently active; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#BIsCurrentMusicRemote){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#BIsCurrentMusicRemote){ .md-button .md-button--doc_classes target="_blank" }
 
 ### currentEntryDidChange
 
@@ -50,7 +50,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the current music entry did change; otherwise, false if not.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#CurrentEntryDidChange){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#CurrentEntryDidChange){ .md-button .md-button--doc_classes target="_blank" }
 
 ### currentEntryIsAvailable
 
@@ -65,7 +65,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the current music entry is available; otherwise, false if not.
  
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#CurrentEntryIsAvailable){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#CurrentEntryIsAvailable){ .md-button .md-button--doc_classes target="_blank" }
 
 ### currentEntryWillChange
 
@@ -76,7 +76,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the current music entry will change; otherwise, false if not.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#CurrentEntryWillChange){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#CurrentEntryWillChange){ .md-button .md-button--doc_classes target="_blank" }
 
 ### deregisterSteamMusicRemote
 
@@ -87,7 +87,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if Steam Music Remote was deregistered; otherwise, false if not.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#DeregisterSteamMusicRemote){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#DeregisterSteamMusicRemote){ .md-button .md-button--doc_classes target="_blank" }
 
 ### enableLooped
 
@@ -102,7 +102,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if track looping was enabled; otherwise, false if not.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnableLooped){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnableLooped){ .md-button .md-button--doc_classes target="_blank" }
 
 ### enablePlaylists
 
@@ -117,7 +117,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if playlists were enabled; otherwise, false if not.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnablePlaylists){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnablePlaylists){ .md-button .md-button--doc_classes target="_blank" }
 
 ### enablePlayNext
 
@@ -132,7 +132,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if play next is enabled; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnablePlayNext){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnablePlayNext){ .md-button .md-button--doc_classes target="_blank" }
 
 ### enablePlayPrevious
 
@@ -147,7 +147,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if play previous is enabled; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnablePlayPrevious){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnablePlayPrevious){ .md-button .md-button--doc_classes target="_blank" }
 
 ### enableQueue
 
@@ -162,7 +162,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the queue is enabled; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnableQueue){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnableQueue){ .md-button .md-button--doc_classes target="_blank" }
 
 ### enableShuffled
 
@@ -177,7 +177,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if shuffle is enabled; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnableShuffled){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#EnableShuffled){ .md-button .md-button--doc_classes target="_blank" }
 
 ### playlistDidChange
 
@@ -188,7 +188,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the playlist changed; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#PlaylistDidChange){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#PlaylistDidChange){ .md-button .md-button--doc_classes target="_blank" }
 
 ### playlistWillChange
 
@@ -199,7 +199,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the playlist will change; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#PlaylistWillChange){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#PlaylistWillChange){ .md-button .md-button--doc_classes target="_blank" }
 
 ### queueDidChange
 
@@ -210,7 +210,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the queue did change; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#QueueDidChange){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#QueueDidChange){ .md-button .md-button--doc_classes target="_blank" }
 
 ### queueWillChange
 
@@ -221,7 +221,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the queue will change; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#QueueWillChange){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#QueueWillChange){ .md-button .md-button--doc_classes target="_blank" }
 
 ### registerSteamMusicRemote
 
@@ -236,7 +236,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the Music Remote session was registered successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#RegisterSteamMusicRemote){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#RegisterSteamMusicRemote){ .md-button .md-button--doc_classes target="_blank" }
 
 ### resetPlaylistEntries
 
@@ -247,7 +247,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the playlist entries were reset; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#ResetPlaylistEntries){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#ResetPlaylistEntries){ .md-button .md-button--doc_classes target="_blank" }
 
 ### resetQueueEntries
 
@@ -258,7 +258,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the queue entries were reset; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#ResetQueueEntries){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#ResetQueueEntries){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setCurrentPlaylistEntry
 
@@ -273,7 +273,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the playlist entry was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetCurrentPlaylistEntry){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetCurrentPlaylistEntry){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setCurrentQueueEntry
 
@@ -288,7 +288,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the queue entry was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetCurrentQueueEntry){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetCurrentQueueEntry){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setDisplayName
 
@@ -303,7 +303,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the display name was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetDisplayName){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetDisplayName){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setPlaylistEntry
 
@@ -320,7 +320,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the playlist entry was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetPlaylistEntry){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetPlaylistEntry){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setPNGIcon64x64
 
@@ -335,7 +335,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the icon was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetPNGIcon_64x64){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetPNGIcon_64x64){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setQueueEntry
 
@@ -352,7 +352,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the queue entry was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetQueueEntry){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#SetQueueEntry){ .md-button .md-button--doc_classes target="_blank" }
 
 ### updateCurrentEntryCoverArt
 
@@ -367,7 +367,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the current entry's cover art was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateCurrentEntryCoverArt){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateCurrentEntryCoverArt){ .md-button .md-button--doc_classes target="_blank" }
 
 ### updateCurrentEntryElapsedSeconds
 
@@ -382,7 +382,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the elapsed seconds were set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateCurrentEntryElapsedSeconds){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateCurrentEntryElapsedSeconds){ .md-button .md-button--doc_classes target="_blank" }
 
 ### updateCurrentEntryText
 
@@ -397,7 +397,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the current entry's text was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateCurrentEntryText){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateCurrentEntryText){ .md-button .md-button--doc_classes target="_blank" }
 
 ### updateLooped
 
@@ -412,7 +412,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the looped status was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateLooped){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateLooped){ .md-button .md-button--doc_classes target="_blank" }
 
 ### updatePlaybackStatus
 
@@ -427,7 +427,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the playback status was set successfully; otherwise, false.
  
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdatePlaybackStatus){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdatePlaybackStatus){ .md-button .md-button--doc_classes target="_blank" }
 
 ### updateShuffled
 
@@ -442,7 +442,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if shuffled was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateShuffled){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateShuffled){ .md-button .md-button--doc_classes target="_blank" }
 
 ### updateVolume
 
@@ -457,7 +457,7 @@ This class has absolutely no notes in either the SDK nor Valve's online document
 		Returns true if the volume was set successfully; otherwise, false.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateVolume){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#UpdateVolume){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-signal: Signals
@@ -474,7 +474,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		Nothing.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerRemoteToFront_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerRemoteToFront_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_remote_will_activate
 !!! function "music_player_remote_will_activate"
@@ -484,7 +484,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		Nothing.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerRemoteWillActivate_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerRemoteWillActivate_t){ .md-button .md-button--doc_classes target="_blank" }
 	
 ### music_player_remote_will_deactivate
 
@@ -495,7 +495,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		Nothing.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerRemoteWillDeactivate_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerRemoteWillDeactivate_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_selects_playlist_entry
 
@@ -508,7 +508,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | entry | int | The entry that was selected.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerSelectsPlaylistEntry_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerSelectsPlaylistEntry_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_selects_queue_entry
 
@@ -521,7 +521,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | entry | int | The entry that was selected.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerSelectsQueueEntry_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerSelectsQueueEntry_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_wants_looped
 
@@ -534,7 +534,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| looped | bool | Whether or not the remote session selected looped.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsLooped_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsLooped_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_wants_pause
 
@@ -545,7 +545,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		Nothing.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPause_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPause_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_wants_play
 
@@ -556,7 +556,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		Nothing.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlay_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlay_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_wants_play_next
 
@@ -567,7 +567,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		Nothing.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlayNext_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlayNext_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_wants_play_previous
 
@@ -578,7 +578,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		Nothing.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlay_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlay_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_wants_playing_repeat_status
 
@@ -591,7 +591,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | status | int | -
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlayingRepeatStatus_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsPlayingRepeatStatus_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_wants_shuffled
 
@@ -604,7 +604,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| shuffled | bool | Whether it is shuffled or not.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsShuffled_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsShuffled_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_wants_volume
 
@@ -617,7 +617,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		| new_volume | float | The new volume level; between 0.0 and 1.0.
 	
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsVolume_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWantsVolume_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### music_player_will_quit
 
@@ -628,7 +628,7 @@ These callbacks require you to [setup one of the three callback methods to recei
 		Nothing.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWillQuit_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamMusicRemote#MusicPlayerWillQuit_t){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-infinity: Constants

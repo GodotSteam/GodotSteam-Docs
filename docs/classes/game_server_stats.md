@@ -30,7 +30,7 @@ Functions to allow game servers to set stats and achievements on players.
 		This will work only on achievements that game servers are allowed to set. If the "Set By" field for this achievement is "Official GS" then only game servers that have been declared as officially controlled by you will be able to set it. To do this you must set the IP range of your official servers in the [Dedicated Servers](https://partner.steamgames.com/apps/dedicatedservers/){ target="_blank" } section of App Admin.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#ClearUserAchievement){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#ClearUserAchievement){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getUserAchievement
 
@@ -53,7 +53,7 @@ Functions to allow game servers to set stats and achievements on players.
 		| unlocked | bool | Whether or not the achievement was unlocked.
 
     ---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GetUserAchievement){ .md-button .md-button--store target="_blank" }		
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GetUserAchievement){ .md-button .md-button--doc_classes target="_blank" }		
 
 ### getUserStatFloat
 
@@ -68,7 +68,7 @@ Functions to allow game servers to set stats and achievements on players.
 	!!! returns "Returns: float"
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GetUserStat){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GetUserStat){ .md-button .md-button--doc_classes target="_blank" }
 
 ### getUserStatInt
 
@@ -83,7 +83,7 @@ Functions to allow game servers to set stats and achievements on players.
 	!!! returns "Returns: uint32_t"
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GetUserStat){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GetUserStat){ .md-button .md-button--doc_classes target="_blank" }
 
 ### requestUserStats
 
@@ -100,7 +100,7 @@ Functions to allow game servers to set stats and achievements on players.
 		[stats_received](#stats_received) call result.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#RequestUserStats){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#RequestUserStats){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setUserAchievement
 
@@ -123,7 +123,7 @@ Functions to allow game servers to set stats and achievements on players.
 		These updates will work only on stats that game servers are allowed to edit. If the "Set By" field for this stat is "Official GS" then only game servers that have been declared as officially controlled by you will be able to set it. To do this you must set the IP range of your official servers in the [Dedicated Servers](https://partner.steamgames.com/apps/dedicatedservers/){ target="_blank" } section of App Admin.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#SetUserAchievement){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#SetUserAchievement){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setUserStatFloat
 
@@ -148,7 +148,7 @@ Functions to allow game servers to set stats and achievements on players.
 		These updates will work only on stats that game servers are allowed to edit. If the "Set By" field for this stat is "Official GS" then only game servers that have been declared as officially controlled by you will be able to set it. To do this you must set the IP range of your official servers in the [Dedicated Servers](https://partner.steamgames.com/apps/dedicatedservers/){ target="_blank" } section of App Admin.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#SetUserStat){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#SetUserStat){ .md-button .md-button--doc_classes target="_blank" }
 
 ### setUserStatInt
 
@@ -173,7 +173,7 @@ Functions to allow game servers to set stats and achievements on players.
 		These updates will work only on stats that game servers are allowed to edit. If the "Set By" field for this stat is "Official GS" then only game servers that have been declared as officially controlled by you will be able to set it. To do this you must set the IP range of your official servers in the [Dedicated Servers](https://partner.steamgames.com/apps/dedicatedservers/){ target="_blank" } section of App Admin.
 
 	 ---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#SetUserStat){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#SetUserStat){ .md-button .md-button--doc_classes target="_blank" }
 
 ### storeUserStats
 
@@ -192,7 +192,7 @@ Functions to allow game servers to set stats and achievements on players.
 		[stats_stored](#stats_stored) callback.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#StoreUserStats){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#StoreUserStats){ .md-button .md-button--doc_classes target="_blank" }
 
 ### updateUserAvgRateStat
 
@@ -215,7 +215,7 @@ Functions to allow game servers to set stats and achievements on players.
 		* The stat must be allowed to be set by game server.
 
 	---
-    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#UpdateUserAvgRateStat){ .md-button .md-button--store target="_blank" }
+    [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#UpdateUserAvgRateStat){ .md-button .md-button--doc_classes target="_blank" }
 
 {==
 ## :material-signal: Signals
@@ -237,7 +237,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | steam_id | uint64_t | The user for whom the stats are retrieved for.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GSStatsReceived_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GSStatsReceived_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### stats_stored
 
@@ -253,7 +253,7 @@ These callbacks require you to [setup one of the three callback methods to recei
         | steam_id | uint64_t | The user for whom the stats were stored.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GSStatsStored_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GSStatsStored_t){ .md-button .md-button--doc_classes target="_blank" }
 
 ### stats_unloaded
 
@@ -266,4 +266,4 @@ These callbacks require you to [setup one of the three callback methods to recei
         | steam_id | uint64_t | User whose stats have been unloaded.
 
 	---
-	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GSStatsUnloaded_t){ .md-button .md-button--store target="_blank" }
+	[:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamGameServerStats#GSStatsUnloaded_t){ .md-button .md-button--doc_classes target="_blank" }

@@ -51,7 +51,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	This is primarily only ever used for testing.
 
-  This call only modifies Steam's in-memory state so it is quite cheap. To send the unlock status to the server and to trigger the Steam overlay notification you must call [storeStats](#storestats).
+	This call only modifies Steam's in-memory state so it is quite cheap. To send the unlock status to the server and to trigger the Steam overlay notification you must call [storeStats](#storestats).
 
 	!!! returns "Returns: bool"
 		Returns true upon success if the specific achievement API name exists in the App Admin on the Steamworks website and changes are published; otherwise, false.
@@ -291,7 +291,7 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 	In general games should not need these functions as they should have the list of achievements compiled into them.
 
-	!!! returns "Returns: string
+	!!! returns "Returns: string"
 
     ---
     [:fontawesome-brands-steam: Read more in the official Steamworks SDK documentation](https://partner.steamgames.com/doc/api/ISteamUserStats#GetAchievementName){ .md-button .md-button--doc_classes target="_blank" }
@@ -972,7 +972,7 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 !!! function "current_stats_received"
 	Called when the latest stats and achievements for the local user have been received from the server; in response to function [requestCurrentStats](#requestcurrentstats).
 
-  As of SDK 1.61, this no longer exists as everything is synced at game boot.
+	As of SDK 1.61, this no longer exists as everything is synced at game boot.
 
 	!!! returns "Returns"
 		| Key | Type | Notes |
