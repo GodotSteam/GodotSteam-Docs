@@ -455,14 +455,14 @@ Provides functions for accessing and submitting stats, achievements, and leaderb
 
 ### getLeaderboardSortMethod
 
-!!! function "getLeaderboardSortMethod( `uint64_t` this_leaderboard = 0 )"
+!!! function "getLeaderboardSortMethod( `uint64_t` leaderboard_handle = 0 )"
 	| :material-variable: Argument | Type | Notes |
     | -------- | ---- | ----- |
-    | this_leaderboard | uint64_t | A leaderboard handle obtained from [findLeaderboard](#findleaderboard) or [findOrCreateLeaderboard](#findorcreateleaderboard). Defaults to 0. |
+    | leaderboard_handle | uint64_t | A leaderboard handle obtained from [findLeaderboard](#findleaderboard) or [findOrCreateLeaderboard](#findorcreateleaderboard). Defaults to 0. |
 
     If no leaderboard_handle is passed, then the function will use the last internally-stored handle.
 
-	Get the sort order of a leaderboard handle. If no thisLeaderboard handle is passed, then the function will use the last stored internal handle.
+	Get the sort order of a leaderboard handle. If no **leaderboard_handle** handle is passed, then the function will use the last stored internal handle.
 
 	!!! returns "Returns: [LeaderboardSortMethod enum](#leaderboardsortmethod)"
 
@@ -1067,7 +1067,7 @@ These callbacks require you to run `Steam.run_callbacks()` in your `_process()` 
 	!!! returns "Returns"
 		| Key | Type | Notes |
         | --- | ---- | ----- |
-		| success | uint8 | Was the call successful? Returns 1 if so, 0 on failure. Failure may happen if the details sent exceeds [LEADERBOARD_DETAILS_MAX](user_stats.md#constants) or the leaderboard is set to "Trusted" so it can only accepts scores frmo the Web API.
+		| success | uint8 | Was the call successful? Returns 1 if so, 0 on failure. Failure may happen if the details sent exceeds [LEADERBOARD_DETAILS_MAX](user_stats.md#constants) or the leaderboard is set to "Trusted" so it can only accepts scores from the Web API.
 		| this_handle | uint64_t | Handle to the leaderboard that this score was uploaded to.
 		| this_score | dictionary | The dictionary of score data for the entry uploaded.
 

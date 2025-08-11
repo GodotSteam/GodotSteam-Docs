@@ -102,6 +102,13 @@ Here is a showcase of games using the GodotSteam module. Have a game on Steam us
 	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/2450400/Trash_of_the_Titans){ target="\_blank" .md-button .md-button--store }
 	[ :fontawesome-brands-firefox-browser: ](https://trash-of-the-titans.manakeep.com/){ target="\_blank" .md-button .md-button--store }
 
+- [![Travis, The Frog](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3511950/690b6e35411ba6293ddb7ce8cf6af08e6b1ef765/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/3511950/travis_the_frog/){ target="\_blank" }
+
+	---
+
+	[ :fontawesome-brands-steam: ](https://store.steampowered.com/app/3511950/travis_the_frog/){ target="\_blank" .md-button .md-button--store }
+	[ :fontawesome-brands-firefox-browser: ](https://sites.google.com/view/hewasaskaterboy/presskit?authuser=0){ target="\_blank" .md-button .md-button--store }
+
 - [![Trolley Delayma](https://steamcdn-a.akamaihd.net/steam/apps/2372500/header.jpg){ loading=lazy align=left }](https://store.steampowered.com/app/2372500/Trolley_Delayma/){ target="\_blank" }
 
 	---

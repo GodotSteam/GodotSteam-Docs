@@ -21,7 +21,6 @@ Here is a list of all our amazing current and past donors who have financially c
 - Dreamfarer
 - [Hamsandviches](https://logan.zone){ target="\_blank" }
 - HephepTeam
-- InvoxiPlayGames
 - Jammin-ben
 - Jez
 - Johannes Ebner
@@ -76,6 +75,7 @@ Here is a list of all our amazing current and past donors who have financially c
 - hardtrip
 - Hung-Fan Liu
 - InkRobert
+- InvoxiPlayGames
 - isikdos
 - Jakub Nowak
 - [Jayden Sipe](https://jaydensipe.github.io/){ target="\_blank" }
